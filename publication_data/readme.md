@@ -1,0 +1,1 @@
+This folder contains the GRSI and publication details data files that the script produces and also uses. It contains the data as of the publication time to facilitate the reproduction of the plots as used in the paper. If the script is instructed to get new data from the web, then also the files in this folder are overwritten.

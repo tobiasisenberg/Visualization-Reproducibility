@@ -1,0 +1,1 @@
+This is the folder where the script will place the produced images as they are used in the paper, with the respective figure names. This folder essentially is needed to facilitate an easy update of the figures in the [OSF repository](https://osf.io/mvnbj/).

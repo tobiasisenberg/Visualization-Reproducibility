@@ -1,0 +1,83 @@
+year,journal,title,doi,doi link
+2010,CGA,Verifying Scientific Simulations via Comparative and Quantitative Visualization,10.1109/MCG.2010.100,https://doi.org/10.1109/MCG.2010.100
+2010,CGA,Advanced Volume Illumination with Unconstrained Light Source Positioning,10.1109/MCG.2010.98,https://doi.org/10.1109/MCG.2010.98
+2010,CGA,"Context-Preserving, Dynamic Word Cloud Visualization",10.1109/MCG.2010.102,https://doi.org/10.1109/MCG.2010.102
+2010,CGA,Visualizing Graphs and Clusters as Maps,10.1109/MCG.2010.101,https://doi.org/10.1109/MCG.2010.101
+2010,TVCG,Visualization of High-Dimensional Point Clouds Using Their Density Distribution’s Topology,10.1109/TVCG.2011.27,https://doi.org/10.1109/TVCG.2011.27
+2010,TVCG,Efficient Volume Exploration Using the Gaussian Mixture Model,10.1109/TVCG.2011.97,https://doi.org/10.1109/TVCG.2011.97
+2010,TVCG,Physically-Based Interactive Flow Visualization Based on Schlieren and Interferometry Experimental Techniques,10.1109/TVCG.2010.255,https://doi.org/10.1109/TVCG.2010.255
+2010,TVCG,"Visual Analysis of Large Graphs Using (X,Y)-Clustering and Hybrid Visualizations",10.1109/TVCG.2010.265,https://doi.org/10.1109/TVCG.2010.265
+2011,TVCG,Flow Visualization with Quantified Spatial and Temporal Errors Using Edge Maps,10.1109/TVCG.2011.265,https://doi.org/10.1109/TVCG.2011.265
+2011,TVCG,Scalable Multivariate Volume Visualization and Analysis Based on Dimension Projection and Parallel Coordinates,10.1109/TVCG.2012.80,https://doi.org/10.1109/TVCG.2012.80
+2011,TVCG,WORDGRAPH: Keywordin-Context Visualization for NETSPEAK's Wildcard Search,10.1109/TVCG.2012.96,https://doi.org/10.1109/TVCG.2012.96
+2011,TVCG,Visualizing Dynamic Data with Maps,10.1109/TVCG.2011.288,https://doi.org/10.1109/TVCG.2011.288
+2012,TVCG,Visual Analysis of Cardiac 4D MRI Blood Flow Using Line Predicates,10.1109/TVCG.2012.318,https://doi.org/10.1109/TVCG.2012.318
+2012,TVCG,Ambient Occlusion Effects for Combined Volumes and Tubular Geometry,10.1109/TVCG.2012.306,https://doi.org/10.1109/TVCG.2012.306
+2012,TVCG,A Maxent-Stress Model for Graph Layout,10.1109/TVCG.2012.299,https://doi.org/10.1109/TVCG.2012.299
+2013,TVCG,Dynamic Network Visualization with Extended Massive Sequence Views,10.1109/TVCG.2013.263,https://doi.org/10.1109/TVCG.2013.263
+2013,TVCG,Joint Contour Nets,10.1109/TVCG.2013.269,https://doi.org/10.1109/TVCG.2013.269
+2013,TVCG,Ovis: A Framework for Visual Analysis of Ocean Forecast Ensembles,10.1109/TVCG.2014.2307892,https://doi.org/10.1109/TVCG.2014.2307892
+2013,TVCG,A Graph-Based Interface for Visual Analytics of 3D Streamline and Pathlines,10.1109/TVCG.2013.236,https://doi.org/10.1109/TVCG.2013.236
+2013,TVCG,Bundled Visualizations of Dynamic Graph and Trail Data,10.1109/TVCG.2013.246,https://doi.org/10.1109/TVCG.2013.246
+2014,TVCG,Exploring Curved Schematization of Territorial Outlines,10.1109/TVCG.2015.2401025,https://doi.org/10.1109/TVCG.2015.2401025
+2014,TVCG,Semantic Enrichment of Movement Behavior with Foursquare – A Visual Analytics Approach,10.1109/TVCG.2014.2371856,https://doi.org/10.1109/TVCG.2014.2371856
+2014,TVCG,Moment Invariants for 2D Flow Fields via Normalization in Detail,10.1109/TVCG.2014.2369036,https://doi.org/10.1109/TVCG.2014.2369036
+2014,TVCG,Robustness-Based Simplification of 2D Steady and Unsteady Vector Fields,10.1109/TVCG.2015.2440250,https://doi.org/10.1109/TVCG.2015.2440250
+2015,TVCG,View-Dependent Streamline Deformation and Exploration,10.1109/TVCG.2015.2502583,https://doi.org/10.1109/TVCG.2015.2502583
+2015,TVCG,"A Study of Layout, Rendering, and Interaction Methods for Immersive Graph Visualization",10.1109/TVCG.2016.2520921,https://doi.org/10.1109/TVCG.2016.2520921
+2015,TVCG,Can Twitter Save Lives? A Broad-scale Study on Visual Social Media Analytics for Public Safety,10.1109/TVCG.2015.2511733,https://doi.org/10.1109/TVCG.2015.2511733
+2016,TVCG,PieceStack: Toward Better Understanding of Stacked Graphs,10.1109/TVCG.2016.2534518,https://doi.org/10.1109/TVCG.2016.2534518
+2016,TVCG,Minimizing the Number of Edges via Edge Concentration in Dense Layered Graphs,10.1109/TVCG.2016.2534519,https://doi.org/10.1109/TVCG.2016.2534519
+2016,TVCG,Adaptive Disentanglement based on Local Clustering in Small-World Network Visualization,10.1109/TVCG.2016.2534559,https://doi.org/10.1109/TVCG.2016.2534559
+2016,TVCG,Finite-Time Lyapunov Exponents and Lagrangian Coherent Structures in Uncertain Unsteady Flows,10.1109/TVCG.2016.2534560,https://doi.org/10.1109/TVCG.2016.2534560
+2016,TVCG,Critical Point Cancellation in 3D Vector Fields: Robustness and Discussion,10.1109/TVCG.2016.2534538,https://doi.org/10.1109/TVCG.2016.2534538
+2016,TVCG,Visual Analysis of Cloud Computing Performance Using Behavioral Lines,10.1109/TVCG.2016.2534558,https://doi.org/10.1109/TVCG.2016.2534558
+2017,TVCG,Word-Sized Graphics for Scientific Texts,10.1109/TVCG.2017.2674958,https://doi.org/10.1109/TVCG.2017.2674958
+2017,TVCG,Towards Perceptual Optimization of the Visual Design of Scatterplots,10.1109/TVCG.2017.2674978,https://doi.org/10.1109/TVCG.2017.2674978
+2017,TVCG,Proxy Graph: Visual Quality Metrics of Big Graph Sampling,10.1109/TVCG.2017.2674999,https://doi.org/10.1109/TVCG.2017.2674999
+2017,TVCG,Placenta Maps: In Utero Placental Health Assessment of the Human Fetus,10.1109/TVCG.2017.2674938,https://doi.org/10.1109/TVCG.2017.2674938
+2017,TVCG,Spatio-temporal Feature Exploration in Combined Particle/Volume Reference Frames,10.1109/TVCG.2017.2674918,https://doi.org/10.1109/TVCG.2017.2674918
+2018,TVCG,Visual Interactive Map Matching,10.1109/TVCG.2018.2816219,https://doi.org/10.1109/TVCG.2018.2816219
+2018,TVCG,Predominance Tag Maps,10.1109/TVCG.2018.2816208,https://doi.org/10.1109/TVCG.2018.2816208
+2018,TVCG,GANViz: A Visual Analytics Approach to Understand the Adversarial Game,10.1109/TVCG.2018.2816223,https://doi.org/10.1109/TVCG.2018.2816223
+2018,TVCG,MeetingVis: Visual Narratives to Assist in Recalling Meeting Context and Content,10.1109/TVCG.2018.2816203,https://doi.org/10.1109/TVCG.2018.2816203
+2019,TVCG,Comparison of Projective Augmented Reality Concepts to Support Medical Needle Placement,10.1109/TVCG.2019.2903942,https://doi.org/10.1109/TVCG.2019.2903942
+2019,TVCG,DeepVID: Deep Visual Interpretation and Diagnosis for Image Classifiers via Knowledge Distillation,10.1109/TVCG.2019.2903943,https://doi.org/10.1109/TVCG.2019.2903943
+2019,TVCG,Visual Exploration of Neural Document Embedding in Information Retrieval: Semantics and Feature Selection,10.1109/TVCG.2019.2903946,https://doi.org/10.1109/TVCG.2019.2903946
+2019,TVCG,Stippling of 2D Scalar Fields,10.1109/TVCG.2019.2903945,https://doi.org/10.1109/TVCG.2019.2903945
+2019,TVCG,Relaxing Dense Scatter Plots with Pixel-Based Mappings,10.1109/TVCG.2019.2903956,https://doi.org/10.1109/TVCG.2019.2903956
+2020,TVCG,Modeling How Humans Judge Dot-Label Relations in Point Cloud Visualizations,10.1109/TVCG.2020.2970509,https://doi.org/10.1109/TVCG.2020.2970509
+2020,TVCG,Photographic High-Dynamic-Range Scalar Visualization,10.1109/TVCG.2020.2970522,https://doi.org/10.1109/TVCG.2020.2970522
+2020,TVCG,Touch? Speech? Or Touch and Speech? Investigating Multimodal Interaction for Visual Network Exploration and Analysis,10.1109/TVCG.2020.2970512,https://doi.org/10.1109/TVCG.2020.2970512
+2020,TVCG,The Sprawlter Graph Readability Metric: Combining Sprawl and Area-aware Clutter,10.1109/TVCG.2020.2970523,https://doi.org/10.1109/TVCG.2020.2970523
+2020,TVCG,A User-centered Design in Scientific Visualization Targeting Domain Experts,10.1109/TVCG.2020.2970525,https://doi.org/10.1109/TVCG.2020.2970525
+2021,TVCG,Tac-Miner: Visual Tactic Mining for Multiple Table Tennis Matches,10.1109/TVCG.2021.3074576,https://doi.org/10.1109/TVCG.2021.3074576
+2021,TVCG,SurfRiver: Flattening Stream Surfaces for Comparative Visualization,10.1109/TVCG.2021.3074585,https://doi.org/10.1109/TVCG.2021.3074585
+2021,TVCG,Smile or Scowl? Looking at Infographic Design Through the Affective Lens,10.1109/TVCG.2021.3074582,https://doi.org/10.1109/TVCG.2021.3074582
+2021,TVCG,Asynchronous and Load-Balanced Union-Find for Distributed and Parallel Scientific Data Visualization and Analysis,10.1109/TVCG.2021.3074584,https://doi.org/10.1109/TVCG.2021.3074584
+2021,TVCG,On the Readability of Abstract Set Visualizations,10.1109/TVCG.2021.3074615,https://doi.org/10.1109/TVCG.2021.3074615
+2022,TVCG,AMM: Adaptive Multilinear Meshes,10.1109/TVCG.2022.3165392,https://doi.org/10.1109/TVCG.2022.3165392
+2022,TVCG,Image-based Visualization of Large Volumetric Data Using Moments,10.1109/TVCG.2022.3165346,https://doi.org/10.1109/TVCG.2022.3165346
+2022,TVCG,GNN-Surrogate: A Hierarchical and Adaptive Graph Neural Network for Parameter Space Exploration of Unstructured-Mesh Ocean Simulations,10.1109/TVCG.2022.3165345,https://doi.org/10.1109/TVCG.2022.3165345
+2022,TVCG,VAC-CNN: A Visual Analytics System for Comparative Study of Deep Convolutional Neural Networks,10.1109/TVCG.2022.3165347,https://doi.org/10.1109/TVCG.2022.3165347
+2022,TVCG,A Visual Analytics Approach for Hardware System Monitoring with Streaming Functional Data Analysis,10.1109/TVCG.2022.3165348,https://doi.org/10.1109/TVCG.2022.3165348
+2023,TVCG,SDRQuerier: A Visual Querying Framework for CrossNational Survey Data Recycling,10.1109/TVCG.2023.3261944,https://doi.org/10.1109/TVCG.2023.3261944
+2023,TVCG,Federated Visualization: A Privacy-preserving Strategy for Aggregated Visual Query,10.1109/TVCG.2023.3261938,https://doi.org/10.1109/TVCG.2023.3261938
+2023,TVCG,LinSets.zip: Compressing Linear Set Diagrams,10.1109/TVCG.2023.3261934,https://doi.org/10.1109/TVCG.2023.3261934
+2023,TVCG,FraudAuditor: A Visual Analytics Approach for Collusive Fraud in Health Insurance,10.1109/TVCG.2023.3261910,https://doi.org/10.1109/TVCG.2023.3261910
+2023,TVCG,How Does Attention Work in Vision Transformers? A Visual Analytics Attempt,10.1109/TVCG.2023.3261935,https://doi.org/10.1109/TVCG.2023.3261935
+2024,TVCG,VIOLET: Visual Analytics for Explainable Quantum Neural Networks,10.1109/TVCG.2024.3388557,https://doi.org/10.1109/TVCG.2024.3388557
+2024,TVCG,Visual Analytics for Efficient Image Exploration and User-Guided Image Captioning,10.1109/TVCG.2024.3388514,https://doi.org/10.1109/TVCG.2024.3388514
+2024,TVCG,A Survey of Designs for Combined 2D+3D Visual Representations,10.1109/TVCG.2024.3388516,https://doi.org/10.1109/TVCG.2024.3388516
+2024,TVCG,Enhancing Single-Frame Supervision for Better Temporal Action Localization,10.1109/TVCG.2024.3388521,https://doi.org/10.1109/TVCG.2024.3388521
+2024,TVCG,ColorNetVis: An Interactive Color Network Analysis System for Exploring the Color Composition of Traditional Chinese Painting,10.1109/TVCG.2024.3388520,https://doi.org/10.1109/TVCG.2024.3388520
+2024,TVCG,Comparative Evaluation of Animated Scatter Plot Transitions,10.1109/TVCG.2024.3388558,https://doi.org/10.1109/TVCG.2024.3388558
+2024,TVCG,Animating Hypothetical Trips to Communicate Space-Based Temporal Uncertainty on Digital Maps,10.1109/TVCG.2024.3388517,https://doi.org/10.1109/TVCG.2024.3388517
+2024,TVCG,TacPrint: Visualizing the Biomechanical Fingerprint in Table Tennis,10.1109/TVCG.2024.3388555,https://doi.org/10.1109/TVCG.2024.3388555
+2024,TVCG,Sticky Links: Encoding Quantitative Data of Graph Edges,10.1109/TVCG.2024.3388562,https://doi.org/10.1109/TVCG.2024.3388562
+2024,TVCG,ScrollTimes: Tracing the Provenance of Paintings as a Window into History,10.1109/TVCG.2024.3388523,https://doi.org/10.1109/TVCG.2024.3388523
+2024,TVCG,"Same Data, Diverging Perspectives: the Power of Visualizations to Elicit Competing Interpretations",10.1109/TVCG.2024.3388515,https://doi.org/10.1109/TVCG.2024.3388515
+2024,TVCG,JsonCurer: Data Quality Management for JSON Based on an Aggregated Schema,10.1109/TVCG.2024.3388556,https://doi.org/10.1109/TVCG.2024.3388556
+2024,TVCG,PM-Vis: A Visual Analytics System for Tracing and Analyzing the Evolution of Pottery Motifs,10.1109/TVCG.2024.3388525,https://doi.org/10.1109/TVCG.2024.3388525
+2024,TVCG,Struggles and Strategies in Understanding Information Visualizations,10.1109/TVCG.2024.3388560,https://doi.org/10.1109/TVCG.2024.3388560
+2024,TVCG,CoInsight: Visual Storytelling for Hierarchical Tables with Connected Insights,10.1109/TVCG.2024.3388553,https://doi.org/10.1109/TVCG.2024.3388553

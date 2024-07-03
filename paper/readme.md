@@ -1,0 +1,1 @@
+This folder contains the LaTeX sources to produce the associated paper.

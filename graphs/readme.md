@@ -1,0 +1,1 @@
+This is the folder where the script will place all the produced graphs.

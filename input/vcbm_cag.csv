@@ -1,0 +1,32 @@
+conf. year,journal,journal year,journal vol,title,doi,doi link
+2018,C&G,2019,82,Bloodline: A system for the guided analysis of cardiac 4D PC-MRI data,10.1016/j.cag.2019.05.004,https://doi.org/10.1016/j.cag.2019.05.004
+2018,C&G,2019,82,Ultrasound simulation with animated anatomical models and on-the-fly fusion with real images via path-tracing,10.1016/j.cag.2019.05.005,https://doi.org/10.1016/j.cag.2019.05.005
+2018,C&G,2019,82,EvalViz – Surface visualization evaluation wizard for depth and shape perception tasks,10.1016/j.cag.2019.05.022,https://doi.org/10.1016/j.cag.2019.05.022
+2018,C&G,2019,82,BrainTrawler: A visual analytics framework for iterative exploration of heterogeneous big brain data,10.1016/j.cag.2019.05.032,https://doi.org/10.1016/j.cag.2019.05.032
+2018,C&G,2019,83,Intelligent interaction and uncertainty visualization for efficient drusen and retinal layer segmentation in Optical Coherence Tomography,10.1016/j.cag.2019.07.001,https://doi.org/10.1016/j.cag.2019.07.001
+2018,C&G,2019,83,Visual analysis of regional myocardial motion anomalies in longitudinal studies,10.1016/j.cag.2019.07.004,https://doi.org/10.1016/j.cag.2019.07.004
+2018,C&G,2019,83,Voxel-based edge bundling through direction-aware kernel smoothing,10.1016/j.cag.2019.06.008,https://doi.org/10.1016/j.cag.2019.06.008
+2019,C&G,2020,90,Visual exploration of large normal mode spaces to study protein flexibility,10.1016/j.cag.2020.05.025,https://doi.org/10.1016/j.cag.2020.05.025
+2019,C&G,2020,90,A survey of medical animations,10.1016/j.cag.2020.06.003,https://doi.org/10.1016/j.cag.2020.06.003
+2019,C&G,2020,91,A visual approach to explainable computerized clinical decision support,10.1016/j.cag.2020.06.004,https://doi.org/10.1016/j.cag.2020.06.004
+2019,C&G,2020,91,VAPOR: Visual Analytics for the Exploration of Pelvic Organ Variability in Radiotherapy,10.1016/j.cag.2020.07.001,https://doi.org/10.1016/j.cag.2020.07.001
+2019,C&G,2020,91,Interactive framework for the visual exploration of colonic data,10.1016/j.cag.2020.06.005,https://doi.org/10.1016/j.cag.2020.06.005
+2019,C&G,2020,92,Interactive visual exploration of metabolite ratios in MR spectroscopy studies,10.1016/j.cag.2020.08.001,https://doi.org/10.1016/j.cag.2020.08.001
+2020,C&G,2021,97,PREVIS: Predictive visual analytics of anatomical variability for radiotherapy decision support,10.1016/j.cag.2021.04.010,https://doi.org/10.1016/j.cag.2021.04.010
+2020,C&G,2021,98,InShaDe: Invariant Shape Descriptors for visual 2D and 3D cellular and nuclear shape analysis and classification,10.1016/j.cag.2021.04.037,https://doi.org/10.1016/j.cag.2021.04.037
+2020,C&G,2021,98,Interactive analysis for large volume data from fluorescence microscopy at cellular precision,10.1016/j.cag.2021.05.006,https://doi.org/10.1016/j.cag.2021.05.006
+2020,C&G,2021,98,Aneulysis – A system for the visual analysis of aneurysm data,10.1016/j.cag.2021.06.001,https://doi.org/10.1016/j.cag.2021.06.001
+2020,C&G,2021,98,Estimating depth information of vascular models: A comparative user study between a virtual reality and a desktop application,10.1016/j.cag.2021.05.014,https://doi.org/10.1016/j.cag.2021.05.014
+2020,C&G,2021,99,iVRoad: Immersive virtual road crossing as an assessment tool for unilateral spatial neglect,10.1016/j.cag.2021.06.013,https://doi.org/10.1016/j.cag.2021.06.013
+2020,C&G,2021,99,Analyzing the similarity of protein domains by clustering Molecular Surface Maps,10.1016/j.cag.2021.06.007,https://doi.org/10.1016/j.cag.2021.06.007
+2020,C&G,2021,99,A collaborative virtual reality environment for liver surgery planning,10.1016/j.cag.2021.07.009,https://doi.org/10.1016/j.cag.2021.07.009
+2020,C&G,2021,99,inCCsight: A software for exploration and visualization of DT-MRI data of the Corpus Callosum,10.1016/j.cag.2021.07.012,https://doi.org/10.1016/j.cag.2021.07.012
+2021,C&G,2022,105,Spatial-data-driven layouting for brain network visualization,10.1016/j.cag.2022.04.014,https://doi.org/10.1016/j.cag.2022.04.014
+2021,C&G,2022,107,Narrative medical visualization to communicate disease data,10.1016/j.cag.2022.07.017,https://doi.org/10.1016/j.cag.2022.07.017
+2021,C&G,2022,107,Longitudinal visualization for exploratory analysis of multiple sclerosis lesions,10.1016/j.cag.2022.07.023,https://doi.org/10.1016/j.cag.2022.07.023
+2021,C&G,2022,108,FluxomicsExplorer: Differential visual analysis of Flux Sampling based on Metabolomics,10.1016/j.cag.2022.08.008,https://doi.org/10.1016/j.cag.2022.08.008
+2022,C&G,2023,111,Uncertainty guidance in proton therapy planning visualization,10.1016/j.cag.2023.02.002,https://doi.org/10.1016/j.cag.2023.02.002
+2022,C&G,2023,114,Learning the degradation distribution for medical image superresolution via sparse swin transformer,10.1016/j.cag.2023.06.003,https://doi.org/10.1016/j.cag.2023.06.003
+2022,C&G,2023,114,Enhancing molecular visualization: Perceptual evaluation of line variables with application to uncertainty visualization,10.1016/j.cag.2023.06.006,https://doi.org/10.1016/j.cag.2023.06.006
+2022,C&G,2023,114,Investigating user behavior in slideshows and scrollytelling as narrative genres in medical visualization,10.1016/j.cag.2023.06.011,https://doi.org/10.1016/j.cag.2023.06.011
+2022,C&G,2023,116,Multiscale progressive text prompt network for medical image segmentation,10.1016/j.cag.2023.08.030,https://doi.org/10.1016/j.cag.2023.08.030

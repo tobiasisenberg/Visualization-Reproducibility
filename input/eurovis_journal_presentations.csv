@@ -1,0 +1,98 @@
+year,journal,title,doi,doi link
+2014,CGF,Visualization and Analysis of Second Order Tensors: Moving Beyond the Symmetric Positive-Definite Case,10.1111/j.1467-8659.2012.03231.x,https://doi.org/10.1111/j.1467-8659.2012.03231.x
+2014,CGF,InK-Compact: In-Kernel Stream Compaction and Its Application to Multi-Kernel Data Visualization on General-Purpose GPUs,10.1111/cgf.12083,https://doi.org/10.1111/cgf.12083
+2014,CGF,A Collaborative Digital Pathology System for MultiTouch Mobile and Desktop Computing Platforms,10.1111/cgf.12137,https://doi.org/10.1111/cgf.12137
+2014,CGF,Measuring Privacy and Utility in Privacy-Preserving Visualization,10.1111/cgf.12142,https://doi.org/10.1111/cgf.12142
+2014,CGF,Visual Analysis of Multidimensional Categorical Data Sets,10.1111/cgf.12194,https://doi.org/10.1111/cgf.12194
+2015,CGF,Visual Analysis of Trajectories in Multi-Dimensional State Spaces,10.1111/cgf.12352,https://doi.org/10.1111/cgf.12352
+2015,CGF,Group-in-a-Box Meta-Layouts for Topological Clusters and Attribute-based Groups: Space Efficient Visualizations of Network Communities and their Ties,10.1111/cgf.12400,https://doi.org/10.1111/cgf.12400
+2015,CGF,Structural analysis of multivariate point clouds using simplicial chains,10.1111/cgf.12398,https://doi.org/10.1111/cgf.12398
+2016,TVCG,Felix: A Topology based Framework for Visual Exploration of Cosmic Filaments,10.1109/TVCG.2015.2452919,https://doi.org/10.1109/TVCG.2015.2452919
+2016,CGF,Forecast Verification and Visualization based on Gaussian Mixture Model Co-estimation,10.1111/cgf.12520,https://doi.org/10.1111/cgf.12520
+2016,CGF,Hybrid Data Visualization Based On Depth Complexity Histogram Analysis,10.1111/cgf.12460,https://doi.org/10.1111/cgf.12460
+2016,CGF,Constructive Visual Analytics for Text Similarity Detection,10.1111/cgf.12798,https://doi.org/10.1111/cgf.12798
+2016,CGF,Visualizing Waypoints-Constrained Origin-Destination Patterns for Massive Transportation Data,10.1111/cgf.12778,https://doi.org/10.1111/cgf.12778
+2016,CGF,Visualizing the Evolution of Communities in Dynamic Graphs,10.1111/cgf.12512,https://doi.org/10.1111/cgf.12512
+2017,CGF,The State of the Art in Integrating Machine Learning into Visual Analytics,10.1111/cgf.13092,https://doi.org/10.1111/cgf.13092
+2017,CGF,The State of the Art in Sentiment Visualization,10.1111/cgf.13217,https://doi.org/10.1111/cgf.13217
+2017,TVCG,Visualization System Requirements for Data Processing Pipeline Design and Optimization,10.1109/TVCG.2016.2603178,https://doi.org/10.1109/TVCG.2016.2603178
+2018,CGF,Human Factors in Streaming Data Analysis: Challenges and Opportunities for Information Visualization,10.1111/cgf.13264,https://doi.org/10.1111/cgf.13264
+2018,CGF,Feature of Interest based Direct Volume Rendering Using Contextual Saliency-driven Ray Profile Analysis,10.1111/cgf.13308,https://doi.org/10.1111/cgf.13308
+2018,CGF,On-The-Fly Tracking of Flame Surfaces for the Visual Analysis of Combustion Processes,10.1111/cgf.13331,https://doi.org/10.1111/cgf.13331
+2018,CGF,"Generation and Visual Exploration of Medical Flow Data: Survey, Research Trends and Future Challenges",10.1111/cgf.13394,https://doi.org/10.1111/cgf.13394
+2018,CGF,The State of the Art in Vortex Extraction,10.1111/cgf.13319,https://doi.org/10.1111/cgf.13319
+2018,TVCG,The LloydRelaxer: An Approach to Minimize Scaling Effects for Multivariate Projections,10.1109/TVCG.2017.2705189,https://doi.org/10.1109/TVCG.2017.2705189
+2018,CGF,Viewing Visual Analytics as Model Building,10.1111/cgf.13324,https://doi.org/10.1111/cgf.13324
+2018,CGF,Geometric Detection Algorithms for Cavities on Protein Surfaces in Molecular Graphics: A Survey,10.1111/cgf.13158,https://doi.org/10.1111/cgf.13158
+2018,CGF,"Data Reduction Techniques for Simulation, Visualization, and Data Analysis",10.1111/cgf.13336,https://doi.org/10.1111/cgf.13336
+2018,TVCG,Pondering the Concept of Abstraction in (Illustrative) Visualization,10.1109/TVCG.2017.2747545,https://doi.org/10.1109/TVCG.2017.2747545
+2019,CGF,On Visualizing Continuous Turbulence Scales,10.1111/cgf.13532,https://doi.org/10.1111/cgf.13532
+2019,CGF,A Survey of Information Visualization Books,10.1111/cgf.13595,https://doi.org/10.1111/cgf.13595
+2019,TVCG,ViSeq: Visual Analytics of Learning Sequence in Massive Open Online Courses,10.1109/TVCG.2018.2872961,https://doi.org/10.1109/TVCG.2018.2872961
+2019,TVCG,Exploratory Visual Sequence Mining Based on Pattern-Growth,10.1109/TVCG.2018.2848247,https://doi.org/10.1109/TVCG.2018.2848247
+2019,CGF,Projected Field Similarity for Comparative Visualization of Multi-Run Multi-Field Time-Varying Spatial Data,10.1111/cgf.13531,https://doi.org/10.1111/cgf.13531
+2019,CGF,The State of the Art in Multilayer Network Visualization,10.1111/cgf.13610,https://doi.org/10.1111/cgf.13610
+2019,TVCG,Understanding User Behaviour through Action Sequences: From the Usual to the Unusual,10.1109/TVCG.2018.2859969,https://doi.org/10.1109/TVCG.2018.2859969
+2021,CAG,Descriptions and evaluations of methods for determining surface curvature in volumetric data,10.1016/j.cag.2019.11.003,https://doi.org/10.1016/j.cag.2019.11.003
+2021,CAG,Spectrum-preserving sparsification for visualization of big graphs,10.1016/j.cag.2020.02.004,https://doi.org/10.1016/j.cag.2020.02.004
+2021,GVC,A visual analytics system for exploring heterogeneous multivariate data with applications to materials and climate sciences,10.1016/j.gvc.2020.200013,https://doi.org/10.1016/j.gvc.2020.200013
+2021,CAG,On the perceptual influence of shape overlap on data-comparison using scatterplots,10.1016/j.cag.2020.05.028,https://doi.org/10.1016/j.cag.2020.05.028
+2021,CAG,Visception: An interactive visual framework for nested visualization design,10.1016/j.cag.2020.08.007,https://doi.org/10.1016/j.cag.2020.08.007
+2020,CGF,Hinted Star Coordinates for Mixed Data,10.1111/cgf.13666,https://doi.org/10.1111/cgf.13666
+2020,CGF,Visualizing the Stability of 2D Point Sets from Dimensionality Reduction Techniques,10.1111/cgf.13806,https://doi.org/10.1111/cgf.13806
+2020,TVCG,Towards a Quantitative Survey of Dimension Reduction Techniques,10.1109/TVCG.2019.2944182,https://doi.org/10.1109/TVCG.2019.2944182
+2020,CGF,A Survey of Visual Analytics in Public Health,10.1111/cgf.13891,https://doi.org/10.1111/cgf.13891
+2020,CGF,Exploring the Effects of Aggregation Choices on Untrained Visualization Users' Generalizations From Data,10.1111/cgf.13902,https://doi.org/10.1111/cgf.13902
+2020,CGF,Memento: Localized Time-Warping for Spatio-Temporal Selection,10.1111/cgf.13763,https://doi.org/10.1111/cgf.13763
+2020,CGF,Visualizing Dynamics of Urban Regions Through a Geo-Semantic Graph-Based Method,10.1111/cgf.13882,https://doi.org/10.1111/cgf.13882
+2020,CGF,Autonomous Particles for Interactive Flow Visualization,10.1111/cgf.13528,https://doi.org/10.1111/cgf.13528
+2022,CAG,Skyscraper visualization of multiple time-dependent scalar fields on surfaces,10.1016/j.cag.2021.05.005,https://doi.org/10.1016/j.cag.2021.05.005
+2022,CAG,Stats on-site — Sports spectator experience through situated visualizations,10.1016/j.cag.2021.12.009,https://doi.org/10.1016/j.cag.2021.12.009
+2021,CGF,Visualizing and Interacting with Geospatial Networks: A Survey and Design Space,10.1111/cgf.14198,https://doi.org/10.1111/cgf.14198
+2021,CGF,Guide Me in Analysis: A Framework for Guidance Designers,10.1111/cgf.14017,https://doi.org/10.1111/cgf.14017
+2021,CGF,The State of the Art of Spatial Interfaces for 3D Visualization,10.1111/cgf.14189,https://doi.org/10.1111/cgf.14189
+2021,CGF,A Modified Double Gyre with Ground Truth Hyperbolic Trajectories for Flow Visualization,10.1111/cgf.14183,https://doi.org/10.1111/cgf.14183
+2021,CGF,A Survey on Visualizations for Musical Data,10.1111/cgf.13905,https://doi.org/10.1111/cgf.13905
+2022,TVCG,Show me your face: Towards an automated method to provide timely guidance in visual analytics,10.1109/TVCG.2021.3094870,https://doi.org/10.1109/TVCG.2021.3094870
+2022,CGF,A Survey on Cross-Virtuality Analytics,10.1111/cgf.14447,https://doi.org/10.1111/cgf.14447
+2022,CGF,Augmenting Digital Sheet Music through Visual Analytics,10.1111/cgf.14436,https://doi.org/10.1111/cgf.14436
+2022,TVCG,Explaining Semi-Supervised Text Alignment through Visualization,10.1109/TVCG.2021.3105899,https://doi.org/10.1109/TVCG.2021.3105899
+2022,CGF,Design and Evaluation of Visualisation Techniques to Facilitate Argument Exploration,10.1111/cgf.14389,https://doi.org/10.1111/cgf.14389
+2022,CGF,Design and Evaluation Study of Visual Analytics Decision Support Tools in Air Traffic Control,10.1111/cgf.14431,https://doi.org/10.1111/cgf.14431
+2022,CGF,Evaluating Data-type Heterogeneity in Interactive Visual Analyses with Parallel Axes,10.1111/cgf.14438,https://doi.org/10.1111/cgf.14438
+2022,CGF,EHR STAR: The State-Of-the-Art in Interactive EHR Visualization,10.1111/cgf.14424,https://doi.org/10.1111/cgf.14424
+2023,CGF,Visual Exploration of Financial Data with Incremental Domain Knowledge,10.1111/cgf.14723,https://doi.org/10.1111/cgf.14723
+2023,TVCG,Tasks and visualizations used for data profiling: A survey and interview study,10.1109/TVCG.2023.3234337,https://doi.org/10.1109/TVCG.2023.3234337
+2023,CGF,Evonne: A Visual Tool for Explaining Reasoning with OWL Ontologies and Supporting Interactive Debugging,10.1111/cgf.14730,https://doi.org/10.1111/cgf.14730
+2023,CGF,ComBiNet: Visual Query and Comparison of Bipartite Multivariate Dynamic Social Networks,10.1111/cgf.14731,https://doi.org/10.1111/cgf.14731
+2023,CGF,Faster Edge-Path Bundling Through Graph Spanners,10.1111/cgf.14789,https://doi.org/10.1111/cgf.14789
+2023,TVCG,Scanpath Prediction on Information Visualisations,10.1109/TVCG.2023.3242293,https://doi.org/10.1109/TVCG.2023.3242293
+2023,CGF,Visual Parameter Space Exploration in Time and Space,10.1111/cgf.14785,https://doi.org/10.1111/cgf.14785
+2023,TVCG,COMPO*SED: Composite Parallel Coordinates for Co-Dependent Multi-Attribute Choices,10.1109/TVCG.2022.3180899,https://doi.org/10.1109/TVCG.2022.3180899
+2023,CGF,Are We There Yet? A Roadmap of Network Visualization from Surveys to Task Taxonomies,10.1111/cgf.14794,https://doi.org/10.1111/cgf.14794
+2023,CGF,HardVis: Visual Analytics to Handle Instance Hardness Using Undersampling and Oversampling Techniques,10.1111/cgf.14726,https://doi.org/10.1111/cgf.14726
+2023,CGF,Seeking patterns of visual pattern discovery for knowledge building,10.1111/cgf.14515,https://doi.org/10.1111/cgf.14515
+2023,CGF,PDViz: a Visual Analytics Approach for State Policy Diffusion,10.1111/cgf.14732,https://doi.org/10.1111/cgf.14732
+2023,CGF,ComVis-Sail: Comparative sailing performance visualization for coaching,10.1111/cgf.14722,https://doi.org/10.1111/cgf.14722
+2023,TVCG,Out of the Plane: Flower vs. Star Glyphs to Support High-Dimensional Exploration in Two-Dimensional Embeddings,10.1109/TVCG.2022.3216919,https://doi.org/10.1109/TVCG.2022.3216919
+2023,CGF,iFUNDit: Visual Profiling of Fund Investment Styles,10.1111/cgf.14806,https://doi.org/10.1111/cgf.14806
+2023,TVCG,A Visual Interface for Exploring Hypotheses about Neural Circuits,10.1109/TVCG.2023.3243668,https://doi.org/10.1109/TVCG.2023.3243668
+2023,CGF,State of the Art of Visual Analytics for eXplainable Deep Learning,10.1111/cgf.14733,https://doi.org/10.1111/cgf.14733
+2023,TVCG,Visual Cue Based Corrective Feedback for Motor Skill Training in Mixed Reality: A Survey,10.1109/TVCG.2022.3227999,https://doi.org/10.1109/TVCG.2022.3227999
+2023,CGF,State of the Art of Molecular Visualization in Immersive Virtual Environments,10.1111/cgf.14738,https://doi.org/10.1111/cgf.14738
+2023,CG&A,Evaluating Representation Learning and Graph Layout Methods for Visualization,10.1109/MCG.2022.3160104,https://doi.org/10.1109/MCG.2022.3160104
+2023,CG&A,An Interactive Decision Support System for Land Reuse Tasks,10.1109/MCG.2022.3175604,https://doi.org/10.1109/MCG.2022.3175604
+2023,CG&A,VisLitE: Visualization Literacy and Evaluation,10.1109/MCG.2022.3161767,https://doi.org/10.1109/MCG.2022.3161767
+2023,CG&A,Which Biases and Reasoning Pitfalls Do Explanations Trigger? Decomposing Communication Processes in Human-AI Interaction,10.1109/MCG.2022.3200328,https://doi.org/10.1109/MCG.2022.3200328
+2023,CG&A,Can Image Data Facilitate Reproducibility of Graphics and Visualizations? Toward a Trusted Scientific Practice,10.1109/MCG.2023.3241819,https://doi.org/10.1109/MCG.2023.3241819
+2023,CG&A,"The Flow of Trust: A Visualization Framework to Externalize, Explore, and Explain Trust in ML Applications",10.1109/MCG.2023.3237286,https://doi.org/10.1109/MCG.2023.3237286
+2024,TVCG,A Visual Environment for Data Driven Protein Modeling and Validation,10.1109/TVCG.2023.3286582,https://doi.org/10.1109/TVCG.2023.3286582
+2024,TVCG,ProactiV: Studying Deep Learning Model Behavior under Input Transformations,10.1109/TVCG.2023.3301722,https://doi.org/10.1109/TVCG.2023.3301722
+2024,CGF,DeforestVis: Behavior Analysis of Machine Learning Models with Surrogate,10.1111/cgf.15004,https://doi.org/10.1111/cgf.15004
+2024,TVCG,Efficient Computation of Geodesics in Color Space,10.1109/TVCG.2023.3346673,https://doi.org/10.1109/TVCG.2023.3346673
+2024,CGF,It’s about Time: Analytical Time Periodisation,10.1111/cgf.14845,https://doi.org/10.1111/cgf.14845
+2024,CGF,Episodes and topics in multivariate temporal data,10.1111/cgf.14926,https://doi.org/10.1111/cgf.14926
+2024,TVCG,A Visual Analytics Conceptual Framework for Explorable and Steerable Partial Dependence Analysis,10.1109/TVCG.2023.3263739,https://doi.org/10.1109/TVCG.2023.3263739
+2024,CGF,A Characterization of Interactive Visual Data Stories With a Spatio‐Temporal Context,10.1111/cgf.14922,https://doi.org/10.1111/cgf.14922
+2024,TVCG,Scalability in Visualization,10.1109/TVCG.2022.3231230,https://doi.org/10.1109/TVCG.2022.3231230
+2024,TVCG,A Topological Distance Between Multi-Fields Based on Multi-Dimensional Persistence Diagrams,10.1109/TVCG.2023.3314763,https://doi.org/10.1109/TVCG.2023.3314763

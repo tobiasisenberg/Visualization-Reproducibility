@@ -1,0 +1,1 @@
+This is the folder where the script looks for the visualization publication data sources, that are excerpts of external databases.
