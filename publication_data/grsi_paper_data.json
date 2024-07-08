@@ -1,5 +1,17 @@
 [
     {
+        "is_vis": true,
+        "title": "MOUNTAINEER: Topology-Driven Visual Analytics for Comparing Local Explanations",
+        "doi": "10.1109/tvcg.2024.3418653",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-parisolunke-mountaineer",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/PariSolunke/mountaineer",
+        "repo_archive_url": "",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-parisolunke-mountaineer/representative.png",
+        "authors": "Parikshit Solunke, Vitoria Guardieiro, Joao Rulff, Peter Xenopoulos, Gromit Yeuk-Yin Chan, Brian Barr, Luis Gustavo Nonato, Claudio Silva",
+        "type": "keyword"
+    },
+    {
         "is_vis": false,
         "title": "Path Guiding for Wavefront Path Tracing: A Memory Efficient Approach for GPU Path Tracers",
         "doi": "10.1016/j.cag.2024.103945",

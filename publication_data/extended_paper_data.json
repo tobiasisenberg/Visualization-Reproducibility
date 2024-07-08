@@ -17351,5 +17351,79 @@
         "countries": [
             "TR"
         ]
+    },
+    "10.1109/tvcg.2024.3418653": {
+        "doi": "10.1109/tvcg.2024.3418653",
+        "authors": [
+            {
+                "family": "Solunke",
+                "given": "Parikshit",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Guardieiro",
+                "given": "Vitoria",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Rulff",
+                "given": "Jo\u00e3o",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Xenopoulos",
+                "given": "Peter",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Chan",
+                "given": "Gromit Yeuk-Yin",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Barr",
+                "given": "Brian",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Nonato",
+                "given": "Luis Gustavo",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Silva",
+                "given": "Claudio",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "MOUNTAINEER: Topology-Driven Visual Analytics for Comparing Local Explanations",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 13,
+        "abstract": "With the increasing use of black-box Machine Learning (ML) techniques in critical applications, there is a growing demand for methods that can provide transparency and accountability for model predictions. As a result, a large number of local explainability methods for black-box models have been developed and popularized. However, machine learning explanations are still hard to evaluate and compare due to the high dimensionality, heterogeneous representations, varying scales, and stochastic nature of some of these methods. Topological Data Analysis (TDA) can be an effective method in this domain since it can be used to transform attributions into uniform graph representations, providing a common ground for comparison across different explanation methods. We present a novel topology-driven visual analytics tool, Mountaineer, that allows ML practitioners to interactively analyze and compare these representations by linking the topological graphs back to the original data distribution, model predictions, and feature attributions. Mountaineer facilitates rapid and iterative exploration of ML explanations, enabling experts to gain deeper insights into the explanation techniques, understand the underlying data distributions, and thus reach well-founded conclusions about model behavior. Furthermore, we demonstrate the utility of Mountaineer through two case studies using real-world data. In the first, we show how Mountaineer enabled us to compare black-box ML explanations and discern regions of and causes of disagreements between different explanations. In the second, we demonstrate how the tool can be used to compare and understand ML models themselves. Finally, we conducted interviews with three industry experts to help us evaluate our work.",
+        "countries": [
+            "US",
+            "BR"
+        ]
     }
 }
