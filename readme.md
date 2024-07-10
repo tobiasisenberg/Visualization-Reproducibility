@@ -60,7 +60,7 @@ If only a reproduction of the paper based on the already downloaded data is the 
     * a [`requirements.txt`](requirements.txt) includes all of these requirements, install them with `pip3 install -r requirements.txt`
 * IEEE Xplore Python 3 API: download it from https://developer.ieee.org/Python3_Software_Development_Kit and place the `xploreapi.py` file into the main directory of the script
 * `acmdownload.py` file from https://github.com/niklasekstrom/acmdownload, also placed into the main directory of the script
-    * after downloading, open the `acmdownload.py` file and comment out the last five lines (the ones after the last defined function) like this:
+    * after downloading, open the `acmdownload.py` file and comment out (or just delete) the last five lines (the ones after the last defined function) like this:
     ```
     # doi = '10.5555/2387880.2387905'
     # documents_to_download = 300
@@ -103,4 +103,4 @@ The paper itself can be found in the [`paper/`](paper/) folder. Simply use your 
 
 ## Credits
 
-Primarily, of course, thanks to the [Graphics Replicability Stamp Initiative](https://www.replicabilitystamp.org/). Second, thanks to the [VisPubData](http://www.vispubdata.org/) project for collecting and verifying all IEEE VIS publication data as well as to [Stefanie Behnke](https://www.linkedin.com/in/stefanie-behnke-61632783/) for providing the EuroVis publication data extract from the [Computer Graphics Forum](https://www.eg.org/wp/eurographics-publications/cgf/) database and to [Ross Maciejewski](https://rmaciejewski.faculty.asu.edu/) for the list of IEEE VIS TVCG journal presentations.
+Primarily, of course, thanks to the [Graphics Replicability Stamp Initiative](https://www.replicabilitystamp.org/). Second, thanks to the [VisPubData](http://www.vispubdata.org/) project for collecting and verifying all IEEE VIS publication data as well as to [Stefanie Behnke](https://www.linkedin.com/in/stefanie-behnke-61632783/) for providing the EuroVis publication data extract from the [Computer Graphics Forum](https://www.eg.org/wp/eurographics-publications/cgf/) database and to [Ross Maciejewski](https://rmaciejewski.faculty.asu.edu/) for the list of IEEE VIS TVCG journal presentations. Also thanks to [Cody Dunne](https://dunne.dev/) for pointing out and helping to fix some issues with this documentation.
