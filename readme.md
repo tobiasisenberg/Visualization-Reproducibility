@@ -55,6 +55,7 @@ If only a reproduction of the paper based on the already downloaded data is the 
     * `habanero`: `pip3 install habanero` or `conda install -c conda-forge habanero` (see https://github.com/sckott/habanero)
     * `elsapy`: `pip3 install elsapy` (see https://github.com/ElsevierDev/elsapy; this module does not seem to be in the list of modules conda supports by default, but the pip3 way also works for Anaconda installations)
     * `openpyxl`: `pip3 install openpyxl` or `conda install conda-forge openpyxl` (see https://pypi.org/project/openpyxl/)
+    * `pycurl`: `pip3 install pycurl` or `conda install conda-forge pycurl` (see http://pycurl.io/)
     * `beautifulsoup4`: `pip3 install beautifulsoup4` or `conda install -c conda-forge beautifulsoup4` (see https://www.crummy.com/software/BeautifulSoup/ and https://anaconda.org/anaconda/beautifulsoup4; seems to be already included with recent versions of Anaconda)
     * `pandas`: `pip3 install pandas` (see https://pandas.pydata.org/docs/getting_started/install.html; already included in Anaconda)
     * a [`requirements.txt`](requirements.txt) includes all of these requirements, install them with `pip3 install -r requirements.txt`
