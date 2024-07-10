@@ -43,6 +43,7 @@ Then create the `api-keys.json` file that keeps these keys (template in [`api-ke
     "apikey-ieee":     "xxxxxxxxxxxxxxxxxxxxxxxx"
 }
 ```
+If only a reproduction of the paper based on the already downloaded data is the goal, then it is also sufficient to copy/rename [`api-keys-template.json`](api-keys-template.json) to `api-keys.json`.
 
 ## General prerequisites
 * the API key file with valid keys mentioned above (to be created manually)
@@ -53,10 +54,20 @@ Then create the `api-keys.json` file that keeps these keys (template in [`api-ke
     * `vl-convert`: `pip3 install vl-convert-python` or `conda install -c conda-forge vl-convert-python` (see https://altair-viz.github.io/user_guide/saving_charts.html)
     * `habanero`: `pip3 install habanero` or `conda install -c conda-forge habanero` (see https://github.com/sckott/habanero)
     * `elsapy`: `pip3 install elsapy` (see https://github.com/ElsevierDev/elsapy; this module does not seem to be in the list of modules conda supports by default, but the pip3 way also works for Anaconda installations)
+    * `openpyxl`: `pip3 install openpyxl` or `conda install conda-forge openpyxl` (see https://pypi.org/project/openpyxl/)
     * `beautifulsoup4`: `pip3 install beautifulsoup4` or `conda install -c conda-forge beautifulsoup4` (see https://www.crummy.com/software/BeautifulSoup/ and https://anaconda.org/anaconda/beautifulsoup4; seems to be already included with recent versions of Anaconda)
     * `pandas`: `pip3 install pandas` (see https://pandas.pydata.org/docs/getting_started/install.html; already included in Anaconda)
+    * a [`requirements.txt`](requirements.txt) includes all of these requirements, install them with `pip3 install -r requirements.txt`
 * IEEE Xplore Python 3 API: download it from https://developer.ieee.org/Python3_Software_Development_Kit and place the `xploreapi.py` file into the main directory of the script
 * `acmdownload.py` file from https://github.com/niklasekstrom/acmdownload, also placed into the main directory of the script
+    * after downloading, open the `acmdownload.py` file and comment out the last five lines (the ones after the last defined function) like this:
+    ```
+    # doi = '10.5555/2387880.2387905'
+    # documents_to_download = 300
+    # docs = download(doi, documents_to_download)
+    # info(docs[doi])
+    # mostreferenced(docs, doi)
+    ```
 
 ## Configuration due to publisher API issues
 

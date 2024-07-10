@@ -143,11 +143,6 @@ def markVisPapersByKeywords(paperList):
         oldStatus = paper["is_vis"]
 
         # manual selections of specific papers for which we know more
-        # if ("10.1109/tvcg.2023.3302308" in paper["doi"]): paper["is_vis"] = True # will be presented at VIS (ours: cell lineage)
-        # if ("10.1109/tvcg.2022.3229017" in paper["doi"]): paper["is_vis"] = True # will be presented at VIS (ours: VMail)
-        # if ("10.1109/tvcg.2023.3330262" in paper["doi"]): paper["is_vis"] = True # will be presented at VIS (Julien)
-        # if ("10.1109/tvcg.2023.3334755" in paper["doi"]): paper["is_vis"] = True # will be presented at VIS (Julien)
-        # if ("10.1109/tvcg.2024.3390219" in paper["doi"]): paper["is_vis"] = True # will be presented at VIS (Julien)
         # if ("10.1109/tvcg.2023.3345340" in paper["doi"]): paper["is_vis"] = True # will be presented at VIS
         if ("10.1109/tvcg.2022.3214821" in paper["doi"]): paper["is_vis"] = True # visualization author keyword
         if ("10.1109/tvcg.2021.3101418" in paper["doi"]): paper["is_vis"] = True # visualization author keyword
@@ -164,13 +159,7 @@ def markVisPapersByKeywords(paperList):
         if (paper["is_vis"] == True) and (oldStatus == False): paper["type"] = "manual"
 
         # hacking some types where we know more for the manually or keyword-selected
-        # if ("10.1109/tvcg.2023.3302308" in paper["doi"]): paper["type"] = "journal pres. @ IEEE VIS" # will be presented at VIS (ours: cell lineage)
-        # if ("10.1109/tvcg.2022.3229017" in paper["doi"]): paper["type"] = "journal pres. @ IEEE VIS" # will be presented at VIS (ours: VMail)
-        # if ("10.1109/tvcg.2023.3330262" in paper["doi"]): paper["type"] = "journal pres. @ IEEE VIS" # will be presented at VIS (Julien)
-        # if ("10.1109/tvcg.2023.3334755" in paper["doi"]): paper["type"] = "journal pres. @ IEEE VIS" # will be presented at VIS (Julien)
-        # if ("10.1109/tvcg.2024.3390219" in paper["doi"]): paper["type"] = "journal pres. @ IEEE VIS" # will be presented at VIS (Julien)
-        # if ("10.1109/tvcg.2023.3341990" in paper["doi"]): paper["type"] = "journal pres. @ IEEE VIS" # will be presented at VIS (Petra: Vis in Motion)
-        # if ("10.1109/tvcg.2023.3323150" in paper["doi"]): paper["type"] = "journal pres. @ IEEE VIS" # will be presented at VIS (Petra: Eliciting)
+        # if ("10.1109/tvcg.2023.3345340" in paper["doi"]): paper["type"] = "journal pres. @ IEEE VIS" # will be presented at VIS
 
 def filterAndShortenJournalNames(journalName = ""):
     publicationVenue = journalName
@@ -636,16 +625,7 @@ else:
             doi = doi.replace("https://doi.org/", "")
             doi = doi.replace("https://doi.ieeecomputersociety.org/", "")
             doi = re.sub(pattern=r"https://diglib\.eg\.org(?::443)?/handle/10\.1111/cgf(\d+)", repl=r"10.1111/cgf.\1", string=doi)
-            # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI
-            # doi = doi.replace("http://www.google.com/search?q=Interactive Reweighting for Mitigating Label Quality Issues", "10.1109/TVCG.2023.3345340") # doi now seems to have been added on GRSI page
-            # doi = doi.replace("http://www.google.com/search?q=A single 3D shape wavelet-based generative model", "10.1016/j.cag.2024.103891") # doi now seems to have been added on GRSI page
-            # doi = doi.replace("http://www.google.com/search?q=Wasserstein Dictionaries of Persistence Diagrams", "10.1109/tvcg.2023.3330262") # doi now seems to have been added on GRSI page
-            # doi = doi.replace("http://www.google.com/search?q=Intrinsic Omnidirectional Image Decomposition with Illumination Pre-Extraction", "10.1109/tvcg.2024.3366343") # doi now seems to have been added on GRSI page
-            # doi = doi.replace("http://www.google.com/search?q=A vertex-centric representation for adaptive diamond-kite meshes", "10.1016/j.cag.2024.103910") # doi now seems to have been added on GRSI page
-            # doi = doi.replace("http://www.google.com/search?q=Enhancing Single-Frame Supervision for Better Temporal Action Localization", "10.1109/TVCG.2024.3388521") # doi now seems to have been added on GRSI page
-            # doi = doi.replace("http://www.google.com/search?q=A Phenomenological Approach to Interactive Knot Diagrams", "10.1109/TVCG.2024.3405369") # doi now seems to have been added on GRSI page
-            doi = doi.replace("http://www.google.com/search?q=A Survey of Designs for Combined 2D+3D Visual Representations", "10.1109/TVCG.2024.3388516")
-            doi = doi.replace("http://www.google.com/search?q=Speech-driven Personalized Gesture Synthetics: Harnessing Automatic Fuzzy Feature Inference", "10.1109/TVCG.2024.3393236")
+            # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
             # doi = doi.replace("http://www.google.com/search?q=Quadratic-Attraction Subdivision with Contraction-Ratio λ = 1/2", "10.2139/ssrn.4835625") # not yet in C&G DL
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for Google searches (once assigned add a manual override as above)
