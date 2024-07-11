@@ -40,6 +40,7 @@ numberOfAuhorHistogramBins = 11
 countryPieChartThreshold = 2.5 # in percent (1--100)
 neutralGray = "#a9a9a9"
 paperNumbersOutputString += "\\newcommand{\\GrsiCountryPieChartThreshold}{" + str(countryPieChartThreshold) + "}\n"
+myLabelLimit = 500
 
 #####################################
 # change to directory of the script
@@ -60,10 +61,15 @@ if (dataOutputSubdirectury != "") and not (os.path.isdir(dataOutputSubdirectury)
 #####################################
 # pre-load some data to avoid loading it multiple times
 #####################################
-vegaPalletData = pd.read_table('palettes.js',
-    skipinitialspace=True,
-    sep=':',
-)
+vegaPalletData = {}
+with open('palettes.js', 'r') as file:
+    for line in file:
+        if ':' in line:
+            lineData = line.split(":")
+            label = lineData[0].strip()
+            colorDataString = lineData[1].replace("'", "").replace(",", "").strip()
+            colorDataArray = ["#" + colorDataString[i:i+6] for i in range(0, len(colorDataString), 6)]
+            vegaPalletData[label] = colorDataArray
 
 #####################################
 # now the main script, starting with some functions
@@ -204,14 +210,11 @@ def generateColorArrayFromColorScheme(sourceColorScheme, lightenFactor=0.5):
         addLightenedColors = True
 
     # first get the array of real colors from Vega
-    originalColorArray = vegaPalletData.loc[source_color_scheme].str.replace("'", "").str.replace(",", "").apply(
-        lambda x: ["#" + x[i:i+6] for i in range(0, len(x), 6)]
-    )[0]
+    originalColorArray = vegaPalletData[source_color_scheme]
+
     originalColorArray2 = []
     if (source_color_scheme2 != ""):
-        originalColorArray2 = vegaPalletData.loc[source_color_scheme2].str.replace("'", "").str.replace(",", "").apply(
-            lambda x: ["#" + x[i:i+6] for i in range(0, len(x), 6)]
-        )[0]
+        originalColorArray2 = vegaPalletData[source_color_scheme2]
 
     # build the default color mapping scheme: to use the same colors as in the source schemes
     colorMapping = {}
@@ -270,7 +273,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
             width=500,
             height=300
-        ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=0)
+        ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
 
         chart.save(baseName + '-stackedareagraph.pdf')
 
@@ -288,7 +291,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
             width=500,
             height=300
-        ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=0)
+        ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
 
         chart.save(baseName + '-stackedbargraph.pdf')
 
@@ -306,7 +309,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
             width=500,
             height=300
-        ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=0)
+        ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
 
         chart.save(baseName + '-stackedbargraph-normalized.pdf')
 
@@ -325,7 +328,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
             width=500,
             height=300
-        ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=0)
+        ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
 
         chart.save(baseName + '-singlebargraphs.pdf')
 
@@ -343,7 +346,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
             width=500,
             height=300
-        ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=0)
+        ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
 
         chart.save(baseName + '-groupedbargraph.pdf')
 
@@ -360,7 +363,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
             width=500,
             height=300
-        ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=0)
+        ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
 
         chart.save(baseName + '-linegraph.pdf')
 
@@ -626,7 +629,7 @@ else:
             doi = doi.replace("https://doi.ieeecomputersociety.org/", "")
             doi = re.sub(pattern=r"https://diglib\.eg\.org(?::443)?/handle/10\.1111/cgf(\d+)", repl=r"10.1111/cgf.\1", string=doi)
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
-            # doi = doi.replace("http://www.google.com/search?q=Quadratic-Attraction Subdivision with Contraction-Ratio λ = 1/2", "10.2139/ssrn.4835625") # not yet in C&G DL
+            doi = doi.replace("http://www.google.com/search?q=Quadratic-Attraction Subdivision with Contraction-Ratio λ = 1/2", "10.1016/j.cag.2024.104001")
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for Google searches (once assigned add a manual override as above)
             paperItem['doi'] = doi.lower()
@@ -1889,7 +1892,7 @@ if exportVisualizations:
         order = alt.Order("venue:Q")
     ).configure_range(
         category=alt.RangeScheme(colors)
-    ).configure_legend(orient='right', direction='vertical', titleLimit=0, labelLimit=0
+    ).configure_legend(orient='right', direction='vertical', titleLimit=0, labelLimit=myLabelLimit
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
         width=600,
@@ -2092,7 +2095,7 @@ if exportVisualizations:
            category=alt.RangeScheme(colorsGrsiPerCountry)
         ).properties(
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
-        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=0)
+        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-proportional.pdf')
 
         grsiPerCountrySum = dict(sorted(grsiPerCountrySum.items(), key=lambda kv: kv[1], reverse = True))
@@ -2115,7 +2118,7 @@ if exportVisualizations:
            category=alt.RangeScheme(colorsGrsiPerCountry)
         ).properties(
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
-        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=0)
+        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-absolute.pdf')
 
         # thresholded version for the proportional one
@@ -2157,7 +2160,7 @@ if exportVisualizations:
            category=alt.RangeScheme(colorsGrsiPerCountryThresholded)
         ).properties(
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
-        ).configure_legend(columns=1, symbolLimit=50, titleLimit=0, labelLimit=0)
+        ).configure_legend(columns=1, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-thresholded-proportional.pdf')
 
     # analyze the contributions by country (only visualization)
@@ -2214,7 +2217,7 @@ if exportVisualizations:
            category=alt.RangeScheme(colorsGrsiPerCountryVsualization)
         ).properties(
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
-        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=0)
+        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-proportional.pdf')
 
         grsiPerCountrySum = dict(sorted(grsiPerCountrySum.items(), key=lambda kv: kv[1], reverse = True))
@@ -2237,7 +2240,7 @@ if exportVisualizations:
            category=alt.RangeScheme(colorsGrsiPerCountryVsualization)
         ).properties(
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
-        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=0)
+        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-absolute.pdf')
 
         # thresholded version for the proportional one
@@ -2279,7 +2282,7 @@ if exportVisualizations:
            category=alt.RangeScheme(colorsGrsiPerCountryThresholded)
         ).properties(
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
-        ).configure_legend(columns=1, symbolLimit=50, titleLimit=0, labelLimit=0)
+        ).configure_legend(columns=1, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-thresholded-proportional.pdf')
 
     # analyze the contributions by country (all of GRSI, but only by senior author)
@@ -2328,7 +2331,7 @@ if exportVisualizations:
            category=alt.RangeScheme(colorsGrsiPerCountry)
         ).properties(
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
-        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=0)
+        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-senior-only-proportional.pdf')
 
         grsiPerCountrySum = dict(sorted(grsiPerCountrySum.items(), key=lambda kv: kv[1], reverse = True))
@@ -2351,7 +2354,7 @@ if exportVisualizations:
            category=alt.RangeScheme(colorsGrsiPerCountry)
         ).properties(
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
-        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=0)
+        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-senior-only-absolute.pdf')
 
         # thresholded version for the proportional one
@@ -2393,7 +2396,7 @@ if exportVisualizations:
            category=alt.RangeScheme(colorsGrsiPerCountryThresholded)
         ).properties(
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
-        ).configure_legend(columns=1, symbolLimit=50, titleLimit=0, labelLimit=0)
+        ).configure_legend(columns=1, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-senior-only-thresholded-proportional.pdf')
 
     grsiPerCountryProportional = {}
@@ -2442,7 +2445,7 @@ if exportVisualizations:
            category=alt.RangeScheme(colorsGrsiPerCountryVsualization)
         ).properties(
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
-        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=0)
+        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-proportional.pdf')
 
         grsiPerCountrySum = dict(sorted(grsiPerCountrySum.items(), key=lambda kv: kv[1], reverse = True))
@@ -2465,7 +2468,7 @@ if exportVisualizations:
            category=alt.RangeScheme(colorsGrsiPerCountryVsualization)
         ).properties(
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
-        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=0)
+        ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-absolute.pdf')
 
         # thresholded version for the proportional one
@@ -2507,7 +2510,7 @@ if exportVisualizations:
            category=alt.RangeScheme(colorsGrsiPerCountryThresholded)
         ).properties(
             padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
-        ).configure_legend(columns=1, symbolLimit=50, titleLimit=0, labelLimit=0)
+        ).configure_legend(columns=1, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-thresholded-proportional.pdf')
 
 if doNameChecking:
