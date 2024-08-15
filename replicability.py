@@ -29,6 +29,7 @@ downloadAcmFromCrossref = True # if True, then use the Crossref API to get ACM m
 
 # other configuration
 visPadding = 0 # the padding in pixels to be applied to the exported visualizations, set to 0 for use in paper, otherwise 5 is good
+makeMainPieChartsComparable = True # if the main paie charts should use a single color scale such that each country always has the same color
 graphOutputSubdirectury = "graphs/"
 paperFiguresOutputSubdirectury = "paper_figures/"
 dataOutputSubdirectury = "publication_data/"
@@ -40,7 +41,7 @@ numberOfAuhorHistogramBins = 11
 countryPieChartThreshold = 2.5 # in percent (1--100)
 neutralGray = "#a9a9a9"
 paperNumbersOutputString += "\\newcommand{\\GrsiCountryPieChartThreshold}{" + str(countryPieChartThreshold) + "}\n"
-myLabelLimit = 500
+myLabelLimit = 500 # this is a weird issue: technically a value of 0 should mean no limit, but sometimes it literally means a limit of 0; so a sufficiently large number is needed here to avoid label cropping, 500 should work
 
 #####################################
 # change to directory of the script
@@ -72,6 +73,19 @@ with open('palettes.js', 'r') as file:
             vegaPalletData[label] = colorDataArray
 
 #####################################
+# find the correct date string to be able to read and write the correct files (this will be the default, need to replace it with the old data potentially)
+#####################################
+current_date = datetime.datetime.now()
+grsiMetaData = {}
+current_year = datetime.datetime.now().year
+current_month = datetime.datetime.now().month
+current_day = datetime.datetime.now().day
+grsiMetaData["data_download_year"] = current_year
+grsiMetaData["data_download_month"] = current_month
+grsiMetaData["data_download_day"] = current_day
+formatted_date = f"{current_year}{current_month:02d}{current_day:02d}"
+
+#####################################
 # now the main script, starting with some functions
 #####################################
 def hex_to_rgb(hex_color):
@@ -99,6 +113,25 @@ def numberExtension(number):
     if (lastChar == '2'): return 'nd'
     if (lastChar == '3'): return 'rd'
     return "th"
+
+def intToRoman(num):
+    # storing Roman values of digits from 0-9 when placed at different places
+    m = ["", "M", "MM", "MMM"]
+    c = ["", "C", "CC", "CCC", "CD", "D",
+         "DC", "DCC", "DCCC", "CM "]
+    x = ["", "X", "XX", "XXX", "XL", "L",
+         "LX", "LXX", "LXXX", "XC"]
+    i = ["", "I", "II", "III", "IV", "V",
+         "VI", "VII", "VIII", "IX"]
+ 
+    # converting to Roman
+    thousands = m[num // 1000]
+    hundreds = c[(num % 1000) // 100]
+    tens = x[(num % 100) // 10]
+    ones = i[num % 10]
+    ans = (thousands + hundreds + tens + ones)
+ 
+    return ans
 
 def unmarkPapers(paperList, labels = ["is_vis", "type"], targets = [False, None]):
     for label, target in zip(labels, targets):
@@ -179,7 +212,7 @@ def filterAndShortenJournalNames(journalName = ""):
     if publicationVenue == 'ACM SIGGRAPH Conference Papers': publicationVenue = 'SIGGRAPH conf.' # shortening
     return publicationVenue
 
-def generateColorArrayFromColorScheme(sourceColorScheme, lightenFactor=0.5):
+def generateColorArrayFromColorScheme(sourceColorScheme, lightenFactor=0.5, colorsReverse = False):
     source_color_scheme = sourceColorScheme
     source_color_scheme2 = ""
     addLightenedColors = False
@@ -230,25 +263,37 @@ def generateColorArrayFromColorScheme(sourceColorScheme, lightenFactor=0.5):
     colorArray = []
     for i in range(0, len(originalColorArray)):
         color = originalColorArray[colorMapping[i]]
-        colorArray.append(color)
         if addLightenedColors:
             colorRgb = hex_to_rgb(color)
             lighterColor = lighten_color(r = colorRgb[0], g = colorRgb[1], b = colorRgb[2], factor=lightenFactor)
             lighterColorHex = rgb_to_hex(lighterColor[0], lighterColor[1], lighterColor[2])
-            colorArray.append(lighterColorHex)
+            if (colorsReverse):
+                colorArray.append(lighterColorHex)
+                colorArray.append(color)
+            else:
+                colorArray.append(color)
+                colorArray.append(lighterColorHex)
+        else:
+            colorArray.append(color)
     if (source_color_scheme2 != ""):
         for i in range(baseIndex, baseIndex + len(originalColorArray2)):
             color = originalColorArray2[colorMapping[i]]
-            colorArray.append(color)
             if addLightenedColors:
                 colorRgb = hex_to_rgb(color)
                 lighterColor = lighten_color(r = colorRgb[0], g = colorRgb[1], b = colorRgb[2], factor=lightenFactor)
                 lighterColorHex = rgb_to_hex(lighterColor[0], lighterColor[1], lighterColor[2])
-                colorArray.append(lighterColorHex)
+                if (colorsReverse):
+                    colorArray.append(lighterColorHex)
+                    colorArray.append(color)
+                else:
+                    colorArray.append(color)
+                    colorArray.append(lighterColorHex)
+            else:
+                colorArray.append(color)
     
     return colorArray
 
-def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataField = "venue", cTitleSpecifier = "", yTitleSpecifier = "", colorScheme = "tableau10", legendColumns = 10, visPadding = 5, legendOffset = 10, labelAngle=0, chartsToPlot = ["all"]):
+def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataField = "venue", cTitleSpecifier = "", yTitleSpecifier = "", colorScheme = "tableau10", legendColumns = 10, visPadding = 5, legendOffset = 10, labelAngle=0, chartsToPlot = ["all"], addTicksBetweenYears = False, addNoteBelowLegend = False, noteXOffset = 33):
     altairData = pd.DataFrame(dataToPlot)
     cTitle = dataField
     if cTitleSpecifier != "": cTitle = cTitleSpecifier
@@ -258,7 +303,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
     xTitle = None # we don't really need a title
 
     # if ("all" in chartsToPlot) or ("stackedareagraph" in chartsToPlot):
-    if ("stackedareagraph" in chartsToPlot): # for now we don't need the stacked area graphs, and some are confusing, too
+    if ("stackedareagraph" in chartsToPlot): # only if requested explicitly, for now we don't need the stacked area graphs, and some are confusing, too
         chart = alt.Chart(altairData).mark_area().encode(
             x = alt.X('year:N', title=xTitle, sort=None).axis(labelAngle=labelAngle),
             y = alt.Y('sum(count):Q', title=yTitle), #.stack('zero'),
@@ -314,7 +359,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
         chart.save(baseName + '-stackedbargraph-normalized.pdf')
 
     # if ("all" in chartsToPlot) or ("singlebargraphs" in chartsToPlot):
-    if ("singlebargraphs" in chartsToPlot): # for now we do not need the single bar graphs
+    if ("singlebargraphs" in chartsToPlot): # only if requested explicitly, for now we do not need the single bar graphs
         chart = alt.Chart(altairData).mark_bar().encode(
             x = alt.X('year:N', title=xTitle, sort=None).axis(tickWidth=0, labelAngle=labelAngle),
             y = alt.Y('sum(count):Q', title=yTitle),
@@ -338,7 +383,27 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
             y = alt.Y('count:Q', title=yTitle),
             color = alt.Color(dataField + ':N', title=cTitle, sort=None), #.scale(scheme=colorScheme)
             xOffset=alt.XOffset(dataField + ':N', sort=None)
-        ).configure_range(
+        )
+        if (addTicksBetweenYears):
+            # add vertical tick marks between the years for better reading
+            # this is a total hack, we create another chart but don't actually display it, neither its axis, and only get the tick marks from it at year boundaries
+            years = altairData['year'].tolist()
+            yearsUnique = []
+            for yearString in years:
+                yearNumber = int(yearString.replace('in press', str(current_year + 1)))
+                if not yearNumber in yearsUnique: yearsUnique.append(yearNumber)
+            startYear = yearsUnique[0]
+            endYear = yearsUnique[-1]
+            lines = (
+                alt.Chart(altairData).mark_rule().encode(
+                    x = alt.X("year:Q", axis=None, title=None).axis(ticks=True, labels=False, grid=False, domain=False, orient='bottom',tickCount=endYear-startYear+2).scale(domain=[startYear - 0.1, endYear + 1.1]),
+                    color= alt.value("#ffffff"),
+                    size=alt.value(0.0)
+                )
+            )
+            chart = chart+lines # layer the two charts
+        # rest of processing
+        chart = chart.configure_range(
             category=alt.RangeScheme(generateColorArrayFromColorScheme(colorScheme))
         ).configure_view(
             strokeOpacity=0 # this removes the gray box around the plot
@@ -347,6 +412,16 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
             width=500,
             height=300
         ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
+        if (addNoteBelowLegend):
+            chart = chart.properties(title=alt.TitleParams( # this way of adding a note below the legend is also a total hack because there is no other way to add a text field there
+                ['Please note that the colors/entries per year always follow the order of the legend.'],
+                baseline='bottom',
+                orient='bottom',
+                anchor='start',
+                fontWeight='normal',
+                fontSize=10,
+                dy=13, dx=noteXOffset
+            ))
 
         chart.save(baseName + '-groupedbargraph.pdf')
 
@@ -398,6 +473,7 @@ def digitToNameSequence(number):
 
 # read the dois of the IEEE VIS papers from vispubdata (as csv file)
 visPubDataDois = []
+visPubDataConferenceYears = {}
 visPubDataAuthorsDeduped = {}
 visPubDataMostRecentYear = 0
 with open('input/vispubdata.csv', 'r', encoding="utf-8") as csvfile:
@@ -405,12 +481,14 @@ with open('input/vispubdata.csv', 'r', encoding="utf-8") as csvfile:
     reader = csv.DictReader(csvfile)
     # iterate over the rows
     for row in reader:
-        visPubDataDois.append(row['DOI'].lower())
-        visPubDataAuthorsDeduped[row['DOI'].lower()] = row['AuthorNames-Deduped'].split(';') # AuthorNames-Deduped,AuthorNames
+        doi = row['DOI'].lower()
         year = int(row['Year'])
+        visPubDataDois.append(doi)
+        visPubDataConferenceYears[doi] = year
+        visPubDataAuthorsDeduped[doi] = row['AuthorNames-Deduped'].split(';') # AuthorNames-Deduped,AuthorNames
         if (year > visPubDataMostRecentYear): visPubDataMostRecentYear = year
 
-# # when vispubdata is not current, we can also use TVCG's CSV export of the VIS issues to add the missing data
+# when vispubdata is not current, we can also use TVCG's CSV export of the VIS issues to add the missing data
 tvcgFilenamesList = glob.glob('input/tvcg-[0-9][0-9][0-9][0-9]-vol-[0-9][0-9]-no-[0-9][0-9].csv')
 for tvcgFilename in tvcgFilenamesList:
     with open(tvcgFilename, 'r', encoding="utf-8") as csvfile:
@@ -420,8 +498,24 @@ for tvcgFilename in tvcgFilenamesList:
         for row in reader:
             tvcgDoi = row['DOI'].lower()
             if tvcgDoi not in visPubDataDois: # so that we do not duplicate the loaded dois
-                visPubDataDois.append(tvcgDoi)
                 year = int(row['Publication Year']) - 1 # the year in the data is the year of publication in TVCG, not presentation at VIS, so we need to deduct 1
+                visPubDataDois.append(tvcgDoi)
+                visPubDataConferenceYears[doi] = year # TVCG now publishes always in the year following the conference
+                if (year > visPubDataMostRecentYear): visPubDataMostRecentYear = year
+
+# another alternative: a manually created spreadsheet of accepted VIS papers (I added this mainly for the BELIV paper submission)
+acceptedVisPapersFilenamesList = glob.glob('input/vis-[0-9][0-9][0-9][0-9].csv')
+for acceptedVisPapersFilename in acceptedVisPapersFilenamesList:
+    with open(acceptedVisPapersFilename, 'r', encoding="utf-8") as csvfile:
+        # create a CSV reader object
+        reader = csv.DictReader(csvfile)
+        # iterate over the rows
+        for row in reader:
+            visDoi = row['DOI'].lower()
+            if visDoi not in visPubDataDois: # so that we do not duplicate the loaded dois (should not happen if we use fake DOIs)
+                year = int(row['Year']) # the year in the data is the year of presentation at VIS
+                visPubDataDois.append(visDoi)
+                visPubDataConferenceYears[visDoi] = year
                 if (year > visPubDataMostRecentYear): visPubDataMostRecentYear = year
 
 # read the dois of the IEEE VIS journal presentations (as csv file)
@@ -578,17 +672,6 @@ with pd.ExcelFile('input/EuroVisSTARS_CGF.xlsx') as xls:
 updatingGrsiDataFromWeb = False # we will only do this for the first run of the script in a day, otherwise we use the stored data
 # this variable will also be used for determining if we should update the extra data for the papers from the digital libraries
 
-# find the correct date string to be able to read and write the correct files (this will be the default, need to replace it with the old data potentially)
-current_date = datetime.datetime.now()
-grsiMetaData = {}
-current_year = datetime.datetime.now().year
-current_month = datetime.datetime.now().month
-current_day = datetime.datetime.now().day
-grsiMetaData["data_download_year"] = current_year
-grsiMetaData["data_download_month"] = current_month
-grsiMetaData["data_download_day"] = current_day
-formatted_date = f"{current_year}{current_month:02d}{current_day:02d}"
-
 # this will be the list that records all data
 paperList = []
 paperCounter = 0
@@ -621,7 +704,8 @@ else:
             x = anchor.find('div', attrs={'class': 'content'})
 
             title = str(x.find_next("h3").find_next("a").get_text())
-            paperItem['title'] = title
+            paperItem['title'] = title.strip()
+            if paperItem['title'][-1] == '.': paperItem['title'] = paperItem['title'][:-1] # cleaning up
 
             # doi data clean-up
             doi = str(x.findAll("a")[3].get('href'))
@@ -629,9 +713,13 @@ else:
             doi = doi.replace("https://doi.ieeecomputersociety.org/", "")
             doi = re.sub(pattern=r"https://diglib\.eg\.org(?::443)?/handle/10\.1111/cgf(\d+)", repl=r"10.1111/cgf.\1", string=doi)
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
-            doi = doi.replace("http://www.google.com/search?q=Quadratic-Attraction Subdivision with Contraction-Ratio λ = 1/2", "10.1016/j.cag.2024.104001")
+            # please note to replace the '%20' in the Google search links with a ' '; otherwise the replacement does not work
+            doi = doi.replace("http://www.google.com/search?q=Volumetric nonwoven structures: An algebraic framework for systematic design of infinite polyhedral frames using nonwoven fabric patterns", "10.1016/j.cag.2024.103979")
+            doi = doi.replace("http://www.google.com/search?q=SimpleSets: Capturing Categorical Point Patterns with Simple Shapes", "10.vis2024/1153") # fake DOI for accepted VIS 2024 papers
+            doi = doi.replace("http://www.google.com/search?q=A Practical Solver for Scalar Data Topological Simplification.", "10.vis2024/1461") # fake DOI for accepted VIS 2024 papers
+            doi = doi.replace("http://www.google.com/search?q=ProvenanceWidgets: A Library of UI Control Elements to Track and Dynamically Overlay Analytic Provenance", "10.vis2024/1204") # fake DOI for accepted VIS 2024 papers
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
-            doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for Google searches (once assigned add a manual override as above)
+            doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()
             # print a warning if the doi does not check out
             if (doi[0:3] != "10."): print("WARNING: The DOI we read from GRSI page that does not seem to formatted correctly for a DOI: " + doi)
@@ -923,8 +1011,15 @@ with open(formatted_date + " current-list.txt", "w", encoding='utf-8') as f:
     print("\nIEEE VIS papers (only those we know were accepted directly to the conference, up to the conference in " + str(visPubDataMostRecentYear) + ", via vispubdata DOIs): " + str(visCounter - oldVisCounter) + " papers", file=f)
     paperNumbersOutputString += "\\newcommand{\\GrsiIeeeVisPapersCount}{" + str(visCounter - oldVisCounter) + "}\n"
     paperNumbersOutputString += "\\newcommand{\\GrsiIeeeVisPapersLastYear}{" + str(visPubDataMostRecentYear) + "}\n"
+    visPapersPerYear = {}
     for paper in paperList:
-        if ((paper["is_vis"]) and (paper["doi"] in visPubDataDois)): print("https://doi.org/" + str(paper["doi"].ljust(doiPaddingCount) + " -- " + str(paper["title"])), file=f)
+        if ((paper["is_vis"]) and (paper["doi"] in visPubDataDois)):
+            print("https://doi.org/" + str(paper["doi"].ljust(doiPaddingCount) + " -- " + str(paper["title"])), file=f)
+            year = visPubDataConferenceYears[paper["doi"]]
+            if year in visPapersPerYear.keys(): visPapersPerYear[year] += 1
+            else: visPapersPerYear[year] = 1
+    for year in visPapersPerYear.keys(): paperNumbersOutputString += "\\newcommand{\\GrsiIeeeVisPapersIn" + intToRoman(year) + "}{" + str(visPapersPerYear[year]) + "}\n"
+
 
     ############################################
     ### journal paper presentations at IEEE VIS
@@ -1079,7 +1174,7 @@ with open(formatted_date + " current-list.txt", "w", encoding='utf-8') as f:
         if ("type" in paper.keys()) and (paper["type"] == "keyword"): visCounter += 1
 
     # print visualization papers maked by keyword
-    print("\npapers on visualization topics by keyword: " + str(visCounter) + " papers", file=f)
+    print("\nadditional papers on visualization topics identified by keyword: " + str(visCounter) + " papers", file=f)
     paperNumbersOutputString += "\\newcommand{\\GrsiVisByKeywordPapersCount}{" + str(visCounter) + "}\n"
     visByKeywordCount = visCounter
     for paper in paperList:
@@ -1093,7 +1188,7 @@ with open(formatted_date + " current-list.txt", "w", encoding='utf-8') as f:
         if ("type" in paper.keys()) and (paper["type"] == "manual"): visCounter += 1
 
     # print visualization papers maked manually
-    print("\nsome additional manually selected papers that could not be identified by keyword: " + str(visCounter) + " papers", file=f)
+    print("\nadditional manually selected papers that could not be identified by keyword: " + str(visCounter) + " papers", file=f)
     paperNumbersOutputString += "\\newcommand{\\GrsiVisManuallyMarkedPapersCount}{" + str(visCounter) + "}\n"
     paperNumbersOutputString += "\\newcommand{\\GrsiVisKeywordPlusManualPapersCount}{" + str(visCounter + visByKeywordCount) + "}\n"
     visKeywordPlusManualPapersCount = visCounter + visByKeywordCount
@@ -1264,7 +1359,6 @@ if exportVisualizations:
 
     # then extract the data we want to visualize, first overall
     journalsAndYears = {'IEEE TVCG': {}, 'ACM ToG': {}, 'Wiley CGF': {}, 'Elsevier C&G': {}, 'Elsevier CAD': {}, 'SIGGRAPH conf.': {}, 'Software Impacts': {}} # with pre-sorting
-    dataToPlot = []
     earliestYear = grsiMetaData["data_download_year"]
     latestYear = grsiMetaData["data_download_year"]
     for paper in paperList:
@@ -1284,6 +1378,31 @@ if exportVisualizations:
                 if publicationYear != grsiMetaData["data_download_year"] + 1000: latestYear = publicationYear
 
     order = 0
+    dataToPlot = []
+    for publicationVenue in journalsAndYears.keys():
+        # sort the dictionary
+        journalsAndYears[publicationVenue] = dict(sorted(journalsAndYears[publicationVenue].items()))
+        order += 1
+
+        # collect all the data for visualization
+        listOfYears = list(range(earliestYear, latestYear + 1)) # all the real years, including the latest one yet without the in-press papers
+        listOfYears.append(grsiMetaData["data_download_year"] + 1000) # and now do not forget our fake "in-press" year
+        for year in listOfYears:
+            dataItem = {}
+            dataItem["journal"] = publicationVenue
+            dataItem["order"] = order
+            dataItem["year"] = str(year)
+            dataItem["count"] = 0 # as a fall-back, in case there were no publications from this venue in that year
+            if year == grsiMetaData["data_download_year"] + 1000:
+                dataItem["year"] = "in press"
+            if year in journalsAndYears[publicationVenue].keys(): dataItem["count"] = journalsAndYears[publicationVenue][year]
+            dataToPlot.append(dataItem)
+
+    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_all-by-journal", dataField = "journal", cTitleSpecifier = "journal or conference", yTitleSpecifier = "published journal papers w/ GRS", visPadding = visPadding, legendColumns = 5, chartsToPlot = ["all"], addTicksBetweenYears = True, addNoteBelowLegend = True, noteXOffset = 33)
+
+    # now let's do that again and overwrite the line graph file with the nan hack (see below; which would fail the aggregated plots)
+    order = 0
+    dataToPlot = []
     for publicationVenue in journalsAndYears.keys():
         # sort the dictionary
         journalsAndYears[publicationVenue] = dict(sorted(journalsAndYears[publicationVenue].items()))
@@ -1304,7 +1423,7 @@ if exportVisualizations:
             if year in journalsAndYears[publicationVenue].keys(): dataItem["count"] = journalsAndYears[publicationVenue][year]
             dataToPlot.append(dataItem)
 
-    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_all-by-journal", dataField = "journal", cTitleSpecifier = "journal or conference", yTitleSpecifier = "published journal papers w/ GRS", visPadding = visPadding, legendColumns = 5)
+    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_all-by-journal", dataField = "journal", cTitleSpecifier = "journal or conference", yTitleSpecifier = "published journal papers w/ GRS", visPadding = visPadding, legendColumns = 5, chartsToPlot = ["linegraph"], addTicksBetweenYears = True, addNoteBelowLegend = True, noteXOffset = 33)
 
     # see how visualization contribution changes over the years    
     visualizationAndYears = {'papers on visualization topics': {}, 'papers not on visualization topics': {}} # with pre-sorting
@@ -1354,7 +1473,6 @@ if exportVisualizations:
     journalsAndYears = {}
     for venue in visJournalListSorted: # base the dictionary this time on the list (easier in case we later need to add another journal to the list)
         journalsAndYears[venue] = {}
-    dataToPlot = []
     earliestYear = grsiMetaData["data_download_year"]
     latestYear = grsiMetaData["data_download_year"]
     for paper in paperList:
@@ -1374,6 +1492,31 @@ if exportVisualizations:
                 if publicationYear != grsiMetaData["data_download_year"] + 1000: latestYear = publicationYear
 
     order = 0
+    dataToPlot = []
+    for publicationVenue in journalsAndYears.keys():
+        # sort the dictionary
+        journalsAndYears[publicationVenue] = dict(sorted(journalsAndYears[publicationVenue].items()))
+        order += 1
+
+        # collect all the data for visualization
+        listOfYears = list(range(earliestYear, latestYear + 1)) # all the real years, including the latest one yet without the in-press papers
+        listOfYears.append(grsiMetaData["data_download_year"] + 1000) # and now do not forget our fake "in-press" year
+        for year in listOfYears:
+            dataItem = {}
+            dataItem["journal"] = publicationVenue
+            dataItem["order"] = order
+            dataItem["year"] = str(year)
+            dataItem["count"] = 0 # as a fall-back, in case there were no publications from this venue in that year
+            if year == grsiMetaData["data_download_year"] + 1000:
+                dataItem["year"] = "in press"
+            if year in journalsAndYears[publicationVenue].keys(): dataItem["count"] = journalsAndYears[publicationVenue][year]
+            dataToPlot.append(dataItem)
+
+    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_visualization-by-journal", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published visualization journal papers w/ GRS", visPadding = visPadding, chartsToPlot = ["all"], addTicksBetweenYears = True, addNoteBelowLegend = True, noteXOffset = 33)
+
+    # now let's do that again and overwrite the line graph file with the nan hack (see below; which would fail the aggregated plots)
+    order = 0
+    dataToPlot = []
     for publicationVenue in journalsAndYears.keys():
         # sort the dictionary
         journalsAndYears[publicationVenue] = dict(sorted(journalsAndYears[publicationVenue].items()))
@@ -1394,7 +1537,7 @@ if exportVisualizations:
             if year in journalsAndYears[publicationVenue].keys(): dataItem["count"] = journalsAndYears[publicationVenue][year]
             dataToPlot.append(dataItem)
 
-    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_visualization-by-journal", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published visualization journal papers w/ GRS", visPadding = visPadding)
+    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_visualization-by-journal", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published visualization journal papers w/ GRS", visPadding = visPadding, chartsToPlot = ["linegraph"], addTicksBetweenYears = True, addNoteBelowLegend = True, noteXOffset = 33)
 
     # merge the keywords and manual
     for paper in paperList:
@@ -1409,7 +1552,6 @@ if exportVisualizations:
     for venue in visJournalListSorted: # base the dictionary this time on the list (easier in case we later need to add another journal to the list)
         journalsAndYears[venue + separationString + visVenueName] = {}
         journalsAndYears[venue + separationString + keywordName] = {}
-    dataToPlot = []
     earliestYear = grsiMetaData["data_download_year"]
     latestYear = grsiMetaData["data_download_year"]
     for paper in paperList:
@@ -1432,6 +1574,7 @@ if exportVisualizations:
                 if publicationYear != grsiMetaData["data_download_year"] + 1000: latestYear = publicationYear
 
     order = 0
+    dataToPlot = []
     for publicationVenue in journalsAndYears.keys():
         # sort the dictionary
         journalsAndYears[publicationVenue] = dict(sorted(journalsAndYears[publicationVenue].items()))
@@ -1448,11 +1591,35 @@ if exportVisualizations:
             dataItem["count"] = 0 # as a fall-back, in case there were no publications from this venue in that year
             if year == grsiMetaData["data_download_year"] + 1000:
                 dataItem["year"] = "in press"
-                dataItem["count"] = nan # only for in-press journals do we not want a value plotted if it is 0
             if year in journalsAndYears[publicationVenue].keys(): dataItem["count"] = journalsAndYears[publicationVenue][year]
             dataToPlot.append(dataItem)
+    
+    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_visualization-by-journal_plus_type", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published visualization journal papers w/ GRS", visPadding = visPadding, colorScheme = "tableau20matching", legendColumns = 2, chartsToPlot = ["all"], addTicksBetweenYears = True, addNoteBelowLegend = True, noteXOffset = 33)
 
-    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_visualization-by-journal_plus_type", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published visualization journal papers w/ GRS", visPadding = visPadding, colorScheme = "tableau20matching", legendColumns = 2)
+    # now let's do that again and overwrite the line graph file with the nan hack (see below; which would fail the aggregated plots)
+    order = 0
+    dataToPlot = []
+    for publicationVenue in journalsAndYears.keys():
+        # sort the dictionary
+        journalsAndYears[publicationVenue] = dict(sorted(journalsAndYears[publicationVenue].items()))
+        order += 1
+
+        # collect all the data for visualization
+        listOfYears = list(range(earliestYear, latestYear + 1)) # all the real years, including the latest one yet without the in-press papers
+        listOfYears.append(grsiMetaData["data_download_year"] + 1000) # and now do not forget our fake "in-press" year
+        for year in listOfYears:
+            dataItem = {}
+            dataItem["journal"] = publicationVenue
+            dataItem["order"] = order
+            dataItem["year"] = str(year)
+            dataItem["count"] = 0 # as a fall-back, in case there were no publications from this venue in that year
+            if year == grsiMetaData["data_download_year"] + 1000:
+                dataItem["year"] = "in press"
+                dataItem["count"] = nan # this is a hack to get correct line graphs: only for in-press journals do we not want a value plotted if it is 0
+            if year in journalsAndYears[publicationVenue].keys(): dataItem["count"] = journalsAndYears[publicationVenue][year]
+            dataToPlot.append(dataItem)
+    
+    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_visualization-by-journal_plus_type", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published visualization journal papers w/ GRS", visPadding = visPadding, colorScheme = "tableau20matching", legendColumns = 2, chartsToPlot = ["linegraph"], addTicksBetweenYears = True, addNoteBelowLegend = True, noteXOffset = 33)
 
     # the same visualizations again by journal but aggregated (without years), and again split into papers presented at vis venues and others only classified by keyword/manually
     separationString = ': '
@@ -1498,12 +1665,11 @@ if exportVisualizations:
         dataItem["count"] = journalsOnly[publicationVenue]
         dataToPlot.append(dataItem)
 
-    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_visualization-by-journal_plus_type_aggregated", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published visualization journal papers w/ GRS", visPadding = visPadding, colorScheme = "tableau20matching", legendColumns = 2)
+    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_visualization-by-journal_plus_type_aggregated", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published visualization journal papers w/ GRS", visPadding = visPadding, colorScheme = "tableau20matching", legendColumns = 2, chartsToPlot = ["stackedbargraph", "stackedbargraph-normalized"])
 
     # now visualize visualization, then by type
     # pre-sorting the order in which we want things
     journalsAndYears = {'IEEE VIS': {}, 'journal pres. @ IEEE VIS': {}, 'EuroVis': {}, 'journal pres. @ EuroVis': {}, 'PacificVis TVCG': {}, 'journal pres. @ PacificVis': {}, 'VCBM C&G': {}, 'C&G special issue': {}, 'keyword/manual': {}}
-    dataToPlot = []
     earliestYear = grsiMetaData["data_download_year"]
     latestYear = grsiMetaData["data_download_year"]
     for paper in paperList:
@@ -1523,6 +1689,31 @@ if exportVisualizations:
                 if publicationYear != grsiMetaData["data_download_year"] + 1000: latestYear = publicationYear
 
     order = 0
+    dataToPlot = []
+    for publicationType in journalsAndYears.keys():
+        # sort the dictionary
+        journalsAndYears[publicationType] = dict(sorted(journalsAndYears[publicationType].items()))
+        order += 1
+
+        # collect all the data for visualization
+        listOfYears = list(range(earliestYear, latestYear + 1)) # all the real years, including the latest one yet without the in-press papers
+        listOfYears.append(grsiMetaData["data_download_year"] + 1000) # and now do not forget our fake "in-press" year
+        for year in listOfYears:
+            dataItem = {}
+            dataItem["type"] = publicationType
+            dataItem["order"] = order
+            dataItem["year"] = str(year)
+            dataItem["count"] = 0 # as a fall-back, in case there were no publications from this venue in that year
+            if year == grsiMetaData["data_download_year"] + 1000:
+                dataItem["year"] = "in press"
+            if year in journalsAndYears[publicationType].keys(): dataItem["count"] = journalsAndYears[publicationType][year]
+            dataToPlot.append(dataItem)
+
+    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_visualization-by-type", dataField = "type", cTitleSpecifier = "classified as visualization by ...", yTitleSpecifier = "published visualization journal papers w/ GRS", colorScheme = "tableau20", legendColumns = 4, visPadding = visPadding, chartsToPlot = ["all"], addTicksBetweenYears = True, addNoteBelowLegend = True, noteXOffset = 33)
+
+    # now let's do that again and overwrite the line graph file with the nan hack (see below; which would fail the aggregated plots)
+    order = 0
+    dataToPlot = []
     for publicationType in journalsAndYears.keys():
         # sort the dictionary
         journalsAndYears[publicationType] = dict(sorted(journalsAndYears[publicationType].items()))
@@ -1546,7 +1737,7 @@ if exportVisualizations:
             if year in journalsAndYears[publicationType].keys(): dataItem["count"] = journalsAndYears[publicationType][year]
             dataToPlot.append(dataItem)
 
-    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_visualization-by-type", dataField = "type", cTitleSpecifier = "classified as visualization by ...", yTitleSpecifier = "published visualization journal papers w/ GRS", colorScheme = "tableau20", legendColumns = 4, visPadding = visPadding)
+    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_visualization-by-type", dataField = "type", cTitleSpecifier = "classified as visualization by ...", yTitleSpecifier = "published visualization journal papers w/ GRS", colorScheme = "tableau20", legendColumns = 4, visPadding = visPadding, chartsToPlot = ["linegraph"], addTicksBetweenYears = True, addNoteBelowLegend = True, noteXOffset = 33)
 
     # pie chart that compares the vis content from the rest, for all journals
     journalsAndCounts = {}
@@ -1616,12 +1807,12 @@ if exportVisualizations:
         dataItem["count"] = dataToPlot_old["value"][i]
         dataToPlot.append(dataItem)
 
-    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_all-by-journal_aggregated", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published journal papers w/ GRS", visPadding = visPadding, colorScheme = "tableau20matching", legendColumns = 2, labelAngle = -20)
+    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_all-by-journal_aggregated", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published journal papers w/ GRS", visPadding = visPadding, colorScheme = "tableau20matching", legendColumns = 2, labelAngle = -20, chartsToPlot = ["stackedbargraph", "stackedbargraph-normalized"])
 
     # now we want to see the numbers and percentages of replicability for our significant venues
     visVenuesAndReplicability = {}
     startYear = 2016 # it does not make sense before, since the GRSI starts in 2016 (but there do not seem to be vis papers among the GRSI papers in 2016, and the official start is 2017)
-    endYear = grsiMetaData["data_download_year"] # currently we do not yet have anything in 2024, only after EuroVis
+    endYear = grsiMetaData["data_download_year"] # the current year of the data
     venues = ['IEEE VIS', 'journal pres. @ IEEE VIS', 'EuroVis', 'journal pres. @ EuroVis', 'PacificVis TVCG', 'journal pres. @ PacificVis', 'VCBM C&G', 'C&G special issue']
     for venue in venues:
         visVenuesAndReplicability[venue] = {}
@@ -1667,6 +1858,24 @@ if exportVisualizations:
                         if paperDoi in replicableDois: visVenuesAndReplicability[venue][year]["is_replicable"] += 1
                         else:  visVenuesAndReplicability[venue][year]["not_replicable"] += 1
             csvfile.close()
+
+    # another alternative: a manually created spreadsheet of accepted VIS papers (I added this mainly for the BELIV paper submission)
+    acceptedVisPapersFilenamesList = glob.glob('input/vis-[0-9][0-9][0-9][0-9].csv')
+    for acceptedVisPapersFilename in acceptedVisPapersFilenamesList:
+        with open(acceptedVisPapersFilename, 'r', encoding="utf-8") as csvfile:
+            # create a CSV reader object
+            reader = csv.DictReader(csvfile)
+            # iterate over the rows
+            for row in reader:
+                visDoi = row['DOI'].lower()
+                if visDoi not in vispubdataLoadedDoisForChecking: # so that we do not duplicate the loaded dois (should not happen if we use fake DOIs)
+                    vispubdataLoadedDoisForChecking.append(visDoi)
+                    year = int(row['Year']) # the year in the data is the year of presentation at VIS
+                    if year >= startYear and year <= endYear:
+                        if visDoi in replicableDois: visVenuesAndReplicability[venue][year]["is_replicable"] += 1
+                        else:  visVenuesAndReplicability[venue][year]["not_replicable"] += 1
+            csvfile.close()
+
 
     # IEEE VIS journal presentations
     with open('input/vis_journal_presentations.csv', 'r', encoding="utf-8") as csvfile:
@@ -1840,20 +2049,44 @@ if exportVisualizations:
             dataToPlot.append({"venue": venue, "name": venue + ": w/o GRS", "year": year, "replicable": False, "count": count2})#, "order": color_number * 2 + 1, "order2": len(venues) + color_number})
     altairData = pd.DataFrame(dataToPlot)
 
-    chart = alt.Chart(altairData, width={"step": 15}).mark_bar().encode(
+    chart = alt.Chart(altairData).mark_bar().encode(
         x = alt.X('year:N', title=None).axis(tickWidth=0, labelAngle=0),#domain=False, 
         y = alt.Y('sum(count):Q', title='published visualization journal papers'),
         color = alt.Color('name:N', sort=None, title="visualization venues"),
         xOffset=alt.XOffset('venue:N', sort=None),
         order = alt.Order("venue:Q")
-    ).configure_range(
+    )
+    # add vertical tick marks between the years for better reading
+    # this is a total hack, we create another chart but don't actually display it, neither its axis, and only get the tick marks from it at year boundaries
+    lines = (
+        alt.Chart(altairData).mark_rule().encode(
+            x = alt.X("year:Q", axis=None, title=None).axis(ticks=True, labels=False, grid=False, domain=False, orient='bottom',tickCount=endYear-startYear+2).scale(domain=[startYear - 0.1, endYear + 1.1]),
+            color= alt.value("#ffffff"),
+            size=alt.value(0.0)
+        )
+    )
+    chart = chart+lines # layer the two charts
+    # rest of processing
+    chart = chart.configure_range(
         category=alt.RangeScheme(colors)
     ).configure_legend(orient='right', direction='vertical'
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
         width=600,
         height=300
-    )
+    ).properties(title=alt.TitleParams( # this way of adding a note below the legend is also a total hack because there is no other way to add a text field there
+        ['Please note that the colors/entries'],
+        subtitle=['always follow the order of the legend.'], # this hack limits the note to two lines only, unfortunately, multiline is not supported by PDF export
+        baseline='bottom',
+        orient='bottom',
+        anchor='start',
+        fontWeight='normal',
+        subtitleFontWeight='normal',
+        fontSize=10,
+        subtitleFontSize=10,
+        dy=-80, dx=657 # emprirically found, should remain the same as long as the width and height in configure_view stay the same
+    ))
+
     chart.save(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph.pdf')
 
     chart = alt.Chart(altairData, width={"step": 15}).mark_bar().encode(
@@ -1862,14 +2095,37 @@ if exportVisualizations:
         color = alt.Color('name:N', sort=None, title="visualization venues"),
         xOffset=alt.XOffset('venue:N', sort=None),
         order = alt.Order("venue:Q")
-    ).configure_range(
+    )
+    # add vertical tick marks between the years for better reading
+    # this is a total hack, we create another chart but don't actually display it, neither its axis, and only get the tick marks from it at year boundaries
+    lines = (
+        alt.Chart(altairData).mark_rule().encode(
+            x = alt.X("year:Q", axis=None, title=None).axis(ticks=True, labels=False, grid=False, domain=False, orient='bottom',tickCount=endYear-startYear+2).scale(domain=[startYear - 0.1, endYear + 1.1]),
+            color= alt.value("#ffffff"),
+            size=alt.value(0.0)
+        )
+    )
+    chart = chart+lines # layer the two charts
+    # rest of processing
+    chart = chart.configure_range(
         category=alt.RangeScheme(colors)
     ).configure_legend(orient='right', direction='vertical'
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
         width=600,
         height=300
-    )
+    ).properties(title=alt.TitleParams( # this way of adding a note below the legend is also a total hack because there is no other way to add a text field there
+        ['Please note that the colors/entries'],
+        subtitle=['always follow the order of the legend.'],
+        baseline='bottom',
+        orient='bottom',
+        anchor='start',
+        fontWeight='normal',
+        subtitleFontWeight='normal',
+        fontSize=10,
+        subtitleFontSize=10,
+        dy=-80, dx=666 # emprirically found, should remain the same as long as the width and height in configure_view stay the same
+    ))
     chart.save(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-normalized.pdf')
 
     dataToPlot = []
@@ -2121,14 +2377,45 @@ if exportVisualizations:
         ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-absolute.pdf')
 
+        colorsGrsiPerCountryLookup = {}
+        colorsGrsiPerCountryThresholded = []
+        colorsGrsiPerCountryWholeListIndex = 0
+        if makeMainPieChartsComparable:
+            # before we continue, we need to decide on a single color map for all thresholded pie charts
+            # that means first we figure out which countries we need to take care of (hack: manual specification with some intention on the color matching to the extended tableau10 scale)
+            countriesBeyondThreshold = ["US", "NL", "CN", "IT", "FR", "DE", "GB", "CA", "SG", "IL", "SE", "AT", "NO"] # , "BR", "IN" in the order of the color map as it comes next
+            # this means we need at least 12 hues that are not gray, so tableau10 is not good enouch (and its last entry is essentually gray), but let's still start with it
+            colorsGrsiPerCountryWholeList = generateColorArrayFromColorScheme("tableau10")[0:9]
+            # add some more colors we can use
+            colorsGrsiPerCountryWholeList.append('#2ea3b8') # manually specified to match tableau10 stile, but as another unique color
+            colorsGrsiPerCountryWholeList.append('#7864b9') # manually specified to match tableau10 stile, but as another unique color
+            colorsGrsiPerCountryWholeList.append('#9fac33') # manually specified to match tableau10 stile, but as another unique color
+            colorsGrsiPerCountryWholeList.append('#bf518a') # manually specified to match tableau10 stile, but as another unique color
+            colorsGrsiPerCountryWholeList += generateColorArrayFromColorScheme("set3")[0:8] # emergency pastel colors for if more countries need to be shown (not ideal color choice)
+            colorsGrsiPerCountryWholeList += generateColorArrayFromColorScheme("set3")[10:12] # emergency pastel colors for if more countries need to be shown (not ideal color choice)
+            # now let's generate a county-color lookup list
+            for country in countriesBeyondThreshold: # this assumes that we have more colors in colorsGrsiPerCountryWholeList than countries in countriesBeyondThreshold
+                colorsGrsiPerCountryLookup[country] = colorsGrsiPerCountryWholeList[colorsGrsiPerCountryWholeListIndex]
+                colorsGrsiPerCountryWholeListIndex += 1
+
         # thresholded version for the proportional one
-        colorsGrsiPerCountryThresholded = generateColorArrayFromColorScheme("tableau10")
+        if makeMainPieChartsComparable: colorsGrsiPerCountryThresholded = []
+        else: colorsGrsiPerCountryThresholded = generateColorArrayFromColorScheme("tableau10")
         grsiPerCountryProportional = dict(sorted(grsiPerCountryProportional.items(), key=lambda kv: kv[1], reverse = True))
         dataToPlot = []
         order = 0
         otherContribution = 0.0
         otherCount = 0
         for country in grsiPerCountryProportional.keys():
+            if makeMainPieChartsComparable:
+                if country in colorsGrsiPerCountryLookup.keys(): colorsGrsiPerCountryThresholded.append(colorsGrsiPerCountryLookup[country])
+                else: 
+                    if (colorsGrsiPerCountryWholeListIndex < len(colorsGrsiPerCountryWholeList)):
+                        colorsGrsiPerCountryLookup[country] = colorsGrsiPerCountryWholeList[colorsGrsiPerCountryWholeListIndex]
+                        colorsGrsiPerCountryWholeListIndex += 1
+                        colorsGrsiPerCountryThresholded.append(colorsGrsiPerCountryLookup[country])
+                    else:             
+                        colorsGrsiPerCountryThresholded.append(neutralGray) # this is the fallback position if we ran out of colors
             dataItem = {}
             proportion = grsiPerCountryProportional[country]/papersWithContryInformation
             if (proportion >= countryPieChartThreshold * 0.01):
@@ -2244,13 +2531,23 @@ if exportVisualizations:
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-absolute.pdf')
 
         # thresholded version for the proportional one
-        colorsGrsiPerCountryThresholded = generateColorArrayFromColorScheme("tableau10")
+        if makeMainPieChartsComparable: colorsGrsiPerCountryThresholded = []
+        else: colorsGrsiPerCountryThresholded = generateColorArrayFromColorScheme("tableau10")
         grsiPerCountryProportional = dict(sorted(grsiPerCountryProportional.items(), key=lambda kv: kv[1], reverse = True))
         dataToPlot = []
         order = 0
         otherContribution = 0.0
         otherCount = 0
         for country in grsiPerCountryProportional.keys():
+            if makeMainPieChartsComparable:
+                if country in colorsGrsiPerCountryLookup.keys(): colorsGrsiPerCountryThresholded.append(colorsGrsiPerCountryLookup[country])
+                else: 
+                    if (colorsGrsiPerCountryWholeListIndex < len(colorsGrsiPerCountryWholeList)):
+                        colorsGrsiPerCountryLookup[country] = colorsGrsiPerCountryWholeList[colorsGrsiPerCountryWholeListIndex]
+                        colorsGrsiPerCountryWholeListIndex += 1
+                        colorsGrsiPerCountryThresholded.append(colorsGrsiPerCountryLookup[country])
+                    else:             
+                        colorsGrsiPerCountryThresholded.append(neutralGray) # this is the fallback position if we ran out of colors
             dataItem = {}
             proportion = grsiPerCountryProportional[country]/papersWithContryInformation
             if (proportion >= countryPieChartThreshold * 0.01):
@@ -2358,13 +2655,23 @@ if exportVisualizations:
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-senior-only-absolute.pdf')
 
         # thresholded version for the proportional one
-        colorsGrsiPerCountryThresholded = generateColorArrayFromColorScheme("tableau10")
+        if makeMainPieChartsComparable: colorsGrsiPerCountryThresholded = []
+        else: colorsGrsiPerCountryThresholded = generateColorArrayFromColorScheme("tableau10")
         grsiPerCountryProportional = dict(sorted(grsiPerCountryProportional.items(), key=lambda kv: kv[1], reverse = True))
         dataToPlot = []
         order = 0
         otherContribution = 0.0
         otherCount = 0
         for country in grsiPerCountryProportional.keys():
+            if makeMainPieChartsComparable:
+                if country in colorsGrsiPerCountryLookup.keys(): colorsGrsiPerCountryThresholded.append(colorsGrsiPerCountryLookup[country])
+                else: 
+                    if (colorsGrsiPerCountryWholeListIndex < len(colorsGrsiPerCountryWholeList)):
+                        colorsGrsiPerCountryLookup[country] = colorsGrsiPerCountryWholeList[colorsGrsiPerCountryWholeListIndex]
+                        colorsGrsiPerCountryWholeListIndex += 1
+                        colorsGrsiPerCountryThresholded.append(colorsGrsiPerCountryLookup[country])
+                    else:             
+                        colorsGrsiPerCountryThresholded.append(neutralGray) # this is the fallback position if we ran out of colors
             dataItem = {}
             proportion = grsiPerCountryProportional[country]/papersWithContryInformation
             if (proportion >= countryPieChartThreshold * 0.01):
@@ -2472,13 +2779,23 @@ if exportVisualizations:
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-absolute.pdf')
 
         # thresholded version for the proportional one
-        colorsGrsiPerCountryThresholded = generateColorArrayFromColorScheme("tableau10")
+        if makeMainPieChartsComparable: colorsGrsiPerCountryThresholded = []
+        else: colorsGrsiPerCountryThresholded = generateColorArrayFromColorScheme("tableau10")
         grsiPerCountryProportional = dict(sorted(grsiPerCountryProportional.items(), key=lambda kv: kv[1], reverse = True))
         dataToPlot = []
         order = 0
         otherContribution = 0.0
         otherCount = 0
         for country in grsiPerCountryProportional.keys():
+            if makeMainPieChartsComparable:
+                if country in colorsGrsiPerCountryLookup.keys(): colorsGrsiPerCountryThresholded.append(colorsGrsiPerCountryLookup[country])
+                else: 
+                    if (colorsGrsiPerCountryWholeListIndex < len(colorsGrsiPerCountryWholeList)):
+                        colorsGrsiPerCountryLookup[country] = colorsGrsiPerCountryWholeList[colorsGrsiPerCountryWholeListIndex]
+                        colorsGrsiPerCountryWholeListIndex += 1
+                        colorsGrsiPerCountryThresholded.append(colorsGrsiPerCountryLookup[country])
+                    else:             
+                        colorsGrsiPerCountryThresholded.append(neutralGray) # this is the fallback position if we ran out of colors
             dataItem = {}
             proportion = grsiPerCountryProportional[country]/papersWithContryInformation
             if (proportion >= countryPieChartThreshold * 0.01):
@@ -2634,16 +2951,19 @@ if (doCopyPlotsAccordingToFugureNumbers) and (exportVisualizations):
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-journal.pdf', paperFiguresOutputSubdirectury + 'figure16b.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_all-by-visualization-stackedbargraph-normalized.pdf', paperFiguresOutputSubdirectury + 'figure17.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-journal_plus_type_aggregated-stackedbargraph-normalized.pdf', paperFiguresOutputSubdirectury + 'figure18.pdf')
-    shutil.copy(graphOutputSubdirectury + 'replicability-histogram-people-vis-percentages-nolog.pdf', paperFiguresOutputSubdirectury + 'figure19a.pdf')
-    shutil.copy(graphOutputSubdirectury + 'replicability-histogram-people-vis-percentages-multiple-papers-nolog.pdf', paperFiguresOutputSubdirectury + 'figure19b.pdf')
-    shutil.copy(graphOutputSubdirectury + 'replicability_all-piechart-by-country-proportional.pdf', paperFiguresOutputSubdirectury + 'figure20a.pdf')
-    shutil.copy(graphOutputSubdirectury + 'replicability_all-piechart-by-country-absolute.pdf', paperFiguresOutputSubdirectury + 'figure20b.pdf')
-    shutil.copy(graphOutputSubdirectury + 'replicability_all-piechart-by-country-senior-only-proportional.pdf', paperFiguresOutputSubdirectury + 'figure21a.pdf')
-    shutil.copy(graphOutputSubdirectury + 'replicability_all-piechart-by-country-senior-only-absolute.pdf', paperFiguresOutputSubdirectury + 'figure21b.pdf')
-    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-proportional.pdf', paperFiguresOutputSubdirectury + 'figure22a.pdf')
-    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-absolute.pdf', paperFiguresOutputSubdirectury + 'figure22b.pdf')
-    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-proportional.pdf', paperFiguresOutputSubdirectury + 'figure23a.pdf')
-    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-absolute.pdf', paperFiguresOutputSubdirectury + 'figure23b.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-journal_plus_type-stackedbargraph-normalized.pdf', paperFiguresOutputSubdirectury + 'figure19.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-type-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure20.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-type-stackedbargraph-normalized.pdf', paperFiguresOutputSubdirectury + 'figure21.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability-histogram-people-vis-percentages-nolog.pdf', paperFiguresOutputSubdirectury + 'figure22a.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability-histogram-people-vis-percentages-multiple-papers-nolog.pdf', paperFiguresOutputSubdirectury + 'figure22b.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_all-piechart-by-country-proportional.pdf', paperFiguresOutputSubdirectury + 'figure23a.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_all-piechart-by-country-absolute.pdf', paperFiguresOutputSubdirectury + 'figure23b.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_all-piechart-by-country-senior-only-proportional.pdf', paperFiguresOutputSubdirectury + 'figure24a.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_all-piechart-by-country-senior-only-absolute.pdf', paperFiguresOutputSubdirectury + 'figure24b.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-proportional.pdf', paperFiguresOutputSubdirectury + 'figure25a.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-absolute.pdf', paperFiguresOutputSubdirectury + 'figure25b.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-proportional.pdf', paperFiguresOutputSubdirectury + 'figure26a.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-absolute.pdf', paperFiguresOutputSubdirectury + 'figure26b.pdf')
 
 # copy the final GRSI data file to the respective output directory
 shutil.copy(formatted_date + " grsi paper data.json", dataOutputSubdirectury + "grsi_paper_data.json")

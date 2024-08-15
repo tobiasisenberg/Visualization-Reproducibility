@@ -317,7 +317,7 @@
   %\RequirePackage[pagebackref,bookmarks]{hyperref}
   \RequirePackage[bookmarks]{hyperref}
   \RequirePackage[all]{hypcap}% makes hyperlinks go to top of floats rather than the caption
-  \RequirePackage[svgnames]{xcolor}
+  \RequirePackage{xcolor}
   \hypersetup{
     pdfpagemode=UseNone,
     pdftitle={\@title},

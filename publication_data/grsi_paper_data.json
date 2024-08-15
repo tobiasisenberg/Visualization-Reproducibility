@@ -1,12 +1,103 @@
 [
     {
         "is_vis": true,
+        "title": "ProvenanceWidgets: A Library of UI Control Elements to Track and Dynamically Overlay Analytic Provenance",
+        "doi": "10.vis2024/1204",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-provenancewidgets-provenancewidgets-github-io",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/ProvenanceWidgets/ProvenanceWidgets.github.io",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:b09693c056e6a68c3bab5844af39712cc7ba6ee3;origin=https://github.com/ProvenanceWidgets/ProvenanceWidgets.github.io",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-provenancewidgets-provenancewidgets-github-io/representative.png",
+        "authors": "Arpit Narechania, Kaustubh Odak, Mennatallah El-Assady, Alex Endert",
+        "type": "IEEE VIS"
+    },
+    {
+        "is_vis": false,
+        "title": "Volumetric nonwoven structures: An algebraic framework for systematic design of infinite polyhedral frames using nonwoven fabric patterns",
+        "doi": "10.1016/j.cag.2024.103979",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-comicaddict-infinitepolyhedranonwoven",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/ComicAddict/InfinitePolyhedraNonWoven",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:986ebf76d3f716bcbff2ca950b016c838deed076;origin=https://github.com/ComicAddict/InfinitePolyhedraNonWoven",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-comicaddict-infinitepolyhedranonwoven/representative.png",
+        "authors": "Tolga Yildiz, Ergun Akleman"
+    },
+    {
+        "is_vis": true,
+        "title": "SimpleSets: Capturing Categorical Point Patterns with Simple Shapes",
+        "doi": "10.vis2024/1153",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-tue-alga-simplesets",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/tue-alga/SimpleSets",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:658089edcf6aef5f1ce59e311db02dd935c5e291;origin=https://github.com/tue-alga/SimpleSets",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-tue-alga-simplesets/representative.png",
+        "authors": "Steven van den Broek, Wouter Meulemans, Bettina Speckmann",
+        "type": "IEEE VIS"
+    },
+    {
+        "is_vis": false,
+        "title": "Blue noise for diffusion models",
+        "doi": "10.1145/3641519.3657435",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-xchhuang-bndm",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/xchhuang/bndm",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:1ec4be331552fee67b28f9b316b10aec1f228395;origin=https://github.com/xchhuang/bndm",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-xchhuang-bndm/representative.png",
+        "authors": "Xingchang Huang, Corentin Sala\u00fcn, Cristina Vasconcelos, Christian Theobalt, Cengiz \u00d6ztireli, Gurprit Singh"
+    },
+    {
+        "is_vis": false,
+        "title": "Computational Design of Custom-Fit PAP Masks",
+        "doi": "10.1016/j.cag.2024.103998",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-zlyrikz-maskdesign",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/zLyrikz/MaskDesign",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:55ba2ccc0255d53212bbfacbc1f529eed4b0499d;origin=https://github.com/zLyrikz/MaskDesign",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-zlyrikz-maskdesign/representative.png",
+        "authors": "Yukun Lu, Yuhang Wang, Peng Song, Hang Siang Wong, Yingjuan Mok, Ligang Liu"
+    },
+    {
+        "is_vis": true,
+        "title": "A Practical Solver for Scalar Data Topological Simplification",
+        "doi": "10.vis2024/1461",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-mohamedkissi-code-paper-a-pratical-solver-for-scalar-data-topological-simplification",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/MohamedKISSI/Code-Paper-A-Pratical-Solver-for-Scalar-Data-Topological-Simplification",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:6b13d523b69622b4061bc3be1b717f83561af68f;origin=https://github.com/MohamedKISSI/Code-Paper-A-Pratical-Solver-for-Scalar-Data-Topological-Simplification",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-mohamedkissi-code-paper-a-pratical-solver-for-scalar-data-topological-simplification/representative.png",
+        "authors": "Mohamed Kissi, Mathieu Pont, Joshua A. Levine, Julien Tierny",
+        "type": "IEEE VIS"
+    },
+    {
+        "is_vis": false,
+        "title": "Neural Inpainting of Folded Fabrics with Interactive Editing",
+        "doi": "10.1016/j.cag.2024.103997",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-g-gisbert-neural-inpainting-of-folded-fabric-meshes",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/g-gisbert/Neural-Inpainting-Of-Folded-Fabric-Meshes",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:86ec9b9850696a98779ea2ef1b5f754355517506;origin=https://github.com/g-gisbert/Neural-Inpainting-Of-Folded-Fabric-Meshes",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-g-gisbert-neural-inpainting-of-folded-fabric-meshes/representative.png",
+        "authors": "Guillaume Gisbert, Rapha\u00eblle Chaine, David Coeurjolly"
+    },
+    {
+        "is_vis": false,
+        "title": "3D Geometric Kernel Computation in Polygon Mesh Structures",
+        "doi": "10.1016/j.cag.2024.103951",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-merveasiler-geometric-kernel-approximation",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/merveasiler/Geometric-Kernel-Approximation",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:f2e49a686b032f144627ec47d1bed74dff82e01c;origin=https://github.com/merveasiler/Geometric-Kernel-Approximation",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-merveasiler-geometric-kernel-approximation/representative.png",
+        "authors": "Merve Asiler, Yusuf Sahillio\u011flu"
+    },
+    {
+        "is_vis": true,
         "title": "MOUNTAINEER: Topology-Driven Visual Analytics for Comparing Local Explanations",
         "doi": "10.1109/tvcg.2024.3418653",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-parisolunke-mountaineer",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/PariSolunke/mountaineer",
-        "repo_archive_url": "",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:331ec3162f3cfcb8b8bca6fbd5b3064bb5671ed8;origin=https://github.com/PariSolunke/mountaineer",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-parisolunke-mountaineer/representative.png",
         "authors": "Parikshit Solunke, Vitoria Guardieiro, Joao Rulff, Peter Xenopoulos, Gromit Yeuk-Yin Chan, Brian Barr, Luis Gustavo Nonato, Claudio Silva",
         "type": "keyword"
@@ -25,7 +116,7 @@
     {
         "is_vis": false,
         "title": "Quadratic-Attraction Subdivision with Contraction-Ratio \u03bb = 1/2",
-        "doi": "not_assigned_yet",
+        "doi": "10.1016/j.cag.2024.104001",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-bitbucket-org-surflab-quadratic-attraction-subdivision-src-equiqas",
         "journal": "Elsevier Computers & Graphics (C&G)",
         "repo_url": "https://bitbucket.org/surflab/quadratic-attraction-subdivision/src/equiqas",
@@ -2881,7 +2972,7 @@
     },
     {
         "is_vis": false,
-        "title": "Solid Geometry Processing on Deconstructed Domains ",
+        "title": "Solid Geometry Processing on Deconstructed Domains",
         "doi": "10.1111/cgf.13592",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-sgsellan-solid-geometry-processing-on-deconstructed-domains",
         "journal": "Wiley Computer Graphics Forum (CGF)",

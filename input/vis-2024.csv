@@ -1,0 +1,125 @@
+PCS-ID,Title,DOI,Year
+1026,Revealing Interaction Dynamics: Multi-Level Visual Exploration of User Strategies with an Interactive Digital Environment,10.vis2024/1026,2024
+1031,Team-Scouter: Simulative Visual Analytics of Soccer Player Scouting,10.vis2024/1031,2024
+1032,Visualizing Temporal Topic Embeddings with a Compass,10.vis2024/1032,2024
+1039,Blowing Seeds Across Gardens: Visualizing Implicit Propagation of Cross-Platform Social Media Posts,10.vis2024/1039,2024
+1059,DITTO: A Visual Digital Twin for Interventions and Temporal Treatment Outcomes in Head and Neck Cancer,10.vis2024/1059,2024
+1060,From Instruction to Insight: Exploring the Semantic and Functional Roles of Text in Interactive Dashboards,10.vis2024/1060,2024
+1063,DeLVE into Earth’s Past: A Visualization-Based Exhibit Deployed Across Multiple Museum Contexts,10.vis2024/1063,2024
+1067,AdversaFlow: Visual Red Teaming for Large Language Models with Multi-Level Adversarial Flow,10.vis2024/1067,2024
+1077,Entanglements for Visualization: Changing Research Outcomes through Feminist Theory,10.vis2024/1077,2024
+1096,Fine-Tuned Large Language Model for Visualization System: A Study on Self-Regulated Learning in Education,10.vis2024/1096,2024
+1099,Smartboard: Visual Exploration of Team Tactics with LLM Agent,10.vis2024/1099,2024
+1100,Causal Priors and Their Influence on Judgements of Causality in Visualized Data,10.vis2024/1100,2024
+1121,PhenoFlow: A Human-LLM Driven Visual Analytics System for Exploring Large and Complex Stroke Datasets,10.vis2024/1121,2024
+1128,PUREsuggest: Citation-based Literature Search and Visual Exploration with Keyword-controlled Rankings,10.vis2024/1128,2024
+1137,Touching the Ground: Evaluating the Effectiveness of Data Physicalizations for Spatial Data Analysis Tasks,10.vis2024/1137,2024
+1140,"""It's a Good Idea to Put It Into Words"": Writing 'Rudders' in the Initial Stages of Visualization Design",10.vis2024/1140,2024
+1142,Compress and Compare: Interactively Evaluating Efficiency and Behavior Across ML Model Compression Experiments,10.vis2024/1142,2024
+1147,An Empirical Evaluation of the GPT-4 Multimodal Language Model on Visualization Literacy Tasks,10.vis2024/1147,2024
+1150,CompositingVis: Exploring Interaction for Creating Composite Visualizations in Immersive Environments,10.vis2024/1150,2024
+1153,SimpleSets: Capturing Categorical Point Patterns with Simple Shapes,10.vis2024/1153,2024
+1155,Charting EDA: How Visualizations and Interactions Shape Analysis in Computational Notebooks.,10.vis2024/1155,2024
+1179,ParetoTracker: Understanding Population Dynamics in Multi-objective Evolutionary Algorithms through Visual Analytics,10.vis2024/1179,2024
+1185,Does This Have a Particular Meaning?: Interactive Pattern Explanation for Network Visualizations,10.vis2024/1185,2024
+1193,Advancing Multimodal Large Language Models in Chart Question Answering with Visualization-Referenced Instruction Tuning,10.vis2024/1193,2024
+1202,Unmasking Dunning-Kruger Effect in Visual Reasoning and Visual Data Analysis,10.vis2024/1202,2024
+1204,ProvenanceWidgets: A Library of UI Control Elements to Track and Dynamically Overlay Analytic Provenance,10.vis2024/1204,2024
+1214,Improved Visual Saliency of Graph Clusters with Orderable Node-Link Layouts,10.vis2024/1214,2024
+1218,Graph Transformer for Label Placement,10.vis2024/1218,2024
+1232,"Aardvark: Composite Visualizations of Trees, Time-Series, and Images",10.vis2024/1232,2024
+1251,Loops: Leveraging Provenance and Visualization to Support Exploratory Data Analysis in Notebooks,10.vis2024/1251,2024
+1256,Trust Your Gut: Comparing Human and Machine Inference from Noisy Visualizations,10.vis2024/1256,2024
+1258,Beyond Correlation: Incorporating Counterfactual Guidance to Better Support Exploratory Visual Analysis,10.vis2024/1258,2024
+1272,UnDRground Tubes: Exploring Spatial Data With Multidimensional Projections and Set Visualization,10.vis2024/1272,2024
+1275,PREVis: Perceived Readability Evaluation for Visualizations,10.vis2024/1275,2024
+1277,Uncertainty Visualization of Critical Points of 2D Scalar Fields for Parametric and Nonparametric Probabilistic Models,10.vis2024/1277,2024
+1281,What Can Interactive Visualization do for Participatory Budgeting in Chicago?,10.vis2024/1281,2024
+1288,The Effect of Visual Aids on Reading Numeric Data Tables,10.vis2024/1288,2024
+1290,Mixing Linters with GUIs: A Color Palette Design Probe,10.vis2024/1290,2024
+1291,Quantifying Emotional Responses to Immutable Data Characteristics and Designer Choices in Data Visualizations,10.vis2024/1291,2024
+1295,A Qualitative Analysis of Common Practices in Annotations: A Taxonomy and Design Space,10.vis2024/1295,2024
+1302,Talk to the Wall: The Role of Speech Interaction in Collaborative Visual Analytics,10.vis2024/1302,2024
+1307,BEMTrace: Visualization-driven approach for deriving Building Energy Models from BIM,10.vis2024/1307,2024
+1309,VMC: A Grammar for Visualizing Statistical Model Checks,10.vis2024/1309,2024
+1316,The Language of Infographics: Toward Understanding Conceptual Metaphor Use in Scientific Storytelling,10.vis2024/1316,2024
+1318,How Good (Or Bad) Are LLMs in Detecting Misleading Visualizations,10.vis2024/1318,2024
+1325,Motion-Based Visual Encoding Can Improve Performance on Perceptual Tasks with Dynamic Time Series,10.vis2024/1325,2024
+1326,LLM Comparator: Interactive Analysis of Side-by-Side Evaluation of Large Language Models,10.vis2024/1326,2024
+1329,StuGPTViz: A Visual Analytics Approach to Understand Student-ChatGPT Interactions,10.vis2024/1329,2024
+1332,VisEval: A Benchmark for Data Visualization in the Era of Large Language Models,10.vis2024/1332,2024
+1333,Telling Data Stories with the Hero’s Journey: Design Guidance for Creating Data Videos,10.vis2024/1333,2024
+1342,Understanding Visualization Authoring Techniques for Genomics Data in the Context of Personas and Tasks,10.vis2024/1342,2024
+1351,Sportify: Question Answering with Embedded Visualizations and Personified Narratives for Sports Video,10.vis2024/1351,2024
+1363,FPCS: Feature Preserving Compensated Sampling of Streaming Time Series Data,10.vis2024/1363,2024
+1368,SLInterpreter: An Exploratory and Iterative Human-AI Collaborative System for GNN-based Synthetic Lethal Prediction,10.vis2024/1368,2024
+1391,StyleRF-VolVis: Style Transfer of Neural Radiance Fields for Expressive Volume Visualization,10.vis2024/1391,2024
+1393,Practices and Strategies in Responsive Thematic Map Design: A Report from Design Workshops with Experts,10.vis2024/1393,2024
+1394,Discursive Patinas: Anchoring Discussions in Data Visualizations,10.vis2024/1394,2024
+1395,D-Tour: Semi-Automatic Generation of Interactive Guided Tours for Visualization Dashboard Onboarding,10.vis2024/1395,2024
+1414,Unveiling How Examples Shape Data Visualization Design Outcomes,10.vis2024/1414,2024
+1416,Manipulable Semantic Components: a Computational Representation of Data Visualization Scenes,10.vis2024/1416,2024
+1422,Promises and Pitfalls: Using Large Language Models to Generate Visualization Items,10.vis2024/1422,2024
+1425,DG Comics: Semi-Automatically Authoring Graph Comics for Dynamic Graphs,10.vis2024/1425,2024
+1427,ParamsDrag: Interactive Parameter Space Exploration via Image-Space Dragging,10.vis2024/1427,2024
+1438,Defogger: A Visual Analysis Approach for Data Exploration of Sensitive Data Protected by Differential Privacy,10.vis2024/1438,2024
+1446,"Visualization Atlases: Explaining and Exploring Complex Topics through Data, Visualization, and Narration",10.vis2024/1446,2024
+1451,User Experience of Visualizations in Motion: A Case Study and Design Considerations,10.vis2024/1451,2024
+1461,A Practical Solver for Scalar Data Topological Simplification,10.vis2024/1461,2024
+1472,DracoGPT: Extracting Visualization Design Preferences from Large Language Models,10.vis2024/1472,2024
+1474,Towards Dataset-scale and Feature-oriented Evaluation of Text Summarization in Large Language Model Prompts,10.vis2024/1474,2024
+1480,Attention-Aware Visualization: Tracking and Responding to User Perception Over Time,10.vis2024/1480,2024
+1483,SpreadLine: Visualizing Egocentric Dynamic Influence,10.vis2024/1483,2024
+1487,A Deixis-Centered Approach for Documenting Remote Synchronous Communication around Data Visualizations,10.vis2024/1487,2024
+1488,The Backstory to “Swaying the Public”: A Design Chronicle of Election Forecast Visualizations,10.vis2024/1488,2024
+1489,A General Framework for Comparing Embedding Visualizations Across Class-Label Hierarchies,10.vis2024/1489,2024
+1494,Localized Evaluation for Constructing Discrete Vector Fields,10.vis2024/1494,2024
+1500,Evaluating Force-based Haptics for Immersive Tangible Interactions with Surface Visualizations,10.vis2024/1500,2024
+1502,DataGarden: Formalizing Personal Sketches into Structured Visualization Templates,10.vis2024/1502,2024
+1503,Guided Health-related Information Seeking from LLMs via Knowledge Graph Integration,10.vis2024/1503,2024
+1504,Learnable and Expressive Visualization Authoring Through Blended Interfaces,10.vis2024/1504,2024
+1522,When Refreshable Tactile Displays Meet Conversational Agents: Investigating Accessible Data Presentation and Analysis with Touch and Speech,10.vis2024/1522,2024
+1533,DiffFit: Visually-Guided Differentiable Fitting of Molecule Structures to a Cryo-EM Map,10.vis2024/1533,2024
+1544,How Aligned are Human Chart Takeaways and LLM Predictions? A Case Study on Bar Charts with Varying Layouts,10.vis2024/1544,2024
+1547,Beware of Validation by Eye: Visual Validation of Linear Trends in Scatterplots,10.vis2024/1547,2024
+1568,DimBridge: Interactive Explanation of Visual Patterns in Dimensionality Reductions with Predicate Logic,10.vis2024/1568,2024
+1571,Who Let the Guards Out: Visual Support for Patrolling Games,10.vis2024/1571,2024
+1574,Objective Lagrangian Vortex Cores and their Visual Representations,10.vis2024/1574,2024
+1594,"""I Came Across a Junk"": Understanding Design Flaws of Data Visualization from the Public's Perspective",10.vis2024/1594,2024
+1595,Dynamic Color Assignment for Hierarchical Data,10.vis2024/1595,2024
+1597,Visual Support for the Loop Grafting Workflow on Proteins,10.vis2024/1597,2024
+1599,SurroFlow: A Flow-Based Surrogate Model for Parameter Space Exploration and Uncertainty Quantification,10.vis2024/1599,2024
+1603,ModalChorus: Visual Probing and Alignment of Multi-modal Embeddings via Modal Fusion Map,10.vis2024/1603,2024
+1606,AdaMotif: Graph Simplification via Adaptive Motif Design,10.vis2024/1606,2024
+1612,2D Embeddings of Multi-dimensional Partitionings,10.vis2024/1612,2024
+1613,Path-based Design Model for Constructing and Exploring Alternative Visualisations,10.vis2024/1613,2024
+1615,Cell2Cell: Explorative Cell Interaction Analysis in Multi-Volumetric Tissue Data,10.vis2024/1615,2024
+1626,SpatialTouch: Exploring Spatial Data Visualizations in Cross-reality,10.vis2024/1626,2024
+1632,TopoMap++: A faster and more space efficient technique to compute projections with topological guarantees,10.vis2024/1632,2024
+1638,The Impact of Vertical Scaling on Normal Probability Density Function Plots,10.vis2024/1638,2024
+1642,A Multi-Level Task Framework for Event Sequence Analysis,10.vis2024/1642,2024
+1681,CSLens: Towards Better Deploying Charging Stations via Visual Analytics —— A Coupled Networks Perspective,10.vis2024/1681,2024
+1693,Visual Analysis of Multi-outcome Causal Graphs,10.vis2024/1693,2024
+1699,Precise Embodied Data Selection in Room-scale Visualisations While Retaining View Context,10.vis2024/1699,2024
+1705,"Distributed Augmentation, Hypersweeps, and Branch Decomposition of Contour Trees for Scientific Exploration",10.vis2024/1705,2024
+1708,Uncertainty-Aware Deep Neural Representations for Visual Analysis of Vector Field Data,10.vis2024/1708,2024
+1726,"Mind Drifts, Data Shifts: Utilizing Mind Wandering to Track the Evolution of User Experience with Data Visualizations",10.vis2024/1726,2024
+1730,Ferry: Toward Better Understanding of Input/Output Space for Data Wrangling Scripts,10.vis2024/1730,2024
+1738,What University Students Learn In Visualization Classes,10.vis2024/1738,2024
+1746,Structure-Aware Simplification for Hypergraph Visualization,10.vis2024/1746,2024
+1770,A Large-Scale Sensitivity Analysis on Latent Embeddings and Dimensionality Reductions for Text Spatializations,10.vis2024/1770,2024
+1793,MSz: An Efficient Parallel Algorithm for Correcting Morse-Smale Segmentations in Error-Bounded Lossy Compressors,10.vis2024/1793,2024
+1802,VADIS: A Visual Analytics Pipeline for Dynamic Document Representation and Information Seeking,10.vis2024/1802,2024
+1803,Fast Comparative Analysis of Merge Trees Using Locality-Sensitive Hashing,10.vis2024/1803,2024
+1805,Interactive Design-of-Experiments: Optimizing a Cooling System,10.vis2024/1805,2024
+1809,Quality Metrics and Reordering Strategies for Revealing Patterns in BioFabric Visualizations,10.vis2024/1809,2024
+1810,CataAnno: An Ancient Catalog Annotator for Annotation Cleaning by Recommendation,10.vis2024/1810,2024
+1830,Curio: A Dataflow-Based Framework for Collaborative Urban Visual Analytics,10.vis2024/1830,2024
+1831,HiRegEx: Interactive Visual Query and Exploration of Multivariate Hierarchical Data,10.vis2024/1831,2024
+1833,HuBar: A Visual Analytics Tool to Explore Human Behaviour based on fNIRS in AR guidance systems,10.vis2024/1833,2024
+1836,An Empirically Grounded Approach for Designing Shape Palettes,10.vis2024/1836,2024
+1865,"DaedalusData: Exploration, Knowledge Externalization and Labeling of Particles in Medical Manufacturing - A Design Study",10.vis2024/1865,2024
+1866,Regularized Multi-Decoder Ensemble for an Error-Aware Scene Representation Network,10.vis2024/1866,2024
+1874,Evaluating and extending speedup techniques for optimal crossing minimization in layered graph drawings,10.vis2024/1874,2024
+1880,Rapid and Precise Topological Comparison with Merge Tree Neural Networks,10.vis2024/1880,2024
+1917,Towards Enhancing Low Vision Usability of Data Charts on Smartphones,10.vis2024/1917,2024

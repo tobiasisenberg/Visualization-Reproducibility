@@ -15723,13 +15723,13 @@
         ],
         "title": "Wasserstein Auto-Encoders of Merge Trees (and Persistence Diagrams)",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2024,
+        "volume": "30",
+        "number": "9",
+        "pages": "6390\u20136406",
         "article_number": "",
-        "number_of_pages": 16,
-        "abstract": "This paper presents a computational framework for the Wasserstein auto-encoding of merge trees (MT-WAE), a novel extension of the classical auto-encoder neural network architecture to the Wasserstein metric space of merge trees. In contrast to traditional auto-encoders which operate on vectorized data, our formulation explicitly manipulates merge trees on their associated metric space at each layer of the network, resulting in superior accuracy and interpretability. Our novel neural network approach can be interpreted as a non-linear generalization of previous linear attempts [72] at merge tree encoding. It also trivially extends to persistence diagrams. Extensive experiments on public ensembles demonstrate the efficiency of our algorithms, with MT-WAE computations in the orders of minutes on average. We show the utility of our contributions in two applications adapted from previous work on merge tree encoding [72]. First, we apply MT-WAE to merge tree compression, by concisely representing them with their coordinates in the final layer of our auto-encoder. Second, we document an application to dimensionality reduction, by exploiting the latent space of our auto-encoder, for the visual analysis of ensemble data. We illustrate the versatility of our framework by introducing two penalty terms, to help preserve in the latent space both the Wasserstein distances between merge trees, as well as their clusters. In both applications, quantitative experiments assess the relevance of our framework. Finally, we provide a C++ implementation that can be used for reproducibility.",
+        "number_of_pages": 17,
+        "abstract": "This article presents a computational framework for the Wasserstein auto-encoding of merge trees (MT-WAE), a novel extension of the classical auto-encoder neural network architecture to the Wasserstein metric space of merge trees. In contrast to traditional auto-encoders which operate on vectorized data, our formulation explicitly manipulates merge trees on their associated metric space at each layer of the network, resulting in superior accuracy and interpretability. Our novel neural network approach can be interpreted as a non-linear generalization of previous linear attempts (Pont et al. 2023) at merge tree encoding. It also trivially extends to persistence diagrams. Extensive experiments on public ensembles demonstrate the efficiency of our algorithms, with MT-WAE computations in the orders of minutes on average. We show the utility of our contributions in two applications adapted from previous work on merge tree encoding (Pont et al. 2023). First, we apply MT-WAE to merge tree compression, by concisely representing them with their coordinates in the final layer of our auto-encoder. Second, we document an application to dimensionality reduction, by exploiting the latent space of our auto-encoder, for the visual analysis of ensemble data. We illustrate the versatility of our framework by introducing two penalty terms, to help preserve in the latent space both the Wasserstein distances between merge trees, as well as their clusters. In both applications, quantitative experiments assess the relevance of our framework. Finally, we provide a C++ implementation that can be used for reproducibility.",
         "countries": [
             "FR"
         ]
@@ -16353,7 +16353,7 @@
         "volume": "120",
         "number": "",
         "pages": "103915",
-        "number_of_pages": -1,
+        "number_of_pages": 10,
         "article_number": "103915",
         "abstract": "The rapid development of 3D acquisition technology has made it possible to obtain point clouds of real-world terrains. However, due to limitations in sensor acquisition technology or specific requirements, point clouds often contain defects such as holes with missing data. Inpainting algorithms are widely used to patch these holes. However, existing traditional inpainting algorithms rely on precise hole boundaries, which limits their ability to handle cases where the boundaries are not well-defined. On the other hand, learning-based completion methods often prioritize reconstructing the entire point cloud instead of solely focusing on hole filling. Based on the fact that real-world terrain exhibits both global smoothness and rich local detail, we propose a novel representation for terrain point clouds. This representation can help to repair the holes without clear boundaries. Specifically, it decomposes terrains into low-frequency and high-frequency components, which are represented by B-spline surfaces and relative height maps respectively. In this way, the terrain point cloud inpainting problem is transformed into a B-spline surface fitting and 2D image inpainting problem. By solving the two problems, the highly complex and irregular holes on the terrain point clouds can be well-filled, which not only satisfies the global terrain undulation but also exhibits rich geometric details. The experimental results also demonstrate the effectiveness of our method.",
         "countries": [
@@ -16721,7 +16721,7 @@
         "volume": "119",
         "number": "",
         "pages": "103901",
-        "number_of_pages": -1,
+        "number_of_pages": 11,
         "article_number": "103901",
         "abstract": "Eye movements can be used to analyze a viewer\u2019s cognitive capacities or mental state. Neural networks that process the raw eye-tracking signal can outperform methods that operate on scan paths preprocessed into fixations and saccades. However, the scarcity of such data poses a major challenge. We therefore develop SP-EyeGAN, a neural network that generates synthetic raw eye-tracking data. SP-EyeGAN consists of Generative Adversarial Networks; it produces a sequence of gaze angles indistinguishable from human ocular micro- and macro-movements. We explore the use of these synthetic eye movements for pre-training neural networks using contrastive learning. We find that pre-training on synthetic data does not help for biometric identification, while results are inconclusive for the detection of ADHD and gender classification. However, for the eye movement-based assessment of higher-level cognitive skills such general reading comprehension, text comprehension, and the distinction of native from non-native readers, pre-training on synthetic eye-gaze data improves the models\u2019 performance and even advances the state-of-the-art for reading comprehension. The SP-EyeGAN model, pre-trained on GazeBase, along with the code for developing your own raw eye-tracking machine learning model with contrastive learning, is available at https://github.com/aeye-lab/sp-eyegan.",
         "countries": [
@@ -16848,7 +16848,7 @@
         "volume": "121",
         "number": "",
         "pages": "103943",
-        "number_of_pages": -1,
+        "number_of_pages": 13,
         "article_number": "103943",
         "abstract": "Time-varying connectivity of triangle mesh sequences leads to substantial difficulties in their processing. Unlike editing sequences with constant connectivity, editing sequences with varying connectivity requires addressing the problem of temporal correspondence between the frames of the sequence. We present a method for time-consistent editing of triangle mesh sequences with varying connectivity using sparse temporal correspondence, which can be obtained using existing methods. Our method includes a deformation model based on the usage of the sparse temporal correspondence, which is suitable for the temporal propagation of user-specified deformations of the edited surface with respect to the shape and true topology of the surface while preserving the individual connectivity of each frame. Since there is no other method capable of comparable types of editing on time-varying meshes, we compare our method and the proposed deformation model with a baseline approach and demonstrate the benefits of our framework.",
         "countries": [
@@ -17122,8 +17122,8 @@
         "volume": "43",
         "number": "2",
         "pages": "e15020",
-        "article_number": "",
-        "number_of_pages": -1,
+        "article_number": "e15020",
+        "number_of_pages": 14,
         "abstract": "In machine learning and computer graphics, a fundamental task is the approximation of a probability density function through a well-dispersed collection of samples. Providing a formal metric for measuring the distance between probability measures on general spaces, Optimal Transport (OT) emerges as a pivotal theoretical framework within this context. However, the associated computational burden is prohibitive in most real-world scenarios. Leveraging the simple structure of OT in 1D, Sliced Optimal Transport (SOT) has appeared as an efficient alternative to generate samples in Euclidean spaces. This paper pushes the boundaries of SOT utilization in computational geometry problems by extending its application to sample densities residing on more diverse mathematical domains, including the spherical space \ud835\udd4ad, the hyperbolic plane \u210dd, and the real projective plane \u2119d. Moreover, it ensures the quality of these samples by achieving a blue noise characteristic, regardless of the dimensionality involved. The robustness of our approach is highlighted through its application to various geometry processing tasks, such as the intrinsic blue noise sampling of meshes, as well as the sampling of directions and rotations. These applications collectively underscore the efficacy of our methodology.",
         "countries": [
             "FR"
@@ -17345,7 +17345,7 @@
         "volume": "121",
         "number": "",
         "pages": "103945",
-        "number_of_pages": -1,
+        "number_of_pages": 12,
         "article_number": "103945",
         "abstract": "We propose a path-guiding algorithm to be incorporated into the wavefront style of path tracers (WFPTs). As WFPTs are primarily implemented on graphics processing units (GPUs), the proposed method aims to leverage the capabilities of the GPUs and reduce the hierarchical data structure and memory usage typically required for such techniques. To achieve this, our algorithm only stores the radiant exitance on a single global sparse voxel octree (SVO) data structure. Probability density functions required to guide the rays are generated on-the-fly using this data structure. The proposed approach reduces the scene-related persistent memory requirements compared to other path-guiding techniques while producing similar or better results depending on scene characteristics. To our knowledge, our algorithm is the first one that incorporates path guiding into a WFPT.",
         "countries": [
@@ -17424,6 +17424,399 @@
         "countries": [
             "US",
             "BR"
+        ]
+    },
+    "10.1016/j.cag.2024.104001": {
+        "doi": "10.1016/j.cag.2024.104001",
+        "authors": [
+            {
+                "family": "Kar\u010diauskas",
+                "given": "K\u0229stutis",
+                "countries": [
+                    "LT"
+                ]
+            },
+            {
+                "family": "Peters",
+                "given": "J\u00f6rg",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Quadratic-attraction subdivision with contraction-ratio \n                  \n                     \u03bb\n                     =\n                     \n                        \n                           1\n                        \n                        \n                           2",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "123",
+        "number": "",
+        "pages": "104001",
+        "number_of_pages": 11,
+        "article_number": "104001",
+        "abstract": "Classic generalized subdivision, such as Catmull\u2013Clark subdivision, as well as recent subdivision algorithms for high-quality surfaces, rely on slower convergence towards extraordinary points for mesh nodes surrounded by \n \n n\n >\n 4\n \n quadrilaterals. Slow convergence corresponds to a contraction-ratio of \n \n \u03bb\n >\n 0\n .\n 5\n \n . To improve shape, prevent parameterization discordant with surface growth, or to improve convergence in isogeometric analysis near extraordinary points, a number of algorithms explicitly adjust \n \u03bb\n by altering refinement rules. However, such tuning of \n \u03bb\n has so far led to poorer surface quality, visible as uneven distribution or oscillation of highlight lines. The recent Quadratic-Attraction Subdivision (QAS) generates high-quality, bounded curvature surfaces based on a careful choice of quadratic expansion at the central point and, just like Catmull\u2013Clark subdivision, creates the control points of the next subdivision ring by matrix multiplication. But QAS shares the contraction-ratio \n \n \n \n \u03bb\n \n \n C\n C\n \n \n >\n 1\n /\n 2\n \n of Catmull\u2013Clark subdivision when \n \n n\n >\n 4\n \n . For \n \n n\n =\n 5\n ,\n \u2026\n ,\n 10\n \n , QAS\n \n \n \n +\n \n \n improves the convergence to the uniform \n \n \u03bb\n =\n \n \n 1\n \n \n 2\n \n \n \n of binary domain refinement and without sacrificing surface quality compared to QAS.",
+        "countries": [
+            "LT",
+            "US"
+        ]
+    },
+    "10.1016/j.cag.2024.103951": {
+        "doi": "10.1016/j.cag.2024.103951",
+        "authors": [
+            {
+                "family": "Asiler",
+                "given": "Merve",
+                "countries": [
+                    "TR"
+                ]
+            },
+            {
+                "family": "Sahillio\u011flu",
+                "given": "Yusuf",
+                "countries": [
+                    "TR"
+                ]
+            }
+        ],
+        "title": "3D geometric kernel computation in polygon mesh structures",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "122",
+        "number": "",
+        "pages": "103951",
+        "number_of_pages": 11,
+        "article_number": "103951",
+        "abstract": "This paper introduces a novel approach to compute the geometric kernel of a polygon mesh embedded in 3D. The geometric kernel defines the set of points inside or on the shape\u2019s boundary, ensuring visibility of the entire shape. The proposed method utilizes scattered rays to identify a sufficient number of sample points on the kernel surface and subsequently leverages these points to locate as many surface vertices as possible. By computing the convex hull of these identified points, we derive an approximation of the kernel. Notably, the output of our method consists exclusively of interior or boundary points of the actual kernel. Comparative evaluations against established CGAL and Polyhedron Kernel algorithms highlight our method\u2019s superior computational speed and high approximation accuracy. The parametric structure of our solution allows for different levels of accuracy to be obtained, enabling the user to tailor the approximation to their specific needs. This property sets our algorithm apart from others and provides greater flexibility in its use. Additionally, adjusting the algorithmic settings also enables the computation of the kernel itself with a trade-off in computational speed. Furthermore, our algorithm swiftly and accurately identifies an empty kernel for non-star-shaped configurations.",
+        "countries": [
+            "TR"
+        ]
+    },
+    "10.1016/j.cag.2024.103997": {
+        "doi": "10.1016/j.cag.2024.103997",
+        "authors": [
+            {
+                "family": "Gisbert",
+                "given": "Guillaume",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Chaine",
+                "given": "Rapha\u00eblle",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Coeurjolly",
+                "given": "David",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Neural inpainting of folded fabrics with interactive editing",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "122",
+        "number": "",
+        "pages": "103997",
+        "number_of_pages": 9,
+        "article_number": "103997",
+        "abstract": "We propose a deep learning approach for inpainting holes in digital models of fabric surfaces. Leveraging the developable nature of fabric surfaces, we flatten the area surrounding the holes with minor distortion and regularly sample it to obtain a discrete 2D map of the 3D embedding, with an indicator mask outlining holes locations. This enables the use of a standard 2D convolutional neural network to inpaint holes given the 3D positioning of the surface. The provided neural architecture includes an attention mechanism to capture long-range relationships on the surface. Finally, we provide ScarfFolds, a database of folded fabrics patches with varying complexity, which is used to train our convolutional network in a supervised manner. We successfully tested our approach on various examples and illustrated that previous 3D deep learning approaches suffer from several issues when applied to fabrics. Also, our method allows the users to interact with the construction of the inpainted surface. The editing is interactive and supports many tools like vertex grabbing, drape twisting or pinching.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1145/3641519.3657435": {
+        "doi": "10.1145/3641519.3657435",
+        "authors": [
+            {
+                "family": "Huang",
+                "given": "Xingchang",
+                "orcid": "0000-0002-2769-8408",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Salaun",
+                "given": "Corentin",
+                "orcid": "0000-0002-5112-7488",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Vasconcelos",
+                "given": "Cristina",
+                "orcid": "0000-0003-2112-4806",
+                "countries": [
+                    "CA"
+                ]
+            },
+            {
+                "family": "Theobalt",
+                "given": "Christian",
+                "orcid": "0000-0001-6104-6625",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Oztireli",
+                "given": "Cengiz",
+                "orcid": "0000-0002-4700-2236",
+                "countries": [
+                    "CH",
+                    "GB"
+                ]
+            },
+            {
+                "family": "Singh",
+                "given": "Gurprit",
+                "orcid": "0000-0003-0970-5835",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "Blue noise for diffusion models",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "28:1\u201328:11",
+        "article_number": "28",
+        "number_of_pages": 11,
+        "abstract": "Most of the existing diffusion models use Gaussian noise for training and sampling across all time steps, which may not optimally account for the frequency contents reconstructed by the denoising network. Despite the diverse applications of correlated noise in computer graphics, its potential for improving the training process has been underexplored. In this paper, we introduce a novel and general class of diffusion models taking correlated noise within and across images into account. More specifically, we propose a time-varying noise model to incorporate correlated noise into the training process, as well as a method for fast generation of correlated noise mask. Our model is built upon deterministic diffusion models and utilizes blue noise to help improve the generation quality compared to using Gaussian white (random) noise only. Further, our framework allows introducing correlation across images within a single mini-batch to improve gradient flow. We perform both qualitative and quantitative evaluations on a variety of datasets using our method, achieving improvements on different tasks over existing deterministic diffusion models in terms of FID metric. Code will be available at https://github.com/xchhuang/bndm.",
+        "countries": [
+            "DE",
+            "CA",
+            "CH",
+            "GB"
+        ]
+    },
+    "10.1016/j.cag.2024.103998": {
+        "doi": "10.1016/j.cag.2024.103998",
+        "authors": [
+            {
+                "family": "Lu",
+                "given": "Yukun",
+                "countries": [
+                    "CN",
+                    "SG"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Yuhang",
+                "countries": [
+                    "CN",
+                    "SG"
+                ]
+            },
+            {
+                "family": "Song",
+                "given": "Peng",
+                "countries": [
+                    "SG"
+                ]
+            },
+            {
+                "family": "Wong",
+                "given": "Hang Siang",
+                "countries": [
+                    "SG"
+                ]
+            },
+            {
+                "family": "Mok",
+                "given": "Yingjuan",
+                "countries": [
+                    "SG"
+                ]
+            },
+            {
+                "family": "Liu",
+                "given": "Ligang",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Computational design of custom-fit PAP masks",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "122",
+        "number": "",
+        "pages": "103998",
+        "number_of_pages": 11,
+        "article_number": "103998",
+        "abstract": "Positive airway pressure (PAP) therapy refers to sleep disordered breathing treatment that uses a stream of compressed air to support the airway during sleep. Even though the use of PAP therapy has been shown to be effective in improving the symptoms and quality of life, many patients are intolerant of the treatment due to poor mask fit. In this paper, our goal is to develop a computational approach for designing custom-fit PAP masks such that they can achieve better mask fit performance in terms of mask leakage and comfort. Our key observation is that a custom-fit PAP mask should fit a patient\u2019s face in its deformed state instead of in its rest state since the PAP mask cushion undergoes notable deformation before reaching an equilibrium state during PAP therapy. To this end, we compute the equilibrium state of a mask cushion using the finite element method, and quantitatively measure the leakage and comfort of the mask cushion in this state. We further optimize the mask cushion geometry to minimize the two measures while ensuring that the cushion can be easily fabricated with molding. We demonstrate the effectiveness of our computational approach on a variety of face models and different types of PAP masks. Experimental results on real subjects show that our designed custom-fit PAP masks are able to achieve better mask fit performance than a generic PAP mask and custom-fit PAP masks designed by a state-of-the-art approach.",
+        "countries": [
+            "CN",
+            "SG"
+        ]
+    },
+    "10.1016/j.cag.2024.103979": {
+        "doi": "10.1016/j.cag.2024.103979",
+        "authors": [
+            {
+                "family": "Yildiz",
+                "given": "Tolga",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Akleman",
+                "given": "Ergun",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Volumetric nonwoven structures: An algebraic framework for systematic design of infinite polyhedral frames using nonwoven fabric patterns",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "122",
+        "number": "",
+        "pages": "103979",
+        "number_of_pages": 10,
+        "article_number": "103979",
+        "abstract": "In this paper, we present an algebraic framework that can be used to construct a large class of 3D shapes and structures that can potentially provide unusual material properties. We formalized this framework as a 3D generalization of planar nonwoven textile structures that are used to mimic the woven structures. Our extension is based on the fact that it is straightforward to extend planar nonwoven textile structures into volumetric nonwoven textile structures, which we also call nonwoven volumetric fabrics. This property is essential because such an extension is impossible with planar woven structures. In other words, using this approach, it can be possible to easily produce volumetric structures that mimic the fabric behavior as if they were planar nonwoven textile structures, which is impossible to produce. These volumetric structures also correspond to regular & semiregular frame structures and are capable of representing previously unknown infinite regular polyhedra and flexible wood structures.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.vis2024/1153": {
+        "doi": "10.vis2024/1153",
+        "authors": [
+            {
+                "family": "van den Broek",
+                "given": "Steven",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Meulemans",
+                "given": "Wouter",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Speckmann",
+                "given": "Bettina",
+                "countries": [
+                    "NL"
+                ]
+            }
+        ],
+        "title": "SimpleSets: Capturing Categorical Point Patterns with Simple Shapes",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "Points of interest on a map such as restaurants, hotels, or subway stations, give rise to categorical point data: data that have a fixed location and one or more categorical attributes. Consequently, recent years have seen various set visualization approaches that visually connect points of the same category to support users in understanding the spatial distribution of categories. Existing methods use complex and often highly irregular shapes to connect points of the same category, leading to high cognitive load for the user. In this paper we introduce SimpleSets, which uses simple shapes to enclose categorical point patterns, thereby providing a clean overview of the data distribution. SimpleSets is designed to visualize sets of points with a single categorical attribute; as a result, the point patterns enclosed by SimpleSets form a partition of the data. We give formal definitions of point patterns that correspond to simple shapes and describe an algorithm that partitions categorical points into few such patterns. Our second contribution is a rendering algorithm that transforms a given partition into a clean set of shapes resulting in an aesthetically pleasing set visualization. Our algorithm pays particular attention to resolving intersections between nearby shapes in a consistent manner. We compare SimpleSets to the state-of-the-art set visualizations using standard datasets from the literature.",
+        "countries": [
+            "NL"
+        ]
+    },
+    "10.vis2024/1461": {
+        "doi": "10.vis2024/1461",
+        "authors": [
+            {
+                "family": "Kissi",
+                "given": "Mohamed",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Pont",
+                "given": "Mathieu",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Levine",
+                "given": "Joshua A.",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Tierny",
+                "given": "Julien",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "A Practical Solver for Scalar Data Topological Simplification",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "Points of interest on a map such as restaurants, hotels, or subway stations, give rise to categorical point data: data that have a fixed location and one or more categorical attributes. Consequently, recent years have seen various set visualization approaches that visually connect points of the same category to support users in understanding the spatial distribution of categories. Existing methods use complex and often highly irregular shapes to connect points of the same category, leading to high cognitive load for the user. In this paper we introduce SimpleSets, which uses simple shapes to enclose categorical point patterns, thereby providing a clean overview of the data distribution. SimpleSets is designed to visualize sets of points with a single categorical attribute; as a result, the point patterns enclosed by SimpleSets form a partition of the data. We give formal definitions of point patterns that correspond to simple shapes and describe an algorithm that partitions categorical points into few such patterns. Our second contribution is a rendering algorithm that transforms a given partition into a clean set of shapes resulting in an aesthetically pleasing set visualization. Our algorithm pays particular attention to resolving intersections between nearby shapes in a consistent manner. We compare SimpleSets to the state-of-the-art set visualizations using standard datasets from the literature.",
+        "countries": [
+            "FR",
+            "US"
+        ]
+    },
+    "10.vis2024/1204": {
+        "doi": "10.vis2024/1204",
+        "authors": [
+            {
+                "family": "Narechania",
+                "given": "Arpit",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Odak",
+                "given": "Kaustubh",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "El-Assady",
+                "given": "Mennatallah",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Endert",
+                "given": "Alex",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "ProvenanceWidgets: A Library of UI Control Elements to Track and Dynamically Overlay Analytic Provenance",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "We present ProvenanceWidgets, a Javascript library of UI control elements such as radio buttons, checkboxes, and dropdowns to track and dynamically overlay a user's analytic provenance. These in situ overlays not only save screen space but also minimize the amount of time and effort needed to access the same information from elsewhere in the UI. In this paper, we discuss how we design modular UI control elements to track how often and how recently a user interacts with them and design visual overlays showing an aggregated summary as well as a detailed temporal history. We demonstrate the capability of ProvenanceWidgets by recreating three prior widget libraries: (1) Scented Widgets, (2) Phosphor objects, and (3) Dynamic Query Widgets. We also evaluated its expressiveness and conducted case studies with visualization developers to evaluate its effectiveness. We find that ProvenanceWidgets enables developers to implement custom provenance-tracking applications effectively. ProvenanceWidgets is available as open-source software at this https URL to help application developers build custom provenance-based systems.",
+        "countries": [
+            "US",
+            "CH"
         ]
     }
 }
