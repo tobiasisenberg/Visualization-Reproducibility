@@ -17,7 +17,7 @@ import glob
 import shutil
 
 # settings of how to do things and what extra stuff to do
-useLocalDataOnly = True # FIXME: should be True for submission
+useLocalDataOnly = False # FIXME: should be True for submission
 exportVisualizations = True
 doNameChecking = False
 doAbstractCheckingForKeywords = False
@@ -714,10 +714,13 @@ else:
             doi = re.sub(pattern=r"https://diglib\.eg\.org(?::443)?/handle/10\.1111/cgf(\d+)", repl=r"10.1111/cgf.\1", string=doi)
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
             # please note to replace the '%20' in the Google search links with a ' '; otherwise the replacement does not work
-            doi = doi.replace("http://www.google.com/search?q=Volumetric nonwoven structures: An algebraic framework for systematic design of infinite polyhedral frames using nonwoven fabric patterns", "10.1016/j.cag.2024.103979")
+            doi = doi.replace("http://www.google.com/search?q=Graph Transformer for 3D point clouds classification and semantic segmentation", "10.1016/j.cag.2024.104050")
+            doi = doi.replace("http://www.google.com/search?q=ShapeBench: a new approach to benchmarking local 3D shape descriptors", "10.1016/j.cag.2024.104052")
             doi = doi.replace("http://www.google.com/search?q=SimpleSets: Capturing Categorical Point Patterns with Simple Shapes", "10.vis2024/1153") # fake DOI for accepted VIS 2024 papers
             doi = doi.replace("http://www.google.com/search?q=A Practical Solver for Scalar Data Topological Simplification.", "10.vis2024/1461") # fake DOI for accepted VIS 2024 papers
             doi = doi.replace("http://www.google.com/search?q=ProvenanceWidgets: A Library of UI Control Elements to Track and Dynamically Overlay Analytic Provenance", "10.vis2024/1204") # fake DOI for accepted VIS 2024 papers
+            doi = doi.replace("http://www.google.com/search?q=The Language of Infographics: Toward Understanding Conceptual Metaphor Use in Scientific Storytelling", "10.vis2024/1316") # fake DOI for accepted VIS 2024 papers
+            doi = doi.replace("http://www.google.com/search?q=DeLVE into Earth’s Past: A Visualization-Based Exhibit Deployed Across Multiple Museum Contexts", "10.vis2024/1063") # fake DOI for accepted VIS 2024 papers
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()

@@ -23,16 +23,26 @@ def generateEntryForDoi(doi, apiKey = ''):
         # with open("elsevier-test2.json", "w", encoding='utf-8') as f:
         #     json.dump(scp_doc.data, f, indent=4)
 
+        # with open("elsevier-debug.json", "w", encoding='utf-8') as f:
+        #     json.dump(scp_doc.data["coredata"], f, indent=4)
+
         dataItem = {}
         dataItem["doi"] = values["prism:doi"].lower()
 
         dataItem["authors"] = []
-        for author in values["dc:creator"]:
+        if (isinstance(values["dc:creator"], dict)): # in that case there is only a single author
             authorData = {}
-            authorData["family"] = author["$"].split(", ")[0]
-            authorData["given"] = author["$"].split(", ")[1]
-        #     if "ORCID" in author.keys(): authorData["orcid"] = author["ORCID"].split("/")[-1]
+            authorData["family"] = values["dc:creator"]["$"].split(", ")[0]
+            authorData["given"] = values["dc:creator"]["$"].split(", ")[1]
+            # if "ORCID" in values["dc:creator"].keys(): authorData["orcid"] = values["dc:creator"]["ORCID"].split("/")[-1]
             dataItem["authors"].append(authorData)
+        else:
+            for author in values["dc:creator"]:
+                authorData = {}
+                authorData["family"] = author["$"].split(", ")[0]
+                authorData["given"] = author["$"].split(", ")[1]
+                # if "ORCID" in author.keys(): authorData["orcid"] = author["ORCID"].split("/")[-1]
+                dataItem["authors"].append(authorData)
 
         dataItem["title"] = values["dc:title"].strip()
         dataItem["journal"] = values["prism:publicationName"].replace("&amp;", "&")
