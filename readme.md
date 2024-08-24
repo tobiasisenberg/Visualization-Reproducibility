@@ -1,4 +1,4 @@
-# Script and data to replicate the analysis of replicability for visualization publications
+# Script and data to reproduce the analysis of replicability stamps for visualization publications
 
 ## Description
 
