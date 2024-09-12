@@ -15653,13 +15653,13 @@
         ],
         "title": "The Role of Text in Visualizations: How Annotations Shape Perceptions of Bias and Influence Predictions",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2024,
+        "volume": "30",
+        "number": "10",
+        "pages": "6787\u20136800",
         "article_number": "",
-        "number_of_pages": 12,
-        "abstract": "This paper investigates the role of text in visualizations, specifically the impact of text position, semantic content, and biased wording. Two empirical studies were conducted based on two tasks (predicting data trends and appraising bias) using two visualization types (bar and line charts). While the addition of text had a minimal effect on how people perceive data trends, there was a significant impact on how biased they perceive the authors to be. This finding revealed a relationship between the degree of bias in textual information and the perception of the authors' bias. Exploratory analyses support an interaction between a person's prediction and the degree of bias they perceived. This paper also develops a crowdsourced method for creating chart annotations that range from neutral to highly biased. This research highlights the need for designers to mitigate potential polarization of readers' opinions based on how authors' ideas are expressed.",
+        "number_of_pages": 14,
+        "abstract": "This paper investigates the role of text in visualizations, specifically the impact of text position, semantic content, and biased wording. Two empirical studies were conducted based on two tasks (predicting data trends and appraising bias) using two visualization types (bar and line charts). While the addition of text had a minimal effect on how people perceive data trends, there was a significant impact on how biased they perceive the authors to be. This finding revealed a relationship between the degree of bias in textual information and the perception of the authors\u2019 bias. Exploratory analyses support an interaction between a person's prediction and the degree of bias they perceived. This paper also develops a crowdsourced method for creating chart annotations that range from neutral to highly biased. This research highlights the need for designers to mitigate potential polarization of readers\u2019 opinions based on how authors\u2019 ideas are expressed.",
         "countries": [
             "US"
         ]
@@ -17163,10 +17163,10 @@
         ],
         "title": "Stress Assessment for Augmented Reality Applications Based on Head Movement Features",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2024,
+        "volume": "30",
+        "number": "10",
+        "pages": "6970\u20136983",
         "article_number": "",
         "number_of_pages": 14,
         "abstract": "Augmented reality is one of the enabling technologies of the upcoming future. Its usage in working and learning scenarios may lead to a better quality of work and training by helping the operators during the most crucial stages of processes. Therefore, the automatic detection of stress during augmented reality experiences can be a valuable support to prevent consequences on people's health and foster the spreading of this technology. In this work, we present the design of a non-invasive stress assessment approach. The proposed system is based on the analysis of the head movements of people wearing a Head Mounted Display while performing stress-inducing tasks. First, we designed a subjective experiment consisting of two stress-related tests for data acquisition. Then, a statistical analysis of head movements has been performed to determine which features are representative of the presence of stress. Finally, a stress classifier based on a combination of Support Vector Machines has been designed and trained. The proposed approach achieved promising performances thus paving the way for further studies in this research direction.",
@@ -17308,15 +17308,15 @@
                 ]
             }
         ],
-        "title": "Speech-driven Personalized Gesture Synthetics: Harnessing Automatic Fuzzy Feature Inference",
+        "title": "Speech-Driven Personalized Gesture Synthetics: Harnessing Automatic Fuzzy Feature Inference",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2024,
+        "volume": "30",
+        "number": "10",
+        "pages": "6984\u20136996",
         "article_number": "",
-        "number_of_pages": 16,
-        "abstract": "Speech-driven gesture generation is an emerging field within virtual human creation. However, a significant challenge lies in accurately determining and processing the multitude of input features (such as acoustic, semantic, emotional, personality, and even subtle unknown features). Traditional approaches, reliant on various explicit feature inputs and complex multimodal processing, constrain the expressiveness of resulting gestures and limit their applicability. To address these challenges, we present Persona-Gestor, a novel end-to-end generative model designed to generate highly personalized 3D full-body gestures solely relying on raw speech audio. The model combines a fuzzy feature extractor and a non-autoregressive Adaptive Layer Normalization (AdaLN) transformer diffusion architecture (DiTs-based). The fuzzy feature extractor harnesses a fuzzy inference strategy that automatically infers implicit, continuous fuzzy features. These fuzzy features, represented as a unified latent feature, are fed into the AdaLN transformer. The AdaLN transformer introduces a conditional mechanism that applies a uniform function across all tokens, thereby effectively modeling the correlation between the fuzzy features and the gesture sequence. This module ensures a high level of gesture-speech synchronization while preserving naturalness. Finally, we employ the diffusion model to train and infer various gestures. Extensive subjective and objective evaluations on the Trinity, ZEGGS, and BEAT datasets confirm our model's superior performance to the current state-of-the-art approaches. Persona-Gestor improves the system's usability and generalization capabilities, setting a new benchmark in speech-driven gesture synthesis and broadening the horizon for virtual human technology. Supplementary videos and code can be accessed at https://zf223669.github.io/Diffmotion-v2-website/.",
+        "number_of_pages": 13,
+        "abstract": "Speech-driven gesture generation is an emerging field within virtual human creation. However, a significant challenge lies in accurately determining and processing the multitude of input features (such as acoustic, semantic, emotional, personality, and even subtle unknown features). Traditional approaches, reliant on various explicit feature inputs and complex multimodal processing, constrain the expressiveness of resulting gestures and limit their applicability. To address these challenges, we present Persona-Gestor, a novel end-to-end generative model designed to generate highly personalized 3D full-body gestures solely relying on raw speech audio. The model combines a fuzzy feature extractor and a non-autoregressive Adaptive Layer Normalization (AdaLN) transformer diffusion architecture (DiTs-based). The fuzzy feature extractor harnesses a fuzzy inference strategy that automatically infers implicit, continuous fuzzy features. These fuzzy features, represented as a unified latent feature, are fed into the AdaLN transformer. The AdaLN transformer introduces a conditional mechanism that applies a uniform function across all tokens, thereby effectively modeling the correlation between the fuzzy features and the gesture sequence. This module ensures a high level of gesture-speech synchronization while preserving naturalness. Finally, we employ the diffusion model to train and infer various gestures. Extensive subjective and objective evaluations on the Trinity, ZEGGS, and BEAT datasets confirm our model's superior performance to the current state-of-the-art approaches. Persona-Gestor improves the system's usability and generalization capabilities, setting a new benchmark in speech-driven gesture synthesis and broadening the horizon for virtual human technology.",
         "countries": [
             "CN"
         ]
@@ -17689,6 +17689,499 @@
             "US"
         ]
     },
+    "10.1145/3641519.3657450": {
+        "doi": "10.1145/3641519.3657450",
+        "authors": [
+            {
+                "family": "Reshetov",
+                "given": "Alexander",
+                "orcid": "0000-0003-1278-0414",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Hart",
+                "given": "David",
+                "orcid": "0000-0001-5184-1086",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Modeling Hair Strands with Roving Capsules",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "e3657450",
+        "article_number": "e3657450",
+        "number_of_pages": 9,
+        "abstract": "Hair strands can be modeled by sweeping spheres with varying radii along B\u00e9zier curves. We ray-trace such shapes by finding intersections of a given ray with a set of capsules dynamically defined at runtime. A substantial performance boost is achieved by systematically eliminating parts of the shape that are guaranteed not to intersect with the given ray. The new intersector is more than twice faster than the previously leading phantom algorithm [Reshetov and Luebke 2018]. This improvement results in a 30% overall performance increase, which includes traversal, shading, and the rendering system overhead. In addition, we derive a parametric form of the swept sphere shapes. This provides a deeper understanding of the properties of such objects compared to the offset surfaces obtained by sweeping circles orthogonal to a given curve. The complete WebGL implementation of our algorithm is available at https://www.shadertoy.com/view/4ffXWs.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.1016/j.cag.2024.104050": {
+        "doi": "10.1016/j.cag.2024.104050",
+        "authors": [
+            {
+                "family": "Zhou",
+                "given": "Wei",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Qian",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Jin",
+                "given": "Weiwei",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Shi",
+                "given": "Xinzhe",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "He",
+                "given": "Ying",
+                "countries": [
+                    "SG"
+                ]
+            }
+        ],
+        "title": "Graph Transformer for 3D point clouds classification and semantic segmentation",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "124",
+        "number": "",
+        "pages": "104050",
+        "number_of_pages": 10,
+        "article_number": "104050",
+        "abstract": "Recently, graph-based and Transformer-based deep learning have demonstrated excellent performances on various point cloud tasks. Most of the existing graph-based methods rely on static graph, which take a fixed input to establish graph relations. Moreover, many graph-based methods apply maximizing and averaging to aggregate neighboring features, so that only a single neighboring point affects the feature of centroid or different neighboring points own the same influence on the centroid\u2019s feature, which ignoring the correlation and difference between points. Most Transformer-based approaches extract point cloud features based on global attention and lack the feature learning on local neighbors. To solve the above issues of graph-based and Transformer-based models, we propose a new feature extraction block named Graph Transformer and construct a 3D point cloud learning network called GTNet to learn features of point clouds on local and global patterns. Graph Transformer integrates the advantages of graph-based and Transformer-based methods, and consists of Local Transformer that use intra-domain cross-attention and Global Transformer that use global self-attention. Finally, we use GTNet for shape classification, part segmentation and semantic segmentation tasks in this paper. The experimental results show that our model achieves good learning and prediction ability on most tasks. The source code and pre-trained model of GTNet will be released on https://github.com/NWUzhouwei/GTNet.",
+        "countries": [
+            "CN",
+            "SG"
+        ]
+    },
+    "10.1016/j.cag.2024.104052": {
+        "doi": "10.1016/j.cag.2024.104052",
+        "authors": [
+            {
+                "family": "van Blokland",
+                "given": "Bart Iver",
+                "countries": [
+                    "NO"
+                ]
+            }
+        ],
+        "title": "ShapeBench: A new approach to benchmarking local 3D shape descriptors",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "124",
+        "number": "",
+        "pages": "104052",
+        "number_of_pages": 12,
+        "article_number": "104052",
+        "abstract": "The ShapeBench evaluation methodology is proposed as an extension to the popular Area Under Precision-Recall Curve (PRC/AUC) for measuring the matching performance of local 3D shape descriptors. It is observed that the PRC inadequately accounts for other similar surfaces in the same or different objects when determining whether a candidate match is a true positive. The novel Descriptor Distance Index (DDI) metric is introduced to address this limitation. In contrast to previous evaluation methodologies, which identify entire objects in a given scene, the DDI metric measures descriptor performance by analysing point-to-point distances. The ShapeBench methodology is also more scalable than previous approaches, by using procedural generation. The benchmark is used to evaluate both old and new descriptors. The results produced by the implementation of the benchmark are fully replicable, and are made publicly available.",
+        "countries": [
+            "NO"
+        ]
+    },
+    "10.1145/3641519.3657461": {
+        "doi": "10.1145/3641519.3657461",
+        "authors": [
+            {
+                "family": "Sella",
+                "given": "Etai",
+                "orcid": "0009-0004-0079-0046",
+                "countries": [
+                    "IL"
+                ]
+            },
+            {
+                "family": "Fiebelman",
+                "given": "Gal",
+                "orcid": "0009-0002-2119-9808",
+                "countries": [
+                    "IL"
+                ]
+            },
+            {
+                "family": "Atia",
+                "given": "Noam",
+                "orcid": "0009-0005-4459-6891",
+                "countries": [
+                    "IL"
+                ]
+            },
+            {
+                "family": "Averbuch-Elor",
+                "given": "Hadar",
+                "orcid": "0000-0003-3476-0940",
+                "countries": [
+                    "IL"
+                ]
+            }
+        ],
+        "title": "Spice\u00b7E: Structural Priors in 3D Diffusion using Cross-Entity Attention",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "15:1\u201315:11",
+        "article_number": "15",
+        "number_of_pages": 11,
+        "abstract": "We are witnessing rapid progress in automatically generating and manipulating 3D assets due to the availability of pretrained text-to-image diffusion models. However, time-consuming optimization procedures are required for synthesizing each sample, hindering their potential for democratizing 3D content creation. Conversely, 3D diffusion models now train on million-scale 3D datasets, yielding high-quality text-conditional 3D samples within seconds. In this work, we present Spice \u00b7 E \u2013 a neural network that adds structural guidance to 3D diffusion models, extending their usage beyond text-conditional generation. At its core, our framework introduces a cross-entity attention mechanism that allows for multiple entities\u2014in particular, paired input and guidance 3D shapes\u2014to interact via their internal representations within the denoising network. We utilize this mechanism for learning task-specific structural priors in 3D diffusion models from auxiliary guidance shapes. We show that our approach supports a variety of applications, including 3D stylization, semantic shape editing and text-conditional abstraction-to-3D, which transforms primitive-based abstractions into highly-expressive shapes. Extensive experiments demonstrate that Spice \u00b7 E achieves SOTA performance over these tasks while often being considerably faster than alternative methods. Importantly, this is accomplished without tailoring our approach for any specific task. We will release our code and trained models.",
+        "countries": [
+            "IL"
+        ]
+    },
+    "10.1016/j.cag.2024.104020": {
+        "doi": "10.1016/j.cag.2024.104020",
+        "authors": [
+            {
+                "family": "Paolini",
+                "given": "Gabriele",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Tortorici",
+                "given": "Claudio",
+                "countries": [
+                    "AE"
+                ]
+            },
+            {
+                "family": "Berretti",
+                "given": "Stefano",
+                "countries": [
+                    "IT"
+                ]
+            }
+        ],
+        "title": "Binary segmentation of relief patterns on point clouds",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "123",
+        "number": "",
+        "pages": "104020",
+        "number_of_pages": 10,
+        "article_number": "104020",
+        "abstract": "Analysis of 3D textures, also known as relief patterns is a challenging task that requires separating repetitive surface patterns from the underlying global geometry. Existing works classify entire surfaces based on one or a few patterns by extracting ad-hoc statistical properties. Unfortunately, these methods are not suitable for objects with multiple geometric textures and perform poorly on more complex shapes. In this paper, we propose a neural network for binary segmentation to infer per-point labels based on the presence of surface relief patterns. We evaluated the proposed architecture on a high resolution point cloud dataset, surpassing the state-of-the-art, while maintaining memory and computation efficiency.",
+        "countries": [
+            "IT",
+            "AE"
+        ]
+    },
+    "10.1016/j.cag.2024.104058": {
+        "doi": "10.1016/j.cag.2024.104058",
+        "authors": [
+            {
+                "family": "Xue",
+                "given": "Liumeng",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Chaoren",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Mingxuan",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Xueyao",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Han",
+                "given": "Jun",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Wu",
+                "given": "Zhizheng",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "SingVisio: Visual analytics of diffusion model for singing voice conversion",
+        "journal": "Computers & Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "104058",
+        "abstract": "In this study, we present SingVisio, an interactive visual analysis system that aims to explain the diffusion model used in singing voice conversion. SingVisio provides a visual display of the generation process in diffusion models, showcasing the step-by-step denoising of the noisy spectrum and its transformation into a clean spectrum that captures the desired singer\u2019s timbre. The system also facilitates side-by-side comparisons of different conditions, such as source content, melody, and target timbre, highlighting the impact of these conditions on the diffusion generation process and resulting conversions. Through comparative and comprehensive evaluations, SingVisio demonstrates its effectiveness in terms of system design, functionality, explainability, and user-friendliness. It offers users of various backgrounds valuable learning experiences and insights into the diffusion model for singing voice conversion.",
+        "countries": [
+            "CN",
+            "HK"
+        ]
+    },
+    "10.1109/tvcg.2016.2615308": {
+        "doi": "10.1109/tvcg.2016.2615308",
+        "authors": [
+            {
+                "family": "Isenberg",
+                "given": "Petra",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Heimerl",
+                "given": "Florian",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Koch",
+                "given": "Steffen",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Isenberg",
+                "given": "Tobias",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Xu",
+                "given": "Panpan",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Stolper",
+                "given": "Charles D.",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Sedlmair",
+                "given": "Michael",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Chen",
+                "given": "Jian",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "M\u00f6ller",
+                "given": "Torsten",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Stasko",
+                "given": "John",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Vispubdata.org: A Metadata Collection About IEEE Visualization (VIS) Publications",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2017,
+        "volume": "23",
+        "number": "9",
+        "pages": "2199\u20132206",
+        "article_number": "",
+        "number_of_pages": 8,
+        "abstract": "We have created and made available to all a dataset with information about every paper that has appeared at the IEEE Visualization (VIS) set of conferences: InfoVis, SciVis, VAST, and Vis. The information about each paper includes its title, abstract, authors, and citations to other papers in the conference series, among many other attributes. This article describes the motivation for creating the dataset, as well as our process of coalescing and cleaning the data, and a set of three visualizations we created to facilitate exploration of the data. This data is meant to be useful to the broad data visualization community to help understand the evolution of the field and as an example document collection for text data visualization research.",
+        "countries": [
+            "FR",
+            "DE",
+            "HK",
+            "US",
+            "AT"
+        ]
+    },
+    "10.1016/j.cag.2024.104065": {
+        "doi": "10.1016/j.cag.2024.104065",
+        "authors": [
+            {
+                "family": "Azevedo",
+                "given": "Rafael V.",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Coutinho",
+                "given": "Thiago M.",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Ferreira",
+                "given": "Jo\u00e3o P.",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Gomes",
+                "given": "Thiago L.",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Nascimento",
+                "given": "Erickson R.",
+                "countries": [
+                    "BR"
+                ]
+            }
+        ],
+        "title": "Empowering sign language communication: Integrating sentiment and semantics for facial expression synthesis",
+        "journal": "Computers & Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "104065",
+        "abstract": "Translating written sentences from oral languages to a sequence of manual and non-manual gestures plays a crucial role in building a more inclusive society for deaf and hard-of-hearing people. Facial expressions (non-manual), in particular, are responsible for encoding the grammar of the sentence to be spoken, applying punctuation, pronouns, or emphasizing signs. These non-manual gestures are closely related to the semantics of the sentence being spoken and also to the utterance of the speaker\u2019s emotions. However, most Sign Language Production (SLP) approaches are centered on synthesizing manual gestures and do not focus on modeling the speaker\u2019s expression. This paper introduces a new method focused in synthesizing facial expressions for sign language. Our goal is to improve sign language production by integrating sentiment information in facial expression generation. The approach leverages a sentence\u2019s sentiment and semantic features to sample from a meaningful representation space, integrating the bias of the non-manual components into the sign language production process. To evaluate our method, we extend the Frechet gesture distance (FGD) and propose a new metric called Fr\u00e9chet Expression Distance (FED) and apply an extensive set of metrics to assess the quality of specific regions of the face. The experimental results showed that our method achieved state of the art, being superior to the competitors on How2Sign and PHOENIX14T datasets. Moreover, our architecture is based on a carefully designed graph pyramid that makes it simpler, easier to train, and capable of leveraging emotions to produce facial expressions. Our code and pretrained models will be available at: https://github.com/verlab/empowering-sign-language.",
+        "countries": [
+            "BR"
+        ]
+    },
+    "10.1016/j.cag.2024.104069": {
+        "doi": "10.1016/j.cag.2024.104069",
+        "authors": [
+            {
+                "family": "Hombeck",
+                "given": "Jan",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Voigt",
+                "given": "Henrik",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Lawonn",
+                "given": "Kai",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "Voice user interfaces for effortless navigation in medical virtual reality environments",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "124",
+        "number": "",
+        "pages": "104069",
+        "number_of_pages": 12,
+        "article_number": "104069",
+        "abstract": "In various situations, such as clinical environments with sterile conditions or when hands are occupied with multiple devices, traditional methods of navigation and scene adjustment are impractical or even impossible. We explore a new solution by using voice control to facilitate interaction in virtual worlds to avoid the use of additional controllers. Therefore, we investigate three scenarios: Object Orientation, Visualization Customization, and Analytical Tasks and evaluate whether natural language interaction is possible and promising in each of these scenarios. In our quantitative user study participants were able to control virtual environments effortlessly using verbal instructions. This resulted in rapid orientation adjustments, adaptive visual aids, and accurate data analysis. In addition, user satisfaction and usability surveys showed consistently high levels of acceptance and ease of use. In conclusion, our study shows that the use of natural language can be a promising alternative for the improvement of user interaction in virtual environments. It enables intuitive interactions in virtual spaces, especially in situations where traditional controls have limitations.",
+        "countries": [
+            "DE"
+        ]
+    },
+    "10.1109/tvcg.2024.3437417": {
+        "doi": "10.1109/tvcg.2024.3437417",
+        "authors": [
+            {
+                "family": "Larionov",
+                "given": "Egor",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Longva",
+                "given": "Andreas",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Ascher",
+                "given": "Uri M.",
+                "countries": [
+                    "CA"
+                ]
+            },
+            {
+                "family": "Bender",
+                "given": "Jan",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Pai",
+                "given": "Dinesh K.",
+                "countries": [
+                    "CA"
+                ]
+            }
+        ],
+        "title": "Implicit frictional dynamics with soft constraints",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 12,
+        "abstract": "Dynamics simulation with frictional contacts is important for a wide range of applications, from cloth simulation to object manipulation. Recent methods using smoothed lagged friction forces have enabled robust and differentiable simulation of elastodynamics with friction. However, the resulting frictional behavior can be inaccurate and may not converge to analytic solutions. Here we evaluate the accuracy of lagged friction models in comparison with implicit frictional contact systems. We show that major inaccuracies near the stick-slip threshold in such systems are caused by lagging of friction forces rather than by smoothing the Coulomb friction curve. Furthermore, we demonstrate how systems involving implicit or lagged friction can be correctly used with higher-order time integration and highlight limitations in earlier attempts. We demonstrate how to exploit forward-mode automatic differentiation to simplify and, in some cases, improve the performance of the inexact Newton method. Finally, we show that other complex phenomena can also be simulated effectively while maintaining smoothness of the entire system. We extend our method to exhibit stick-slip frictional behavior and preserve volume on compressible and nearly-incompressible media using soft constraints.",
+        "countries": [
+            "US",
+            "DE",
+            "CA"
+        ]
+    },
     "10.vis2024/1153": {
         "doi": "10.vis2024/1153",
         "authors": [
@@ -17817,6 +18310,205 @@
         "countries": [
             "US",
             "CH"
+        ]
+    },
+    "10.vis2024/1316": {
+        "doi": "10.vis2024/1316",
+        "authors": [
+            {
+                "family": "Pokojn\u00e1",
+                "given": "Hana",
+                "countries": [
+                    "CZ"
+                ]
+            },
+            {
+                "family": "Isenberg",
+                "given": "Tobias",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Bruckner",
+                "given": "Stefan",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Kozl\u00edkov\u00e1",
+                "given": "Barbora",
+                "countries": [
+                    "CZ"
+                ]
+            },
+            {
+                "family": "Garrison",
+                "given": "Laura",
+                "countries": [
+                    "NO"
+                ]
+            }
+        ],
+        "title": "The Language of Infographics: Toward Understanding Conceptual Metaphor Use in Scientific Storytelling",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "We apply an approach from cognitive linguistics by mapping Conceptual Metaphor Theory (CMT) to the visualization domain to address patterns of visual conceptual metaphors that are often used in science infographics. Metaphors play an essential part in visual communication and are frequently employed to explain complex concepts. However, their use is often based on intuition, rather than following a formal process. At present, we lack tools and language for understanding and describing metaphor use in visualization to the extent where taxonomy and grammar could guide the creation of visual components, e.g., infographics. Our classification of the visual conceptual mappings within scientific representations is based on the breakdown of visual components in existing scientific infographics. We demonstrate the development of this mapping through a detailed analysis of data collected from four domains (biomedicine, climate, space, and anthropology) that represent a diverse range of visual conceptual metaphors used in the visual communication of science. This work allows us to identify patterns of visual conceptual metaphor use within the domains, resolve ambiguities about why specific conceptual metaphors are used, and develop a better overall understanding of visual metaphor use in scientific infographics. Our analysis shows that ontological and orientational conceptual metaphors are the most widely applied to translate complex scientific concepts. To support our findings we developed a visual exploratory tool based on the collected database that places the individual infographics on a spatio-temporal scale and illustrates the breakdown of visual conceptual metaphors.",
+        "countries": [
+            "CZ",
+            "FR",
+            "DE",
+            "NO"
+        ]
+    },
+    "10.vis2024/1063": {
+        "doi": "10.vis2024/1063",
+        "authors": [
+            {
+                "family": "Solen",
+                "given": "Mara",
+                "countries": [
+                    "CA"
+                ]
+            },
+            {
+                "family": "Sultana",
+                "given": "Nigar",
+                "countries": [
+                    "CA"
+                ]
+            },
+            {
+                "family": "Lukes",
+                "given": "Laura",
+                "countries": [
+                    "CA"
+                ]
+            },
+            {
+                "family": "Munzner",
+                "given": "Tamara",
+                "countries": [
+                    "CA"
+                ]
+            }
+        ],
+        "title": "DeLVE into Earth\u2019s Past: A Visualization-Based Exhibit Deployed Across Multiple Museum Contexts",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "While previous work has found success in deploying visualizations as museum exhibits, it has not investigated whether museum context impacts visitor behaviour with these exhibits. We present an interactive Deep-time Literacy Visualization Exhibit (DeLVE) to help museum visitors understand deep time (lengths of extremely long geological processes) by improving proportional reasoning skills through comparison of different time periods. DeLVE uses a new visualization idiom, Connected Multi-Tier Ranges, to visualize curated datasets of past events across multiple scales of time, relating extreme scales with concrete scales that have more familiar magnitudes and units. Museum staff at three separate museums approved the deployment of DeLVE as a digital kiosk, and devoted time to curating a unique dataset in each of them. We collect data from two sources, an observational study and system trace logs. We discuss the importance of context: similar museum exhibits in different contexts were received very differently by visitors. We additionally discuss differences in our process from Sedlmair et al.'s design study methodology which is focused on design studies triggered by connection with collaborators rather than the discovery of a concept to communicate. Supplemental materials are available at: https://osf.io/z53dq/.",
+        "countries": [
+            "CA"
+        ]
+    },
+    "10.vis2024/1302": {
+        "doi": "10.vis2024/1302",
+        "authors": [
+            {
+                "family": "Molina Le\u00f3n",
+                "given": "Gabriela",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Bezerianos",
+                "given": "Anastasia",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Gladin",
+                "given": "Olivier",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Isenberg",
+                "given": "Petra",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Talk to the Wall: The Role of Speech Interaction in Collaborative Visual Analytics",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "We present the results of an exploratory study on how pairs interact with speech commands and touch gestures on a wall-sized display during a collaborative sensemaking task. Previous work has shown that speech commands, alone or in combination with other input modalities, can support visual data exploration by individuals. However, it is still unknown whether and how speech commands can be used in collaboration, and for what tasks. To answer these questions, we developed a functioning prototype that we used as a technology probe. We conducted an in-depth exploratory study with 10 participant pairs to analyze their interaction choices, the interplay between the input modalities, and their collaboration. While touch was the most used modality, we found that participants preferred speech commands for global operations, used them for distant interaction, and that speech interaction contributed to the awareness of the partner's actions. Furthermore, the likelihood of using speech commands during collaboration was related to the personality trait of agreeableness. Regarding collaboration styles, participants interacted with speech equally often whether they were in loosely or closely coupled collaboration. While the partners stood closer to each other during close collaboration, they did not distance themselves to use speech commands. From our findings, we derive and contribute a set of design considerations for collaborative and multimodal interactive data analysis systems. All supplemental materials are available at https://osf.io/8gpv2.",
+        "countries": [
+            "DE",
+            "FR"
+        ]
+    },
+    "10.vis2024/1626": {
+        "doi": "10.vis2024/1626",
+        "authors": [
+            {
+                "family": "Zhao",
+                "given": "Lixiang",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Isenberg",
+                "given": "Tobias",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Xie",
+                "given": "Fuqi",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Liang",
+                "given": "Hai-Ning",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Yu",
+                "given": "Lingyun",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "SpatialTouch: Exploring Spatial Data Visualizations in Cross-reality",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "We propose and study a novel cross-reality environment that seamlessly integrates a monoscopic 2D surface (an interactive screen with touch and pen input) with a stereoscopic 3D space (an augmented reality HMD) to jointly host spatial data visualizations. This innovative approach combines the best of two conventional methods of displaying and manipulating spatial 3D data, enabling users to fluidly explore diverse visual forms using tailored interaction techniques. Providing such effective 3D data exploration techniques is pivotal for conveying its intricate spatial structures\u2014often at multiple spatial or semantic scales\u2014across various application domains and requiring diverse visual representations for effective visualization. To understand user reactions to our new environment, we began with an elicitation user study, in which we captured their responses and interactions. We observed that users adapted their interaction approaches based on perceived visual representations, with natural transitions in spatial awareness and actions while navigating across the physical surface. Our findings then informed the development of a design space for spatial data exploration in cross-reality. We thus developed cross-reality environments tailored to three distinct domains: for 3D molecular structure data, for 3D point cloud data, and for 3D anatomical data. In particular, we designed interaction techniques that account for the inherent features of interactions in both spaces, facilitating various forms of interaction, including mid-air gestures, touch interactions, pen interactions, and combinations thereof, to enhance the users\u2019 sense of presence and engagement. We assessed the usability of our environment with biologists, focusing on its use for domain research. In addition, we evaluated our interaction transition designs with virtual and mixed-reality experts to gather further insights. As a result, we provide our design suggestions for the cross-reality environment, emphasizing the interaction with diverse visual representations and seamless interaction transitions between 2D and 3D spaces.",
+        "countries": [
+            "CN",
+            "FR"
         ]
     }
 }

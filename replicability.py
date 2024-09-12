@@ -17,7 +17,7 @@ import glob
 import shutil
 
 # settings of how to do things and what extra stuff to do
-useLocalDataOnly = False # FIXME: should be True for submission
+useLocalDataOnly = True # FIXME: should be True for submission
 exportVisualizations = True
 doNameChecking = False
 doAbstractCheckingForKeywords = False
@@ -42,6 +42,7 @@ countryPieChartThreshold = 2.5 # in percent (1--100)
 neutralGray = "#a9a9a9"
 paperNumbersOutputString += "\\newcommand{\\GrsiCountryPieChartThreshold}{" + str(countryPieChartThreshold) + "}\n"
 myLabelLimit = 500 # this is a weird issue: technically a value of 0 should mean no limit, but sometimes it literally means a limit of 0; so a sufficiently large number is needed here to avoid label cropping, 500 should work
+topLimitAuthorPlots = 1100 # to adjust all the author count plots in a similar way
 
 #####################################
 # change to directory of the script
@@ -118,7 +119,7 @@ def intToRoman(num):
     # storing Roman values of digits from 0-9 when placed at different places
     m = ["", "M", "MM", "MMM"]
     c = ["", "C", "CC", "CCC", "CD", "D",
-         "DC", "DCC", "DCCC", "CM "]
+         "DC", "DCC", "DCCC", "CM"]
     x = ["", "X", "XX", "XXX", "XL", "L",
          "LX", "LXX", "LXXX", "XC"]
     i = ["", "I", "II", "III", "IV", "V",
@@ -182,7 +183,6 @@ def markVisPapersByKeywords(paperList):
         oldStatus = paper["is_vis"]
 
         # manual selections of specific papers for which we know more
-        # if ("10.1109/tvcg.2023.3345340" in paper["doi"]): paper["is_vis"] = True # will be presented at VIS
         if ("10.1109/tvcg.2022.3214821" in paper["doi"]): paper["is_vis"] = True # visualization author keyword
         if ("10.1109/tvcg.2021.3101418" in paper["doi"]): paper["is_vis"] = True # visualization author keyword
         #if ("10.1109/tvcg.2023.3237768" in paper["doi"]): paper["is_vis"] = True # visual analysis author keyword, but automatically found by keyword search
@@ -518,17 +518,33 @@ for acceptedVisPapersFilename in acceptedVisPapersFilenamesList:
                 visPubDataConferenceYears[visDoi] = year
                 if (year > visPubDataMostRecentYear): visPubDataMostRecentYear = year
 
+# when done with all loading of proper VIS papers, count the totals of papers per year and output strings
+listOfVispubDataYears = list(set(val for val in visPubDataConferenceYears.values()))
+for year in listOfVispubDataYears:
+    papersThatYear = sum(value == year for value in visPubDataConferenceYears.values())
+    paperNumbersOutputString += "\\newcommand{\\TotalIeeeVisPapersIn" + intToRoman(year) + "}{" + str(papersThatYear) + "}\n"
+
 # read the dois of the IEEE VIS journal presentations (as csv file)
 visJournalPresentationDois = []
 visJournalPresentationMostRecentYear = 0
+visTVCGJournalPresentationConferenceYears = {}
 with open('input/vis_journal_presentations.csv', 'r', encoding="utf-8") as csvfile:
     # create a CSV reader object
     reader = csv.DictReader(csvfile)
     # iterate over the rows
     for row in reader:
-        visJournalPresentationDois.append(row['doi'].lower())
+        tvcgDoi = row['doi'].lower()
+        visJournalPresentationDois.append(tvcgDoi)
         year = int(row['year'])
+        if (row['journal'] == "TVCG"): # only for TVCG papers
+            visTVCGJournalPresentationConferenceYears[tvcgDoi] = year # the year of the presentation
         if (year > visJournalPresentationMostRecentYear): visJournalPresentationMostRecentYear = year
+
+# when done with all loading of proper VIS journal papers, count the totals of TVCG journal papers per year and output strings
+listOfTVCGJournalPresentationYears = list(set(val for val in visTVCGJournalPresentationConferenceYears.values()))
+for year in listOfTVCGJournalPresentationYears:
+    papersThatYear = sum(value == year for value in visTVCGJournalPresentationConferenceYears.values())
+    paperNumbersOutputString += "\\newcommand{\\TotalIeeeVisTVCGJournalPapersIn" + intToRoman(year) + "}{" + str(papersThatYear) + "}\n"
 
 # read the dois of the PacificVis TVCG papers (as csv file)
 pacificVisTvcgDois = []
@@ -713,14 +729,18 @@ else:
             doi = doi.replace("https://doi.ieeecomputersociety.org/", "")
             doi = re.sub(pattern=r"https://diglib\.eg\.org(?::443)?/handle/10\.1111/cgf(\d+)", repl=r"10.1111/cgf.\1", string=doi)
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
-            # please note to replace the '%20' in the Google search links with a ' '; otherwise the replacement does not work
+            # please note to replace the '%20' in the Google search links with a ' ' (manually or via a .replace("%20", " ") call as in the examples); otherwise the replacement does not work
             doi = doi.replace("http://www.google.com/search?q=Graph Transformer for 3D point clouds classification and semantic segmentation", "10.1016/j.cag.2024.104050")
             doi = doi.replace("http://www.google.com/search?q=ShapeBench: a new approach to benchmarking local 3D shape descriptors", "10.1016/j.cag.2024.104052")
+            doi = doi.replace("http://www.google.com/search?q=Empowering%20Sign%20Language%20Communication:%20Integrating%20Sentiment%20and%20Semantics%20for%20Facial%20Expression%20Synthesis".replace("%20", " "), "10.1016/j.cag.2024.104065")
+            doi = doi.replace("http://www.google.com/search?q=SingVisio:%20Visual%20Analytics%20of%20Diffusion%20Model%20for%20Singing%20Voice%20Conversion".replace("%20", " "), "10.1016/j.cag.2024.104058")
             doi = doi.replace("http://www.google.com/search?q=SimpleSets: Capturing Categorical Point Patterns with Simple Shapes", "10.vis2024/1153") # fake DOI for accepted VIS 2024 papers
             doi = doi.replace("http://www.google.com/search?q=A Practical Solver for Scalar Data Topological Simplification.", "10.vis2024/1461") # fake DOI for accepted VIS 2024 papers
             doi = doi.replace("http://www.google.com/search?q=ProvenanceWidgets: A Library of UI Control Elements to Track and Dynamically Overlay Analytic Provenance", "10.vis2024/1204") # fake DOI for accepted VIS 2024 papers
             doi = doi.replace("http://www.google.com/search?q=The Language of Infographics: Toward Understanding Conceptual Metaphor Use in Scientific Storytelling", "10.vis2024/1316") # fake DOI for accepted VIS 2024 papers
             doi = doi.replace("http://www.google.com/search?q=DeLVE into Earth’s Past: A Visualization-Based Exhibit Deployed Across Multiple Museum Contexts", "10.vis2024/1063") # fake DOI for accepted VIS 2024 papers
+            doi = doi.replace("http://www.google.com/search?q=Talk%20to%20the%20Wall:%20The%20Role%20of%20Speech%20Interaction%20in%20Collaborative%20Visual%20Analytics".replace("%20", " "), "10.vis2024/1302") # fake DOI for accepted VIS 2024 papers
+            doi = doi.replace("http://www.google.com/search?q=SpatialTouch:%20Exploring%20Spatial%20Data%20Visualizations%20in%20Cross-reality".replace("%20", " "), "10.vis2024/1626") # fake DOI for accepted VIS 2024 papers
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()
@@ -755,6 +775,7 @@ else:
             if doi == '10.1145/3528223.3530124': authors = authors.replace('Alexandre Mercier-Aubin, Alexander Winter, David I.W. Levin, and Paul G. Kry', 'Alexandre Mercier-Aubin, Paul G. Kry, Alexandre Winter, David I. W. Levin')
             if doi == '10.1016/j.cag.2022.07.015': authors = authors.replace("Ariel Caputo, Marco Emporio, Andrea Giachetti, Marco Cristani, Guido Borghi, Andrea D'Eusanio, Minh-Quan Le, Hai-Dang Nguyen, Minh-Triet Tran, F. Ambellan, M. Hanik, E. Nava-Yazdani, C. von Tycowicz", "Marco Emporio, Ariel Caputo, Andrea Giachetti, Marco Cristani, Guido Borghi, Andrea D’Eusanio, Minh-Quan Le, Hai-Dang Nguyen, Minh-Triet Tran, Felix Ambellan, Martin Hanik, Esfandiar Nava-Yazdani, Christoph von Tycowicz")
             authors = authors.replace('\u200b', '')
+            authors = re.sub(pattern=r"(\w),(\w)", repl=r"\1, \2", string=authors) # we need spaces after commas
             authors = authors.replace('Chen, Shu-Yu and Su, Wanchao and Gao, Lin and Xia, Shihong and Fu, Hongbo', 'Shu-Yu Chen and Wanchao Su and Lin Gao and Shihong Xia and Hongbo Fu')
             authors = authors.replace('Bora Yalçıner(1), Ahmet Oğuz Akyüz (1) ((1)Middle East Technical University, Computer Engineering Department)', 'Bora Yalçıner, Ahmet Oğuz Akyüz')
             authors = authors.replace(' (*Joint first authors)', '')
@@ -809,6 +830,7 @@ else:
             authors = authors.replace('Kęstutis Karčiauskas', 'Kȩstutis Karčiauskas')
             authors = authors.replace('Rafal K. Mantiuk', 'Rafał K. Mantiuk')
             authors = authors.replace('Gabriela Molina', 'Gabriela Molina León')
+            authors = authors.replace('Gabriela Molina León León', 'Gabriela Molina León') # fix the potential duplication of the second last name
             authors = authors.replace('Marti Hearst', 'Marti A. Hearst')
             authors = authors.replace('Vinicius da Silva', 'Vinícius da Silva')
             authors = authors.replace('Helio Lopes', 'Hélio Lopes')
@@ -921,8 +943,11 @@ with open(formatted_date + " current-list.txt", "w", encoding='utf-8') as f:
     markPapersByDoi(paperList, visPubDataDois, "is_vis")
     markPapersByDoi(paperList, visJournalPresentationDois, "is_vis")
     markPapersByDoi(paperList, pacificVisTvcgDois, "is_vis")
-    markPapersByDoi(paperList, euroVisJournalPresentationDois, "is_vis")
+    markPapersByDoi(paperList, pacificVisJournalPresentationDois, "is_vis")
     markPapersByDoi(paperList, euroVisPaperDois, "is_vis")
+    markPapersByDoi(paperList, euroVisJournalPresentationDois, "is_vis")
+    markPapersByDoi(paperList, vcbmJournalDois, "is_vis")
+    markPapersByDoi(paperList, cagVisSpecialIssueDois, "is_vis")
     markVisPapersByKeywords(paperList)
 
     print("===============\nSorted by rank:\n===============", file=f)
@@ -1015,6 +1040,7 @@ with open(formatted_date + " current-list.txt", "w", encoding='utf-8') as f:
     paperNumbersOutputString += "\\newcommand{\\GrsiIeeeVisPapersCount}{" + str(visCounter - oldVisCounter) + "}\n"
     paperNumbersOutputString += "\\newcommand{\\GrsiIeeeVisPapersLastYear}{" + str(visPubDataMostRecentYear) + "}\n"
     visPapersPerYear = {}
+    for year in range(2017, current_year): visPapersPerYear[year] = 0 # just to ensure that we have all years since 2017
     for paper in paperList:
         if ((paper["is_vis"]) and (paper["doi"] in visPubDataDois)):
             print("https://doi.org/" + str(paper["doi"].ljust(doiPaddingCount) + " -- " + str(paper["title"])), file=f)
@@ -1022,7 +1048,6 @@ with open(formatted_date + " current-list.txt", "w", encoding='utf-8') as f:
             if year in visPapersPerYear.keys(): visPapersPerYear[year] += 1
             else: visPapersPerYear[year] = 1
     for year in visPapersPerYear.keys(): paperNumbersOutputString += "\\newcommand{\\GrsiIeeeVisPapersIn" + intToRoman(year) + "}{" + str(visPapersPerYear[year]) + "}\n"
-
 
     ############################################
     ### journal paper presentations at IEEE VIS
@@ -1039,10 +1064,23 @@ with open(formatted_date + " current-list.txt", "w", encoding='utf-8') as f:
 
     # print IEEE VIS journal presentations
     print("\nIEEE VIS TVCG journal presentations (up to the conference in " + str(visJournalPresentationMostRecentYear) + ", and some planned ones we know of): " + str(visCounter - oldVisCounter) + " papers", file=f)
-    paperNumbersOutputString += "\\newcommand{\\GrsiIeeeVisTvcgJournalPresentationsCount}{" + str(visCounter - oldVisCounter) + "}\n"
-    paperNumbersOutputString += "\\newcommand{\\GrsiIeeeVisTvcgJournalPresentationsLastYear}{" + str(visJournalPresentationMostRecentYear) + "}\n"
+    paperNumbersOutputString += "\\newcommand{\\GrsiIeeeVisJournalPresentationsCount}{" + str(visCounter - oldVisCounter) + "}\n"
+    paperNumbersOutputString += "\\newcommand{\\GrsiIeeeVisJournalPresentationsLastYear}{" + str(visJournalPresentationMostRecentYear) + "}\n"
+    
+    visTVCGJournalPapersPerYear = {}
+    for year in range(2017, current_year): visTVCGJournalPapersPerYear[year] = 0 # just to ensure that we have all years since 2017
     for paper in paperList:
-        if ((paper["is_vis"]) and (paper["doi"] in visJournalPresentationDois)): print("https://doi.org/" + str(paper["doi"].ljust(doiPaddingCount) + " -- " + str(paper["title"])), file=f)
+        if ((paper["is_vis"]) and (paper["doi"] in visJournalPresentationDois)):
+            print("https://doi.org/" + str(paper["doi"].ljust(doiPaddingCount) + " -- " + str(paper["title"])), file=f)
+            if paper["doi"] in visTVCGJournalPresentationConferenceYears.keys(): # there may also be CG&A papers in the list of visJournalPresentationDois
+                year = visTVCGJournalPresentationConferenceYears[paper["doi"]]
+                if year in visTVCGJournalPapersPerYear.keys(): visTVCGJournalPapersPerYear[year] += 1
+                else: visTVCGJournalPapersPerYear[year] = 1
+    onlyTvcgJournalPresentations = 0 # this count may be different from the value above once CG&A also starts awarding stamps
+    for year in visTVCGJournalPapersPerYear.keys():
+        onlyTvcgJournalPresentations += visTVCGJournalPapersPerYear[year]
+        paperNumbersOutputString += "\\newcommand{\\GrsiIeeeVisTVCGJournalPapersIn" + intToRoman(year) + "}{" + str(visTVCGJournalPapersPerYear[year]) + "}\n"
+    paperNumbersOutputString += "\\newcommand{\\GrsiIeeeVisTvcgJournalPresentationsCount}{" + str(onlyTvcgJournalPresentations) + "}\n"
 
     ############################################
     ### proper PacificVis TVCG papers
@@ -2190,7 +2228,7 @@ if exportVisualizations:
     altairData = pd.DataFrame(dataToPlotAll)
     chart = alt.Chart(altairData).mark_bar(size=20).encode(
         x = alt.X('paper_count:Q', axis=alt.Axis(title='GRS stamps per person', grid=False)).scale(domain=[0.5, dataToPlotAll[-1]['paper_count'] + 0.5]),
-        y = alt.Y('people:Q', title='# of GRS authors').scale(type="log", domain=[0.9, 1000])
+        y = alt.Y('people:Q', title='# of GRS authors, logarithmic').scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
         width=400,
@@ -2201,7 +2239,7 @@ if exportVisualizations:
     altairData = pd.DataFrame(dataToPlotVis)
     chart = alt.Chart(altairData).mark_bar(size=20).encode(
         x = alt.X('paper_count:Q', axis=alt.Axis(title='GRS stamps per person', grid=False)).scale(domain=[0.5, dataToPlotVis[-1]['paper_count'] + 0.5]),
-        y = alt.Y('people:Q', title='# of GRS visualization authors (≥ 50% vis papers)').scale(type="log", domain=[0.9, 1000])
+        y = alt.Y('people:Q', title='# of GRS visualization authors (≥ 50% vis papers), log.').scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
         width=400,
@@ -2224,7 +2262,7 @@ if exportVisualizations:
     altairData = pd.DataFrame(dataToPlot)
     chart = alt.Chart(altairData).mark_bar(size=20).encode(
         x = alt.X('bin_range:N', axis=alt.Axis(title="percentage range of visualization papers per author", grid=False, labelAngle=-25), sort=None), #.scale(domain=[0.5, float(binCounter) + 0.5]),
-        y = alt.Y('people:Q', title='# of authors, logarithmic').scale(type="log", domain=[0.9, 1000])
+        y = alt.Y('people:Q', title='# of authors, logarithmic').scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
         width=400,
@@ -2235,7 +2273,7 @@ if exportVisualizations:
     altairData = pd.DataFrame(dataToPlot)
     chart = alt.Chart(altairData).mark_bar(size=20).encode(
         x = alt.X('bin_range:N', axis=alt.Axis(title="percentage range of visualization papers per author", grid=False, labelAngle=-25), sort=None), #.scale(domain=[0.5, float(binCounter) + 0.5]),
-        y = alt.Y('people:Q', title='# of authors')#.scale(type="log", domain=[0.9, 1000])
+        y = alt.Y('people:Q', title='# of authors')#.scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
         width=400,
@@ -2258,7 +2296,7 @@ if exportVisualizations:
     altairData = pd.DataFrame(dataToPlot)
     chart = alt.Chart(altairData).mark_bar(size=20).encode(
         x = alt.X('bin_range:N', axis=alt.Axis(title="percentage range of visualization papers per author (≥ 2 papers)", grid=False, labelAngle=-25), sort=None), #.scale(domain=[0.5, float(binCounter) + 0.5]),
-        y = alt.Y('people:Q', title='# of authors, logarithmic').scale(type="log", domain=[0.9, 1000])
+        y = alt.Y('people:Q', title='# of authors, logarithmic').scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
         width=400,
@@ -2269,7 +2307,7 @@ if exportVisualizations:
     altairData = pd.DataFrame(dataToPlot)
     chart = alt.Chart(altairData).mark_bar(size=20).encode(
         x = alt.X('bin_range:N', axis=alt.Axis(title="percentage range of visualization papers per author (≥ 2 papers)", grid=False, labelAngle=-25), sort=None), #.scale(domain=[0.5, float(binCounter) + 0.5]),
-        y = alt.Y('people:Q', title='# of authors')#.scale(type="log", domain=[0.9, 1000])
+        y = alt.Y('people:Q', title='# of authors')#.scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
         width=400,
