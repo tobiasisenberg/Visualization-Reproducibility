@@ -4,6 +4,28 @@
 
 This repository provides all needed means to reproduce an analysis of the state of replicability stamps for, in particular, scientific papers in the field of visualization. The main script ([`replicability.py`](replicability.py)) produces all graphs I generated for this purpose, as well as some textual summaries and data. Then the [`paper/`](paper/) subdirectory uses the produced graphs and text to generate the paper I wrote about the analysis. At any point in time the paper can thus be updated to the state of the art of the data, by first running the script, then potentially adding some information (country of affiliations for the authors of newly added papers) and running the script one more time, before using LaTeX to compile the paper with updated graphs and numbers.
 
+If you use material from this repository, please cite the associated paper:
+
+Tobias Isenberg. The State of Reproducibility Stamps for Visualization Research Papers. In Anastasia Bezerianos, Michael Correll, Kyle Hall, Jürgen Bernard, Dan Keefe, Mai Elshehaly, and Mahsan Nourani, editors, Proceedings of BELIV, IEEE Computer Society, Los Alamitos, 2024. To appear.
+
+bibTeX:
+```
+@inproceedings{Isenberg:2024:SRS,
+  author      = {Tobias Isenberg},
+  title       = {The State of Reproducibility Stamps for Visualization Research Papers},
+  booktitle   = {Proceedings of BELIV},
+  OPTeditor   = {Anastasia Bezerianos and Michael Correll and Kyle Hall and J{\"u}rgen Bernard and Dan Keefe and Mai Elshehaly and Mahsan Nourani},
+  year        = {2024},
+  publisher   = {IEEE Computer Society},
+  address     = {Los Alamitos},
+  preprint    = {https://doi.org/10.48550/arXiv.2408.03889},
+  osf_url     = {https://osf.io/mvnbj/},
+  url         = {https://tobias.isenberg.cc/p/Isenberg2024SRS},
+  github_url  = {https://github.com/tobiasisenberg/Visualization-Reproducibility},
+  pdf         = {https://tobias.isenberg.cc/personal/papers/Isenberg_2024_SRS.pdf},
+}
+```
+
 ## Included (and required) datasets or files
 
 These datasets are used to be able to analyze the replicability with respect to where they were published and to reliably be able to tell what makes a visualization paper. Currently the data is current up to 2023/2024; in the future these datasets naturally would need to be updated.
