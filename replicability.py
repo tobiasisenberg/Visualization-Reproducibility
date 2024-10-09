@@ -734,13 +734,13 @@ else:
             doi = doi.replace("http://www.google.com/search?q=ShapeBench: a new approach to benchmarking local 3D shape descriptors", "10.1016/j.cag.2024.104052")
             doi = doi.replace("http://www.google.com/search?q=Empowering%20Sign%20Language%20Communication:%20Integrating%20Sentiment%20and%20Semantics%20for%20Facial%20Expression%20Synthesis".replace("%20", " "), "10.1016/j.cag.2024.104065")
             doi = doi.replace("http://www.google.com/search?q=SingVisio:%20Visual%20Analytics%20of%20Diffusion%20Model%20for%20Singing%20Voice%20Conversion".replace("%20", " "), "10.1016/j.cag.2024.104058")
-            doi = doi.replace("http://www.google.com/search?q=SimpleSets: Capturing Categorical Point Patterns with Simple Shapes", "10.vis2024/1153") # fake DOI for accepted VIS 2024 papers
-            doi = doi.replace("http://www.google.com/search?q=A Practical Solver for Scalar Data Topological Simplification.", "10.vis2024/1461") # fake DOI for accepted VIS 2024 papers
-            doi = doi.replace("http://www.google.com/search?q=ProvenanceWidgets: A Library of UI Control Elements to Track and Dynamically Overlay Analytic Provenance", "10.vis2024/1204") # fake DOI for accepted VIS 2024 papers
-            doi = doi.replace("http://www.google.com/search?q=The Language of Infographics: Toward Understanding Conceptual Metaphor Use in Scientific Storytelling", "10.vis2024/1316") # fake DOI for accepted VIS 2024 papers
-            doi = doi.replace("http://www.google.com/search?q=DeLVE into Earth’s Past: A Visualization-Based Exhibit Deployed Across Multiple Museum Contexts", "10.vis2024/1063") # fake DOI for accepted VIS 2024 papers
-            doi = doi.replace("http://www.google.com/search?q=Talk%20to%20the%20Wall:%20The%20Role%20of%20Speech%20Interaction%20in%20Collaborative%20Visual%20Analytics".replace("%20", " "), "10.vis2024/1302") # fake DOI for accepted VIS 2024 papers
-            doi = doi.replace("http://www.google.com/search?q=SpatialTouch:%20Exploring%20Spatial%20Data%20Visualizations%20in%20Cross-reality".replace("%20", " "), "10.vis2024/1626") # fake DOI for accepted VIS 2024 papers
+            doi = doi.replace("http://www.google.com/search?q=SimpleSets: Capturing Categorical Point Patterns with Simple Shapes", "10.1109/tvcg.2024.3456168")
+            doi = doi.replace("http://www.google.com/search?q=A Practical Solver for Scalar Data Topological Simplification.", "10.1109/tvcg.2024.3456345")
+            doi = doi.replace("http://www.google.com/search?q=ProvenanceWidgets: A Library of UI Control Elements to Track and Dynamically Overlay Analytic Provenance", "10.1109/tvcg.2024.3456144")
+            doi = doi.replace("http://www.google.com/search?q=The Language of Infographics: Toward Understanding Conceptual Metaphor Use in Scientific Storytelling", "10.1109/tvcg.2024.3456327")
+            doi = doi.replace("http://www.google.com/search?q=DeLVE into Earth’s Past: A Visualization-Based Exhibit Deployed Across Multiple Museum Contexts", "10.1109/tvcg.2024.3456174")
+            doi = doi.replace("http://www.google.com/search?q=Talk%20to%20the%20Wall:%20The%20Role%20of%20Speech%20Interaction%20in%20Collaborative%20Visual%20Analytics".replace("%20", " "), "10.1109/tvcg.2024.3456335")
+            doi = doi.replace("http://www.google.com/search?q=SpatialTouch:%20Exploring%20Spatial%20Data%20Visualizations%20in%20Cross-reality".replace("%20", " "), "10.1109/tvcg.2024.3456368")
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()

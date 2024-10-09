@@ -49,7 +49,7 @@
     {
         "is_vis": true,
         "title": "SpatialTouch: Exploring Spatial Data Visualizations in Cross-reality",
-        "doi": "10.vis2024/1626",
+        "doi": "10.1109/tvcg.2024.3456368",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-lixiangzhao98-cross-reality-environment-spatialtouch",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/LixiangZhao98/Cross-Reality-Environment-SpatialTouch",
@@ -94,7 +94,7 @@
     {
         "is_vis": true,
         "title": "Talk to the Wall: The Role of Speech Interaction in Collaborative Visual Analytics",
-        "doi": "10.vis2024/1302",
+        "doi": "10.1109/tvcg.2024.3456335",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-gmleon-talk-to-the-wall",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/gmleon/talk-to-the-wall",
@@ -106,7 +106,7 @@
     {
         "is_vis": true,
         "title": "DeLVE into Earth\u2019s Past: A Visualization-Based Exhibit Deployed Across Multiple Museum Contexts",
-        "doi": "10.vis2024/1063",
+        "doi": "10.1109/tvcg.2024.3456174",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-marasolen-deeptime",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/marasolen/deeptime",
@@ -129,7 +129,7 @@
     {
         "is_vis": true,
         "title": "The Language of Infographics: Toward Understanding Conceptual Metaphor Use in Scientific Storytelling",
-        "doi": "10.vis2024/1316",
+        "doi": "10.1109/tvcg.2024.3456327",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-lauragarrison87-metaphortool",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/lauragarrison87/metaphorTool",
@@ -163,7 +163,7 @@
     {
         "is_vis": true,
         "title": "ProvenanceWidgets: A Library of UI Control Elements to Track and Dynamically Overlay Analytic Provenance",
-        "doi": "10.vis2024/1204",
+        "doi": "10.1109/tvcg.2024.3456144",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-provenancewidgets-provenancewidgets-github-io",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/ProvenanceWidgets/ProvenanceWidgets.github.io",
@@ -186,7 +186,7 @@
     {
         "is_vis": true,
         "title": "SimpleSets: Capturing Categorical Point Patterns with Simple Shapes",
-        "doi": "10.vis2024/1153",
+        "doi": "10.1109/tvcg.2024.3456168",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-tue-alga-simplesets",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/tue-alga/SimpleSets",
@@ -220,7 +220,7 @@
     {
         "is_vis": true,
         "title": "A Practical Solver for Scalar Data Topological Simplification",
-        "doi": "10.vis2024/1461",
+        "doi": "10.1109/tvcg.2024.3456345",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-mohamedkissi-code-paper-a-pratical-solver-for-scalar-data-topological-simplification",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/MohamedKISSI/Code-Paper-A-Pratical-Solver-for-Scalar-Data-Topological-Simplification",
