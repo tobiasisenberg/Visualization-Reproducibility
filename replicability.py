@@ -734,6 +734,8 @@ else:
             doi = doi.replace("http://www.google.com/search?q=ShapeBench: a new approach to benchmarking local 3D shape descriptors", "10.1016/j.cag.2024.104052")
             doi = doi.replace("http://www.google.com/search?q=Empowering%20Sign%20Language%20Communication:%20Integrating%20Sentiment%20and%20Semantics%20for%20Facial%20Expression%20Synthesis".replace("%20", " "), "10.1016/j.cag.2024.104065")
             doi = doi.replace("http://www.google.com/search?q=SingVisio:%20Visual%20Analytics%20of%20Diffusion%20Model%20for%20Singing%20Voice%20Conversion".replace("%20", " "), "10.1016/j.cag.2024.104058")
+            doi = doi.replace("http://www.google.com/search?q=A%20Testbed%20for%20Studying%20Cybersickness%20and%20its%20Mitigation%20in%20Immersive%20Virtual%20Reality".replace("%20", " "), "10.1109/tvcg.2024.3448203")
+            
             doi = doi.replace("http://www.google.com/search?q=SimpleSets: Capturing Categorical Point Patterns with Simple Shapes", "10.1109/tvcg.2024.3456168")
             doi = doi.replace("http://www.google.com/search?q=A Practical Solver for Scalar Data Topological Simplification.", "10.1109/tvcg.2024.3456345")
             doi = doi.replace("http://www.google.com/search?q=ProvenanceWidgets: A Library of UI Control Elements to Track and Dynamically Overlay Analytic Provenance", "10.1109/tvcg.2024.3456144")
@@ -1849,6 +1851,24 @@ if exportVisualizations:
         dataToPlot.append(dataItem)
 
     plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_all-by-journal_aggregated", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published journal papers w/ GRS", visPadding = visPadding, colorScheme = "tableau20matching", legendColumns = 2, labelAngle = -20, chartsToPlot = ["stackedbargraph", "stackedbargraph-normalized"])
+
+    # the same data again, but with all non-vis counts moved to the vis counts, so that we just see the summary
+    separationString = '–'
+    dataToPlot_old = dataToPlot
+    dataToPlot = []
+    order = 0
+    for i in range(0, len(dataToPlot_old)):
+        # collect all the data for visualization
+        if dataToPlot_old[i]["journal"].split(separationString)[1].split(" ")[0] == "is":
+            order += 1
+            dataItem = {}
+            dataItem["journal"] = dataToPlot_old[i]["journal"].split(separationString)[0]
+            dataItem["order"] = order
+            dataItem["year"] = dataToPlot_old[i]["year"]
+            dataItem["count"] = dataToPlot_old[i]["count"] + dataToPlot_old[i+1]["count"]
+            dataToPlot.append(dataItem)
+
+    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_all-by-journal_aggregated_plain", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published journal papers w/ GRS", visPadding = visPadding, colorScheme = "tableau10", legendColumns = 2, labelAngle = -20, chartsToPlot = ["stackedbargraph", "stackedbargraph-normalized"])
 
     # now we want to see the numbers and percentages of replicability for our significant venues
     visVenuesAndReplicability = {}
@@ -2972,6 +2992,7 @@ if (doCopyPlotsAccordingToFugureNumbers) and (exportVisualizations):
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure01.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_all-by-journal-linegraph.pdf', paperFiguresOutputSubdirectury + 'figure02.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_all-by-journal_aggregated-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure03.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_all-by-journal_aggregated_plain-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure03_merged.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_all-by-visualization-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure04.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-journal_plus_type_aggregated-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure05.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-journal_plus_type-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure06.pdf')

@@ -17878,7 +17878,7 @@
         "publication_year": 2024,
         "volume": "123",
         "number": "",
-        "pages": "104020",
+        "pages": "104020:1\u2013104020:10",
         "number_of_pages": 10,
         "article_number": "104020",
         "abstract": "Analysis of 3D textures, also known as relief patterns is a challenging task that requires separating repetitive surface patterns from the underlying global geometry. Existing works classify entire surfaces based on one or a few patterns by extracting ad-hoc statistical properties. Unfortunately, these methods are not suitable for objects with multiple geometric textures and perform poorly on more complex shapes. In this paper, we propose a neural network for binary segmentation to infer per-point labels based on the presence of surface relief patterns. We evaluated the proposed architecture on a high resolution point cloud dataset, surpassing the state-of-the-art, while maintaining memory and computation efficiency.",
@@ -17935,11 +17935,11 @@
         ],
         "title": "SingVisio: Visual analytics of diffusion model for singing voice conversion",
         "journal": "Computers & Graphics",
-        "publication_year": 3024,
-        "volume": "",
+        "publication_year": 2024,
+        "volume": "124",
         "number": "",
-        "pages": "",
-        "number_of_pages": -1,
+        "pages": "104058:1\u2013104058:21",
+        "number_of_pages": 21,
         "article_number": "104058",
         "abstract": "In this study, we present SingVisio, an interactive visual analysis system that aims to explain the diffusion model used in singing voice conversion. SingVisio provides a visual display of the generation process in diffusion models, showcasing the step-by-step denoising of the noisy spectrum and its transformation into a clean spectrum that captures the desired singer\u2019s timbre. The system also facilitates side-by-side comparisons of different conditions, such as source content, melody, and target timbre, highlighting the impact of these conditions on the diffusion generation process and resulting conversions. Through comparative and comprehensive evaluations, SingVisio demonstrates its effectiveness in terms of system design, functionality, explainability, and user-friendliness. It offers users of various backgrounds valuable learning experiences and insights into the diffusion model for singing voice conversion.",
         "countries": [
@@ -18079,13 +18079,13 @@
         ],
         "title": "Empowering sign language communication: Integrating sentiment and semantics for facial expression synthesis",
         "journal": "Computers & Graphics",
-        "publication_year": 3024,
-        "volume": "",
+        "publication_year": 2024,
+        "volume": "124",
         "number": "",
-        "pages": "",
-        "number_of_pages": -1,
+        "pages": "104065:1\u2013104065:12",
+        "number_of_pages": 12,
         "article_number": "104065",
-        "abstract": "Translating written sentences from oral languages to a sequence of manual and non-manual gestures plays a crucial role in building a more inclusive society for deaf and hard-of-hearing people. Facial expressions (non-manual), in particular, are responsible for encoding the grammar of the sentence to be spoken, applying punctuation, pronouns, or emphasizing signs. These non-manual gestures are closely related to the semantics of the sentence being spoken and also to the utterance of the speaker\u2019s emotions. However, most Sign Language Production (SLP) approaches are centered on synthesizing manual gestures and do not focus on modeling the speaker\u2019s expression. This paper introduces a new method focused in synthesizing facial expressions for sign language. Our goal is to improve sign language production by integrating sentiment information in facial expression generation. The approach leverages a sentence\u2019s sentiment and semantic features to sample from a meaningful representation space, integrating the bias of the non-manual components into the sign language production process. To evaluate our method, we extend the Frechet gesture distance (FGD) and propose a new metric called Fr\u00e9chet Expression Distance (FED) and apply an extensive set of metrics to assess the quality of specific regions of the face. The experimental results showed that our method achieved state of the art, being superior to the competitors on How2Sign and PHOENIX14T datasets. Moreover, our architecture is based on a carefully designed graph pyramid that makes it simpler, easier to train, and capable of leveraging emotions to produce facial expressions. Our code and pretrained models will be available at: https://github.com/verlab/empowering-sign-language.",
+        "abstract": "Translating written sentences from oral languages to a sequence of manual and non-manual gestures plays a crucial role in building a more inclusive society for deaf and hard-of-hearing people. Facial expressions (non-manual), in particular, are responsible for encoding the grammar of the sentence to be spoken, applying punctuation, pronouns, or emphasizing signs. These non-manual gestures are closely related to the semantics of the sentence being spoken and also to the utterance of the speaker\u2019s emotions. However, most Sign Language Production (SLP) approaches are centered on synthesizing manual gestures and do not focus on modeling the speaker\u2019s expression. This paper introduces a new method focused in synthesizing facial expressions for sign language. Our goal is to improve sign language production by integrating sentiment information in facial expression generation. The approach leverages a sentence\u2019s sentiment and semantic features to sample from a meaningful representation space, integrating the bias of the non-manual components into the sign language production process. To evaluate our method, we extend the Fr\u00e9chet gesture distance (FGD) and propose a new metric called Fr\u00e9chet Expression Distance (FED) and apply an extensive set of metrics to assess the quality of specific regions of the face. The experimental results showed that our method achieved state of the art, being superior to the competitors on How2Sign and PHOENIX14T datasets. Moreover, our architecture is based on a carefully designed graph pyramid that makes it simpler, easier to train, and capable of leveraging emotions to produce facial expressions. Our code and pretrained models will be available at: https://github.com/verlab/empowering-sign-language.",
         "countries": [
             "BR"
         ]
@@ -18120,7 +18120,7 @@
         "publication_year": 2024,
         "volume": "124",
         "number": "",
-        "pages": "104069",
+        "pages": "104069:1\u2013104069:12",
         "number_of_pages": 12,
         "article_number": "104069",
         "abstract": "In various situations, such as clinical environments with sterile conditions or when hands are occupied with multiple devices, traditional methods of navigation and scene adjustment are impractical or even impossible. We explore a new solution by using voice control to facilitate interaction in virtual worlds to avoid the use of additional controllers. Therefore, we investigate three scenarios: Object Orientation, Visualization Customization, and Analytical Tasks and evaluate whether natural language interaction is possible and promising in each of these scenarios. In our quantitative user study participants were able to control virtual environments effortlessly using verbal instructions. This resulted in rapid orientation adjustments, adaptive visual aids, and accurate data analysis. In addition, user satisfaction and usability surveys showed consistently high levels of acceptance and ease of use. In conclusion, our study shows that the use of natural language can be a promising alternative for the improvement of user interaction in virtual environments. It enables intuitive interactions in virtual spaces, especially in situations where traditional controls have limitations.",
@@ -18213,9 +18213,9 @@
         "volume": "",
         "number": "",
         "pages": "",
-        "number_of_pages": -1,
         "article_number": "",
-        "abstract": "Points of interest on a map such as restaurants, hotels, or subway stations, give rise to categorical point data: data that have a fixed location and one or more categorical attributes. Consequently, recent years have seen various set visualization approaches that visually connect points of the same category to support users in understanding the spatial distribution of categories. Existing methods use complex and often highly irregular shapes to connect points of the same category, leading to high cognitive load for the user. In this paper we introduce SimpleSets, which uses simple shapes to enclose categorical point patterns, thereby providing a clean overview of the data distribution. SimpleSets is designed to visualize sets of points with a single categorical attribute; as a result, the point patterns enclosed by SimpleSets form a partition of the data. We give formal definitions of point patterns that correspond to simple shapes and describe an algorithm that partitions categorical points into few such patterns. Our second contribution is a rendering algorithm that transforms a given partition into a clean set of shapes resulting in an aesthetically pleasing set visualization. Our algorithm pays particular attention to resolving intersections between nearby shapes in a consistent manner. We compare SimpleSets to the state-of-the-art set visualizations using standard datasets from the literature.",
+        "number_of_pages": 10,
+        "abstract": "Points of interest on a map such as restaurants, hotels, or subway stations, give rise to categorical point data: data that have a fixed location and one or more categorical attributes. Consequently, recent years have seen various set visualization approaches that visually connect points of the same category to support users in understanding the spatial distribution of categories. Existing methods use complex and often highly irregular shapes to connect points of the same category, leading to high cognitive load for the user. In this paper we introduce SimpleSets, which uses simple shapes to enclose categorical point patterns, thereby providing a clean overview of the data distribution. SimpleSets is designed to visualize sets of points with a single categorical attribute; as a result, the point patterns enclosed by SimpleSets form a partition of the data. We give formal definitions of point patterns that correspond to simple shapes and describe an algorithm that partitions categorical points into few such patterns. Our second contribution is a rendering algorithm that transforms a given partition into a clean set of shapes resulting in an aesthetically pleasing set visualization. Our algorithm pays particular attention to resolving intersections between nearby shapes in a consistent manner. We compare SimpleSets to the state-of-the-art set visualizations using standard datasets from the literature",
         "countries": [
             "NL"
         ]
@@ -18258,9 +18258,9 @@
         "volume": "",
         "number": "",
         "pages": "",
-        "number_of_pages": -1,
         "article_number": "",
-        "abstract": "Points of interest on a map such as restaurants, hotels, or subway stations, give rise to categorical point data: data that have a fixed location and one or more categorical attributes. Consequently, recent years have seen various set visualization approaches that visually connect points of the same category to support users in understanding the spatial distribution of categories. Existing methods use complex and often highly irregular shapes to connect points of the same category, leading to high cognitive load for the user. In this paper we introduce SimpleSets, which uses simple shapes to enclose categorical point patterns, thereby providing a clean overview of the data distribution. SimpleSets is designed to visualize sets of points with a single categorical attribute; as a result, the point patterns enclosed by SimpleSets form a partition of the data. We give formal definitions of point patterns that correspond to simple shapes and describe an algorithm that partitions categorical points into few such patterns. Our second contribution is a rendering algorithm that transforms a given partition into a clean set of shapes resulting in an aesthetically pleasing set visualization. Our algorithm pays particular attention to resolving intersections between nearby shapes in a consistent manner. We compare SimpleSets to the state-of-the-art set visualizations using standard datasets from the literature.",
+        "number_of_pages": 11,
+        "abstract": "This paper presents a practical approach for the optimization of topological simplification, a central pre-processing step for the analysis and visualization of scalar data. Given an input scalar field f and a set of \u201csignal\u201d persistence pairs to maintain, our approaches produces an output field g that is close to f and which optimizes (i) the cancellation of \u201cnon-signal\u201d pairs, while (ii) preserving the \u201csignal\u201d pairs. In contrast to pre-existing simplification algorithms, our approach is not restricted to persistence pairs involving extrema and can thus address a larger class of topological features, in particular saddle pairs in three-dimensional scalar data. Our approach leverages recent generic persistence optimization frameworks and extends them with tailored accelerations specific to the problem of topological simplification. Extensive experiments report substantial accelerations over these frameworks, thereby making topological simplification optimization practical for real-life datasets. Our approach enables a direct visualization and analysis of the topologically simplified data, e.g., via isosurfaces of simplified topology (fewer components and handles). We apply our approach to the extraction of prominent filament structures in three-dimensional data. Specifically, we show that our pre-simplification of the data leads to practical improvements over standard topological techniques for removing filament loops. We also show how our approach can be used to repair genus defects in surface processing. Finally, we provide a C++ implementation for reproducibility purposes",
         "countries": [
             "FR",
             "US"
@@ -18304,9 +18304,9 @@
         "volume": "",
         "number": "",
         "pages": "",
-        "number_of_pages": -1,
         "article_number": "",
-        "abstract": "We present ProvenanceWidgets, a Javascript library of UI control elements such as radio buttons, checkboxes, and dropdowns to track and dynamically overlay a user's analytic provenance. These in situ overlays not only save screen space but also minimize the amount of time and effort needed to access the same information from elsewhere in the UI. In this paper, we discuss how we design modular UI control elements to track how often and how recently a user interacts with them and design visual overlays showing an aggregated summary as well as a detailed temporal history. We demonstrate the capability of ProvenanceWidgets by recreating three prior widget libraries: (1) Scented Widgets, (2) Phosphor objects, and (3) Dynamic Query Widgets. We also evaluated its expressiveness and conducted case studies with visualization developers to evaluate its effectiveness. We find that ProvenanceWidgets enables developers to implement custom provenance-tracking applications effectively. ProvenanceWidgets is available as open-source software at this https URL to help application developers build custom provenance-based systems.",
+        "number_of_pages": 11,
+        "abstract": "We present ProvenanceWidgets, a Javascript library of UI control elements such as radio buttons, checkboxes, and dropdowns to track and dynamically overlay a user's analytic provenance. These in situ overlays not only save screen space but also minimize the amount of time and effort needed to access the same information from elsewhere in the UI. In this paper, we discuss how we design modular UI control elements to track how often and how recently a user interacts with them and design visual overlays showing an aggregated summary as well as a detailed temporal history. We demonstrate the capability of ProvenanceWidgets by recreating three prior widget libraries: (1) Scented Widgets, (2) Phosphor objects, and (3) Dynamic Query Widgets. We also evaluated its expressiveness and conducted case studies with visualization developers to evaluate its effectiveness. We fnd that ProvenanceWidgets enables developers to implement custom provenance-tracking applications effectively. ProvenanceWidgets is available as open-source software at https://github.com/ProvenanceWidgets to help application developers build custom provenance-based systems.",
         "countries": [
             "US",
             "CH"
@@ -18357,8 +18357,8 @@
         "volume": "",
         "number": "",
         "pages": "",
-        "number_of_pages": -1,
         "article_number": "",
+        "number_of_pages": 11,
         "abstract": "We apply an approach from cognitive linguistics by mapping Conceptual Metaphor Theory (CMT) to the visualization domain to address patterns of visual conceptual metaphors that are often used in science infographics. Metaphors play an essential part in visual communication and are frequently employed to explain complex concepts. However, their use is often based on intuition, rather than following a formal process. At present, we lack tools and language for understanding and describing metaphor use in visualization to the extent where taxonomy and grammar could guide the creation of visual components, e.g., infographics. Our classification of the visual conceptual mappings within scientific representations is based on the breakdown of visual components in existing scientific infographics. We demonstrate the development of this mapping through a detailed analysis of data collected from four domains (biomedicine, climate, space, and anthropology) that represent a diverse range of visual conceptual metaphors used in the visual communication of science. This work allows us to identify patterns of visual conceptual metaphor use within the domains, resolve ambiguities about why specific conceptual metaphors are used, and develop a better overall understanding of visual metaphor use in scientific infographics. Our analysis shows that ontological and orientational conceptual metaphors are the most widely applied to translate complex scientific concepts. To support our findings we developed a visual exploratory tool based on the collected database that places the individual infographics on a spatio-temporal scale and illustrates the breakdown of visual conceptual metaphors.",
         "countries": [
             "CZ",
@@ -18399,15 +18399,15 @@
                 ]
             }
         ],
-        "title": "DeLVE into Earth\u2019s Past: A Visualization-Based Exhibit Deployed Across Multiple Museum Contexts",
+        "title": "DeLVE into Earth's Past: A Visualization-Based Exhibit Deployed Across Multiple Museum Contexts",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
         "publication_year": 3024,
         "volume": "",
         "number": "",
         "pages": "",
-        "number_of_pages": -1,
         "article_number": "",
-        "abstract": "While previous work has found success in deploying visualizations as museum exhibits, it has not investigated whether museum context impacts visitor behaviour with these exhibits. We present an interactive Deep-time Literacy Visualization Exhibit (DeLVE) to help museum visitors understand deep time (lengths of extremely long geological processes) by improving proportional reasoning skills through comparison of different time periods. DeLVE uses a new visualization idiom, Connected Multi-Tier Ranges, to visualize curated datasets of past events across multiple scales of time, relating extreme scales with concrete scales that have more familiar magnitudes and units. Museum staff at three separate museums approved the deployment of DeLVE as a digital kiosk, and devoted time to curating a unique dataset in each of them. We collect data from two sources, an observational study and system trace logs. We discuss the importance of context: similar museum exhibits in different contexts were received very differently by visitors. We additionally discuss differences in our process from Sedlmair et al.'s design study methodology which is focused on design studies triggered by connection with collaborators rather than the discovery of a concept to communicate. Supplemental materials are available at: https://osf.io/z53dq/.",
+        "number_of_pages": 10,
+        "abstract": "While previous work has found success in deploying visualizations as museum exhibits, it has not investigated whether museum context impacts visitor behaviour with these exhibits. We present an interactive Deep-time Literacy Visualization Exhibit (DeLVE) to help museum visitors understand deep time (lengths of extremely long geological processes) by improving proportional reasoning skills through comparison of different time periods. DeLVE uses a new visualization idiom, Connected Multi-Tier Ranges, to visualize curated datasets of past events across multiple scales of time, relating extreme scales with concrete scales that have more familiar magnitudes and units. Museum staff at three separate museums approved the deployment of DeLVE as a digital kiosk, and devoted time to curating a unique dataset in each of them. We collect data from two sources, an observational study and system trace logs. We discuss the importance of context: similar museum exhibits in different contexts were received very differently by visitors. We additionally discuss differences in our process from Sedlmair et al.'s design study methodology which is focused on design studies triggered by connection with collaborators rather than the discovery of a concept to communicate. Supplemental materials are available at: https://osf.io/z53dq/",
         "countries": [
             "CA"
         ]
@@ -18450,9 +18450,9 @@
         "volume": "",
         "number": "",
         "pages": "",
-        "number_of_pages": -1,
         "article_number": "",
-        "abstract": "We present the results of an exploratory study on how pairs interact with speech commands and touch gestures on a wall-sized display during a collaborative sensemaking task. Previous work has shown that speech commands, alone or in combination with other input modalities, can support visual data exploration by individuals. However, it is still unknown whether and how speech commands can be used in collaboration, and for what tasks. To answer these questions, we developed a functioning prototype that we used as a technology probe. We conducted an in-depth exploratory study with 10 participant pairs to analyze their interaction choices, the interplay between the input modalities, and their collaboration. While touch was the most used modality, we found that participants preferred speech commands for global operations, used them for distant interaction, and that speech interaction contributed to the awareness of the partner's actions. Furthermore, the likelihood of using speech commands during collaboration was related to the personality trait of agreeableness. Regarding collaboration styles, participants interacted with speech equally often whether they were in loosely or closely coupled collaboration. While the partners stood closer to each other during close collaboration, they did not distance themselves to use speech commands. From our findings, we derive and contribute a set of design considerations for collaborative and multimodal interactive data analysis systems. All supplemental materials are available at https://osf.io/8gpv2.",
+        "number_of_pages": 11,
+        "abstract": "We present the results of an exploratory study on how pairs interact with speech commands and touch gestures on a wall-sized display during a collaborative sensemaking task. Previous work has shown that speech commands, alone or in combination with other input modalities, can support visual data exploration by individuals. However, it is still unknown whether and how speech commands can be used in collaboration, and for what tasks. To answer these questions, we developed a functioning prototype that we used as a technology probe. We conducted an in-depth exploratory study with 10 participant pairs to analyze their interaction choices, the interplay between the input modalities, and their collaboration. While touch was the most used modality, we found that participants preferred speech commands for global operations, used them for distant interaction, and that speech interaction contributed to the awareness of the partner's actions. Furthermore, the likelihood of using speech commands during collaboration was related to the personality trait of agreeableness. Regarding collaboration styles, participants interacted with speech equally often whether they were in loosely or closely coupled collaboration. While the partners stood closer to each other during close collaboration, they did not distance themselves to use speech commands. From our fndings, we derive and contribute a set of design considerations for collaborative and multimodal interactive data analysis systems. All supplemental materials are available at https://osf.io/8gpv2",
         "countries": [
             "DE",
             "FR"
@@ -18503,12 +18503,549 @@
         "volume": "",
         "number": "",
         "pages": "",
-        "number_of_pages": -1,
         "article_number": "",
-        "abstract": "We propose and study a novel cross-reality environment that seamlessly integrates a monoscopic 2D surface (an interactive screen with touch and pen input) with a stereoscopic 3D space (an augmented reality HMD) to jointly host spatial data visualizations. This innovative approach combines the best of two conventional methods of displaying and manipulating spatial 3D data, enabling users to fluidly explore diverse visual forms using tailored interaction techniques. Providing such effective 3D data exploration techniques is pivotal for conveying its intricate spatial structures\u2014often at multiple spatial or semantic scales\u2014across various application domains and requiring diverse visual representations for effective visualization. To understand user reactions to our new environment, we began with an elicitation user study, in which we captured their responses and interactions. We observed that users adapted their interaction approaches based on perceived visual representations, with natural transitions in spatial awareness and actions while navigating across the physical surface. Our findings then informed the development of a design space for spatial data exploration in cross-reality. We thus developed cross-reality environments tailored to three distinct domains: for 3D molecular structure data, for 3D point cloud data, and for 3D anatomical data. In particular, we designed interaction techniques that account for the inherent features of interactions in both spaces, facilitating various forms of interaction, including mid-air gestures, touch interactions, pen interactions, and combinations thereof, to enhance the users\u2019 sense of presence and engagement. We assessed the usability of our environment with biologists, focusing on its use for domain research. In addition, we evaluated our interaction transition designs with virtual and mixed-reality experts to gather further insights. As a result, we provide our design suggestions for the cross-reality environment, emphasizing the interaction with diverse visual representations and seamless interaction transitions between 2D and 3D spaces.",
+        "number_of_pages": 11,
+        "abstract": "We propose and study a novel cross-reality environment that seamlessly integrates a monoscopic 2D surface (an interactive screen with touch and pen input) with a stereoscopic 3D space (an augmented reality HMD) to jointly host spatial data visualizations. This innovative approach combines the best of two conventional methods of displaying and manipulating spatial 3D data, enabling users to fluidly explore diverse visual forms using tailored interaction techniques. Providing such effective 3D data exploration techniques is pivotal for conveying its intricate spatial structures\u2014often at multiple spatial or semantic scales\u2014across various application domains and requiring diverse visual representations for effective visualization. To understand user reactions to our new environment, we began with an elicitation user study, in which we captured their responses and interactions. We observed that users adapted their interaction approaches based on perceived visual representations, with natural transitions in spatial awareness and actions while navigating across the physical surface. Our findings then informed the development of a design space for spatial data exploration in cross-reality. We thus developed cross-reality environments tailored to three distinct domains: for 3D molecular structure data, for 3D point cloud data, and for 3D anatomical data. In particular, we designed interaction techniques that account for the inherent features of interactions in both spaces, facilitating various forms of interaction, including mid-air gestures, touch interactions, pen interactions, and combinations thereof, to enhance the users' sense of presence and engagement. We assessed the usability of our environment with biologists, focusing on its use for domain research. In addition, we evaluated our interaction transition designs with virtual and mixed-reality experts to gather further insights. As a result, we provide our design suggestions for the cross-reality environment, emphasizing the interaction with diverse visual representations and seamless interaction transitions between 2D and 3D spaces",
         "countries": [
             "CN",
             "FR"
+        ]
+    },
+    "10.1109/tvcg.2024.3464738": {
+        "doi": "10.1109/tvcg.2024.3464738",
+        "authors": [
+            {
+                "family": "Monica",
+                "given": "Riccardo",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Rizzini",
+                "given": "Dario Lodi",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Aleotti",
+                "given": "Jacopo",
+                "countries": [
+                    "IT"
+                ]
+            }
+        ],
+        "title": "Adaptive Complementary Filter for Hybrid Inside-Out Outside-In HMD Tracking With Smooth Transitions",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 15,
+        "abstract": "Head-mounted displays (HMDs) in room-scale virtual reality are usually tracked using inside-out visual SLAM algorithms. Alternatively, to track the motion of the HMD with respect to a fixed real-world reference frame, an outside-in instrumentation like a motion capture system can be adopted. However, outside-in tracking systems may temporarily lose tracking as they suffer by occlusion and blind spots. A possible solution is to adopt a hybrid approach where the inside-out tracker of the HMD is augmented with an outside-in sensing system. On the other hand, when the tracking signal of the outside-in system is recovered after a loss of tracking the transition from inside-out tracking to hybrid tracking may generate a discontinuity, i.e a sudden change of the virtual viewpoint, that can be uncomfortable for the user. Therefore, hybrid tracking solutions for HMDs require advanced sensor fusion algorithms to obtain a smooth transition. This work proposes a method for hybrid tracking of a HMD with smooth transitions based on an adaptive complementary filter. The proposed approach can be configured with several parameters that determine a trade-off between user experience and tracking error. A user study was carried out in a room-scale virtual reality environment, where users carried out two different tasks while multiple signal tracking losses of the outside-in sensor system occurred. The results show that the proposed approach improves user experience compared to a standard Extended Kalman Filter, and that tracking error is lower compared to a state-of-the-art complementary filter when configured for the same quality of user experience.",
+        "countries": [
+            "IT"
+        ]
+    },
+    "10.1109/tvcg.2024.3448203": {
+        "doi": "10.1109/tvcg.2024.3448203",
+        "authors": [
+            {
+                "family": "Calandra",
+                "given": "Davide",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Lamberti",
+                "given": "Fabrizio",
+                "countries": [
+                    "IT"
+                ]
+            }
+        ],
+        "title": "A Testbed for Studying Cybersickness and its Mitigation in Immersive Virtual Reality",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3024,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 18,
+        "abstract": "Cybersickness (CS) represents one of the oldest problems affecting Virtual Reality (VR) technology. In an attempt to resolve or at least limit this form of discomfort, an increasing number of mitigation techniques have been proposed by academic and industrial researchers. However, the validation of such techniques is often carried out without grounding on a common methodology, making the comparison between the various works in the state of the art difficult. To address this issue, the present paper proposes a novel testbed for studying CS in immersive VR and, in particular, methods to mitigate it. The testbed consists of four virtual scenarios, which have been designed to elicit CS in a targeted and predictable manner. The scenarios, grounded on available literature, support the extraction of objective metrics about user's performance. The testbed additionally integrates an experimental protocol that employs standard questionnaires as well as measurements typically adopted in state-of-the-art practice to assess levels of CS and other subjective aspects regarding User Experience. The paper shows a possible use case of the testbed, concerning the evaluation of a CS mitigation technique that is compared with the absence of mitigation as baseline condition.",
+        "countries": [
+            "IT"
+        ]
+    },
+    "10.1145/3592095": {
+        "doi": "10.1145/3592095",
+        "authors": [
+            {
+                "family": "Chen",
+                "given": "Rulin",
+                "orcid": "0000-0002-9981-2468",
+                "countries": [
+                    "SG"
+                ]
+            },
+            {
+                "family": "Qiu",
+                "given": "Pengyun",
+                "orcid": "0009-0009-6090-0258",
+                "countries": [
+                    "SG"
+                ]
+            },
+            {
+                "family": "Song",
+                "given": "Peng",
+                "orcid": "0000-0003-2734-2783",
+                "countries": [
+                    "SG"
+                ]
+            },
+            {
+                "family": "Deng",
+                "given": "Bailin",
+                "orcid": "0000-0002-0158-7670",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Ziqi",
+                "orcid": "0000-0002-3817-3922",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "He",
+                "given": "Ying",
+                "orcid": "0000-0002-6749-4485",
+                "countries": [
+                    "SG"
+                ]
+            }
+        ],
+        "title": "Masonry Shell Structures with Discrete Equivalence Classes",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2023,
+        "volume": "42",
+        "number": "4",
+        "pages": "115:1\u2013115:12",
+        "article_number": "115",
+        "number_of_pages": 12,
+        "abstract": "This paper proposes a method to model masonry shell structures where the shell elements fall into a set of discrete equivalence classes. Such shell structure can reduce the fabrication cost and simplify the physical construction due to reuse of a few template shell elements. Given a freeform surface, our goal is to generate a small set of template shell elements that can be reused to produce a seamless and buildable structure that closely resembles the surface. The major technical challenge in this process is balancing the desire for high reusability of template elements with the need for a seamless and buildable final structure. To address the challenge, we define three error metrics to measure the seamlessness and buildability of shell structures made from discrete equivalence classes and develop a hierarchical cluster-and-optimize approach to generate a small set of template elements that produce a structure closely approximating the surface with low error metrics. We demonstrate the feasibility of our approach on various freeform surfaces and geometric patterns, and validate buildability of our results with four physical prototypes. Code and data of this paper are at https://github.com/Linsanity81/TileableShell.",
+        "countries": [
+            "SG",
+            "GB",
+            "CH"
+        ]
+    },
+    "10.1145/3641519.3657457": {
+        "doi": "10.1145/3641519.3657457",
+        "authors": [
+            {
+                "family": "Basset",
+                "given": "Jean",
+                "orcid": "0009-0006-3300-9994",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "B\u00e9nard",
+                "given": "Pierre",
+                "orcid": "0000-0002-2846-1955",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Barla",
+                "given": "Pascal",
+                "orcid": "0000-0003-2844-6656",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "SMEAR: Stylized Motion Exaggeration with ARt-direction",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "107:1\u2013107:11",
+        "article_number": "107",
+        "number_of_pages": 11,
+        "abstract": "Smear frames are routinely used by artists for the expressive depiction of motion in animations. In this paper, we present an automatic, yet art-directable method for the generation of smear frames in 3D, with a focus on elongated in-betweens where an object is stretched along its trajectory. It takes as input a key-framed animation of a 3D mesh, and outputs a deformed version of this mesh for each frame of the animation, while providing for artistic refinement at the end of the animation process and prior to rendering. Our approach works in two steps. We first compute spatially and temporally coherent motion offsets that describe to which extent parts of the input mesh should be leading in front or trailing behind. We then describe a framework to stylize these motion offsets in order to produce elongated in-betweens at interactive rates, which we extend to the other two common smear frame effects: multiple in-betweens and motion lines. Novice users may rely on preset stylization functions for fast and easy prototyping, while more complex custom-made stylization functions may be designed by experienced artists through our geometry node implementation in Blender.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1145/3658162": {
+        "doi": "10.1145/3658162",
+        "authors": [
+            {
+                "family": "Wu",
+                "given": "Yiqian",
+                "orcid": "0000-0002-2432-809X",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Xu",
+                "given": "Hao",
+                "orcid": "0000-0001-5690-367X",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Tang",
+                "given": "Xiangjun",
+                "orcid": "0000-0001-7441-0086",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Chen",
+                "given": "Xien",
+                "orcid": "0009-0000-7397-4955",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Tang",
+                "given": "Siyu",
+                "orcid": "0000-0002-1015-4770",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Zhebin",
+                "orcid": "0009-0008-2860-5112",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Li",
+                "given": "Chen",
+                "orcid": "0009-0002-6140-9216",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Jin",
+                "given": "Xiaogang",
+                "orcid": "0000-0001-7339-2920",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Portrait3D: Text-Guided High-Quality 3D Portrait Generation Using Pyramid Representation and GANs Prior",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "4",
+        "pages": "45:1\u201345:12",
+        "article_number": "45",
+        "number_of_pages": 12,
+        "abstract": "Existing neural rendering-based text-to-3D-portrait generation methods typically make use of human geometry prior and diffusion models to obtain guidance. However, relying solely on geometry information introduces issues such as the Janus problem, over-saturation, and over-smoothing. We present\n            Portrait3D\n            , a novel neural rendering-based framework with a novel joint geometry-appearance prior to achieve text-to-3D-portrait generation that overcomes the aforementioned issues. To accomplish this, we train a 3D portrait generator, 3DPortraitGAN, as a robust prior. This generator is capable of producing 360\u00b0 canonical 3D portraits, serving as a starting point for the subsequent diffusion-based generation process. To mitigate the \"grid-like\" artifact caused by the high-frequency information in the feature-map-based 3D representation commonly used by most 3D-aware GANs, we integrate a novel\n            pyramid tri-grid\n            3D representation into 3DPortraitGAN. To generate 3D portraits from text, we first project a randomly generated image aligned with the given prompt into the pre-trained 3DPortraitGAN's latent space. The resulting latent code is then used to synthesize a\n            pyramid tri-grid.\n            Beginning with the obtained\n            pyramid tri-grid\n            , we use score distillation sampling to distill the diffusion model's knowledge into the\n            pyramid tri-grid.\n            Following that, we utilize the diffusion model to refine the rendered images of the 3D portrait and then use these refined images as training data to further optimize the\n            pyramid tri-grid\n            , effectively eliminating issues with unrealistic color and unnatural artifacts. Our experimental results show that Portrait3D can produce realistic, high-quality, and canonical 3D portraits that align with the prompt.",
+        "countries": [
+            "CN",
+            "US",
+            "CH"
+        ]
+    },
+    "10.1145/3528223.3530071": {
+        "doi": "10.1145/3528223.3530071",
+        "authors": [
+            {
+                "family": "Chen",
+                "given": "Rulin",
+                "countries": [
+                    "SG"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Ziqi",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Song",
+                "given": "Peng",
+                "countries": [
+                    "SG"
+                ]
+            },
+            {
+                "family": "Bickel",
+                "given": "Bernd",
+                "countries": [
+                    "AT"
+                ]
+            }
+        ],
+        "title": "Computational design of high-level interlocking puzzles",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2022,
+        "volume": "41",
+        "number": "4",
+        "pages": "150:1\u2013150:15",
+        "article_number": "150",
+        "number_of_pages": 15,
+        "abstract": "Interlocking puzzles are intriguing geometric games where the puzzle pieces are held together based on their geometric arrangement, preventing the puzzle from falling apart.\n            High-level-of-difficulty\n            , or simply\n            high-level\n            , interlocking puzzles are a subclass of interlocking puzzles that require multiple moves to take out the first subassembly from the puzzle. Solving a high-level interlocking puzzle is a challenging task since one has to explore many different configurations of the puzzle pieces until reaching a configuration where the first subassembly can be taken out. Designing a high-level interlocking puzzle with a user-specified level of difficulty is even harder since the puzzle pieces have to be interlocking in all the configurations before the first subassembly is taken out.\n          \n           \n            In this paper, we present a computational approach to design high-level interlocking puzzles. The core idea is to represent all possible configurations of an interlocking puzzle as well as transitions among these configurations using a rooted, undirected graph called a\n            disassembly graph\n            and leverage this graph to find a disassembly plan that requires a minimal number of moves to take out the first subassembly from the puzzle. At the design stage, our algorithm iteratively constructs the geometry of each puzzle piece to expand the disassembly graph incrementally, aiming to achieve a user-specified level of difficulty. We show that our approach allows efficient generation of high-level interlocking puzzles of various shape complexities, including new solutions not attainable by state-of-the-art approaches.",
+        "countries": [
+            "SG",
+            "CH",
+            "AT"
+        ]
+    },
+    "10.1016/j.cag.2024.104064": {
+        "doi": "10.1016/j.cag.2024.104064",
+        "authors": [
+            {
+                "family": "Silveira",
+                "given": "Jos\u00e9 Arthur",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Vieira",
+                "given": "Leandro",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Ferreira",
+                "given": "Nivan",
+                "countries": [
+                    "BR"
+                ]
+            }
+        ],
+        "title": "TPVis: A visual analytics system for exploring test case prioritization methods",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "124",
+        "number": "",
+        "pages": "104064:1\u2013104064:11",
+        "number_of_pages": 11,
+        "article_number": "104064",
+        "abstract": "Software testing is a vital tool to ensure the quality and trustworthiness of the pieces of software produced. Test suites are often large, which makes the process of testing software a costly and time-consuming process. In this context, test case prioritization (TCP) methods play an important role by ranking test cases in order to enable early fault detection and, hence, enable quicker problem fixes. The evaluation of such methods is a difficult problem, due to the variety of the methods and objectives. To address this issue, we present TPVis, a visual analytics framework that enables the evaluation and comparison of TCP methods designed in collaboration with experts in software testing. Our solution is an open-source web application that provides a variety of analytical tools to assist in the exploration of test suites and prioritization algorithms. Furthermore, TPVis also provides dashboard presets, that were validated with our domain collaborators, that support common analysis goals. We illustrate the usefulness of TPVis through a series of use cases that illustrate our system\u2019s flexibility in addressing different problems in analyzing TCP methods. Finally, we also report on feedback received from the domain experts that indicate the effectiveness of TPVis. TPVis is available at https://github.com/vixe-cin-ufpe/TPVis.",
+        "countries": [
+            "BR"
+        ]
+    },
+    "10.1111/cgf.15136": {
+        "doi": "10.1111/cgf.15136",
+        "authors": [
+            {
+                "family": "Marin",
+                "given": "Diana",
+                "orcid": "0000-0002-8812-9719",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Maggioli",
+                "given": "Filippo",
+                "orcid": "0000-0001-8008-8468",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Melzi",
+                "given": "Simone",
+                "orcid": "0000-0003-2790-9591",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Ohrhallinger",
+                "given": "Stefan",
+                "orcid": "0000-0002-2526-7700",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Wimmer",
+                "given": "Michael",
+                "orcid": "0000-0002-9370-2663",
+                "countries": [
+                    "AT"
+                ]
+            }
+        ],
+        "title": "Reconstructing Curves from Sparse Samples on Riemannian Manifolds",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "5",
+        "pages": "e15136",
+        "article_number": "",
+        "number_of_pages": -1,
+        "abstract": "Reconstructing 2D curves from sample points has long been a critical challenge in computer graphics, finding essential applications in vector graphics. The design and editing of curves on surfaces has only recently begun to receive attention, primarily relying on human assistance, and where not, limited by very strict sampling conditions. In this work, we formally improve on the state-of-the-art requirements and introduce an innovative algorithm capable of reconstructing closed curves directly on surfaces from a given sparse set of sample points. We extend and adapt a state-of-the-art planar curve reconstruction method to the realm of surfaces while dealing with the challenges arising from working on non-Euclidean domains. We demonstrate the robustness of our method by reconstructing multiple curves on various surface meshes. We explore novel potential applications of our approach, allowing for automated reconstruction of curves on Riemannian manifolds.",
+        "countries": [
+            "AT",
+            "IT"
+        ]
+    },
+    "10.1016/j.cag.2017.05.001": {
+        "doi": "10.1016/j.cag.2017.05.001",
+        "authors": [
+            {
+                "family": "Mart\u00edn",
+                "given": "Domingo",
+                "countries": [
+                    "ES"
+                ]
+            },
+            {
+                "family": "Arroyo",
+                "given": "Germ\u00e1n",
+                "countries": [
+                    "ES"
+                ]
+            },
+            {
+                "family": "Rodr\u00edguez",
+                "given": "Alejandro",
+                "countries": [
+                    "ES"
+                ]
+            },
+            {
+                "family": "Isenberg",
+                "given": "Tobias",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "A survey of digital stippling",
+        "journal": "Computers & Graphics",
+        "publication_year": 2017,
+        "volume": "67",
+        "number": "",
+        "pages": "24\u201344",
+        "number_of_pages": 21,
+        "article_number": "",
+        "abstract": "In this article we survey techniques for the digital simulation of hand-made stippling\u2014one of the core techniques developed within non-photorealistic/expressive rendering. Over the years, a plethora of automatic or semi-automatic stippling algorithms have been proposed. As part of this expanding field of research, techniques have been developed that not only push the boundaries of traditional stippling but that also relate to other processes or techniques. Our general goal in this survey is thus to increase our understanding of both hand-made and computer-assisted stippling. For this purpose we not only provide an overview of the work on digital stippling but also examine its relationship to traditional stippling and to related fields such as halftoning. Finally, we propose several directions of future work in the field.",
+        "countries": [
+            "ES",
+            "FR"
+        ]
+    },
+    "10.1016/j.cag.2024.104068": {
+        "doi": "10.1016/j.cag.2024.104068",
+        "authors": [
+            {
+                "family": "Pradhan",
+                "given": "Kunal",
+                "countries": [
+                    "IN"
+                ]
+            },
+            {
+                "family": "Patra",
+                "given": "Swarnajyoti",
+                "countries": [
+                    "IN"
+                ]
+            }
+        ],
+        "title": "A semantic edge-aware parameter efficient image filtering technique",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "124",
+        "number": "",
+        "pages": "104068:1\u2013104068:12",
+        "number_of_pages": 12,
+        "article_number": "104068",
+        "abstract": "The success of a structure preserving filtering technique has relied on its capability to recognize structures and textures present in the input image. In this paper a novel structure preserving filtering technique is presented that first, generates an edge-map of the input image by exploiting semantic information. Then, an edge-aware adaptive recursive median filter is utilized to produce the filter image. The technique provides satisfactory results for a wide variety of images with minimal fine-tuning of its parameters. Moreover, along with the various computer graphics applications the proposed technique also shows its robustness to incorporate spatial information for spectral-spatial classification of hyperspectral images. A MATLAB implementation of the proposed technique is available at-https://www.github.com/K-Pradhan/A-semantic-edge-aware-parameter-efficient-image-filtering-technique",
+        "countries": [
+            "IN"
+        ]
+    },
+    "10.1145/3658163": {
+        "doi": "10.1145/3658163",
+        "authors": [
+            {
+                "family": "Mujkanovic",
+                "given": "Felix",
+                "orcid": "0009-0009-9122-4408",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Nsampi",
+                "given": "Ntumba Elie",
+                "orcid": "0000-0002-3769-9850",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Theobalt",
+                "given": "Christian",
+                "orcid": "0000-0001-6104-6625",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Seidel",
+                "given": "Hans-Peter",
+                "orcid": "0000-0002-1343-8613",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Leimk\u00fchler",
+                "given": "Thomas",
+                "orcid": "0009-0006-7784-7957",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "Neural Gaussian Scale-Space Fields",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "4",
+        "pages": "134:1\u2013134:15",
+        "article_number": "134",
+        "number_of_pages": 15,
+        "abstract": "Gaussian scale spaces are a cornerstone of signal representation and processing, with applications in filtering, multiscale analysis, anti-aliasing, and many more. However, obtaining such a scale space is costly and cumbersome, in particular for continuous representations such as neural fields. We present an efficient and lightweight method to learn the fully continuous, anisotropic Gaussian scale space of an arbitrary signal. Based on Fourier feature modulation and Lipschitz bounding, our approach is trained self-supervised, i.e., training does not require any manual filtering. Our neural Gaussian scale-space fields faithfully capture multiscale representations across a broad range of modalities, and support a diverse set of applications. These include images, geometry, light-stage data, texture anti-aliasing, and multiscale optimization.",
+        "countries": [
+            "DE"
         ]
     }
 }

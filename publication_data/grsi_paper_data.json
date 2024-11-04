@@ -1,5 +1,127 @@
 [
     {
+        "is_vis": false,
+        "title": "Adaptive Complementary Filter for Hybrid Inside-Out Outside-In HMD Tracking with Smooth Transitions",
+        "doi": "10.1109/tvcg.2024.3464738",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-rmonica-hybrid-hmd-tracking-rs",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/RMonica/Hybrid_HMD_Tracking_RS",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:0203d2f7ea07552ec1a63af56f020f4b91fd3b0a;origin=https://github.com/RMonica/Hybrid_HMD_Tracking_RS",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-rmonica-hybrid-hmd-tracking-rs/representative.png",
+        "authors": "Riccardo Monica, Dario Lodi Rizzini, Jacopo Aleotti"
+    },
+    {
+        "is_vis": false,
+        "title": "A Testbed for Studying Cybersickness and its Mitigation in Immersive Virtual Reality",
+        "doi": "10.1109/tvcg.2024.3448203",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-vratpolito-cet-vr",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/VRatPolito/CET-VR",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:f40dc2c96169b3fb9b535abe7e86791e929b9fb2;origin=https://github.com/VRatPolito/CET-VR",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-vratpolito-cet-vr/representative.png",
+        "authors": "Davide Calandra, Fabrizio Lamberti"
+    },
+    {
+        "is_vis": false,
+        "title": "Masonry Shell Structures with Discrete Equivalence Classes",
+        "doi": "10.1145/3592095",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-linsanity81-tileableshell",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/Linsanity81/TileableShell",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:90ae017700233e5e11813bc060436d54b0a18feb;origin=https://github.com/Linsanity81/TileableShell",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-linsanity81-tileableshell/representative.png",
+        "authors": "Rulin Chen, Pengyun Qiu, Peng Song, Bailin Deng, Ziqi Wang, Ying He"
+    },
+    {
+        "is_vis": false,
+        "title": "SMEAR: Stylized Motion Exaggeration with ARt-direction",
+        "doi": "10.1145/3641519.3657457",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-mostyle-smear",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/MoStyle/SMEAR",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a03d1330e54b0d4072aafbeb8bf53b58c97d7101;origin=https://github.com/MoStyle/SMEAR",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-mostyle-smear/representative.png",
+        "authors": "Jean Basset, Pierre B\u00e9nard, Pascal Barla"
+    },
+    {
+        "is_vis": false,
+        "title": "Portrait3D: Text-Guided High-Quality 3D Portrait Generation Using Pyramid Representation and GANs Prior",
+        "doi": "10.1145/3658162",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-onethousand1000-portrait3d",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/oneThousand1000/Portrait3D",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:0da26de95dff7f47e55b6c8dea944effbfebb3fa;origin=https://github.com/oneThousand1000/Portrait3D",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-onethousand1000-portrait3d/representative.png",
+        "authors": "Yiqian Wu, Hao Xu, Xiangjun Tang, Xien Chen, Siyu Tang, Zhebin Zhang, Chen Li, Xiaogang Jin"
+    },
+    {
+        "is_vis": false,
+        "title": "Computational Design of High-level Interlocking Puzzles",
+        "doi": "10.1145/3528223.3530071",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-linsanity81-high-levelpuzzle",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/Linsanity81/High-LevelPuzzle",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:d37c431a7144278ee381f1744ec5db1109bbee9f;origin=https://github.com/Linsanity81/High-LevelPuzzle",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-linsanity81-high-levelpuzzle/representative.png",
+        "authors": "Rulin Chen, Ziqi Wang, Peng Song, Bernd Bickel"
+    },
+    {
+        "is_vis": true,
+        "title": "TPVis: A visual analytics system for exploring test case prioritization methods",
+        "doi": "10.1016/j.cag.2024.104064",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-vixe-cin-ufpe-tpvis",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/vixe-cin-ufpe/TPVis",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:76e6a9904cf3b0914d264d830b35ed70da2fae21;origin=https://github.com/vixe-cin-ufpe/TPVis",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-vixe-cin-ufpe-tpvis/representative.png",
+        "authors": "Jos\u00e9 Arthur Silveira, Leandro Vieira, Nivan Ferreira",
+        "type": "keyword"
+    },
+    {
+        "is_vis": false,
+        "title": "Reconstructing Curves from Sparse Samples on Riemannian Manifolds",
+        "doi": "10.1111/cgf.15136",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-filthynobleman-curves-surf",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/filthynobleman/curves-surf",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:89be833b8fd96685ab26250deb028c7ee507de2e;origin=https://github.com/filthynobleman/curves-surf",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-filthynobleman-curves-surf/representative.png",
+        "authors": "Diana Marin, Filippo Maggioli, Simone Melzi, Stefan Ohrhallinger, Michael Wimmer"
+    },
+    {
+        "is_vis": false,
+        "title": "A Survey of Digital Stippling",
+        "doi": "10.1016/j.cag.2017.05.001",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-dmperandres-stippleshop",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/dmperandres/StippleShop",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:289b299ad18decdb7b3a7f0ed6eba820e025d4d7;origin=https://github.com/dmperandres/StippleShop",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-dmperandres-stippleshop/representative.png",
+        "authors": "Domingo Mart\u00edn, Germ\u00e1n Arroyo, Alejandro Rodr\u00edguez, Tobias Isenberg"
+    },
+    {
+        "is_vis": false,
+        "title": "A semantic edge-aware parameter efficient image filtering technique",
+        "doi": "10.1016/j.cag.2024.104068",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-k-pradhan-a-semantic-edge-aware-parameter-efficient-image-filtering-technique-sefp-git",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/K-Pradhan/A-Semantic-Edge-aware-Parameter-efficient-image-Filtering-technique-SEFP.git",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:4a0e969e352d670661e197d00fb3e86033380457;origin=https://github.com/K-Pradhan/A-Semantic-Edge-aware-Parameter-efficient-image-Filtering-technique-SEFP.git",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-k-pradhan-a-semantic-edge-aware-parameter-efficient-image-filtering-technique-sefp-git/representative.png",
+        "authors": "Kunal Pradhan, Swarnajyoti Patra"
+    },
+    {
+        "is_vis": false,
+        "title": "Neural Gaussian Scale-Space Fields",
+        "doi": "10.1145/3658163",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-loadingbyte-neural-gaussian-scale-space-fields",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/LoadingByte/neural-gaussian-scale-space-fields",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:0b7c003716bc81d87bb9cebd43e932b19c08a4e8;origin=https://github.com/LoadingByte/neural-gaussian-scale-space-fields",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-loadingbyte-neural-gaussian-scale-space-fields/representative.png",
+        "authors": "Felix Mujkanovic, Ntumba Elie Nsampi, Christian Theobalt, Hans-Peter Seidel, Thomas Leimk\u00fchler"
+    },
+    {
         "is_vis": true,
         "title": "Voice User Interfaces for Effortless Navigation in Medical Virtual Reality Environments",
         "doi": "10.1016/j.cag.2024.104069",
@@ -155,7 +277,7 @@
         "doi": "10.1016/j.cag.2024.104052",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-bartvbl-shapebench-replication-archive-2024-07-22t21-23-03-409z",
         "journal": "Elsevier Computers & Graphics (C&G)",
-        "repo_url": "https://github.com/bartvbl/ShapeBench-Replication-Archive#2024-07-22T21:23:03.409Z",
+        "repo_url": "https://github.com/bartvbl/ShapeBench-Replication-Archive",
         "repo_archive_url": "",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-bartvbl-shapebench-replication-archive-2024-07-22t21-23-03-409z/representative.png",
         "authors": "Bart Iver van Blokland"
@@ -291,7 +413,7 @@
         "doi": "10.1109/tvcg.2024.3393236",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-zf223669-persona-gestor-2024-04-29t05-18-59-063z",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
-        "repo_url": "https://github.com/zf223669/Persona_Gestor#2024-04-29T05:18:59.063Z",
+        "repo_url": "https://github.com/zf223669/Persona_Gestor",
         "repo_archive_url": "",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-zf223669-persona-gestor-2024-04-29t05-18-59-063z/representative.png",
         "authors": "Fan Zhang, Zhaohan Wang, Xin Lyu, Siyuan Zhao, Mengjian Li, Weidong Geng, Naye Ji, Hui Du, Fuxing Gao, Hao Wu, Shunman Li"
@@ -744,7 +866,7 @@
         "doi": "10.1145/3631936",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-interactivecomputergraphics-splishsplash-v2",
         "journal": "ACM Transactions on Graphics (TOG)",
-        "repo_url": "https://github.com/InteractiveComputerGraphics/SPlisHSPlasH#v2",
+        "repo_url": "https://github.com/InteractiveComputerGraphics/SPlisHSPlasH",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:c95df72d4e5c96187a6db0d9738c7891921db9b8;origin=https://github.com/InteractiveComputerGraphics/SPlisHSPlasH",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-interactivecomputergraphics-splishsplash-v2/representative.png",
         "authors": "Stefan Rhys Jeske, Lukas Westhofen, Fabian L\u00f6schner, Jos\u00e9 Antonio Fern\u00e1ndez-Fern\u00e1ndez, Jan Bender"
