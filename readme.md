@@ -21,7 +21,7 @@ bibTeX:
   preprint    = {https://doi.org/10.48550/arXiv.2408.03889},
   pages       = {97--105},
   doi         = {10.1109/BELIV64461.2024.00016},
-	shortdoi    = {10/nt3t},
+  shortdoi    = {10/nt3t},
   osf_url     = {https://osf.io/mvnbj/},
   url         = {https://tobias.isenberg.cc/p/Isenberg2024SRS},
   github_url  = {https://github.com/tobiasisenberg/Visualization-Reproducibility},
