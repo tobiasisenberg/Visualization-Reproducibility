@@ -17412,12 +17412,12 @@
                 ]
             }
         ],
-        "title": "MOUNTAINEER: Topology-Driven Visual Analytics for Comparing Local Explanations",
+        "title": "Mountaineer: Topology-Driven Visual Analytics for Comparing Local Explanations",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2024,
+        "volume": "30",
+        "number": "12",
+        "pages": "7763\u20137775",
         "article_number": "",
         "number_of_pages": 13,
         "abstract": "With the increasing use of black-box Machine Learning (ML) techniques in critical applications, there is a growing demand for methods that can provide transparency and accountability for model predictions. As a result, a large number of local explainability methods for black-box models have been developed and popularized. However, machine learning explanations are still hard to evaluate and compare due to the high dimensionality, heterogeneous representations, varying scales, and stochastic nature of some of these methods. Topological Data Analysis (TDA) can be an effective method in this domain since it can be used to transform attributions into uniform graph representations, providing a common ground for comparison across different explanation methods. We present a novel topology-driven visual analytics tool, Mountaineer, that allows ML practitioners to interactively analyze and compare these representations by linking the topological graphs back to the original data distribution, model predictions, and feature attributions. Mountaineer facilitates rapid and iterative exploration of ML explanations, enabling experts to gain deeper insights into the explanation techniques, understand the underlying data distributions, and thus reach well-founded conclusions about model behavior. Furthermore, we demonstrate the utility of Mountaineer through two case studies using real-world data. In the first, we show how Mountaineer enabled us to compare black-box ML explanations and discern regions of and causes of disagreements between different explanations. In the second, we demonstrate how the tool can be used to compare and understand ML models themselves. Finally, we conducted interviews with three industry experts to help us evaluate our work.",
@@ -18167,12 +18167,12 @@
                 ]
             }
         ],
-        "title": "Implicit frictional dynamics with soft constraints",
+        "title": "Implicit Frictional Dynamics With Soft Constraints",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2024,
+        "volume": "30",
+        "number": "12",
+        "pages": "7776\u20137787",
         "article_number": "",
         "number_of_pages": 12,
         "abstract": "Dynamics simulation with frictional contacts is important for a wide range of applications, from cloth simulation to object manipulation. Recent methods using smoothed lagged friction forces have enabled robust and differentiable simulation of elastodynamics with friction. However, the resulting frictional behavior can be inaccurate and may not converge to analytic solutions. Here we evaluate the accuracy of lagged friction models in comparison with implicit frictional contact systems. We show that major inaccuracies near the stick-slip threshold in such systems are caused by lagging of friction forces rather than by smoothing the Coulomb friction curve. Furthermore, we demonstrate how systems involving implicit or lagged friction can be correctly used with higher-order time integration and highlight limitations in earlier attempts. We demonstrate how to exploit forward-mode automatic differentiation to simplify and, in some cases, improve the performance of the inexact Newton method. Finally, we show that other complex phenomena can also be simulated effectively while maintaining smoothness of the entire system. We extend our method to exhibit stick-slip frictional behavior and preserve volume on compressible and nearly-incompressible media using soft constraints.",
@@ -18209,13 +18209,13 @@
         ],
         "title": "SimpleSets: Capturing Categorical Point Patterns with Simple Shapes",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "1",
+        "pages": "262\u2013271",
         "article_number": "",
         "number_of_pages": 10,
-        "abstract": "Points of interest on a map such as restaurants, hotels, or subway stations, give rise to categorical point data: data that have a fixed location and one or more categorical attributes. Consequently, recent years have seen various set visualization approaches that visually connect points of the same category to support users in understanding the spatial distribution of categories. Existing methods use complex and often highly irregular shapes to connect points of the same category, leading to high cognitive load for the user. In this paper we introduce SimpleSets, which uses simple shapes to enclose categorical point patterns, thereby providing a clean overview of the data distribution. SimpleSets is designed to visualize sets of points with a single categorical attribute; as a result, the point patterns enclosed by SimpleSets form a partition of the data. We give formal definitions of point patterns that correspond to simple shapes and describe an algorithm that partitions categorical points into few such patterns. Our second contribution is a rendering algorithm that transforms a given partition into a clean set of shapes resulting in an aesthetically pleasing set visualization. Our algorithm pays particular attention to resolving intersections between nearby shapes in a consistent manner. We compare SimpleSets to the state-of-the-art set visualizations using standard datasets from the literature",
+        "abstract": "Points of interest on a map such as restaurants, hotels, or subway stations, give rise to categorical point data: data that have a fixed location and one or more categorical attributes. Consequently, recent years have seen various set visualization approaches that visually connect points of the same category to support users in understanding the spatial distribution of categories. Existing methods use complex and often highly irregular shapes to connect points of the same category, leading to high cognitive load for the user. In this paper we introduce SimpleSets, which uses simple shapes to enclose categorical point patterns, thereby providing a clean overview of the data distribution. SimpleSets is designed to visualize sets of points with a single categorical attribute; as a result, the point patterns enclosed by SimpleSets form a partition of the data. We give formal definitions of point patterns that correspond to simple shapes and describe an algorithm that partitions categorical points into few such patterns. Our second contribution is a rendering algorithm that transforms a given partition into a clean set of shapes resulting in an aesthetically pleasing set visualization. Our algorithm pays particular attention to resolving intersections between nearby shapes in a consistent manner. We compare SimpleSets to the state-of-the-art set visualizations using standard datasets from the literature.",
         "countries": [
             "NL"
         ]
@@ -18254,13 +18254,13 @@
         ],
         "title": "A Practical Solver for Scalar Data Topological Simplification",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "1",
+        "pages": "97\u2013107",
         "article_number": "",
         "number_of_pages": 11,
-        "abstract": "This paper presents a practical approach for the optimization of topological simplification, a central pre-processing step for the analysis and visualization of scalar data. Given an input scalar field f and a set of \u201csignal\u201d persistence pairs to maintain, our approaches produces an output field g that is close to f and which optimizes (i) the cancellation of \u201cnon-signal\u201d pairs, while (ii) preserving the \u201csignal\u201d pairs. In contrast to pre-existing simplification algorithms, our approach is not restricted to persistence pairs involving extrema and can thus address a larger class of topological features, in particular saddle pairs in three-dimensional scalar data. Our approach leverages recent generic persistence optimization frameworks and extends them with tailored accelerations specific to the problem of topological simplification. Extensive experiments report substantial accelerations over these frameworks, thereby making topological simplification optimization practical for real-life datasets. Our approach enables a direct visualization and analysis of the topologically simplified data, e.g., via isosurfaces of simplified topology (fewer components and handles). We apply our approach to the extraction of prominent filament structures in three-dimensional data. Specifically, we show that our pre-simplification of the data leads to practical improvements over standard topological techniques for removing filament loops. We also show how our approach can be used to repair genus defects in surface processing. Finally, we provide a C++ implementation for reproducibility purposes",
+        "abstract": "This paper presents a practical approach for the optimization of topological simplification, a central pre-processing step for the analysis and visualization of scalar data. Given an input scalar field $f$ and a set of \u201csignal\u201d persistence pairs to maintain, our approaches produces an output field $g$ that is close to $f$ and which optimizes (i) the cancellation of \u201cnon-signal\u201d pairs, while (ii) preserving the \u201csignal\u201d pairs. In contrast to pre-existing simplification algorithms, our approach is not restricted to persistence pairs involving extrema and can thus address a larger class of topological features, in particular saddle pairs in three-dimensional scalar data. Our approach leverages recent generic persistence optimization frameworks and extends them with tailored accelerations specific to the problem of topological simplification. Extensive experiments report substantial accelerations over these frameworks, thereby making topological simplification optimization practical for real-life datasets. Our approach enables a direct visualization and analysis of the topologically simplified data, e.g., via isosurfaces of simplified topology (fewer components and handles). We apply our approach to the extraction of prominent filament structures in three-dimensional data. Specifically, we show that our pre-simplification of the data leads to practical improvements over standard topological techniques for removing filament loops. We also show how our approach can be used to repair genus defects in surface processing. Finally, we provide a C++ implementation for reproducibility purposes.",
         "countries": [
             "FR",
             "US"
@@ -18300,13 +18300,13 @@
         ],
         "title": "ProvenanceWidgets: A Library of UI Control Elements to Track and Dynamically Overlay Analytic Provenance",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "1",
+        "pages": "1235\u20131245",
         "article_number": "",
         "number_of_pages": 11,
-        "abstract": "We present ProvenanceWidgets, a Javascript library of UI control elements such as radio buttons, checkboxes, and dropdowns to track and dynamically overlay a user's analytic provenance. These in situ overlays not only save screen space but also minimize the amount of time and effort needed to access the same information from elsewhere in the UI. In this paper, we discuss how we design modular UI control elements to track how often and how recently a user interacts with them and design visual overlays showing an aggregated summary as well as a detailed temporal history. We demonstrate the capability of ProvenanceWidgets by recreating three prior widget libraries: (1) Scented Widgets, (2) Phosphor objects, and (3) Dynamic Query Widgets. We also evaluated its expressiveness and conducted case studies with visualization developers to evaluate its effectiveness. We fnd that ProvenanceWidgets enables developers to implement custom provenance-tracking applications effectively. ProvenanceWidgets is available as open-source software at https://github.com/ProvenanceWidgets to help application developers build custom provenance-based systems.",
+        "abstract": "We present ProvenanceWidgets, a Javascript library of UI control elements such as radio buttons, checkboxes, and dropdowns to track and dynamically overlay a user's analytic provenance. These in situ overlays not only save screen space but also minimize the amount of time and effort needed to access the same information from elsewhere in the UI. In this paper, we discuss how we design modular UI control elements to track how often and how recently a user interacts with them and design visual overlays showing an aggregated summary as well as a detailed temporal history. We demonstrate the capability of ProvenanceWidgets by recreating three prior widget libraries: (1) Scented Widgets, (2) Phosphor objects, and (3) Dynamic Query Widgets. We also evaluated its expressiveness and conducted case studies with visualization developers to evaluate its effectiveness. We find that ProvenanceWidgets enables developers to implement custom provenance-tracking applications effectively. ProvenanceWidgets is available as open-source software at https://github.com/ProvenanceWidgets to help application developers build custom provenance-based systems.",
         "countries": [
             "US",
             "CH"
@@ -18353,10 +18353,10 @@
         ],
         "title": "The Language of Infographics: Toward Understanding Conceptual Metaphor Use in Scientific Storytelling",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "1",
+        "pages": "371\u2013381",
         "article_number": "",
         "number_of_pages": 11,
         "abstract": "We apply an approach from cognitive linguistics by mapping Conceptual Metaphor Theory (CMT) to the visualization domain to address patterns of visual conceptual metaphors that are often used in science infographics. Metaphors play an essential part in visual communication and are frequently employed to explain complex concepts. However, their use is often based on intuition, rather than following a formal process. At present, we lack tools and language for understanding and describing metaphor use in visualization to the extent where taxonomy and grammar could guide the creation of visual components, e.g., infographics. Our classification of the visual conceptual mappings within scientific representations is based on the breakdown of visual components in existing scientific infographics. We demonstrate the development of this mapping through a detailed analysis of data collected from four domains (biomedicine, climate, space, and anthropology) that represent a diverse range of visual conceptual metaphors used in the visual communication of science. This work allows us to identify patterns of visual conceptual metaphor use within the domains, resolve ambiguities about why specific conceptual metaphors are used, and develop a better overall understanding of visual metaphor use in scientific infographics. Our analysis shows that ontological and orientational conceptual metaphors are the most widely applied to translate complex scientific concepts. To support our findings we developed a visual exploratory tool based on the collected database that places the individual infographics on a spatio-temporal scale and illustrates the breakdown of visual conceptual metaphors.",
@@ -18401,10 +18401,10 @@
         ],
         "title": "DeLVE into Earth's Past: A Visualization-Based Exhibit Deployed Across Multiple Museum Contexts",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "1",
+        "pages": "952\u2013961",
         "article_number": "",
         "number_of_pages": 10,
         "abstract": "While previous work has found success in deploying visualizations as museum exhibits, it has not investigated whether museum context impacts visitor behaviour with these exhibits. We present an interactive Deep-time Literacy Visualization Exhibit (DeLVE) to help museum visitors understand deep time (lengths of extremely long geological processes) by improving proportional reasoning skills through comparison of different time periods. DeLVE uses a new visualization idiom, Connected Multi-Tier Ranges, to visualize curated datasets of past events across multiple scales of time, relating extreme scales with concrete scales that have more familiar magnitudes and units. Museum staff at three separate museums approved the deployment of DeLVE as a digital kiosk, and devoted time to curating a unique dataset in each of them. We collect data from two sources, an observational study and system trace logs. We discuss the importance of context: similar museum exhibits in different contexts were received very differently by visitors. We additionally discuss differences in our process from Sedlmair et al.'s design study methodology which is focused on design studies triggered by connection with collaborators rather than the discovery of a concept to communicate. Supplemental materials are available at: https://osf.io/z53dq/",
@@ -18446,13 +18446,13 @@
         ],
         "title": "Talk to the Wall: The Role of Speech Interaction in Collaborative Visual Analytics",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "1",
+        "pages": "941\u2013951",
         "article_number": "",
         "number_of_pages": 11,
-        "abstract": "We present the results of an exploratory study on how pairs interact with speech commands and touch gestures on a wall-sized display during a collaborative sensemaking task. Previous work has shown that speech commands, alone or in combination with other input modalities, can support visual data exploration by individuals. However, it is still unknown whether and how speech commands can be used in collaboration, and for what tasks. To answer these questions, we developed a functioning prototype that we used as a technology probe. We conducted an in-depth exploratory study with 10 participant pairs to analyze their interaction choices, the interplay between the input modalities, and their collaboration. While touch was the most used modality, we found that participants preferred speech commands for global operations, used them for distant interaction, and that speech interaction contributed to the awareness of the partner's actions. Furthermore, the likelihood of using speech commands during collaboration was related to the personality trait of agreeableness. Regarding collaboration styles, participants interacted with speech equally often whether they were in loosely or closely coupled collaboration. While the partners stood closer to each other during close collaboration, they did not distance themselves to use speech commands. From our fndings, we derive and contribute a set of design considerations for collaborative and multimodal interactive data analysis systems. All supplemental materials are available at https://osf.io/8gpv2",
+        "abstract": "We present the results of an exploratory study on how pairs interact with speech commands and touch gestures on a wall-sized display during a collaborative sensemaking task. Previous work has shown that speech commands, alone or in combination with other input modalities, can support visual data exploration by individuals. However, it is still unknown whether and how speech commands can be used in collaboration, and for what tasks. To answer these questions, we developed a functioning prototype that we used as a technology probe. We conducted an in-depth exploratory study with 10 participant pairs to analyze their interaction choices, the interplay between the input modalities, and their collaboration. While touch was the most used modality, we found that participants preferred speech commands for global operations, used them for distant interaction, and that speech interaction contributed to the awareness of the partner's actions. Furthermore, the likelihood of using speech commands during collaboration was related to the personality trait of agreeableness. Regarding collaboration styles, participants interacted with speech equally often whether they were in loosely or closely coupled collaboration. While the partners stood closer to each other during close collaboration, they did not distance themselves to use speech commands. From our findings, we derive and contribute a set of design considerations for collaborative and multimodal interactive data analysis systems. All supplemental materials are available at https://osf.io/8gpv2.",
         "countries": [
             "DE",
             "FR"
@@ -18497,15 +18497,15 @@
                 ]
             }
         ],
-        "title": "SpatialTouch: Exploring Spatial Data Visualizations in Cross-reality",
+        "title": "SpatialTouch: Exploring Spatial Data Visualizations in Cross-Reality",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "1",
+        "pages": "897\u2013907",
         "article_number": "",
         "number_of_pages": 11,
-        "abstract": "We propose and study a novel cross-reality environment that seamlessly integrates a monoscopic 2D surface (an interactive screen with touch and pen input) with a stereoscopic 3D space (an augmented reality HMD) to jointly host spatial data visualizations. This innovative approach combines the best of two conventional methods of displaying and manipulating spatial 3D data, enabling users to fluidly explore diverse visual forms using tailored interaction techniques. Providing such effective 3D data exploration techniques is pivotal for conveying its intricate spatial structures\u2014often at multiple spatial or semantic scales\u2014across various application domains and requiring diverse visual representations for effective visualization. To understand user reactions to our new environment, we began with an elicitation user study, in which we captured their responses and interactions. We observed that users adapted their interaction approaches based on perceived visual representations, with natural transitions in spatial awareness and actions while navigating across the physical surface. Our findings then informed the development of a design space for spatial data exploration in cross-reality. We thus developed cross-reality environments tailored to three distinct domains: for 3D molecular structure data, for 3D point cloud data, and for 3D anatomical data. In particular, we designed interaction techniques that account for the inherent features of interactions in both spaces, facilitating various forms of interaction, including mid-air gestures, touch interactions, pen interactions, and combinations thereof, to enhance the users' sense of presence and engagement. We assessed the usability of our environment with biologists, focusing on its use for domain research. In addition, we evaluated our interaction transition designs with virtual and mixed-reality experts to gather further insights. As a result, we provide our design suggestions for the cross-reality environment, emphasizing the interaction with diverse visual representations and seamless interaction transitions between 2D and 3D spaces",
+        "abstract": "We propose and study a novel cross-reality environment that seamlessly integrates a monoscopic 2D surface (an interactive screen with touch and pen input) with a stereoscopic 3D space (an augmented reality HMD) to jointly host spatial data visualizations. This innovative approach combines the best of two conventional methods of displaying and manipulating spatial 3D data, enabling users to fluidly explore diverse visual forms using tailored interaction techniques. Providing such effective 3D data exploration techniques is pivotal for conveying its intricate spatial structures\u2014often at multiple spatial or semantic scales\u2014across various application domains and requiring diverse visual representations for effective visualization. To understand user reactions to our new environment, we began with an elicitation user study, in which we captured their responses and interactions. We observed that users adapted their interaction approaches based on perceived visual representations, with natural transitions in spatial awareness and actions while navigating across the physical surface. Our findings then informed the development of a design space for spatial data exploration in cross-reality. We thus developed cross-reality environments tailored to three distinct domains: for 3D molecular structure data, for 3D point cloud data, and for 3D anatomical data. In particular, we designed interaction techniques that account for the inherent features of interactions in both spaces, facilitating various forms of interaction, including mid-air gestures, touch interactions, pen interactions, and combinations thereof, to enhance the users' sense of presence and engagement. We assessed the usability of our environment with biologists, focusing on its use for domain research. In addition, we evaluated our interaction transition designs with virtual and mixed-reality experts to gather further insights. As a result, we provide our design suggestions for the cross-reality environment, emphasizing the interaction with diverse visual representations and seamless interaction transitions between 2D and 3D spaces.",
         "countries": [
             "CN",
             "FR"
@@ -18538,10 +18538,10 @@
         ],
         "title": "Adaptive Complementary Filter for Hybrid Inside-Out Outside-In HMD Tracking With Smooth Transitions",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "2",
+        "pages": "1598\u20131612",
         "article_number": "",
         "number_of_pages": 15,
         "abstract": "Head-mounted displays (HMDs) in room-scale virtual reality are usually tracked using inside-out visual SLAM algorithms. Alternatively, to track the motion of the HMD with respect to a fixed real-world reference frame, an outside-in instrumentation like a motion capture system can be adopted. However, outside-in tracking systems may temporarily lose tracking as they suffer by occlusion and blind spots. A possible solution is to adopt a hybrid approach where the inside-out tracker of the HMD is augmented with an outside-in sensing system. On the other hand, when the tracking signal of the outside-in system is recovered after a loss of tracking the transition from inside-out tracking to hybrid tracking may generate a discontinuity, i.e a sudden change of the virtual viewpoint, that can be uncomfortable for the user. Therefore, hybrid tracking solutions for HMDs require advanced sensor fusion algorithms to obtain a smooth transition. This work proposes a method for hybrid tracking of a HMD with smooth transitions based on an adaptive complementary filter. The proposed approach can be configured with several parameters that determine a trade-off between user experience and tracking error. A user study was carried out in a room-scale virtual reality environment, where users carried out two different tasks while multiple signal tracking losses of the outside-in sensor system occurred. The results show that the proposed approach improves user experience compared to a standard Extended Kalman Filter, and that tracking error is lower compared to a state-of-the-art complementary filter when configured for the same quality of user experience.",
@@ -18569,13 +18569,13 @@
         ],
         "title": "A Testbed for Studying Cybersickness and its Mitigation in Immersive Virtual Reality",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3024,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2024,
+        "volume": "30",
+        "number": "12",
+        "pages": "7788\u20137805",
         "article_number": "",
         "number_of_pages": 18,
-        "abstract": "Cybersickness (CS) represents one of the oldest problems affecting Virtual Reality (VR) technology. In an attempt to resolve or at least limit this form of discomfort, an increasing number of mitigation techniques have been proposed by academic and industrial researchers. However, the validation of such techniques is often carried out without grounding on a common methodology, making the comparison between the various works in the state of the art difficult. To address this issue, the present paper proposes a novel testbed for studying CS in immersive VR and, in particular, methods to mitigate it. The testbed consists of four virtual scenarios, which have been designed to elicit CS in a targeted and predictable manner. The scenarios, grounded on available literature, support the extraction of objective metrics about user's performance. The testbed additionally integrates an experimental protocol that employs standard questionnaires as well as measurements typically adopted in state-of-the-art practice to assess levels of CS and other subjective aspects regarding User Experience. The paper shows a possible use case of the testbed, concerning the evaluation of a CS mitigation technique that is compared with the absence of mitigation as baseline condition.",
+        "abstract": "Cybersickness (CS) represents one of the oldest problems affecting Virtual Reality (VR) technology. In an attempt to resolve or at least limit this form of discomfort, an increasing number of mitigation techniques have been proposed by academic and industrial researchers. However, the validation of such techniques is often carried out without grounding on a common methodology, making the comparison between the various works in the state of the art difficult. To address this issue, the present article proposes a novel testbed for studying CS in immersive VR and, in particular, methods to mitigate it. The testbed consists of four virtual scenarios, which have been designed to elicit CS in a targeted and predictable manner. The scenarios, grounded on available literature, support the extraction of objective metrics about user's performance. The testbed additionally integrates an experimental protocol that employs standard questionnaires as well as measurements typically adopted in state-of-the-art practice to assess levels of CS and other subjective aspects regarding User Experience. The article shows a possible use case of the testbed, concerning the evaluation of a CS mitigation technique that is compared with the absence of mitigation as baseline condition.",
         "countries": [
             "IT"
         ]
@@ -18905,9 +18905,9 @@
         "publication_year": 2024,
         "volume": "43",
         "number": "5",
-        "pages": "e15136",
-        "article_number": "",
-        "number_of_pages": -1,
+        "pages": "e15136:1\u2013e15136:14",
+        "article_number": "e15136",
+        "number_of_pages": 14,
         "abstract": "Reconstructing 2D curves from sample points has long been a critical challenge in computer graphics, finding essential applications in vector graphics. The design and editing of curves on surfaces has only recently begun to receive attention, primarily relying on human assistance, and where not, limited by very strict sampling conditions. In this work, we formally improve on the state-of-the-art requirements and introduce an innovative algorithm capable of reconstructing closed curves directly on surfaces from a given sparse set of sample points. We extend and adapt a state-of-the-art planar curve reconstruction method to the realm of surfaces while dealing with the challenges arising from working on non-Euclidean domains. We demonstrate the robustness of our method by reconstructing multiple curves on various surface meshes. We explore novel potential applications of our approach, allowing for automated reconstruction of curves on Riemannian manifolds.",
         "countries": [
             "AT",
@@ -19046,6 +19046,857 @@
         "abstract": "Gaussian scale spaces are a cornerstone of signal representation and processing, with applications in filtering, multiscale analysis, anti-aliasing, and many more. However, obtaining such a scale space is costly and cumbersome, in particular for continuous representations such as neural fields. We present an efficient and lightweight method to learn the fully continuous, anisotropic Gaussian scale space of an arbitrary signal. Based on Fourier feature modulation and Lipschitz bounding, our approach is trained self-supervised, i.e., training does not require any manual filtering. Our neural Gaussian scale-space fields faithfully capture multiscale representations across a broad range of modalities, and support a diverse set of applications. These include images, geometry, light-stage data, texture anti-aliasing, and multiscale optimization.",
         "countries": [
             "DE"
+        ]
+    },
+    "10.1145/3618358": {
+        "doi": "10.1145/3618358",
+        "authors": [
+            {
+                "family": "Ma",
+                "given": "Xiaohe",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Xu",
+                "given": "Xianmin",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Leyao",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhou",
+                "given": "Kun",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Wu",
+                "given": "Hongzhi",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "OpenSVBRDF: A Database of Measured Spatially-Varying Reflectance",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2023,
+        "volume": "42",
+        "number": "6",
+        "pages": "254:1\u2013254:14",
+        "article_number": "254",
+        "number_of_pages": 14,
+        "abstract": "We present the first large-scale database of measured spatially-varying anisotropic reflectance, consisting of 1,000 high-quality near-planar SVBRDFs, spanning 9 material categories such as wood, fabric and metal. Each sample is captured in 15 minutes, and represented as a set of high-resolution texture maps that correspond to spatially-varying BRDF parameters and local frames. To build this database, we develop a novel integrated system for robust, high-quality and -efficiency reflectance acquisition and reconstruction. Our setup consists of 2 cameras and 16,384 LEDs. We train 64 lighting patterns for efficient acquisition, in conjunction with a network that predicts per-point reflectance in a neural representation from carefully aligned two-view measurements captured under the patterns. The intermediate results are further fine-tuned with respect to the photographs acquired under 63 effective linear lights, and finally fitted to a BRDF model. We report various statistics of the database, and demonstrate its value in the applications of material generation, classification as well as sampling. All related data, including future additions to the database, can be downloaded from https://opensvbrdf.github.io/.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1109/tvcg.2024.3420225": {
+        "doi": "10.1109/tvcg.2024.3420225",
+        "authors": [
+            {
+                "family": "Dyken",
+                "given": "Landon",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Usher",
+                "given": "Will",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Kumar",
+                "given": "Sidharth",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Interactive Isosurface Visualization in Memory Constrained Environments Using Deep Learning and Speculative Raycasting",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "2",
+        "pages": "1582\u20131597",
+        "article_number": "",
+        "number_of_pages": 16,
+        "abstract": "New web technologies have enabled the deployment of powerful GPU-based computational pipelines that run entirely in the web browser, opening a new frontier for accessible scientific visualization applications. However, these new capabilities do not address the memory constraints of lightweight end-user devices encountered when attempting to visualize the massive data sets produced by today's simulations and data acquisition systems. We propose a novel implicit isosurface rendering algorithm for interactive visualization of massive volumes within a small memory footprint. We achieve this by progressively traversing a wavefront of rays through the volume and decompressing blocks of the data on-demand to perform implicit ray-isosurface intersections, displaying intermediate results each pass. We improve the quality of these intermediate results using a pretrained deep neural network that reconstructs the output of early passes, allowing for interactivity with better approximates of the final image. To accelerate rendering and increase GPU utilization, we introduce speculative ray-block intersection into our algorithm, where additional blocks are traversed and intersected speculatively along rays to exploit additional parallelism in the workload. Our algorithm is able to trade-off image quality to greatly decrease rendering time for interactive rendering even on lightweight devices. Our entire pipeline is run in parallel on the GPU to leverage the parallel computing power that is available even on lightweight end-user devices. We compare our algorithm to the state of the art in low-overhead isosurface extraction and demonstrate that it achieves $1.7\\times$1.7\u00d7\u2013$5.7\\times$5.7\u00d7 reductions in memory overhead and up to $8.4\\times$8.4\u00d7 reductions in data decompressed.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.1145/3641519.3657410": {
+        "doi": "10.1145/3641519.3657410",
+        "authors": [
+            {
+                "family": "Tang",
+                "given": "Yingjie",
+                "orcid": "0009-0002-5633-0079",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Li",
+                "given": "Zixuan",
+                "orcid": "0009-0004-2424-9529",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Hasan",
+                "given": "Milos",
+                "orcid": "0000-0003-3808-6092",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Yang",
+                "given": "Jian",
+                "orcid": "0000-0003-4800-832X",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Beibei",
+                "orcid": "0000-0001-8943-8364",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Woven Fabric Capture with a Reflection-Transmission Photo Pair",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "20:1\u201320:10",
+        "article_number": "20",
+        "number_of_pages": 10,
+        "abstract": "Digitizing woven fabrics would be valuable for many applications, from digital humans to interior design. Previous work introduces a lightweight woven fabric acquisition approach by capturing a single reflection image and estimating the fabric parameters with a differentiable geometric and shading model. The renderings of the estimated fabric parameters can closely match the photo; however, the captured reflection image is insufficient to fully characterize the fabric sample reflectance. For instance, fabrics with different thicknesses might have similar reflection images but lead to significantly different transmission. We propose to recover the woven fabric parameters from two captured images: reflection and transmission. At the core of our method is a differentiable bidirectional scattering distribution function (BSDF) model, handling reflection and transmission, including single and multiple scattering. We propose a two-layer model, where the single scattering uses an SGGX phase function as in previous work, and multiple scattering uses a new azimuthally-invariant microflake definition, which we term ASGGX. This new fabric BSDF model closely matches real woven fabrics in both reflection and transmission. We use a simple setup for capturing reflection and transmission photos with a cell phone camera and two point lights, and estimate the fabric parameters via a lightweight network, together with a differentiable optimization. We also model the out-of-focus effects explicitly with a simple solution to match the thin-lens camera better. As a result, the renderings of the estimated parameters can agree with the input images on both reflection and transmission for the first time. The code for this paper is at https://github.com/lxtyin/FabricBTDF-Recovery.",
+        "countries": [
+            "CN",
+            "US"
+        ]
+    },
+    "10.1109/tvcg.2024.3456318": {
+        "doi": "10.1109/tvcg.2024.3456318",
+        "authors": [
+            {
+                "family": "Cabouat",
+                "given": "Anne-Flore",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "He",
+                "given": "Tingying",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Isenberg",
+                "given": "Petra",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Isenberg",
+                "given": "Tobias",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "PREVis: Perceived Readability Evaluation for Visualizations",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "1",
+        "pages": "1083\u20131093",
+        "article_number": "",
+        "number_of_pages": 11,
+        "abstract": "We developed and validated an instrument to measure the perceived readability in data visualization: PREVis. Researchers and practitioners can easily use this instrument as part of their evaluations to compare the perceived readability of different visual data representations. Our instrument can complement results from controlled experiments on user task performance or provide additional data during in-depth qualitative work such as design iterations when developing a new technique. Although readability is recognized as an essential quality of data visualizations, so far there has not been a unified definition of the construct in the context of visual representations. As a result, researchers often lack guidance for determining how to ask people to rate their perceived readability of a visualization. To address this issue, we engaged in a rigorous process to develop the first validated instrument targeted at the subjective readability of visual data representations. Our final instrument consists of 11 items across 4 dimensions: understandability, layout clarity, readability of data values, and readability of data patterns. We provide the questionnaire as a document with implementation guidelines on osf.io/9cg8j. Beyond this instrument, we contribute a discussion of how researchers have previously assessed visualization readability, and an analysis of the factors underlying perceived readability in visual data representations.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1145/3658144": {
+        "doi": "10.1145/3658144",
+        "authors": [
+            {
+                "family": "Mantiuk",
+                "given": "Rafal K.",
+                "orcid": "0000-0003-2353-0349",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Hanji",
+                "given": "Param",
+                "orcid": "0000-0002-7985-4177",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Ashraf",
+                "given": "Maliha",
+                "orcid": "0000-0002-8142-5611",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Asano",
+                "given": "Yuta",
+                "orcid": "0009-0003-8612-9349",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Chapiro",
+                "given": "Alexandre",
+                "orcid": "0000-0002-7367-0131",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "ColorVideoVDP: A visual difference predictor for image, video and display distortions",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "4",
+        "pages": "129:1\u2013129:20",
+        "article_number": "129",
+        "number_of_pages": 20,
+        "abstract": "ColorVideoVDP is a video and image quality metric that models spatial and temporal aspects of vision for both luminance and color. The metric is built on novel psychophysical models of chromatic spatiotemporal contrast sensitivity and cross-channel contrast masking. It accounts for the viewing conditions, geometric, and photometric characteristics of the display. It was trained to predict common video-streaming distortions (e.g., video compression, rescaling, and transmission errors) and also 8 new distortion types related to AR/VR displays (e.g., light source and waveguide non-uniformities). To address the latter application, we collected our novel XR-Display-Artifact-Video quality dataset (XR-DAVID), comprised of 336 distorted videos. Extensive testing on XR-DAVID, as well as several datasets from the literature, indicate a significant gain in prediction performance compared to existing metrics. ColorVideoVDP opens the doors to many novel applications that require the joint automated spatiotemporal assessment of luminance and color distortions, including video streaming, display specification, and design, visual comparison of results, and perceptually-guided quality optimization. The code for the metric can be found at https://github.com/gfxdisp/ColorVideoVDP.",
+        "countries": [
+            "GB",
+            "US"
+        ]
+    },
+    "10.1109/tvcg.2024.3456319": {
+        "doi": "10.1109/tvcg.2024.3456319",
+        "authors": [
+            {
+                "family": "Yao",
+                "given": "Lijie",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Bucchieri",
+                "given": "Federica",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "McArthur",
+                "given": "Victoria",
+                "countries": [
+                    "CA"
+                ]
+            },
+            {
+                "family": "Bezerianos",
+                "given": "Anastasia",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Isenberg",
+                "given": "Petra",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "User Experience of Visualizations in Motion: A Case Study and Design Considerations",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "1",
+        "pages": "174\u2013184",
+        "article_number": "",
+        "number_of_pages": 11,
+        "abstract": "We present a systematic review, an empirical study, and a first set of considerations for designing visualizations in motion, derived from a concrete scenario in which these visualizations were used to support a primary task. In practice, when viewers are confronted with embedded visualizations, they often have to focus on a primary task and can only quickly glance at a visualization showing rich, often dynamically updated, information. As such, the visualizations must be designed so as not to distract from the primary task, while at the same time being readable and useful for aiding the primary task. For example, in games, players who are engaged in a battle have to look at their enemies but also read the remaining health of their own game character from the health bar over their character's head. Many trade-ofts are possible in the design of embedded visualizations in such dynamic scenarios, which we explore in-depth in this paper with a focus on user experience. We use video games as an example of an application context with a rich existing set of visualizations in motion. We begin our work with a systematic review of in-game visualizations in motion. Next, we conduct an empirical user study to investigate how different embedded visualizations in motion designs impact user experience. We conclude with a set of considerations and trade-offs for designing visualizations in motion more broadly as derived from what we learned about video games. All supplemental materials of this paper are available at osf.io/3v8wm/.",
+        "countries": [
+            "CN",
+            "FR",
+            "CA"
+        ]
+    },
+    "10.1109/tvcg.2024.3493607": {
+        "doi": "10.1109/tvcg.2024.3493607",
+        "authors": [
+            {
+                "family": "Heinemann",
+                "given": "Moritz",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Potyka",
+                "given": "Johanna",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Schulte",
+                "given": "Kathrin",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Sadlo",
+                "given": "Filip",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Ertl",
+                "given": "Thomas",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "Visualization of Finite-Time Separation in Multiphase Flow",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 14,
+        "abstract": "This paper presents a particle-based visualization approach for finite-time analysis of the connectivity of fluid portions in multiphase flow, i.e., the evolution of the droplets in volume of fluid simulations. We address the Lagrangian inconsistency between the interpolated flow field and the interpolated volume of fluid field by a correction approach, and complement that with an uncertainty measure that provides an estimate of the involved inconsistency. We demonstrate the utility and versatility of our approach using different multiphase flow simulations, exemplify its application in physics-based assessment of droplet formation processes, and discuss its limitations and benefits.",
+        "countries": [
+            "DE"
+        ]
+    },
+    "10.1109/tvcg.2024.3514858": {
+        "doi": "10.1109/tvcg.2024.3514858",
+        "authors": [
+            {
+                "family": "Filipov",
+                "given": "Velitchko",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Ceneda",
+                "given": "Davide",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Archambault",
+                "given": "Daniel",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Arleo",
+                "given": "Alessio",
+                "countries": [
+                    "AT",
+                    "NL"
+                ]
+            }
+        ],
+        "title": "TimeLighting: Guided Exploration of 2D Temporal Network Projections",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 13,
+        "abstract": "In temporal (event-based) networks, time is a continuous axis, with real-valued time coordinates for each node and edge. Computing a layout for such graphs means embedding the node trajectories and edge surfaces over time in a $2D + t$ space, known as the space-time cube. Currently, these space-time cube layouts are visualized through animation or by slicing the cube at regular intervals. However, both techniques present problems such as below-average performance on tasks as well as loss of precision and difficulties in selecting timeslice intervals. In this paper, we present TimeLighting, a novel visual analytics approach to visualize and explore temporal graphs embedded in the space-time cube. Our interactive approach highlights node trajectories and their movement over time, visualizes node \u201caging\u201d, and provides guidance to support users during exploration by indicating interesting time intervals (\u201cwhen\u201d) and network elements (\u201cwhere\u201d) are located for a detail-oriented investigation. This combined focus helps to gain deeper insights into the temporal network's underlying behavior. We assess the utility and efficacy of our approach through two case studies and qualitative expert evaluation. The results demonstrate how TimeLighting supports identifying temporal patterns, extracting insights from nodes with high activity, and guiding the exploration and analysis process.",
+        "countries": [
+            "AT",
+            "GB",
+            "NL"
+        ]
+    },
+    "10.1016/j.cag.2024.104142": {
+        "doi": "10.1016/j.cag.2024.104142",
+        "authors": [
+            {
+                "family": "Zhou",
+                "given": "Wei",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Shi",
+                "given": "Xinzhe",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "She",
+                "given": "Yunfeng",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Liu",
+                "given": "Kunlong",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Yongqin",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Semi-supervised single-view 3D reconstruction via multi shape prior fusion strategy and self-attention",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "126",
+        "number": "",
+        "pages": "104142",
+        "number_of_pages": -1,
+        "article_number": "104142",
+        "abstract": "In the domain of single-view 3D reconstruction, traditional techniques have frequently relied on expensive and time-intensive 3D annotation data. Facing the challenge of annotation acquisition, semi-supervised learning strategies offer an innovative approach to reduce the dependence on labeled data. Despite these developments, the utilization of this learning paradigm in 3D reconstruction tasks remains relatively constrained. In this research, we created an innovative semi-supervised framework for 3D reconstruction that distinctively uniquely introduces a multi shape prior fusion strategy, intending to guide the creation of more realistic object structures. Additionally, to improve the quality of shape generation, we integrated a self-attention module into the traditional decoder. In benchmark tests on the ShapeNet dataset, our method substantially outperformed existing supervised learning methods at diverse labeled ratios of 1%, 10%, and 20%. Moreover, it showcased excellent performance on the real-world Pix3D dataset. Through comprehensive experiments on ShapeNet, our framework demonstrated a 3.3% performance improvement over the baseline. Moreover, stringent ablation studies further confirmed the notable effectiveness of our approach. Our code has been released on https://github.com/NWUzhouwei/SSMP.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1109/tvcg.2024.3491504": {
+        "doi": "10.1109/tvcg.2024.3491504",
+        "authors": [
+            {
+                "family": "Shen",
+                "given": "Yuancheng",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhao",
+                "given": "Yue",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Yunhai",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Ge",
+                "given": "Tong",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Shi",
+                "given": "Haoyan",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Lee",
+                "given": "Bongshin",
+                "countries": [
+                    "KR"
+                ]
+            }
+        ],
+        "title": "Authoring Data-Driven Chart Animations Through Direct Manipulation",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "2",
+        "pages": "1613\u20131630",
+        "article_number": "",
+        "number_of_pages": 18,
+        "abstract": "We present an authoring tool, called CAST+ (Canis Studio Plus), that enables the interactive creation of chart animations through the direct manipulation of keyframes. It introduces the visual specification of chart animations consisting of keyframes that can be played sequentially or simultaneously, and animation parameters (e.g., duration, delay). Building on Canis (Ge et al. 2020), a declarative chart animation grammar that leverages data-enriched SVG charts, CAST+ supports auto-completion for constructing both keyframes and keyframe sequences. It also enables users to refine the animation specification (e.g., aligning keyframes across tracks to play them together, adjusting delay) with direct manipulation. We report a user study conducted to assess the visual specification and system usability with its initial version. We enhanced the system's expressiveness and usability: CAST+ now supports the animation of multiple types of visual marks in the same keyframe group with new auto-completion algorithms based on generalized selection. This enables the creation of more expressive animations, while reducing the number of interactions needed to create comparable animations. We present a gallery of examples and four usage scenarios to demonstrate the expressiveness of CAST+. Finally, we discuss the limitations, comparison, and potentials of CAST+ as well as directions for future research.",
+        "countries": [
+            "CN",
+            "KR"
+        ]
+    },
+    "10.1145/3641519.3657463": {
+        "doi": "10.1145/3641519.3657463",
+        "authors": [
+            {
+                "family": "Duan",
+                "given": "Yuanxing",
+                "orcid": "0009-0001-9877-5757",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Wei",
+                "given": "Fangyin",
+                "orcid": "0009-0008-4004-6659",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Dai",
+                "given": "Qiyu",
+                "orcid": "0000-0003-4659-2438",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "He",
+                "given": "Yuhang",
+                "orcid": "0009-0009-7254-2996",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Chen",
+                "given": "Wenzheng",
+                "orcid": "0009-0008-5623-1963",
+                "countries": [
+                    "CN",
+                    "CA"
+                ]
+            },
+            {
+                "family": "Chen",
+                "given": "Baoquan",
+                "orcid": "0000-0003-4702-036X",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "4D-Rotor Gaussian Splatting: Towards Efficient Novel View Synthesis for Dynamic Scenes",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "87:1\u201387:11",
+        "article_number": "87",
+        "number_of_pages": 11,
+        "abstract": "We consider the problem of novel-view synthesis (NVS) for dynamic scenes. Recent neural approaches have accomplished exceptional NVS results for static 3D scenes, but extensions to 4D time-varying scenes remain non-trivial. Prior efforts often encode dynamics by learning a canonical space plus implicit or explicit deformation fields, which struggle in challenging scenarios like sudden movements or generating high-fidelity renderings. In this paper, we introduce 4D Gaussian Splatting (4DRotorGS), a novel method that represents dynamic scenes with anisotropic 4D XYZT Gaussians, inspired by the success of 3D Gaussian Splatting in static scenes [Kerbl et al. 2023]. We model dynamics at each timestamp by temporally slicing the 4D Gaussians, which naturally compose dynamic 3D Gaussians and can be seamlessly projected into images. As an explicit spatial-temporal representation, 4DRotorGS demonstrates powerful capabilities for modeling complicated dynamics and fine details\u2014especially for scenes with abrupt motions. We further implement our temporal slicing and splatting techniques in a highly optimized CUDA acceleration framework, achieving real-time inference rendering speeds of up to 277 FPS on an RTX 3090 GPU and 583 FPS on an RTX 4090 GPU. Rigorous evaluations on scenes with diverse motions showcase the superior efficiency and effectiveness of 4DRotorGS, which consistently outperforms existing methods both quantitatively and qualitatively.",
+        "countries": [
+            "CN",
+            "US",
+            "CA"
+        ]
+    },
+    "10.1111/cgf.15265": {
+        "doi": "10.1111/cgf.15265",
+        "authors": [
+            {
+                "family": "Bukenberger",
+                "given": "D. R.",
+                "orcid": "0000-0002-0659-7181",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "J.",
+                "orcid": "0000-0002-4607-844X",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Wu",
+                "given": "J.",
+                "orcid": "0000-0003-4237-1806",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Westermann",
+                "given": "R.",
+                "orcid": "0000-0002-3394-0731",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "Stress\u2010Aligned Hexahedral Lattice Structures",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": -1,
+        "abstract": "Maintaining the maximum stiffness of components with as little material as possible is an overarching objective in computational design and engineering. It is well-established that in stiffness-optimal designs, material is aligned with orthogonal principal stress directions. In the limit of material volume, this alignment forms micro-structures resembling quads or hexahedra. Achieving a globally consistent layout of such orthogonal micro-structures presents a significant challenge, particularly in three-dimensional settings. In this paper, we propose a novel geometric algorithm for compiling stress-aligned hexahedral lattice structures. Our method involves deforming an input mesh under load to align the resulting stress field along an orthogonal basis. The deformed object is filled with a hexahedral grid, and the deformation is reverted to recover the original shape. The resulting stress-aligned mesh is used as basis for a final hollowing procedure, generating a volume-reduced stiff infill composed of hexahedral micro-structures. We perform quantitative comparisons with structural optimization and hexahedral meshing approaches and demonstrate the superior mechanical performance of our designs with finite element simulation\u00a0experiments.",
+        "countries": [
+            "DE",
+            "NL"
+        ]
+    },
+    "10.1145/3641519.3657452": {
+        "doi": "10.1145/3641519.3657452",
+        "authors": [
+            {
+                "family": "Aigerman",
+                "given": "Noam",
+                "orcid": "0000-0002-9116-4662",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Groueix",
+                "given": "Thibault",
+                "orcid": "0000-0002-7984-8252",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Generative Escher Meshes",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "133:1\u2013133:11",
+        "article_number": "133",
+        "number_of_pages": 11,
+        "abstract": "This paper proposes a fully-automatic, text-guided generative method for producing perfectly-repeating, periodic, tile-able 2D imagery, such as the one seen on floors, mosaics, ceramics, and the work of M.C. Escher. In contrast to square texture images that are seamless when tiled, our method generates non-square tilings which comprise solely of repeating copies of the same object. It achieves this by optimizing both geometry and texture of a 2D mesh, yielding a non-square tile in the shape and appearance of the desired object, with close to no additional background details, that can tile the plane without gaps nor overlaps. We enable optimization of the tile\u2019s shape by an unconstrained, differentiable parameterization of the space of all valid tileable meshes for given boundary conditions stemming from a symmetry group. Namely, we construct a differentiable family of linear systems derived from a 2D mesh-mapping technique - Orbifold Tutte Embedding - by considering the mesh\u2019s Laplacian matrix as differentiable parameters. We prove that the solution space of these linear systems is exactly all possible valid tiling configurations, thereby providing an end-to-end differentiable representation for the entire space of valid tiles. We render the textured mesh via a differentiable renderer, and leverage a pre-trained image diffusion model to induce a loss on the resulting image, updating the mesh\u2019s parameters so as to make its appearance match the text prompt. We show our method is able to produce plausible, appealing results, with non-trivial tiles, for a variety of different periodic tiling patterns.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.1016/j.cag.2024.104048": {
+        "doi": "10.1016/j.cag.2024.104048",
+        "authors": [
+            {
+                "family": "Yuan",
+                "given": "Zhe",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Shi",
+                "given": "Jianqi",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Huang",
+                "given": "Yanhong",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "OpenECAD: An efficient visual language model for editable 3D-CAD design",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "124",
+        "number": "",
+        "pages": "104048:1\u2013104048:11",
+        "number_of_pages": 11,
+        "article_number": "104048",
+        "abstract": "Computer-aided design\u00a0(CAD) tools are utilized in the manufacturing industry for modeling everything from cups to spacecraft. These programs are complex to use and typically require years of training and experience to master. Structured and well-constrained 2D sketches and 3D constructions are crucial components of CAD modeling. A well-executed CAD model can be seamlessly integrated into the manufacturing process, thereby enhancing production efficiency. Deep generative models of 3D shapes and 3D object reconstruction models have garnered significant research interest. However, most of these models produce discrete forms of 3D objects that are not editable. Moreover, the few models based on CAD operations often have substantial input restrictions. In this work, we fine-tuned pre-trained models to create OpenECAD models (0.55B, 0.89B, 2.4B and 3.1B), leveraging the visual, logical, coding, and general capabilities of visual language models. OpenECAD models can process images of 3D designs as input and generate highly structured 2D sketches and 3D construction commands, ensuring that the designs are editable. These outputs can be directly used with existing CAD tools\u2019 APIs to generate project files. To train our network, we created a series of OpenECAD datasets. These datasets are derived from existing public CAD datasets, adjusted and augmented to meet the specific requirements of vision language model\u00a0(VLM) training. Additionally, we have introduced an approach that utilizes dependency relationships to define and generate sketches, further enriching the content and functionality of the datasets.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1109/tvcg.2024.3495695": {
+        "doi": "10.1109/tvcg.2024.3495695",
+        "authors": [
+            {
+                "family": "Chen",
+                "given": "Xin",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Yunhai",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Bao",
+                "given": "Huaiwei",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Lu",
+                "given": "Kecheng",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Jo",
+                "given": "Jaemin",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Fu",
+                "given": "Chi-Wing",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Fekete",
+                "given": "Jean-Daniel",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Visualization-Driven Illumination for Density Plots",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "2",
+        "pages": "1631\u20131644",
+        "article_number": "",
+        "number_of_pages": 14,
+        "abstract": "We present a novel visualization-driven illumination model for density plots, a new technique to enhance density plots by effectively revealing the detailed structures in high- and medium-density regions and outliers in low-density regions, while avoiding artifacts in the density field's colors. When visualizing large and dense discrete point samples, scatterplots and dot density maps often suffer from overplotting, and density plots are commonly employed to provide aggregated views while revealing underlying structures. Yet, in such density plots, existing illumination models may produce color distortion and hide details in low-density regions, making it challenging to look up density values, compare them, and find outliers. The key novelty in this work includes (i) a visualization-driven illumination model that inherently supports density-plot-specific analysis tasks and (ii) a new image composition technique to reduce the interference between the image shading and the color-encoded density values. To demonstrate the effectiveness of our technique, we conducted a quantitative study, an empirical evaluation of our technique in a controlled study, and two case studies, exploring twelve datasets with up to two million data point samples.",
+        "countries": [
+            "CN",
+            "KR",
+            "FR"
+        ]
+    },
+    "10.1109/tvcg.2024.3513275": {
+        "doi": "10.1109/tvcg.2024.3513275",
+        "authors": [
+            {
+                "family": "Oddo",
+                "given": "Matt I. B.",
+                "countries": [
+                    "CA"
+                ]
+            },
+            {
+                "family": "Kobourov",
+                "given": "Stephen",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Munzner",
+                "given": "Tamara",
+                "countries": [
+                    "CA"
+                ]
+            }
+        ],
+        "title": "The Census-Stub Graph Invariant Descriptor",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 17,
+        "abstract": "An \u2018invariant descriptor\u2019 captures meaningful structural features of networks, useful where traditional visualizations, like node-link views, face challenges like the \u2018hairball phenomenon\u2019 (inscrutable overlap of points and lines). Designing invariant descriptors involves balancing abstraction and information retention, as richer data summaries demand more storage and computational resources. Building on prior work, chiefly the BMatrix-a matrix descriptor visualized as the invariant \u2018network portrait\u2019 heatmap-we introduce BFS-Census, a new algorithm computing our Census data structures: Census-Node, Census-Edge, and Census-Stub. Our experiments show Census-Stub, which focuses on \u2018stubs\u2019 (half-edges), has orders of magnitude greater discerning power (ability to tell non-isomorphic graphs apart) than any other descriptor in this study, without a difficult trade-off: the substantial increase in resolution doesn\u2019t come at a commensurate cost in storage space or computation power. We also present new visualizations-our Hop-Census polylines and Census-Census trajectories-and evaluate them using real-world graphs, including a sensitivity analysis that shows graph topology change maps to visual Census change. Availability: Our Supplemental materials are available at osf.io/nmzra",
+        "countries": [
+            "CA",
+            "DE"
+        ]
+    },
+    "10.1109/tvcg.2024.3502672": {
+        "doi": "10.1109/tvcg.2024.3502672",
+        "authors": [
+            {
+                "family": "Zhang",
+                "given": "Chenhao",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhou",
+                "given": "Yongyang",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Lei",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Voxel-Mesh Hybrid Representation for Real-Time View Synthesis by Meshing Density Field",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 13,
+        "abstract": "The neural radiance fields (NeRF) have emerged as a prominent methodology for synthesizing realistic images of novel views. While neural radiance representations based on voxels or mesh individually offer distinct advantages, excelling in either rendering quality or speed, each has limitations in the other aspect. In response, we propose a hybrid representation named Vosh, seamlessly combining both voxel and mesh components in hybrid rendering for view synthesis. Vosh is meticulously crafted by optimizing the voxel grid based on neural rendering, strategically meshing a portion of the volumetric density field to surface. Therefore, it excels in fast rendering scenes with simple geometry and textures through its mesh component, while simultaneously enabling high-quality rendering in intricate regions by leveraging voxel component. The flexibility of Vosh is showcased through the ability to adjust hybrid ratios, providing users the ability to control the balance between rendering quality and speed based on flexible usage. Experimental results demonstrate that our method achieves commendable trade-off between rendering quality and speed, and notably has real-time performance on mobile devices. The interactive web demo and code are available at https://zyyzyy06.github.io/Vosh.",
+        "countries": [
+            "CN"
         ]
     }
 }

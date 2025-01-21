@@ -29,6 +29,7 @@ downloadAcmFromCrossref = True # if True, then use the Crossref API to get ACM m
 
 # other configuration
 visPadding = 0 # the padding in pixels to be applied to the exported visualizations, set to 0 for use in paper, otherwise 5 is good
+visPaddingBottomExtra = 1 # some extra padding on the bottom due to font parts being below the baseline
 makeMainPieChartsComparable = True # if the main paie charts should use a single color scale such that each country always has the same color
 graphOutputSubdirectury = "graphs/"
 paperFiguresOutputSubdirectury = "paper_figures/"
@@ -193,12 +194,16 @@ def markVisPapersByKeywords(paperList):
         if ("10.1145/3528223.3530102" in paper["doi"]): paper["is_vis"] = True # talks about simulation and visualization of stellar atmospheres
         if ("10.1111/cgf.14784" in paper["doi"]): paper["is_vis"] = True # talks about topology, graphs, and scalar fields
         if ("10.1111/cgf.13910" in paper["doi"]): paper["is_vis"] = True # talks about point clouds and topology
+        if ("10.1109/tvcg.2024.3491504" in paper["doi"]): paper["is_vis"] = True # data visualization author keyword
+        if ("10.1109/tvcg.2024.3513275" in paper["doi"]): paper["is_vis"] = True # visualization author keyword
+
+        if ("10.1109/tvcg.2024.3514858" in paper["doi"]): paper["is_vis"] = True # will be presented at VIS 2025
 
         # assign the right type
         if (paper["is_vis"] == True) and (oldStatus == False): paper["type"] = "manual"
 
         # hacking some types where we know more for the manually or keyword-selected
-        # if ("10.1109/tvcg.2023.3345340" in paper["doi"]): paper["type"] = "journal pres. @ IEEE VIS" # will be presented at VIS
+        if ("10.1109/tvcg.2024.3514858" in paper["doi"]): paper["type"] = "journal pres. @ IEEE VIS" # will be presented at VIS
 
 def filterAndShortenJournalNames(journalName = ""):
     publicationVenue = journalName
@@ -315,7 +320,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
         ).configure_view(
             strokeOpacity=0 # this removes the gray box around the plot
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
             width=500,
             height=300
         ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
@@ -333,7 +338,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
         ).configure_view(
             strokeOpacity=0 # this removes the gray box around the plot
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
             width=500,
             height=300
         ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
@@ -351,7 +356,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
         ).configure_view(
             strokeOpacity=0 # this removes the gray box around the plot
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
             width=500,
             height=300
         ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
@@ -370,7 +375,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
         ).configure_view(
             strokeOpacity=0 # this removes the gray box around the plot
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
             width=500,
             height=300
         ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
@@ -408,7 +413,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
         ).configure_view(
             strokeOpacity=0 # this removes the gray box around the plot
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
             width=500,
             height=300
         ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
@@ -435,7 +440,7 @@ def plotTimeSeriesPublicationData(dataToPlot, baseName = "replicability", dataFi
         ).configure_view(
             strokeOpacity=0 # this removes the gray box around the plot
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
             width=500,
             height=300
         ).configure_legend(orient='bottom', direction='horizontal', columns=legendColumns, offset=legendOffset, titleLimit=0, labelLimit=myLabelLimit)
@@ -720,6 +725,7 @@ else:
             x = anchor.find('div', attrs={'class': 'content'})
 
             title = str(x.find_next("h3").find_next("a").get_text())
+            title = title.replace("Towards Efficieant Novel View Synthesis", "Towards Efficient Novel View Synthesis")
             paperItem['title'] = title.strip()
             if paperItem['title'][-1] == '.': paperItem['title'] = paperItem['title'][:-1] # cleaning up
 
@@ -728,21 +734,10 @@ else:
             doi = doi.replace("https://doi.org/", "")
             doi = doi.replace("https://doi.ieeecomputersociety.org/", "")
             doi = re.sub(pattern=r"https://diglib\.eg\.org(?::443)?/handle/10\.1111/cgf(\d+)", repl=r"10.1111/cgf.\1", string=doi)
+            doi = doi.replace("https://dl.acm.org/doi/", "")
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
             # please note to replace the '%20' in the Google search links with a ' ' (manually or via a .replace("%20", " ") call as in the examples); otherwise the replacement does not work
-            doi = doi.replace("http://www.google.com/search?q=Graph Transformer for 3D point clouds classification and semantic segmentation", "10.1016/j.cag.2024.104050")
-            doi = doi.replace("http://www.google.com/search?q=ShapeBench: a new approach to benchmarking local 3D shape descriptors", "10.1016/j.cag.2024.104052")
-            doi = doi.replace("http://www.google.com/search?q=Empowering%20Sign%20Language%20Communication:%20Integrating%20Sentiment%20and%20Semantics%20for%20Facial%20Expression%20Synthesis".replace("%20", " "), "10.1016/j.cag.2024.104065")
-            doi = doi.replace("http://www.google.com/search?q=SingVisio:%20Visual%20Analytics%20of%20Diffusion%20Model%20for%20Singing%20Voice%20Conversion".replace("%20", " "), "10.1016/j.cag.2024.104058")
-            doi = doi.replace("http://www.google.com/search?q=A%20Testbed%20for%20Studying%20Cybersickness%20and%20its%20Mitigation%20in%20Immersive%20Virtual%20Reality".replace("%20", " "), "10.1109/tvcg.2024.3448203")
-            
-            doi = doi.replace("http://www.google.com/search?q=SimpleSets: Capturing Categorical Point Patterns with Simple Shapes", "10.1109/tvcg.2024.3456168")
-            doi = doi.replace("http://www.google.com/search?q=A Practical Solver for Scalar Data Topological Simplification.", "10.1109/tvcg.2024.3456345")
-            doi = doi.replace("http://www.google.com/search?q=ProvenanceWidgets: A Library of UI Control Elements to Track and Dynamically Overlay Analytic Provenance", "10.1109/tvcg.2024.3456144")
-            doi = doi.replace("http://www.google.com/search?q=The Language of Infographics: Toward Understanding Conceptual Metaphor Use in Scientific Storytelling", "10.1109/tvcg.2024.3456327")
-            doi = doi.replace("http://www.google.com/search?q=DeLVE into Earth’s Past: A Visualization-Based Exhibit Deployed Across Multiple Museum Contexts", "10.1109/tvcg.2024.3456174")
-            doi = doi.replace("http://www.google.com/search?q=Talk%20to%20the%20Wall:%20The%20Role%20of%20Speech%20Interaction%20in%20Collaborative%20Visual%20Analytics".replace("%20", " "), "10.1109/tvcg.2024.3456335")
-            doi = doi.replace("http://www.google.com/search?q=SpatialTouch:%20Exploring%20Spatial%20Data%20Visualizations%20in%20Cross-reality".replace("%20", " "), "10.1109/tvcg.2024.3456368")
+            # doi = doi.replace("http://www.google.com/search?q=SpatialTouch:%20Exploring%20Spatial%20Data%20Visualizations%20in%20Cross-reality".replace("%20", " "), "10.1109/tvcg.2024.3456368")
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()
@@ -869,6 +864,7 @@ else:
             authors = authors.replace('Shuaihang Yuana', 'Shuaihang Yuan')
             authors = authors.replace('Yu Haoa', 'Yu Hao')
             authors = authors.replace('Yağiz Aksoy', 'Yağız Aksoy')
+            authors = authors.replace('Matt I.B. Oddo', 'Matt I. B. Oddo')
 
             # make the author list reporting consistent
             authors = authors.replace(' ; ', ', ')
@@ -1819,7 +1815,7 @@ if exportVisualizations:
     ).configure_range(
         category=alt.RangeScheme(colors)
     ).properties(
-        padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+        padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
     )
     pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-journal.pdf')
 
@@ -1831,7 +1827,7 @@ if exportVisualizations:
     ).configure_range(
         category=alt.RangeScheme(colors)
     ).properties(
-        padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+        padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
     )
     pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-vis-status.pdf')
 
@@ -1868,7 +1864,7 @@ if exportVisualizations:
             dataItem["count"] = dataToPlot_old[i]["count"] + dataToPlot_old[i+1]["count"]
             dataToPlot.append(dataItem)
 
-    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_all-by-journal_aggregated_plain", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published journal papers w/ GRS", visPadding = visPadding, colorScheme = "tableau10", legendColumns = 2, labelAngle = -20, chartsToPlot = ["stackedbargraph", "stackedbargraph-normalized"])
+    plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_all-by-journal_aggregated_plain", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published journal papers w/ GRS", visPadding = visPadding, colorScheme = "tableau10", legendColumns = 5, labelAngle = -20, chartsToPlot = ["stackedbargraph", "stackedbargraph-normalized"])
 
     # now we want to see the numbers and percentages of replicability for our significant venues
     visVenuesAndReplicability = {}
@@ -2098,12 +2094,15 @@ if exportVisualizations:
     venues = ['IEEE VIS', 'journal pres. @ IEEE VIS', 'EuroVis', 'journal pres. @ EuroVis', 'PacificVis TVCG', 'journal pres. @ PacificVis', 'VCBM C&G', 'C&G special issue']
     colors = generateColorArrayFromColorScheme("tableau10paired_lightened", lightenFactor=0.5)
     dataToPlot = []
+    yearCountCheck = {}
+    for year in range(startYear, endYear + 1): yearCountCheck[year] = 0
     for venue in venues: # must be less than the numbers of colors in the scheme
         for year in range(startYear, endYear + 1):
             count1 = visVenuesAndReplicability[venue][year]["is_replicable"]
             count2 = visVenuesAndReplicability[venue][year]["not_replicable"]
+            yearCountCheck[year] += count1 + count2
             # remove data points for when events did not happen (yet)
-            if (count2 == 0): # if there was no papers, then the event did not happen and there could also not have been a GRS for its papers
+            if (count1 == 0) and (count2 == 0): # if there was no papers, then the event did not happen and there could also not have been a GRS for its papers
                 count1 = nan
                 count2 = nan
             dataToPlot.append({"venue": venue, "name": venue + ": w/ GRS", "year": year, "replicable": True, "count": count1})#, "order": color_number * 2, "order2": color_number})
@@ -2119,9 +2118,11 @@ if exportVisualizations:
     )
     # add vertical tick marks between the years for better reading
     # this is a total hack, we create another chart but don't actually display it, neither its axis, and only get the tick marks from it at year boundaries
+    lastYearEmptyOffset = 0
+    if (yearCountCheck[endYear] == 0): lastYearEmptyOffset = -1
     lines = (
         alt.Chart(altairData).mark_rule().encode(
-            x = alt.X("year:Q", axis=None, title=None).axis(ticks=True, labels=False, grid=False, domain=False, orient='bottom',tickCount=endYear-startYear+2).scale(domain=[startYear - 0.1, endYear + 1.1]),
+            x = alt.X("year:Q", axis=None, title=None).axis(ticks=True, labels=False, grid=False, domain=False, orient='bottom',tickCount=endYear - startYear + 2 + lastYearEmptyOffset).scale(domain=[startYear - 0.1, endYear + lastYearEmptyOffset + 1.1]),
             color= alt.value("#ffffff"),
             size=alt.value(0.0)
         )
@@ -2132,7 +2133,7 @@ if exportVisualizations:
         category=alt.RangeScheme(colors)
     ).configure_legend(orient='right', direction='vertical'
     ).configure_view(strokeWidth=0).properties(
-        padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+        padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=600,
         height=300
     ).properties(title=alt.TitleParams( # this way of adding a note below the legend is also a total hack because there is no other way to add a text field there
@@ -2161,7 +2162,7 @@ if exportVisualizations:
     # this is a total hack, we create another chart but don't actually display it, neither its axis, and only get the tick marks from it at year boundaries
     lines = (
         alt.Chart(altairData).mark_rule().encode(
-            x = alt.X("year:Q", axis=None, title=None).axis(ticks=True, labels=False, grid=False, domain=False, orient='bottom',tickCount=endYear-startYear+2).scale(domain=[startYear - 0.1, endYear + 1.1]),
+            x = alt.X("year:Q", axis=None, title=None).axis(ticks=True, labels=False, grid=False, domain=False, orient='bottom',tickCount=endYear - startYear + 2 + lastYearEmptyOffset).scale(domain=[startYear - 0.1, endYear + lastYearEmptyOffset + 1.1]),
             color= alt.value("#ffffff"),
             size=alt.value(0.0)
         )
@@ -2172,7 +2173,7 @@ if exportVisualizations:
         category=alt.RangeScheme(colors)
     ).configure_legend(orient='right', direction='vertical'
     ).configure_view(strokeWidth=0).properties(
-        padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+        padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=600,
         height=300
     ).properties(title=alt.TitleParams( # this way of adding a note below the legend is also a total hack because there is no other way to add a text field there
@@ -2211,7 +2212,7 @@ if exportVisualizations:
         category=alt.RangeScheme(colors)
     ).configure_legend(orient='right', direction='vertical', titleLimit=0, labelLimit=myLabelLimit
     ).configure_view(strokeWidth=0).properties(
-        padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+        padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=600,
         height=300
     )
@@ -2250,7 +2251,7 @@ if exportVisualizations:
         x = alt.X('paper_count:Q', axis=alt.Axis(title='GRS stamps per person', grid=False)).scale(domain=[0.5, dataToPlotAll[-1]['paper_count'] + 0.5]),
         y = alt.Y('people:Q', title='# of GRS authors, logarithmic').scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
-        padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+        padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=400,
         height=300
     )
@@ -2261,7 +2262,7 @@ if exportVisualizations:
         x = alt.X('paper_count:Q', axis=alt.Axis(title='GRS stamps per person', grid=False)).scale(domain=[0.5, dataToPlotVis[-1]['paper_count'] + 0.5]),
         y = alt.Y('people:Q', title='# of GRS visualization authors (≥ 50% vis papers), log.').scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
-        padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+        padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=400,
         height=300
     )
@@ -2284,7 +2285,7 @@ if exportVisualizations:
         x = alt.X('bin_range:N', axis=alt.Axis(title="percentage range of visualization papers per author", grid=False, labelAngle=-25), sort=None), #.scale(domain=[0.5, float(binCounter) + 0.5]),
         y = alt.Y('people:Q', title='# of authors, logarithmic').scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
-        padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+        padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=400,
         height=300
     )
@@ -2295,7 +2296,7 @@ if exportVisualizations:
         x = alt.X('bin_range:N', axis=alt.Axis(title="percentage range of visualization papers per author", grid=False, labelAngle=-25), sort=None), #.scale(domain=[0.5, float(binCounter) + 0.5]),
         y = alt.Y('people:Q', title='# of authors')#.scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
-        padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+        padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=400,
         height=300
     )
@@ -2318,7 +2319,7 @@ if exportVisualizations:
         x = alt.X('bin_range:N', axis=alt.Axis(title="percentage range of visualization papers per author (≥ 2 papers)", grid=False, labelAngle=-25), sort=None), #.scale(domain=[0.5, float(binCounter) + 0.5]),
         y = alt.Y('people:Q', title='# of authors, logarithmic').scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
-        padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+        padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=400,
         height=300
     )
@@ -2329,7 +2330,7 @@ if exportVisualizations:
         x = alt.X('bin_range:N', axis=alt.Axis(title="percentage range of visualization papers per author (≥ 2 papers)", grid=False, labelAngle=-25), sort=None), #.scale(domain=[0.5, float(binCounter) + 0.5]),
         y = alt.Y('people:Q', title='# of authors')#.scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
-        padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding},
+        padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=400,
         height=300
     )
@@ -2353,6 +2354,8 @@ if exportVisualizations:
             countryNamesSentence[row['alpha-2']] = countryNames[row['alpha-2']] \
                 .replace('United States', 'the United States') \
                 .replace('Netherlands', 'the Netherlands') \
+                .replace('Czech Republic', 'the Czech Republic') \
+                .replace('UK', 'the UK') \
                 .replace('United Arab Emirates', 'the United Arab Emirates')
         csvfile.close()
 
@@ -2411,7 +2414,7 @@ if exportVisualizations:
         ).configure_range(
            category=alt.RangeScheme(colorsGrsiPerCountry)
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
         ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-proportional.pdf')
 
@@ -2434,7 +2437,7 @@ if exportVisualizations:
         ).configure_range(
            category=alt.RangeScheme(colorsGrsiPerCountry)
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
         ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-absolute.pdf')
 
@@ -2507,7 +2510,7 @@ if exportVisualizations:
         ).configure_range(
            category=alt.RangeScheme(colorsGrsiPerCountryThresholded)
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
         ).configure_legend(columns=1, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-thresholded-proportional.pdf')
 
@@ -2564,7 +2567,7 @@ if exportVisualizations:
         ).configure_range(
            category=alt.RangeScheme(colorsGrsiPerCountryVsualization)
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
         ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-proportional.pdf')
 
@@ -2587,7 +2590,7 @@ if exportVisualizations:
         ).configure_range(
            category=alt.RangeScheme(colorsGrsiPerCountryVsualization)
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
         ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-absolute.pdf')
 
@@ -2639,7 +2642,7 @@ if exportVisualizations:
         ).configure_range(
            category=alt.RangeScheme(colorsGrsiPerCountryThresholded)
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
         ).configure_legend(columns=1, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-thresholded-proportional.pdf')
 
@@ -2688,7 +2691,7 @@ if exportVisualizations:
         ).configure_range(
            category=alt.RangeScheme(colorsGrsiPerCountry)
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
         ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-senior-only-proportional.pdf')
 
@@ -2711,7 +2714,7 @@ if exportVisualizations:
         ).configure_range(
            category=alt.RangeScheme(colorsGrsiPerCountry)
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
         ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-senior-only-absolute.pdf')
 
@@ -2763,7 +2766,7 @@ if exportVisualizations:
         ).configure_range(
            category=alt.RangeScheme(colorsGrsiPerCountryThresholded)
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
         ).configure_legend(columns=1, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_all-piechart-by-country-senior-only-thresholded-proportional.pdf')
 
@@ -2812,7 +2815,7 @@ if exportVisualizations:
         ).configure_range(
            category=alt.RangeScheme(colorsGrsiPerCountryVsualization)
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
         ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-proportional.pdf')
 
@@ -2835,7 +2838,7 @@ if exportVisualizations:
         ).configure_range(
            category=alt.RangeScheme(colorsGrsiPerCountryVsualization)
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
         ).configure_legend(columns=2, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-absolute.pdf')
 
@@ -2887,7 +2890,7 @@ if exportVisualizations:
         ).configure_range(
            category=alt.RangeScheme(colorsGrsiPerCountryThresholded)
         ).properties(
-            padding={"left": visPadding, "right": visPadding, "bottom": visPadding, "top": visPadding}
+            padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding}
         ).configure_legend(columns=1, symbolLimit=50, titleLimit=0, labelLimit=myLabelLimit)
         pieChart.save(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-thresholded-proportional.pdf')
 

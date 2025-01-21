@@ -41,15 +41,15 @@ These datasets are used to be able to analyze the replicability with respect to 
     * this same technique of manual DOI replacement (but here with a real DOI) can also be used of the GRSI page does not yet list the DOI even though it exists already
     * the entries with fake DOIs in the [`publication_data/extended_paper_data.json`](publication_data/extended_paper_data.json) data file also later have to be corrected to use the correct/real DOIs once these have been released
     * and once the respective papers appear either in the [`input/vispubdata.csv`](input/vispubdata.csv) file or a `input/tvcg-YYYY-vol-VV-no-NN.csv` file then the `input/vis-YYYY.csv` file should be deleted
-* list of journal presentations at IEEE VIS (currently up to 2023 conference) in CSV format as [`input/vis_journal_presentations.csv`](input/vis_journal_presentations.csv)
-* list of EuroVis full papers (until 2023 conference) in XLSX format as [`input/EuroVisFull_CGF.xlsx`](input/EuroVisFull_CGF.xlsx)
-* list of EuroVis STAR papers (until 2023 conference) in XLSX format as [`input/EuroVisSTARS_CGF.xlsx`](input/EuroVisSTARS_CGF.xlsx)
+* list of journal presentations at IEEE VIS (currently up to 2024 conference) in CSV format as [`input/vis_journal_presentations.csv`](input/vis_journal_presentations.csv)
+* list of EuroVis full papers (until 2024 conference) in XLSX format as [`input/EuroVisFull_CGF.xlsx`](input/EuroVisFull_CGF.xlsx)
+* list of EuroVis STAR papers (until 2024 conference) in XLSX format as [`input/EuroVisSTARS_CGF.xlsx`](input/EuroVisSTARS_CGF.xlsx)
 * list of EuroVis full papers from 2024 onward (currently until 2024 conference) in CSV format as [`input/eurovis.csv`](input/eurovis.csv)
 * list of journal presentations at EuroVis (currently until 2024 conference) in CSV format as [`input/eurovis_journal_presentations.csv`](input/eurovis_journal_presentations.csv)
 * list of TVCG papers from IEEE PacificVis (i.e., accepted PacificVis submissions that were published in TVCG; currently until 2024 conference) in CSV format as [`input/pacificvis_tvcg.csv`](input/pacificvis_tvcg.csv)
 * list of journal presentations at PacificVis (currently until 2024 conference) in CSV format as [`input/pacificvis_journal_presentations.csv`](input/pacificvis_journal_presentations.csv)
-* list of VCBM paper that are journal papers or appeared in a VCBM special issue call in C&G (currently until 2022 conference) in CSV format as [`input/vcbm_cag.csv`](input/vcbm_cag.csv)
-* lists of C&G special issue papers on visualization venues in CSV format; currently EnvirVis (currently until 2021 conference; [`input/envirvis_cag.csv`](input/envirvis_cag.csv)), EuroVA (currently until 2022 conference; [`input/eurova_cag.csv`](input/eurova_cag.csv)), and MolVA (currently until 2022 conference; [`input/molva_cag.csv`](input/input/molva_cag.csv)), 
+* list of VCBM paper that are journal papers or appeared in a VCBM special issue call in C&G (currently until 2024 conference) in CSV format as [`input/vcbm_cag.csv`](input/vcbm_cag.csv)
+* lists of C&G special issue papers on visualization venues in CSV format; currently EnvirVis (currently until 2021 conference; [`input/envirvis_cag.csv`](input/envirvis_cag.csv)), EuroVA (currently until 2024 conference; [`input/eurova_cag.csv`](input/eurova_cag.csv)), and MolVA (currently until 2022 conference; [`input/molva_cag.csv`](input/input/molva_cag.csv)), 
 * list of countries with their two-letter codes in CSV format as [`input/country-names.csv`](input/country-names.csv) (from [GitHub: lukes/ISO-3166-Countries-with-Regional-Codes](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv))
 * Vega's color map as [`palettes.js`](palettes.js) (local copy of https://raw.githubusercontent.com/vega/vega/v5.21.0/packages/vega-scale/src/palettes.js)
 
