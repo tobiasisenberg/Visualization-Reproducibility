@@ -6,7 +6,7 @@ This repository provides all needed means to reproduce an analysis of the state 
 
 If you use material from this repository, please cite the associated paper:
 
-Tobias Isenberg. The State of Reproducibility Stamps for Visualization Research Papers. In Anastasia Bezerianos, Michael Correll, Kyle Hall, Jürgen Bernard, Dan Keefe, Mai Elshehaly, and Mahsan Nourani, editors, Proceedings of BELIV, IEEE Computer Society, Los Alamitos, 2024. To appear.
+Tobias Isenberg. The State of Reproducibility Stamps for Visualization Research Papers. In Anastasia Bezerianos, Michael Correll, Kyle Hall, Jürgen Bernard, Dan Keefe, Mai Elshehaly, and Mahsan Nourani, editors, Proceedings of BELIV, IEEE Computer Society, Los Alamitos, pp. 97–105, 2024. DOI: [10.1109/BELIV64461.2024.00016](https://doi.org/10.1109/BELIV64461.2024.00016)
 
 bibTeX:
 ```
@@ -19,6 +19,9 @@ bibTeX:
   publisher   = {IEEE Computer Society},
   address     = {Los Alamitos},
   preprint    = {https://doi.org/10.48550/arXiv.2408.03889},
+  pages       = {97--105},
+  doi         = {10.1109/BELIV64461.2024.00016},
+	shortdoi    = {10/nt3t},
   osf_url     = {https://osf.io/mvnbj/},
   url         = {https://tobias.isenberg.cc/p/Isenberg2024SRS},
   github_url  = {https://github.com/tobiasisenberg/Visualization-Reproducibility},
