@@ -15054,7 +15054,7 @@
         "authors": [
             {
                 "family": "Magalh\u00e3es",
-                "given": "Salles V.G.",
+                "given": "Salles V. G.",
                 "countries": [
                     "BR",
                     "US"
@@ -15062,7 +15062,7 @@
             },
             {
                 "family": "Andrade",
-                "given": "Marcus V.A.",
+                "given": "Marcus V. A.",
                 "countries": [
                     "BR"
                 ]
@@ -15208,7 +15208,7 @@
             },
             {
                 "family": "Wang",
-                "given": "Charlie C.L.",
+                "given": "Charlie C. L.",
                 "countries": [
                     "NL"
                 ]
@@ -17539,7 +17539,7 @@
                 ]
             },
             {
-                "family": "Salaun",
+                "family": "Sala\u00fcn",
                 "given": "Corentin",
                 "orcid": "0000-0002-5112-7488",
                 "countries": [
@@ -17563,7 +17563,7 @@
                 ]
             },
             {
-                "family": "Oztireli",
+                "family": "\u00d6ztireli",
                 "given": "Cengiz",
                 "orcid": "0000-0002-4700-2236",
                 "countries": [
@@ -19158,8 +19158,8 @@
                 ]
             },
             {
-                "family": "Hasan",
-                "given": "Milos",
+                "family": "Ha\u0161an",
+                "given": "Milo\u0161",
                 "orcid": "0000-0003-3808-6092",
                 "countries": [
                     "US"
@@ -19246,7 +19246,7 @@
         "authors": [
             {
                 "family": "Mantiuk",
-                "given": "Rafal K.",
+                "given": "Rafa\u0142 K.",
                 "orcid": "0000-0003-2353-0349",
                 "countries": [
                     "GB"
@@ -19394,13 +19394,13 @@
         ],
         "title": "Visualization of Finite-Time Separation in Multiphase Flow",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "3",
+        "pages": "1918\u20131931",
         "article_number": "",
         "number_of_pages": 14,
-        "abstract": "This paper presents a particle-based visualization approach for finite-time analysis of the connectivity of fluid portions in multiphase flow, i.e., the evolution of the droplets in volume of fluid simulations. We address the Lagrangian inconsistency between the interpolated flow field and the interpolated volume of fluid field by a correction approach, and complement that with an uncertainty measure that provides an estimate of the involved inconsistency. We demonstrate the utility and versatility of our approach using different multiphase flow simulations, exemplify its application in physics-based assessment of droplet formation processes, and discuss its limitations and benefits.",
+        "abstract": "This article presents a particle-based visualization approach for finite-time analysis of the connectivity of fluid portions in multiphase flow, i.e., the evolution of the droplets in volume of fluid simulations. We address the Lagrangian inconsistency between the interpolated flow field and the interpolated volume of fluid field by a correction approach, and complement that with an uncertainty measure that provides an estimate of the involved inconsistency. We demonstrate the utility and versatility of our approach using different multiphase flow simulations, exemplify its application in physics-based assessment of droplet formation processes, and discuss its limitations and benefits.",
         "countries": [
             "DE"
         ]
@@ -19440,13 +19440,13 @@
         ],
         "title": "TimeLighting: Guided Exploration of 2D Temporal Network Projections",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "3",
+        "pages": "1932\u20131944",
         "article_number": "",
         "number_of_pages": 13,
-        "abstract": "In temporal (event-based) networks, time is a continuous axis, with real-valued time coordinates for each node and edge. Computing a layout for such graphs means embedding the node trajectories and edge surfaces over time in a $2D + t$ space, known as the space-time cube. Currently, these space-time cube layouts are visualized through animation or by slicing the cube at regular intervals. However, both techniques present problems such as below-average performance on tasks as well as loss of precision and difficulties in selecting timeslice intervals. In this paper, we present TimeLighting, a novel visual analytics approach to visualize and explore temporal graphs embedded in the space-time cube. Our interactive approach highlights node trajectories and their movement over time, visualizes node \u201caging\u201d, and provides guidance to support users during exploration by indicating interesting time intervals (\u201cwhen\u201d) and network elements (\u201cwhere\u201d) are located for a detail-oriented investigation. This combined focus helps to gain deeper insights into the temporal network's underlying behavior. We assess the utility and efficacy of our approach through two case studies and qualitative expert evaluation. The results demonstrate how TimeLighting supports identifying temporal patterns, extracting insights from nodes with high activity, and guiding the exploration and analysis process.",
+        "abstract": "In temporal (event-based) networks, time is a continuous axis, with real-valued time coordinates for each node and edge. Computing a layout for such graphs means embedding the node trajectories and edge surfaces over time in a $2D + t$2D+t space, known as the space-time cube. Currently, these space-time cube layouts are visualized through animation or by slicing the cube at regular intervals. However, both techniques present problems such as below-average performance on tasks as well as loss of precision and difficulties in selecting timeslice intervals. In this article, we present TimeLighting, a novel visual analytics approach to visualize and explore temporal graphs embedded in the space-time cube. Our interactive approach highlights node trajectories and their movement over time, visualizes node \u201caging\u201d, and provides guidance to support users during exploration by indicating interesting time intervals (\u201cwhen\u201d) and network elements (\u201cwhere\u201d) are located for a detail-oriented investigation. This combined focus helps to gain deeper insights into the temporal network's underlying behavior. We assess the utility and efficacy of our approach through two case studies and qualitative expert evaluation. The results demonstrate how TimeLighting supports identifying temporal patterns, extracting insights from nodes with high activity, and guiding the exploration and analysis process.",
         "countries": [
             "AT",
             "GB",
@@ -19511,6 +19511,7 @@
             {
                 "family": "Shen",
                 "given": "Yuancheng",
+                "orcid": "0009-0003-3490-6409",
                 "countries": [
                     "CN"
                 ]
@@ -19518,6 +19519,7 @@
             {
                 "family": "Zhao",
                 "given": "Yue",
+                "orcid": "0000-0003-0365-5291",
                 "countries": [
                     "CN"
                 ]
@@ -19525,6 +19527,7 @@
             {
                 "family": "Wang",
                 "given": "Yunhai",
+                "orcid": "0000-0003-0059-6580",
                 "countries": [
                     "CN"
                 ]
@@ -19532,6 +19535,7 @@
             {
                 "family": "Ge",
                 "given": "Tong",
+                "orcid": "0000-0002-6758-9652",
                 "countries": [
                     "CN"
                 ]
@@ -19539,6 +19543,7 @@
             {
                 "family": "Shi",
                 "given": "Haoyan",
+                "orcid": "0009-0008-2316-088X",
                 "countries": [
                     "CN"
                 ]
@@ -19546,6 +19551,7 @@
             {
                 "family": "Lee",
                 "given": "Bongshin",
+                "orcid": "0000-0002-4217-627X",
                 "countries": [
                     "KR"
                 ]
@@ -19849,13 +19855,13 @@
         ],
         "title": "The Census-Stub Graph Invariant Descriptor",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "3",
+        "pages": "1945\u20131961",
         "article_number": "",
         "number_of_pages": 17,
-        "abstract": "An \u2018invariant descriptor\u2019 captures meaningful structural features of networks, useful where traditional visualizations, like node-link views, face challenges like the \u2018hairball phenomenon\u2019 (inscrutable overlap of points and lines). Designing invariant descriptors involves balancing abstraction and information retention, as richer data summaries demand more storage and computational resources. Building on prior work, chiefly the BMatrix-a matrix descriptor visualized as the invariant \u2018network portrait\u2019 heatmap-we introduce BFS-Census, a new algorithm computing our Census data structures: Census-Node, Census-Edge, and Census-Stub. Our experiments show Census-Stub, which focuses on \u2018stubs\u2019 (half-edges), has orders of magnitude greater discerning power (ability to tell non-isomorphic graphs apart) than any other descriptor in this study, without a difficult trade-off: the substantial increase in resolution doesn\u2019t come at a commensurate cost in storage space or computation power. We also present new visualizations-our Hop-Census polylines and Census-Census trajectories-and evaluate them using real-world graphs, including a sensitivity analysis that shows graph topology change maps to visual Census change. Availability: Our Supplemental materials are available at osf.io/nmzra",
+        "abstract": "An \u2018invariant descriptor\u2019 captures meaningful structural features of networks, useful where traditional visualizations, like node-link views, face challenges like the \u2019hairball phenomenon\u2019 (inscrutable overlap of points and lines). Designing invariant descriptors involves balancing abstraction and information retention, as richer data summaries demand more storage and computational resources. Building on prior work, chiefly the BMatrix\u2014a matrix descriptor visualized as the invariant \u2019network portrait\u2019 heatmap\u2014we introduce BFS-Census, a new algorithm computing our Census data structures: Census-Node, Census-Edge, and Census-Stub. Our experiments show Census-Stub, which focuses on \u2019stubs\u2019 (half-edges), has orders of magnitude greater discerning power (ability to tell non-isomorphic graphs apart) than any other descriptor in this study, without a difficult trade-off: the substantial increase in resolution doesn't come at a commensurate cost in storage space or computation power. We also present new visualizations\u2014our Hop-Census polylines and Census-Census trajectories\u2014and evaluate them using real-world graphs, including a sensitivity analysis that shows graph topology change maps to visual Census change.",
         "countries": [
             "CA",
             "DE"
@@ -19895,6 +19901,142 @@
         "article_number": "",
         "number_of_pages": 13,
         "abstract": "The neural radiance fields (NeRF) have emerged as a prominent methodology for synthesizing realistic images of novel views. While neural radiance representations based on voxels or mesh individually offer distinct advantages, excelling in either rendering quality or speed, each has limitations in the other aspect. In response, we propose a hybrid representation named Vosh, seamlessly combining both voxel and mesh components in hybrid rendering for view synthesis. Vosh is meticulously crafted by optimizing the voxel grid based on neural rendering, strategically meshing a portion of the volumetric density field to surface. Therefore, it excels in fast rendering scenes with simple geometry and textures through its mesh component, while simultaneously enabling high-quality rendering in intricate regions by leveraging voxel component. The flexibility of Vosh is showcased through the ability to adjust hybrid ratios, providing users the ability to control the balance between rendering quality and speed based on flexible usage. Experimental results demonstrate that our method achieves commendable trade-off between rendering quality and speed, and notably has real-time performance on mobile devices. The interactive web demo and code are available at https://zyyzyy06.github.io/Vosh.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1109/tvcg.2024.3456404": {
+        "doi": "10.1109/tvcg.2024.3456404",
+        "authors": [
+            {
+                "family": "Luo",
+                "given": "Deng",
+                "countries": [
+                    "SA"
+                ]
+            },
+            {
+                "family": "Alsuwaykit",
+                "given": "Zainab",
+                "countries": [
+                    "SA"
+                ]
+            },
+            {
+                "family": "Khan",
+                "given": "Dawar",
+                "countries": [
+                    "SA"
+                ]
+            },
+            {
+                "family": "Strnad",
+                "given": "Ond\u0159ej",
+                "countries": [
+                    "SA"
+                ]
+            },
+            {
+                "family": "Isenberg",
+                "given": "Tobias",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Viola",
+                "given": "Ivan",
+                "countries": [
+                    "SA"
+                ]
+            }
+        ],
+        "title": "DiffFit: Visually-Guided Differentiable Fitting of Molecule Structures to a Cryo-EM Map",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "1",
+        "pages": "558\u2013568",
+        "article_number": "",
+        "number_of_pages": 11,
+        "abstract": "We introduce DiffFit, a differentiable algorithm for fitting protein atomistic structures into an experimental reconstructed Cryo-Electron Microscopy (cryo-EM) volume map. In structural biology, this process is necessary to semi-automatically composite large mesoscale models of complex protein assemblies and complete cellular structures that are based on measured cryo-EM data. The current approaches require manual fitting in three dimensions to start, resulting in approximately aligned structures followed by an automated fine-tuning of the alignment. The DiffFit approach enables domain scientists to fit new structures automatically and visualize the results for inspection and interactive revision. The fitting begins with differentiable three-dimensional (3D) rigid transformations of the protein atom coordinates followed by sampling the density values at the atom coordinates from the target cryo-EM volume. To ensure a meaningful correlation between the sampled densities and the protein structure, we proposed a novel loss function based on a multi-resolution volume-array approach and the exploitation of the negative space. This loss function serves as a critical metric for assessing the fitting quality, ensuring the fitting accuracy and an improved visualization of the results. We assessed the placement quality of DiffFit with several large, realistic datasets and found it to be superior to that of previous methods. We further evaluated our method in two use cases: automating the integration of known composite structures into larger protein complexes and facilitating the fitting of predicted protein domains into volume densities to aid researchers in identifying unknown proteins. We implemented our algorithm as an open-source plugin (github.com/nanovis/DiffFit) in ChimeraX, a leading visualization software in the field. All supplemental materials are available at osf. io/5tx4q.",
+        "countries": [
+            "SA",
+            "FR"
+        ]
+    },
+    "10.1109/tvcg.2024.3520208": {
+        "doi": "10.1109/tvcg.2024.3520208",
+        "authors": [
+            {
+                "family": "Yu",
+                "given": "Zehua",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Weihan",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Pan",
+                "given": "Sihan",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Tao",
+                "given": "Jun",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Versatile Ordering Network: An Attention-based Neural Network for Ordering Across Scales and Quality Metrics",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 15,
+        "abstract": "Ordering has been extensively studied in many visualization applications, such as axis and matrix reordering, for the simple reason that the order will greatly impact the perceived pattern of data. Many quality metrics concerning data pattern, perception, and aesthetics are proposed, and respective optimization algorithms are developed. However, the optimization problems related to ordering are often difficult to solve (e.g., TSP is NP-complete), and developing specialized optimization algorithms is costly. In this paper, we propose Versatile Ordering Network (VON), which automatically learns the strategy to order given a quality metric. VON uses the quality metric to evaluate its solutions, and leverages reinforcement learning with a greedy rollout baseline to improve itself. This keeps the metric transparent and allows VON to optimize over different metrics. Additionally, VON uses the attention mechanism to collect information across scales and reposition the data points with respect to the current context. This allows VONs to deal with data points following different distributions. We examine the effectiveness of VON under different usage scenarios and metrics. The results demonstrate that VON can produce comparable results to specialized solvers. The code is available at https://github.com/sysuvis/VON.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1016/j.cag.2024.104118": {
+        "doi": "10.1016/j.cag.2024.104118",
+        "authors": [
+            {
+                "family": "Fu",
+                "given": "Huan",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Cheng",
+                "given": "Guoqing",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Enhancing semantic mapping in text-to-image diffusion via Gather-and-Bind",
+        "journal": "Computers & Graphics",
+        "publication_year": 2024,
+        "volume": "125",
+        "number": "",
+        "pages": "104118",
+        "number_of_pages": -1,
+        "article_number": "104118",
+        "abstract": "Text-to-image synthesis is a challenging task that aims to generate realistic and diverse images from natural language descriptions. However, existing text-to-image diffusion models (e.g., Stable Diffusion) sometimes fail to satisfy the semantic descriptions of the users, especially when the prompts contain multiple concepts or modifiers such as colors. By visualizing the cross-attention maps of the Stable Diffusion model during the denoising process, we find that one of the concepts has a very scattered attention map, which cannot form a whole and gradually gets ignored. Moreover, the attention maps of the modifiers are hard to overlap with the corresponding concepts, resulting in incorrect semantic mapping. To address this issue, we propose a Gather-and-Bind method that intervenes in the cross-attention maps during the denoising process to alleviate the catastrophic forgetting and attribute binding problems without any pre-training. Specifically, we first use information entropy to measure the dispersion degree of the cross-attention maps and construct an information entropy loss to gather these scattered attention maps, which eventually captures all the concepts in the generated output. Furthermore, we construct an attribute binding loss that minimizes the distance between the attention maps of the attributes and their corresponding concepts, which enables the model to establish correct semantic mapping and significantly improves the performance of the baseline model. We conduct extensive experiments on public datasets and demonstrate that our method can better capture the semantic information of the input prompts. Code is available at https://github.com/huan085128/Gather-and-Bind.",
         "countries": [
             "CN"
         ]

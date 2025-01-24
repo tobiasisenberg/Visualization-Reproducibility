@@ -737,7 +737,7 @@ else:
             doi = doi.replace("https://dl.acm.org/doi/", "")
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
             # please note to replace the '%20' in the Google search links with a ' ' (manually or via a .replace("%20", " ") call as in the examples); otherwise the replacement does not work
-            # doi = doi.replace("http://www.google.com/search?q=SpatialTouch:%20Exploring%20Spatial%20Data%20Visualizations%20in%20Cross-reality".replace("%20", " "), "10.1109/tvcg.2024.3456368")
+            doi = doi.replace("http://www.google.com/search?q=DiffFit:%20Visually-Guided%20Differentiable%20Fitting%20of%20Molecule%20Structures%20to%20a%20Cryo-EM%20Map".replace("%20", " "), "10.1109/TVCG.2024.3456404")
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()
@@ -865,6 +865,13 @@ else:
             authors = authors.replace('Yu Haoa', 'Yu Hao')
             authors = authors.replace('Yağiz Aksoy', 'Yağız Aksoy')
             authors = authors.replace('Matt I.B. Oddo', 'Matt I. B. Oddo')
+            authors = authors.replace('Dennis Bukenberger', 'Dennis R. Bukenberger')
+            authors = authors.replace('Rafael Azevedo', 'Rafael V. Azevedo')
+            authors = authors.replace('Joao Rulff', 'João Rulff')
+            authors = authors.replace('Tamal Dey', 'Tamal K. Dey')
+            authors = authors.replace('Alex Bronstein', 'Alex M. Bronstein')
+            authors = authors.replace('Michael Bronstein', 'Michael M. Bronstein')
+            authors = authors.replace('Scott Mitchell', 'Scott A. Mitchell')
 
             # make the author list reporting consistent
             authors = authors.replace(' ; ', ', ')

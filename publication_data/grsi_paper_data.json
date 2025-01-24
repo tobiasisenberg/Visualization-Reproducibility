@@ -1,6 +1,40 @@
 [
     {
         "is_vis": false,
+        "title": "Versatile Ordering Network: An Attention-based Neural Network for Ordering Across Scales and Quality Metrics",
+        "doi": "10.1109/tvcg.2024.3520208",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-sysuvis-von-git",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/sysuvis/VON.git",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:71fe1b75a0acfc5c626c8d6340e0431dffe73874;origin=https://github.com/sysuvis/VON.git",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-sysuvis-von-git/representative.png",
+        "authors": "Zehua Yu, Weihan Zhang, Sihan Pan, Jun Tao"
+    },
+    {
+        "is_vis": false,
+        "title": "Enhancing Semantic Mapping in Text-to-Image Diffusion via Gather-and-Bind",
+        "doi": "10.1016/j.cag.2024.104118",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-huan085128-gather-and-bind",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/huan085128/Gather-and-Bind",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:d0cb33e9cd58befa97b803328695a51de205e96f;origin=https://github.com/huan085128/Gather-and-Bind",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-huan085128-gather-and-bind/representative.png",
+        "authors": "Huan Fu, Guoqing Cheng"
+    },
+    {
+        "is_vis": true,
+        "title": "DiffFit: Visually-Guided Differentiable Fitting of Molecule Structures to a Cryo-EM Map",
+        "doi": "10.1109/tvcg.2024.3456404",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-nanovis-difffit",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/nanovis/DiffFit",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:c0df015e15befcc304f405c396e72df73dc8522e;origin=https://github.com/nanovis/DiffFit",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-nanovis-difffit/representative.png",
+        "authors": "Deng Luo, Zainab Alsuwaykit, Dawar Khan, Ond\u0159ej Strnad, Tobias Isenberg, Ivan Viola",
+        "type": "IEEE VIS"
+    },
+    {
+        "is_vis": false,
         "title": "Voxel-Mesh Hybrid Representation For Real-Time View Synthesis By Meshing Density Field",
         "doi": "10.1109/tvcg.2024.3502672",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-zachzhang07-vosh",
@@ -101,7 +135,7 @@
         "repo_url": "https://github.com/dbukenberger/HexahedralLattice",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:2df996fe5f309874504f9e2eaff26085dad17e10;origin=https://github.com/dbukenberger/HexahedralLattice",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-dbukenberger-hexahedrallattice/representative.png",
-        "authors": "Dennis Bukenberger, Junpeng Wang, Jun Wu, R\u00fcdiger Westermann"
+        "authors": "Dennis R. Bukenberger, Junpeng Wang, Jun Wu, R\u00fcdiger Westermann"
     },
     {
         "is_vis": false,
@@ -395,7 +429,7 @@
         "repo_url": "https://github.com/verlab/empowering-sign-language",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:80c23a2bedf326845a99759e6063d7f685a879d3;origin=https://github.com/verlab/empowering-sign-language",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-verlab-empowering-sign-language/representative.png",
-        "authors": "Rafael Azevedo, Thiago Coutinho, Jo\u00e3o Ferreira, Thiago Gomes, Erickson Nascimento"
+        "authors": "Rafael V. Azevedo, Thiago Coutinho, Jo\u00e3o Ferreira, Thiago Gomes, Erickson Nascimento"
     },
     {
         "is_vis": false,
@@ -577,7 +611,7 @@
         "repo_url": "https://github.com/PariSolunke/mountaineer",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:331ec3162f3cfcb8b8bca6fbd5b3064bb5671ed8;origin=https://github.com/PariSolunke/mountaineer",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-parisolunke-mountaineer/representative.png",
-        "authors": "Parikshit Solunke, Vitoria Guardieiro, Joao Rulff, Peter Xenopoulos, Gromit Yeuk-Yin Chan, Brian Barr, Luis Gustavo Nonato, Claudio Silva",
+        "authors": "Parikshit Solunke, Vitoria Guardieiro, Jo\u00e3o Rulff, Peter Xenopoulos, Gromit Yeuk-Yin Chan, Brian Barr, Luis Gustavo Nonato, Claudio Silva",
         "type": "keyword"
     },
     {
@@ -3038,7 +3072,7 @@
         "repo_url": "https://gitlab.com/stefango74/curve-benchmark/",
         "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://gitlab.com/stefango74/curve-benchmark/",
         "image_url": "https://www.replicabilitystamp.org/archive/https-gitlab-com-stefango74-curve-benchmark/representative.png",
-        "authors": "Stefan Ohrhallinger, Jiju Peethambaran, Amal Dev Parakkat, Tamal Dey, Ramanathan Muthuganapathy"
+        "authors": "Stefan Ohrhallinger, Jiju Peethambaran, Amal Dev Parakkat, Tamal K. Dey, Ramanathan Muthuganapathy"
     },
     {
         "is_vis": true,
@@ -4346,7 +4380,7 @@
         "repo_url": "https://github.com/reproducibilitystamp/NonRigidPuzzles",
         "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/NonRigidPuzzles",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-nonrigidpuzzles/representative.png",
-        "authors": "Or Litany, Emanuele Rodol\u00e0, Alex Bronstein, Michael Bronstein, Daniel Cremers"
+        "authors": "Or Litany, Emanuele Rodol\u00e0, Alex M. Bronstein, Michael M. Bronstein, Daniel Cremers"
     },
     {
         "is_vis": false,
@@ -4368,7 +4402,7 @@
         "repo_url": "https://github.com/reproducibilitystamp/hnn-crust-sgp16",
         "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/hnn-crust-sgp16",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-hnn-crust-sgp16/representative.png",
-        "authors": "Stefan Ohrhallinger, Scott Mitchell, Michael Wimmer"
+        "authors": "Stefan Ohrhallinger, Scott A. Mitchell, Michael Wimmer"
     },
     {
         "is_vis": false,
