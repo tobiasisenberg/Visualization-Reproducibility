@@ -43,7 +43,7 @@ countryPieChartThreshold = 2.5 # in percent (1--100)
 neutralGray = "#a9a9a9"
 paperNumbersOutputString += "\\newcommand{\\GrsiCountryPieChartThreshold}{" + str(countryPieChartThreshold) + "}\n"
 myLabelLimit = 500 # this is a weird issue: technically a value of 0 should mean no limit, but sometimes it literally means a limit of 0; so a sufficiently large number is needed here to avoid label cropping, 500 should work
-topLimitAuthorPlots = 1100 # to adjust all the author count plots in a similar way
+topLimitAuthorPlots = 1300 # to adjust all the author count plots in a similar way
 
 #####################################
 # change to directory of the script
@@ -153,57 +153,62 @@ def markPapersByDoi(paperList, doiList, label = "is_vis", type = ""):
 
 def markVisPapersByKeywords(paperList):
     for paper in paperList:
-        # general keywords
-        oldStatus = paper["is_vis"]
-
-        if ("visualization" in paper["title"].lower()): paper["is_vis"] = True
-        if ("visualisation" in paper["title"].lower()): paper["is_vis"] = True
-        if ("visualizing" in paper["title"].lower()): paper["is_vis"] = True
-        if ("visualising" in paper["title"].lower()): paper["is_vis"] = True
-        if ( ("visual" in paper["title"].lower()) and ("analytics" in paper["title"].lower()) ): paper["is_vis"] = True
-        if ( ("visual" in paper["title"].lower()) and ("analysis" in paper["title"].lower()) ): paper["is_vis"] = True
-        if ("visual representation" in paper["title"].lower()): paper["is_vis"] = True
-        if ("data exploration" in paper["title"].lower()): paper["is_vis"] = True
-        if ("visual exploration" in paper["title"].lower()): paper["is_vis"] = True
-        if ("graph drawing" in paper["title"].lower()): paper["is_vis"] = True
-        if ("parallel coordinates" in paper["title"].lower()): paper["is_vis"] = True
-        if ("scatterplot" in paper["title"].lower()): paper["is_vis"] = True
-        if ("choropleth" in paper["title"].lower()): paper["is_vis"] = True
-        if ("cartogram" in paper["title"].lower()): paper["is_vis"] = True
-        if ("star glyph" in paper["title"].lower()): paper["is_vis"] = True
-        if ("glyph design" in paper["title"].lower()): paper["is_vis"] = True
-        if ("line graph" in paper["title"].lower()): paper["is_vis"] = True
-        if ("streamgraph" in paper["title"].lower()): paper["is_vis"] = True
-        if ("focus+context" in paper["title"].lower()): paper["is_vis"] = True
-        # if ("topology" in paper["title"].lower()): paper["is_vis"] = True # not good: some graphics papers also captured
-        if ("t-sne" in paper["title"].lower()): paper["is_vis"] = True
-        if ("high-dimensional data" in paper["title"].lower()): paper["is_vis"] = True
-
-        # assign the right type
-        if (paper["is_vis"] == True) and (oldStatus == False): paper["type"] = "keyword"
-        oldStatus = paper["is_vis"]
+        # manual classification based on general keywords in the title
+        if  (paper["is_vis"] == False) and ( # ensure that we do not overwrite the status of already recognized papers
+            ("visualization" in paper["title"].lower()) or
+            ("visualisation" in paper["title"].lower()) or
+            ("visualizing" in paper["title"].lower()) or
+            ("visualising" in paper["title"].lower()) or
+            ( ("visual" in paper["title"].lower()) and ("analytics" in paper["title"].lower()) ) or
+            ( ("visual" in paper["title"].lower()) and ("analysis" in paper["title"].lower()) ) or
+            ("visual representation" in paper["title"].lower()) or
+            ("data exploration" in paper["title"].lower()) or
+            ("visual exploration" in paper["title"].lower()) or
+            ("graph drawing" in paper["title"].lower()) or
+            ("parallel coordinates" in paper["title"].lower()) or
+            ("scatterplot" in paper["title"].lower()) or
+            ("choropleth" in paper["title"].lower()) or
+            ("cartogram" in paper["title"].lower()) or
+            ("star glyph" in paper["title"].lower()) or
+            ("glyph design" in paper["title"].lower()) or
+            ("line graph" in paper["title"].lower()) or
+            ("streamgraph" in paper["title"].lower()) or
+            ("focus+context" in paper["title"].lower()) or
+            # ("topology" in paper["title"].lower()) or # not good: some graphics papers also captured
+            ("t-sne" in paper["title"].lower()) or
+            ("high-dimensional data" in paper["title"].lower())
+            ):
+            paper["is_vis"] = True
+            paper["type"] = "keyword"
 
         # manual selections of specific papers for which we know more
-        if ("10.1109/tvcg.2022.3214821" in paper["doi"]): paper["is_vis"] = True # visualization author keyword
-        if ("10.1109/tvcg.2021.3101418" in paper["doi"]): paper["is_vis"] = True # visualization author keyword
-        #if ("10.1109/tvcg.2023.3237768" in paper["doi"]): paper["is_vis"] = True # visual analysis author keyword, but automatically found by keyword search
-        if ("10.1109/tvcg.2021.3067820" in paper["doi"]): paper["is_vis"] = True # visualization in the abstract
-        if ("10.1109/tvcg.2020.2966702" in paper["doi"]): paper["is_vis"] = True # is on flattening of 3D surfaces from data
-        if ("10.1016/j.cag.2024.01.001" in paper["doi"]): paper["is_vis"] = True # visualization in the abstract
-        if ("10.1016/j.cag.2023.06.023" in paper["doi"]): paper["is_vis"] = True # talks about molecular channel datasets
-        if ("10.1145/3528223.3530102" in paper["doi"]): paper["is_vis"] = True # talks about simulation and visualization of stellar atmospheres
-        if ("10.1111/cgf.14784" in paper["doi"]): paper["is_vis"] = True # talks about topology, graphs, and scalar fields
-        if ("10.1111/cgf.13910" in paper["doi"]): paper["is_vis"] = True # talks about point clouds and topology
-        if ("10.1109/tvcg.2024.3491504" in paper["doi"]): paper["is_vis"] = True # data visualization author keyword
-        if ("10.1109/tvcg.2024.3513275" in paper["doi"]): paper["is_vis"] = True # visualization author keyword
+        if  (
+            ("10.1109/tvcg.2022.3214821" in paper["doi"]) or # visualization author keyword
+            ("10.1109/tvcg.2021.3101418" in paper["doi"]) or # visualization author keyword
+            # ("10.1109/tvcg.2023.3237768" in paper["doi"]) or # visual analysis author keyword, but automatically found by keyword search
+            ("10.1109/tvcg.2021.3067820" in paper["doi"]) or # visualization in the abstract
+            ("10.1109/tvcg.2020.2966702" in paper["doi"]) or # is on flattening of 3D surfaces from data
+            ("10.1016/j.cag.2024.01.001" in paper["doi"]) or # visualization in the abstract
+            ("10.1016/j.cag.2023.06.023" in paper["doi"]) or # talks about molecular channel datasets
+            ("10.1145/3528223.3530102" in paper["doi"]) or   # talks about simulation and visualization of stellar atmospheres
+            ("10.1111/cgf.14784" in paper["doi"]) or         # talks about topology, graphs, and scalar fields
+            ("10.1111/cgf.13910" in paper["doi"]) or         # talks about point clouds and topology
+            ("10.1109/tvcg.2024.3491504" in paper["doi"]) or # data visualization author keyword
+            ("10.1109/tvcg.2024.3513275" in paper["doi"])    # visualization author keyword
+            ):
+            paper["is_vis"] = True
+            paper["type"] = "manual"
 
-        if ("10.1109/tvcg.2024.3514858" in paper["doi"]): paper["is_vis"] = True # will be presented at VIS 2025
-
-        # assign the right type
-        if (paper["is_vis"] == True) and (oldStatus == False): paper["type"] = "manual"
-
-        # hacking some types where we know more for the manually or keyword-selected
-        if ("10.1109/tvcg.2024.3514858" in paper["doi"]): paper["type"] = "journal pres. @ IEEE VIS" # will be presented at VIS
+def markVisPapersByFutureVISPresentation(paperList):
+    for paper in paperList:
+        # presentations at the coming VIS conference we already know about
+        if  (
+            ("10.1109/tvcg.2024.3514858" in paper["doi"]) or
+            ("10.1109/tvcg.2024.3520208" in paper["doi"]) or
+            ("10.1109/tvcg.2025.3539779" in paper["doi"])
+            ):
+            paper["is_vis"] = True                     # will be presented at VIS 2025
+            paper["type"] = "journal pres. @ IEEE VIS" # also hack the paper type
 
 def filterAndShortenJournalNames(journalName = ""):
     publicationVenue = journalName
@@ -717,7 +722,7 @@ else:
         page = urlopen('https://www.replicabilitystamp.org/').read()
         soup = BeautifulSoup(page, features="lxml")
 
-        for anchor in soup.body.findAll('section', attrs={'class': 'spotlight'}):
+        for anchor in soup.body.find_all('section', attrs={'class': 'spotlight'}):
             paperCounter += 1
             paperItem = {}
             paperItem['counter'] = paperCounter
@@ -730,36 +735,36 @@ else:
             if paperItem['title'][-1] == '.': paperItem['title'] = paperItem['title'][:-1] # cleaning up
 
             # doi data clean-up
-            doi = str(x.findAll("a")[3].get('href'))
+            doi = str(x.find_all("a")[3].get('href'))
             doi = doi.replace("https://doi.org/", "")
             doi = doi.replace("https://doi.ieeecomputersociety.org/", "")
             doi = re.sub(pattern=r"https://diglib\.eg\.org(?::443)?/handle/10\.1111/cgf(\d+)", repl=r"10.1111/cgf.\1", string=doi)
             doi = doi.replace("https://dl.acm.org/doi/", "")
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
             # please note to replace the '%20' in the Google search links with a ' ' (manually or via a .replace("%20", " ") call as in the examples); otherwise the replacement does not work
-            doi = doi.replace("http://www.google.com/search?q=DiffFit:%20Visually-Guided%20Differentiable%20Fitting%20of%20Molecule%20Structures%20to%20a%20Cryo-EM%20Map".replace("%20", " "), "10.1109/TVCG.2024.3456404")
+            # doi = doi.replace("http://www.google.com/search?q=DiffFit:%20Visually-Guided%20Differentiable%20Fitting%20of%20Molecule%20Structures%20to%20a%20Cryo-EM%20Map".replace("%20", " "), "10.1109/TVCG.2024.3456404")
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()
             # print a warning if the doi does not check out
             if (doi[0:3] != "10."): print("WARNING: The DOI we read from GRSI page that does not seem to formatted correctly for a DOI: " + doi)
 
-            grsiUrl = str(x.findAll("a")[1].get('href'))
+            grsiUrl = str(x.find_all("a")[1].get('href'))
             paperItem['grsi_url'] = "https://www.replicabilitystamp.org/" + grsiUrl
 
-            journalName = str(x.findAll("a")[2].get_text().strip())
+            journalName = str(x.find_all("a")[2].get_text().strip())
             paperItem['journal'] = journalName
 
-            repoUrl = str(x.findAll("a")[4].get('href'))
+            repoUrl = str(x.find_all("a")[4].get('href'))
             paperItem['repo_url'] = repoUrl
 
             repoArchiveUrl = ""
-            if (len(x.findAll("a")) > 5):
-                repoArchiveUrl = str(x.findAll("a")[5].get('href'))
+            if (len(x.find_all("a")) > 5):
+                repoArchiveUrl = str(x.find_all("a")[5].get('href'))
             paperItem['repo_archive_url'] = repoArchiveUrl
 
             y = anchor.find('div', attrs={'class': 'image'})
-            imageUrl = str(y.findAll("img")[0].get('src'))
+            imageUrl = str(y.find_all("img")[0].get('src'))
             paperItem['image_url'] = "https://www.replicabilitystamp.org/" + imageUrl
 
             authors = str(x.find_next("p")).split("\n")[1].lstrip().split('<br/>')[0].rstrip() # this is now the list of authors per paper
@@ -954,6 +959,7 @@ with open(formatted_date + " current-list.txt", "w", encoding='utf-8') as f:
     markPapersByDoi(paperList, vcbmJournalDois, "is_vis")
     markPapersByDoi(paperList, cagVisSpecialIssueDois, "is_vis")
     markVisPapersByKeywords(paperList)
+    markVisPapersByFutureVISPresentation(paperList)
 
     print("===============\nSorted by rank:\n===============", file=f)
     for author in authorCountsSortedByNumbers.keys():
@@ -1060,6 +1066,7 @@ with open(formatted_date + " current-list.txt", "w", encoding='utf-8') as f:
 
     # check if a paper was presented at IEEE
     markPapersByDoi(paperList, visJournalPresentationDois, "is_vis", "journal pres. @ IEEE VIS")
+    markVisPapersByFutureVISPresentation(paperList)
 
     # maked by keyword
     oldVisCounter = visCounter
@@ -1075,7 +1082,8 @@ with open(formatted_date + " current-list.txt", "w", encoding='utf-8') as f:
     visTVCGJournalPapersPerYear = {}
     for year in range(2017, current_year): visTVCGJournalPapersPerYear[year] = 0 # just to ensure that we have all years since 2017
     for paper in paperList:
-        if ((paper["is_vis"]) and (paper["doi"] in visJournalPresentationDois)):
+        # if ((paper["is_vis"]) and (paper["doi"] in visJournalPresentationDois)): # this does not catch the manually marked papers
+        if ((paper["is_vis"]) and (paper["type"] == "journal pres. @ IEEE VIS")): # but this does :-)
             print("https://doi.org/" + str(paper["doi"].ljust(doiPaddingCount) + " -- " + str(paper["title"])), file=f)
             if paper["doi"] in visTVCGJournalPresentationConferenceYears.keys(): # there may also be CG&A papers in the list of visJournalPresentationDois
                 year = visTVCGJournalPresentationConferenceYears[paper["doi"]]
@@ -2250,13 +2258,14 @@ if exportVisualizations:
         #     print(author + ": " + str(authorCount) + " - " + str(authorCounts[author]) + " - " + str(newDataItemAll['people']))
         visPercentage = 100.0*float(authorVisPapers[author])/float(authorCounts[author])
         if (visPercentage >= 50.0): newDataItemVis['people'] += 1
+    # add the last entries that were still missing
     dataToPlotAll.append(newDataItemAll)
     dataToPlotVis.append(newDataItemVis)
 
     altairData = pd.DataFrame(dataToPlotAll)
     chart = alt.Chart(altairData).mark_bar(size=20).encode(
-        x = alt.X('paper_count:Q', axis=alt.Axis(title='GRS stamps per person', grid=False)).scale(domain=[0.5, dataToPlotAll[-1]['paper_count'] + 0.5]),
-        y = alt.Y('people:Q', title='# of GRS authors, logarithmic').scale(type="log", domain=[0.9, topLimitAuthorPlots])
+        x = alt.X('paper_count:Q', axis=alt.Axis(title='GRS stamps per person', grid=False)).scale(domain=[0.5, dataToPlotAll[-1]['paper_count'] + 0.4]),
+        y = alt.Y('people:Q', title='# of GRS authors, logarithmic', stack=None).scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=400,
@@ -2266,8 +2275,8 @@ if exportVisualizations:
 
     altairData = pd.DataFrame(dataToPlotVis)
     chart = alt.Chart(altairData).mark_bar(size=20).encode(
-        x = alt.X('paper_count:Q', axis=alt.Axis(title='GRS stamps per person', grid=False)).scale(domain=[0.5, dataToPlotVis[-1]['paper_count'] + 0.5]),
-        y = alt.Y('people:Q', title='# of GRS visualization authors (≥ 50% vis papers), log.').scale(type="log", domain=[0.9, topLimitAuthorPlots])
+        x = alt.X('paper_count:Q', axis=alt.Axis(title='GRS stamps per person', grid=False)).scale(domain=[0.5, dataToPlotVis[-1]['paper_count'] + 0.4]),
+        y = alt.Y('people:Q', title='# of GRS visualization authors (≥ 50% vis papers), log.', stack=None).scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=400,
@@ -2290,7 +2299,7 @@ if exportVisualizations:
     altairData = pd.DataFrame(dataToPlot)
     chart = alt.Chart(altairData).mark_bar(size=20).encode(
         x = alt.X('bin_range:N', axis=alt.Axis(title="percentage range of visualization papers per author", grid=False, labelAngle=-25), sort=None), #.scale(domain=[0.5, float(binCounter) + 0.5]),
-        y = alt.Y('people:Q', title='# of authors, logarithmic').scale(type="log", domain=[0.9, topLimitAuthorPlots])
+        y = alt.Y('people:Q', title='# of authors, logarithmic', stack=None).scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=400,
@@ -2301,7 +2310,7 @@ if exportVisualizations:
     altairData = pd.DataFrame(dataToPlot)
     chart = alt.Chart(altairData).mark_bar(size=20).encode(
         x = alt.X('bin_range:N', axis=alt.Axis(title="percentage range of visualization papers per author", grid=False, labelAngle=-25), sort=None), #.scale(domain=[0.5, float(binCounter) + 0.5]),
-        y = alt.Y('people:Q', title='# of authors')#.scale(type="log", domain=[0.9, topLimitAuthorPlots])
+        y = alt.Y('people:Q', title='# of authors', stack=None)#.scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=400,
@@ -2324,7 +2333,7 @@ if exportVisualizations:
     altairData = pd.DataFrame(dataToPlot)
     chart = alt.Chart(altairData).mark_bar(size=20).encode(
         x = alt.X('bin_range:N', axis=alt.Axis(title="percentage range of visualization papers per author (≥ 2 papers)", grid=False, labelAngle=-25), sort=None), #.scale(domain=[0.5, float(binCounter) + 0.5]),
-        y = alt.Y('people:Q', title='# of authors, logarithmic').scale(type="log", domain=[0.9, topLimitAuthorPlots])
+        y = alt.Y('people:Q', title='# of authors, logarithmic', stack=None).scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=400,
@@ -2335,7 +2344,7 @@ if exportVisualizations:
     altairData = pd.DataFrame(dataToPlot)
     chart = alt.Chart(altairData).mark_bar(size=20).encode(
         x = alt.X('bin_range:N', axis=alt.Axis(title="percentage range of visualization papers per author (≥ 2 papers)", grid=False, labelAngle=-25), sort=None), #.scale(domain=[0.5, float(binCounter) + 0.5]),
-        y = alt.Y('people:Q', title='# of authors')#.scale(type="log", domain=[0.9, topLimitAuthorPlots])
+        y = alt.Y('people:Q', title='# of authors', stack=None)#.scale(type="log", domain=[0.9, topLimitAuthorPlots])
     ).configure_view(strokeWidth=0).properties(
         padding={"left": visPadding, "right": visPadding, "bottom": visPadding+visPaddingBottomExtra, "top": visPadding},
         width=400,

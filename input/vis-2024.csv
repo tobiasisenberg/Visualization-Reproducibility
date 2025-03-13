@@ -11,7 +11,7 @@ PCS-ID,Title,DOI,fake DOI,Year,DOI URL
 1096,Fine-Tuned Large Language Model for Visualization System: A Study on Self-Regulated Learning in Education,10.1109/TVCG.2024.3456145,10.vis2024/1096,2024,https://doi.org/10.1109/TVCG.2024.3456145
 1099,Smartboard: Visual Exploration of Team Tactics with LLM Agent,10.1109/TVCG.2024.3456200,10.vis2024/1099,2024,https://doi.org/10.1109/TVCG.2024.3456200
 1100,Causal Priors and Their Influence on Judgements of Causality in Visualized Data,10.1109/TVCG.2024.3456381,10.vis2024/1100,2024,https://doi.org/10.1109/TVCG.2024.3456381
-1121,PhenoFlow: A Human-LLM Driven Visual Analytics System for Exploring Large and Complex Stroke Datasets,10.1109/TVCG.2024.3456215,10.vis2024/1121,2024,https://doi.org/10.vis2024/1121
+1121,PhenoFlow: A Human-LLM Driven Visual Analytics System for Exploring Large and Complex Stroke Datasets,10.1109/TVCG.2024.3456215,10.vis2024/1121,2024,https://doi.org/10.1109/TVCG.2024.3456215
 1128,PUREsuggest: Citation-based Literature Search and Visual Exploration with Keyword-controlled Rankings,10.1109/TVCG.2024.3456199,10.vis2024/1128,2024,https://doi.org/10.1109/TVCG.2024.3456199
 1137,Touching the Ground: Evaluating the Effectiveness of Data Physicalizations for Spatial Data Analysis Tasks,10.1109/TVCG.2024.3456377,10.vis2024/1137,2024,https://doi.org/10.1109/TVCG.2024.3456377
 1140,"""It's a Good Idea to Put It Into Words"": Writing 'Rudders' in the Initial Stages of Visualization Design",10.1109/TVCG.2024.3456324,10.vis2024/1140,2024,https://doi.org/10.1109/TVCG.2024.3456324
@@ -19,7 +19,7 @@ PCS-ID,Title,DOI,fake DOI,Year,DOI URL
 1147,An Empirical Evaluation of the GPT-4 Multimodal Language Model on Visualization Literacy Tasks,10.1109/TVCG.2024.3456155,10.vis2024/1147,2024,https://doi.org/10.1109/TVCG.2024.3456155
 1150,CompositingVis: Exploring Interaction for Creating Composite Visualizations in Immersive Environments,10.1109/TVCG.2024.3456210,10.vis2024/1150,2024,https://doi.org/10.1109/TVCG.2024.3456210
 1153,SimpleSets: Capturing Categorical Point Patterns with Simple Shapes,10.1109/TVCG.2024.3456168,10.vis2024/1153,2024,https://doi.org/10.1109/TVCG.2024.3456168
-1155,Charting EDA: Characterizing Interactive Visualization Use in Computational Notebooks with a Mixed-Methods Formalism,10.1109/TVCG.2024.3456217,10.vis2024/1155,2024,https://doi.org/10.vis2024/1155
+1155,Charting EDA: Characterizing Interactive Visualization Use in Computational Notebooks with a Mixed-Methods Formalism,10.1109/TVCG.2024.3456217,10.vis2024/1155,2024,https://doi.org/10.1109/TVCG.2024.3456217
 1179,ParetoTracker: Understanding Population Dynamics in Multi-objective Evolutionary Algorithms through Visual Analytics,10.1109/TVCG.2024.3456142,10.vis2024/1179,2024,https://doi.org/10.1109/TVCG.2024.3456142
 1185,Does This Have a Particular Meaning?: Interactive Pattern Explanation for Network Visualizations,10.1109/TVCG.2024.3456192,10.vis2024/1185,2024,https://doi.org/10.1109/TVCG.2024.3456192
 1193,Advancing Multimodal Large Language Models in Chart Question Answering with Visualization-Referenced Instruction Tuning,10.1109/TVCG.2024.3456159,10.vis2024/1193,2024,https://doi.org/10.1109/TVCG.2024.3456159
@@ -28,7 +28,7 @@ PCS-ID,Title,DOI,fake DOI,Year,DOI URL
 1214,Improved Visual Saliency of Graph Clusters with Orderable Node-Link Layouts,10.1109/TVCG.2024.3456167,10.vis2024/1214,2024,https://doi.org/10.1109/TVCG.2024.3456167
 1218,Graph Transformer for Label Placement,10.1109/TVCG.2024.3456141,10.vis2024/1218,2024,https://doi.org/10.1109/TVCG.2024.3456141
 1232,"Aardvark: Composite Visualizations of Trees, Time-Series, and Images",10.1109/TVCG.2024.3456193,10.vis2024/1232,2024,https://doi.org/10.1109/TVCG.2024.3456193
-1251,Loops: Leveraging Provenance and Visualization to Support Exploratory Data Analysis in Notebooks,10.1109/TVCG.2024.3456186,10.vis2024/1251,2024,https://doi.org/10.vis2024/1251
+1251,Loops: Leveraging Provenance and Visualization to Support Exploratory Data Analysis in Notebooks,10.1109/TVCG.2024.3456186,10.vis2024/1251,2024,https://doi.org/10.1109/TVCG.2024.3456186
 1256,Trust Your Gut: Comparing Human and Machine Inference from Noisy Visualizations,10.1109/TVCG.2024.3456182,10.vis2024/1256,2024,https://doi.org/10.1109/TVCG.2024.3456182
 1258,Beyond Correlation: Incorporating Counterfactual Guidance to Better Support Exploratory Visual Analysis,10.1109/TVCG.2024.3456369,10.vis2024/1258,2024,https://doi.org/10.1109/TVCG.2024.3456369
 1272,UnDRground Tubes: Exploring Spatial Data With Multidimensional Projections and Set Visualization,10.1109/TVCG.2024.3456314,10.vis2024/1272,2024,https://doi.org/10.1109/TVCG.2024.3456314
@@ -40,19 +40,19 @@ PCS-ID,Title,DOI,fake DOI,Year,DOI URL
 1291,Quantifying Emotional Responses to Immutable Data Characteristics and Designer Choices in Data Visualizations,10.1109/TVCG.2024.3456361,10.vis2024/1291,2024,https://doi.org/10.1109/TVCG.2024.3456361
 1295,A Qualitative Analysis of Common Practices in Annotations: A Taxonomy and Design Space,10.1109/TVCG.2024.3456359,10.vis2024/1295,2024,https://doi.org/10.1109/TVCG.2024.3456359
 1302,Talk to the Wall: The Role of Speech Interaction in Collaborative Visual Analytics,10.1109/TVCG.2024.3456335,10.vis2024/1302,2024,https://doi.org/10.1109/TVCG.2024.3456335
-1307,BEMTrace: Visualization-driven approach for deriving Building Energy Models from BIM,10.1109/TVCG.2024.3456315,10.vis2024/1307,2024,https://doi.org/10.vis2024/1307
-1309,VMC: A Grammar for Visualizing Statistical Model Checks,10.1109/TVCG.2024.3456402,10.vis2024/1309,2024,https://doi.org/10.vis2024/1309
+1307,BEMTrace: Visualization-driven approach for deriving Building Energy Models from BIM,10.1109/TVCG.2024.3456315,10.vis2024/1307,2024,https://doi.org/10.1109/TVCG.2024.3456315
+1309,VMC: A Grammar for Visualizing Statistical Model Checks,10.1109/TVCG.2024.3456402,10.vis2024/1309,2024,https://doi.org/10.1109/TVCG.2024.3456402
 1316,The Language of Infographics: Toward Understanding Conceptual Metaphor Use in Scientific Storytelling,10.1109/TVCG.2024.3456327,10.vis2024/1316,2024,https://doi.org/10.1109/TVCG.2024.3456327
 1318,How Good (Or Bad) Are LLMs in Detecting Misleading Visualizations,10.1109/TVCG.2024.3456333,10.vis2024/1318,2024,https://doi.org/10.1109/TVCG.2024.3456333
 1325,Motion-Based Visual Encoding Can Improve Performance on Perceptual Tasks with Dynamic Time Series,10.1109/TVCG.2024.3456405,10.vis2024/1325,2024,https://doi.org/10.1109/TVCG.2024.3456405
 1326,LLM Comparator: Interactive Analysis of Side-by-Side Evaluation of Large Language Models,10.1109/TVCG.2024.3456354,10.vis2024/1326,2024,https://doi.org/10.1109/TVCG.2024.3456354
-1329,StuGPTViz: A Visual Analytics Approach to Understand Student-ChatGPT Interactions,10.1109/TVCG.2024.3456363,10.vis2024/1329,2024,https://doi.org/10.vis2024/1329
+1329,StuGPTViz: A Visual Analytics Approach to Understand Student-ChatGPT Interactions,10.1109/TVCG.2024.3456363,10.vis2024/1329,2024,https://doi.org/10.1109/TVCG.2024.3456363
 1332,VisEval: A Benchmark for Data Visualization in the Era of Large Language Models,10.1109/TVCG.2024.3456320,10.vis2024/1332,2024,https://doi.org/10.1109/TVCG.2024.3456320
 1333,Telling Data Stories with the Hero's Journey: Design Guidance for Creating Data Videos,10.1109/TVCG.2024.3456330,10.vis2024/1333,2024,https://doi.org/10.1109/TVCG.2024.3456330
 1342,Understanding Visualization Authoring Techniques for Genomics Data in the Context of Personas and Tasks,10.1109/TVCG.2024.3456298,10.vis2024/1342,2024,https://doi.org/10.1109/TVCG.2024.3456298
 1351,Sportify: Question Answering with Embedded Visualizations and Personified Narratives for Sports Video,10.1109/TVCG.2024.3456332,10.vis2024/1351,2024,https://doi.org/10.1109/TVCG.2024.3456332
 1363,FPCS: Feature Preserving Compensated Sampling of Streaming Time Series Data,10.1109/TVCG.2024.3456375,10.vis2024/1363,2024,https://doi.org/10.1109/TVCG.2024.3456375
-1368,SLInterpreter: An Exploratory and Iterative Human-AI Collaborative System for GNN-based Synthetic Lethal Prediction,10.1109/TVCG.2024.3456325,10.vis2024/1368,2024,https://doi.org/10.vis2024/1368
+1368,SLInterpreter: An Exploratory and Iterative Human-AI Collaborative System for GNN-based Synthetic Lethal Prediction,10.1109/TVCG.2024.3456325,10.vis2024/1368,2024,https://doi.org/10.1109/TVCG.2024.3456325
 1391,StyleRF-VolVis: Style Transfer of Neural Radiance Fields for Expressive Volume Visualization,10.1109/TVCG.2024.3456342,10.vis2024/1391,2024,https://doi.org/10.1109/TVCG.2024.3456342
 1393,Practices and Strategies in Responsive Thematic Map Design: A Report from Design Workshops with Experts,10.1109/TVCG.2024.3456352,10.vis2024/1393,2024,https://doi.org/10.1109/TVCG.2024.3456352
 1394,Discursive Patinas: Anchoring Discussions in Data Visualizations,10.1109/TVCG.2024.3456334,10.vis2024/1394,2024,https://doi.org/10.1109/TVCG.2024.3456334
@@ -82,7 +82,7 @@ PCS-ID,Title,DOI,fake DOI,Year,DOI URL
 1533,DiffFit: Visually-Guided Differentiable Fitting of Molecule Structures to a Cryo-EM Map,10.1109/TVCG.2024.3456404,10.vis2024/1533,2024,https://doi.org/10.1109/TVCG.2024.3456404
 1544,How Aligned are Human Chart Takeaways and LLM Predictions? A Case Study on Bar Charts with Varying Layouts,10.1109/TVCG.2024.3456378,10.vis2024/1544,2024,https://doi.org/10.1109/TVCG.2024.3456378
 1547,Beware of Validation by Eye: Visual Validation of Linear Trends in Scatterplots,10.1109/TVCG.2024.3456305,10.vis2024/1547,2024,https://doi.org/10.1109/TVCG.2024.3456305
-1568,DimBridge: Interactive Explanation of Visual Patterns in Dimensionality Reductions with Predicate Logic,10.1109/TVCG.2024.3456391,10.vis2024/1568,2024,https://doi.org/10.vis2024/1568
+1568,DimBridge: Interactive Explanation of Visual Patterns in Dimensionality Reductions with Predicate Logic,10.1109/TVCG.2024.3456391,10.vis2024/1568,2024,https://doi.org/10.1109/TVCG.2024.3456391
 1571,Who Let the Guards Out: Visual Support for Patrolling Games,10.1109/TVCG.2024.3456306,10.vis2024/1571,2024,https://doi.org/10.1109/TVCG.2024.3456306
 1574,Objective Lagrangian Vortex Cores and their Visual Representations,10.1109/TVCG.2024.3456384,10.vis2024/1574,2024,https://doi.org/10.1109/TVCG.2024.3456384
 1594,"""I Came Across a Junk"": Understanding Design Flaws of Data Visualization from the Public's Perspective",10.1109/TVCG.2024.3456341,10.vis2024/1594,2024,https://doi.org/10.1109/TVCG.2024.3456341
@@ -118,7 +118,7 @@ PCS-ID,Title,DOI,fake DOI,Year,DOI URL
 1831,HiRegEx: Interactive Visual Query and Exploration of Multivariate Hierarchical Data,10.1109/TVCG.2024.3456389,10.vis2024/1831,2024,https://doi.org/10.1109/TVCG.2024.3456389
 1833,HuBar: A Visual Analytics Tool to Explore Human Behaviour based on fNIRS in AR guidance systems,10.1109/TVCG.2024.3456388,10.vis2024/1833,2024,https://doi.org/10.1109/TVCG.2024.3456388
 1836,An Empirically Grounded Approach for Designing Shape Palettes,10.1109/TVCG.2024.3456385,10.vis2024/1836,2024,https://doi.org/10.1109/TVCG.2024.3456385
-1865,"DaedalusData: Exploration, Knowledge Externalization and Labeling of Particles in Medical Manufacturing - A Design Study",10.1109/TVCG.2024.3456329,10.vis2024/1865,2024,https://doi.org/10.vis2024/1865
+1865,"DaedalusData: Exploration, Knowledge Externalization and Labeling of Particles in Medical Manufacturing - A Design Study",10.1109/TVCG.2024.3456329,10.vis2024/1865,2024,https://doi.org/10.1109/TVCG.2024.3456329
 1866,Regularized Multi-Decoder Ensemble for an Error-Aware Scene Representation Network,10.1109/TVCG.2024.3456357,10.vis2024/1866,2024,https://doi.org/10.1109/TVCG.2024.3456357
 1874,Evaluating and extending speedup techniques for optimal crossing minimization in layered graph drawings,10.1109/TVCG.2024.3456349,10.vis2024/1874,2024,https://doi.org/10.1109/TVCG.2024.3456349
 1880,Rapid and Precise Topological Comparison with Merge Tree Neural Networks,10.1109/TVCG.2024.3456395,10.vis2024/1880,2024,https://doi.org/10.1109/TVCG.2024.3456395

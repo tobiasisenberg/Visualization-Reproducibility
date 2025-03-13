@@ -1,6 +1,40 @@
 [
     {
+        "is_vis": true,
+        "title": "MAICO: A Visualization Design Study on AI-Assisted Music Composition",
+        "doi": "10.1109/tvcg.2025.3539779",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-visvar-maicov2",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/visvar/MAICoV2",
+        "repo_archive_url": "",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-visvar-maicov2/representative.png",
+        "authors": "Simeon Rau, Frank Heyen, Benedikt Brachtel, Michael Sedlmair",
+        "type": "journal pres. @ IEEE VIS"
+    },
+    {
         "is_vis": false,
+        "title": "Anisotropic Specular Image-Based Lighting Based on BRDF Major Axis Sampling",
+        "doi": "10.1111/cgf.15233",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-iota97-anisotropyeditor",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/iota97/AnisotropyEditor",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:e9f115333919a1dfb7d44fb63da87266fcc92228;origin=https://github.com/iota97/AnisotropyEditor",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-iota97-anisotropyeditor/representative.png",
+        "authors": "Giovanni Cocco, C\u00e9dric Zanni, Xavier Chermain"
+    },
+    {
+        "is_vis": false,
+        "title": "Differentiable Owen Scrambling",
+        "doi": "10.1145/3687764",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-liris-origami-differentiableowenscrambling-git-2025-02-19t07-42-40-756z",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/liris-origami/DifferentiableOwenScrambling.git",
+        "repo_archive_url": "",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-liris-origami-differentiableowenscrambling-git-2025-02-19t07-42-40-756z/representative.png",
+        "authors": "Bastien Doignies, David Coeurjolly, Nicolas Bonneel, Julie Digne, Jean-Claude Iehl, Victor Ostromoukhov"
+    },
+    {
+        "is_vis": true,
         "title": "Versatile Ordering Network: An Attention-based Neural Network for Ordering Across Scales and Quality Metrics",
         "doi": "10.1109/tvcg.2024.3520208",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-sysuvis-von-git",
@@ -8,7 +42,8 @@
         "repo_url": "https://github.com/sysuvis/VON.git",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:71fe1b75a0acfc5c626c8d6340e0431dffe73874;origin=https://github.com/sysuvis/VON.git",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-sysuvis-von-git/representative.png",
-        "authors": "Zehua Yu, Weihan Zhang, Sihan Pan, Jun Tao"
+        "authors": "Zehua Yu, Weihan Zhang, Sihan Pan, Jun Tao",
+        "type": "journal pres. @ IEEE VIS"
     },
     {
         "is_vis": false,

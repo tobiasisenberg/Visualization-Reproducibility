@@ -20040,5 +20040,157 @@
         "countries": [
             "CN"
         ]
+    },
+    "10.1109/tvcg.2025.3539779": {
+        "doi": "10.1109/tvcg.2025.3539779",
+        "authors": [
+            {
+                "family": "Rau",
+                "given": "Simeon",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Heyen",
+                "given": "Frank",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Brachtel",
+                "given": "Benedikt",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Sedlmair",
+                "given": "Michael",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "MAICO: A Visualization Design Study on AI-Assisted Music Composition",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 16,
+        "abstract": "We contribute a design study on using visual analytics for AI-assisted music composition. The main result is the interface MAICO (Music AI Co-creativity), which allows composers and other music creators to interactively generate, explore, select, edit, and compare samples from generative music models. MAICO is based on the idea of visual parameter space analysis and supports the simultaneous analysis of hundreds of short samples of symbolic music from multiple models, displaying them in different metric- and similarity-based layouts. We developed and evaluated MAICO together with a professional composer who actively used it for five months to create, among other things, a composition for the Biennale Arte 2024\u00a0in Venice, which was recorded by the Munich Symphonic Orchestra. We discuss our design choices and lessons learned from this endeavor to support Human-AI co-creativity with visual analytics.",
+        "countries": [
+            "DE"
+        ]
+    },
+    "10.1111/cgf.15233": {
+        "doi": "10.1111/cgf.15233",
+        "authors": [
+            {
+                "family": "Cocco",
+                "given": "Giovanni",
+                "orcid": "0009-0000-2681-2443",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Zanni",
+                "given": "C\u00e9dric",
+                "orcid": "0009-0000-8460-6373",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Chermain",
+                "given": "Xavier",
+                "orcid": "0000-0003-1910-5956",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Anisotropic Specular Image\u2010Based Lighting Based on BRDF Major Axis Sampling",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "7",
+        "pages": "e15233",
+        "article_number": "",
+        "number_of_pages": -1,
+        "abstract": "Anisotropic specular appearances are ubiquitous in the environment: brushed stainless steel pans, kettles, elevator walls, fur, or scratched plastics. Real-time rendering of these materials with image-based lighting is challenging due to the complex shape of the bidirectional reflectance distribution function (BRDF). We propose an anisotropic specular image-based lighting method that can serve as a drop-in replacement for the standard bent normal technique [Rev11]. Our method yields more realistic results with a 50% increase in computation time of the previous technique, using the same high dynamic range (HDR) preintegrated environment image. We use several environment samples positioned along the major axis of the specular microfacet BRDF. We derive an analytic formula to determine the two closest and two farthest points from the reflected direction on an approximation of the BRDF confidence region boundary. The two farthest points define the BRDF major axis, while the two closest points are used to approximate the BRDF width. The environment level of detail is derived from the BRDF width and the distance between the samples. We extensively compare our method with the bent normal technique and the ground truth using the GGX specular BRDF.",
+        "countries": [
+            "IT",
+            "FR"
+        ]
+    },
+    "10.1145/3687764": {
+        "doi": "10.1145/3687764",
+        "authors": [
+            {
+                "family": "Doignies",
+                "given": "Bastien",
+                "orcid": "0009-0006-9225-5407",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Coeurjolly",
+                "given": "David",
+                "orcid": "0000-0003-3164-8697",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Bonneel",
+                "given": "Nicolas",
+                "orcid": "0000-0001-5243-4810",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Digne",
+                "given": "Julie",
+                "orcid": "0000-0003-0905-0840",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Iehl",
+                "given": "Jean-Claude",
+                "orcid": "0000-0001-6877-2398",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Ostromoukhov",
+                "given": "Victor",
+                "orcid": "0009-0004-3123-9388",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Differentiable Owen Scrambling",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "6",
+        "pages": "1\u201312",
+        "article_number": "0",
+        "number_of_pages": 12,
+        "abstract": "Quasi-Monte Carlo integration is at the core of rendering. This technique estimates the value of an integral by evaluating the integrand at well-chosen sample locations. These sample points are designed to cover the domain as uniformly as possible to achieve better convergence rates than purely random points. Deterministic low-discrepancy sequences have been shown to outperform many competitors by guaranteeing good uniformity as measured by the so-called discrepancy metric, and, indirectly, by an integer\n            t\n            value relating the number of points falling into each domain stratum with the stratum area (lower\n            t\n            is better). To achieve randomness, scrambling techniques produce multiple realizations preserving the\n            t\n            value, making the construction stochastic. Among them, Owen scrambling is a popular approach that recursively permutes intervals for each dimension. However, relying on permutation trees makes it incompatible with smooth optimization frameworks. We present a differentiable Owen scrambling that regularizes permutations. We show that it can effectively be used with automatic differentiation tools for optimizing low-discrepancy sequences to improve metrics such as optimal transport uniformity, integration error, designed power spectra or projective properties, while maintaining their initial\n            t\n            -value as guaranteed by Owen scrambling. In some rendering settings, we show that our optimized sequences improve the rendering error.",
+        "countries": [
+            "FR"
+        ]
     }
 }
