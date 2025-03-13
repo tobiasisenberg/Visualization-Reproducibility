@@ -510,7 +510,7 @@ for tvcgFilename in tvcgFilenamesList:
             if tvcgDoi not in visPubDataDois: # so that we do not duplicate the loaded dois
                 year = int(row['Publication Year']) - 1 # the year in the data is the year of publication in TVCG, not presentation at VIS, so we need to deduct 1
                 visPubDataDois.append(tvcgDoi)
-                visPubDataConferenceYears[doi] = year # TVCG now publishes always in the year following the conference
+                visPubDataConferenceYears[tvcgDoi] = year
                 if (year > visPubDataMostRecentYear): visPubDataMostRecentYear = year
 
 # another alternative: a manually created spreadsheet of accepted VIS papers (I added this mainly for the BELIV paper submission)
