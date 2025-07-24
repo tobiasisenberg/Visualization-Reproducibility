@@ -38,3 +38,52 @@ year,journal,title,doi
 2024,CGF,Open Your Ears and Take a Look: A State-of-the-Art Report on the Integration of Sonification and Visualization,10.1111/cgf.15114
 2024,CGF,State of the Art of Graph Visualization in non-Euclidean Spaces,10.1111/cgf.15113
 2024,CGF,The State of the Art in Visual Analytics for 3D Urban Data,10.1111/cgf.15112
+2025,CGF,NODKANT: Exploring Constructive Network Physicalization,10.1111/cgf.70140
+2025,CGF,Gridded Visualization of Statistical Trees for High-Dimensional Multipartite Data in Systems Genetics,10.1111/cgf.70113
+2025,CGF,Optimizing Staircase Motifs in Biofabric Network Layouts,10.1111/cgf.70139
+2025,CGF,HyperFLINT: Hypernetwork-based Flow Estimation and Temporal Interpolation for Scientific Ensemble Visualization,10.1111/cgf.70134
+2025,CGF,In Situ Workload Estimation for Block Assignment and Duplication in Parallelization-Over-Data Particle Advection,10.1111/cgf.70108
+2025,CGF,Enhancing Material Boundary Visualizations in 2D Unsteady Flow through Local Reference Frame Transformations,10.1111/cgf.70128
+2025,CGF,IntelliCircos: A Data-driven and AI-powered Authoring Tool for Circos Plots,10.1111/cgf.70118
+2025,CGF,Interactive Discovery and Exploration of Visual Bias in Generative Text-to-Image Models,10.1111/cgf.70135
+2025,CGF,InterChat: Enhancing Generative Visual Analytics using Multimodal Interactions,10.1111/cgf.70112
+2025,CGF,VISLIX: An XAI Framework for Validating Vision Models with Slice Discovery and Analysis,10.1111/cgf.70125
+2025,CGF,Beyond Entertainment: An Investigation of Externalization Design in Video Games,10.1111/cgf.70124
+2025,CGF,Embedded and Situated Visualisation in Mixed Reality to Support Interval Running,10.1111/cgf.70133
+2025,CGF,Player-Centric Shot Maps in Table Tennis,10.1111/cgf.70109
+2025,CGF,Tasks and Visual Abstractions for 3D Chromatin Representation,10.1111/cgf.70142
+2025,CGF,"Euclidean, Hyperbolic, and Spherical Networks: An Empirical Study of Matching Network Structure to Best Visualizations",10.1111/cgf.70126
+2025,CGF,Viewpoint Optimization for 3D Graph Drawings,10.1111/cgf.70127
+2025,CGF,DataWeaver: Authoring Data-Driven Narratives through the Integrated Composition of Visualization and Text,10.1111/cgf.70098
+2025,CGF,Either Or: Interactive Articles or Videos for Climate Science Communication,10.1111/cgf.70129
+2025,CGF,VizTA: Enhancing Comprehension of Distributional Visualization with Visual-Lexical Fused Conversational Interface,10.1111/cgf.70110
+2025,CGF,DashGuide: Authoring Interactive Dashboard Tours for Guiding Dashboard Users,10.1111/cgf.70107
+2025,CGF,SUPQA: LLM-based Geo-Visualization for Subjective Urban Performance Question-Answering,10.1111/cgf.70106
+2025,CGF,Benchmarking Visual Language Models on Standardized Visualization Literacy Tests,10.1111/cgf.70137
+2025,CGF,LayerFlow: Layer-wise Exploration of LLM Embeddings using Uncertainty-aware Interlinked Projections,10.1111/cgf.70123
+2025,CGF,An Interactive Visual Enhancement for Prompted Programmatic Weak Supervision in Text Classification,10.1111/cgf.70131
+2025,CGF,The Geometry of Color in the Light of a Non-Riemannian Space,10.1111/cgf.70136
+2025,CGF,Random Access Segmentation Volume Compression for Interactive Volume Rendering,10.1111/cgf.70116
+2025,CGF,Fast and Invertible Simplicial Approximation of Magnetic-Following Interpolation for Visualizing Fusion Plasma Simulation Data,10.1111/cgf.70120
+2025,CGF,Necessary but not Sufficient: Limitations of Projection Quality Metrics,10.1111/cgf.70101
+2025,CGF,PrismBreak: Exploration of Multi-Dimensional Mixture Models,10.1111/cgf.70121
+2025,CGF,"When Dimensionality Reduction Meets Graph (Drawing) Theory: Introducing a Common Framework, Challenges and Opportunities",10.1111/cgf.70105
+2025,CGF,Voronoi Cell Interface-Based Parameter Sensitivity Analysis for Labeled Samples,10.1111/cgf.70122
+2025,CGF,Mapping Mental Models of Uncertainty to Parallel Coordinates by Probabilistic Brushing,10.1111/cgf.70103
+2025,CGF,Sca2Gri: Scalable Gridified Scatterplots,10.1111/cgf.70141
+2025,CGF,Fast HARDI Uncertainty Quantification and Visualization with Spherical Sampling,10.1111/cgf.70138
+2025,CGF,Multipla: Multiscale Pangenomic Locus Analysis,10.1111/cgf.70147
+2025,CGF,Lactea: Web-Based Spectrum-Preserving Multi-Resolution Visualization of the GAIA Star Catalog,10.1111/cgf.70117
+2025,CGF,SurpriseExplora: Tuning and Contextualizing Model-derived Maps with Interactive Visualizations,10.1111/cgf.70114
+2025,CGF,Visually Assessing 1-D Orderings of Contiguous Spatial Polygons,10.1111/cgf.70100
+2025,CGF,FairSpace: An Interactive Visualization System for Constructing Fair Consensus from Many Rankings,10.1111/cgf.70132
+2025,CGF,MatplotAlt: A Python Library for Adding Alt Text to Matplotlib Figures in Computational Notebooks,10.1111/cgf.70119
+2025,CGF,Instructional Comics for Self-Paced Learning of Data Visualization Tools and Concepts,10.1111/cgf.70130
+2025,CGF,Accessible Text Descriptions for UpSet Plots,10.1111/cgf.70102
+2025,CGF,Modeling and Measuring the Chart Communication Recall Process,10.1111/cgf.70099
+2025,CGF,Coupling Guidance and Progressiveness in Visual Analytics,10.1111/cgf.70115
+2025,CGF,Towards a Better Evaluation of 3D CVML Algorithms: Immersive Debugging of a Localization Model,10.1111/cgf.70111
+2025,CGF,"A Process-Oriented Approach to Analyze Analysts' Use of Visualizations: Revealing Insights into the What, When, and How",10.1111/cgf.70104
+2025,CGF,Fluidly Revealing Information: A Survey of Un/foldable Data Visualizations,10.1111/cgf.70152
+2025,CGF,"Nodes, Edges, and Artistic Wedges: A Survey on Network Visualization in Art History",10.1111/cgf.70154
+2025,CGF,Uncertainty-Aware Visualization of Biomolecular Structures,10.1111/cgf.70155

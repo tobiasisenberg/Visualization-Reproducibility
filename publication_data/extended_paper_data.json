@@ -19997,15 +19997,15 @@
                 ]
             }
         ],
-        "title": "Versatile Ordering Network: An Attention-based Neural Network for Ordering Across Scales and Quality Metrics",
+        "title": "Versatile Ordering Network: An Attention-Based Neural Network for Ordering Across Scales and Quality Metrics",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "7",
+        "pages": "4081\u20134094",
         "article_number": "",
-        "number_of_pages": 15,
-        "abstract": "Ordering has been extensively studied in many visualization applications, such as axis and matrix reordering, for the simple reason that the order will greatly impact the perceived pattern of data. Many quality metrics concerning data pattern, perception, and aesthetics are proposed, and respective optimization algorithms are developed. However, the optimization problems related to ordering are often difficult to solve (e.g., TSP is NP-complete), and developing specialized optimization algorithms is costly. In this paper, we propose Versatile Ordering Network (VON), which automatically learns the strategy to order given a quality metric. VON uses the quality metric to evaluate its solutions, and leverages reinforcement learning with a greedy rollout baseline to improve itself. This keeps the metric transparent and allows VON to optimize over different metrics. Additionally, VON uses the attention mechanism to collect information across scales and reposition the data points with respect to the current context. This allows VONs to deal with data points following different distributions. We examine the effectiveness of VON under different usage scenarios and metrics. The results demonstrate that VON can produce comparable results to specialized solvers. The code is available at https://github.com/sysuvis/VON.",
+        "number_of_pages": 14,
+        "abstract": "Ordering has been extensively studied in many visualization applications, such as axis and matrix reordering, for the simple reason that the order will greatly impact the perceived pattern of data. Many quality metrics concerning data pattern, perception, and aesthetics are proposed, and respective optimization algorithms are developed. However, the optimization problems related to ordering are often difficult to solve (e.g., TSP is NP-complete), and developing specialized optimization algorithms is costly. In this paper, we propose Versatile Ordering Network (VON), which automatically learns the strategy to order given a quality metric. VON uses the quality metric to evaluate its solutions, and leverages reinforcement learning with a greedy rollout baseline to improve itself. This keeps the metric transparent and allows VON to optimize over different metrics. Additionally, VON uses the attention mechanism to collect information across scales and reposition the data points with respect to the current context. This allows VONs to deal with data points following different distributions. We examine the effectiveness of VON under different usage scenarios and metrics. The results demonstrate that VON can produce comparable results to specialized solvers.",
         "countries": [
             "CN"
         ]
@@ -20075,13 +20075,13 @@
         ],
         "title": "MAICO: A Visualization Design Study on AI-Assisted Music Composition",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "7",
+        "pages": "4110\u20134125",
         "article_number": "",
         "number_of_pages": 16,
-        "abstract": "We contribute a design study on using visual analytics for AI-assisted music composition. The main result is the interface MAICO (Music AI Co-creativity), which allows composers and other music creators to interactively generate, explore, select, edit, and compare samples from generative music models. MAICO is based on the idea of visual parameter space analysis and supports the simultaneous analysis of hundreds of short samples of symbolic music from multiple models, displaying them in different metric- and similarity-based layouts. We developed and evaluated MAICO together with a professional composer who actively used it for five months to create, among other things, a composition for the Biennale Arte 2024\u00a0in Venice, which was recorded by the Munich Symphonic Orchestra. We discuss our design choices and lessons learned from this endeavor to support Human-AI co-creativity with visual analytics.",
+        "abstract": "We contribute a design study on using visual analytics for AI-assisted music composition. The main result is the interface MAICO (Music AI Co-creativity), which allows composers and other music creators to interactively generate, explore, select, edit, and compare samples from generative music models. MAICO is based on the idea of visual parameter space analysis and supports the simultaneous analysis of hundreds of short samples of symbolic music from multiple models, displaying them in different metric- and similarity-based layouts. We developed and evaluated MAICO together with a professional composer who actively used it for five months to create, among other things, a composition for the Biennale Arte 2024 in Venice, which was recorded by the Munich Symphonic Orchestra. We discuss our design choices and lessons learned from this endeavor to support Human-AI co-creativity with visual analytics.",
         "countries": [
             "DE"
         ]
@@ -20185,12 +20185,1323 @@
         "publication_year": 2024,
         "volume": "43",
         "number": "6",
-        "pages": "1\u201312",
-        "article_number": "0",
+        "pages": "255:1\u2013255:12",
+        "article_number": "255",
         "number_of_pages": 12,
         "abstract": "Quasi-Monte Carlo integration is at the core of rendering. This technique estimates the value of an integral by evaluating the integrand at well-chosen sample locations. These sample points are designed to cover the domain as uniformly as possible to achieve better convergence rates than purely random points. Deterministic low-discrepancy sequences have been shown to outperform many competitors by guaranteeing good uniformity as measured by the so-called discrepancy metric, and, indirectly, by an integer\n            t\n            value relating the number of points falling into each domain stratum with the stratum area (lower\n            t\n            is better). To achieve randomness, scrambling techniques produce multiple realizations preserving the\n            t\n            value, making the construction stochastic. Among them, Owen scrambling is a popular approach that recursively permutes intervals for each dimension. However, relying on permutation trees makes it incompatible with smooth optimization frameworks. We present a differentiable Owen scrambling that regularizes permutations. We show that it can effectively be used with automatic differentiation tools for optimizing low-discrepancy sequences to improve metrics such as optimal transport uniformity, integration error, designed power spectra or projective properties, while maintaining their initial\n            t\n            -value as guaranteed by Owen scrambling. In some rendering settings, we show that our optimized sequences improve the rendering error.",
         "countries": [
             "FR"
+        ]
+    },
+    "10.1145/3680528.3687605": {
+        "doi": "10.1145/3680528.3687605",
+        "authors": [
+            {
+                "family": "Lang",
+                "given": "Itai",
+                "orcid": "0000-0003-4066-4293",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Xu",
+                "given": "Fei",
+                "orcid": "0000-0002-8850-7580",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Decatur",
+                "given": "Dale",
+                "orcid": "0000-0001-8771-1814",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Babu",
+                "given": "Sudarshan",
+                "orcid": "0009-0007-0785-020X",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Hanocka",
+                "given": "Rana",
+                "orcid": "0000-0003-3214-3703",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "iSeg: Interactive 3D Segmentation via Interactive Attention",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "139:1\u2013139:11",
+        "article_number": "139",
+        "number_of_pages": 11,
+        "abstract": "We present iSeg, a new interactive technique for segmenting 3D shapes. Previous works have focused mainly on leveraging pre-trained 2D foundation models for 3D segmentation based on text. However, text may be insufficient for accurately describing fine-grained spatial segmentations. Moreover, achieving a consistent 3D segmentation using a 2D model is highly challenging, since occluded areas of the same semantic region may not be visible together from any 2D view. Thus, we design a segmentation method conditioned on fine user clicks, which operates entirely in 3D. Our system accepts user clicks directly on the shape\u2019s surface, indicating the inclusion or exclusion of regions from the desired shape partition. To accommodate various click settings, we propose a novel interactive attention module capable of processing different numbers and types of clicks, enabling the training of a single unified interactive segmentation model. We apply iSeg to a myriad of shapes from different domains, demonstrating its versatility and faithfulness to the user\u2019s specifications. Our project page is at https://threedle.github.io/iSeg/.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1109/tvcg.2025.3567132": {
+        "doi": "10.1109/tvcg.2025.3567132",
+        "authors": [
+            {
+                "family": "Zhang",
+                "given": "Yu",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Chen",
+                "given": "Xinyue",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zheng",
+                "given": "Weili",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Guo",
+                "given": "Yuhan",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Li",
+                "given": "Guozheng",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Chen",
+                "given": "Siming",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Yuan",
+                "given": "Xiaoru",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "VisTaxa: Developing a Taxonomy of Historical Visualizations",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "6",
+        "pages": "3850\u20133862",
+        "article_number": "",
+        "number_of_pages": 13,
+        "abstract": "Historical visualizations are a rich resource for visualization research. While taxonomy is commonly used to structure and understand the design space of visualizations, existing taxonomies primarily focus on contemporary visualizations and largely overlook historical visualizations. To address this gap, we describe an empirical method for taxonomy development. We introduce a coding protocol and the VisTaxa system for taxonomy labeling and comparison. We demonstrate using our method to develop a historical visualization taxonomy by coding 400 images of historical visualizations. We analyze the coding result and reflect on the coding process. Our work is an initial step toward a systematic investigation of the design space of historical visualizations.",
+        "countries": [
+            "GB",
+            "CN"
+        ]
+    },
+    "10.1145/3680528.3687649": {
+        "doi": "10.1145/3680528.3687649",
+        "authors": [
+            {
+                "family": "Zhang",
+                "given": "Ziran",
+                "orcid": "0000-0001-7003-2735",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Ma",
+                "given": "Yongrui",
+                "orcid": "0009-0002-7584-0920",
+                "countries": [
+                    "HK",
+                    "CN"
+                ]
+            },
+            {
+                "family": "Chen",
+                "given": "Yueting",
+                "orcid": "0000-0002-2759-9784",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Feng",
+                "orcid": "0000-0002-1097-2116",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Gu",
+                "given": "Jinwei",
+                "orcid": "0000-0001-8705-8237",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Xue",
+                "given": "Tianfan",
+                "orcid": "0000-0001-5031-6618",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Guo",
+                "given": "Shi",
+                "orcid": "0000-0001-5155-6162",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "From Sim-to-Real: Toward General Event-based Low-light Frame Interpolation with Per-scene Optimization",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "99:1\u201399:10",
+        "article_number": "99",
+        "number_of_pages": 10,
+        "abstract": "Video Frame Interpolation (VFI) is important for video enhancement, frame rate up-conversion, and slow-motion generation. The introduction of event cameras, which capture per-pixel brightness changes asynchronously, has significantly enhanced VFI capabilities, particularly for high-speed, nonlinear motions. However, these event-based methods encounter challenges in low-light conditions, notably trailing artifacts and signal latency, which hinder their direct applicability and generalization. Addressing these issues, we propose a novel per-scene optimization strategy tailored for low-light conditions. This approach utilizes the internal statistics of a sequence to handle degraded event data under low-light conditions, improving the generalizability to different lighting and camera settings. To evaluate its robustness in low-light condition, we further introduce EVFI-LL, a unique RGB+Event dataset captured under low-light conditions. Our results demonstrate state-of-the-art performance in low-light environments. Project page: https://openimaginglab.github.io/Sim2Real/.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1145/3687982": {
+        "doi": "10.1145/3687982",
+        "authors": [
+            {
+                "family": "Xu",
+                "given": "Kehan",
+                "orcid": "0009-0009-7860-3593",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Herholz",
+                "given": "Sebastian",
+                "orcid": "0000-0003-1731-2548",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Manzi",
+                "given": "Marco",
+                "orcid": "0009-0009-9380-0405",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Papas",
+                "given": "Marios",
+                "orcid": "0000-0001-7084-1831",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Gross",
+                "given": "Markus",
+                "orcid": "0009-0003-9324-779X",
+                "countries": [
+                    "CH"
+                ]
+            }
+        ],
+        "title": "Volume Scattering Probability Guiding",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "6",
+        "pages": "184:1\u2013184:17",
+        "article_number": "184",
+        "number_of_pages": 17,
+        "abstract": "Simulating the light transport of volumetric effects poses significant challenges and costs, especially in the presence of heterogeneous volumes. Generating stochastic paths for volume rendering involves multiple decisions, and previous works mainly focused on directional and distance sampling, where the volume scattering probability (VSP), i.e., the probability of scattering inside a volume, is indirectly determined as a byproduct of distance sampling. We demonstrate that direct control over the VSP can significantly improve efficiency and present an unbiased volume rendering algorithm based on an existing resampling framework for precise control over the VSP. Compared to previous state-of-the-art, which can only increase the VSP without guaranteeing to reach the desired value, our method also supports decreasing the VSP. We further present a data-driven guiding framework to efficiently learn and query an approximation of the optimal VSP everywhere in the scene without the need for user control. Our approach can easily be combined with existing path-guiding methods for directional sampling at minimal overhead and shows significant improvements over the state-of-the-art in various complex volumetric lighting scenarios.",
+        "countries": [
+            "CH",
+            "DE"
+        ]
+    },
+    "10.1145/3680528.3687694": {
+        "doi": "10.1145/3680528.3687694",
+        "authors": [
+            {
+                "family": "Mallick",
+                "given": "Saswat Subhajyoti",
+                "orcid": "0009-0000-2052-2090",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Goel",
+                "given": "Rahul",
+                "orcid": "0000-0002-9564-4022",
+                "countries": [
+                    "IN"
+                ]
+            },
+            {
+                "family": "Kerbl",
+                "given": "Bernhard",
+                "orcid": "0000-0002-5168-8648",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Steinberger",
+                "given": "Markus",
+                "orcid": "0000-0001-5977-8536",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Carrasco",
+                "given": "Francisco Vicente",
+                "orcid": "0009-0005-3680-3029",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "De La Torre",
+                "given": "Fernando",
+                "orcid": "0000-0002-7086-8572",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Taming 3DGS: High-Quality Radiance Fields with Limited Resources",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "2:1\u20132:11",
+        "article_number": "2",
+        "number_of_pages": 11,
+        "abstract": "3D Gaussian Splatting (3DGS) has transformed novel-view synthesis with its fast, interpretable, and high-fidelity rendering. However, its resource requirements limit its usability. Especially on constrained devices, training performance degrades quickly and often cannot complete due to excessive memory consumption of the model. The method converges with an indefinite number of Gaussians\u2014many of them redundant\u2014making rendering unnecessarily slow and preventing its usage in downstream tasks that expect fixed-size inputs. To address these issues, we tackle the challenges of training and rendering 3DGS models on a budget. We use a guided, purely constructive densification process that steers densification toward Gaussians that raise the reconstruction quality. Model size continuously increases in a controlled manner towards an exact budget, using score-based densification of Gaussians with training-time priors that measure their contribution. We further address training speed obstacles: following a careful analysis of 3DGS\u2019 original pipeline, we derive faster, numerically equivalent solutions for gradient computation and attribute updates, including an alternative parallelization for efficient backpropagation. We also propose quality-preserving approximations where suitable to reduce training time even further. Taken together, these enhancements yield a robust, scalable solution with reduced training times, lower compute and memory requirements, and high quality. Our evaluation shows that in a budgeted setting, we obtain competitive quality metrics with 3DGS while achieving a 4\u20135 \u00d7 reduction in both model size and training time. With more generous budgets, our measured quality surpasses theirs. These advances open the door for novel-view synthesis in constrained environments, e.g., mobile devices.",
+        "countries": [
+            "US",
+            "IN",
+            "AT"
+        ]
+    },
+    "10.1145/3687956": {
+        "doi": "10.1145/3687956",
+        "authors": [
+            {
+                "family": "Cui",
+                "given": "Ruiqi",
+                "orcid": "0000-0003-1993-5036",
+                "countries": [
+                    "DK"
+                ]
+            },
+            {
+                "family": "G\u00e6de",
+                "given": "Emil Toftegaard",
+                "orcid": "0009-0001-9462-6359",
+                "countries": [
+                    "DK"
+                ]
+            },
+            {
+                "family": "Rotenberg",
+                "given": "Eva",
+                "orcid": "0000-0001-5853-7909",
+                "countries": [
+                    "DK"
+                ]
+            },
+            {
+                "family": "Kobbelt",
+                "given": "Leif",
+                "orcid": "0000-0002-7880-9470",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "B\u00e6rentzen",
+                "given": "J. Andreas",
+                "orcid": "0000-0003-2583-0660",
+                "countries": [
+                    "DK"
+                ]
+            }
+        ],
+        "title": "Surface Reconstruction Using Rotation Systems",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "6",
+        "pages": "190:1\u2013190:22",
+        "article_number": "190",
+        "number_of_pages": 22,
+        "abstract": "Inspired by the seminal result that a graph and an associated rotation system uniquely determine the topology of a closed manifold, we propose a combinatorial method for reconstruction of surfaces from points. Our method constructs a spanning tree and a rotation system. Since the tree is trivially a planar graph, its rotation system determines a genus zero surface with a single face which we proceed to incrementally refine by inserting edges to split faces. In order to raise the genus, special handles are added in a later stage by inserting edges between different faces and thus merging them. We apply our method to a wide range of input point clouds in order to investigate its effectiveness, and we compare our method to several other surface reconstruction methods. It turns out that our approach has two specific benefits over these other methods. First, the output mesh preserves the most information from the input point cloud. Second, our method provides control over the topology of the reconstructed surface. Code is available on https://github.com/cuirq3/RsR.",
+        "countries": [
+            "DK",
+            "DE"
+        ]
+    },
+    "10.1109/tvcg.2025.3561794": {
+        "doi": "10.1109/tvcg.2025.3561794",
+        "authors": [
+            {
+                "family": "Wang",
+                "given": "Jie",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Xie",
+                "given": "Jiu-Cheng",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Li",
+                "given": "Xianyan",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Xu",
+                "given": "Feng",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Pun",
+                "given": "Chi-Man",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Gao",
+                "given": "Hao",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "GaussianHead: High-Fidelity Head Avatars With Learnable Gaussian Derivation",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "7",
+        "pages": "4141\u20134154",
+        "article_number": "",
+        "number_of_pages": 14,
+        "abstract": "Creating lifelike 3D head avatars and generating compelling animations for diverse subjects remain challenging in computer vision. This paper presents GaussianHead, which models the active head based on anisotropic 3D Gaussians. Our method integrates a motion deformation field and a single-resolution tri-plane to capture the head's intricate dynamics and detailed texture. Notably, we introduce a customized derivation scheme for each 3D Gaussian, facilitating the generation of multiple \u201cdoppelgangers\u201d through learnable parameters for precise position transformation. This approach enables efficient representation of diverse Gaussian attributes and ensures their precision. Additionally, we propose an inherited derivation strategy for newly added Gaussians to expedite training. Extensive experiments demonstrate GaussianHead's efficacy, achieving high-fidelity visual results with a remarkably compact model size ($\\approx 12$\u224812 MB). Our method outperforms state-of-the-art alternatives in tasks such as reconstruction, cross-identity reenactment, and novel view synthesis.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1145/3680528.3687586": {
+        "doi": "10.1145/3680528.3687586",
+        "authors": [
+            {
+                "family": "Cai",
+                "given": "Yancheng",
+                "orcid": "0000-0002-4077-8330",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Bozorgian",
+                "given": "Ali",
+                "orcid": "0000-0003-4245-269X",
+                "countries": [
+                    "NO"
+                ]
+            },
+            {
+                "family": "Ashraf",
+                "given": "Maliha",
+                "orcid": "0000-0002-8142-5611",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Wanat",
+                "given": "Robert",
+                "orcid": "0009-0006-2622-5402",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Mantiuk",
+                "given": "K. Rafa\u0142",
+                "orcid": "0000-0003-2353-0349",
+                "countries": [
+                    "GB"
+                ]
+            }
+        ],
+        "title": "elaTCSF: A Temporal Contrast Sensitivity Function for Flicker Detection and Modeling Variable Refresh Rate Flicker",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "27:1\u201327:11",
+        "article_number": "27",
+        "number_of_pages": 11,
+        "abstract": "The perception of flicker has been a prominent concern in illumination and electronic display fields for over a century. Traditional approaches often rely on Critical Flicker Frequency (CFF), primarily suited for high-contrast (full-on, full-off) flicker. To tackle varying contrast flicker, the International Committee for Display Metrology (ICDM) introduced a Temporal Contrast Sensitivity Function TCSFIDMS within the Information Display Measurements Standard (IDMS). Nevertheless, this standard overlooks crucial parameters: luminance, eccentricity, and area. Existing models incorporating these parameters are inadequate for flicker detection, especially at low spatial frequencies. To address these limitations, we extend the TCSFIDMS and combine it with a new spatial probability summation model to incorporate the effects of luminance, eccentricity, and area (elaTCSF). We train the elaTCSF on various flicker detection datasets and establish the first variable refresh rate flicker detection dataset for further verification. Additionally, we contribute to resolving a longstanding debate on whether the flicker is more visible in peripheral vision. We demonstrate how elaTCSF can be used to predict flicker due to low-persistence in VR headsets, identify flicker-free VRR operational ranges, and determine flicker sensitivity in lighting design.",
+        "countries": [
+            "GB",
+            "NO",
+            "US"
+        ]
+    },
+    "10.1145/3687938": {
+        "doi": "10.1145/3687938",
+        "authors": [
+            {
+                "family": "Choi",
+                "given": "Hajin",
+                "orcid": "0000-0001-9488-9514",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Hong",
+                "given": "Seokpyo",
+                "orcid": "0000-0001-7090-146X",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Ha",
+                "given": "Inwoo",
+                "orcid": "0009-0006-0557-526X",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Kang",
+                "given": "Nahyup",
+                "orcid": "0000-0002-8067-8764",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Moon",
+                "given": "Bochang",
+                "orcid": "0000-0003-3142-0115",
+                "countries": [
+                    "KR"
+                ]
+            }
+        ],
+        "title": "Online Neural Denoising with Cross-Regression for Interactive Rendering",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "6",
+        "pages": "221:1\u2013221:12",
+        "article_number": "221",
+        "number_of_pages": 12,
+        "abstract": "Generating a rendered image sequence through Monte Carlo ray tracing is an appealing option when one aims to accurately simulate various lighting effects. Unfortunately, interactive rendering scenarios limit the allowable sample size for such sampling-based light transport algorithms, resulting in an unbiased but noisy image sequence. Image denoising has been widely adopted as a post-sampling process to convert such noisy image sequences into biased but temporally stable ones. The state-of-the-art strategy for interactive image denoising involves devising a deep neural network and training this network via supervised learning, i.e., optimizing the network parameters using training datasets that include an extensive set of image pairs (noisy and ground truth images). This paper adopts the prevalent approach for interactive image denoising, which relies on a neural network. However, instead of supervised learning, we propose a different learning strategy that trains our network parameters on the fly, i.e., updating them online using runtime image sequences. To achieve our denoising objective with online learning, we tailor local regression to a cross-regression form that can guide robust training of our denoising neural network. We demonstrate that our denoising framework effectively reduces noise in input image sequences while robustly preserving both geometric and non-geometric edges, without requiring the manual effort involved in preparing an external dataset.",
+        "countries": [
+            "KR"
+        ]
+    },
+    "10.1145/3680528.3687593": {
+        "doi": "10.1145/3680528.3687593",
+        "authors": [
+            {
+                "family": "Zhou",
+                "given": "Jie",
+                "orcid": "0000-0002-3836-4163",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Xiao",
+                "given": "Chufeng",
+                "orcid": "0000-0001-6749-0161",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Lam",
+                "given": "Miu-Ling",
+                "orcid": "0000-0002-5333-7454",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Fu",
+                "given": "Hongbo",
+                "orcid": "0000-0002-0284-726X",
+                "countries": [
+                    "HK"
+                ]
+            }
+        ],
+        "title": "DrawingSpinUp: 3D Animation from Single Character Drawings",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "98:1\u201398:10",
+        "article_number": "98",
+        "number_of_pages": 10,
+        "abstract": "Animating various character drawings is an engaging visual content creation task. Given a single character drawing, existing animation methods are limited to flat 2D motions and thus lack 3D effects. An alternative solution is to reconstruct a 3D model from a character drawing as a proxy and then retarget 3D motion data onto it. However, the existing image-to-3D methods could not work well for amateur character drawings in terms of appearance and geometry. We observe the contour lines, commonly existing in character drawings, would introduce significant ambiguity in texture synthesis due to their view-dependence. Additionally, thin regions represented by single-line contours are difficult to reconstruct (e.g., slim limbs of a stick figure) due to their delicate structures. To address these issues, we propose a novel system, DrawingSpinUp, to produce plausible 3D animations and breathe life into character drawings, allowing them to freely spin up, leap, and even perform a hip-hop dance. For appearance improvement, we adopt a removal-then-restoration strategy to first remove the view-dependent contour lines and then render them back after retargeting the reconstructed character. For geometry refinement, we develop a skeleton-based thinning deformation algorithm to refine the slim structures represented by the single-line contours. The experimental evaluations and a perceptual user study show that our proposed method outperforms the existing 2D and 3D animation methods and generates high-quality 3D animations from a single character drawing. Please refer to our project page (https://lordliang.github.io/DrawingSpinUp) for the code and generated animations.",
+        "countries": [
+            "HK"
+        ]
+    },
+    "10.1145/3687933": {
+        "doi": "10.1145/3687933",
+        "authors": [
+            {
+                "family": "Huang",
+                "given": "Yuming",
+                "orcid": "0000-0001-5900-2164",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Guo",
+                "given": "Yuhu",
+                "orcid": "0009-0007-5398-6845",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Su",
+                "given": "Renbo",
+                "orcid": "0000-0003-0767-6209",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Han",
+                "given": "Xingjian",
+                "orcid": "0000-0002-1899-1952",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Ding",
+                "given": "Junhao",
+                "orcid": "0000-0001-5741-8115",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Tianyu",
+                "orcid": "0000-0003-0372-0049",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Liu",
+                "given": "Tao",
+                "orcid": "0000-0003-1016-4191",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Weiming",
+                "orcid": "0000-0001-6289-0094",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Fang",
+                "given": "Guoxin",
+                "orcid": "0000-0001-8741-3227",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Song",
+                "given": "Xu",
+                "orcid": "0000-0001-9811-9883",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Whiting",
+                "given": "Emily",
+                "orcid": "0000-0001-7997-1675",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Charlie",
+                "orcid": "0000-0003-4406-8480",
+                "countries": [
+                    "GB"
+                ]
+            }
+        ],
+        "title": "Learning Based Toolpath Planner on Diverse Graphs for 3D Printing",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "6",
+        "pages": "229:1\u2013229:16",
+        "article_number": "229",
+        "number_of_pages": 16,
+        "abstract": "This paper presents a learning based planner for computing optimized 3D printing toolpaths on prescribed graphs, the challenges of which include the varying graph structures on different models and the large scale of nodes &amp; edges on a graph. We adopt an on-the-fly strategy to tackle these challenges, formulating the planner as a\n            Deep Q-Network\n            (DQN) based optimizer to decide the next 'best' node to visit. We construct the state spaces by the\n            Local Search Graph\n            (LSG) centered at different nodes on a graph, which is encoded by a carefully designed algorithm so that LSGs in similar configurations can be identified to re-use the earlier learned DQN priors for accelerating the computation of toolpath planning. Our method can cover different 3D printing applications by defining their corresponding reward functions. Toolpath planning problems in wire-frame printing, continuous fiber printing, and metallic printing are selected to demonstrate its generality. The performance of our planner has been verified by testing the resultant toolpaths in physical experiments. By using our planner, wire-frame models with up to 4.2k struts can be successfully printed, up to 93.3% of sharp turns on continuous fiber toolpaths can be avoided, and the thermal distortion in metallic printing can be reduced by 24.9%.",
+        "countries": [
+            "GB",
+            "US",
+            "HK"
+        ]
+    },
+    "10.1145/3680528.3687591": {
+        "doi": "10.1145/3680528.3687591",
+        "authors": [
+            {
+                "family": "Sakai",
+                "given": "Hiroyuki",
+                "orcid": "0000-0003-0388-8458",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Freude",
+                "given": "Christian",
+                "orcid": "0000-0002-4224-4105",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Auzinger",
+                "given": "Thomas",
+                "orcid": "0000-0002-1546-3265",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Hahn",
+                "given": "David",
+                "orcid": "0000-0002-7617-5523",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Wimmer",
+                "given": "Michael",
+                "orcid": "0000-0002-9370-2663",
+                "countries": [
+                    "AT"
+                ]
+            }
+        ],
+        "title": "A Statistical Approach to Monte Carlo Denoising",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "68:1\u201368:11",
+        "article_number": "68",
+        "number_of_pages": 11,
+        "abstract": "The stochastic nature of modern Monte Carlo (MC) rendering methods inevitably produces noise in rendered images for a practical number of samples per pixel. The problem of denoising these images has been widely studied, with most recent methods relying on data-driven, pretrained neural networks. In contrast, in this paper we propose a statistical approach to the denoising problem, treating each pixel as a random variable and reasoning about its distribution. Considering a pixel of the noisy rendered image, we formulate fast pair-wise statistical tests\u2014based on online estimators\u2014to decide which of the nearby pixels to exclude from the denoising filter. We show that for symmetric pixel weights and normally distributed samples, the classical Welch t-test is optimal in terms of mean squared error. We then show how to extend this result to handle non-normal distributions, using more recent confidence-interval formulations in combination with the Box-Cox transformation. Our results show that our statistical denoising approach matches the performance of state-of-the-art neural image denoising without having to resort to any computation-intensive pretraining. Furthermore, our approach easily generalizes to other quantities besides pixel intensity, which we demonstrate by showing additional applications to Russian roulette path termination and multiple importance sampling.",
+        "countries": [
+            "AT"
+        ]
+    },
+    "10.1145/3687937": {
+        "doi": "10.1145/3687937",
+        "authors": [
+            {
+                "family": "Yu",
+                "given": "Zehao",
+                "orcid": "0000-0002-6559-9830",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Sattler",
+                "given": "Torsten",
+                "orcid": "0000-0001-9760-4553",
+                "countries": [
+                    "CZ"
+                ]
+            },
+            {
+                "family": "Geiger",
+                "given": "Andreas",
+                "orcid": "0000-0002-8151-3726",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "Gaussian Opacity Fields: Efficient Adaptive Surface Reconstruction in Unbounded Scenes",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "6",
+        "pages": "271:1\u2013271:13",
+        "article_number": "271",
+        "number_of_pages": 13,
+        "abstract": "Recently, 3D Gaussian Splatting (3DGS) has demonstrated impressive novel view synthesis results, while allowing the rendering of high-resolution images in real-time. However, leveraging 3D Gaussians for surface reconstruction poses significant challenges due to the explicit and disconnected nature of 3D Gaussians. In this work, we present Gaussian Opacity Fields (GOF), a novel approach for efficient, high-quality, and adaptive surface reconstruction in unbounded scenes. Our GOF is derived from ray-tracing-based volume rendering of 3D Gaussians, enabling direct geometry extraction from 3D Gaussians by identifying its levelset, without resorting to Poisson reconstruction or TSDF fusion as in previous work. We approximate the surface normal of Gaussians as the normal of the ray-Gaussian intersection plane, enabling the application of regularization that significantly enhances geometry. Furthermore, we develop an efficient geometry extraction method utilizing Marching Tetrahedra, where the tetrahedral grids are induced from 3D Gaussians and thus adapt to the scene's complexity. Our evaluations reveal that GOF surpasses existing 3DGS-based methods in surface reconstruction and novel view synthesis. Further, it compares favorably to or even outperforms, neural implicit methods in both quality and speed.",
+        "countries": [
+            "DE",
+            "CZ"
+        ]
+    },
+    "10.1145/3687975": {
+        "doi": "10.1145/3687975",
+        "authors": [
+            {
+                "family": "Liu",
+                "given": "Gongye",
+                "orcid": "0009-0003-6536-282X",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Xia",
+                "given": "Menghan",
+                "orcid": "0000-0001-9664-4967",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Yong",
+                "orcid": "0000-0003-0066-3448",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Chen",
+                "given": "Haoxin",
+                "orcid": "0009-0000-6085-2107",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Xing",
+                "given": "Jinbo",
+                "orcid": "0000-0002-2181-1879",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Yibo",
+                "orcid": "0009-0007-1774-0039",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Xintao",
+                "orcid": "0000-0001-6585-8604",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Shan",
+                "given": "Ying",
+                "orcid": "0000-0001-7673-8325",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Yang",
+                "given": "Yujiu",
+                "orcid": "0000-0002-6427-1024",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "StyleCrafter: Taming Artistic Video Diffusion with Reference-Augmented Adapter Learning",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "6",
+        "pages": "251:1\u2013251:10",
+        "article_number": "251",
+        "number_of_pages": 10,
+        "abstract": "Text-to-video (T2V) models have shown remarkable capabilities in generating diverse videos. However, they struggle to produce user-desired artistic videos due to (i) text's inherent clumsiness in expressing specific styles and (ii) the generally degraded style fidelity. To address these challenges, we introduce StyleCrafter, a generic method that enhances pretrained T2V models with a style control adapter, allowing video generation in any style by feeding a reference image. Considering the scarcity of artistic video data, we propose to first train a style control adapter using style-rich image datasets, then transfer the learned stylization ability to video generation through a tailor-made finetuning paradigm. To promote content-style disentanglement, we employ carefully designed data augmentation strategies to enhance decoupled learning. Additionally, we propose a scale-adaptive fusion module to balance the influences of text-based content features and image-based style features, which helps generalization across various text and style combinations. StyleCrafter efficiently generates high-quality stylized videos that align with the content of the texts and resemble the style of the reference images. Experiments demonstrate that our approach is more flexible and efficient than existing competitors. Project page: https://gongyeliu.github.io/StyleCrafter.github.io/",
+        "countries": [
+            "CN",
+            "HK"
+        ]
+    },
+    "10.1145/3680528.3687690": {
+        "doi": "10.1145/3680528.3687690",
+        "authors": [
+            {
+                "family": "Toussaint",
+                "given": "Briac",
+                "orcid": "0009-0005-4609-3454",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Boissieux",
+                "given": "Laurence",
+                "orcid": "0009-0004-0716-2229",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Thomas",
+                "given": "Diego",
+                "orcid": "0000-0002-8525-7133",
+                "countries": [
+                    "JP"
+                ]
+            },
+            {
+                "family": "Boyer",
+                "given": "Edmond",
+                "orcid": "0000-0002-1182-3729",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Franco",
+                "given": "Jean-S\u00e9bastien",
+                "orcid": "0000-0002-4721-1441",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Millimetric Human Surface Capture in Minutes",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "75:1\u201375:12",
+        "article_number": "75",
+        "number_of_pages": 12,
+        "abstract": "Detailed human surface capture from multiple images is an essential component for many 3D production, analysis and transmission tasks. Yet producing millimetric precision 3D models in practical time, and actually verifying their 3D accuracy in a real-world capture context, remain key challenges due to the lack of specific methods and data for these goals. We propose two complementary contributions to this end. The first one is a highly scalable neural surface radiance field approach able to achieve millimetric precision by construction, while demonstrating high compute and memory efficiency. The second one is a novel dataset, MVMannequin, of clothed mannequin geometry captured with a high resolution hand-held 3D scanner paired with calibrated multi-view images, that allows to verify the millimetric accuracy claim. Although our approach can produce such highly dense and precise geometry, we show how aggressive sparsification and optimizations of the neural surface pipeline allow estimations in minutes of computation time using only a few GB of GPU memory, while allowing for real-time millisecond neural rendering. On the basis of our framework and dataset, we show that our method achieves submillimetric accuracy and completeness for 77% of the points in less than 3 minutes of training time, with 68 viewpoints.",
+        "countries": [
+            "FR",
+            "JP"
+        ]
+    },
+    "10.1145/3680528.3687675": {
+        "doi": "10.1145/3680528.3687675",
+        "authors": [
+            {
+                "family": "Wang",
+                "given": "Xinzhe",
+                "orcid": "0009-0006-0603-4318",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Yi",
+                "given": "Ran",
+                "orcid": "0000-0003-1858-3358",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Ma",
+                "given": "Lizhuang",
+                "orcid": "0000-0003-1653-4341",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "AdR-Gaussian: Accelerating Gaussian Splatting with Adaptive Radius",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "73:1\u201373:10",
+        "article_number": "73",
+        "number_of_pages": 10,
+        "abstract": "3D Gaussian Splatting (3DGS) explicit 3D representation has achieved high-quality reconstruction and real-time rendering of complex scenes. However, the rasterization pipeline still unnecessary overhead resulting from avoidable serial Gaussian culling, and uneven load due to the distinct number of Gaussian pixels, which wider promotion and application. In order to accelerate Gaussian splatting, we propose AdR-Gaussian, which employ adaptive radius to narrow the rendering pixel range for each Gaussian, and introduces a load balancing method to minimize thread waiting time during the pixel-parallel rendering. Our contributions are threefold, achieving a rendering speed of 310% while maintaining or even better quality than the state-of-the-art. Firstly, we propose an adaptive radius, which reduces the number of affected tile through the Gaussian bounding circle, thus reducing unnecessary overhead and achieving faster rendering speed. Secondly, we axis-aligned bounding box for Gaussian splatting, which achieves a more significant reduction in ineffective expenses by accurately calculating the Gaussian size in the 2D directions. Thirdly, we a balancing algorithm for pixel thread load, which compresses the information of heavy-load pixels to reduce thread waiting time, and enhance information of light-load pixels to quality loss. Experiments on datasets demonstrate that our algorithm can significantly improve the Gaussian Splatting rendering speed.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1145/3680528.3687674": {
+        "doi": "10.1145/3680528.3687674",
+        "authors": [
+            {
+                "family": "Marin",
+                "given": "Diana",
+                "orcid": "0000-0002-8812-9719",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Parakkat",
+                "given": "Amal Dev",
+                "orcid": "0000-0002-7554-3291",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Ohrhallinger",
+                "given": "Stefan",
+                "orcid": "0000-0002-2526-7700",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Wimmer",
+                "given": "Michael",
+                "orcid": "0000-0002-9370-2663",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Oudot",
+                "given": "Steve",
+                "orcid": "0000-0003-2939-9417",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Memari",
+                "given": "Pooran",
+                "orcid": "0000-0002-8811-6889",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "SING: Stability-Incorporated Neighborhood Graph",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2024,
+        "volume": "0",
+        "number": "0",
+        "pages": "130:1\u2013130:10",
+        "article_number": "130",
+        "number_of_pages": 10,
+        "abstract": "We introduce the Stability-Incorporated Neighborhood Graph (SING), a novel density-aware structure designed to capture the intrinsic geometric properties of a point set. We improve upon the spheres-of-influence graph by incorporating additional features to offer more flexibility and control in encoding proximity information and capturing local density variations. Through persistence analysis on our proximity graph, we propose a new clustering technique and explore additional variants incorporating extra features for the proximity criterion. Alongside the detailed analysis and comparison to evaluate its performance on various datasets, our experiments demonstrate that the proposed method can effectively extract meaningful clusters from diverse datasets with variations in density and correlation. Our application scenarios underscore the advantages of the proposed graph over classical neighborhood graphs, particularly in terms of parameter tuning.",
+        "countries": [
+            "AT",
+            "FR"
+        ]
+    },
+    "10.1109/tvcg.2025.3531763": {
+        "doi": "10.1109/tvcg.2025.3531763",
+        "authors": [
+            {
+                "family": "Kou",
+                "given": "Simin",
+                "countries": [
+                    "NZ"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Fang-Lue",
+                "countries": [
+                    "NZ"
+                ]
+            },
+            {
+                "family": "Nazarenus",
+                "given": "Jakob",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Koch",
+                "given": "Reinhard",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Dodgson",
+                "given": "Neil A.",
+                "countries": [
+                    "NZ"
+                ]
+            }
+        ],
+        "title": "OmniPlane: A Recolorable Representation for Dynamic Scenes in Omnidirectional Videos",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "7",
+        "pages": "4095\u20134109",
+        "article_number": "",
+        "number_of_pages": 15,
+        "abstract": "Consumer-level omnidirectional video offers an economically viable means to create virtual reality (VR) assets, enabling users to explore and interact within a fully immersive visual environment. However, editing such videos, particularly those with 360${}^{\\circ }$\u2218 views and dynamic objects, poses significant challenges. Existing approaches to representing and manipulating omnidirectional content\u2014whether designed for typical 2D perspective imagery or panoramas\u2014often fail to adequately capture the complex spatiotemporal relationships crucial for producing high-quality, editable outputs in dynamic, panoramic settings. To overcome these challenges, we introduce OmniPlane, a novel method that leverages spherical spatiotemporal feature grids to empower the representation and editability of real-world dynamic omnidirectional environments casually captured by commodity omnidirectional cameras. OmniPlane computes spatiotemporal features by fusing vectors or matrices from each learnable spatial and spatiotemporal feature plane within a spherical coordinate system, complemented by a specifically designed weighted sampling strategy respecting the inherent spherical distribution of omnidirectional content. These learned feature planes can be flexibly decomposed into palette-based color bases. This innovative method not only enhances the representation capability of omnidirectional content and dynamics but also enables the recoloring of omnidirectional videos. Extensive experiments and a dedicated user study validate the superior performance of our proposed method in facilitating recolorable representations of dynamic omnidirectional environments.",
+        "countries": [
+            "NZ",
+            "DE"
+        ]
+    },
+    "10.1145/3687996": {
+        "doi": "10.1145/3687996",
+        "authors": [
+            {
+                "family": "Wang",
+                "given": "Sinan",
+                "orcid": "0009-0005-9322-2351",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Deng",
+                "given": "Yitong",
+                "orcid": "0000-0001-9157-1519",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Deng",
+                "given": "Molin",
+                "orcid": "0009-0000-0901-6728",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Yu",
+                "given": "Hong-Xing",
+                "orcid": "0000-0003-3093-5467",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Zhou",
+                "given": "Junwei",
+                "orcid": "0009-0006-1041-1470",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Chen",
+                "given": "Duowen",
+                "orcid": "0009-0002-6833-6312",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Komura",
+                "given": "Taku",
+                "orcid": "0000-0002-2729-5860",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Wu",
+                "given": "Jiajun",
+                "orcid": "0000-0002-4176-343X",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Zhu",
+                "given": "Bo",
+                "orcid": "0000-0002-1392-0928",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "An Eulerian Vortex Method on Flow Maps",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2024,
+        "volume": "43",
+        "number": "6",
+        "pages": "268:1\u2013268:14",
+        "article_number": "268",
+        "number_of_pages": 14,
+        "abstract": "We present an Eulerian vortex method based on the theory of flow maps to simulate the complex vortical motions of incompressible fluids. Central to our method is the novel incorporation of the flow-map transport equations for\n            line elements\n            , which, in combination with a bi-directional marching scheme for flow maps, enables the high-fidelity Eulerian advection of vorticity variables. The fundamental motivation is that, compared to impulse\n            \n              m\n            \n            , which has been recently bridged with flow maps to encouraging results, vorticity\n            \n              \u03c9\n            \n            promises to be preferable for its numerical stability and physical interpretability. To realize the full potential of this novel formulation, we develop a new Poisson solving scheme for vorticity-to-velocity reconstruction that is both efficient and able to accurately handle the coupling near solid boundaries. We demonstrate the efficacy of our approach with a range of vortex simulation examples, including leapfrog vortices, vortex collisions, cavity flow, and the formation of complex vortical structures due to solid-fluid interactions.",
+        "countries": [
+            "US",
+            "HK"
+        ]
+    },
+    "10.1016/j.cag.2025.104288": {
+        "doi": "10.1016/j.cag.2025.104288",
+        "authors": [
+            {
+                "family": "Li",
+                "given": "Ben",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Li",
+                "given": "Minqi",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Ren",
+                "given": "Jie",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Kaibing",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "VITON-DRR: Details retention virtual try-on via non-rigid registration",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "131",
+        "number": "",
+        "pages": "104288:1\u2013104288:11",
+        "number_of_pages": 11,
+        "article_number": "104288",
+        "abstract": "Image-based virtual try-on aims to fit a target garment to a specific person image and has attracted extensive research attention because of its huge application potential in the e-commerce and fashion industries. To generate high-quality try-on results, accurately warping the clothing item to fit the human body plays a significant role, as slight misalignment may lead to unrealistic artifacts in the fitting image. Most existing methods warp the clothing by feature matching and thin-plate spline (TPS). However, it often fails to preserve clothing details due to self-occlusion, severe misalignment between poses, etc. To address these challenges, this paper proposes a detail retention virtual try-on method via accurate non-rigid registration (VITON-DRR) for diverse human poses. Specifically, we reconstruct a human semantic segmentation using a dual-pyramid-structured feature extractor. Then, a novel Deformation Module is designed for extracting the cloth key points and warping them through an accurate non-rigid registration algorithm. Finally, the Image Synthesis Module is designed to synthesize the deformed garment image and generate the human pose information adaptively. Compared with traditional methods, the proposed VITON-DRR can make the deformation of fitting images more accurate and retain more garment details. The experimental results demonstrate that the proposed method performs better than state-of-the-art methods. Our code is publicly available at https://github.com/minqili/VITON-DRR-main.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1145/3721238.3730633": {
+        "doi": "10.1145/3721238.3730633",
+        "authors": [
+            {
+                "family": "Wu",
+                "given": "Liwen",
+                "orcid": "0009-0007-2773-2032",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Luan",
+                "given": "Fujun",
+                "orcid": "0000-0001-5926-6266",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Ha\u0161an",
+                "given": "Milo\u0161",
+                "orcid": "0000-0003-3808-6092",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Ramamoorthi",
+                "given": "Ravi",
+                "orcid": "0000-0003-3993-5789",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Position-Normal Manifold for Efficient Glint Rendering on High-Resolution Normal Maps",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "134:1\u2013134:11",
+        "article_number": "134",
+        "number_of_pages": 11,
+        "abstract": "Detailed microstructures on specular objects often exhibit intriguing glinty patterns under high-frequency lighting, which is challenging to render using a conventional normal-mapped BRDF. In this paper, we present a manifold-based formulation of the glint normal distribution functions (NDF) that precisely captures the surface normal distributions over queried footprints. The manifold-based formulation transfers the integration for the glint NDF construction to a problem of mesh intersections. Compared to previous works that rely on complex numerical approximations, our integral solution is exact and much simpler to compute, which also allows an easy adaptation of a mesh clustering hierarchy to accelerate the NDF evaluation of large footprints. Our performance and quality analysis shows that our NDF formulation achieves similar glinty appearance compared to the baselines but is an order of magnitude faster. Within this framework, we further present a novel derivation of analytical shadow-masking for normal-mapped diffuse surfaces\u2014a component that is often ignored in previous works.",
+        "countries": [
+            "US"
         ]
     }
 }

@@ -1,12 +1,267 @@
 [
     {
         "is_vis": true,
+        "title": "CausalPrism: A Visual Analytics Approach for Subgroup-based Causal Heterogeneity Exploration",
+        "doi": "not_assigned_yet",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-bxdgfw-causalprism",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/bxdgfw/CausalPrism",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:492947d14d2d467a23fb5e69a6a4dbee6064d1ac;origin=https://github.com/bxdgfw/CausalPrism",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-bxdgfw-causalprism/representative.png",
+        "authors": "Xingyu Liu, Jiehui Zhou, Xumeng Wang, Kam-Kwai Wong, Wei Zhang, Juntian Zhang, Minfeng Zhu, Wei Chen",
+        "type": "keyword"
+    },
+    {
+        "is_vis": false,
+        "title": "iSeg: Interactive 3D Segmentation via Interactive Attention",
+        "doi": "10.1145/3680528.3687605",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-threedle-iseg",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/threedle/iSeg",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:ed073d05c3c02fbe2d76b9fe4602db4071dfdb02;origin=https://github.com/threedle/iSeg",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-threedle-iseg/representative.png",
+        "authors": "Itai Lang, Fei Xu, Dale Decatur, Sudarshan Babu, Rana Hanocka"
+    },
+    {
+        "is_vis": false,
+        "title": "VITON-DRR: Details Retention Virtual Try-on via Non-rigid Registration",
+        "doi": "10.1016/j.cag.2025.104288",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-minqili-viton-drr-main-2025-05-30t06-20-58-161z",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/minqili/VITON-DRR-main",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:8b2f22929694ed4ea88edec6b4ee6e944122ff0b;origin=https://github.com/minqili/VITON-DRR-main",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-minqili-viton-drr-main-2025-05-30t06-20-58-161z/representative.png",
+        "authors": "Ben Li, Minqi Li, Jie Ren, Kaibing Zhang"
+    },
+    {
+        "is_vis": true,
+        "title": "VisTaxa: Developing a Taxonomy of Historical Visualizations",
+        "doi": "10.1109/tvcg.2025.3567132",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-oldvis-image-taxonomy-labeler",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/oldvis/image-taxonomy-labeler",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:8d2deeb79dd1997c6ecb7abbd4b2a0faf323d0f1;origin=https://github.com/oldvis/image-taxonomy-labeler",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-oldvis-image-taxonomy-labeler/representative.png",
+        "authors": "Yu Zhang, Xinyue Chen, Weili Zheng, Yuhan Guo, Guozheng Li, Siming Chen, Xiaoru Yuan",
+        "type": "PacificVis TVCG"
+    },
+    {
+        "is_vis": false,
+        "title": "Position-Normal Manifold for Efficient Glint Rendering on High-Resolution Normal Maps",
+        "doi": "10.1145/3721238.3730633",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-lwwu2-glint24",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/lwwu2/glint24",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a4d3809c667aa48b901c5456f900921543ac6dc7;origin=https://github.com/lwwu2/glint24",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-lwwu2-glint24/representative.png",
+        "authors": "Liwen Wu, Fujun Luan, Milo\u0161 Ha\u0161an, Ravi Ramamoorthi"
+    },
+    {
+        "is_vis": false,
+        "title": "From Sim-to-Real: Toward General Event-based Low-light Frame Interpolation with Per-scene Optimization",
+        "doi": "10.1145/3680528.3687649",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-openimaginglab-sim2real-git",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/OpenImagingLab/Sim2Real.git",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:2653e285a5b2de61f25e5960c7a50082f6d71c80;origin=https://github.com/OpenImagingLab/Sim2Real.git",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-openimaginglab-sim2real-git/representative.png",
+        "authors": "Ziran Zhang, Yongrui Ma, Yueting Chen, Feng Zhang, Jinwei Gu, Tianfan Xue, Shi Guo"
+    },
+    {
+        "is_vis": false,
+        "title": "Volume Scattering Probability Guiding",
+        "doi": "10.1145/3687982",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-kehanxuuu-vspg-rendering-scripts",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/kehanxuuu/vspg-rendering-scripts",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:8ba577b9665e170dafd37181c23d28a7d398359c;origin=https://github.com/kehanxuuu/vspg-rendering-scripts",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-kehanxuuu-vspg-rendering-scripts/representative.png",
+        "authors": "Kehan Xu, Sebastian Herholz, Marco Manzi, Marios Papas, Markus Gross"
+    },
+    {
+        "is_vis": false,
+        "title": "Taming 3DGS: High-Quality Radiance Fields with Limited Resources",
+        "doi": "10.1145/3680528.3687694",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-humansensinglab-taming-3dgs-2025-03-18t21-23-53-108z",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/humansensinglab/taming-3dgs",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:25584b36d19cbe9eb4d34e70a6b3c32ad2b53982;origin=https://github.com/humansensinglab/taming-3dgs",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-humansensinglab-taming-3dgs-2025-03-18t21-23-53-108z/representative.png",
+        "authors": "SASWAT SUBHAJYOTI MALLICK, RAHUL GOEL, BERNHARD KERBL, FRANCISCO VICENTE CARRASCO, MARKUS STEINBERGER, FERNANDO DE LA TORRE"
+    },
+    {
+        "is_vis": false,
+        "title": "Surface Reconstruction Using Rotation Systems",
+        "doi": "10.1145/3687956",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-cuirq3-rsr",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/cuirq3/RsR",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:2871576b9995d030aa4e0f14229e557989cf3435;origin=https://github.com/cuirq3/RsR",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-cuirq3-rsr/representative.png",
+        "authors": "Ruiqi Cui, Emil Toftegaard G\u00e6de, Eva Rotenberg, Leif Kobbelt, J. Andreas B\u00e6rentzen"
+    },
+    {
+        "is_vis": false,
+        "title": "GaussianHead: High-fidelity Head Avatars with Learnable Gaussian Derivation",
+        "doi": "10.1109/tvcg.2025.3561794",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-chiehwangs-gaussian-head-2025-04-15t05-42-33-320z",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/chiehwangs/gaussian-head",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:357e4040d5ee98f26ed85da2c50cecc512901df4;origin=https://github.com/chiehwangs/gaussian-head",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-chiehwangs-gaussian-head-2025-04-15t05-42-33-320z/representative.png",
+        "authors": "Jie Wang, Jiu-Cheng Xie, Xianyan Li, Feng Xu, Chi-Man Pun, Hao Gao"
+    },
+    {
+        "is_vis": false,
+        "title": "elaTCSF: A Temporal Contrast Sensitivity Function for Flicker Detection and Modeling Variable Refresh Rate Flicker",
+        "doi": "10.1145/3680528.3687586",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-gfxdisp-elatcsf",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/gfxdisp/elaTCSF",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:6a16d41e7bca2315e20a32b511c18ca1bc33e405;origin=https://github.com/gfxdisp/elaTCSF",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-gfxdisp-elatcsf/representative.png",
+        "authors": "Yancheng Cai, Ali Bozorgian, Maliha Ashraf, Robert Wanat, Rafa\u0142 K. Mantiuk"
+    },
+    {
+        "is_vis": false,
+        "title": "Online Neural Denoising with Cross-Regression for Interactive Rendering",
+        "doi": "10.1145/3687938",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-cglab-gist-cross-denoiser",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/CGLab-GIST/cross-denoiser",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:357db656dc3f97b784664b9aa9b18ebb403e079c;origin=https://github.com/CGLab-GIST/cross-denoiser",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-cglab-gist-cross-denoiser/representative.png",
+        "authors": "Hajin Choi, Seokpyo Hong, Inwoo Ha, Nahyup Kang, Bochang Moon"
+    },
+    {
+        "is_vis": false,
+        "title": "ReorderBench: A Benchmark for Matrix Reordering",
+        "doi": "10.1145/3687938",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reorderbench-reorderbench-code",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/reorderbench/reorderbench_code",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:939bff6527c3f7d588507ff4d5a2c5736951e1d9;origin=https://github.com/reorderbench/reorderbench_code",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reorderbench-reorderbench-code/representative.png",
+        "authors": "Jiangning Zhu, Zheng Wang, Zhiyang Shen, Lai Wei, Fengyuan Tian, Mengchen Liu, Shixia Liu"
+    },
+    {
+        "is_vis": false,
+        "title": "DrawingSpinUp: 3D Animation from Single Character Drawings",
+        "doi": "10.1145/3680528.3687593",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-lordliang-drawingspinup",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/LordLiang/DrawingSpinUp",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:699d3e795c97ba7dcfadaa00d24facf3330f137f;origin=https://github.com/LordLiang/DrawingSpinUp",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-lordliang-drawingspinup/representative.png",
+        "authors": "Jie Zhou, Chufeng Xiao, Miu-Ling Lam, Hongbo Fu"
+    },
+    {
+        "is_vis": false,
+        "title": "Learning Based Toolpath Planner on Diverse Graphs for 3D Printing",
+        "doi": "10.1145/3687933",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-yuminghuang1995-rl3dptoolpathplanner",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/yuminghuang1995/RL3DPToolpathPlanner",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:127c589bbb43a926c129e29c25a3793468ce12dd;origin=https://github.com/yuminghuang1995/RL3DPToolpathPlanner",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-yuminghuang1995-rl3dptoolpathplanner/representative.png",
+        "authors": "Yuming Huang, Yuhu Guo, Renbo Su, Xingjian Han, Junhao Ding, Tianyu Zhang, Tao Liu, Weiming Wang, Guoxin Fang, Xu Song, Emily Whiting, Charlie C. L. Wang"
+    },
+    {
+        "is_vis": false,
+        "title": "A Statistical Approach to Monte Carlo Denoising",
+        "doi": "10.1145/3680528.3687591",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-cg-tuwien-statmc",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/cg-tuwien/StatMC",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:c7f9657697068a22017dee50570f58905d35fcc7;origin=https://github.com/cg-tuwien/StatMC",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-cg-tuwien-statmc/representative.png",
+        "authors": "Hiroyuki Sakai, Christian Freude, Thomas Auzinger, David Hahn, Michael Wimmer"
+    },
+    {
+        "is_vis": false,
+        "title": "Gaussian Opacity Fields: Efficient Adaptive Surface Reconstruction in Unbounded Scenes",
+        "doi": "10.1145/3687937",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-autonomousvision-gaussian-opacity-fields",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/autonomousvision/gaussian-opacity-fields",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:fe2d196b80b6e31b22b1937bfedcda7a8e539042;origin=https://github.com/autonomousvision/gaussian-opacity-fields",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-autonomousvision-gaussian-opacity-fields/representative.png",
+        "authors": "Zehao Yu, Torsten Sattler, Andreas Geiger"
+    },
+    {
+        "is_vis": false,
+        "title": "StyleCrafter: Taming Stylized Video Diffusion with Reference-Augmented Adapter Learning",
+        "doi": "10.1145/3687975",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-gongyeliu-stylecrafter",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/GongyeLiu/StyleCrafter",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:8999f644dbc9d62c0db85e7ecb61ddfb5df5be2b;origin=https://github.com/GongyeLiu/StyleCrafter",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-gongyeliu-stylecrafter/representative.png",
+        "authors": "Gongye Liu, Menghan Xia, Yong Zhang, Haoxin Chen, Jinbo Xing, Yibo Wang, Xintao Wang, Ying Shan, Yujiu Yang"
+    },
+    {
+        "is_vis": false,
+        "title": "Millimetric Human Surface Capture in Minutes",
+        "doi": "10.1145/3680528.3687690",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-gitlab-inria-fr-projects-morpheo-millimetrichumans",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://gitlab.inria.fr/projects-morpheo/millimetrichumans",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:d075e4d0e24f130f2d870f13694018ee3af79094;origin=https://gitlab.inria.fr/projects-morpheo/millimetrichumans",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-gitlab-inria-fr-projects-morpheo-millimetrichumans/representative.png",
+        "authors": "Briac Toussaint, Laurence Boissieux, Diego Thomas, Edmond Boyer, Jean-S\u00e9bastien Franco"
+    },
+    {
+        "is_vis": false,
+        "title": "AdR-Gaussian: Accelerating Gaussian Splatting with Adaptive Radius",
+        "doi": "10.1145/3680528.3687675",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-hiroxzwang-adrgaussian",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/hiroxzwang/adrgaussian",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:17753903a40c95aa3d754dc2b9f2f5bf29384ba2;origin=https://github.com/hiroxzwang/adrgaussian",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-hiroxzwang-adrgaussian/representative.png",
+        "authors": "Xinzhe Wang, Ran Yi, Lizhuang Ma"
+    },
+    {
+        "is_vis": false,
+        "title": "SING: Stability-Incorporated Neighborhood Graph",
+        "doi": "10.1145/3680528.3687674",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-di-marin-sing",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/di-marin/SING",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:fb89c494804478c4e9869b463eca46a420a2dc1d;origin=https://github.com/di-marin/SING",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-di-marin-sing/representative.png",
+        "authors": "Diana Marin, Amal Dev Parakkat, Stefan Ohrhallinger, Michael Wimmer, Steve Oudot, Pooran Memari"
+    },
+    {
+        "is_vis": false,
+        "title": "OmniPlane: A Recolorable Representation for Dynamic Scenes in Omnidirectional Videos",
+        "doi": "10.1109/tvcg.2025.3531763",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-siminkoux-omniplane-official-implementation",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/SiminKoux/OmniPlane-official-implementation",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a75600fd37cb829c4a80824b27c2fde824c4897f;origin=https://github.com/SiminKoux/OmniPlane-official-implementation",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-siminkoux-omniplane-official-implementation/representative.png",
+        "authors": "Simin Kou, Fang-Lue Zhang, Jakob Nazarenus, Reinhard Koch, Neil A. Dodgson"
+    },
+    {
+        "is_vis": false,
+        "title": "An Eulerian Vortex Method on Flow Maps",
+        "doi": "10.1145/3687996",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-pfm-gatech-an-eulerian-vortex-method-on-flow-maps-git",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/pfm-gatech/An-Eulerian-Vortex-Method-on-Flow-Maps.git",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:4c3055fd01a8a1f9bc900a7a6ec4f3729f5e1d30;origin=https://github.com/pfm-gatech/An-Eulerian-Vortex-Method-on-Flow-Maps.git",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-pfm-gatech-an-eulerian-vortex-method-on-flow-maps-git/representative.png",
+        "authors": "Sinan Wang, Yitong Deng, Molin Deng, Hong-Xing Yu, Junwei Zhou, Duowen Chen, Taku Komura, Jiajun Wu, Bo Zhu"
+    },
+    {
+        "is_vis": true,
         "title": "MAICO: A Visualization Design Study on AI-Assisted Music Composition",
         "doi": "10.1109/tvcg.2025.3539779",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-visvar-maicov2",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/visvar/MAICoV2",
-        "repo_archive_url": "",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:84eb648fcd5934750db8142ba8abddc0f90bce52;origin=https://github.com/visvar/MAICoV2",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-visvar-maicov2/representative.png",
         "authors": "Simeon Rau, Frank Heyen, Benedikt Brachtel, Michael Sedlmair",
         "type": "journal pres. @ IEEE VIS"
@@ -28,8 +283,8 @@
         "doi": "10.1145/3687764",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-liris-origami-differentiableowenscrambling-git-2025-02-19t07-42-40-756z",
         "journal": "ACM Transactions on Graphics (TOG)",
-        "repo_url": "https://github.com/liris-origami/DifferentiableOwenScrambling.git",
-        "repo_archive_url": "",
+        "repo_url": "https://github.com/liris-origami/DifferentiableOwenScrambling",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/liris-origami/DifferentiableOwenScrambling",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-liris-origami-differentiableowenscrambling-git-2025-02-19t07-42-40-756z/representative.png",
         "authors": "Bastien Doignies, David Coeurjolly, Nicolas Bonneel, Julie Digne, Jean-Claude Iehl, Victor Ostromoukhov"
     },
@@ -113,7 +368,7 @@
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:5c760c247cec42eef2064c5ff8a2fde4e71dfb7a;origin=https://github.com/UniStuttgart-VISUS/vof-flow",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-unistuttgart-visus-vof-flow/representative.png",
         "authors": "Moritz Heinemann, Johanna Potyka, Kathrin Schulte, Filip Sadlo, Thomas Ertl",
-        "type": "keyword"
+        "type": "journal pres. @ EuroVis"
     },
     {
         "is_vis": true,
@@ -145,7 +400,7 @@
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-remoshen-canisstudio-plus-git-2024-11-08t17-03-00-901z",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/RemoShen/CanisStudio-Plus.git",
-        "repo_archive_url": "",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/RemoShen/CanisStudio-Plus.git",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-remoshen-canisstudio-plus-git-2024-11-08t17-03-00-901z/representative.png",
         "authors": "Yuancheng Shen, Yue Zhao, Tong Ge, Haoyan Shi, Bongshin Lee, Yunhai Wang",
         "type": "manual"
@@ -204,7 +459,7 @@
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:359a858227b2c5cfb5ebec784efdf4d872d9c737;origin=https://github.com/XinChen-SDU/Visualization-Aware-Illumination-for-Density-Plots",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-xinchen-sdu-visualization-aware-illumination-for-density-plots-2024-11-13t02-03-15-674z/representative.png",
         "authors": "Xin Chen, Yunhai Wang, Huaiwei Bao, Kecheng Lu, Jaemin Jo, Chi-Wing Fu, Jean-Daniel Fekete",
-        "type": "keyword"
+        "type": "journal pres. @ IEEE VIS"
     },
     {
         "is_vis": false,

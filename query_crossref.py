@@ -32,6 +32,7 @@ def generateEntryForDoi(doi, apiKey = ''):
     dataItem["journal"] = re.sub(pattern=r"SIGGRAPH Asia \d\d\d\d Conference Papers", repl=r"ACM SIGGRAPH Asia Conference Papers", string=dataItem["journal"])
     dataItem["journal"] = re.sub(pattern=r"ACM SIGGRAPH \d\d\d\d Conference Proceedings", repl=r"ACM SIGGRAPH Conference Papers", string=dataItem["journal"])
     dataItem["journal"] = re.sub(pattern=r"Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers '\d\d", repl=r"ACM SIGGRAPH Conference Papers", string=dataItem["journal"])
+    dataItem["journal"] = re.sub(pattern=r"Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers", repl=r"ACM SIGGRAPH Conference Papers", string=dataItem["journal"])
     dataItem["publication_year"] = values["published"]["date-parts"][0][0]
     if "volume" in values.keys(): dataItem["volume"] = values["volume"]
     else: dataItem["volume"] = ""

@@ -47,14 +47,14 @@ These datasets are used to be able to analyze the replicability with respect to 
 * list of journal presentations at IEEE VIS (currently up to 2024 conference) in CSV format as [`input/vis_journal_presentations.csv`](input/vis_journal_presentations.csv)
     * in addition to the list with papers presented at IEEE VIS in the past, one can also add planned presentation
     * this is currently hard-coded in the [`replicability.py`](replicability.py) script in the `markVisPapersByFutureVISPresentation` function
-* list of EuroVis full papers (until 2024 conference) in XLSX format as [`input/EuroVisFull_CGF.xlsx`](input/EuroVisFull_CGF.xlsx)
-* list of EuroVis STAR papers (until 2024 conference) in XLSX format as [`input/EuroVisSTARS_CGF.xlsx`](input/EuroVisSTARS_CGF.xlsx)
-* list of EuroVis full papers from 2024 onward (currently until 2024 conference) in CSV format as [`input/eurovis.csv`](input/eurovis.csv)
-* list of journal presentations at EuroVis (currently until 2024 conference) in CSV format as [`input/eurovis_journal_presentations.csv`](input/eurovis_journal_presentations.csv)
-* list of TVCG papers from IEEE PacificVis (i.e., accepted PacificVis submissions that were published in TVCG; currently until 2024 conference) in CSV format as [`input/pacificvis_tvcg.csv`](input/pacificvis_tvcg.csv)
-* list of journal presentations at PacificVis (currently until 2024 conference) in CSV format as [`input/pacificvis_journal_presentations.csv`](input/pacificvis_journal_presentations.csv)
-* list of VCBM papers that are journal papers or appeared in a VCBM special issue call in C&G (currently until 2024 conference) in CSV format as [`input/vcbm_cag.csv`](input/vcbm_cag.csv)
-* lists of C&G special issue papers on visualization venues in CSV format; currently EnvirVis (currently until 2021 conference; [`input/envirvis_cag.csv`](input/envirvis_cag.csv)), EuroVA (currently until 2024 conference; [`input/eurova_cag.csv`](input/eurova_cag.csv)), and MolVA (currently until 2022 conference; [`input/molva_cag.csv`](input/input/molva_cag.csv)), 
+* list of EuroVis full papers (until the 2023 conference) in XLSX format as [`input/EuroVisFull_CGF.xlsx`](input/EuroVisFull_CGF.xlsx)
+* list of EuroVis STAR papers (until the 2023 conference) in XLSX format as [`input/EuroVisSTARS_CGF.xlsx`](input/EuroVisSTARS_CGF.xlsx)
+* list of EuroVis full and STAR papers from 2024 onward (currently until the 2025 conference) in CSV format as [`input/eurovis.csv`](input/eurovis.csv)
+* list of journal presentations at EuroVis (currently until the 2025 conference) in CSV format as [`input/eurovis_journal_presentations.csv`](input/eurovis_journal_presentations.csv)
+* list of TVCG papers from IEEE PacificVis (i.e., accepted PacificVis submissions that were published in TVCG; currently until the 2025 conference) in CSV format as [`input/pacificvis_tvcg.csv`](input/pacificvis_tvcg.csv)
+* list of journal presentations at PacificVis (currently until the 2025 conference) in CSV format as [`input/pacificvis_journal_presentations.csv`](input/pacificvis_journal_presentations.csv)
+* list of VCBM papers that are journal papers or appeared in a VCBM special issue call in C&G (currently until the 2024 conference) in CSV format as [`input/vcbm_cag.csv`](input/vcbm_cag.csv)
+* lists of C&G special issue papers on visualization venues in CSV format; currently EnvirVis (currently until the 2021 conference; [`input/envirvis_cag.csv`](input/envirvis_cag.csv)), EuroVA (currently until the 2024 conference; [`input/eurova_cag.csv`](input/eurova_cag.csv)), MolVA (currently until the 2022 conference; [`input/molva_cag.csv`](input/input/molva_cag.csv)), and CGVC (currently until the 2024 conference; [`input/cgvc_cag.csv`](input/input/molva_cag.csv)), 
 * list of countries with their two-letter codes in CSV format as [`input/country-names.csv`](input/country-names.csv) (from [GitHub: lukes/ISO-3166-Countries-with-Regional-Codes](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes/blob/master/all/all.csv))
 * Vega's color map as [`palettes.js`](palettes.js) (local copy of https://raw.githubusercontent.com/vega/vega/v5.21.0/packages/vega-scale/src/palettes.js)
 

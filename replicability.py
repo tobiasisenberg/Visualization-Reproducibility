@@ -18,13 +18,13 @@ import shutil
 
 # settings of how to do things and what extra stuff to do
 useLocalDataOnly = True # FIXME: should be True for submission
-exportVisualizations = True
-doNameChecking = False
-doAbstractCheckingForKeywords = False
-doVerifyCountryInformation = True
-doPrintTVCGInPressDetails = False
-doExportNumbersForPaper = True
-doCopyPlotsAccordingToFugureNumbers = True
+exportVisualizations = True # ehether to create visualizations based on the data or not
+doNameChecking = False # run some heuristics to check if the names make sense
+doAbstractCheckingForKeywords = False # check for keywords in the abstract as well (otherwise only in title)
+doVerifyCountryInformation = True # check of the country information is provided
+doPrintTVCGInPressDetails = False # print out a list of the IEEE papers that are currently in press still (for a report to the TVCG EiC)
+doExportNumbersForPaper = True # generate a LaTeX file that records all kinds of collected statistics, which is needed to for later compiling the paper
+doCopyPlotsAccordingToFigureNumbers = True # copy the visualizations into extra folder named according to the figure numbers from the paper
 downloadAcmFromCrossref = True # if True, then use the Crossref API to get ACM metadata, otherwise the acmdownload tool; FIXME: should be True for submission
 
 # other configuration
@@ -56,7 +56,7 @@ if pathOfTheScript != "": os.chdir(pathOfTheScript)
 #####################################
 if (graphOutputSubdirectury != "") and not (os.path.isdir(graphOutputSubdirectury)):
     os.mkdir(graphOutputSubdirectury) 
-if (doCopyPlotsAccordingToFugureNumbers) and (paperFiguresOutputSubdirectury != "") and not (os.path.isdir(paperFiguresOutputSubdirectury)):
+if (doCopyPlotsAccordingToFigureNumbers) and (paperFiguresOutputSubdirectury != "") and not (os.path.isdir(paperFiguresOutputSubdirectury)):
     os.mkdir(paperFiguresOutputSubdirectury) 
 if (dataOutputSubdirectury != "") and not (os.path.isdir(dataOutputSubdirectury)):
     os.mkdir(dataOutputSubdirectury) 
@@ -205,7 +205,9 @@ def markVisPapersByFutureVISPresentation(paperList):
         if  (
             ("10.1109/tvcg.2024.3514858" in paper["doi"]) or
             ("10.1109/tvcg.2024.3520208" in paper["doi"]) or
-            ("10.1109/tvcg.2025.3539779" in paper["doi"])
+            ("10.1109/tvcg.2025.3539779" in paper["doi"]) or
+            ("10.1109/tvcg.2024.3491504" in paper["doi"]) or
+            ("10.1109/tvcg.2024.3495695" in paper["doi"])
             ):
             paper["is_vis"] = True                     # will be presented at VIS 2025
             paper["type"] = "journal pres. @ IEEE VIS" # also hack the paper type
@@ -641,6 +643,14 @@ with open('input/molva_cag.csv', 'r', encoding="utf-8") as csvfile:
         cagVisSpecialIssueDois.append(row['doi'].lower())
         year = int(row['conf. year'])
         if (year > cagVisSpecialIssueMostRecentYear): cagVisSpecialIssueMostRecentYear = year
+with open('input/cgvc_cag.csv', 'r', encoding="utf-8") as csvfile:
+    # create a CSV reader object
+    reader = csv.DictReader(csvfile)
+    # iterate over the rows
+    for row in reader:
+        cagVisSpecialIssueDois.append(row['doi'].lower())
+        year = int(row['conf. year'])
+        if (year > cagVisSpecialIssueMostRecentYear): cagVisSpecialIssueMostRecentYear = year
 
 # read the dois of the proper EuroVis papers (as xlsx file)
 euroVisPaperDois = []
@@ -742,7 +752,8 @@ else:
             doi = doi.replace("https://dl.acm.org/doi/", "")
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
             # please note to replace the '%20' in the Google search links with a ' ' (manually or via a .replace("%20", " ") call as in the examples); otherwise the replacement does not work
-            # doi = doi.replace("http://www.google.com/search?q=DiffFit:%20Visually-Guided%20Differentiable%20Fitting%20of%20Molecule%20Structures%20to%20a%20Cryo-EM%20Map".replace("%20", " "), "10.1109/TVCG.2024.3456404")
+            doi = doi.replace("http://www.google.com/search?q=VITON-DRR:%20Details%20Retention%20Virtual%20Try-on%20via%20Non-rigid%20Registration".replace("%20", " "), "10.1016/j.cag.2025.104288")
+            doi = doi.replace("http://www.google.com/search?q=Position-Normal%20Manifold%20for%20Efficient%20Glint%20Rendering%20on%20High-Resolution%20Normal%20Maps".replace("%20", " "), "10.1145/3721238.3730633")
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()
@@ -2105,6 +2116,18 @@ if exportVisualizations:
                 if paperDoi in replicableDois: visVenuesAndReplicability[venue][year]["is_replicable"] += 1
                 else:  visVenuesAndReplicability[venue][year]["not_replicable"] += 1
         csvfile.close()
+    with open('input/cgvc_cag.csv', 'r', encoding="utf-8") as csvfile:
+        venue = venues[7]
+        # create a CSV reader object
+        reader = csv.DictReader(csvfile)
+        # iterate over the rows
+        for row in reader:
+            paperDoi = row['doi'].lower()
+            year = int(row['conf. year'])
+            if year >= startYear and year <= endYear:
+                if paperDoi in replicableDois: visVenuesAndReplicability[venue][year]["is_replicable"] += 1
+                else:  visVenuesAndReplicability[venue][year]["not_replicable"] += 1
+        csvfile.close()
 
     venues = ['IEEE VIS', 'journal pres. @ IEEE VIS', 'EuroVis', 'journal pres. @ EuroVis', 'PacificVis TVCG', 'journal pres. @ PacificVis', 'VCBM C&G', 'C&G special issue']
     colors = generateColorArrayFromColorScheme("tableau10paired_lightened", lightenFactor=0.5)
@@ -3007,7 +3030,7 @@ if doExportNumbersForPaper:
     with open(paperKeywordPapersOutputFile, "w") as text_file:
         text_file.write(paperKeywordPapersOutputString)
 
-if (doCopyPlotsAccordingToFugureNumbers) and (exportVisualizations):
+if (doCopyPlotsAccordingToFigureNumbers) and (exportVisualizations):
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure01.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_all-by-journal-linegraph.pdf', paperFiguresOutputSubdirectury + 'figure02.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_all-by-journal_aggregated-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure03.pdf')
