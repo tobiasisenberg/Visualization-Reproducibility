@@ -19894,13 +19894,13 @@
         ],
         "title": "Voxel-Mesh Hybrid Representation for Real-Time View Synthesis by Meshing Density Field",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "9",
+        "pages": "6241\u20136252",
         "article_number": "",
-        "number_of_pages": 13,
-        "abstract": "The neural radiance fields (NeRF) have emerged as a prominent methodology for synthesizing realistic images of novel views. While neural radiance representations based on voxels or mesh individually offer distinct advantages, excelling in either rendering quality or speed, each has limitations in the other aspect. In response, we propose a hybrid representation named Vosh, seamlessly combining both voxel and mesh components in hybrid rendering for view synthesis. Vosh is meticulously crafted by optimizing the voxel grid based on neural rendering, strategically meshing a portion of the volumetric density field to surface. Therefore, it excels in fast rendering scenes with simple geometry and textures through its mesh component, while simultaneously enabling high-quality rendering in intricate regions by leveraging voxel component. The flexibility of Vosh is showcased through the ability to adjust hybrid ratios, providing users the ability to control the balance between rendering quality and speed based on flexible usage. Experimental results demonstrate that our method achieves commendable trade-off between rendering quality and speed, and notably has real-time performance on mobile devices. The interactive web demo and code are available at https://zyyzyy06.github.io/Vosh.",
+        "number_of_pages": 12,
+        "abstract": "The neural radiance fields (NeRF) have emerged as a prominent methodology for synthesizing realistic images of novel views. While neural radiance representations based on voxels or mesh individually offer distinct advantages, excelling in either rendering quality or speed, each has limitations in the other aspect. In response, we propose a hybrid representation named Vosh, seamlessly combining both voxel and mesh components in hybrid rendering for view synthesis. Vosh is meticulously crafted by optimizing the voxel grid based on neural rendering, strategically meshing a portion of the volumetric density field to surface. Therefore, it excels in fast rendering scenes with simple geometry and textures through its mesh component, while simultaneously enabling high-quality rendering in intricate regions by leveraging voxel component. The flexibility of Vosh is showcased through the ability to adjust hybrid ratios, providing users the ability to control the balance between rendering quality and speed based on flexible usage. Experimental results demonstrate that our method achieves commendable trade-off between rendering quality and speed, and notably has real-time performance on mobile devices.",
         "countries": [
             "CN"
         ]
@@ -21501,6 +21501,533 @@
         "number_of_pages": 11,
         "abstract": "Detailed microstructures on specular objects often exhibit intriguing glinty patterns under high-frequency lighting, which is challenging to render using a conventional normal-mapped BRDF. In this paper, we present a manifold-based formulation of the glint normal distribution functions (NDF) that precisely captures the surface normal distributions over queried footprints. The manifold-based formulation transfers the integration for the glint NDF construction to a problem of mesh intersections. Compared to previous works that rely on complex numerical approximations, our integral solution is exact and much simpler to compute, which also allows an easy adaptation of a mesh clustering hierarchy to accelerate the NDF evaluation of large footprints. Our performance and quality analysis shows that our NDF formulation achieves similar glinty appearance compared to the baselines but is an order of magnitude faster. Within this framework, we further present a novel derivation of analytical shadow-masking for normal-mapped diffuse surfaces\u2014a component that is often ignored in previous works.",
         "countries": [
+            "US"
+        ]
+    },
+    "10.1111/cgf.70080": {
+        "doi": "10.1111/cgf.70080",
+        "authors": [
+            {
+                "family": "Argudo",
+                "given": "Oscar",
+                "orcid": "0000-0003-3943-1839",
+                "countries": [
+                    "ES"
+                ]
+            },
+            {
+                "family": "Gu\u00e9rin",
+                "given": "Eric",
+                "orcid": "0000-0003-1388-2834",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Schott",
+                "given": "Hugo",
+                "orcid": "0000-0003-1281-977X",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Galin",
+                "given": "Eric",
+                "orcid": "0000-0002-5946-4112",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Terrain descriptors for landscape synthesis, analysis and simulation",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 2025,
+        "volume": "44",
+        "number": "2",
+        "pages": "e70080:1\u2013e70080:29",
+        "article_number": "e70080",
+        "number_of_pages": 29,
+        "abstract": "Synthetic landscape generation is an active research area within Computer Graphics. Algorithms for terrain synthesis and ecosystem simulations often rely on simple descriptors such as slope, light accessibility, and drainage area. Typically, the results are assessed from a perceptual standpoint, focusing primarily on visual plausibility. Other fields, such as Geomorphology and Earth Sciences, have already proposed several analytical descriptors to measure various terrain properties. This work aims to bridge the gap between these disciplines and Computer Graphics. We provide a comprehensive review of commonly used terrain metrics that may be relevant for landscape synthesis, analysis, or simulations. Additionally, we compare the approaches used in Computer Graphics to see if these metrics, or similar ones, have already been introduced. Moreover, we report feedback from a preliminary study conducted with a group of artists to evaluate the potential applications of previously unused metrics. By implementing all these metrics, we enable performance comparisons. Together with the provided correlation matrix, this helps identify instances where a simpler and faster metric can serve as a proxy for a more computationally intensive one.",
+        "countries": [
+            "ES",
+            "FR"
+        ]
+    },
+    "10.1145/3721238.3730763": {
+        "doi": "10.1145/3721238.3730763",
+        "authors": [
+            {
+                "family": "Weiss",
+                "given": "Ben",
+                "orcid": "0009-0001-0395-0242",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Fast Isotropic Median Filtering",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "137:1\u2013137:10",
+        "article_number": "137",
+        "number_of_pages": 10,
+        "abstract": "Median filtering is a cornerstone of computational image processing. It provides an effective means of image smoothing, with minimal blurring or softening of edges, invariance to monotonic transformations such as gamma adjustment, and robustness to noise and outliers. However, known algorithms have all suffered from practical limitations: the bit depth of the image data, the size of the filter kernel, or the kernel shape itself. Square-kernel implementations tend to produce streaky cross-hatching artifacts, and nearly all known efficient algorithms are in practice limited to square kernels. We present for the first time a method that overcomes all of these limitations. Our method operates efficiently on arbitrary bit-depth data, arbitrary kernel sizes, and arbitrary convex kernel shapes, including circular shapes.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.1016/j.cag.2025.104369": {
+        "doi": "10.1016/j.cag.2025.104369",
+        "authors": [
+            {
+                "family": "Yildiz",
+                "given": "Tolga",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Akleman",
+                "given": "Ergun",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Triply periodic mesh-based linked-structures: Design and construction of a family of periodic links based on Bravais lattices and corresponding Wigner-Seitz cells",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104369:1\u2013104369:11",
+        "number_of_pages": 11,
+        "article_number": "104369",
+        "abstract": "In this paper, we present a constructive framework for designing a broad family of triply periodic linked-structures derived from polygonal meshes embedded in three dimensions. A linked-structure consists of closed 3D curves\u2014called face-cycles\u2014which are derived by transforming the faces of a 2-manifold, non-manifold, or 3-manifold mesh into unknotted loops represented as quadratic B-spline curves. These face-cycles are interconnected using edge-cycles, defined as circular connectors centered on mesh edges and oriented orthogonally to the edge direction.\n A key insight of our approach is the distinction between fully linked-structures, where all mesh edges are bundled, and more general partially-linked structures with single-link property, which can be obtained by labeling and bundling only a subset of edges. This selective edge labeling significantly expands the design space, enabling a wide range of topologically distinct links to be constructed from the same underlying mesh.\n We focus on meshes generated by Bravais lattices and their corresponding Wigner\u2013Seitz cells, which enable the creation of triply periodic structures that repeat in three linearly independent directions. These periodic configurations can be compactly encoded and manipulated using cubical arrays, providing a formal framework for pattern generation and topological transformation.\n Our implementation demonstrates the feasibility of the proposed method through a custom software pipeline integrated into Blender. The resulting linked-structures are visually simple and physically realizable, with potential applications in materials science, architecture, and visual computing.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.1016/j.cag.2025.104410": {
+        "doi": "10.1016/j.cag.2025.104410",
+        "authors": [
+            {
+                "family": "Diaz",
+                "given": "Mauro",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Sante",
+                "given": "Luis",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Perca",
+                "given": "Joel",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Victor da Silva",
+                "given": "Jo\u00e3o",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Ferreira",
+                "given": "Nivan",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Poco",
+                "given": "Jorge",
+                "countries": [
+                    "BR"
+                ]
+            }
+        ],
+        "title": "STRive: An association rule-based system for the exploration of spatiotemporal categorical data",
+        "journal": "Computers & Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "104410",
+        "abstract": "Effectively analyzing spatiotemporal data plays a central role in understanding real-world phenomena and informing decision-making. Capturing the interaction between spatial and temporal dimensions also helps explain the underlying structure of the data. However, most datasets do not reveal attribute relationships, requiring additional algorithms to extract meaningful patterns. Existing visualization tools often focus either on attribute relationships or spatiotemporal analysis, but rarely support both simultaneously. In this paper, we present STRive (SpatioTemporal Rule Interactive Visual Explorer), a visual analytics system that enables users to uncover and explore spatial and temporal patterns in data. At the core of STRive lies Association Rule Mining (ARM), which we apply to spatiotemporal datasets to generate interpretable and actionable insights. We combine ARM with multiple interactive mechanisms to analyze the extracted relationships. Association rules serve as interpretable guidance mechanisms for visual analytics by highlighting the meaningful aspects of the data that users should investigate. Our methodology includes three key steps: rule generation, rule clustering, and interactive visualization. STRive offers two modes of analysis. The first operates at the rule cluster level and includes four coordinated views, each showing a different facet of a cluster, including its temporal and spatial behavior. The second mode mirrors the first but focuses on individual rules within a selected cluster. We evaluate the effectiveness of STRive through two case studies involving real-world datasets \u2014 fatal vehicle accidents and urban crime. Results demonstrate the system\u2019s ability to support the discovery and analysis of interpretable patterns in complex spatiotemporal contexts.",
+        "countries": [
+            "BR"
+        ]
+    },
+    "10.1109/tvcg.2025.3573774": {
+        "doi": "10.1109/tvcg.2025.3573774",
+        "authors": [
+            {
+                "family": "Wang",
+                "given": "Junpeng",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Bukenberger",
+                "given": "Dennis R.",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Niedermayr",
+                "given": "Simon",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Neuhauser",
+                "given": "Christoph",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Wu",
+                "given": "Jun",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Westermann",
+                "given": "R\u00fcdiger",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "SGLDBench: A Benchmark Suite for Stress-Guided Lightweight 3D Designs",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 13,
+        "abstract": "We introduce the Stress-Guided Lightweight Design Benchmark (SGLDBench), a comprehensive benchmark suite for applying and evaluating material layout strategies to generate stiff, lightweight designs in 3D domains. SGLDBench provides a seamlessly integrated simulation and analysis framework, including six reference strategies and a scalable multigrid elasticity solver to efficiently execute these strategies and validate the stiffness of their results. This facilitates the systematic analysis and comparison of design strategies based on the mechanical properties they achieve. SGLDBench enables the evaluation of diverse load conditions and, through the tight integration of the solver, supports high-resolution designs and stiffness analysis. Additionally, SGLDBench emphasizes visual analysis to explore the relationship between the geometric structure of a design and the distribution of stresses, offering insights into the specific properties and behaviors of different design strategies. SGLDBench's specific features are highlighted through several experiments, comparing the results of reference strategies with respect to geometric and mechanical properties.",
+        "countries": [
+            "DE",
+            "NL"
+        ]
+    },
+    "10.1109/tvcg.2025.3547241": {
+        "doi": "10.1109/tvcg.2025.3547241",
+        "authors": [
+            {
+                "family": "K\u00fc\u00e7\u00fckt\u00fct\u00fcnc\u00fc",
+                "given": "Esen",
+                "countries": [
+                    "ES"
+                ]
+            },
+            {
+                "family": "Macia-Varela",
+                "given": "Francisco",
+                "countries": [
+                    "ES"
+                ]
+            },
+            {
+                "family": "Llobera",
+                "given": "Joan",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Slater",
+                "given": "Mel",
+                "countries": [
+                    "ES"
+                ]
+            }
+        ],
+        "title": "The Role of Sensorimotor Contingencies and Eye Scanpath Entropy in Presence in Virtual Reality: a Reinforcement Learning Paradigm",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 13,
+        "abstract": "Sensorimotor contingencies (SC) refer to the rules by which we use our body to perceive. It has been argued that to the extent that a virtual reality (VR) application affords natural SC so the greater likelihood that participants will experience Place Illusion (PI), the illusion of \u2018being there\u2019 (a component of presence) in the virtual environment. However, notwithstanding numerous studies this only has anecdotal support. Here we used a reinforcement learning (RL) paradigm where 26 participants experienced a VR scenario where the RL agent could sequentially propose changes to 5 binary factors: mono or stereo vision, 3 or 6 degrees of freedom head tracking, mono or spatialised sound, low or high display resolution, or one of two color schemes. The first 4 are SC, whereas the last is not. Participants could reject or accept each change proposed by the RL, until convergence. Participants were more likely to accept changes from low to high SC than changes to the color. Additionally, theory suggests that increased PI should be associated with lower eye scanpath entropy. Our results show that mean entropy did decrease over time and the final level of entropy was negatively correlated with a post exposure questionnaire-based assessment of PI.",
+        "countries": [
+            "ES",
+            "CH"
+        ]
+    },
+    "10.1109/tvcg.2025.3589485": {
+        "doi": "10.1109/tvcg.2025.3589485",
+        "authors": [
+            {
+                "family": "Sun",
+                "given": "Ye",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Liu",
+                "given": "Zipeng",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Luo",
+                "given": "Yuankai",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Xia",
+                "given": "Lei",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Shi",
+                "given": "Lei",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "GeneticPrism: Multifaceted Visualization of Citation-based Scholarly Research Evolution",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 14,
+        "abstract": "Understanding the evolution of scholarly research is essential for many real-life decision-making processes in academia, such as research planning, frontier exploration, and award selection. Popular platforms like Google Scholar and Web of Science rely on numerical indicators that are too abstract to convey the context and content of scientific research, while most existing visualization approaches on mapping science do not consider the presentation of individual scholars' research evolution using curated self-citation data. This paper builds on our previous work and proposes an integrated pipeline to visualize a scholar's research evolution from multiple topic facets. A novel 3D prism-shaped visual metaphor is introduced as the overview of a scholar's research profile, whilst their scientific evolution on each topic is displayed in a more structured manner. Additional designs by topic chord diagram, streamgraph visualization, and inter-topic flow map, optimized by an elaborate layout algorithm, assist in perceiving the scholar's scientific evolution across topics. A new six-degree-impact glyph metaphor highlights key interdisciplinary works driving the evolution. The proposed visualization methods are evaluated through case studies analyzing the careers of prestigious Turing award laureates, one major visualization venue, and a focused user study. The GeneticPrism web application is publicly available at https://genetic-flow.com.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1016/j.cag.2025.104293": {
+        "doi": "10.1016/j.cag.2025.104293",
+        "authors": [
+            {
+                "family": "Lim",
+                "given": "Hansol",
+                "countries": [
+                    "KR",
+                    "US"
+                ]
+            },
+            {
+                "family": "Chang",
+                "given": "Hanbeom",
+                "countries": [
+                    "KR",
+                    "US"
+                ]
+            },
+            {
+                "family": "Choi",
+                "given": "Jongseong Brad",
+                "countries": [
+                    "KR",
+                    "US"
+                ]
+            },
+            {
+                "family": "Yeum",
+                "given": "Chul Min",
+                "countries": [
+                    "CA"
+                ]
+            }
+        ],
+        "title": "LiDAR-3DGS: LiDAR reinforcement for multimodal initialization of 3D Gaussian Splats",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104293:1\u2013104293:11",
+        "number_of_pages": 11,
+        "article_number": "104293",
+        "abstract": "In this paper, we introduce LiDAR-3DGS, a novel approach for integrating LiDAR data into 3D Gaussian Splatting to enhance scene reconstructions. Rather than relying solely on image-based features, we integrate LiDAR-based features as initialization. To achieve this, we present a novel sampling technique \u2013 ChromaFilter \u2013 which prioritizes LiDAR points based on color diversity. It effectively samples important features while sparsifying redundant points. Experimental results on both a custom dataset and the ETH3D dataset show consistent improvements in PSNR and SSIM. A ChromaFilter sampling density of n = 10 yields a notable 7.064% gain on PSNR and 0.564% gain on SSIM on the custom dataset, while ETH3D reconstructions exhibit an average PSNR increase of 4.915% and SSIM gain of 0.5951%. Our method provides practical solution for incorporating LiDAR data into 3DGS. Because many operational industrial robots are already equipped with both LiDAR and cameras, our method can be easily adopted to industrial robots to reconstruct more accurate 3DGS models for engineering and remote inspections.",
+        "countries": [
+            "KR",
+            "US",
+            "CA"
+        ]
+    },
+    "10.1111/cgf.70196": {
+        "doi": "10.1111/cgf.70196",
+        "authors": [
+            {
+                "family": "Buonomo",
+                "given": "Camille",
+                "orcid": "0009-0000-0391-3858",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "1",
+                "given": "Julie Digne",
+                "orcid": "0000-0003-0905-0840",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Chaine",
+                "given": "Rapha\u00eblle",
+                "orcid": "0000-0002-1411-1356",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Volume Preserving Neural Shape Morphing",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 2025,
+        "volume": "44",
+        "number": "5",
+        "pages": "e70196:1\u2013e70196:12",
+        "article_number": "e70196",
+        "number_of_pages": 12,
+        "abstract": "Shape interpolation is a long standing challenge of geometry processing. As it is ill-posed, shape interpolation methods always work under some hypothesis such as semantic part matching or least displacement. Among such constraints, volume preservation is one of the traditional animation principles. In this paper we propose a method to interpolate between shapes in arbitrary poses favoring volume and topology preservation. To do so, we rely on a level set representation of the shape and its advection by a velocity field through the level set equation, both shape representation and velocity fields being parameterized as neural networks. While divergence free velocity fields ensure volume and topology preservation, they are incompatible with the Eikonal constraint of signed distance functions. This leads us to introduce the notion of adaptive divergence velocity field, a construction compatible with the Eikonal equation with theoretical guarantee on the shape volume preservation. In the non constant volume setting, our method is still helpful to provide a natural morphing, by combining it with a parameterization of the volume change over time. We show experimentally that our method exhibits better volume preservation than other recent approaches, limits topological changes and preserves the structures of shapes better without landmark correspondences.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1016/j.cag.2025.104320": {
+        "doi": "10.1016/j.cag.2025.104320",
+        "authors": [
+            {
+                "family": "Sucu",
+                "given": "G\u00fcne\u015f",
+                "countries": [
+                    "TR"
+                ]
+            },
+            {
+                "family": "Kalkan",
+                "given": "Sinan",
+                "countries": [
+                    "TR"
+                ]
+            },
+            {
+                "family": "Sahillio\u011flu",
+                "given": "Yusuf",
+                "countries": [
+                    "TR"
+                ]
+            }
+        ],
+        "title": "FanNet: A mesh convolution operator for learning dense maps",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104320:1\u2013104320:12",
+        "number_of_pages": 12,
+        "article_number": "104320",
+        "abstract": "In this paper, we introduce a fast, simple and novel mesh convolution operator for learning dense shape correspondences. Instead of calculating weights between nodes, we explicitly aggregate node features by serializing neighboring vertices in a fan-shaped order. Thereafter, we use a fully connected layer to encode vertex features combined with the local neighborhood information. Finally, we feed the resulting features into the multi-resolution functional maps module to acquire the final maps. We demonstrate that our method works well in both supervised and unsupervised settings, and can be applied to isometric shapes with arbitrary triangulation and resolution. We evaluate the proposed method on two widely-used benchmark datasets, FAUST and SCAPE. Our results show that FanNet runs significantly faster and provides on-par or better performance than the related state-of-the-art shape correspondence methods.",
+        "countries": [
+            "TR"
+        ]
+    },
+    "10.1016/j.cag.2025.104356": {
+        "doi": "10.1016/j.cag.2025.104356",
+        "authors": [
+            {
+                "family": "Liu",
+                "given": "Xingyu",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhou",
+                "given": "Jiehui",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Xumeng",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Wong",
+                "given": "Kam-Kwai",
+                "countries": [
+                    "CN",
+                    "US"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Wei",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Juntian",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhu",
+                "given": "Minfeng",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Chen",
+                "given": "Wei",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "CausalPrism: A visual analytics approach for subgroup-based causal heterogeneity exploration",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "131",
+        "number": "",
+        "pages": "104356:1\u2013104356:11",
+        "number_of_pages": 11,
+        "article_number": "104356",
+        "abstract": "In causal inference, estimating Heterogeneous Treatment Effects (HTEs) from observational data is critical for understanding how different subgroups respond to treatments, with broad applications such as precision medicine and targeted advertising. However, existing work on HTE, subgroup discovery, and causal visualization is insufficient to address two challenges: first, the sheer number of potential subgroups and the necessity to balance multiple objectives (e.g., high effects and low variances) pose a considerable analytical challenge. Second, effective subgroup analysis has to follow the analysis goal specified by users and provide causal results with verification. To this end, we propose a visual analytics approach for subgroup-based causal heterogeneity exploration. Specifically, we first formulate causal subgroup discovery as a constrained multi-objective optimization problem and adopt a heuristic genetic algorithm to learn the Pareto front of optimal subgroups described by interpretable rules. Combining with this model, we develop a prototype system, CausalPrism, that incorporates tabular visualization, multi-attribute rankings, and uncertainty plots to support users in interactively exploring and sorting subgroups and explaining treatment effects. Quantitative experiments validate that the proposed model can efficiently mine causal subgroups that outperform state-of-the-art HTE and subgroup discovery methods, and case studies and expert interviews demonstrate the effectiveness and usability of the system. Code is available at OSF.",
+        "countries": [
+            "CN",
             "US"
         ]
     }

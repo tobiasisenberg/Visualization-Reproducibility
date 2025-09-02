@@ -1,8 +1,177 @@
 [
     {
+        "is_vis": false,
+        "title": "Terrain descriptors for landscape synthesis, analysis and simulation",
+        "doi": "10.1111/cgf.70080",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-oargudo-terrain-descriptors",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/oargudo/terrain-descriptors",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:871b5a8562272d1752248d827ee55726008b1084;origin=https://github.com/oargudo/terrain-descriptors",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-oargudo-terrain-descriptors/representative.png",
+        "authors": "Oscar Argudo, Eric Gu\u00e9rin, Hugo Schott, Eric Galin"
+    },
+    {
+        "is_vis": false,
+        "title": "Navigating Large-Pose Challenge for High-Fidelity Face Reenactment with Video Diffusion Model",
+        "doi": "not_assigned_yet",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-mingtaoguo-face-reenactment-video-diffusion",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/MingtaoGuo/Face-Reenactment-Video-Diffusion",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a77b20b9708e1b4b26fb0b2fa46815302531e950;origin=https://github.com/MingtaoGuo/Face-Reenactment-Video-Diffusion",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-mingtaoguo-face-reenactment-video-diffusion/representative.png",
+        "authors": "Mingtao Guo, Guanyu Xing, Yanci Zhang, Yanli Liu"
+    },
+    {
+        "is_vis": false,
+        "title": "Fast Isotropic Median Filtering",
+        "doi": "10.1145/3721238.3730763",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-google-fast-isotropic-median-filter",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/google/fast-isotropic-median-filter",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:fb578b550d25e5bca35aaca6eb61704780390cd5;origin=https://github.com/google/fast-isotropic-median-filter",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-google-fast-isotropic-median-filter/representative.png",
+        "authors": "Ben Weiss"
+    },
+    {
+        "is_vis": false,
+        "title": "ProbTalk3D-X: Prosody Enhanced Non-Deterministic Emotion Controllable Speech-Driven 3D Facial Animation Synthesis",
+        "doi": "not_assigned_yet",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-uuembodiedsocialai-probtalk3d",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/uuembodiedsocialai/ProbTalk3D",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:6021650c05ae6f7279345cbe5c703709f373291e;origin=https://github.com/uuembodiedsocialai/ProbTalk3D",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-uuembodiedsocialai-probtalk3d/representative.png",
+        "authors": "Kazi Injamamul Haque, Sichun Wu, Zerrin Yumak"
+    },
+    {
+        "is_vis": false,
+        "title": "Triply Periodic Mesh-Based Linked-Structures: Design and Construction of a Family of Periodic Links Based on Bravais Lattices and Corresponding Wigner-Seitz Cells",
+        "doi": "10.1016/j.cag.2025.104369",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-comicaddict-triply-periodic-links",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/ComicAddict/triply-periodic-links",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:f6538ff5929f779050567d1ab8f73affc2c05f8b;origin=https://github.com/ComicAddict/triply-periodic-links",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-comicaddict-triply-periodic-links/representative.png",
+        "authors": "Tolga Yildiz, Ergun Akleman"
+    },
+    {
+        "is_vis": true,
+        "title": "STRive: An association rule-based system for the exploration of spatiotemporal categorical data",
+        "doi": "10.1016/j.cag.2025.104410",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-visual-ds-strive",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/visual-ds/STRive",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:9749db1e3ab1c02c9cbb9c1c1341cb6a682b91fb;origin=https://github.com/visual-ds/STRive",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-visual-ds-strive/representative.png",
+        "authors": "Mauro Diaz, Luis Sante, Joel Perca, Joao Victor da Silva, Nivan Ferreira, Jorge Poco",
+        "type": "keyword"
+    },
+    {
+        "is_vis": false,
+        "title": "Memory-Efficient Filter-Guided Diffusion with Domain Transform Filtering",
+        "doi": "not_assigned_yet",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-manuel-research-group-dt-fgd-git",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/Manuel-Research-Group/DT-FGD.git",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:72fac2bafe58f84c51c4ef39332db4570816af60;origin=https://github.com/Manuel-Research-Group/DT-FGD.git",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-manuel-research-group-dt-fgd-git/representative.png",
+        "authors": "Gustavo Lopes Tamiosso, Caetano M\u00fcller, Lucas Spagnolo Bombana, Manuel M. Oliveira"
+    },
+    {
+        "is_vis": true,
+        "title": "Your Model Is Unfair, Are You Even Aware? Inverse Relationship Between Comprehension and Trust in Explainability Visualizations of Biased ML Models",
+        "doi": "not_assigned_yet",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-zhannakaufma-your-model-is-unfair-are-you-even-aware-git",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/zhannakaufma/Your_Model_Is_Unfair_Are_You_Even_Aware.git",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:152fa1cf459bfec383d2f9396f50c850f0a947db;origin=https://github.com/zhannakaufma/Your_Model_Is_Unfair_Are_You_Even_Aware.git",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-zhannakaufma-your-model-is-unfair-are-you-even-aware-git/representative.png",
+        "authors": "Zhanna Kaufman, Madeline Endres, Cindy Xiong Bearfield, Yuriy Brun",
+        "type": "keyword"
+    },
+    {
+        "is_vis": true,
+        "title": "Cluster-Based Random Forest Visualization and Interpretation",
+        "doi": "not_assigned_yet",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-maxie12-randomforestvis",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/maxie12/RandomForestVis",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:4a143c95dbe6ff9e06b76a442b98ca1eec27e5eb;origin=https://github.com/maxie12/RandomForestVis",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-maxie12-randomforestvis/representative.png",
+        "authors": "Max Sondag, Christofer Meinecke, Dennis Collaris, Tatiana von Landesberger, Stef van den Elzen",
+        "type": "keyword"
+    },
+    {
+        "is_vis": false,
+        "title": "SGLDBench: A Benchmark Suite for Stress-Guided Lightweight 3D Designs",
+        "doi": "10.1109/tvcg.2025.3573774",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-psler-sgldbench",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/PSLer/SGLDBench",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:bc8905f1ef37943604acaf1f07dd198e6f26869b;origin=https://github.com/PSLer/SGLDBench",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-psler-sgldbench/representative.png",
+        "authors": "Junpeng Wang, Dennis R. Bukenberger, Simon Niedermayr, Christoph Neuhauser, Jun Wu, R\u00fcdiger Westermann"
+    },
+    {
+        "is_vis": false,
+        "title": "The Role of Sensorimotor Contingencies and Eye Scanpath Entropy in Presence in Virtual Reality: A Reinforcement Learning Paradigm",
+        "doi": "10.1109/tvcg.2025.3547241",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-joanllobera-kucuktutuncu-et-al-2025-08-05t12-44-48-372z",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/joanllobera/kucuktutuncu_et_al/",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:77cf2e9e995d58a0744088e2bf32723207c88478;origin=https://github.com/joanllobera/kucuktutuncu_et_al/",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-joanllobera-kucuktutuncu-et-al-2025-08-05t12-44-48-372z/representative.png",
+        "authors": "Esen K\u00fc\u00e7\u00fckt\u00fct\u00fcnc\u00fc, Franciso Macia-Varela, Joan Llobera, Mel Slater"
+    },
+    {
+        "is_vis": true,
+        "title": "GeneticPrism: Multifaceted Visualization of Citation-based Scholarly Research Evolution",
+        "doi": "10.1109/tvcg.2025.3589485",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-visdata-geneticprism",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/visdata/GeneticPrism",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:e93ae0eb6ea1680d34f168aa52b75c3e01a1b341;origin=https://github.com/visdata/GeneticPrism",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-visdata-geneticprism/representative.png",
+        "authors": "Ye Sun, Zipeng Liu, Yuankai Luo, Lei Xia, Lei Shi",
+        "type": "keyword"
+    },
+    {
+        "is_vis": false,
+        "title": "LiDAR-3DGS LiDAR Reinforcement for Multimodal Initialization of 3D Gaussian Splats",
+        "doi": "10.1016/j.cag.2025.104293",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-suny-mec-meic-lab-lidar-3dgs-2025-07-03t06-09-09-304z",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/SUNY-MEC-MEIC-Lab/LiDAR-3DGS",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a717ceb87faae4ce3f80cb7fb4b71c7ae8d202f8;origin=https://github.com/SUNY-MEC-MEIC-Lab/LiDAR-3DGS",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-suny-mec-meic-lab-lidar-3dgs-2025-07-03t06-09-09-304z/representative.png",
+        "authors": "Hansol Lim, Hanbeom Chang, Jongseong Brad Choi, Chul Min Yeum"
+    },
+    {
+        "is_vis": false,
+        "title": "Volume Preserving Neural Shape Morphing",
+        "doi": "10.1111/cgf.70196",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-camillebnm-neural-shape-morphing-2025-06-17t15-03-46-040z",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/camillebnm/neural_shape_morphing",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:83dd409a0fa9476bb148f62ab62c65845e1427c1;origin=https://github.com/camillebnm/neural_shape_morphing",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-camillebnm-neural-shape-morphing-2025-06-17t15-03-46-040z/representative.png",
+        "authors": "Camille Buonomo, Julie Digne, Rapha\u00eblle Chaine"
+    },
+    {
+        "is_vis": false,
+        "title": "FanNet: A Mesh Convolution Operator for Learning Dense Maps",
+        "doi": "10.1016/j.cag.2025.104320",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-sucugunes-fannet-2025-07-18t13-17-16-963z",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/sucugunes/FanNet",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:20744b01e6b0836522e31ae0ef288724e97f8604;origin=https://github.com/sucugunes/FanNet",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-sucugunes-fannet-2025-07-18t13-17-16-963z/representative.png",
+        "authors": "G\u00fcne\u015f Sucu, Sinan Kalkan, Yusuf Sahillio\u011flu"
+    },
+    {
         "is_vis": true,
         "title": "CausalPrism: A Visual Analytics Approach for Subgroup-based Causal Heterogeneity Exploration",
-        "doi": "not_assigned_yet",
+        "doi": "10.1016/j.cag.2025.104356",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-bxdgfw-causalprism",
         "journal": "Elsevier Computers & Graphics (C&G)",
         "repo_url": "https://github.com/bxdgfw/CausalPrism",
@@ -244,7 +413,7 @@
         "authors": "Simin Kou, Fang-Lue Zhang, Jakob Nazarenus, Reinhard Koch, Neil A. Dodgson"
     },
     {
-        "is_vis": false,
+        "is_vis": true,
         "title": "An Eulerian Vortex Method on Flow Maps",
         "doi": "10.1145/3687996",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-pfm-gatech-an-eulerian-vortex-method-on-flow-maps-git",
@@ -252,7 +421,8 @@
         "repo_url": "https://github.com/pfm-gatech/An-Eulerian-Vortex-Method-on-Flow-Maps.git",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:4c3055fd01a8a1f9bc900a7a6ec4f3729f5e1d30;origin=https://github.com/pfm-gatech/An-Eulerian-Vortex-Method-on-Flow-Maps.git",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-pfm-gatech-an-eulerian-vortex-method-on-flow-maps-git/representative.png",
-        "authors": "Sinan Wang, Yitong Deng, Molin Deng, Hong-Xing Yu, Junwei Zhou, Duowen Chen, Taku Komura, Jiajun Wu, Bo Zhu"
+        "authors": "Sinan Wang, Yitong Deng, Molin Deng, Hong-Xing Yu, Junwei Zhou, Duowen Chen, Taku Komura, Jiajun Wu, Bo Zhu",
+        "type": "manual"
     },
     {
         "is_vis": true,
@@ -283,7 +453,7 @@
         "doi": "10.1145/3687764",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-liris-origami-differentiableowenscrambling-git-2025-02-19t07-42-40-756z",
         "journal": "ACM Transactions on Graphics (TOG)",
-        "repo_url": "https://github.com/liris-origami/DifferentiableOwenScrambling",
+        "repo_url": "https://github.com/liris-origami/DifferentiableOwenScrambling.git",
         "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/liris-origami/DifferentiableOwenScrambling",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-liris-origami-differentiableowenscrambling-git-2025-02-19t07-42-40-756z/representative.png",
         "authors": "Bastien Doignies, David Coeurjolly, Nicolas Bonneel, Julie Digne, Jean-Claude Iehl, Victor Ostromoukhov"

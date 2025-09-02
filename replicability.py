@@ -174,6 +174,9 @@ def markVisPapersByKeywords(paperList):
             ("line graph" in paper["title"].lower()) or
             ("streamgraph" in paper["title"].lower()) or
             ("focus+context" in paper["title"].lower()) or
+            ("categorical data" in paper["title"].lower()) or
+            ("ordinal data" in paper["title"].lower()) or
+            ("quantitative data" in paper["title"].lower()) or
             # ("topology" in paper["title"].lower()) or # not good: some graphics papers also captured
             ("t-sne" in paper["title"].lower()) or
             ("high-dimensional data" in paper["title"].lower())
@@ -181,7 +184,7 @@ def markVisPapersByKeywords(paperList):
             paper["is_vis"] = True
             paper["type"] = "keyword"
 
-        # manual selections of specific papers for which we know more
+        # manual selections of specific papers which we believe to be on visualization topics
         if  (
             ("10.1109/tvcg.2022.3214821" in paper["doi"]) or # visualization author keyword
             ("10.1109/tvcg.2021.3101418" in paper["doi"]) or # visualization author keyword
@@ -194,7 +197,8 @@ def markVisPapersByKeywords(paperList):
             ("10.1111/cgf.14784" in paper["doi"]) or         # talks about topology, graphs, and scalar fields
             ("10.1111/cgf.13910" in paper["doi"]) or         # talks about point clouds and topology
             ("10.1109/tvcg.2024.3491504" in paper["doi"]) or # data visualization author keyword
-            ("10.1109/tvcg.2024.3513275" in paper["doi"])    # visualization author keyword
+            ("10.1109/tvcg.2024.3513275" in paper["doi"]) or # visualization author keyword
+            ("10.1145/3687996" in paper["doi"])              # talks about the simulation of 3D flows and their visual representation
             ):
             paper["is_vis"] = True
             paper["type"] = "manual"
@@ -752,8 +756,7 @@ else:
             doi = doi.replace("https://dl.acm.org/doi/", "")
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
             # please note to replace the '%20' in the Google search links with a ' ' (manually or via a .replace("%20", " ") call as in the examples); otherwise the replacement does not work
-            doi = doi.replace("http://www.google.com/search?q=VITON-DRR:%20Details%20Retention%20Virtual%20Try-on%20via%20Non-rigid%20Registration".replace("%20", " "), "10.1016/j.cag.2025.104288")
-            doi = doi.replace("http://www.google.com/search?q=Position-Normal%20Manifold%20for%20Efficient%20Glint%20Rendering%20on%20High-Resolution%20Normal%20Maps".replace("%20", " "), "10.1145/3721238.3730633")
+            doi = doi.replace("http://www.google.com/search?q=STRive:%20An%20association%20rule-based%20system%20for%20the%20exploration%20of%20spatiotemporal%20categorical%20data".replace("%20", " "), "10.1016/j.cag.2025.104410")
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()
