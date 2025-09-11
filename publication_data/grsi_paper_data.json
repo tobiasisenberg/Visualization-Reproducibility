@@ -1,6 +1,130 @@
 [
     {
         "is_vis": false,
+        "title": "A Generic Query-Modify Framework for Volumetric Mesh Processing",
+        "doi": "10.1016/j.cag.2025.104371",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-gitlab-liris-cnrs-fr-gdamiand-generic-query-modify",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://gitlab.liris.cnrs.fr/gdamiand/generic-query-modify",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:30e8590692ffa54a9d742d75d342145e775094f9;origin=https://gitlab.liris.cnrs.fr/gdamiand/generic-query-modify",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-gitlab-liris-cnrs-fr-gdamiand-generic-query-modify/representative.png",
+        "authors": "Guillaume Damiand, Vincent Nivolliers, Romain Pascual"
+    },
+    {
+        "is_vis": false,
+        "title": "Neural Co-Optimization of Structural Topology, Manufacturable Layers, and Path Orientations for Fiber-Reinforced Composites",
+        "doi": "10.1145/3730922",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-ryantaoliu-neuraltomo",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/RyanTaoLiu/NeuralTOMO",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:5211af073627928cfde56180f3c12cf709215fde;origin=https://github.com/RyanTaoLiu/NeuralTOMO",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-ryantaoliu-neuraltomo/representative.png",
+        "authors": "Tao Liu, Tianyu Zhang, Yongxue Chen, Weiming Wang, Yu Jiang, Yuming Huang, Charlie C. L. Wang"
+    },
+    {
+        "is_vis": false,
+        "title": "Polynomial 3D Green Coordinates and their Derivatives for Linear Cages",
+        "doi": "10.1016/j.cag.2025.104388",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-xiongyuwu-polynomialgreencoordinate-git-2025-08-05t23-26-37-212z",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/xiongyuwu/PolynomialGreenCoordinate.git",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:2827ecb0c304e05f9b3a4c7453859f00cb1d817b;origin=https://github.com/xiongyuwu/PolynomialGreenCoordinate.git",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-xiongyuwu-polynomialgreencoordinate-git-2025-08-05t23-26-37-212z/representative.png",
+        "authors": "Xiongyu Wu, Shibo Liu, Xiao-Ming Fu"
+    },
+    {
+        "is_vis": false,
+        "title": "Orientation control via G^3 parametric quaternion interpolation spline  curves",
+        "doi": "10.1016/j.cag.2025.104383",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-jiayiaaa-computers-graphics-git",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/jiayiaaa/Computers-Graphics.git",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:9e46d12c86a2272f8c54b64e0c2ca5ab114a36fb;origin=https://github.com/jiayiaaa/Computers-Graphics.git",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-jiayiaaa-computers-graphics-git/representative.png",
+        "authors": "Qian Wang, Jiayi Zhu, Aihua Liang, Mengyao Zhang, Junxiao Xue"
+    },
+    {
+        "is_vis": false,
+        "title": "Conformable Mechanisms on Freeform Surfaces",
+        "doi": "10.1016/j.cag.2025.104359",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-justpenz233-conformablemechanism-git",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/Justpenz233/ConformableMechanism.git",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:8401bb1f46a03df2d4dd426626c3143fc54bcbd4;origin=https://github.com/Justpenz233/ConformableMechanism.git",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-justpenz233-conformablemechanism-git/representative.png",
+        "authors": "Siqi Li, Haoyu Tang, Peng Song, Bailin Deng, Jianmin Zheng3"
+    },
+    {
+        "is_vis": true,
+        "title": "Helveg: Diagrams for Software Documentation",
+        "doi": "10.1109/tvcg.2025.3589748",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-gitlab-com-helveg-helveg",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://gitlab.com/helveg/helveg",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:2ae933810012219f8cb263d4cc3ed7d30b7f8487;origin=https://gitlab.com/helveg/helveg",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-gitlab-com-helveg-helveg/representative.png",
+        "authors": "Adam \u0160t\u011bp\u00e1nek, David Ku\u0165\u00e1k, Barbora Kozl\u00edkov\u00e1, Jan By\u0161ka",
+        "type": "manual"
+    },
+    {
+        "is_vis": false,
+        "title": "SHREC 2025: Partial Retrieval Benchmark",
+        "doi": "10.1016/j.cag.2025.104397",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-bartvbl-shrec2025-partial-retrieval-benchmark-replication-archive",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/bartvbl/SHREC2025-Partial-Retrieval-Benchmark-Replication-Archive",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:2f64bf5992a748e14c9f2c5c9c1c294b78b1a81d;origin=https://github.com/bartvbl/SHREC2025-Partial-Retrieval-Benchmark-Replication-Archive",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-bartvbl-shrec2025-partial-retrieval-benchmark-replication-archive/representative.png",
+        "authors": "Bart Iver van Blokland, Isaac Aguirre, Ivan Sipiran, Benjamin Bustos, Silvia Biasotti, Giorgio Palmieri"
+    },
+    {
+        "is_vis": true,
+        "title": "SynAnno: Interactive Guided Proofreading of Synaptic Annotations",
+        "doi": "10.vis2025/1718",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-pytorchconnectomics-synanno",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/PytorchConnectomics/SynAnno",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:136f295256276542466549634db6980a2d2988f7;origin=https://github.com/PytorchConnectomics/SynAnno",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-pytorchconnectomics-synanno/representative.png",
+        "authors": "Leander Lauenburg, Jakob Troidl, Adam Gohain, Zudi Lin, Hanspeter Pfister, Donglai Wei",
+        "type": "IEEE VIS"
+    },
+    {
+        "is_vis": true,
+        "title": "SynopFrame: Multiscale time-dependent visual abstraction framework for analyzing DNA nanotechnology simulations",
+        "doi": "not_assigned_yet",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-nanovis-synopframe",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/nanovis/SynopFrame",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:46ce148466e63ef3a81eb424719c3ff68d5ff514;origin=https://github.com/nanovis/SynopFrame",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-nanovis-synopframe/representative.png",
+        "authors": "Deng Luo, Alexandre Kouyoumdjian, Ondrej Strnad, Haichao Miao, Ivan Barisic, Tobias Isenberg, Ivan Viola",
+        "type": "keyword"
+    },
+    {
+        "is_vis": false,
+        "title": "SDLKF: Signed Distance Linear Kernel Function for Surface Reconstruction",
+        "doi": "10.1016/j.cag.2025.104361",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-otakuxiang-gudf",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/otakuxiang/GUDF",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:199e5e3b695eeaeff606d32ceac4ee76098a3d89;origin=https://github.com/otakuxiang/GUDF",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-otakuxiang-gudf/representative.png",
+        "authors": "Hao-Xiang Chen, Xiao-Lei Li, Tai-Jiang Mu, Qunce Xu, Shi-Min Hu"
+    },
+    {
+        "is_vis": false,
+        "title": "DeepFracture: A Generative Approach for Predicting Brittle Fractures with Neural Discrete Representation Learning",
+        "doi": "10.1111/cgf.70002",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-nikoloside-tebp",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/nikoloside/TEBP",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a3a960de10ad0828fb57ecd3c293ecea6321c14a;origin=https://github.com/nikoloside/TEBP",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-nikoloside-tebp/representative.png",
+        "authors": "Yuhang Huang, Takashi Kanai"
+    },
+    {
+        "is_vis": false,
         "title": "Terrain descriptors for landscape synthesis, analysis and simulation",
         "doi": "10.1111/cgf.70080",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-oargudo-terrain-descriptors",
@@ -13,7 +137,7 @@
     {
         "is_vis": false,
         "title": "Navigating Large-Pose Challenge for High-Fidelity Face Reenactment with Video Diffusion Model",
-        "doi": "not_assigned_yet",
+        "doi": "10.1016/j.cag.2025.104423",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-mingtaoguo-face-reenactment-video-diffusion",
         "journal": "Elsevier Computers & Graphics (C&G)",
         "repo_url": "https://github.com/MingtaoGuo/Face-Reenactment-Video-Diffusion",
@@ -35,7 +159,7 @@
     {
         "is_vis": false,
         "title": "ProbTalk3D-X: Prosody Enhanced Non-Deterministic Emotion Controllable Speech-Driven 3D Facial Animation Synthesis",
-        "doi": "not_assigned_yet",
+        "doi": "10.1016/j.cag.2025.104358",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-uuembodiedsocialai-probtalk3d",
         "journal": "Elsevier Computers & Graphics (C&G)",
         "repo_url": "https://github.com/uuembodiedsocialai/ProbTalk3D",
@@ -69,7 +193,7 @@
     {
         "is_vis": false,
         "title": "Memory-Efficient Filter-Guided Diffusion with Domain Transform Filtering",
-        "doi": "not_assigned_yet",
+        "doi": "10.1016/j.cag.2025.104389",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-manuel-research-group-dt-fgd-git",
         "journal": "Elsevier Computers & Graphics (C&G)",
         "repo_url": "https://github.com/Manuel-Research-Group/DT-FGD.git",
@@ -80,29 +204,29 @@
     {
         "is_vis": true,
         "title": "Your Model Is Unfair, Are You Even Aware? Inverse Relationship Between Comprehension and Trust in Explainability Visualizations of Biased ML Models",
-        "doi": "not_assigned_yet",
+        "doi": "10.vis2025/1446",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-zhannakaufma-your-model-is-unfair-are-you-even-aware-git",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/zhannakaufma/Your_Model_Is_Unfair_Are_You_Even_Aware.git",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:152fa1cf459bfec383d2f9396f50c850f0a947db;origin=https://github.com/zhannakaufma/Your_Model_Is_Unfair_Are_You_Even_Aware.git",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-zhannakaufma-your-model-is-unfair-are-you-even-aware-git/representative.png",
         "authors": "Zhanna Kaufman, Madeline Endres, Cindy Xiong Bearfield, Yuriy Brun",
-        "type": "keyword"
+        "type": "IEEE VIS"
     },
     {
         "is_vis": true,
         "title": "Cluster-Based Random Forest Visualization and Interpretation",
-        "doi": "not_assigned_yet",
+        "doi": "10.vis2025/1432",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-maxie12-randomforestvis",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/maxie12/RandomForestVis",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:4a143c95dbe6ff9e06b76a442b98ca1eec27e5eb;origin=https://github.com/maxie12/RandomForestVis",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-maxie12-randomforestvis/representative.png",
         "authors": "Max Sondag, Christofer Meinecke, Dennis Collaris, Tatiana von Landesberger, Stef van den Elzen",
-        "type": "keyword"
+        "type": "IEEE VIS"
     },
     {
-        "is_vis": false,
+        "is_vis": true,
         "title": "SGLDBench: A Benchmark Suite for Stress-Guided Lightweight 3D Designs",
         "doi": "10.1109/tvcg.2025.3573774",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-psler-sgldbench",
@@ -110,7 +234,8 @@
         "repo_url": "https://github.com/PSLer/SGLDBench",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:bc8905f1ef37943604acaf1f07dd198e6f26869b;origin=https://github.com/PSLer/SGLDBench",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-psler-sgldbench/representative.png",
-        "authors": "Junpeng Wang, Dennis R. Bukenberger, Simon Niedermayr, Christoph Neuhauser, Jun Wu, R\u00fcdiger Westermann"
+        "authors": "Junpeng Wang, Dennis R. Bukenberger, Simon Niedermayr, Christoph Neuhauser, Jun Wu, R\u00fcdiger Westermann",
+        "type": "journal pres. @ IEEE VIS"
     },
     {
         "is_vis": false,

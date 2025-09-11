@@ -21635,8 +21635,8 @@
                 ]
             },
             {
-                "family": "Victor da Silva",
-                "given": "Jo\u00e3o",
+                "family": "da Silva",
+                "given": "Jo\u00e3o Victor",
                 "countries": [
                     "BR"
                 ]
@@ -21658,11 +21658,11 @@
         ],
         "title": "STRive: An association rule-based system for the exploration of spatiotemporal categorical data",
         "journal": "Computers & Graphics",
-        "publication_year": 3025,
-        "volume": "",
+        "publication_year": 2025,
+        "volume": "132",
         "number": "",
-        "pages": "",
-        "number_of_pages": -1,
+        "pages": "104410:1\u2013104410:11",
+        "number_of_pages": 11,
         "article_number": "104410",
         "abstract": "Effectively analyzing spatiotemporal data plays a central role in understanding real-world phenomena and informing decision-making. Capturing the interaction between spatial and temporal dimensions also helps explain the underlying structure of the data. However, most datasets do not reveal attribute relationships, requiring additional algorithms to extract meaningful patterns. Existing visualization tools often focus either on attribute relationships or spatiotemporal analysis, but rarely support both simultaneously. In this paper, we present STRive (SpatioTemporal Rule Interactive Visual Explorer), a visual analytics system that enables users to uncover and explore spatial and temporal patterns in data. At the core of STRive lies Association Rule Mining (ARM), which we apply to spatiotemporal datasets to generate interpretable and actionable insights. We combine ARM with multiple interactive mechanisms to analyze the extracted relationships. Association rules serve as interpretable guidance mechanisms for visual analytics by highlighting the meaningful aspects of the data that users should investigate. Our methodology includes three key steps: rule generation, rule clustering, and interactive visualization. STRive offers two modes of analysis. The first operates at the rule cluster level and includes four coordinated views, each showing a different facet of a cluster, including its temporal and spatial behavior. The second mode mirrors the first but focuses on individual rules within a selected cluster. We evaluate the effectiveness of STRive through two case studies involving real-world datasets \u2014 fatal vehicle accidents and urban crime. Results demonstrate the system\u2019s ability to support the discovery and analysis of interpretable patterns in complex spatiotemporal contexts.",
         "countries": [
@@ -21717,13 +21717,13 @@
         ],
         "title": "SGLDBench: A Benchmark Suite for Stress-Guided Lightweight 3D Designs",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "10",
+        "pages": "8609\u20138622",
         "article_number": "",
-        "number_of_pages": 13,
-        "abstract": "We introduce the Stress-Guided Lightweight Design Benchmark (SGLDBench), a comprehensive benchmark suite for applying and evaluating material layout strategies to generate stiff, lightweight designs in 3D domains. SGLDBench provides a seamlessly integrated simulation and analysis framework, including six reference strategies and a scalable multigrid elasticity solver to efficiently execute these strategies and validate the stiffness of their results. This facilitates the systematic analysis and comparison of design strategies based on the mechanical properties they achieve. SGLDBench enables the evaluation of diverse load conditions and, through the tight integration of the solver, supports high-resolution designs and stiffness analysis. Additionally, SGLDBench emphasizes visual analysis to explore the relationship between the geometric structure of a design and the distribution of stresses, offering insights into the specific properties and behaviors of different design strategies. SGLDBench's specific features are highlighted through several experiments, comparing the results of reference strategies with respect to geometric and mechanical properties.",
+        "number_of_pages": 14,
+        "abstract": "We introduce the Stress-Guided Lightweight Design Benchmark (SGLDBench), a comprehensive benchmark suite for applying and evaluating material layout strategies to generate stiff, lightweight designs in 3D domains. SGLDBench provides a seamlessly integrated simulation and analysis framework, including six reference strategies and a scalable multigrid elasticity solver to efficiently execute these strategies and validate the stiffness of their results. This facilitates the systematic analysis and comparison of design strategies based on the mechanical properties they achieve. SGLDBench enables the evaluation of diverse load conditions and, through the tight integration of the solver, supports high-resolution designs and stiffness analysis. Additionally, SGLDBench emphasizes visual analysis to explore the relationship between the geometric structure of a design and the distribution of stresses, offering insights into the specific properties and behaviors of different design strategies. SGLDBench\u2019s specific features are highlighted through several experiments, comparing the results of reference strategies with respect to geometric and mechanical properties.",
         "countries": [
             "DE",
             "NL"
@@ -21761,14 +21761,14 @@
                 ]
             }
         ],
-        "title": "The Role of Sensorimotor Contingencies and Eye Scanpath Entropy in Presence in Virtual Reality: a Reinforcement Learning Paradigm",
+        "title": "The Role of Sensorimotor Contingencies and Eye Scanpath Entropy in Presence in Virtual Reality: A Reinforcement Learning Paradigm",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "10",
+        "pages": "7492\u20137505",
         "article_number": "",
-        "number_of_pages": 13,
+        "number_of_pages": 14,
         "abstract": "Sensorimotor contingencies (SC) refer to the rules by which we use our body to perceive. It has been argued that to the extent that a virtual reality (VR) application affords natural SC so the greater likelihood that participants will experience Place Illusion (PI), the illusion of \u2018being there\u2019 (a component of presence) in the virtual environment. However, notwithstanding numerous studies this only has anecdotal support. Here we used a reinforcement learning (RL) paradigm where 26 participants experienced a VR scenario where the RL agent could sequentially propose changes to 5 binary factors: mono or stereo vision, 3 or 6 degrees of freedom head tracking, mono or spatialised sound, low or high display resolution, or one of two color schemes. The first 4 are SC, whereas the last is not. Participants could reject or accept each change proposed by the RL, until convergence. Participants were more likely to accept changes from low to high SC than changes to the color. Additionally, theory suggests that increased PI should be associated with lower eye scanpath entropy. Our results show that mean entropy did decrease over time and the final level of entropy was negatively correlated with a post exposure questionnaire-based assessment of PI.",
         "countries": [
             "ES",
@@ -21814,15 +21814,15 @@
                 ]
             }
         ],
-        "title": "GeneticPrism: Multifaceted Visualization of Citation-based Scholarly Research Evolution",
+        "title": "GeneticPrism: Multifaceted Visualization of Citation-Based Scholarly Research Evolution",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "10",
+        "pages": "9024\u20139038",
         "article_number": "",
-        "number_of_pages": 14,
-        "abstract": "Understanding the evolution of scholarly research is essential for many real-life decision-making processes in academia, such as research planning, frontier exploration, and award selection. Popular platforms like Google Scholar and Web of Science rely on numerical indicators that are too abstract to convey the context and content of scientific research, while most existing visualization approaches on mapping science do not consider the presentation of individual scholars' research evolution using curated self-citation data. This paper builds on our previous work and proposes an integrated pipeline to visualize a scholar's research evolution from multiple topic facets. A novel 3D prism-shaped visual metaphor is introduced as the overview of a scholar's research profile, whilst their scientific evolution on each topic is displayed in a more structured manner. Additional designs by topic chord diagram, streamgraph visualization, and inter-topic flow map, optimized by an elaborate layout algorithm, assist in perceiving the scholar's scientific evolution across topics. A new six-degree-impact glyph metaphor highlights key interdisciplinary works driving the evolution. The proposed visualization methods are evaluated through case studies analyzing the careers of prestigious Turing award laureates, one major visualization venue, and a focused user study. The GeneticPrism web application is publicly available at https://genetic-flow.com.",
+        "number_of_pages": 15,
+        "abstract": "Understanding the evolution of scholarly research is essential for many real-life decision-making processes in academia, such as research planning, frontier exploration, and award selection. Popular platforms like Google Scholar and Web of Science rely on numerical indicators that are too abstract to convey the context and content of scientific research, while most existing visualization approaches on mapping science do not consider the presentation of individual scholars\u2019 research evolution using curated self-citation data. This paper builds on our previous work and proposes an integrated pipeline to visualize a scholar\u2019s research evolution from multiple topic facets. A novel 3D prism-shaped visual metaphor is introduced as the overview of a scholar\u2019s research profile, whilst their scientific evolution on each topic is displayed in a more structured manner. Additional designs by topic chord diagram, streamgraph visualization, and inter-topic flow map, optimized by an elaborate layout algorithm, assist in perceiving the scholar\u2019s scientific evolution across topics. A new six-degree-impact glyph metaphor highlights key interdisciplinary works driving the evolution. The proposed visualization methods are evaluated through case studies analyzing the careers of prestigious Turing award laureates, one major visualization venue, and a focused user study.",
         "countries": [
             "CN"
         ]
@@ -22029,6 +22029,581 @@
         "countries": [
             "CN",
             "US"
+        ]
+    },
+    "10.1016/j.cag.2025.104371": {
+        "doi": "10.1016/j.cag.2025.104371",
+        "authors": [
+            {
+                "family": "Damiand",
+                "given": "Guillaume",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Nivoliers",
+                "given": "Vincent",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Pascual",
+                "given": "Romain",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "A generic query-modify framework for volumetric mesh processing",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104371:1\u2013104371:12",
+        "number_of_pages": 12,
+        "article_number": "104371",
+        "abstract": "We introduce a query-modify framework for automating volumetric mesh processing. Our method enables flexible and efficient modifications of geometric structures composed of multiple volumes with minimal user-implemented code. Modifications are provided as rules consisting of a query mesh and a target mesh representing structural information to be extracted and replaced. The rules enable both localized queries to be matched with a portion of an input mesh and targeted modifications on the matched portion of the input mesh. Our approach generalizes standard mesh manipulations and adapts to various applications, including geometric modeling, remeshing, and topology-aware transformations. We showcase our framework on several use cases, including the first complete implementation of a tetrahedral recombination method based on 171 cases, exhaustively classifying all possible recombinations. Our framework allows for arbitrarily connected collections of volumes as queries, enabling automated and application-driven mesh modifications.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1145/3730922": {
+        "doi": "10.1145/3730922",
+        "authors": [
+            {
+                "family": "Liu",
+                "given": "Tao",
+                "orcid": "0000-0003-1016-4191",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Tianyu",
+                "orcid": "0000-0003-0372-0049",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Chen",
+                "given": "Yongxue",
+                "orcid": "0000-0001-6236-4158",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Weiming",
+                "orcid": "0000-0001-6289-0094",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Jiang",
+                "given": "Yu",
+                "orcid": "0000-0003-1579-7158",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Huang",
+                "given": "Yuming",
+                "orcid": "0000-0001-5900-2164",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Charlie C. L.",
+                "orcid": "0000-0003-4406-8480",
+                "countries": [
+                    "GB"
+                ]
+            }
+        ],
+        "title": "Neural Co-Optimization of Structural Topology, Manufacturable Layers, and Path Orientations for Fiber-Reinforced Composites",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2025,
+        "volume": "44",
+        "number": "4",
+        "pages": "128:1\u2013128:17",
+        "article_number": "128",
+        "number_of_pages": 17,
+        "abstract": "We propose a neural network-based computational framework for the simultaneous optimization of structural topology, curved layers, and path orientations to achieve strong anisotropic strength in fiber-reinforced thermoplastic composites while ensuring manufacturability. Our framework employs three implicit neural fields to represent geometric shape, layer sequence, and fiber orientation. This enables the direct formulation of both design and manufacturability objectives - such as anisotropic strength, structural volume, machine motion control, layer curvature, and layer thickness - into an integrated and differentiable optimization process. By incorporating these objectives as loss functions, the framework ensures that the resultant composites exhibit optimized mechanical strength while remaining its manufacturability for filament-based multi-axis 3D printing across diverse hardware platforms. Physical experiments demonstrate that the composites generated by our co-optimization method can achieve an improvement of up to 33.1% in failure loads compared to composites with sequentially optimized structures and manufacturing sequences.",
+        "countries": [
+            "GB"
+        ]
+    },
+    "10.1016/j.cag.2025.104388": {
+        "doi": "10.1016/j.cag.2025.104388",
+        "authors": [
+            {
+                "family": "Wu",
+                "given": "Xiongyu",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Liu",
+                "given": "Shibo",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Fu",
+                "given": "Xiao-Ming",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Polynomial 3D Green coordinates and their derivatives for linear cages",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104388:1\u2013104388:12",
+        "number_of_pages": 12,
+        "article_number": "104388",
+        "abstract": "We derive closed-form expressions for polynomial Green coordinates and their derivatives for 3D linear cages. The keys to our derivation are the integrals of polynomials divided by Euclidean distance over a triangle and their derivatives. We demonstrate the usefulness of our polynomial 3D Green coordinates and derivatives on cage-based and variational shape deformations. In cage-based deformation, the coordinates enable deformation from linear polygons of the input cage to polynomial surfaces of any order, allowing users to perform intuitive deformations with a small number of input parameters. In variational deformation, the coordinates and derivatives form a smooth deformation subspace, allowing for the realization of nonlinear shape optimization.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1016/j.cag.2025.104383": {
+        "doi": "10.1016/j.cag.2025.104383",
+        "authors": [
+            {
+                "family": "Wang",
+                "given": "Qian",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhu",
+                "given": "Jiayi",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Liang",
+                "given": "Aihua",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Mengyao",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Xue",
+                "given": "Junxiao",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Orientation control via G3 parametric quaternion interpolation spline curves",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104383:1\u2013104383:8",
+        "number_of_pages": 8,
+        "article_number": "104383",
+        "abstract": "In order to interpolate the real rigid body motion orientation, this paper proposes a unit quaternion spline curve based on the parametric 6th-degree polynomial in Euclidean space. The quaternion spline curve preserves \n \n \n G\n \n \n 3\n \n \n continuity and interpolates a given sequence of points; meanwhile, it possesses the local shape adjustability. Through numerical experiments, the influence of parameter variation on motion orientation is specifically analyzed and the performance of the method in the case of a sudden rotation is also considered.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1016/j.cag.2025.104359": {
+        "doi": "10.1016/j.cag.2025.104359",
+        "authors": [
+            {
+                "family": "Li",
+                "given": "Siqi",
+                "countries": [
+                    "SG"
+                ]
+            },
+            {
+                "family": "Tang",
+                "given": "Haoyu",
+                "countries": [
+                    "SG"
+                ]
+            },
+            {
+                "family": "Song",
+                "given": "Peng",
+                "countries": [
+                    "SG"
+                ]
+            },
+            {
+                "family": "Deng",
+                "given": "Bailin",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Zheng",
+                "given": "Jianmin",
+                "countries": [
+                    "SG"
+                ]
+            }
+        ],
+        "title": "Conformable mechanisms on freeform surfaces",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104359:1\u2013104359:11",
+        "number_of_pages": 11,
+        "article_number": "104359",
+        "abstract": "This paper introduces a new class of linkage mechanisms called surface-conformable mechanisms or simply conformable mechanisms. A conformable mechanism conforms to a freeform surface in one of its configurations, in which the mechanism\u2019s joints and links are exactly on the surface. Conformable mechanisms can be stowed compactly when not in use and accomplish complex motion transfer tasks when deployed. This paper aims to model and design conformable mechanisms for 3D path and motion generation. To achieve this goal, we enumerate topologies of conformable mechanisms, and model their geometry in the parameterization space of a freeform surface for surface conformity. To ensure a working and fabricable mechanism, we propose an efficient approach to processing the freeform surface by first removing a portion of the surface that collides with the moving links and joints and then removing disconnected patches and fragile features from the surface. Taking the modeling and processing as a foundation, we propose an optimization-based approach to designing a conformable mechanism for generating a target 3D path/motion, while preserving the mechanism\u2019s appearance in the stowed state. We demonstrate the effectiveness of our approach by designing conformable mechanisms that conform to various freeform surfaces, evaluating their kinematic performance in 3D path and motion generation, validating their functionality with a 3D printed prototype, and showing three applications of these mechanisms.",
+        "countries": [
+            "SG",
+            "GB"
+        ]
+    },
+    "10.1109/tvcg.2025.3589748": {
+        "doi": "10.1109/tvcg.2025.3589748",
+        "authors": [
+            {
+                "family": "\u0160t\u011bp\u00e1nek",
+                "given": "Adam",
+                "countries": [
+                    "CZ"
+                ]
+            },
+            {
+                "family": "Ku\u0165\u00e1k",
+                "given": "David",
+                "countries": [
+                    "CZ"
+                ]
+            },
+            {
+                "family": "Kozl\u00edkov\u00e1",
+                "given": "Barbora",
+                "countries": [
+                    "CZ"
+                ]
+            },
+            {
+                "family": "By\u0161ka",
+                "given": "Jan",
+                "countries": [
+                    "CZ",
+                    "NO"
+                ]
+            }
+        ],
+        "title": "Helveg: Diagrams for Software Documentation",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2025,
+        "volume": "31",
+        "number": "10",
+        "pages": "9079\u20139091",
+        "article_number": "",
+        "number_of_pages": 13,
+        "abstract": "Software developers often have to gain an understanding of a codebase. Be it programmers getting onboarded onto a team project or, for example, developers striving to grasp an external open-source library. In either case, they frequently turn to the project\u2019s documentation. However, documentation in its traditional textual form is ill-suited for this kind of high-level exploratory analysis, since it is immutable from the readers\u2019 perspective and thus forces them to follow a predefined path. We have designed an approach bringing aspects of software architecture visualization to API reference documentation. It utilizes a highly interactive node-link diagram with expressive node glyphs and flexible filtering capabilities, providing a high-level overview of the codebase as well as details on demand. To test our design, we have implemented a prototype named Helveg, capable of automatically generating diagrams of C# codebases. User testing of Helveg confirmed its potential, but it also revealed problems with the readability, intuitiveness, and user experience of our tool. Therefore, in this paper, which is an extended version of our VISSOFT paper with DOI 10.1109/VISSOFT64034.2024.00012, we address many of these problems through major changes to the glyph design, means of interaction, and user interface of the tool. To assess the improvements, this new version of Helveg was evaluated again with the same group of participants as the previous version.",
+        "countries": [
+            "CZ",
+            "NO"
+        ]
+    },
+    "10.1016/j.cag.2025.104397": {
+        "doi": "10.1016/j.cag.2025.104397",
+        "authors": [
+            {
+                "family": "van Blokland",
+                "given": "Bart Iver",
+                "countries": [
+                    "NO"
+                ]
+            },
+            {
+                "family": "Aguirre",
+                "given": "Isaac",
+                "countries": [
+                    "CL"
+                ]
+            },
+            {
+                "family": "Sipiran",
+                "given": "Ivan",
+                "countries": [
+                    "CL"
+                ]
+            },
+            {
+                "family": "Bustos",
+                "given": "Benjamin",
+                "countries": [
+                    "CL"
+                ]
+            },
+            {
+                "family": "Biasotti",
+                "given": "Silvia",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Palmieri",
+                "given": "Giorgio",
+                "countries": [
+                    "IT"
+                ]
+            }
+        ],
+        "title": "SHREC 2025: Partial retrieval benchmark",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104397:1\u2013104397:11",
+        "number_of_pages": 11,
+        "article_number": "104397",
+        "abstract": "Partial retrieval is a long-standing problem in the 3D Object Retrieval community. Its main difficulties arise from how to define 3D local descriptors in a way that makes them effective for partial retrieval and robust to common real-world issues, such as occlusion, noise, or clutter, when dealing with 3D data. This SHREC track is based on the newly proposed ShapeBench benchmark to evaluate the matching performance of local descriptors. We propose an experiment consisting of three increasing levels of difficulty, where we combine different filters to simulate real-world issues related to the partial retrieval task. Our main findings show that classic 3D local descriptors like Spin Image are robust to several of the tested filters (and their combinations), but more recent learned local descriptors like GeDI can be competitive for some specific filters. Finally, no 3D local descriptor was able to successfully handle the hardest level of difficulty.",
+        "countries": [
+            "NO",
+            "CL",
+            "IT"
+        ]
+    },
+    "10.1016/j.cag.2025.104361": {
+        "doi": "10.1016/j.cag.2025.104361",
+        "authors": [
+            {
+                "family": "Chen",
+                "given": "Hao-Xiang",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Li",
+                "given": "Xiao-Lei",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Mu",
+                "given": "Tai-Jiang",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Xu",
+                "given": "Qun-Ce",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Hu",
+                "given": "Shi-Min",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "SDLKF: Signed Distance Linear Kernel Function for surface reconstruction",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104361:1\u2013104361:11",
+        "number_of_pages": 11,
+        "article_number": "104361",
+        "abstract": "In this paper, we introduce a novel explicit representation for surface reconstruction from multi-view images, named Signed Distance Linear Kernel Function (SDLFK), which simultaneously allows fast rendering and accurate surface reconstruction. The key insight is to use linear kernels to fit the Signed Distance Function (SDF) which has an analytic solution for volume rendering instead of numeric approximation. Specifically, the linear kernel function is defined within ellipsoids and calculated as the signed distance to the principal plane. For each ellipsoid intersected by rays, the expected depth and transmittance can be calculated through volume rendering with a closed-form solution. This procedure allows seamless switching between soft and hard surfaces, where the former facilitates optimization and the latter ensures precise reconstruction. Our evaluations demonstrate that our method improves the detailed geometry compared to state-of-the-art methods while maintaining fast and high-fidelity rendering.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1111/cgf.70002": {
+        "doi": "10.1111/cgf.70002",
+        "authors": [
+            {
+                "family": "Huang",
+                "given": "Yuhang",
+                "orcid": "0000-0002-3471-0794",
+                "countries": [
+                    "JP"
+                ]
+            },
+            {
+                "family": "Kanai",
+                "given": "Takashi",
+                "orcid": "0000-0002-1635-3818",
+                "countries": [
+                    "JP"
+                ]
+            }
+        ],
+        "title": "DeepFracture: A Generative Approach for Predicting Brittle Fractures with Neural Discrete Representation Learning",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 2025,
+        "volume": "44",
+        "number": "1",
+        "pages": "e70002:1\u2013e70002:15",
+        "article_number": "e70002",
+        "number_of_pages": 15,
+        "abstract": "In the field of brittle fracture animation, generating realistic destruction animations using physics-based simulation methods is computationally expensive. While techniques based on Voronoi diagrams or pre-fractured patterns are effective for real-time applications, they fail to incorporate collision conditions when determining fractured shapes during runtime. This paper introduces a novel learning-based approach for predicting fractured shapes based on collision dynamics at runtime. Our approach seamlessly integrates realistic brittle fracture animations with rigid body simulations, utilising boundary element method (BEM) brittle fracture simulations to generate training data. To integrate collision scenarios and fractured shapes into a deep learning framework, we introduce generative geometric segmentation, distinct from both instance and semantic segmentation, to represent 3D fragment shapes. We propose an eight-dimensional latent code to address the challenge of optimising multiple discrete fracture pattern targets that share similar continuous collision latent codes. This code will follow a discrete normal distribution corresponding to a specific fracture pattern within our latent impulse representation design. This adaptation enables the prediction of fractured shapes using neural discrete representation learning. Our experimental results show that our approach generates considerably more detailed brittle fractures than existing techniques, while the computational time is typically reduced compared to traditional simulation methods at comparable\u00a0resolutions.",
+        "countries": [
+            "JP"
+        ]
+    },
+    "10.1016/j.cag.2025.104423": {
+        "doi": "10.1016/j.cag.2025.104423",
+        "authors": [
+            {
+                "family": "Guo",
+                "given": "Mingtao",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Xing",
+                "given": "Guanyu",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhang",
+                "given": "Yanci",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Liu",
+                "given": "Yanli",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Navigating large-pose challenge for high-fidelity face reenactment with video diffusion model",
+        "journal": "Computers & Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "104423",
+        "abstract": "Face reenactment aims to generate realistic talking head videos by transferring motion from a driving video to a static source image while preserving the source identity. Although existing methods based on either implicit or explicit keypoints have shown promise, they struggle with large pose variations due to warping artifacts or the limitations of coarse facial landmarks. In this paper, we present the Face Reenactment Video Diffusion model (FRVD), a novel framework for high-fidelity face reenactment under large pose changes. Our method first employs a motion extractor to extract implicit facial keypoints from the source and driving images to represent fine-grained motion and to perform motion alignment through a warping module. To address the degradation introduced by warping, we introduce a Warping Feature Mapper (WFM) that maps the warped source image into the motion-aware latent space of a pretrained image-to-video (I2V) model. This latent space encodes rich priors of facial dynamics learned from large-scale video data, enabling effective warping correction and enhancing temporal coherence. Extensive experiments show that FRVD achieves superior performance over existing methods in terms of pose accuracy, identity preservation, and visual quality, especially in challenging scenarios with extreme pose variations.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1016/j.cag.2025.104358": {
+        "doi": "10.1016/j.cag.2025.104358",
+        "authors": [
+            {
+                "family": "Haque",
+                "given": "Kazi Injamamul",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Wu",
+                "given": "Sichun",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Yumak",
+                "given": "Zerrin",
+                "countries": [
+                    "NL"
+                ]
+            }
+        ],
+        "title": "ProbTalk3D-X: Prosody enhanced non-deterministic emotion controllable speech-driven 3D facial animation synthesis",
+        "journal": "Computers & Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "104358",
+        "abstract": "Audio-driven 3D facial animation synthesis has been an active field of research with attention from both academia and industry. While there are promising results in this area, recent approaches largely focus on lip-sync and identity control, neglecting the role of emotions and emotion control in the generative process. That is mainly due to the lack of emotionally rich facial animation data and algorithms that can synthesize speech animations with emotional expressions at the same time. In addition, the majority of the models are deterministic, meaning given the same audio input, they produce the same output motion. We argue that emotions and non-determinism are crucial to generate diverse and emotionally-rich facial animations. In this paper, we present ProbTalk3D-X by extending a prior work ProbTalk3D- a two staged VQ-VAE based non-deterministic model, by additionally incorporating prosody features for improved facial accuracy using an emotionally rich facial animation dataset, 3DMEAD. Further, we present a comprehensive comparison of non-deterministic emotion controllable models (including new extended experimental models) leveraging VQ-VAE, VAE and diffusion techniques. We provide an extensive comparative analysis of the experimental models against the recent 3D facial animation synthesis approaches, by evaluating the results objectively, qualitatively, and with a perceptual user study. We highlight several objective metrics that are more suitable for evaluating stochastic outputs and use both in-the-wild and ground truth data for subjective evaluation. Our evaluation demonstrates that ProbTalk3D-X and original ProbTalk3D achieve superior performance compared to state-of-the-art emotion-controlled, deterministic and non-deterministic models. We recommend watching the supplementary video for visual quality judgment. The entire codebase including the extended models is publicly available. 1 1 https://github.com/uuembodiedsocialai/ProbTalk3D/.",
+        "countries": [
+            "NL"
+        ]
+    },
+    "10.1016/j.cag.2025.104389": {
+        "doi": "10.1016/j.cag.2025.104389",
+        "authors": [
+            {
+                "family": "Tamiosso",
+                "given": "Gustavo Lopes",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "M\u00fcller",
+                "given": "Caetano",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Bombana",
+                "given": "Lucas Spagnolo",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Oliveira",
+                "given": "Manuel M.",
+                "countries": [
+                    "BR"
+                ]
+            }
+        ],
+        "title": "Memory-efficient filter-guided diffusion with domain transform filtering",
+        "journal": "Computers & Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "104389",
+        "abstract": "Diffusion models are powerful tools for image synthesis and editing, yet preserving structural content from a guidance image remains challenging. Filter-Guided Diffusion (FGD) tackles this by applying edge-preserving filtering at each denoising step. However, the original FGD relies on joint bilateral filtering, which incurs high VRAM and computational costs, limiting its scalability to high-resolution images. We propose Domain Transform Filter-Guided Diffusion (DT-FGD), a lightweight variant that replaces bilateral filtering with the efficient domain transform filter and introduces a normalization strategy for the guidance image\u2019s latent representation. DT-FGD achieves significantly lower VRAM usage and faster inference while improving structural consistency. Our method produces images that better align with the text prompt and vary smoothly under filter parameter changes, leading to more predictable outcomes. Experiments show that DT-FGD can reduce VRAM consumption by over 50%, accelerates inference, and scales to high resolutions on a single GPU\u2014unlike prior approaches. We further present a variant that offers even greater memory savings at the cost of additional inference time. DT-FGD enables structure-preserving diffusion on resource-constrained hardware and opens new directions for high-resolution, controllable image synthesis.",
+        "countries": [
+            "BR"
         ]
     }
 }

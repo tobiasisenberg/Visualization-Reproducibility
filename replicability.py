@@ -26,6 +26,7 @@ doPrintTVCGInPressDetails = False # print out a list of the IEEE papers that are
 doExportNumbersForPaper = True # generate a LaTeX file that records all kinds of collected statistics, which is needed to for later compiling the paper
 doCopyPlotsAccordingToFigureNumbers = True # copy the visualizations into extra folder named according to the figure numbers from the paper
 downloadAcmFromCrossref = True # if True, then use the Crossref API to get ACM metadata, otherwise the acmdownload tool; FIXME: should be True for submission
+printConferenceTotals = False # If true, then print the totals of IEEE VIS presentations (regular full paper plus journal)
 
 # other configuration
 visPadding = 0 # the padding in pixels to be applied to the exported visualizations, set to 0 for use in paper, otherwise 5 is good
@@ -179,7 +180,8 @@ def markVisPapersByKeywords(paperList):
             ("quantitative data" in paper["title"].lower()) or
             # ("topology" in paper["title"].lower()) or # not good: some graphics papers also captured
             ("t-sne" in paper["title"].lower()) or
-            ("high-dimensional data" in paper["title"].lower())
+            ("high-dimensional data" in paper["title"].lower()) or
+            ("visual abstraction" in paper["title"].lower())
             ):
             paper["is_vis"] = True
             paper["type"] = "keyword"
@@ -198,7 +200,8 @@ def markVisPapersByKeywords(paperList):
             ("10.1111/cgf.13910" in paper["doi"]) or         # talks about point clouds and topology
             ("10.1109/tvcg.2024.3491504" in paper["doi"]) or # data visualization author keyword
             ("10.1109/tvcg.2024.3513275" in paper["doi"]) or # visualization author keyword
-            ("10.1145/3687996" in paper["doi"])              # talks about the simulation of 3D flows and their visual representation
+            ("10.1145/3687996" in paper["doi"]) or           # talks about the simulation of 3D flows and their visual representation
+            ("10.1109/tvcg.2025.3589748" in paper["doi"])    # visualization in abstract and author keyword
             ):
             paper["is_vis"] = True
             paper["type"] = "manual"
@@ -207,13 +210,10 @@ def markVisPapersByFutureVISPresentation(paperList):
     for paper in paperList:
         # presentations at the coming VIS conference we already know about
         if  (
-            ("10.1109/tvcg.2024.3514858" in paper["doi"]) or
-            ("10.1109/tvcg.2024.3520208" in paper["doi"]) or
-            ("10.1109/tvcg.2025.3539779" in paper["doi"]) or
-            ("10.1109/tvcg.2024.3491504" in paper["doi"]) or
-            ("10.1109/tvcg.2024.3495695" in paper["doi"])
+            # ("10.1109/tvcg.2026.add-future-ids-here" in paper["doi"]) or
+            ("10.1109/tvcg.2026.add-future-ids-here" in paper["doi"])
             ):
-            paper["is_vis"] = True                     # will be presented at VIS 2025
+            paper["is_vis"] = True                     # will be presented at next VIS
             paper["type"] = "journal pres. @ IEEE VIS" # also hack the paper type
 
 def filterAndShortenJournalNames(journalName = ""):
@@ -756,7 +756,13 @@ else:
             doi = doi.replace("https://dl.acm.org/doi/", "")
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
             # please note to replace the '%20' in the Google search links with a ' ' (manually or via a .replace("%20", " ") call as in the examples); otherwise the replacement does not work
-            doi = doi.replace("http://www.google.com/search?q=STRive:%20An%20association%20rule-based%20system%20for%20the%20exploration%20of%20spatiotemporal%20categorical%20data".replace("%20", " "), "10.1016/j.cag.2025.104410")
+            doi = doi.replace("http://www.google.com/search?q=Navigating%20Large-Pose%20Challenge%20for%20High-Fidelity%20Face%20Reenactment%20with%20Video%20Diffusion%20Model".replace("%20", " "), "10.1016/j.cag.2025.104423")
+            doi = doi.replace("http://www.google.com/search?q=ProbTalk3D-X:%20Prosody%20Enhanced%20Non-Deterministic%20Emotion%20Controllable%20Speech-Driven%203D%20Facial%20Animation%20Synthesis".replace("%20", " "), "10.1016/j.cag.2025.104358")
+            doi = doi.replace("http://www.google.com/search?q=Memory-Efficient%20Filter-Guided%20Diffusion%20with%20Domain%20Transform%20Filtering".replace("%20", " "), "10.1016/j.cag.2025.104389")
+            # accepted real VIS papers below, need to fix later in both vis-2025.csv and via vispubdata, and remove here
+            doi = doi.replace("http://www.google.com/search?q=SynAnno:%20Interactive%20Guided%20Proofreading%20of%20Synaptic%20Annotations".replace("%20", " "), "10.vis2025/1718")
+            doi = doi.replace("http://www.google.com/search?q=Your%20Model%20Is%20Unfair,%20Are%20You%20Even%20Aware?%20Inverse%20Relationship%20Between%20Comprehension%20and%20Trust%20in%20Explainability%20Visualizations%20of%20Biased%20ML%20Models".replace("%20", " "), "10.vis2025/1446")
+            doi = doi.replace("http://www.google.com/search?q=Cluster-Based%20Random%20Forest%20Visualization%20and%20Interpretation".replace("%20", " "), "10.vis2025/1432")
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()
@@ -2149,6 +2155,46 @@ if exportVisualizations:
             dataToPlot.append({"venue": venue, "name": venue + ": w/ GRS", "year": year, "replicable": True, "count": count1})#, "order": color_number * 2, "order2": color_number})
             dataToPlot.append({"venue": venue, "name": venue + ": w/o GRS", "year": year, "replicable": False, "count": count2})#, "order": color_number * 2 + 1, "order2": len(venues) + color_number})
     altairData = pd.DataFrame(dataToPlot)
+
+    if printConferenceTotals:
+        # since we have this data handy here, we can print it out if required
+        print("")
+        print("VIS presented paper totals")
+        for year in range(startYear, endYear + 1):
+            totalVISCount = 0
+            print(str(year) + ": ", end='')
+            for venue in venues[0:2]: # count total major presentations
+                count1 = visVenuesAndReplicability[venue][year]["is_replicable"]
+                count2 = visVenuesAndReplicability[venue][year]["not_replicable"]
+                localTotal = count1 + count2
+                print("(" + venue + ": " + str(localTotal) + ") ", end='')
+                totalVISCount += localTotal
+            print(" -- Total: " + str(totalVISCount))
+        print("")
+        print("EuroVis presented paper totals")
+        for year in range(startYear, endYear + 1):
+            totalVISCount = 0
+            print(str(year) + ": ", end='')
+            for venue in venues[2:4]: # count total major presentations
+                count1 = visVenuesAndReplicability[venue][year]["is_replicable"]
+                count2 = visVenuesAndReplicability[venue][year]["not_replicable"]
+                localTotal = count1 + count2
+                print("(" + venue + ": " + str(localTotal) + ") ", end='')
+                totalVISCount += localTotal
+            print(" -- Total: " + str(totalVISCount))
+        print("")
+        print("PacificVis presented paper totals")
+        for year in range(startYear, endYear + 1):
+            totalVISCount = 0
+            print(str(year) + ": ", end='')
+            for venue in venues[4:6]: # count total major presentations
+                count1 = visVenuesAndReplicability[venue][year]["is_replicable"]
+                count2 = visVenuesAndReplicability[venue][year]["not_replicable"]
+                localTotal = count1 + count2
+                print("(" + venue + ": " + str(localTotal) + ") ", end='')
+                totalVISCount += localTotal
+            print(" -- Total: " + str(totalVISCount))
+        print("")
 
     chart = alt.Chart(altairData).mark_bar().encode(
         x = alt.X('year:N', title=None).axis(tickWidth=0, labelAngle=0),#domain=False, 
