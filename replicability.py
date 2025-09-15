@@ -198,8 +198,6 @@ def markVisPapersByKeywords(paperList):
             ("10.1145/3528223.3530102" in paper["doi"]) or   # talks about simulation and visualization of stellar atmospheres
             ("10.1111/cgf.14784" in paper["doi"]) or         # talks about topology, graphs, and scalar fields
             ("10.1111/cgf.13910" in paper["doi"]) or         # talks about point clouds and topology
-            ("10.1109/tvcg.2024.3491504" in paper["doi"]) or # data visualization author keyword
-            ("10.1109/tvcg.2024.3513275" in paper["doi"]) or # visualization author keyword
             ("10.1145/3687996" in paper["doi"]) or           # talks about the simulation of 3D flows and their visual representation
             ("10.1109/tvcg.2025.3589748" in paper["doi"])    # visualization in abstract and author keyword
             ):
@@ -759,6 +757,7 @@ else:
             doi = doi.replace("http://www.google.com/search?q=Navigating%20Large-Pose%20Challenge%20for%20High-Fidelity%20Face%20Reenactment%20with%20Video%20Diffusion%20Model".replace("%20", " "), "10.1016/j.cag.2025.104423")
             doi = doi.replace("http://www.google.com/search?q=ProbTalk3D-X:%20Prosody%20Enhanced%20Non-Deterministic%20Emotion%20Controllable%20Speech-Driven%203D%20Facial%20Animation%20Synthesis".replace("%20", " "), "10.1016/j.cag.2025.104358")
             doi = doi.replace("http://www.google.com/search?q=Memory-Efficient%20Filter-Guided%20Diffusion%20with%20Domain%20Transform%20Filtering".replace("%20", " "), "10.1016/j.cag.2025.104389")
+            doi = doi.replace("http://www.google.com/search?q=SynopFrame:%20Multiscale%20time-dependent%20visual%20abstraction%20framework%20for%20analyzing%20DNA%20nanotechnology%20simulations".replace("%20", " "), "10.1016/j.cag.2025.104376")
             # accepted real VIS papers below, need to fix later in both vis-2025.csv and via vispubdata, and remove here
             doi = doi.replace("http://www.google.com/search?q=SynAnno:%20Interactive%20Guided%20Proofreading%20of%20Synaptic%20Annotations".replace("%20", " "), "10.vis2025/1718")
             doi = doi.replace("http://www.google.com/search?q=Your%20Model%20Is%20Unfair,%20Are%20You%20Even%20Aware?%20Inverse%20Relationship%20Between%20Comprehension%20and%20Trust%20in%20Explainability%20Visualizations%20of%20Biased%20ML%20Models".replace("%20", " "), "10.vis2025/1446")
@@ -3103,6 +3102,8 @@ if (doCopyPlotsAccordingToFigureNumbers) and (exportVisualizations):
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-vis-status.pdf', paperFiguresOutputSubdirectury + 'figure16a.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-journal.pdf', paperFiguresOutputSubdirectury + 'figure16b.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_all-by-visualization-stackedbargraph-normalized.pdf', paperFiguresOutputSubdirectury + 'figure17.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_all-by-visualization-groupedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure17_absolute-bars.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_all-by-visualization-linegraph.pdf', paperFiguresOutputSubdirectury + 'figure17_absolute-lines.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-journal_plus_type_aggregated-stackedbargraph-normalized.pdf', paperFiguresOutputSubdirectury + 'figure18.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-journal_plus_type-stackedbargraph-normalized.pdf', paperFiguresOutputSubdirectury + 'figure19.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-type-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure20.pdf')
@@ -3117,6 +3118,7 @@ if (doCopyPlotsAccordingToFigureNumbers) and (exportVisualizations):
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-absolute.pdf', paperFiguresOutputSubdirectury + 'figure25b.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-proportional.pdf', paperFiguresOutputSubdirectury + 'figure26a.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-piechart-by-country-senior-only-absolute.pdf', paperFiguresOutputSubdirectury + 'figure26b.pdf')
+
 
 # copy the final GRSI data file to the respective output directory
 shutil.copy(formatted_date + " grsi paper data.json", dataOutputSubdirectury + "grsi_paper_data.json")

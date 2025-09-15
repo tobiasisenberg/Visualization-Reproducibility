@@ -22512,11 +22512,11 @@
         ],
         "title": "Navigating large-pose challenge for high-fidelity face reenactment with video diffusion model",
         "journal": "Computers & Graphics",
-        "publication_year": 3025,
-        "volume": "",
+        "publication_year": 2025,
+        "volume": "132",
         "number": "",
-        "pages": "",
-        "number_of_pages": -1,
+        "pages": "104423:1\u2013104423:9",
+        "number_of_pages": 9,
         "article_number": "104423",
         "abstract": "Face reenactment aims to generate realistic talking head videos by transferring motion from a driving video to a static source image while preserving the source identity. Although existing methods based on either implicit or explicit keypoints have shown promise, they struggle with large pose variations due to warping artifacts or the limitations of coarse facial landmarks. In this paper, we present the Face Reenactment Video Diffusion model (FRVD), a novel framework for high-fidelity face reenactment under large pose changes. Our method first employs a motion extractor to extract implicit facial keypoints from the source and driving images to represent fine-grained motion and to perform motion alignment through a warping module. To address the degradation introduced by warping, we introduce a Warping Feature Mapper (WFM) that maps the warped source image into the motion-aware latent space of a pretrained image-to-video (I2V) model. This latent space encodes rich priors of facial dynamics learned from large-scale video data, enabling effective warping correction and enhancing temporal coherence. Extensive experiments show that FRVD achieves superior performance over existing methods in terms of pose accuracy, identity preservation, and visual quality, especially in challenging scenarios with extreme pose variations.",
         "countries": [
@@ -22550,11 +22550,11 @@
         ],
         "title": "ProbTalk3D-X: Prosody enhanced non-deterministic emotion controllable speech-driven 3D facial animation synthesis",
         "journal": "Computers & Graphics",
-        "publication_year": 3025,
-        "volume": "",
+        "publication_year": 2025,
+        "volume": "132",
         "number": "",
-        "pages": "",
-        "number_of_pages": -1,
+        "pages": "104358:1\u2013104358:17",
+        "number_of_pages": 17,
         "article_number": "104358",
         "abstract": "Audio-driven 3D facial animation synthesis has been an active field of research with attention from both academia and industry. While there are promising results in this area, recent approaches largely focus on lip-sync and identity control, neglecting the role of emotions and emotion control in the generative process. That is mainly due to the lack of emotionally rich facial animation data and algorithms that can synthesize speech animations with emotional expressions at the same time. In addition, the majority of the models are deterministic, meaning given the same audio input, they produce the same output motion. We argue that emotions and non-determinism are crucial to generate diverse and emotionally-rich facial animations. In this paper, we present ProbTalk3D-X by extending a prior work ProbTalk3D- a two staged VQ-VAE based non-deterministic model, by additionally incorporating prosody features for improved facial accuracy using an emotionally rich facial animation dataset, 3DMEAD. Further, we present a comprehensive comparison of non-deterministic emotion controllable models (including new extended experimental models) leveraging VQ-VAE, VAE and diffusion techniques. We provide an extensive comparative analysis of the experimental models against the recent 3D facial animation synthesis approaches, by evaluating the results objectively, qualitatively, and with a perceptual user study. We highlight several objective metrics that are more suitable for evaluating stochastic outputs and use both in-the-wild and ground truth data for subjective evaluation. Our evaluation demonstrates that ProbTalk3D-X and original ProbTalk3D achieve superior performance compared to state-of-the-art emotion-controlled, deterministic and non-deterministic models. We recommend watching the supplementary video for visual quality judgment. The entire codebase including the extended models is publicly available. 1 1 https://github.com/uuembodiedsocialai/ProbTalk3D/.",
         "countries": [
@@ -22595,15 +22595,273 @@
         ],
         "title": "Memory-efficient filter-guided diffusion with domain transform filtering",
         "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104389:1\u2013104389:10",
+        "number_of_pages": 10,
+        "article_number": "104389",
+        "abstract": "Diffusion models are powerful tools for image synthesis and editing, yet preserving structural content from a guidance image remains challenging. Filter-Guided Diffusion (FGD) tackles this by applying edge-preserving filtering at each denoising step. However, the original FGD relies on joint bilateral filtering, which incurs high VRAM and computational costs, limiting its scalability to high-resolution images. We propose Domain Transform Filter-Guided Diffusion (DT-FGD), a lightweight variant that replaces bilateral filtering with the efficient domain transform filter and introduces a normalization strategy for the guidance image\u2019s latent representation. DT-FGD achieves significantly lower VRAM usage and faster inference while improving structural consistency. Our method produces images that better align with the text prompt and vary smoothly under filter parameter changes, leading to more predictable outcomes. Experiments show that DT-FGD can reduce VRAM consumption by over 50%, accelerates inference, and scales to high resolutions on a single GPU\u2014unlike prior approaches. We further present a variant that offers even greater memory savings at the cost of additional inference time. DT-FGD enables structure-preserving diffusion on resource-constrained hardware and opens new directions for high-resolution, controllable image synthesis.",
+        "countries": [
+            "BR"
+        ]
+    },
+    "10.1016/j.cag.2025.104354": {
+        "doi": "10.1016/j.cag.2025.104354",
+        "authors": [
+            {
+                "family": "Chen",
+                "given": "Yu",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Lin",
+                "given": "Hongwei",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Analyzing singular patterns in discrete planar vector fields via persistent path homology",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104354:1\u2013104354:14",
+        "number_of_pages": 14,
+        "article_number": "104354",
+        "abstract": "Analyzing singular patterns in vector fields is a fundamental problem in theoretical and practical domains due to the ability of such patterns to detect the intrinsic characteristics of vector fields. In this study, we propose an approach for analyzing singular patterns from discrete planar vector fields. Our method involves converting the planar discrete vector field into a specialized digraph and computing its one-dimensional persistent path homology. By analyzing the persistence diagram, we can determine the location of singularities, and the variations of singular patterns can also be analyzed. The experimental results demonstrate the effectiveness of our method in analyzing the singular patterns of noisy real-world vector fields and measuring the variations between different vector fields.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1016/j.cag.2025.104376": {
+        "doi": "10.1016/j.cag.2025.104376",
+        "authors": [
+            {
+                "family": "Luo",
+                "given": "Deng",
+                "countries": [
+                    "SA"
+                ]
+            },
+            {
+                "family": "Kouyoumdjian",
+                "given": "Alexandre",
+                "countries": [
+                    "SA"
+                ]
+            },
+            {
+                "family": "Strnad",
+                "given": "Ond\u0159ej",
+                "countries": [
+                    "SA"
+                ]
+            },
+            {
+                "family": "Miao",
+                "given": "Haichao",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Bari\u0161i\u0107",
+                "given": "Ivan",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Isenberg",
+                "given": "Tobias",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Viola",
+                "given": "Ivan",
+                "countries": [
+                    "SA"
+                ]
+            }
+        ],
+        "title": "SynopFrame: Multiscale time-dependent visual abstraction framework for analyzing DNA nanotechnology simulations",
+        "journal": "Computers & Graphics",
         "publication_year": 3025,
         "volume": "",
         "number": "",
         "pages": "",
         "number_of_pages": -1,
-        "article_number": "104389",
-        "abstract": "Diffusion models are powerful tools for image synthesis and editing, yet preserving structural content from a guidance image remains challenging. Filter-Guided Diffusion (FGD) tackles this by applying edge-preserving filtering at each denoising step. However, the original FGD relies on joint bilateral filtering, which incurs high VRAM and computational costs, limiting its scalability to high-resolution images. We propose Domain Transform Filter-Guided Diffusion (DT-FGD), a lightweight variant that replaces bilateral filtering with the efficient domain transform filter and introduces a normalization strategy for the guidance image\u2019s latent representation. DT-FGD achieves significantly lower VRAM usage and faster inference while improving structural consistency. Our method produces images that better align with the text prompt and vary smoothly under filter parameter changes, leading to more predictable outcomes. Experiments show that DT-FGD can reduce VRAM consumption by over 50%, accelerates inference, and scales to high resolutions on a single GPU\u2014unlike prior approaches. We further present a variant that offers even greater memory savings at the cost of additional inference time. DT-FGD enables structure-preserving diffusion on resource-constrained hardware and opens new directions for high-resolution, controllable image synthesis.",
+        "article_number": "104376",
+        "abstract": "We present an open-source framework, SynopFrame, that allows DNA nanotechnology (DNA-nano) experts to analyze and understand molecular dynamics simulation trajectories of their designs. We use a multiscale multi-dimensional abstraction space, connect the representations to a projected conformational space plot of the structure\u2019s temporal sequence, and thus enable experts to analyze the dynamics of their structural designs and, specifically, failure cases of the assembly. In addition, our time-dependent abstraction representation allows the biologists, for the first time in a smooth and structurally clear way, to identify and observe temporal transitions of a DNA-nano design from one configuration to another, and to highlight important periods of the simulation for further analysis. We realize SynopFrame as a dashboard of the different synchronized 3D spatial and 2D schematic visual representations, with a color overlay to show essential properties such as the status of hydrogen bonds. The linking of the spatial, schematic, and abstract views ensures that users can effectively analyze the high-frequency motion. We also categorize the status of the hydrogen bonds into a new format to allow us to color-encode it and overlay it on the representations. To demonstrate the utility of SynopFrame, we describe example usage scenarios and report user feedback.",
         "countries": [
-            "BR"
+            "SA",
+            "US",
+            "AT",
+            "FR"
+        ]
+    },
+    "10.vis2025/1718": {
+        "doi": "10.vis2025/1718",
+        "authors": [
+            {
+                "family": "Lauenburg",
+                "given": "Leander",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Troidl",
+                "given": "Jakob",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Gohain",
+                "given": "Adam",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Lin",
+                "given": "Zudi",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Pfister",
+                "given": "Hanspeter",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Wei",
+                "given": "Donglai",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "SynAnno: Interactive Guided Proofreading of Synaptic Annotations",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "Connectomics, a subfield of neuroscience, aims to map and analyze synapse-level wiring diagrams of the nervous system. While recent advances in deep learning have accelerated automated neuron and synapse segmentation, reconstructing accurate connectomes still demands extensive human proofreading to correct segmentation errors. We present SynAnno, an interactive tool designed to streamline and enhance the proofreading of synaptic annotations in large-scale connectomics datasets. SynAnno integrates into existing neuroscience workflows by enabling guided, neuron-centric proofreading. To address the challenges posed by the complex spatial branching of neurons, it introduces a structured workflow with an optimized traversal path and a 3D mini-map for tracking progress. In addition, SynAnno incorporates fine-tuned machine learning models to assist with error detection and correction, reducing the manual burden and increasing proofreading efficiency. We evaluate SynAnno through a user and case study involving seven neuroscience experts. Results show that SynAnno significantly accelerates synapse proofreading while reducing cognitive load and annotation errors through structured guidance and visualization support. The source code and interactive demo are available at: https://github.com/PytorchConnectomics/SynAnno.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.vis2025/1446": {
+        "doi": "10.vis2025/1446",
+        "authors": [
+            {
+                "family": "Kaufman",
+                "given": "Zhanna",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Endres",
+                "given": "Madeline",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Xiong Bearfield",
+                "given": "Cindy",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Brun",
+                "given": "Yuriy",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Your Model Is Unfair, Are You Even Aware? Inverse Relationship Between Comprehension and Trust in Explainability Visualizations of Biased ML Models",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "Systems relying on ML have become ubiquitous, but so has biased behavior within them. Research shows that bias significantly affects stakeholders' trust in systems and how they use them. Further, stakeholders of different backgrounds view and trust the same systems differently. Thus, how ML models' behavior is explained plays a key role in comprehension and trust. We survey explainability visualizations, creating a taxonomy of design characteristics. We conduct user studies to evaluate five state-of-the-art visualization tools (LIME, SHAP, CP, Anchors, and ELI5) for model explainability, measuring how taxonomy characteristics affect comprehension, bias perception, and trust for non-expert ML users. Surprisingly, we find an inverse relationship between comprehension and trust: the better users understand the models, the less they trust them. We investigate the cause and find that this relationship is strongly mediated by bias perception: more comprehensible visualizations increase people's perception of bias, and increased bias perception reduces trust. We confirm this relationship is causal: Manipulating explainability visualizations to control comprehension, bias perception, and trust, we show that visualization design can significantly (p < 0.001) increase comprehension, increase perceived bias, and reduce trust. Conversely, reducing perceived model bias, either by improving model fairness or by adjusting visualization design, significantly increases trust even when comprehension remains high. Our work advances understanding of how comprehension affects trust and systematically investigates visualization's role in facilitating responsible ML applications.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.vis2025/1432": {
+        "doi": "10.vis2025/1446",
+        "authors": [
+            {
+                "family": "Sondag",
+                "given": "Max",
+                "countries": [
+                    "DE",
+                    "NL"
+                ]
+            },
+            {
+                "family": "Meinecke",
+                "given": "Christofer",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Collaris",
+                "given": "Dennis",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "von Landesberger",
+                "given": "Tatiana",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "van den Elzenfman",
+                "given": "Stef",
+                "countries": [
+                    "NL"
+                ]
+            }
+        ],
+        "title": "Cluster-Based Random Forest Visualization and Interpretation",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "Random forests are a machine learning method used to automatically classify datasets and consist of a multitude of decision trees. While these random forests often have higher performance and generalize better than a single decision tree, they are also harder to interpret. This paper presents a visualization method and system to increase interpretability of random forests. We cluster similar trees which enables users to interpret how the model performs in general without needing to analyze each individual decision tree in detail, or interpret an oversimplified summary of the full forest. To meaningfully cluster the decision trees, we introduce a new distance metric that takes into account both the decision rules as well as the predictions of a pair of decision trees. We also propose two new visualization methods that visualize both clustered and individual decision trees: (1) The Feature Plot, which visualizes the topological position of features in the decision trees, and (2) the Rule Plot, which visualizes the decision rules of the decision trees. We demonstrate the efficacy of our approach through a case study on the Glass dataset, which is a relatively complex standard machine learning dataset, as well as a small user study.",
+        "countries": [
+            "DE",
+            "NL"
         ]
     }
 }

@@ -1,6 +1,17 @@
 [
     {
         "is_vis": false,
+        "title": "Analyzing Singular Patterns in Discrete Planar Vector Fields via Persistent Path Homology",
+        "doi": "10.1016/j.cag.2025.104354",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-amathercy-pphvecsingular",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/AmatherCY/PPHVecSingular",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:65433ab77703ab16c81152af4080ba536d7571bd;origin=https://github.com/AmatherCY/PPHVecSingular",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-amathercy-pphvecsingular/representative.png",
+        "authors": "Yu Chen, Hongwei Lin"
+    },
+    {
+        "is_vis": false,
         "title": "A Generic Query-Modify Framework for Volumetric Mesh Processing",
         "doi": "10.1016/j.cag.2025.104371",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-gitlab-liris-cnrs-fr-gdamiand-generic-query-modify",
@@ -92,7 +103,7 @@
     {
         "is_vis": true,
         "title": "SynopFrame: Multiscale time-dependent visual abstraction framework for analyzing DNA nanotechnology simulations",
-        "doi": "not_assigned_yet",
+        "doi": "10.1016/j.cag.2025.104376",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-nanovis-synopframe",
         "journal": "Elsevier Computers & Graphics (C&G)",
         "repo_url": "https://github.com/nanovis/SynopFrame",
@@ -639,7 +650,7 @@
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:e36d3a9dc64e2fc6e09af37c5c9a335152b08822;origin=https://github.com/dirediredock/Census-Stub",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-dirediredock-census-stub/representative.png",
         "authors": "Matt I. B. Oddo, Stephen G. Kobourov, Tamara Munzner",
-        "type": "manual"
+        "type": "journal pres. @ IEEE VIS"
     },
     {
         "is_vis": true,
@@ -698,7 +709,7 @@
         "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/RemoShen/CanisStudio-Plus.git",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-remoshen-canisstudio-plus-git-2024-11-08t17-03-00-901z/representative.png",
         "authors": "Yuancheng Shen, Yue Zhao, Tong Ge, Haoyan Shi, Bongshin Lee, Yunhai Wang",
-        "type": "manual"
+        "type": "journal pres. @ IEEE VIS"
     },
     {
         "is_vis": false,
