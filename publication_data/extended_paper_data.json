@@ -22692,11 +22692,11 @@
         ],
         "title": "SynopFrame: Multiscale time-dependent visual abstraction framework for analyzing DNA nanotechnology simulations",
         "journal": "Computers & Graphics",
-        "publication_year": 3025,
-        "volume": "",
+        "publication_year": 2025,
+        "volume": "132",
         "number": "",
-        "pages": "",
-        "number_of_pages": -1,
+        "pages": "104376:1\u2013104376:12",
+        "number_of_pages": 12,
         "article_number": "104376",
         "abstract": "We present an open-source framework, SynopFrame, that allows DNA nanotechnology (DNA-nano) experts to analyze and understand molecular dynamics simulation trajectories of their designs. We use a multiscale multi-dimensional abstraction space, connect the representations to a projected conformational space plot of the structure\u2019s temporal sequence, and thus enable experts to analyze the dynamics of their structural designs and, specifically, failure cases of the assembly. In addition, our time-dependent abstraction representation allows the biologists, for the first time in a smooth and structurally clear way, to identify and observe temporal transitions of a DNA-nano design from one configuration to another, and to highlight important periods of the simulation for further analysis. We realize SynopFrame as a dashboard of the different synchronized 3D spatial and 2D schematic visual representations, with a color overlay to show essential properties such as the status of hydrogen bonds. The linking of the spatial, schematic, and abstract views ensures that users can effectively analyze the high-frequency motion. We also categorize the status of the hydrogen bonds into a new format to allow us to color-encode it and overlay it on the representations. To demonstrate the utility of SynopFrame, we describe example usage scenarios and report user feedback.",
         "countries": [
@@ -22704,6 +22704,397 @@
             "US",
             "AT",
             "FR"
+        ]
+    },
+    "10.1016/j.cag.2025.104418": {
+        "doi": "10.1016/j.cag.2025.104418",
+        "authors": [
+            {
+                "family": "de Barros Melo",
+                "given": "Silvio",
+                "countries": [
+                    "BR"
+                ]
+            }
+        ],
+        "title": "Direct slicing NURBS objects: A numerically dependable form",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104418:1\u2013104418:17",
+        "number_of_pages": 17,
+        "article_number": "104418",
+        "abstract": "In additive manufacturing, a three-dimensional model is constructed by sequentially adding material layers. Digitally, complex objects are typically modeled using parametric representations, with Non-Uniform Rational B-Splines (NURBS) surfaces being among the most prominent. Slicing NURBS surfaces\u2014a critical operation in the additive manufacturing workflow\u2014has long been a challenge for 3D modelers due to the complexities inherent in their free-form geometries when intersecting with a plane. Traditionally, this challenge is addressed by converting NURBS representations into meshes composed of approximating triangles. While this approach simplifies the intersection process, it often comes at the expense of accuracy or requires significant computational resources to maintain precision. Although direct slicing methods exist, they encounter various limitations. In this work, we introduce an efficient, numerically robust, conversion-free method for sampling points at the intersection of cutting planes and NURBS objects, termed IsoSlicer. This approach supports NURBS surfaces of any degree while achieving arbitrary accuracy requirements with guaranteed numerical stability.",
+        "countries": [
+            "BR"
+        ]
+    },
+    "10.1145/3731430": {
+        "doi": "10.1145/3731430",
+        "authors": [
+            {
+                "family": "Seo",
+                "given": "Yunji",
+                "orcid": "0009-0004-9941-3610",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Choi",
+                "given": "Young Sun",
+                "orcid": "0009-0001-9836-4245",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Son",
+                "given": "HyunSeung",
+                "orcid": "0009-0009-1239-0492",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Uh",
+                "given": "Youngjung",
+                "orcid": "0000-0001-8173-3334",
+                "countries": [
+                    "KR"
+                ]
+            }
+        ],
+        "title": "FLoD: Integrating Flexible Level of Detail into 3D Gaussian Splatting for Customizable Rendering",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2025,
+        "volume": "44",
+        "number": "4",
+        "pages": "112:1\u2013112:16",
+        "article_number": "112",
+        "number_of_pages": 16,
+        "abstract": "3D Gaussian Splatting (3DGS) has significantly advanced computer graphics by enabling high-quality 3D reconstruction and fast rendering speeds, inspiring numerous follow-up studies. However, 3DGS and its subsequent works are restricted to specific hardware setups, either on only low-cost or on only high-end configurations. Approaches aimed at reducing 3DGS memory usage enable rendering on low-cost GPU but compromise rendering quality, which fails to leverage the hardware capabilities in the case of higher-end GPU. Conversely, methods that enhance rendering quality require high-end GPU with large VRAM, making such methods impractical for lower-end devices with limited memory capacity. Consequently, 3DGS-based works generally assume a single hardware setup and lack the flexibility to adapt to varying hardware constraints.\n           To overcome this limitation, we propose Flexible Level of Detail (FLoD) for 3DGS. FLoD constructs a multi-level 3DGS representation through level-specific 3D scale constraints, where each level independently reconstructs the entire scene with varying detail and GPU memory usage. A level-by-level training strategy is introduced to ensure structural consistency across levels. Furthermore, the multi-level structure of FLoD allows selective rendering of image regions at different detail levels, providing additional memory-efficient rendering options. To our knowledge, among prior works which incorporate the concept of Level of Detail (LoD) with 3DGS, FLoD is the first to follow the core principle of LoD by offering adjustable options for a broad range of GPU settings.\n           Experiments demonstrate that FLoD provides various rendering options with trade-offs between quality and memory usage, enabling real-time rendering under diverse memory constraints. Furthermore, we show that FLoD generalizes to different 3DGS frameworks, indicating its potential for integration into future state-of-the-art developments.",
+        "countries": [
+            "KR"
+        ]
+    },
+    "10.1145/3731187": {
+        "doi": "10.1145/3731187",
+        "authors": [
+            {
+                "family": "Becker",
+                "given": "Quentin",
+                "orcid": "0000-0003-0952-7063",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Gross",
+                "given": "Oliver",
+                "orcid": "0000-0001-7970-5596",
+                "countries": [
+                    "US",
+                    "CH"
+                ]
+            },
+            {
+                "family": "Pauly",
+                "given": "Mark",
+                "orcid": "0000-0003-4957-4825",
+                "countries": [
+                    "CH"
+                ]
+            }
+        ],
+        "title": "Inverse Geometric Locomotion",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2025,
+        "volume": "44",
+        "number": "4",
+        "pages": "141:1\u2013141:17",
+        "article_number": "141",
+        "number_of_pages": 17,
+        "abstract": "Numerous tasks in robotics and character animation involve solving combinations of inverse kinematics and motion planning problems that require the precise design of pose sequences to achieve desired motion objectives. Accounting for the complex interplay between body deformations and resulting motion, especially through interactions with the environment, poses significant challenges for the design of such pose sequences. We propose a computational framework to address these challenges in scenarios where the motion of a deformable body is entirely determined by dynamic changes of its shape. Complementing recent methods on the forward problem\u2014mapping shape sequences to global motion trajectories based on a geometric formulation of locomotion\u2014we address the inverse problem of optimizing shape sequences to achieve user-defined motion objectives. We demonstrate the effectiveness of our method through a diverse set of examples, producing realistic shape sequences that result in desired motion trajectories.",
+        "countries": [
+            "CH",
+            "US"
+        ]
+    },
+    "10.1145/3721238.3730618": {
+        "doi": "10.1145/3721238.3730618",
+        "authors": [
+            {
+                "family": "Hsu",
+                "given": "Jerry",
+                "orcid": "0000-0003-2333-0224",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Tongtong",
+                "orcid": "0009-0005-6585-3009",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Wu",
+                "given": "Kui",
+                "orcid": "0000-0003-3326-7943",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Yuksel",
+                "given": "Cem",
+                "orcid": "0000-0002-0122-4159",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Stable Cosserat Rods",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "75:1\u201375:10",
+        "article_number": "75",
+        "number_of_pages": 10,
+        "abstract": "Cosserat rods have become an increasingly popular framework for simulating complex bending and twisting in thin elastic rods, used for hair, tree, and yarn-level cloth models. However, traditional approaches often encounter significant challenges in robustly and efficiently solving for valid quaternion orientations, even when employing small time steps or computationally expensive global solvers. We introduce stable Cosserat rods, a new solver that can achieve high accuracy with high stiffness levels and maintain stability under large time steps. It is also inherently suitable for parallelization. Our key contribution is a split position and rotation optimization scheme with a closed-form Gauss-Seidel quasi-static orientation update. This solver significantly improves the numerical stability with Cosserat rods, allowing faster computation and larger time steps. We validate our method across a wide range of applications, including simulations of hair, trees, yarn-level cloth, slingshots, and bridges, demonstrating its ability to handle diverse material behaviors and complex geometries. Furthermore, we show that our method is orders of magnitude faster and more stable than alternative rod solvers, such as extended position-based dynamics and discrete elastic rods.",
+        "countries": [
+            "US",
+            "CN"
+        ]
+    },
+    "10.1016/j.cag.2025.104399": {
+        "doi": "10.1016/j.cag.2025.104399",
+        "authors": [
+            {
+                "family": "Cabiddu",
+                "given": "Daniela",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Romanengo",
+                "given": "Chiara",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Mortara",
+                "given": "Michela",
+                "countries": [
+                    "IT"
+                ]
+            }
+        ],
+        "title": "PBF-FR: Partitioning beyond footprints for fa\u00e7ade recognition in urban point clouds",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104399:1\u2013104399:12",
+        "number_of_pages": 12,
+        "article_number": "104399",
+        "abstract": "The identification and recognition of urban features are essential for creating accurate and comprehensive digital representations of cities. In particular, the automatic characterization of fa\u00e7ade elements plays a key role in enabling semantic enrichment and 3D reconstruction. It also supports urban analysis and underpins various applications, including planning, simulation, and visualization. This work presents a pipeline for the automatic recognition of fa\u00e7ades within complex urban scenes represented as point clouds. The method employs an enhanced partitioning strategy that extends beyond strict building footprints by incorporating surrounding buffer zones, allowing for a more complete capture of fa\u00e7ade geometry, particularly in dense urban contexts. This is combined with a primitive recognition stage based on the Hough transform, enabling the detection of both planar and curved fa\u00e7ade structures. The proposed partitioning overcomes the limitations of traditional footprint-based segmentation, which often disregards contextual geometry and leads to misclassifications at building boundaries. Integrated with the primitive recognition step, the resulting pipeline is robust to noise and incomplete data, and supports geometry-aware fa\u00e7ade recognition, contributing to scalable analysis of large-scale urban environments.",
+        "countries": [
+            "IT"
+        ]
+    },
+    "10.1145/3721238.3730621": {
+        "doi": "10.1145/3721238.3730621",
+        "authors": [
+            {
+                "family": "Gat",
+                "given": "Inbar",
+                "orcid": "0009-0003-9999-9888",
+                "countries": [
+                    "IL"
+                ]
+            },
+            {
+                "family": "Raab",
+                "given": "Sigal",
+                "orcid": "0000-0001-6616-257X",
+                "countries": [
+                    "IL"
+                ]
+            },
+            {
+                "family": "Tevet",
+                "given": "Guy",
+                "orcid": "0000-0003-4376-2403",
+                "countries": [
+                    "IL"
+                ]
+            },
+            {
+                "family": "Reshef",
+                "given": "Yuval",
+                "orcid": "0009-0000-2214-3174",
+                "countries": [
+                    "IL"
+                ]
+            },
+            {
+                "family": "Bermano",
+                "given": "Amit Haim",
+                "orcid": "0000-0002-3592-1112",
+                "countries": [
+                    "IL"
+                ]
+            },
+            {
+                "family": "Cohen-Or",
+                "given": "Daniel",
+                "orcid": "0000-0001-6777-7445",
+                "countries": [
+                    "IL"
+                ]
+            }
+        ],
+        "title": "AnyTop: Character Animation Diffusion with Any Topology",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "13:1\u201313:10",
+        "article_number": "13",
+        "number_of_pages": 10,
+        "abstract": "Generating motion for arbitrary skeletons is a longstanding challenge in computer graphics, remaining largely unexplored due to the scarcity of diverse datasets and the irregular nature of the data. In this work, we introduce AnyTop, a diffusion model that generates motions for diverse characters with distinct motion dynamics, using only their skeletal structure as input. Our work features a transformer-based denoising network, tailored for arbitrary skeleton learning, integrating topology information into the traditional attention mechanism. Additionally, by incorporating textual joint descriptions into the latent feature representation, AnyTop learns semantic correspondences between joints across diverse skeletons. Our evaluation demonstrates that AnyTop generalizes well, even with as few as three training examples per topology, and can produce motions for unseen skeletons as well. Furthermore, our model\u2019s latent space is highly informative, enabling downstream tasks such as joint correspondence, temporal segmentation, and motion editing. Our webpage, https://anytop2025.github.io/Anytop-page, includes links to videos and code.",
+        "countries": [
+            "IL"
+        ]
+    },
+    "10.1145/3721238.3730630": {
+        "doi": "10.1145/3721238.3730630",
+        "authors": [
+            {
+                "family": "Xiao",
+                "given": "Dong",
+                "orcid": "0000-0002-7873-5977",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Chen",
+                "given": "Renjie",
+                "orcid": "0000-0001-8395-4392",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Flexible 3D Cage-based Deformation via Green Coordinates on B\u00e9zier Patches",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "58:1\u201358:10",
+        "article_number": "58",
+        "number_of_pages": 10,
+        "abstract": "Cage-based deformation is a fundamental problem in geometry processing, where a cage, a user-specified boundary of a region, is used to deform the ambient space of a given mesh. Traditional 3D cages are typically composed of triangles and quads. While quads can represent non-planar regions when their four corners are not coplanar, they form ruled surfaces with straight isoparametric curves, which limits their ability to handle curved and high-curvature deformations. In this work, we extend the cage for curved boundaries using B\u00e9zier patches, enabling flexible and high-curvature deformations with only a few control points. The higher-order structure of the B\u00e9zier patch also allows for the creation of a more compact and precise curved cage for the input model. Based on Green\u2019s third identity, we derive the Green coordinates for the B\u00e9zier cage, achieving shape-preserving deformation with smooth surface boundaries. These coordinates are defined based on the vertex positions and normals of the B\u00e9zier control net. Given that the coordinates are approximately calculated through the Riemann summation, we propose a global projection technique to ensure that the coordinates accurately conform to the linear reproduction property. Experimental results show that our method achieves high performance in handling curved and high-curvature deformations.",
+        "countries": [
+            "CN"
+        ]
+    },
+    "10.1145/3721238.3730720": {
+        "doi": "10.1145/3721238.3730720",
+        "authors": [
+            {
+                "family": "Li",
+                "given": "Chunlei",
+                "orcid": "0000-0002-9822-9465",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Yu",
+                "given": "Peng",
+                "orcid": "0000-0002-8652-2744",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Liu",
+                "given": "Tiantian",
+                "orcid": "0000-0002-5614-1588",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Yu",
+                "given": "Siyuan",
+                "orcid": "0009-0003-1310-0094",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Xiao",
+                "given": "Yuting",
+                "orcid": "0009-0001-6480-2753",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Li",
+                "given": "Shuai",
+                "orcid": "0000-0003-4182-1588",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Hao",
+                "given": "Aimin",
+                "orcid": "0000-0002-5774-6706",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Gao",
+                "given": "Yang",
+                "orcid": "0000-0002-9149-3554",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Zhao",
+                "given": "Qinping",
+                "orcid": "0000-0001-5600-5300",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "MGPBD: A Multigrid Accelerated Global XPBD Solver",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "111:1\u2013111:11",
+        "article_number": "111",
+        "number_of_pages": 11,
+        "abstract": "We introduce a novel Unsmoothed Aggregation (UA) Algebraic Multigrid (AMG) method combined with Preconditioned Conjugate Gradient (PCG) to overcome the limitations of Extended Position-Based Dynamics (XPBD) in high-resolution and high-stiffness simulations. While XPBD excels in simulating deformable objects due to its speed and simplicity, its nonlinear Gauss-Seidel (GS) solver often struggles with low-frequency errors, leading to instability and stalling issues, especially in high-resolution, high-stiffness simulations. Our multigrid approach addresses these issues efficiently by leveraging AMG. To reduce the computational overhead of traditional AMG, where prolongator construction can consume up to two-thirds of the runtime, we propose a lazy setup strategy that reuses prolongators across iterations based on matrix structure and physical significance. Furthermore, we introduce a simplified method for constructing near-kernel components by applying a few sweeps of iterative methods to the homogeneous equation, achieving convergence rates comparable to adaptive smoothed aggregation (adaptive-SA) at a lower computational cost. Experimental results demonstrate that our method significantly improves convergence rates and numerical stability, enabling efficient and stable high-resolution simulations of deformable objects.",
+        "countries": [
+            "CN"
         ]
     },
     "10.vis2025/1718": {
@@ -22862,6 +23253,45 @@
         "countries": [
             "DE",
             "NL"
+        ]
+    },
+    "10.vis2025/1440": {
+        "doi": "10.vis2025/1440",
+        "authors": [
+            {
+                "family": "Daniel",
+                "given": "Thomas",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Olejniczak",
+                "given": "Malgorzata",
+                "countries": [
+                    "PL"
+                ]
+            },
+            {
+                "family": "Tierny",
+                "given": "Julien",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "BondMatcher: H-Bond Stability Analysis in Molecular Systems",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "",
+        "countries": [
+            "FR",
+            "PL"
         ]
     }
 }

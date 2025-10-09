@@ -17,16 +17,16 @@ import glob
 import shutil
 
 # settings of how to do things and what extra stuff to do
-useLocalDataOnly = True # FIXME: should be True for submission
+useLocalDataOnly = False # FIXME: should be True for submission
 exportVisualizations = True # ehether to create visualizations based on the data or not
 doNameChecking = False # run some heuristics to check if the names make sense
 doAbstractCheckingForKeywords = False # check for keywords in the abstract as well (otherwise only in title)
 doVerifyCountryInformation = True # check of the country information is provided
-doPrintTVCGInPressDetails = False # print out a list of the IEEE papers that are currently in press still (for a report to the TVCG EiC)
 doExportNumbersForPaper = True # generate a LaTeX file that records all kinds of collected statistics, which is needed to for later compiling the paper
 doCopyPlotsAccordingToFigureNumbers = True # copy the visualizations into extra folder named according to the figure numbers from the paper
 downloadAcmFromCrossref = True # if True, then use the Crossref API to get ACM metadata, otherwise the acmdownload tool; FIXME: should be True for submission
-printConferenceTotals = False # If true, then print the totals of IEEE VIS presentations (regular full paper plus journal)
+doPrintTVCGInPressDetails = False # print out a list of the IEEE papers that are currently in press still (for a report to the TVCG EiC)
+doPrintConferenceTotals = False # if true, then print the totals of IEEE VIS presentations (regular full paper plus journal)
 
 # other configuration
 visPadding = 0 # the padding in pixels to be applied to the exported visualizations, set to 0 for use in paper, otherwise 5 is good
@@ -762,6 +762,7 @@ else:
             doi = doi.replace("http://www.google.com/search?q=SynAnno:%20Interactive%20Guided%20Proofreading%20of%20Synaptic%20Annotations".replace("%20", " "), "10.vis2025/1718")
             doi = doi.replace("http://www.google.com/search?q=Your%20Model%20Is%20Unfair,%20Are%20You%20Even%20Aware?%20Inverse%20Relationship%20Between%20Comprehension%20and%20Trust%20in%20Explainability%20Visualizations%20of%20Biased%20ML%20Models".replace("%20", " "), "10.vis2025/1446")
             doi = doi.replace("http://www.google.com/search?q=Cluster-Based%20Random%20Forest%20Visualization%20and%20Interpretation".replace("%20", " "), "10.vis2025/1432")
+            doi = doi.replace("http://www.google.com/search?q=BondMatcher:%20H-Bond%20Stability%20Analysis%20in%20Molecular%20Systems".replace("%20", " "), "10.vis2025/1440")
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()
@@ -896,6 +897,12 @@ else:
             authors = authors.replace('Alex Bronstein', 'Alex M. Bronstein')
             authors = authors.replace('Michael Bronstein', 'Michael M. Bronstein')
             authors = authors.replace('Scott Mitchell', 'Scott A. Mitchell')
+            authors = authors.replace('SASWAT SUBHAJYOTI MALLICK', 'Saswat Subhajyoti Mallick')
+            authors = authors.replace('RAHUL GOEL', 'Rahul Goel')
+            authors = authors.replace('BERNHARD KERBL', 'Bernhard Kerbl')
+            authors = authors.replace('FRANCISCO VICENTE CARRASCO', 'Markus Steinberger')
+            authors = authors.replace('MARKUS STEINBERGER', 'Francisco Vicente Carrasco')
+            authors = authors.replace('FERNANDO DE LA TORRE', 'Fernando De La Torre')
 
             # make the author list reporting consistent
             authors = authors.replace(' ; ', ', ')
@@ -2155,7 +2162,7 @@ if exportVisualizations:
             dataToPlot.append({"venue": venue, "name": venue + ": w/o GRS", "year": year, "replicable": False, "count": count2})#, "order": color_number * 2 + 1, "order2": len(venues) + color_number})
     altairData = pd.DataFrame(dataToPlot)
 
-    if printConferenceTotals:
+    if doPrintConferenceTotals:
         # since we have this data handy here, we can print it out if required
         print("")
         print("VIS presented paper totals")

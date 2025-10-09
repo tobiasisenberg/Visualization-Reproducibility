@@ -1,5 +1,105 @@
 [
     {
+        "is_vis": true,
+        "title": "BondMatcher: H-Bond Stability Analysis in Molecular Systems",
+        "doi": "10.vis2025/1440",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-thom-dani-bondmatcher",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/thom-dani/BondMatcher",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:4d6b9c32f7563eddf714d4d86f316a9d475ac683;origin=https://github.com/thom-dani/BondMatcher",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-thom-dani-bondmatcher/representative.png",
+        "authors": "Thomas Daniel, Malgorzata Olejniczak, Julien Tierny",
+        "type": "IEEE VIS"
+    },
+    {
+        "is_vis": false,
+        "title": "Direct Slicing NURBS Objects: A Numerically Dependable Form",
+        "doi": "10.1016/j.cag.2025.104418",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-silvio-isoslicer",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/silvio-/IsoSlicer",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:d80c943e2b4a1bee8be8a2b6e47cf819d8eea783;origin=https://github.com/silvio-/IsoSlicer",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-silvio-isoslicer/representative.png",
+        "authors": "Silvio Melo"
+    },
+    {
+        "is_vis": false,
+        "title": "FLoD: Integrating Flexible Level of Detail into 3D Gaussian Splatting for Customizable Rendering",
+        "doi": "10.1145/3731430",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-3dgs-flod-flod",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/3DGS-FLoD/flod",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:e58c034dcf82e15ea67bb0fb128b0f934c72146d;origin=https://github.com/3DGS-FLoD/flod",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-3dgs-flod-flod/representative.png",
+        "authors": "Yunji Seo, Young Sun Choi, Hyun Seung Son, Youngjung Uh"
+    },
+    {
+        "is_vis": false,
+        "title": "Inverse Geometric Locomotion",
+        "doi": "10.1145/3731187",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-epfl-lgg-inverse-geometric-locomotion",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/EPFL-LGG/inverse_geometric_locomotion",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:40ab25131b5bffd3b041b88b7b97dafca730c2a6;origin=https://github.com/EPFL-LGG/inverse_geometric_locomotion",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-epfl-lgg-inverse-geometric-locomotion/representative.png",
+        "authors": "Quentin Becker, Oliver Gross, Mark Pauly"
+    },
+    {
+        "is_vis": false,
+        "title": "Stable Cosserat Rods",
+        "doi": "10.1145/3721238.3730618",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-jerry060599-yarnball",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/jerry060599/YarnBall",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:b2890b0428778d15a33a58171022f3ed9fad87b7;origin=https://github.com/jerry060599/YarnBall",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-jerry060599-yarnball/representative.png",
+        "authors": "Jerry Hsu, Tongtong Wang, Kui Wu, Cem Yuksel"
+    },
+    {
+        "is_vis": false,
+        "title": "PBF-FR: Partitioning Beyond Footprints for Fa\u00e7ade Recognition in Urban Point Clouds",
+        "doi": "10.1016/j.cag.2025.104399",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-chiararomanengo-pbf-fr",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/chiararomanengo/PBF-FR",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a2a0aa0d143234b7d32ee76bec67b2060a7b3836;origin=https://github.com/chiararomanengo/PBF-FR",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-chiararomanengo-pbf-fr/representative.png",
+        "authors": "Chiara Romanengo, Daniela Cabiddu, Michela Mortara"
+    },
+    {
+        "is_vis": false,
+        "title": "AnyTop: Character Animation Diffusion with Any Topology",
+        "doi": "10.1145/3721238.3730621",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-anytop2025-anytop",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/Anytop2025/Anytop",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:9b226134f3ee6574fd7504ddd84dfdfc5d9da78f;origin=https://github.com/Anytop2025/Anytop",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-anytop2025-anytop/representative.png",
+        "authors": "Inbar Gat, Sigal Raab, Guy Tevet, Yuval Reshef, Amit H. Bermano, Daniel Cohen-Or"
+    },
+    {
+        "is_vis": false,
+        "title": "Flexible 3D Cage-based Deformation via Green Coordinates on B\u00e9zier Patches",
+        "doi": "10.1145/3721238.3730630",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-submanifold-beziergreen",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/Submanifold/BezierGreen",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:d24b26f4124f8fd2f91dd0dcad1bdbd612192637;origin=https://github.com/Submanifold/BezierGreen",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-submanifold-beziergreen/representative.png",
+        "authors": "Dong Xiao, Renjie Chen"
+    },
+    {
+        "is_vis": false,
+        "title": "MGPBD: A Multigrid Accelerated Global XPBD Solver",
+        "doi": "10.1145/3721238.3730720",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-chunleili-mgpbd-2025-08-28t08-18-27-422z",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/chunleili/mgpbd",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:2d8e3fa6dc6bd94adf2878a5d9dd06f0da94152f;origin=https://github.com/chunleili/mgpbd",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-chunleili-mgpbd-2025-08-28t08-18-27-422z/representative.png",
+        "authors": "Chunlei Li, Peng Yu, Tiantian Liu, Siyuan Yu, Yuting Xiao, Shuai Li, Aimin Hao, Yang Gao, Qinping Zhao"
+    },
+    {
         "is_vis": false,
         "title": "Analyzing Singular Patterns in Discrete Planar Vector Fields via Persistent Path Homology",
         "doi": "10.1016/j.cag.2025.104354",
@@ -392,7 +492,7 @@
         "repo_url": "https://github.com/humansensinglab/taming-3dgs",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:25584b36d19cbe9eb4d34e70a6b3c32ad2b53982;origin=https://github.com/humansensinglab/taming-3dgs",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-humansensinglab-taming-3dgs-2025-03-18t21-23-53-108z/representative.png",
-        "authors": "SASWAT SUBHAJYOTI MALLICK, RAHUL GOEL, BERNHARD KERBL, FRANCISCO VICENTE CARRASCO, MARKUS STEINBERGER, FERNANDO DE LA TORRE"
+        "authors": "Saswat Subhajyoti Mallick, Rahul Goel, Bernhard Kerbl, Markus Steinberger, Francisco Vicente Carrasco, Fernando De La Torre"
     },
     {
         "is_vis": false,
