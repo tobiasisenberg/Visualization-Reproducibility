@@ -1,5 +1,71 @@
 [
     {
+        "is_vis": false,
+        "title": "Clusters in Focus: A Simple and Robust Detail-On-Demand Dashboard for Patient Data",
+        "doi": "not_assigned_yet",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-mrp01-clustersinfocus",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/MrP01/ClustersInFocus",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:b136808245f6705778e53de2c9d68a35002ca0c7;origin=https://github.com/MrP01/ClustersInFocus",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-mrp01-clustersinfocus/representative.png",
+        "authors": "Lukas Schilcher, Peter Waldert, Benedikt Kantz, Tobias Schreck"
+    },
+    {
+        "is_vis": false,
+        "title": "ArchComplete: Autoregressive 3D Architectural Design Generation with Hierarchical Diffusion-Based Upsampling",
+        "doi": "not_assigned_yet",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-gitlab-cg-tuwien-ac-at-srasoulzadeh-archcomplete",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://gitlab.cg.tuwien.ac.at/srasoulzadeh/archcomplete",
+        "repo_archive_url": "",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-gitlab-cg-tuwien-ac-at-srasoulzadeh-archcomplete/representative.png",
+        "authors": "Shervin Rasoulzadeh, Mathias Bank Stigsen, Iva Kovacic, Kristina Schinegger, Stefan Rutzinger, Michael Wimmer"
+    },
+    {
+        "is_vis": false,
+        "title": "C-Tubes: Design and Optimization of Tubular Structures Composed of Developable Strips",
+        "doi": "10.1145/3730933",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-epfl-lgg-c-tubes",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/EPFL-LGG/C-tubes",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a200243047d152875bc5cc8f88f8edbb0ee40735;origin=https://github.com/EPFL-LGG/C-tubes",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-epfl-lgg-c-tubes/representative.png",
+        "authors": "Michele Vidulis, Klara Mundilova, Quentin Becker, Florin Isvoranu, Mark Pauly"
+    },
+    {
+        "is_vis": false,
+        "title": "Atomizer: Beyond Non-Planar Slicing for Fused Filament Fabrication",
+        "doi": "10.1111/cgf.70189",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-xavierchermain-atomizer",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/xavierchermain/atomizer",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:109b5c061c459a043aba041f3ba28a9bf180823c;origin=https://github.com/xavierchermain/atomizer",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-xavierchermain-atomizer/representative.png",
+        "authors": "Xavier Chermain, Giovanni Cocco, C\u00e9dric Zanni, Eric Garner, Pierre-Alexandre Hugron, Sylvain Lefebvre"
+    },
+    {
+        "is_vis": false,
+        "title": "Narrowing-Cascade splines for control nets that shed mesh lines",
+        "doi": "10.1016/j.cag.2025.104441",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-srhtcam-nc-ncascade",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/srhtcam/NC_NCascade",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:8a241dedf5f2053a9bcd37db455c2348bb74679d;origin=https://github.com/srhtcam/NC_NCascade",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-srhtcam-nc-ncascade/representative.png",
+        "authors": "Serhat Cam, Erkan Gunpinar, K\u0229stutis Kar\u010diauskas, J\u00f6rg Peters"
+    },
+    {
+        "is_vis": false,
+        "title": "Claycode: Stylable and Deformable 2D Scannable Codes",
+        "doi": "10.1145/3730853",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-marcomaida-claycode",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/marcomaida/claycode",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:5015d6231e58ac1e853d8748fdb7e5449c72e07d;origin=https://github.com/marcomaida/claycode",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-marcomaida-claycode/representative.png",
+        "authors": "Marco Maida, Alberto Crescini, Marco Perronet, Elena Camuffo"
+    },
+    {
         "is_vis": true,
         "title": "BondMatcher: H-Bond Stability Analysis in Molecular Systems",
         "doi": "10.vis2025/1440",

@@ -23097,6 +23097,225 @@
             "CN"
         ]
     },
+    "10.1145/3730933": {
+        "doi": "10.1145/3730933",
+        "authors": [
+            {
+                "family": "Vidulis",
+                "given": "Michele",
+                "orcid": "0009-0009-2373-9581",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Mundilova",
+                "given": "Klara",
+                "orcid": "0000-0001-8245-9568",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Becker",
+                "given": "Quentin",
+                "orcid": "0000-0003-0952-7063",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Isvoranu",
+                "given": "Florin",
+                "orcid": "0000-0002-0316-1390",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Pauly",
+                "given": "Mark",
+                "orcid": "0000-0003-4957-4825",
+                "countries": [
+                    "CH"
+                ]
+            }
+        ],
+        "title": "C-Tubes: Design and Optimization of Tubular Structures Composed of Developable Strips",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2025,
+        "volume": "44",
+        "number": "4",
+        "pages": "154:1\u2013154:19",
+        "article_number": "154",
+        "number_of_pages": 19,
+        "abstract": "We introduce C-tubes, 3D tubular structures composed of developable surface strips. C-tubes can be understood as a generalization of Monge surfaces\u2014a special class of sweep surfaces\u2014towards the recently introduced conenets. This observation allows formulating a constructive algorithm to create tubular structures that ensures developability of the constituent surfaces, while significantly broadening the design space. Our novel form-finding tool enables design exploration by solving for the input variables of the constructive algorithm so that the C-tube best conforms to user-specified objectives. We discuss several case studies that illustrate the versatility of our approach for the design and fabrication of complex structures, with applications in architecture, furniture, and lighting design.",
+        "countries": [
+            "CH"
+        ]
+    },
+    "10.1016/j.cag.2025.104441": {
+        "doi": "10.1016/j.cag.2025.104441",
+        "authors": [
+            {
+                "family": "Cam",
+                "given": "Serhat",
+                "countries": [
+                    "TR"
+                ]
+            },
+            {
+                "family": "Gunpinar",
+                "given": "Erkan",
+                "countries": [
+                    "TR"
+                ]
+            },
+            {
+                "family": "Kar\u010diauskas",
+                "given": "K\u0229stutis",
+                "countries": [
+                    "LT"
+                ]
+            },
+            {
+                "family": "Peters",
+                "given": "J\u00f6rg",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Narrowing-Cascade splines for control nets that shed mesh lines",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "133",
+        "number": "",
+        "pages": "104441:1\u2013:12",
+        "number_of_pages": 12,
+        "article_number": "104441",
+        "abstract": "Quad-dominant meshes are popular with animation designers and can efficiently be generated from point clouds. To join primary regions, quad-dominant meshes include non-4-valent vertices and non-quad regions. To transition between regions of rich detail and simple shape, quad-dominant meshes commonly use a cascade of \n \n n\n \u2212\n 1\n \n triangles that reduce the number of parallel quad strips from \n \n n\n +\n 1\n \n to 2. For these cascades, the Narrowing-Cascade spline, short NC\n \n \n \n n\n \n \n , provides a new shape-optimized \n \n \n G\n \n \n 1\n \n \n spline surface. NC\n \n \n \n n\n \n \n can treat cascade meshes as B-spline-like control nets. For \n \n n\n >\n 3\n \n , as opposed to \n \n n\n =\n 2\n ,\n 3\n \n , cascades have interior points that both guide and complicate the construction of the output tensor-product NC\n \n \n \n \n \n \n spline. The NC\n \n \n \n n\n \n \n spline follows the input mesh, including interior points, and delivers a high-quality curved surface of low degree.",
+        "countries": [
+            "TR",
+            "LT",
+            "US"
+        ]
+    },
+    "10.1145/3730853": {
+        "doi": "10.1145/3730853",
+        "authors": [
+            {
+                "family": "Maida",
+                "given": "Marco",
+                "orcid": "0009-0006-2951-1850",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Crescini",
+                "given": "Alberto",
+                "orcid": "0009-0008-2972-0382",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Perronet",
+                "given": "Marco",
+                "orcid": "0009-0005-8290-5528",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Camuffo",
+                "given": "Elena",
+                "orcid": "0000-0002-8351-4650",
+                "countries": [
+                    "IT"
+                ]
+            }
+        ],
+        "title": "Claycode: Stylable and Deformable 2D Scannable Codes",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2025,
+        "volume": "44",
+        "number": "4",
+        "pages": "163:1\u2013163:14",
+        "article_number": "163",
+        "number_of_pages": 14,
+        "abstract": "This paper introduces Claycode, a novel 2D scannable code designed for extensive stylization and deformation. Unlike traditional matrix-based codes\n            <jats:italic toggle=\"yes\">(e.g.\n            , QR codes), Claycodes encode their message in a tree structure. During the encoding process, bits are mapped into a topology tree, which is then depicted as a nesting of color regions drawn within the boundaries of a target polygon shape. When decoding, Claycodes are extracted and interpreted in real-time from a camera stream. We detail the end-to-end pipeline and show that Claycodes allow for extensive stylization without compromising their functionality. We then empirically demonstrate Claycode's high tolerance to heavy deformations, outperforming traditional 2D scannable codes in scenarios where they typically fail.",
+        "countries": [
+            "GB",
+            "IT"
+        ]
+    },
+    "10.1111/cgf.70189": {
+        "doi": "10.1111/cgf.70189",
+        "authors": [
+            {
+                "family": "Chermain",
+                "given": "Xavier",
+                "orcid": "0000-0003-1910-5956",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Cocco",
+                "given": "Giovanni",
+                "orcid": "0009-0000-2681-2443",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Zanni",
+                "given": "C\u00e9dric",
+                "orcid": "0009-0000-8460-6373",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Garner",
+                "given": "Eric",
+                "orcid": "0009-0002-2323-5833",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Hugron",
+                "given": "Pierre-Alexandre",
+                "orcid": "0009-0001-5592-0723",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Lefebvre",
+                "given": "Sylvain",
+                "orcid": "0000-0002-9182-3146",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Atomizer: Beyond Non\u2010Planar Slicing for Fused Filament Fabrication",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 2025,
+        "volume": "44",
+        "number": "5",
+        "pages": "e70189:1\u2013e70189:17",
+        "article_number": "e70189",
+        "number_of_pages": 117,
+        "abstract": "Fused filament fabrication (FFF) enables users to quickly design and fabricate parts with unprecedented geometric complexity, fine-tuning both the structural and aesthetic properties of each object. Nevertheless, the full potential of this technology has yet to be realized, as current slicing methods fail to fully exploit the deposition freedom offered by modern 3D printers. In this work, we introduce a novel approach to toolpath generation that moves beyond the traditional layer-based concept. We use frames, referred to as atoms, as solid elements instead of slices. We optimize the distribution of atoms within the part volume to ensure even spacing and smooth orientation while accurately capturing the part's geometry. Although these atoms collectively represent the complete object, they do not inherently define a fabrication plan. To address this, we compute an extrusion toolpath as an ordered sequence of atoms that, when followed, provides a collision-free fabrication strategy. This general approach is robust, requires minimal user intervention compared to existing techniques, and integrates many of the best features into a unified framework: precise deposition conforming to non-planar surfaces, effective filling of narrow features \u2013 down to a single path \u2013 and the capability to locally print vertical structures before transitioning elsewhere. Additionally, it enables entirely new capabilities, such as anisotropic appearance fabrication on curved surfaces.",
+        "countries": [
+            "FR"
+        ]
+    },
     "10.vis2025/1718": {
         "doi": "10.vis2025/1718",
         "authors": [

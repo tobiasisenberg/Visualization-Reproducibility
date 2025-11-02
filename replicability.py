@@ -17,7 +17,7 @@ import glob
 import shutil
 
 # settings of how to do things and what extra stuff to do
-useLocalDataOnly = False # FIXME: should be True for submission
+useLocalDataOnly = True # FIXME: should be True for submission
 exportVisualizations = True # ehether to create visualizations based on the data or not
 doNameChecking = False # run some heuristics to check if the names make sense
 doAbstractCheckingForKeywords = False # check for keywords in the abstract as well (otherwise only in title)
@@ -45,6 +45,7 @@ neutralGray = "#a9a9a9"
 paperNumbersOutputString += "\\newcommand{\\GrsiCountryPieChartThreshold}{" + str(countryPieChartThreshold) + "}\n"
 myLabelLimit = 500 # this is a weird issue: technically a value of 0 should mean no limit, but sometimes it literally means a limit of 0; so a sufficiently large number is needed here to avoid label cropping, 500 should work
 topLimitAuthorPlots = 1300 # to adjust all the author count plots in a similar way
+grayscaleLightnessFactor = 0.5
 
 #####################################
 # change to directory of the script
@@ -91,6 +92,78 @@ formatted_date = f"{current_year}{current_month:02d}{current_day:02d}"
 #####################################
 # now the main script, starting with some functions
 #####################################
+def rgb_to_grayscale(hex_rgb: str) -> str:
+    # 1. Input Validation and Cleaning
+    hex_code = hex_rgb.strip().lstrip('#').upper()
+    
+    if not re.fullmatch(r'[0-9A-F]{6}', hex_code):
+        raise ValueError(
+            f"Invalid hex color format: '{hex_rgb}'. Must be a 6-digit hex code like '#123456'."
+        )
+
+    try:
+        # 2. Extract and Convert R, G, B components (from base 16 to base 10, 0-255)
+        R = int(hex_code[0:2], 16)
+        G = int(hex_code[2:4], 16)
+        B = int(hex_code[4:6], 16)
+
+        # 3. Calculate Luminance (Grayscale Value) using BT.709 weights
+        # These weights account for how the human eye perceives different colors.
+        luminance = (0.2126 * R) + (0.7152 * G) + (0.0722 * B)
+        
+        # 4. Round and convert to integer (0-255)
+        gray_int = int(round(luminance))
+        
+        # 5. Convert the integer back to a two-digit hex string (e.g., 128 -> '80')
+        # The '02x' format ensures two digits and lowercase hex.
+        gray_hex = f'{gray_int:02x}'
+
+        # 6. Format the final grayscale output string '#YYYYYY'
+        return f'#{gray_hex}{gray_hex}{gray_hex}'
+
+    except Exception as e:
+        # Catch conversion errors (though the regex should handle most)
+        raise ValueError(f"An error occurred during conversion: {e}")
+
+def rgb_adjust_lightness(hex_rgb: str, factor: float) -> str:
+    # 1. Input Validation and Cleaning
+    hex_code = hex_rgb.strip().lstrip('#').upper()
+    
+    if not re.fullmatch(r'[0-9A-F]{6}', hex_code):
+        raise ValueError(
+            f"Invalid hex color format: '{hex_rgb}'. Must be a 6-digit hex code like '#123456'."
+        )
+
+    try:
+        # 2. Extract and Convert R, G, B components (from base 16 to base 10, 0-255)
+        R = int(hex_code[0:2], 16)
+        G = int(hex_code[2:4], 16)
+        B = int(hex_code[4:6], 16)
+
+        # 3. Calculate lighter value
+        R = 255.0 - max(min((255.0-R) * factor, 255.0), 0.0)
+        G = 255.0 - max(min((255.0-G) * factor, 255.0), 0.0)
+        B = 255.0 - max(min((255.0-B) * factor, 255.0), 0.0)
+        
+        # 4. Round and convert to integer (0-255)
+        R_int = int(round(R))
+        G_int = int(round(G))
+        B_int = int(round(B))
+        
+        # 5. Convert the integer back to a two-digit hex string (e.g., 128 -> '80')
+        # The '02x' format ensures two digits and lowercase hex.
+        R_hex = f'{R_int:02x}'
+        G_hex = f'{G_int:02x}'
+        B_hex = f'{B_int:02x}'
+
+        # 6. Format the final grayscale output string '#YYYYYY'
+        return f'#{R_hex}{G_hex}{B_hex}'
+
+    except Exception as e:
+        # Catch conversion errors (though the regex should handle most)
+        raise ValueError(f"An error occurred during conversion: {e}")
+
+
 def hex_to_rgb(hex_color):
     return [int(hex_color[x:x+2],16) for x in [1, 3, 5]]
 
@@ -757,7 +830,7 @@ else:
             doi = doi.replace("http://www.google.com/search?q=Navigating%20Large-Pose%20Challenge%20for%20High-Fidelity%20Face%20Reenactment%20with%20Video%20Diffusion%20Model".replace("%20", " "), "10.1016/j.cag.2025.104423")
             doi = doi.replace("http://www.google.com/search?q=ProbTalk3D-X:%20Prosody%20Enhanced%20Non-Deterministic%20Emotion%20Controllable%20Speech-Driven%203D%20Facial%20Animation%20Synthesis".replace("%20", " "), "10.1016/j.cag.2025.104358")
             doi = doi.replace("http://www.google.com/search?q=Memory-Efficient%20Filter-Guided%20Diffusion%20with%20Domain%20Transform%20Filtering".replace("%20", " "), "10.1016/j.cag.2025.104389")
-            doi = doi.replace("http://www.google.com/search?q=SynopFrame:%20Multiscale%20time-dependent%20visual%20abstraction%20framework%20for%20analyzing%20DNA%20nanotechnology%20simulations".replace("%20", " "), "10.1016/j.cag.2025.104376")
+            doi = doi.replace("http://www.google.com/search?q=Atomizer:%20Beyond%20Non-Planar%20Slicing%20for%20Fused%20Filament%20Fabrication".replace("%20", " "), "10.1111/cgf.70189")
             # accepted real VIS papers below, need to fix later in both vis-2025.csv and via vispubdata, and remove here
             doi = doi.replace("http://www.google.com/search?q=SynAnno:%20Interactive%20Guided%20Proofreading%20of%20Synaptic%20Annotations".replace("%20", " "), "10.vis2025/1718")
             doi = doi.replace("http://www.google.com/search?q=Your%20Model%20Is%20Unfair,%20Are%20You%20Even%20Aware?%20Inverse%20Relationship%20Between%20Comprehension%20and%20Trust%20in%20Explainability%20Visualizations%20of%20Biased%20ML%20Models".replace("%20", " "), "10.vis2025/1446")
@@ -2243,6 +2316,30 @@ if exportVisualizations:
     ))
 
     chart.save(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph.pdf')
+    
+    colors2 = []
+    for i in range(0, len(colors)): colors2.append(rgb_adjust_lightness(rgb_to_grayscale(colors[i]), grayscaleLightnessFactor))
+    for i in range(0, 4): colors2[i] = colors[i]
+    chart = chart.configure_range(category=alt.RangeScheme(colors2))
+    chart.save(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-ieee_vis.pdf')
+
+    colors2 = []
+    for i in range(0, len(colors)): colors2.append(rgb_adjust_lightness(rgb_to_grayscale(colors[i]), grayscaleLightnessFactor))
+    for i in range(4, 8): colors2[i] = colors[i]
+    chart = chart.configure_range(category=alt.RangeScheme(colors2))
+    chart.save(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-eurovis.pdf')
+
+    colors2 = []
+    for i in range(0, len(colors)): colors2.append(rgb_adjust_lightness(rgb_to_grayscale(colors[i]), grayscaleLightnessFactor))
+    for i in range(8, 12): colors2[i] = colors[i]
+    chart = chart.configure_range(category=alt.RangeScheme(colors2))
+    chart.save(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-pacificvis.pdf')
+
+    colors2 = []
+    for i in range(0, len(colors)): colors2.append(rgb_adjust_lightness(rgb_to_grayscale(colors[i]), grayscaleLightnessFactor))
+    for i in range(12, 14): colors2[i] = colors[i]
+    chart = chart.configure_range(category=alt.RangeScheme(colors2))
+    chart.save(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-vcbm.pdf')
 
     chart = alt.Chart(altairData, width={"step": 15}).mark_bar().encode(
         x = alt.X('year:N', title=None).axis(tickWidth=0, labelAngle=0),#domain=False, 
@@ -2282,6 +2379,30 @@ if exportVisualizations:
         dy=-80, dx=666 # emprirically found, should remain the same as long as the width and height in configure_view stay the same
     ))
     chart.save(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-normalized.pdf')
+
+    colors2 = []
+    for i in range(0, len(colors)): colors2.append(rgb_adjust_lightness(rgb_to_grayscale(colors[i]), grayscaleLightnessFactor))
+    for i in range(0, 4): colors2[i] = colors[i]
+    chart = chart.configure_range(category=alt.RangeScheme(colors2))
+    chart.save(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-normalized-ieee_vis.pdf')
+
+    colors2 = []
+    for i in range(0, len(colors)): colors2.append(rgb_adjust_lightness(rgb_to_grayscale(colors[i]), grayscaleLightnessFactor))
+    for i in range(4, 8): colors2[i] = colors[i]
+    chart = chart.configure_range(category=alt.RangeScheme(colors2))
+    chart.save(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-normalized-eurovis.pdf')
+
+    colors2 = []
+    for i in range(0, len(colors)): colors2.append(rgb_adjust_lightness(rgb_to_grayscale(colors[i]), grayscaleLightnessFactor))
+    for i in range(8, 12): colors2[i] = colors[i]
+    chart = chart.configure_range(category=alt.RangeScheme(colors2))
+    chart.save(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-normalized-pacificvis.pdf')
+
+    colors2 = []
+    for i in range(0, len(colors)): colors2.append(rgb_adjust_lightness(rgb_to_grayscale(colors[i]), grayscaleLightnessFactor))
+    for i in range(12, 14): colors2[i] = colors[i]
+    chart = chart.configure_range(category=alt.RangeScheme(colors2))
+    chart.save(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-normalized-vcbm.pdf')
 
     dataToPlot = []
     for venue in venues: # redo the data for the line graph, because this is not stacked
@@ -3087,6 +3208,10 @@ if doExportNumbersForPaper:
 
 if (doCopyPlotsAccordingToFigureNumbers) and (exportVisualizations):
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure01.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-ieee_vis.pdf', paperFiguresOutputSubdirectury + 'figure01-ieee_vis.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-eurovis.pdf', paperFiguresOutputSubdirectury + 'figure01-eurovis.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-pacificvis.pdf', paperFiguresOutputSubdirectury + 'figure01-pacificvis.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-vcbm.pdf', paperFiguresOutputSubdirectury + 'figure01-vcbm.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_all-by-journal-linegraph.pdf', paperFiguresOutputSubdirectury + 'figure02.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_all-by-journal_aggregated-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure03.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_all-by-journal_aggregated_plain-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure03_merged.pdf')
@@ -3095,6 +3220,10 @@ if (doCopyPlotsAccordingToFigureNumbers) and (exportVisualizations):
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-journal_plus_type-stackedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure06.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-type-groupedbargraph.pdf', paperFiguresOutputSubdirectury + 'figure07.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-normalized.pdf', paperFiguresOutputSubdirectury + 'figure08.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-normalized-ieee_vis.pdf', paperFiguresOutputSubdirectury + 'figure08-ieee_vis.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-normalized-eurovis.pdf', paperFiguresOutputSubdirectury + 'figure08-eurovis.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-normalized-pacificvis.pdf', paperFiguresOutputSubdirectury + 'figure08-pacificvis.pdf')
+    shutil.copy(graphOutputSubdirectury + 'replicability_visualization-by-venue-stackedbargraph-normalized-vcbm.pdf', paperFiguresOutputSubdirectury + 'figure08-vcbm.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_all-histogram-stamps-per-person.pdf', paperFiguresOutputSubdirectury + 'figure09a.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability_visualization-histogram-stamps-per-person.pdf', paperFiguresOutputSubdirectury + 'figure09b.pdf')
     shutil.copy(graphOutputSubdirectury + 'replicability-histogram-people-vis-percentages.pdf', paperFiguresOutputSubdirectury + 'figure10a.pdf')
