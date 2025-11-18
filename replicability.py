@@ -827,10 +827,7 @@ else:
             doi = doi.replace("https://dl.acm.org/doi/", "")
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
             # please note to replace the '%20' in the Google search links with a ' ' (manually or via a .replace("%20", " ") call as in the examples); otherwise the replacement does not work
-            doi = doi.replace("http://www.google.com/search?q=Navigating%20Large-Pose%20Challenge%20for%20High-Fidelity%20Face%20Reenactment%20with%20Video%20Diffusion%20Model".replace("%20", " "), "10.1016/j.cag.2025.104423")
-            doi = doi.replace("http://www.google.com/search?q=ProbTalk3D-X:%20Prosody%20Enhanced%20Non-Deterministic%20Emotion%20Controllable%20Speech-Driven%203D%20Facial%20Animation%20Synthesis".replace("%20", " "), "10.1016/j.cag.2025.104358")
-            doi = doi.replace("http://www.google.com/search?q=Memory-Efficient%20Filter-Guided%20Diffusion%20with%20Domain%20Transform%20Filtering".replace("%20", " "), "10.1016/j.cag.2025.104389")
-            doi = doi.replace("http://www.google.com/search?q=Atomizer:%20Beyond%20Non-Planar%20Slicing%20for%20Fused%20Filament%20Fabrication".replace("%20", " "), "10.1111/cgf.70189")
+            doi = doi.replace("http://www.google.com/search?q=ArchComplete:%20Autoregressive%203D%20Architectural%20Design%20Generation%20with%20Hierarchical%20Diffusion-Based%20Upsampling".replace("%20", " "), "10.1016/j.cag.2025.104477")
             # accepted real VIS papers below, need to fix later in both vis-2025.csv and via vispubdata, and remove here
             doi = doi.replace("http://www.google.com/search?q=SynAnno:%20Interactive%20Guided%20Proofreading%20of%20Synaptic%20Annotations".replace("%20", " "), "10.vis2025/1718")
             doi = doi.replace("http://www.google.com/search?q=Your%20Model%20Is%20Unfair,%20Are%20You%20Even%20Aware?%20Inverse%20Relationship%20Between%20Comprehension%20and%20Trust%20in%20Explainability%20Visualizations%20of%20Biased%20ML%20Models".replace("%20", " "), "10.vis2025/1446")

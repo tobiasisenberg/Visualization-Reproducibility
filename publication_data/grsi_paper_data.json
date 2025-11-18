@@ -1,6 +1,17 @@
 [
     {
         "is_vis": false,
+        "title": "A Monte Carlo Rendering Framework for Simulating Optical Heterodyne Detection",
+        "doi": "10.1145/3731150",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-juhyeonkim95-mitsubaohd",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/juhyeonkim95/MitsubaOHD",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:dd8bd739e177916f168ae1b5cf5f15209bb1aafb;origin=https://github.com/juhyeonkim95/MitsubaOHD",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-juhyeonkim95-mitsubaohd/representative.png",
+        "authors": "Juhyeon Kim, Craig Benko, Magnus Wrenninge, Ryusuke Villemin, Zeb Barber, Wojciech Jarosz, Adithya Pediredla"
+    },
+    {
+        "is_vis": false,
         "title": "Clusters in Focus: A Simple and Robust Detail-On-Demand Dashboard for Patient Data",
         "doi": "not_assigned_yet",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-mrp01-clustersinfocus",
@@ -13,7 +24,7 @@
     {
         "is_vis": false,
         "title": "ArchComplete: Autoregressive 3D Architectural Design Generation with Hierarchical Diffusion-Based Upsampling",
-        "doi": "not_assigned_yet",
+        "doi": "10.1016/j.cag.2025.104477",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-gitlab-cg-tuwien-ac-at-srasoulzadeh-archcomplete",
         "journal": "Elsevier Computers & Graphics (C&G)",
         "repo_url": "https://gitlab.cg.tuwien.ac.at/srasoulzadeh/archcomplete",

@@ -23316,6 +23316,138 @@
             "FR"
         ]
     },
+    "10.1145/3731150": {
+        "doi": "10.1145/3731150",
+        "authors": [
+            {
+                "family": "Kim",
+                "given": "Juhyeon",
+                "orcid": "0000-0002-6218-3426",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Benko",
+                "given": "Craig",
+                "orcid": "0009-0007-9653-112X",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Wrenninge",
+                "given": "Magnus",
+                "orcid": "0009-0003-5534-6535",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Villemin",
+                "given": "Ryusuke",
+                "orcid": "0009-0009-2046-6688",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Barber",
+                "given": "Zeb",
+                "orcid": "0000-0001-9760-4764",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Jarosz",
+                "given": "Wojciech",
+                "orcid": "0000-0002-1652-0954",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Pediredla",
+                "given": "Adithya",
+                "orcid": "0000-0002-6623-020X",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "A Monte Carlo Rendering Framework for Simulating Optical Heterodyne Detection",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2025,
+        "volume": "44",
+        "number": "4",
+        "pages": "56:1\u201356:19",
+        "article_number": "56",
+        "number_of_pages": 19,
+        "abstract": "Optical heterodyne detection (OHD) employs coherent light and optical interference techniques (Fig. 1-(A)) to extract physical parameters, such as velocity or distance, which are encoded in the frequency modulation of the light. With its superior signal-to-noise ratio compared to incoherent detection methods, such as time-of-flight lidar, OHD has become integral to applications requiring high sensitivity, including autonomous navigation, atmospheric sensing, and biomedical velocimetry. However, current simulation tools for OHD focus narrowly on specific applications, relying on domain-specific settings like restricted reflection functions, scene configurations, or single-bounce assumptions, which limit their applicability. In this work, we introduce a flexible and general framework for spectral-domain simulation of OHD. We demonstrate that classical radiometry-based path integral formulation can be adapted and extended to simulate the OHD measurements in the spectral domain. This enables us to leverage the rich modeling and sampling capabilities of existing Monte Carlo path tracing techniques. Our formulation shares structural similarities with transient rendering but operates in the spectral domain and accounts for the Doppler effect (Fig. 1-(B)). While simulators for the Doppler effect in incoherent (intensity) detection methods exist, they are largely not suitable to simulate OHD. We use a microsurface interpretation to show that these two Doppler imaging techniques capture different physical quantities and thus need different simulation frameworks. We validate the correctness and predictive power of our simulation framework by qualitatively comparing the simulations with real-world captured data for three different OHD applications\u2014FMCW lidar, blood flow velocimetry, and wind Doppler lidar (Fig. 1-(C)).",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.1016/j.cag.2025.104477": {
+        "doi": "10.1016/j.cag.2025.104477",
+        "authors": [
+            {
+                "family": "Rasoulzadeh",
+                "given": "Shervin",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Stigsen",
+                "given": "Mathias Bank",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Kovacic",
+                "given": "Iva",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Schinegger",
+                "given": "Kristina",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Rutzinger",
+                "given": "Stefan",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Wimmer",
+                "given": "Michael",
+                "countries": [
+                    "AT"
+                ]
+            }
+        ],
+        "title": "ArchComplete: Autoregressive 3D architectural design generation with hierarchical diffusion-based upsampling",
+        "journal": "Computers & Graphics",
+        "publication_year": 3025,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "104477",
+        "abstract": "Recent advances in 3D generative models have shown promising results but often fall short in capturing the complexity of architectural geometries and topologies. To tackle this, we present ArchComplete, a two-stage voxel-based 3D generative pipeline consisting of a vector-quantized model, whose composition is modeled with an autoregressive transformer for generating coarse shapes, followed by a set of multiscale diffusion models for augmenting with fine geometric details. Key to our pipeline is (i) learning a contextually rich codebook of local patch embeddings, optimized alongside a 2.5D perceptual loss that captures global spatial correspondence of projections onto three axis-aligned orthogonal planes, and (ii) redefining upsampling as a set of multiscale conditional diffusion models learning over a hierarchy of coarse-to-fine local volumetric patches, with a guided denoising process using 3D Gaussian windows that smooths noise estimates across overlapping patches during inference. Trained on our introduced dataset of 3D house models, ArchComplete autoregressively generates models at the resolution of 6 4 3 and progressively refines them up to 51 2 3 , with voxel sizes as small as \u2248 9 cm . ArchComplete solves a variety of tasks, including genetic interpolation and variation, unconditional synthesis, shape and plan-drawing completion, as well as geometric detailization, while achieving state-of-the-art performance.",
+        "countries": [
+            "AT"
+        ]
+    },
     "10.vis2025/1718": {
         "doi": "10.vis2025/1718",
         "authors": [
