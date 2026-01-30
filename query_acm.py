@@ -58,6 +58,8 @@ def generateEntryForDoi(doi, apiKey = ''):
     dataItem["journal"] = values["container-title"].replace("ACM Trans. Graph.", "ACM Transactions on Graphics")
     dataItem["journal"] = re.sub(pattern=r"SIGGRAPH Asia \d\d\d\d Conference Papers", repl=r"ACM SIGGRAPH Asia Conference Papers", string=dataItem["journal"])
     dataItem["journal"] = re.sub(pattern=r"ACM SIGGRAPH \d\d\d\d Conference Proceedings", repl=r"ACM SIGGRAPH Conference Papers", string=dataItem["journal"])
+    dataItem["journal"] = re.sub(pattern=r"Proceedings of the ACM SIGGRAPH Asia Conference Papers", repl=r"ACM SIGGRAPH Asia Conference Papers", string=dataItem["journal"])
+    dataItem["journal"] = re.sub(pattern=r"Proceedings of the ACM SIGGRAPH Conference Papers", repl=r"ACM SIGGRAPH Conference Papers", string=dataItem["journal"])
     if "source" in values.keys():
         dataItem["publication_year"] = int(values["source"].split(" ")[1])
     elif "issued" in values.keys():

@@ -1,6 +1,121 @@
 [
     {
         "is_vis": false,
+        "title": "Parametric Model Fitting for Textured and Animatable 3D Avatar From a Single Frontal Image of a Clothed Human",
+        "doi": "10.1016/j.cag.2025.104478",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-ets-bodymodeling-implicitparametricavatar",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/ETS-BodyModeling/ImplicitParametricAvatar",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:9378947abcb8ea15e7b75f7882f9e8b80b770d7e;origin=https://github.com/ETS-BodyModeling/ImplicitParametricAvatar",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-ets-bodymodeling-implicitparametricavatar/representative.png",
+        "authors": "Fares Mallek, Carlos V\u00e1zquez, Eric Paquette"
+    },
+    {
+        "is_vis": true,
+        "title": "OM4AnI: A Novel Overlap Measure for Anomaly Identification in Multi-Class Scatterplots",
+        "doi": "10.1109/tvcg.2025.3642219",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-llqsee-o4ani-2026-01-05t10-26-36-169z",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/llqsee/O4AnI",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:51bb767ac9a6a5c10ca4add455811a29890c49c5;origin=https://github.com/llqsee/O4AnI",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-llqsee-o4ani-2026-01-05t10-26-36-169z/representative.png",
+        "authors": "Liqun Liu, Leonid Bogachev, Mahdi Rezaei, Nishant Ravikumar, Arjun Khara, Mohsen Azarmi, Roy A. Ruddle",
+        "type": "keyword"
+    },
+    {
+        "is_vis": true,
+        "title": "A visualization framework for localized surface plasmon resonance imaging in sensing applications",
+        "doi": "10.1016/j.cag.2025.104396",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-asterzik-mika",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/asterzik/mika",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:f95ccfb7582d0e3871e48829377776996ce6dacb;origin=https://github.com/asterzik/mika",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-asterzik-mika/representative.png",
+        "authors": "Anna Sterzik, Tom\u00e1\u0161 Lednick\u00fd, Andrea Cs\u00e1ki, Kai Lawonn",
+        "type": "VCBM C&G"
+    },
+    {
+        "is_vis": true,
+        "title": "Topological Autoencoders++: Fast and Accurate Cycle-Aware Dimensionality Reduction",
+        "doi": "10.1109/tvcg.2025.3644671",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-mclemot-topologicalautoencodersplusplus",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/MClemot/TopologicalAutoencodersPlusPlus",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:2b2f328d273bdd7734e7ff95559a11cf901a5b3e;origin=https://github.com/MClemot/TopologicalAutoencodersPlusPlus",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-mclemot-topologicalautoencodersplusplus/representative.png",
+        "authors": "Matt\u00e9o Cl\u00e9mot, Julie Digne, Julien Tierny",
+        "type": "manual"
+    },
+    {
+        "is_vis": false,
+        "title": "Compensating Spatiotemporally Inconsistent Observations for Online Dynamic 3D Gaussian Splatting",
+        "doi": "10.1145/3721238.3730678",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-bbangsik13-or2",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/bbangsik13/OR2",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:afe5150dcdf644896b34642154dccfcd2d443a0d;origin=https://github.com/bbangsik13/OR2",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-bbangsik13-or2/representative.png",
+        "authors": "Youngsik Yun, Jeongmin Bae, Hyunseung Son, Seoha Kim, Hahyun Lee, Gun Bang, Youngjung Uh"
+    },
+    {
+        "is_vis": false,
+        "title": "F2Stories: A Modular Framework for Multi-Objective Optimization of Storylines with a Focus on Fairness",
+        "doi": "10.1109/tvcg.2025.3634228",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-tommaso-piselli-f2stories",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/tommaso-piselli/f2stories",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:13551814b5d8115828bd73c8fb3db5a4ac0e754b;origin=https://github.com/tommaso-piselli/f2stories",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-tommaso-piselli-f2stories/representative.png",
+        "authors": "Tommaso Piselli, Giuseppe Liotta, Fabrizio Montecchiani, Martin N\u00f6llenburg, Sara Di Bartolomeo"
+    },
+    {
+        "is_vis": false,
+        "title": "BSP-OT: Sparse transport plans between discrete measures in loglinear time",
+        "doi": "10.1145/3763281",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-baptiste-genest-bsp-ot",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/baptiste-genest/BSP-OT",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:2900599eda45820aba7c1bb3fedf7cd69dd68b7a;origin=https://github.com/baptiste-genest/BSP-OT",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-baptiste-genest-bsp-ot/representative.png",
+        "authors": "Baptiste Genest, Nicolas Bonneel, Vincent Nivoliers, David Coeurjolly"
+    },
+    {
+        "is_vis": true,
+        "title": "Reimagining Disassembly Interfaces with Visualization: Combining Instruction Tracing and Control Flow with DisViz",
+        "doi": "10.1109/tvcg.2025.3627171",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-prapti-044-dis-viz",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/Prapti-044/dis-viz",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:fa0079bb051697883339116ec0d5a63d526922d8;origin=https://github.com/Prapti-044/dis-viz",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-prapti-044-dis-viz/representative.png",
+        "authors": "Shadmaan Hye, Matthew P. LeGendre, Katherine E. Isaacs",
+        "type": "keyword"
+    },
+    {
+        "is_vis": false,
+        "title": "Statistical Error Reduction for Monte Carlo Rendering",
+        "doi": "10.1145/3757377.3763995",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-cg-tuwien-stater",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/cg-tuwien/StatER",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:c878e1fea923bde809d2d32b68399d2895c3c6a8;origin=https://github.com/cg-tuwien/StatER",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-cg-tuwien-stater/representative.png",
+        "authors": "Hiroyuki Sakai, Christian Freude, Michael Wimmer, David Hahn"
+    },
+    {
+        "is_vis": true,
+        "title": "Evaluating Graphical Perception Capabilities of Vision Transformers",
+        "doi": "10.1016/j.cag.2025.104458",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-poonam2308-vitsgraphicalperception",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/poonam2308/ViTsGraphicalPerception",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:3d6a76ca9bb36f409eb6d2302c1561d7ed177c35;origin=https://github.com/poonam2308/ViTsGraphicalPerception",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-poonam2308-vitsgraphicalperception/representative.png",
+        "authors": "Poonam Poonam, Pere-Pau V\u00e1zquez, Timo Ropinski",
+        "type": "manual"
+    },
+    {
+        "is_vis": false,
         "title": "A Monte Carlo Rendering Framework for Simulating Optical Heterodyne Detection",
         "doi": "10.1145/3731150",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-juhyeonkim95-mitsubaohd",
@@ -79,7 +194,7 @@
     {
         "is_vis": true,
         "title": "BondMatcher: H-Bond Stability Analysis in Molecular Systems",
-        "doi": "10.vis2025/1440",
+        "doi": "10.1109/tvcg.2025.3634636",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-thom-dani-bondmatcher",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/thom-dani/BondMatcher",
@@ -268,7 +383,7 @@
     {
         "is_vis": true,
         "title": "SynAnno: Interactive Guided Proofreading of Synaptic Annotations",
-        "doi": "10.vis2025/1718",
+        "doi": "10.1109/tvcg.2025.3634824",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-pytorchconnectomics-synanno",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/PytorchConnectomics/SynAnno",
@@ -392,7 +507,7 @@
     {
         "is_vis": true,
         "title": "Your Model Is Unfair, Are You Even Aware? Inverse Relationship Between Comprehension and Trust in Explainability Visualizations of Biased ML Models",
-        "doi": "10.vis2025/1446",
+        "doi": "10.1109/tvcg.2025.3634245",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-zhannakaufma-your-model-is-unfair-are-you-even-aware-git",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/zhannakaufma/Your_Model_Is_Unfair_Are_You_Even_Aware.git",
@@ -404,7 +519,7 @@
     {
         "is_vis": true,
         "title": "Cluster-Based Random Forest Visualization and Interpretation",
-        "doi": "10.vis2025/1432",
+        "doi": "10.1109/tvcg.2025.3634260",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-maxie12-randomforestvis",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/maxie12/RandomForestVis",

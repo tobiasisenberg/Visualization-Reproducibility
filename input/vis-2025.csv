@@ -1,7 +1,7 @@
 PCS-ID,Title,DOI,Year,DOI URL
-1005,Visualization Vibes: The Socio-Indexical Function of Visualization Design,10.vis2025/1005,2025,https://doi.org/10.vis2025/1005
-1006,Quantifying Visualization Vibes: Measuring Socio-Indexicality at Scale,10.vis2025/1006,2025,https://doi.org/10.vis2025/1006
-1016,Data Augmentation for Visualization Design Knowledge Base,10.vis2025/1016,2025,https://doi.org/10.vis2025/1016
+1005,Visualization Vibes: The Socio-Indexical Function of Visualization Design,10.1109/tvcg.2025.3634814,2025,https://doi.org/10.1109/tvcg.2025.3634814
+1006,Quantifying Visualization Vibes: Measuring Socio-Indexicality at Scale,10.1109/tvcg.2025.3634819,2025,https://doi.org/10.1109/tvcg.2025.3634819
+1016,Data Augmentation for Visualization Design Knowledge Base,10.1109/tvcg.2025.3634811,2025,https://doi.org/10.1109/tvcg.2025.3634811
 1017,Running with Data: a Survey of the Current Research and a Design Exploration of Future Immersive Visualisations,10.vis2025/1017,2025,https://doi.org/10.vis2025/1017
 1019,Dataset-Adaptive Dimensionality Reduction,10.vis2025/1019,2025,https://doi.org/10.vis2025/1019
 1023,MoE-INR: Implicit Neural Representation with Mixture-of-Experts for Time-Varying Volumetric Data Compression,10.vis2025/1023,2025,https://doi.org/10.vis2025/1023
@@ -46,10 +46,10 @@ PCS-ID,Title,DOI,Year,DOI URL
 1416,VisMoDAl: Visual Analytics for Evaluating and Improving Corruption Robustness of Vision-Language Models,10.vis2025/1416,2025,https://doi.org/10.vis2025/1416
 1426,Understanding Aortic Dissection Hemodynamics: Evaluating Adapted Smoke Surfaces Against Streakline-Based Techniques,10.vis2025/1426,2025,https://doi.org/10.vis2025/1426
 1431,Mixture of Cluster-guided Experts for Retrieval-Augmented Label Placement,10.vis2025/1431,2025,https://doi.org/10.vis2025/1431
-1432,Cluster-Based Random Forest Visualization and Interpretation,10.vis2025/1432,2025,https://doi.org/10.vis2025/1432
-1440,BondMatcher: H-Bond Stability Analysis in Molecular Systems,10.vis2025/1440,2025,https://doi.org/10.vis2025/1440
+1432,Cluster-Based Random Forest Visualization and Interpretation,10.1109/tvcg.2025.3634260,2025,https://doi.org/10.1109/tvcg.2025.3634260
+1440,BondMatcher: H-Bond Stability Analysis in Molecular Systems,10.1109/tvcg.2025.3634636,2025,https://doi.org/10.1109/tvcg.2025.3634636
 1444,NLI4VolVis: Natural Language Interaction for Volume Visualization via LLM Multi-Agents and Editable 3D Gaussian Splatting,10.vis2025/1444,2025,https://doi.org/10.vis2025/1444
-1446,"Your Model Is Unfair, Are You Even Aware? Inverse Relationship Between Comprehension and Trust in Explainability Visualizations of Biased ML Models",10.vis2025/1446,2025,https://doi.org/10.vis2025/1446
+1446,"Your Model Is Unfair, Are You Even Aware? Inverse Relationship Between Comprehension and Trust in Explainability Visualizations of Biased ML Models",10.1109/tvcg.2025.3634245,2025,https://doi.org/10.1109/tvcg.2025.3634245
 1455,F-Hash: Feature-Based Hash Design for Time-Varying Volume Visualization via Multi-Resolution Tesseract Encoding,10.vis2025/1455,2025,https://doi.org/10.vis2025/1455
 1468,From Vision to Touch: Bridging Visual and Tactile Principles for Accessible Data Representation,10.vis2025/1468,2025,https://doi.org/10.vis2025/1468
 1490,Tell Me Without Telling Me: Two-Way Prediction of Visualization Literacy and Visual Attention,10.vis2025/1490,2025,https://doi.org/10.vis2025/1490
@@ -90,7 +90,7 @@ PCS-ID,Title,DOI,Year,DOI URL
 1698,Motif Simplification for BioFabric Network Visualizations: Improving Pattern Recognition and Interpretation,10.vis2025/1698,2025,https://doi.org/10.vis2025/1698
 1700,MoMo - Combining Neuron Morphology and Connectivity for Interactive Motif Analysis in Connectomes,10.vis2025/1700,2025,https://doi.org/10.vis2025/1700
 1701,Understanding Large Language Model Behaviors through Interactive Counterfactual Generation and Analysis,10.vis2025/1701,2025,https://doi.org/10.vis2025/1701
-1718,SynAnno: Interactive Guided Proofreading of Synaptic Annotations,10.vis2025/1718,2025,https://doi.org/10.vis2025/1718
+1718,SynAnno: Interactive Guided Proofreading of Synaptic Annotations,10.1109/tvcg.2025.3634824,2025,https://doi.org/10.1109/tvcg.2025.3634824
 1729,FlowForge: Guiding the Creation of Multi-agent Workflows with Interactive Visualizations as a Thinking Scaffold,10.vis2025/1729,2025,https://doi.org/10.vis2025/1729
 1732,Beyond the Broadcast: Enhancing VR Tennis Broadcasting through Embedded Visualizations and Camera Techniques,10.vis2025/1732,2025,https://doi.org/10.vis2025/1732
 1737,Critical Design Strategy: a Method for Heuristically Evaluating Visualisation Designs,10.vis2025/1737,2025,https://doi.org/10.vis2025/1737

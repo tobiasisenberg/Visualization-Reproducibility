@@ -272,7 +272,9 @@ def markVisPapersByKeywords(paperList):
             ("10.1111/cgf.14784" in paper["doi"]) or         # talks about topology, graphs, and scalar fields
             ("10.1111/cgf.13910" in paper["doi"]) or         # talks about point clouds and topology
             ("10.1145/3687996" in paper["doi"]) or           # talks about the simulation of 3D flows and their visual representation
-            ("10.1109/tvcg.2025.3589748" in paper["doi"])    # visualization in abstract and author keyword
+            ("10.1109/tvcg.2025.3589748" in paper["doi"]) or # visualization in abstract and author keyword
+            ("10.1016/j.cag.2025.104458" in paper["doi"]) or # visualization in abstract
+            ("10.1109/tvcg.2025.3644671" in paper["doi"])    # visualization in abstract
             ):
             paper["is_vis"] = True
             paper["type"] = "manual"
@@ -821,18 +823,19 @@ else:
 
             # doi data clean-up
             doi = str(x.find_all("a")[3].get('href'))
-            doi = doi.replace("https://doi.org/", "")
+            doi = re.sub(pattern=r"https?://doi\.org/", repl=r"", string=doi)
+            doi = re.sub(pattern=r"https?://dx\.doi\.org/", repl=r"", string=doi)
             doi = doi.replace("https://doi.ieeecomputersociety.org/", "")
             doi = re.sub(pattern=r"https://diglib\.eg\.org(?::443)?/handle/10\.1111/cgf(\d+)", repl=r"10.1111/cgf.\1", string=doi)
             doi = doi.replace("https://dl.acm.org/doi/", "")
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
             # please note to replace the '%20' in the Google search links with a ' ' (manually or via a .replace("%20", " ") call as in the examples); otherwise the replacement does not work
-            doi = doi.replace("http://www.google.com/search?q=ArchComplete:%20Autoregressive%203D%20Architectural%20Design%20Generation%20with%20Hierarchical%20Diffusion-Based%20Upsampling".replace("%20", " "), "10.1016/j.cag.2025.104477")
+            doi = doi.replace("http://www.google.com/search?q=BondMatcher:%20H-Bond%20Stability%20Analysis%20in%20Molecular%20Systems".replace("%20", " "), "10.1109/TVCG.2025.3634636")
+            doi = doi.replace("http://www.google.com/search?q=Topological%20Autoencoders++:%20Fast%20and%20Accurate%20Cycle-Aware%20Dimensionality%20Reduction".replace("%20", " "), "10.1109/TVCG.2025.3644671")
+            doi = doi.replace("http://www.google.com/search?q=F2Stories:%20A%20Modular%20Framework%20for%20Multi-Objective%20Optimization%20of%20Storylines%20with%20a%20Focus%20on%20Fairness".replace("%20", " "), "10.1109/TVCG.2025.3634228")
+            doi = doi.replace("http://www.google.com/search?q=Reimagining%20Disassembly%20Interfaces%20with%20Visualization:%20Combining%20Instruction%20Tracing%20and%20Control%20Flow%20with%20DisViz".replace("%20", " "), "10.1109/TVCG.2025.3627171")
             # accepted real VIS papers below, need to fix later in both vis-2025.csv and via vispubdata, and remove here
-            doi = doi.replace("http://www.google.com/search?q=SynAnno:%20Interactive%20Guided%20Proofreading%20of%20Synaptic%20Annotations".replace("%20", " "), "10.vis2025/1718")
-            doi = doi.replace("http://www.google.com/search?q=Your%20Model%20Is%20Unfair,%20Are%20You%20Even%20Aware?%20Inverse%20Relationship%20Between%20Comprehension%20and%20Trust%20in%20Explainability%20Visualizations%20of%20Biased%20ML%20Models".replace("%20", " "), "10.vis2025/1446")
-            doi = doi.replace("http://www.google.com/search?q=Cluster-Based%20Random%20Forest%20Visualization%20and%20Interpretation".replace("%20", " "), "10.vis2025/1432")
-            doi = doi.replace("http://www.google.com/search?q=BondMatcher:%20H-Bond%20Stability%20Analysis%20in%20Molecular%20Systems".replace("%20", " "), "10.vis2025/1440")
+            # doi = doi.replace("http://www.google.com/search?q=SynAnno:%20Interactive%20Guided%20Proofreading%20of%20Synaptic%20Annotations".replace("%20", " "), "10.vis2025/1718")
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()

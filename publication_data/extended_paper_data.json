@@ -23437,19 +23437,19 @@
         ],
         "title": "ArchComplete: Autoregressive 3D architectural design generation with hierarchical diffusion-based upsampling",
         "journal": "Computers & Graphics",
-        "publication_year": 3025,
-        "volume": "",
+        "publication_year": 2025,
+        "volume": "133",
         "number": "",
-        "pages": "",
-        "number_of_pages": -1,
+        "pages": "104477:1\u2013104477:12",
+        "number_of_pages": 12,
         "article_number": "104477",
         "abstract": "Recent advances in 3D generative models have shown promising results but often fall short in capturing the complexity of architectural geometries and topologies. To tackle this, we present ArchComplete, a two-stage voxel-based 3D generative pipeline consisting of a vector-quantized model, whose composition is modeled with an autoregressive transformer for generating coarse shapes, followed by a set of multiscale diffusion models for augmenting with fine geometric details. Key to our pipeline is (i) learning a contextually rich codebook of local patch embeddings, optimized alongside a 2.5D perceptual loss that captures global spatial correspondence of projections onto three axis-aligned orthogonal planes, and (ii) redefining upsampling as a set of multiscale conditional diffusion models learning over a hierarchy of coarse-to-fine local volumetric patches, with a guided denoising process using 3D Gaussian windows that smooths noise estimates across overlapping patches during inference. Trained on our introduced dataset of 3D house models, ArchComplete autoregressively generates models at the resolution of 6 4 3 and progressively refines them up to 51 2 3 , with voxel sizes as small as \u2248 9 cm . ArchComplete solves a variety of tasks, including genetic interpolation and variation, unconditional synthesis, shape and plan-drawing completion, as well as geometric detailization, while achieving state-of-the-art performance.",
         "countries": [
             "AT"
         ]
     },
-    "10.vis2025/1718": {
-        "doi": "10.vis2025/1718",
+    "10.1109/tvcg.2025.3634824": {
+        "doi": "10.1109/tvcg.2025.3634824",
         "authors": [
             {
                 "family": "Lauenburg",
@@ -23496,19 +23496,19 @@
         ],
         "title": "SynAnno: Interactive Guided Proofreading of Synaptic Annotations",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
+        "publication_year": 3026,
         "volume": "",
         "number": "",
         "pages": "",
-        "number_of_pages": -1,
         "article_number": "",
+        "number_of_pages": 11,
         "abstract": "Connectomics, a subfield of neuroscience, aims to map and analyze synapse-level wiring diagrams of the nervous system. While recent advances in deep learning have accelerated automated neuron and synapse segmentation, reconstructing accurate connectomes still demands extensive human proofreading to correct segmentation errors. We present SynAnno, an interactive tool designed to streamline and enhance the proofreading of synaptic annotations in large-scale connectomics datasets. SynAnno integrates into existing neuroscience workflows by enabling guided, neuron-centric proofreading. To address the challenges posed by the complex spatial branching of neurons, it introduces a structured workflow with an optimized traversal path and a 3D mini-map for tracking progress. In addition, SynAnno incorporates fine-tuned machine learning models to assist with error detection and correction, reducing the manual burden and increasing proofreading efficiency. We evaluate SynAnno through a user and case study involving seven neuroscience experts. Results show that SynAnno significantly accelerates synapse proofreading while reducing cognitive load and annotation errors through structured guidance and visualization support. The source code and interactive demo are available at: https://github.com/PytorchConnectomics/SynAnno.",
         "countries": [
             "US"
         ]
     },
-    "10.vis2025/1446": {
-        "doi": "10.vis2025/1446",
+    "10.1109/tvcg.2025.3634245": {
+        "doi": "10.1109/tvcg.2025.3634245",
         "authors": [
             {
                 "family": "Kaufman",
@@ -23525,8 +23525,8 @@
                 ]
             },
             {
-                "family": "Xiong Bearfield",
-                "given": "Cindy",
+                "family": "Bearfield",
+                "given": "Cindy Xiong",
                 "countries": [
                     "US"
                 ]
@@ -23539,21 +23539,21 @@
                 ]
             }
         ],
-        "title": "Your Model Is Unfair, Are You Even Aware? Inverse Relationship Between Comprehension and Trust in Explainability Visualizations of Biased ML Models",
+        "title": "Your Model Is Unfair, Are You Even Aware? Inverse Relationship between Comprehension and Trust in Explainability Visualizations of Biased ML Models",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
+        "publication_year": 3026,
         "volume": "",
         "number": "",
         "pages": "",
-        "number_of_pages": -1,
         "article_number": "",
-        "abstract": "Systems relying on ML have become ubiquitous, but so has biased behavior within them. Research shows that bias significantly affects stakeholders' trust in systems and how they use them. Further, stakeholders of different backgrounds view and trust the same systems differently. Thus, how ML models' behavior is explained plays a key role in comprehension and trust. We survey explainability visualizations, creating a taxonomy of design characteristics. We conduct user studies to evaluate five state-of-the-art visualization tools (LIME, SHAP, CP, Anchors, and ELI5) for model explainability, measuring how taxonomy characteristics affect comprehension, bias perception, and trust for non-expert ML users. Surprisingly, we find an inverse relationship between comprehension and trust: the better users understand the models, the less they trust them. We investigate the cause and find that this relationship is strongly mediated by bias perception: more comprehensible visualizations increase people's perception of bias, and increased bias perception reduces trust. We confirm this relationship is causal: Manipulating explainability visualizations to control comprehension, bias perception, and trust, we show that visualization design can significantly (p < 0.001) increase comprehension, increase perceived bias, and reduce trust. Conversely, reducing perceived model bias, either by improving model fairness or by adjusting visualization design, significantly increases trust even when comprehension remains high. Our work advances understanding of how comprehension affects trust and systematically investigates visualization's role in facilitating responsible ML applications.",
+        "number_of_pages": 11,
+        "abstract": "Systems relying on ML have become ubiquitous, but so has biased behavior within them. Research shows that bias significantly affects stakeholders' trust in systems and how they use them. Further, stakeholders of different backgrounds view and trust the same systems differently. Thus, how ML models' behavior is explained plays a key role in comprehension and trust. We survey explainability visualizations, creating a taxonomy of design characteristics. We conduct user studies to evaluate five state-of the-art visualization tools (LIME, SHAP, CP, Anchors, and ELI5) for model explainability, measuring how taxonomy characteristics affect comprehension, bias perception, and trust for non-expert ML users. Surprisingly, we find an inverse relationship between comprehension and trust: the better users understand the models, the less they trust them. We investigate the cause and find that this relationship is strongly mediated by bias perception: more comprehensible visualizations increase people's perception of bias, and increased bias perception reduces trust. We confirm this relationship is causal: Manipulating explainability visualizations to control comprehension, bias perception, and trust, we show that visualization design can significantly (p < 0.001) increase comprehension, increase perceived bias, and reduce trust. Conversely, reducing perceived model bias, either by improving model fairness or by adjusting visualization design, significantly increases trust even when comprehension remains high. Our work advances understanding of how comprehension affects trust and systematically investigates visualization's role in facilitating responsible ML applications.",
         "countries": [
             "US"
         ]
     },
-    "10.vis2025/1432": {
-        "doi": "10.vis2025/1446",
+    "10.1109/tvcg.2025.3634260": {
+        "doi": "10.1109/tvcg.2025.3634260",
         "authors": [
             {
                 "family": "Sondag",
@@ -23578,15 +23578,15 @@
                 ]
             },
             {
-                "family": "von Landesberger",
-                "given": "Tatiana",
+                "family": "Landesberger",
+                "given": "Tatiana von",
                 "countries": [
                     "DE"
                 ]
             },
             {
-                "family": "van den Elzenfman",
-                "given": "Stef",
+                "family": "Elzen",
+                "given": "Stef van den",
                 "countries": [
                     "NL"
                 ]
@@ -23594,20 +23594,20 @@
         ],
         "title": "Cluster-Based Random Forest Visualization and Interpretation",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
+        "publication_year": 3026,
         "volume": "",
         "number": "",
         "pages": "",
-        "number_of_pages": -1,
         "article_number": "",
-        "abstract": "Random forests are a machine learning method used to automatically classify datasets and consist of a multitude of decision trees. While these random forests often have higher performance and generalize better than a single decision tree, they are also harder to interpret. This paper presents a visualization method and system to increase interpretability of random forests. We cluster similar trees which enables users to interpret how the model performs in general without needing to analyze each individual decision tree in detail, or interpret an oversimplified summary of the full forest. To meaningfully cluster the decision trees, we introduce a new distance metric that takes into account both the decision rules as well as the predictions of a pair of decision trees. We also propose two new visualization methods that visualize both clustered and individual decision trees: (1) The Feature Plot, which visualizes the topological position of features in the decision trees, and (2) the Rule Plot, which visualizes the decision rules of the decision trees. We demonstrate the efficacy of our approach through a case study on the Glass dataset, which is a relatively complex standard machine learning dataset, as well as a small user study.",
+        "number_of_pages": 11,
+        "abstract": "Random forests are a machine learning method used to automatically classify datasets and consist of a multitude of decision trees. While these random forests often have higher performance and generalize better than a single decision tree, they are also harder to interpret. This paper presents a visualization method and system to increase interpretability of random forests. We cluster similar trees which enables users to interpret how the model performs in general without needing to analyze each individual decision tree in detail, or interpret an oversimplified summary of the full forest. To meaningfully cluster the decision trees, we introduce a new distance metric that takes into account both the decision rules as well as the predictions of a pair of decision trees. We also propose two new visualization methods that visualize both clustered and individual decision trees: (1) The Feature Plot, which visualizes the topological position of features in the decision trees, and (2) the Rule Plot, which visualizes the decision rules of the decision trees. We demonstrate the efficacy of our approach through a case study on the \u201cGlass\u201d dataset, which is a relatively complex standard machine learning dataset, as well as a small user study",
         "countries": [
             "DE",
             "NL"
         ]
     },
-    "10.vis2025/1440": {
-        "doi": "10.vis2025/1440",
+    "10.1109/tvcg.2025.3634636": {
+        "doi": "10.1109/tvcg.2025.3634636",
         "authors": [
             {
                 "family": "Daniel",
@@ -23633,16 +23633,504 @@
         ],
         "title": "BondMatcher: H-Bond Stability Analysis in Molecular Systems",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3025,
+        "publication_year": 3026,
         "volume": "",
         "number": "",
         "pages": "",
-        "number_of_pages": -1,
         "article_number": "",
-        "abstract": "",
+        "number_of_pages": 11,
+        "abstract": "This application paper investigates the stability of hydrogen bonds (H-bonds), as characterized by the Quantum Theory of Atoms in Molecules (QTAIM). First, we contribute a database of 4544 electron densities associated to four isomers of water hexamers (the so-called Ring, Book, Cage and Prism), generated by distorting their equilibrium geometry under various structural perturbations, modeling the natural dynamic behavior of molecular systems. Second, we present a new stability measure, called bond occurrence rate, associating each bond path present at equilibrium with its rate of occurrence within the input ensemble. We also provide an algorithm, called BondMatcher, for its automatic computation, based on a tailored, geometry-aware partial isomorphism estimation between the extremum graphs of the considered electron densities. Our new stability measure allows for the automatic identification of densities lacking H-bond paths, enabling further visual inspections. Specifically, the topological analysis enabled by our framework corroborates experimental observations and provides refined geometrical criteria for characterizing the disappearance of H-bond paths.",
         "countries": [
             "FR",
             "PL"
+        ]
+    },
+    "10.1016/j.cag.2025.104478": {
+        "doi": "10.1016/j.cag.2025.104478",
+        "authors": [
+            {
+                "family": "Mallek",
+                "given": "Fares",
+                "countries": [
+                    "CA"
+                ]
+            },
+            {
+                "family": "V\u00e1zquez",
+                "given": "Carlos",
+                "countries": [
+                    "CA"
+                ]
+            },
+            {
+                "family": "Paquette",
+                "given": "Eric",
+                "countries": [
+                    "CA"
+                ]
+            }
+        ],
+        "title": "Parametric model fitting for textured and animatable 3D avatar from a single frontal image of a clothed human",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "133",
+        "number": "",
+        "pages": "104478:1\u2013104478:15",
+        "number_of_pages": 15,
+        "article_number": "104478",
+        "abstract": "In this paper, we tackle the challenge of three-dimensional estimation of expressive, animatable, and textured human avatars from a single frontal image. Leveraging a Skinned Multi-Person Linear (SMPL) parametric body model, we adjust the model parameters to faithfully reflect the shape and pose of the individual, relying on the mesh generated by a Pixel-aligned Implicit Function (PIFu) model. To robustly infer the SMPL parameters, we deploy a multi-step optimization process. Initially, we recover the position of 2D joints using an existing pose estimation tool. Subsequently, we utilize the 3D PIFu mesh together with the 2D pose to estimate the 3D position of joints. In the subsequent step, we adapt the body\u2019s parametric model to the 3D joints through rigid alignment, optimizing for global translation and rotation. This step provides a robust initialization for further refinement of shape and pose parameters. The next step involves optimizing the pose and the first component of the SMPL shape parameters while imposing constraints to enhance model robustness. We then refine the SMPL model pose and shape parameters by adding two new registration loss terms to the optimization cost function: a point-to-surface distance and a Chamfer distance. Finally, we introduce a refinement process utilizing a deformation vector field applied to the SMPL mesh, enabling more faithful modeling of tight to loose clothing geometry. As most other works, we optimize based on images of people wearing shoes, resulting in artifacts in the toes region of SMPL. We thus introduce a new shoe-like mesh topology which greatly improves the quality of the reconstructed feet. A notable advantage of our approach is the ability to generate detailed avatars with fewer vertices compared to previous research, enhancing computational efficiency while maintaining high fidelity. We also demonstrate how to gain even more details, while maintaining the advantages of SMPL. To complete our model, we design a texture extraction and completion approach. Our entirely automated approach was evaluated against recognized benchmarks, X-Avatar and PeopleSnapshot, showcasing competitive performance against state-of-the-art methods. This approach contributes to advancing 3D modeling techniques, particularly in the realms of interactive applications, animation, and video games. We will make our code and our improved SMPL mesh topology available to the community: https://github.com/ETS-BodyModeling/ImplicitParametricAvatar.",
+        "countries": [
+            "CA"
+        ]
+    },
+    "10.1109/tvcg.2025.3642219": {
+        "doi": "10.1109/tvcg.2025.3642219",
+        "authors": [
+            {
+                "family": "Liu",
+                "given": "Liqun",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Bogachev",
+                "given": "Leonid",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Rezaei",
+                "given": "Mahdi",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Ravikumar",
+                "given": "Nishant",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Khara",
+                "given": "Arjun",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Azarmi",
+                "given": "Mohsen",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Ruddle",
+                "given": "Roy A.",
+                "countries": [
+                    "GB"
+                ]
+            }
+        ],
+        "title": "OM4AnI: A Novel Overlap Measure for Anomaly Identification in Multi-Class Scatterplots",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 12,
+        "abstract": "Scatterplots are widely used across various domains to identify anomalies in datasets, particularly in multi-class settings, such as detecting misclassified or mislabeled data. However, scatterplot effectiveness often declines with large datasets due to limited display resolution. This paper introduces a novel Visual Quality Measure (VQM) \u2013 OM4AnI (Overlap Measure for Anomaly Identification) \u2013 which quantifies the degree of overlap for identifying anomalies, helping users estimate how effectively anomalies can be observed in multi-class scatterplots. OM4AnI begins by computing anomaly index based on each data point's position relative to its class cluster. The scatterplot is then discretized into a matrix representation by binning the display space into cell-level (pixel-level) grids and computing the coverage for each pixel. It takes into account the anomaly index of data points covering these pixels and visual features (marker shapes, marker sizes, and rendering orders). Building on this foundation, we sum all the coverage information in each cell (pixel) of matrix representation to obtain the final quality score with respect to anomaly identification. We conducted an evaluation to analyze the efficiency, effectiveness, sensitivity of OM4AnI in comparison with six representative baseline methods that are based on different computation granularity levels: data level, marker level, and pixel level. The results show that OM4AnI outperforms baseline methods by exhibiting more monotonic trends against the ground truth and greater sensitivity to rendering order, unlike the baseline methods. It confirms that OM4AnI can inform users about how effectively their scatterplots support anomaly identification. Overall, OM4AnI shows strong potential as an evaluation metric and for optimizing scatterplots through automatic adjustment of visual parameters.",
+        "countries": [
+            "GB"
+        ]
+    },
+    "10.1016/j.cag.2025.104396": {
+        "doi": "10.1016/j.cag.2025.104396",
+        "authors": [
+            {
+                "family": "Sterzik",
+                "given": "Anna",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Lednick\u00fd",
+                "given": "Tom\u00e1\u0161",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Cs\u00e1ki",
+                "given": "Andrea",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Lawonn",
+                "given": "Kai",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "A visualization framework for localized surface plasmon resonance imaging in sensing applications",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "132",
+        "number": "",
+        "pages": "104396:1\u2013104396:10",
+        "number_of_pages": 10,
+        "article_number": "104396",
+        "abstract": "Localized Surface Plasmon Resonance (LSPR) is a powerful tool in clinical diagnostics and environmental monitoring for detecting various types of molecules. Building on this foundation, Localized Surface Plasmon Resonance Imaging (LSPRi) offers spatially-resolved sensing and has emerged as an active area of research with growing interest within the scientific community. However, analyzing LSPRi data remains complex, requiring users to configure models, choose analysis parameters, and interpret derived metrics\u2014often across disconnected tools or custom scripts. We present a visualization framework that supports users throughout the full analysis process. It automates certain aspects of the analysis while still allowing users to configure models and parameters and visualizes both intermediate and final results to facilitate comparison and interpretation. Our system was developed in close collaboration with domain experts through an iterative design process and evaluated through interviews with scientists using LSPRi in their research. It has the potential to streamline LSPRi data analysis, enabling researchers to explore, compare, and refine their modeling choices more efficiently.",
+        "countries": [
+            "DE"
+        ]
+    },
+    "10.1109/tvcg.2025.3644671": {
+        "doi": "10.1109/tvcg.2025.3644671",
+        "authors": [
+            {
+                "family": "Cl\u00e9mot",
+                "given": "Matt\u00e9o",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Digne",
+                "given": "Julie",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Tierny",
+                "given": "Julien",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Topological Autoencoders++: Fast and Accurate Cycle-Aware Dimensionality Reduction",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 17,
+        "abstract": "This paper presents a novel topology-aware dimensionality reduction approach aiming at accurately visualizing the cyclic patterns present in high dimensional data. To that end, we build on the Topological Autoencoders (TopoAE) [1] formulation. First, we provide a novel theoretical analysis of its associated loss and show that a zero loss indeed induces identical persistence pairs (in high and low dimensions) for the 0-dimensional persistent homology ($PH^{0}$) of the Rips filtration. We also provide a counter example showing that this property no longer holds for a naive extension of TopoAE to $PH^{d}$ for d $\\geq$ 1. Based on this observation, we introduce a novel generalization of TopoAE to 1-dimensional persistent homology ($PH^{1}$), called TopoAE++, for the accurate generation of cycle-aware planar embeddings, addressing the above failure case. This generalization is based on the notion of cascade distortion, a new penalty term favoring an isometric embedding of the 2-chains filling persistent 1-cycles, hence resulting in more faithful geometrical reconstructions of the 1-cycles in the plane. We further introduce a novel, fast algorithm for the exact computation of PH for Rips filtrations in the plane, yielding improved runtimes over previously documented topology-aware methods. Our method also achieves a better balance between the topological accuracy, as measured by the Wasserstein distance, and the visual preservation of the cycles in low dimensions. Our C++ implementation is available at https://github.com/MClemot/TopologicalAutoencodersPlusPlus.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1145/3721238.3730678": {
+        "doi": "10.1145/3721238.3730678",
+        "authors": [
+            {
+                "family": "Yun",
+                "given": "Youngsik",
+                "orcid": "0000-0003-4398-7856",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Bae",
+                "given": "Jeongmin",
+                "orcid": "0009-0009-3376-2275",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Son",
+                "given": "Hyunseung",
+                "orcid": "0009-0009-1239-0492",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Kim",
+                "given": "Seoha",
+                "orcid": "0009-0006-7456-701X",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Lee",
+                "given": "Hahyun",
+                "orcid": "0000-0001-7043-7564",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Bang",
+                "given": "Gun",
+                "orcid": "0000-0003-4355-599X",
+                "countries": [
+                    "KR"
+                ]
+            },
+            {
+                "family": "Uh",
+                "given": "Youngjung",
+                "orcid": "0000-0001-8173-3334",
+                "countries": [
+                    "KR"
+                ]
+            }
+        ],
+        "title": "Compensating Spatiotemporally Inconsistent Observations for Online Dynamic 3D Gaussian Splatting",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "139:1\u2013139:9",
+        "article_number": "139",
+        "number_of_pages": 9,
+        "abstract": "Online reconstruction of dynamic scenes is significant as it enables learning scenes from live-streaming video inputs, while existing offline dynamic reconstruction methods rely on recorded video inputs. However, previous online reconstruction approaches have primarily focused on efficiency and rendering quality, overlooking the temporal consistency of their results, which often contain noticeable artifacts in static regions. This paper identifies that errors such as noise in real-world recordings affect temporal inconsistency in online reconstruction. We propose a method that enhances temporal consistency in online reconstruction from observations with temporal inconsistency which is inevitable in cameras. We show that our method restores the ideal observation by subtracting the learned error. We demonstrate that applying our method to various baselines significantly enhances both temporal consistency and rendering quality across datasets. Code, video results, and checkpoints are available at https://bbangsik13.github.io/OR2.",
+        "countries": [
+            "KR"
+        ]
+    },
+    "10.1109/tvcg.2025.3634228": {
+        "doi": "10.1109/tvcg.2025.3634228",
+        "authors": [
+            {
+                "family": "Piselli",
+                "given": "Tommaso",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Liotta",
+                "given": "Giuseppe",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Montecchiani",
+                "given": "Fabrizio",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "N\u00f6llenburg",
+                "given": "Martin",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Bartolomeo",
+                "given": "Sara Di",
+                "countries": [
+                    "AT"
+                ]
+            }
+        ],
+        "title": "F2Stories: a Modular Framework for Multi-Objective Optimization of Storylines with a Focus on Fairness",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 11,
+        "abstract": "Storyline visualizations represent character interactions over time. When these characters belong to different groups, a new research question emerges: how can we balance optimization of readability across the groups while preserving the overall narrative structure of the story? Traditional algorithms that optimize global readability metrics (like minimizing crossings) can introduce quality biases between the different groups based on their cardinality and other aspects of the data. Visual consequences of these biases are: making characters of minority groups disproportionately harder to follow, and visually deprioritizing important characters when their curves become entangled with numerous secondary characters. We present F2Stories, a modular framework that addresses these challenges in storylines by offering three complementary optimization modes: (1) fairnessMode ensures that no group bears a disproportionate burden of visualization complexity regardless of their representation in the story; (2) focusMode allows prioritizing a group of characters while maintaining good readability for secondary characters; and (3) standardMode globally optimizes classical aesthetic metrics. Our approach is based on Mixed Integer Linear Programming (MILP), offering optimality guarantees, precise balancing of competing metrics through weighted objectives, and the flexibility to incorporate complex fairness concepts as additional constraints without the need to redesign the entire algorithm. We conducted an extensive experimental analysis to demonstrate how F2Stories enables more fair or focus group-prioritized storyline visualizations while maintaining adherence to established layout constraints. Our evaluation includes comprehensive results from a detailed case study that shows the effectiveness of our approach in real-world narrative contexts. An open access copy of this paper and all supplemental materials are available at osf.io/e2qvy.",
+        "countries": [
+            "IT",
+            "AT"
+        ]
+    },
+    "10.1109/tvcg.2025.3627171": {
+        "doi": "10.1109/tvcg.2025.3627171",
+        "authors": [
+            {
+                "family": "Hye",
+                "given": "Shadmaan",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "LeGendre",
+                "given": "Matthew P.",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Isaacs",
+                "given": "Katherine E.",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Reimagining Disassembly Interfaces with Visualization: Combining Instruction Tracing and Control Flow with DisViz",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 14,
+        "abstract": "In applications where efficiency is critical, developers may examine their compiled binaries, seeking to understand how the compiler transformed their source code and what performance implications that transformation may have. This analysis is challenging due to the vast number of disassembled binary instructions and the many-to-many mappings between them and the source code. These problems are exacerbated as source code size increases, giving the compiler more freedom to map and disperse binary instructions across the disassembly space. Interfaces for disassembly typically display instructions as an unstructured listing or sacrifice the order of execution. We design a new visual interface for disassembly code that combines execution order with control flow structure, enabling analysts to both trace through code and identify familiar aspects of the computation. Central to our approach is a novel layout of instructions grouped into basic blocks that displays a looping structure in an intuitive way. We add to this disassembly representation a unique block-based mini-map that leverages our layout and shows context across thousands of disassembly instructions. Finally, we embed our disassembly visualization in a web-based tool, DisViz, which adds dynamic linking with source code across the entire application. DizViz was developed in collaboration with program analysis experts following design study methodology and was validated through evalu ation sessions with ten participants from four institutions. Participants successfully completed the evaluation tasks, hypothesized about compiler optimizations, and noted the utility of our new disassembly view. Our evaluation suggests that our new integrated view helps application developers in understanding and navigating disassembly code.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.1145/3757377.3763995": {
+        "doi": "10.1145/3757377.3763995",
+        "authors": [
+            {
+                "family": "Sakai",
+                "given": "Hiroyuki",
+                "orcid": "0000-0003-0388-8458",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Freude",
+                "given": "Christian",
+                "orcid": "0000-0002-4224-4105",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Wimmer",
+                "given": "Michael",
+                "orcid": "0000-0002-9370-2663",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Hahn",
+                "given": "David",
+                "orcid": "0000-0002-7617-5523",
+                "countries": [
+                    "AT"
+                ]
+            }
+        ],
+        "title": "Statistical Error Reduction for Monte Carlo Rendering",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "50:1\u201350:12",
+        "article_number": "50",
+        "number_of_pages": 12,
+        "abstract": "Denoising is an important post-processing step in physically based Monte Carlo (MC) rendering. While neural networks are widely used in practice, statistical analysis has recently become a viable alternative for denoising. In this paper, we present a general framework for statistics-based error reduction of both estimated radiance and variance. Specifically, we introduce a novel denoising approach for variance estimates, which can either improve variance-aware adaptive sampling or provide additional input for image denoising in a cascaded manner. Furthermore, we present multi-transform denoising: a general and efficient correction scheme for non-normal distributions, which typically occur in MC rendering. All these contributions combine to a robust denoising pipeline that does not require any pretraining and can run efficiently on current GPU hardware. Our results show distinct advantages over previous denoising methods, especially in the range of a few hundred samples per pixel, which is of high practical relevance. Finally, we demonstrate good convergence behavior as the number of samples increases, providing predictable results with low bias that are free of hallucinated neural artifacts. In summary, our statistics-based algorithms for adaptive sampling and denoising deliver fast, consistent, low-bias variance and radiance estimates.",
+        "countries": [
+            "AT"
+        ]
+    },
+    "10.1016/j.cag.2025.104458": {
+        "doi": "10.1016/j.cag.2025.104458",
+        "authors": [
+            {
+                "family": "Poonam",
+                "given": "Poonam",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "V\u00e1zquez",
+                "given": "Pere-Pau",
+                "countries": [
+                    "ES"
+                ]
+            },
+            {
+                "family": "Ropinski",
+                "given": "Timo",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "Evaluating graphical perception capabilities of Vision Transformers",
+        "journal": "Computers & Graphics",
+        "publication_year": 2025,
+        "volume": "133",
+        "number": "",
+        "pages": "104458",
+        "number_of_pages": -1,
+        "article_number": "104458",
+        "abstract": "Vision Transformers (ViTs) have emerged as a powerful alternative to convolutional neural networks (CNNs) in a variety of image-based tasks. While CNNs have previously been evaluated for their ability to perform graphical perception tasks, which are essential for interpreting visualizations, the perceptual capabilities of ViTs remain largely unexplored. In this work, we investigate the performance of ViTs in elementary visual judgment tasks inspired by Cleveland and McGill\u2019s foundational studies, which quantified the accuracy of human perception across different visual encodings. Inspired by their study, we benchmark ViTs against CNNs and human participants in a series of controlled graphical perception tasks. Our results reveal that, although ViTs demonstrate strong performance in general vision tasks, their alignment with human-like graphical perception in the visualization domain is limited. This study highlights key perceptual gaps and points to important considerations for the application of ViTs in visualization systems and graphical perceptual modeling.",
+        "countries": [
+            "DE",
+            "ES"
+        ]
+    },
+    "10.1145/3763281": {
+        "doi": "10.1145/3763281",
+        "authors": [
+            {
+                "family": "Genest",
+                "given": "Baptiste",
+                "orcid": "0009-0009-7718-5553",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Bonneel",
+                "given": "Nicolas",
+                "orcid": "0000-0001-5243-4810",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Nivoliers",
+                "given": "Vincent",
+                "orcid": "0000-0001-5242-1585",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Coeurjolly",
+                "given": "David",
+                "orcid": "0000-0003-3164-8697",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "BSP-OT: Sparse transport plans between discrete measures in loglinear time",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2025,
+        "volume": "44",
+        "number": "6",
+        "pages": "1\u201315",
+        "article_number": "0",
+        "number_of_pages": 15,
+        "abstract": "To solve the optimal transport problem between two uniform discrete measures of the same size, one seeks a bijective assignment that minimizes some matching cost. For this task, exact algorithms are intractable for large problems, while approximate ones may lose the bijectivity of the assignment. We address this issue and the more general cases of non-uniform discrete measures with different total masses, where partial transport may be desirable. The core of our algorithm is a variant of the Quicksort algorithm that provides an efficient strategy to randomly explore many relevant and easy-to-compute couplings, by matching BSP trees in loglinear time. The couplings we obtain are as sparse as possible, in the sense that they provide bijections, injective partial matchings or sparse couplings depending on the nature of the matched measures. To improve the transport cost, we propose efficient strategies to merge\n                    <jats:italic toggle=\"yes\">k\n                    sparse couplings into a higher quality one. For\n                    <jats:italic toggle=\"yes\">k =\n                    64, we obtain transport plans with typically less than 1% of relative error in a matter of seconds between hundreds of thousands of points in 3D on the CPU. We demonstrate how these high-quality approximations can drastically speed-up usual pipelines involving optimal transport, such as shape interpolation, intrinsic manifold sampling, color transfer, topological data analysis, rigid partial registration of point clouds and image stippling.",
+        "countries": [
+            "FR"
         ]
     }
 }
