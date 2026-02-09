@@ -23496,10 +23496,10 @@
         ],
         "title": "SynAnno: Interactive Guided Proofreading of Synaptic Annotations",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "1",
+        "pages": "429\u2013439",
         "article_number": "",
         "number_of_pages": 11,
         "abstract": "Connectomics, a subfield of neuroscience, aims to map and analyze synapse-level wiring diagrams of the nervous system. While recent advances in deep learning have accelerated automated neuron and synapse segmentation, reconstructing accurate connectomes still demands extensive human proofreading to correct segmentation errors. We present SynAnno, an interactive tool designed to streamline and enhance the proofreading of synaptic annotations in large-scale connectomics datasets. SynAnno integrates into existing neuroscience workflows by enabling guided, neuron-centric proofreading. To address the challenges posed by the complex spatial branching of neurons, it introduces a structured workflow with an optimized traversal path and a 3D mini-map for tracking progress. In addition, SynAnno incorporates fine-tuned machine learning models to assist with error detection and correction, reducing the manual burden and increasing proofreading efficiency. We evaluate SynAnno through a user and case study involving seven neuroscience experts. Results show that SynAnno significantly accelerates synapse proofreading while reducing cognitive load and annotation errors through structured guidance and visualization support. The source code and interactive demo are available at: https://github.com/PytorchConnectomics/SynAnno.",
@@ -23539,15 +23539,15 @@
                 ]
             }
         ],
-        "title": "Your Model Is Unfair, Are You Even Aware? Inverse Relationship between Comprehension and Trust in Explainability Visualizations of Biased ML Models",
+        "title": "Your Model Is Unfair, Are You Even Aware? Inverse Relationship Between Comprehension and Trust in Explainability Visualizations of Biased ML Models",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "1",
+        "pages": "637\u2013647",
         "article_number": "",
         "number_of_pages": 11,
-        "abstract": "Systems relying on ML have become ubiquitous, but so has biased behavior within them. Research shows that bias significantly affects stakeholders' trust in systems and how they use them. Further, stakeholders of different backgrounds view and trust the same systems differently. Thus, how ML models' behavior is explained plays a key role in comprehension and trust. We survey explainability visualizations, creating a taxonomy of design characteristics. We conduct user studies to evaluate five state-of the-art visualization tools (LIME, SHAP, CP, Anchors, and ELI5) for model explainability, measuring how taxonomy characteristics affect comprehension, bias perception, and trust for non-expert ML users. Surprisingly, we find an inverse relationship between comprehension and trust: the better users understand the models, the less they trust them. We investigate the cause and find that this relationship is strongly mediated by bias perception: more comprehensible visualizations increase people's perception of bias, and increased bias perception reduces trust. We confirm this relationship is causal: Manipulating explainability visualizations to control comprehension, bias perception, and trust, we show that visualization design can significantly (p < 0.001) increase comprehension, increase perceived bias, and reduce trust. Conversely, reducing perceived model bias, either by improving model fairness or by adjusting visualization design, significantly increases trust even when comprehension remains high. Our work advances understanding of how comprehension affects trust and systematically investigates visualization's role in facilitating responsible ML applications.",
+        "abstract": "Systems relying on ML have become ubiquitous, but so has biased behavior within them. Research shows that bias significantly affects stakeholders' trust in systems and how they use them. Further, stakeholders of different backgrounds view and trust the same systems differently. Thus, how ML models' behavior is explained plays a key role in comprehension and trust. We survey explainability visualizations, creating a taxonomy of design characteristics. We conduct user studies to evaluate five state-of-the-art visualization tools (LIME, SHAP, CP, Anchors, and ELl5) for model explainability, measuring how taxonomy characteristics affect comprehension, bias perception, and trust for non-expert ML users. Surprisingly, we find an inverse relationship between comprehension and trust: the better users understand the models, the less they trust them. We investigate the cause and find that this relationship is strongly mediated by bias perception: more comprehensible visualizations increase people's perception of bias, and increased bias perception reduces trust. We confirm this relationship is causal: Manipulating explainability visualizations to control comprehension, bias perception, and trust, we show that visualization design can significantly (p < 0.001) increase comprehension, increase perceived bias, and reduce trust. Conversely, reducing perceived model bias, either by improving model fairness or by adjusting visualization design, significantly increases trust even when comprehension remains high. Our work advances understanding of how comprehension affects trust and systematically investigates visualization's role in facilitating responsible ML applications.",
         "countries": [
             "US"
         ]
@@ -23594,13 +23594,13 @@
         ],
         "title": "Cluster-Based Random Forest Visualization and Interpretation",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "1",
+        "pages": "626\u2013636",
         "article_number": "",
         "number_of_pages": 11,
-        "abstract": "Random forests are a machine learning method used to automatically classify datasets and consist of a multitude of decision trees. While these random forests often have higher performance and generalize better than a single decision tree, they are also harder to interpret. This paper presents a visualization method and system to increase interpretability of random forests. We cluster similar trees which enables users to interpret how the model performs in general without needing to analyze each individual decision tree in detail, or interpret an oversimplified summary of the full forest. To meaningfully cluster the decision trees, we introduce a new distance metric that takes into account both the decision rules as well as the predictions of a pair of decision trees. We also propose two new visualization methods that visualize both clustered and individual decision trees: (1) The Feature Plot, which visualizes the topological position of features in the decision trees, and (2) the Rule Plot, which visualizes the decision rules of the decision trees. We demonstrate the efficacy of our approach through a case study on the \u201cGlass\u201d dataset, which is a relatively complex standard machine learning dataset, as well as a small user study",
+        "abstract": "Random forests are a machine learning method used to automatically classify datasets and consist of a multitude of decision trees. While these random forests often have higher performance and generalize better than a single decision tree, they are also harder to interpret. This paper presents a visualization method and system to increase interpretability of random forests. We cluster similar trees which enables users to interpret how the model performs in general without needing to analyze each individual decision tree in detail, or interpret an oversimplified summary of the full forest. To meaningfully cluster the decision trees, we introduce a new distance metric that takes into account both the decision rules as well as the predictions of a pair of decision trees. We also propose two new visualization methods that visualize both clustered and individual decision trees: (1) The Feature Plot, which visualizes the topological position of features in the decision trees, and (2) the Rule Plot, which visualizes the decision rules of the decision trees. We demonstrate the efficacy of our approach through a case study on the \u201cGlass\u201d dataset, which is a relatively complex standard machine learning dataset, as well as a small user study.",
         "countries": [
             "DE",
             "NL"
@@ -23633,13 +23633,13 @@
         ],
         "title": "BondMatcher: H-Bond Stability Analysis in Molecular Systems",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "1",
+        "pages": "999\u20131009",
         "article_number": "",
         "number_of_pages": 11,
-        "abstract": "This application paper investigates the stability of hydrogen bonds (H-bonds), as characterized by the Quantum Theory of Atoms in Molecules (QTAIM). First, we contribute a database of 4544 electron densities associated to four isomers of water hexamers (the so-called Ring, Book, Cage and Prism), generated by distorting their equilibrium geometry under various structural perturbations, modeling the natural dynamic behavior of molecular systems. Second, we present a new stability measure, called bond occurrence rate, associating each bond path present at equilibrium with its rate of occurrence within the input ensemble. We also provide an algorithm, called BondMatcher, for its automatic computation, based on a tailored, geometry-aware partial isomorphism estimation between the extremum graphs of the considered electron densities. Our new stability measure allows for the automatic identification of densities lacking H-bond paths, enabling further visual inspections. Specifically, the topological analysis enabled by our framework corroborates experimental observations and provides refined geometrical criteria for characterizing the disappearance of H-bond paths.",
+        "abstract": "This application paper investigates the stability of hydrogen bonds (H-bonds), as characterized by the Quantum Theory of Atoms in Molecules (QTAIM). First, we contribute a database of 4544 electron densities associated to four isomers of water hexamers (the so-called Ring, Book, Cage and Prism), generated by distorting their equilibrium geometry under various structural perturbations, modeling the natural dynamic behavior of molecular systems. Second, we present a new stability measure, called bond occurrence rate, associating each bond path present at equilibrium with its rate of occurrence within the input ensemble. We also provide an algorithm, called BondMatcher, for its automatic computation, based on a tailored, geometry-aware partial isomorphism estimation between the extremum graphs of the considered electron densities. Our new stability measure allows for the automatic identification of densities lacking H-bond paths, enabling further visual inspections. Specifically, the topological analysis enabled by our framework corroborates experimental observations and provides refined geometrical criteria for characterizing the disappearance of H-bond paths. Our electron density database and our C++ implementation are available at this address: https://github.com/thom-dani/BondMatcher.",
         "countries": [
             "FR",
             "PL"
@@ -23738,13 +23738,13 @@
         ],
         "title": "OM4AnI: A Novel Overlap Measure for Anomaly Identification in Multi-Class Scatterplots",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "2",
+        "pages": "1850\u20131863",
         "article_number": "",
-        "number_of_pages": 12,
-        "abstract": "Scatterplots are widely used across various domains to identify anomalies in datasets, particularly in multi-class settings, such as detecting misclassified or mislabeled data. However, scatterplot effectiveness often declines with large datasets due to limited display resolution. This paper introduces a novel Visual Quality Measure (VQM) \u2013 OM4AnI (Overlap Measure for Anomaly Identification) \u2013 which quantifies the degree of overlap for identifying anomalies, helping users estimate how effectively anomalies can be observed in multi-class scatterplots. OM4AnI begins by computing anomaly index based on each data point's position relative to its class cluster. The scatterplot is then discretized into a matrix representation by binning the display space into cell-level (pixel-level) grids and computing the coverage for each pixel. It takes into account the anomaly index of data points covering these pixels and visual features (marker shapes, marker sizes, and rendering orders). Building on this foundation, we sum all the coverage information in each cell (pixel) of matrix representation to obtain the final quality score with respect to anomaly identification. We conducted an evaluation to analyze the efficiency, effectiveness, sensitivity of OM4AnI in comparison with six representative baseline methods that are based on different computation granularity levels: data level, marker level, and pixel level. The results show that OM4AnI outperforms baseline methods by exhibiting more monotonic trends against the ground truth and greater sensitivity to rendering order, unlike the baseline methods. It confirms that OM4AnI can inform users about how effectively their scatterplots support anomaly identification. Overall, OM4AnI shows strong potential as an evaluation metric and for optimizing scatterplots through automatic adjustment of visual parameters.",
+        "number_of_pages": 14,
+        "abstract": "Scatterplots are widely used across various domains to identify anomalies in datasets, particularly in multi-class settings, such as detecting misclassified or mislabeled data. However, scatterplot effectiveness often declines with large datasets due to limited display resolution. This paper introduces a novel Visual Quality Measure (VQM) \u2013 OM4AnI (Overlap Measure for Anomaly Identification) \u2013 which quantifies the degree of overlap for identifying anomalies, helping users estimate how effectively anomalies can be observed in multi-class scatterplots. OM4AnI begins by computing anomaly index based on each data point\u2019s position relative to its class cluster. The scatterplot is then discretized into a matrix representation by binning the display space into cell-level (pixel-level) grids and computing the coverage for each pixel. It takes into account the anomaly index of data points covering these pixels and visual features (marker shapes, marker sizes, and rendering orders). Building on this foundation, we sum all the coverage information in each cell (pixel) of matrix representation to obtain the final quality score with respect to anomaly identification. We conducted an evaluation to analyze the efficiency, effectiveness, sensitivity of OM4AnI in comparison with six representative baseline methods that are based on different computation granularity levels: data level, marker level, and pixel level. The results show that OM4AnI outperforms baseline methods by exhibiting more monotonic trends against the ground truth and greater sensitivity to rendering order, unlike the baseline methods. It confirms that OM4AnI can inform users about how effectively their scatterplots support anomaly identification. Overall, OM4AnI shows strong potential as an evaluation metric and for optimizing scatterplots through automatic adjustment of visual parameters.",
         "countries": [
             "GB"
         ]
@@ -23821,13 +23821,13 @@
         ],
         "title": "Topological Autoencoders++: Fast and Accurate Cycle-Aware Dimensionality Reduction",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "2",
+        "pages": "1622\u20131639",
         "article_number": "",
-        "number_of_pages": 17,
-        "abstract": "This paper presents a novel topology-aware dimensionality reduction approach aiming at accurately visualizing the cyclic patterns present in high dimensional data. To that end, we build on the Topological Autoencoders (TopoAE) [1] formulation. First, we provide a novel theoretical analysis of its associated loss and show that a zero loss indeed induces identical persistence pairs (in high and low dimensions) for the 0-dimensional persistent homology ($PH^{0}$) of the Rips filtration. We also provide a counter example showing that this property no longer holds for a naive extension of TopoAE to $PH^{d}$ for d $\\geq$ 1. Based on this observation, we introduce a novel generalization of TopoAE to 1-dimensional persistent homology ($PH^{1}$), called TopoAE++, for the accurate generation of cycle-aware planar embeddings, addressing the above failure case. This generalization is based on the notion of cascade distortion, a new penalty term favoring an isometric embedding of the 2-chains filling persistent 1-cycles, hence resulting in more faithful geometrical reconstructions of the 1-cycles in the plane. We further introduce a novel, fast algorithm for the exact computation of PH for Rips filtrations in the plane, yielding improved runtimes over previously documented topology-aware methods. Our method also achieves a better balance between the topological accuracy, as measured by the Wasserstein distance, and the visual preservation of the cycles in low dimensions. Our C++ implementation is available at https://github.com/MClemot/TopologicalAutoencodersPlusPlus.",
+        "number_of_pages": 18,
+        "abstract": "This paper presents a novel topology-aware dimensionality reduction approach aiming at accurately visualizing the cyclic patterns present in high dimensional data. To that end, we build on the Topological Autoencoders (TopoAE)\u00a0(Moor et\u00a0al., 2020) formulation. First, we provide a novel theoretical analysis of its associated loss and show that a zero loss indeed induces identical persistence pairs (in high and low dimensions) for the 0-dimensional persistent homology ($\\text{PH}^{0}$) of the Rips filtration. We also provide a counter example showing that this property no longer holds for a naive extension of TopoAE to $\\text{PH}^{d}$ for $d\\geq 1$. Based on this observation, we introduce a novel generalization of TopoAE to 1-dimensional persistent homology ($\\text{PH}^{1}$), called TopoAE++, for the accurate generation of cycle-aware planar embeddings, addressing the above failure case. This generalization is based on the notion of cascade distortion, a new penalty term favoring an isometric embedding of the 2-chains filling persistent 1-cycles, hence resulting in more faithful geometrical reconstructions of the 1-cycles in the plane. We further introduce a novel, fast algorithm for the exact computation of $\\text{PH}^{}$ for Rips filtrations in the plane, yielding improved runtimes over previously documented topology-aware methods. Our method also achieves a better balance between the topological accuracy, as measured by the Wasserstein distance, and the visual preservation of the cycles in low dimensions.",
         "countries": [
             "FR"
         ]
@@ -23944,12 +23944,12 @@
                 ]
             }
         ],
-        "title": "F2Stories: a Modular Framework for Multi-Objective Optimization of Storylines with a Focus on Fairness",
+        "title": "F2Stories: A Modular Framework for Multi-Objective Optimization of Storylines with a Focus on Fairness",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "1",
+        "pages": "747\u2013757",
         "article_number": "",
         "number_of_pages": 11,
         "abstract": "Storyline visualizations represent character interactions over time. When these characters belong to different groups, a new research question emerges: how can we balance optimization of readability across the groups while preserving the overall narrative structure of the story? Traditional algorithms that optimize global readability metrics (like minimizing crossings) can introduce quality biases between the different groups based on their cardinality and other aspects of the data. Visual consequences of these biases are: making characters of minority groups disproportionately harder to follow, and visually deprioritizing important characters when their curves become entangled with numerous secondary characters. We present F2Stories, a modular framework that addresses these challenges in storylines by offering three complementary optimization modes: (1) fairnessMode ensures that no group bears a disproportionate burden of visualization complexity regardless of their representation in the story; (2) focusMode allows prioritizing a group of characters while maintaining good readability for secondary characters; and (3) standardMode globally optimizes classical aesthetic metrics. Our approach is based on Mixed Integer Linear Programming (MILP), offering optimality guarantees, precise balancing of competing metrics through weighted objectives, and the flexibility to incorporate complex fairness concepts as additional constraints without the need to redesign the entire algorithm. We conducted an extensive experimental analysis to demonstrate how F2Stories enables more fair or focus group-prioritized storyline visualizations while maintaining adherence to established layout constraints. Our evaluation includes comprehensive results from a detailed case study that shows the effectiveness of our approach in real-world narrative contexts. An open access copy of this paper and all supplemental materials are available at osf.io/e2qvy.",
@@ -23983,15 +23983,15 @@
                 ]
             }
         ],
-        "title": "Reimagining Disassembly Interfaces with Visualization: Combining Instruction Tracing and Control Flow with DisViz",
+        "title": "Reimagining Disassembly Interfaces With Visualization: Combining Instruction Tracing and Control Flow With DisViz",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "2",
+        "pages": "1729\u20131742",
         "article_number": "",
         "number_of_pages": 14,
-        "abstract": "In applications where efficiency is critical, developers may examine their compiled binaries, seeking to understand how the compiler transformed their source code and what performance implications that transformation may have. This analysis is challenging due to the vast number of disassembled binary instructions and the many-to-many mappings between them and the source code. These problems are exacerbated as source code size increases, giving the compiler more freedom to map and disperse binary instructions across the disassembly space. Interfaces for disassembly typically display instructions as an unstructured listing or sacrifice the order of execution. We design a new visual interface for disassembly code that combines execution order with control flow structure, enabling analysts to both trace through code and identify familiar aspects of the computation. Central to our approach is a novel layout of instructions grouped into basic blocks that displays a looping structure in an intuitive way. We add to this disassembly representation a unique block-based mini-map that leverages our layout and shows context across thousands of disassembly instructions. Finally, we embed our disassembly visualization in a web-based tool, DisViz, which adds dynamic linking with source code across the entire application. DizViz was developed in collaboration with program analysis experts following design study methodology and was validated through evalu ation sessions with ten participants from four institutions. Participants successfully completed the evaluation tasks, hypothesized about compiler optimizations, and noted the utility of our new disassembly view. Our evaluation suggests that our new integrated view helps application developers in understanding and navigating disassembly code.",
+        "abstract": "In applications where efficiency is critical, developers may examine their compiled binaries, seeking to understand how the compiler transformed their source code and what performance implications that transformation may have. This analysis is challenging due to the vast number of disassembled binary instructions and the many-to-many mappings between them and the source code. These problems are exacerbated as source code size increases, giving the compiler more freedom to map and disperse binary instructions across the disassembly space. Interfaces for disassembly typically display instructions as an unstructured listing or sacrifice the order of execution. We design a new visual interface for disassembly code that combines execution order with control flow structure, enabling analysts to both trace through code and identify familiar aspects of the computation. Central to our approach is a novel layout of instructions grouped into basic blocks that displays a looping structure in an intuitive way. We add to this disassembly representation a unique block-based mini-map that leverages our layout and shows context across thousands of disassembly instructions. Finally, we embed our disassembly visualization in a web-based tool, DisViz, which adds dynamic linking with source code across the entire application. DizViz was developed in collaboration with program analysis experts following design study methodology and was validated through evaluation sessions with ten participants from four institutions. Participants successfully completed the evaluation tasks, hypothesized about compiler optimizations, and noted the utility of our new disassembly view. Our evaluation suggests that our new integrated view helps application developers in understanding and navigating disassembly code.",
         "countries": [
             "US"
         ]
@@ -24125,11 +24125,106 @@
         "publication_year": 2025,
         "volume": "44",
         "number": "6",
-        "pages": "1\u201315",
-        "article_number": "0",
+        "pages": "246:1\u2013246:15",
+        "article_number": "246",
         "number_of_pages": 15,
         "abstract": "To solve the optimal transport problem between two uniform discrete measures of the same size, one seeks a bijective assignment that minimizes some matching cost. For this task, exact algorithms are intractable for large problems, while approximate ones may lose the bijectivity of the assignment. We address this issue and the more general cases of non-uniform discrete measures with different total masses, where partial transport may be desirable. The core of our algorithm is a variant of the Quicksort algorithm that provides an efficient strategy to randomly explore many relevant and easy-to-compute couplings, by matching BSP trees in loglinear time. The couplings we obtain are as sparse as possible, in the sense that they provide bijections, injective partial matchings or sparse couplings depending on the nature of the matched measures. To improve the transport cost, we propose efficient strategies to merge\n                    <jats:italic toggle=\"yes\">k\n                    sparse couplings into a higher quality one. For\n                    <jats:italic toggle=\"yes\">k =\n                    64, we obtain transport plans with typically less than 1% of relative error in a matter of seconds between hundreds of thousands of points in 3D on the CPU. We demonstrate how these high-quality approximations can drastically speed-up usual pipelines involving optimal transport, such as shape interpolation, intrinsic manifold sampling, color transfer, topological data analysis, rigid partial registration of point clouds and image stippling.",
         "countries": [
+            "FR"
+        ]
+    },
+    "10.1109/tvcg.2026.3657210": {
+        "doi": "10.1109/tvcg.2026.3657210",
+        "authors": [
+            {
+                "family": "Sisouk",
+                "given": "Keanu",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Tanguy",
+                "given": "Eloi",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Delon",
+                "given": "Julie",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Tierny",
+                "given": "Julien",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Robust Barycenters of Persistence Diagrams",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 8,
+        "abstract": "This short paper presents a general approach for computing robust Wasserstein barycenters\u00a0[2], [80], [81] of persistence diagrams. The classical method consists in computing assignment arithmetic means after finding the optimal transport plans between the barycenter and the persistence diagrams. However, this procedure only works for the transportation cost related to the $q$-Wasserstein distance $W_{q}$ when $q=2$. We adapt an alternative fixed-point method\u00a0[76] to compute a barycenter diagram for generic transportation costs ($q \\gt 1$), in particular those robust to outliers , $q \\in (1,2)$. We show the utility of our work in two applications : (i) the clustering of persistence diagrams on their metric space and (ii) the dictionary encoding of persistence diagrams [73]. In both scenarios, we demonstrate the added robustness to outliers provided by our generalized framework. Our Python implementation is available at this address: https://github.com/Keanu-Sisouk/RobustBarycenter.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1145/3757377.3763980": {
+        "doi": "10.1145/3757377.3763980",
+        "authors": [
+            {
+                "family": "B\u00e6rentzen",
+                "given": "J. Andreas",
+                "orcid": "0000-0003-2583-0660",
+                "countries": [
+                    "DK"
+                ]
+            },
+            {
+                "family": "Mart\u00ednez",
+                "given": "Jon\u00e0s",
+                "orcid": "0000-0001-8443-9624",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Frisvad",
+                "given": "Jeppe Revall",
+                "orcid": "0000-0002-0603-3669",
+                "countries": [
+                    "DK"
+                ]
+            },
+            {
+                "family": "Lefebvre",
+                "given": "Sylvain",
+                "orcid": "0000-0002-9182-3146",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Improving Curl Noise",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "82:1\u201382:10",
+        "article_number": "82",
+        "number_of_pages": 10,
+        "abstract": "We introduce a divergence-free nD vector noise defined as the n-dimensional cross product of the gradients of n − 1 noise functions. We show that this vector noise function is divergence-free and hence volume preserving for any dimension n. Our method enables precise integration and extends to new settings by substituting noise functions with implicit surfaces, (hyper)surfaces, or custom functions. We demonstrate applications including image warping, surface texturing, noise bounded by implicit surfaces, anisotropic curl-noise, and high-dimensional point jittering up to 7D.",
+        "countries": [
+            "DK",
             "FR"
         ]
     }

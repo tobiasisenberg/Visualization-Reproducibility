@@ -1963,6 +1963,7 @@ if exportVisualizations:
     plotTimeSeriesPublicationData(dataToPlot, baseName = graphOutputSubdirectury + "replicability_all-by-journal_aggregated", dataField = "journal", cTitleSpecifier = "journal", yTitleSpecifier = "published journal papers w/ GRS", visPadding = visPadding, colorScheme = "tableau20matching", legendColumns = 2, labelAngle = -20, chartsToPlot = ["stackedbargraph", "stackedbargraph-normalized"])
 
     # the same data again, but with all non-vis counts moved to the vis counts, so that we just see the summary
+    # but this time we start from the data we just collected
     separationString = '–'
     dataToPlot_old = dataToPlot
     dataToPlot = []

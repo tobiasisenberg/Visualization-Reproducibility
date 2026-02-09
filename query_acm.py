@@ -42,8 +42,8 @@ def generateEntryForDoi(doi, apiKey = ''):
     # rest my own processing
     text = r.text
 
-    # with open('acm-test.txt', 'w', encoding='utf-8') as f:
-    #     f.write(text)
+    with open('acm-test.txt', 'w', encoding='utf-8') as f:
+        f.write(text)
     
     if "ACM Error: IP blocked" in text: print("WARNING: We got IP-blocked by ACM, try again later or use VPN.")
 
@@ -55,11 +55,15 @@ def generateEntryForDoi(doi, apiKey = ''):
     dataItem["authors"] = []
     for author in values["author"]: dataItem["authors"].append(author)
     dataItem["title"] = values["title"]
-    dataItem["journal"] = values["container-title"].replace("ACM Trans. Graph.", "ACM Transactions on Graphics")
+    dataItem["journal"] = values["container-title"]
+    dataItem["journal"] = re.sub(pattern=r"ACM Trans. Graph.", repl=r"ACM Transactions on Graphics", string=dataItem["journal"])
     dataItem["journal"] = re.sub(pattern=r"SIGGRAPH Asia \d\d\d\d Conference Papers", repl=r"ACM SIGGRAPH Asia Conference Papers", string=dataItem["journal"])
     dataItem["journal"] = re.sub(pattern=r"ACM SIGGRAPH \d\d\d\d Conference Proceedings", repl=r"ACM SIGGRAPH Conference Papers", string=dataItem["journal"])
+    dataItem["journal"] = re.sub(pattern=r"Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers '\d\d", repl=r"ACM SIGGRAPH Conference Papers", string=dataItem["journal"])
+    dataItem["journal"] = re.sub(pattern=r"Proceedings of the Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers", repl=r"ACM SIGGRAPH Conference Papers", string=dataItem["journal"])
     dataItem["journal"] = re.sub(pattern=r"Proceedings of the ACM SIGGRAPH Asia Conference Papers", repl=r"ACM SIGGRAPH Asia Conference Papers", string=dataItem["journal"])
     dataItem["journal"] = re.sub(pattern=r"Proceedings of the ACM SIGGRAPH Conference Papers", repl=r"ACM SIGGRAPH Conference Papers", string=dataItem["journal"])
+    ################ REMEMBER TO NOT ONLY ADD FIXES HERE BUT ALSO IN query_crossref.py ##################################################
     if "source" in values.keys():
         dataItem["publication_year"] = int(values["source"].split(" ")[1])
     elif "issued" in values.keys():

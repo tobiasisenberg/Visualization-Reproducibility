@@ -1,6 +1,28 @@
 [
     {
         "is_vis": false,
+        "title": "Robust Barycenters of Persistence Diagrams",
+        "doi": "10.1109/tvcg.2026.3657210",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-keanu-sisouk-robustbarycenter",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/Keanu-Sisouk/RobustBarycenter",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:d6f567947bba6056f3c9edb9d4f48b49546e8cbe;origin=https://github.com/Keanu-Sisouk/RobustBarycenter",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-keanu-sisouk-robustbarycenter/representative.png",
+        "authors": "Keanu Sisouk, Eloi Tanguy, Julie Delon, Julien Tierny"
+    },
+    {
+        "is_vis": false,
+        "title": "Improving curl noise",
+        "doi": "10.1145/3757377.3763980",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-janba-divfree-vectornoise",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/janba/DivFree-VectorNoise",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:942745ae0881dc600bd14e709abb5841f86ac518;origin=https://github.com/janba/DivFree-VectorNoise",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-janba-divfree-vectornoise/representative.png",
+        "authors": "J. Andreas B\u00e6rentzen, Jon\u00e0s Mart\u00ednez, Jeppe Revall Frisvad, Sylvain Lefebvre"
+    },
+    {
+        "is_vis": false,
         "title": "Parametric Model Fitting for Textured and Animatable 3D Avatar From a Single Frontal Image of a Clothed Human",
         "doi": "10.1016/j.cag.2025.104478",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-ets-bodymodeling-implicitparametricavatar",
@@ -58,7 +80,7 @@
         "authors": "Youngsik Yun, Jeongmin Bae, Hyunseung Son, Seoha Kim, Hahyun Lee, Gun Bang, Youngjung Uh"
     },
     {
-        "is_vis": false,
+        "is_vis": true,
         "title": "F2Stories: A Modular Framework for Multi-Objective Optimization of Storylines with a Focus on Fairness",
         "doi": "10.1109/tvcg.2025.3634228",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-tommaso-piselli-f2stories",
@@ -66,7 +88,8 @@
         "repo_url": "https://github.com/tommaso-piselli/f2stories",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:13551814b5d8115828bd73c8fb3db5a4ac0e754b;origin=https://github.com/tommaso-piselli/f2stories",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-tommaso-piselli-f2stories/representative.png",
-        "authors": "Tommaso Piselli, Giuseppe Liotta, Fabrizio Montecchiani, Martin N\u00f6llenburg, Sara Di Bartolomeo"
+        "authors": "Tommaso Piselli, Giuseppe Liotta, Fabrizio Montecchiani, Martin N\u00f6llenburg, Sara Di Bartolomeo",
+        "type": "IEEE VIS"
     },
     {
         "is_vis": false,
