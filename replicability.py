@@ -17,14 +17,14 @@ import glob
 import shutil
 
 # settings of how to do things and what extra stuff to do
-useLocalDataOnly = True # FIXME: should be True for submission
+useLocalDataOnly = True # FIXME: should be True for submission; if True, only local data is used and no online update is done
 exportVisualizations = True # ehether to create visualizations based on the data or not
 doNameChecking = False # run some heuristics to check if the names make sense
 doAbstractCheckingForKeywords = False # check for keywords in the abstract as well (otherwise only in title)
 doVerifyCountryInformation = True # check of the country information is provided
 doExportNumbersForPaper = True # generate a LaTeX file that records all kinds of collected statistics, which is needed to for later compiling the paper
 doCopyPlotsAccordingToFigureNumbers = True # copy the visualizations into extra folder named according to the figure numbers from the paper
-downloadAcmFromCrossref = True # if True, then use the Crossref API to get ACM metadata, otherwise the acmdownload tool; FIXME: should be True for submission
+downloadAcmFromCrossref = True # FIXME: should be True for submission; if True, then use the Crossref API to get ACM metadata, otherwise the acmdownload tool
 doPrintTVCGInPressDetails = False # print out a list of the IEEE papers that are currently in press still (for a report to the TVCG EiC)
 doPrintConferenceTotals = False # if true, then print the totals of IEEE VIS presentations (regular full paper plus journal)
 
@@ -227,7 +227,29 @@ def markPapersByDoi(paperList, doiList, label = "is_vis", type = ""):
 
 def markVisPapersByKeywords(paperList):
     for paper in paperList:
-        # manual classification based on general keywords in the title
+        # manual selections of specific papers which we believe to be on visualization topics
+        if  (
+            ("10.1109/tvcg.2022.3214821" in paper["doi"]) or # visualization author keyword
+            ("10.1109/tvcg.2021.3101418" in paper["doi"]) or # visualization author keyword
+            # ("10.1109/tvcg.2023.3237768" in paper["doi"]) or # visual analysis author keyword, but automatically found by keyword search
+            ("10.1109/tvcg.2021.3067820" in paper["doi"]) or # visualization in the abstract
+            ("10.1109/tvcg.2020.2966702" in paper["doi"]) or # is on flattening of 3D surfaces from data
+            ("10.1016/j.cag.2024.01.001" in paper["doi"]) or # visualization in the abstract
+            ("10.1016/j.cag.2023.06.023" in paper["doi"]) or # talks about molecular channel datasets
+            ("10.1145/3528223.3530102" in paper["doi"]) or   # talks about simulation and visualization of stellar atmospheres
+            ("10.1111/cgf.14784" in paper["doi"]) or         # talks about topology, graphs, and scalar fields
+            ("10.1111/cgf.13910" in paper["doi"]) or         # talks about point clouds and topology
+            ("10.1145/3687996" in paper["doi"]) or           # talks about the simulation of 3D flows and their visual representation
+            ("10.1109/tvcg.2025.3589748" in paper["doi"]) or # visualization in abstract and author keyword
+            ("10.1016/j.cag.2025.104458" in paper["doi"]) or # visualization in abstract
+            ("10.1109/tvcg.2025.3644671" in paper["doi"]) or # visualization in abstract
+            ("10.1109/tvcg.2026.3657210" in paper["doi"]) or # visualization as application context (likely will be presebted at VIS 2026)
+            ("10.1016/j.cag.2025.104354" in paper["doi"])    # talks about vector field analysis
+            ):
+            paper["is_vis"] = True
+            paper["type"] = "manual"
+
+        # classification based on general keywords in the paper title
         if  (paper["is_vis"] == False) and ( # ensure that we do not overwrite the status of already recognized papers
             ("visualization" in paper["title"].lower()) or
             ("visualisation" in paper["title"].lower()) or
@@ -258,26 +280,6 @@ def markVisPapersByKeywords(paperList):
             ):
             paper["is_vis"] = True
             paper["type"] = "keyword"
-
-        # manual selections of specific papers which we believe to be on visualization topics
-        if  (
-            ("10.1109/tvcg.2022.3214821" in paper["doi"]) or # visualization author keyword
-            ("10.1109/tvcg.2021.3101418" in paper["doi"]) or # visualization author keyword
-            # ("10.1109/tvcg.2023.3237768" in paper["doi"]) or # visual analysis author keyword, but automatically found by keyword search
-            ("10.1109/tvcg.2021.3067820" in paper["doi"]) or # visualization in the abstract
-            ("10.1109/tvcg.2020.2966702" in paper["doi"]) or # is on flattening of 3D surfaces from data
-            ("10.1016/j.cag.2024.01.001" in paper["doi"]) or # visualization in the abstract
-            ("10.1016/j.cag.2023.06.023" in paper["doi"]) or # talks about molecular channel datasets
-            ("10.1145/3528223.3530102" in paper["doi"]) or   # talks about simulation and visualization of stellar atmospheres
-            ("10.1111/cgf.14784" in paper["doi"]) or         # talks about topology, graphs, and scalar fields
-            ("10.1111/cgf.13910" in paper["doi"]) or         # talks about point clouds and topology
-            ("10.1145/3687996" in paper["doi"]) or           # talks about the simulation of 3D flows and their visual representation
-            ("10.1109/tvcg.2025.3589748" in paper["doi"]) or # visualization in abstract and author keyword
-            ("10.1016/j.cag.2025.104458" in paper["doi"]) or # visualization in abstract
-            ("10.1109/tvcg.2025.3644671" in paper["doi"])    # visualization in abstract
-            ):
-            paper["is_vis"] = True
-            paper["type"] = "manual"
 
 def markVisPapersByFutureVISPresentation(paperList):
     for paper in paperList:
