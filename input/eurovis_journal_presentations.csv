@@ -100,3 +100,37 @@ year,journal,title,doi,doi link
 2025,CGF,Evaluating Graph Layout Algorithms: A Systematic Review of Methods and Best Practices,10.1111/cgf.15073,https://doi.org/10.1111/cgf.15073
 2025,TVCG,Squishicalization: Exploring Elastic Volume Physicalization,10.1109/TVCG.2024.3516481,https://doi.org/10.1109/TVCG.2024.3516481
 2025,CGF,ConAn: Measuring and Evaluating User Confidence in Visual Data Analysis Under Uncertainty,10.1111/cgf.15272,https://doi.org/10.1111/cgf.15272
+2026,CGF,Glyph-Based Multiscale Visualization of Turbulent Multi-Physics Statistics,10.1111/cgf.70399,https://doi.org/10.1111/cgf.70399
+2026,CGF,Exploratory Analysis of Scientific Publications for University Governance,10.1111/cgf.70158,https://doi.org/10.1111/cgf.70158
+2026,TVCG,Make the Unhearable Visible: Exploring Visualization for Musical Instrument Practice,10.1109/TVCG.2026.3658216,https://doi.org/10.1109/TVCG.2026.3658216
+2026,TVCG,QVis: Query-based Visual Analysis of Multiscale Patterns in Spatiotemporal Ensembles,10.1109/TVCG.2025.3629575,https://doi.org/10.1109/TVCG.2025.3629575
+2026,CGF,Time-varying Extremum Graphs,10.1111/cgf.15162,https://doi.org/10.1111/cgf.15162
+2026,TVCG,Uncertainty Visualization for Biomolecular Structures: An Empirical Evaluation,10.1109/TVCG.2025.3596385,https://doi.org/10.1109/TVCG.2025.3596385
+2026,CGF,A Scalable System for Visual Analysis of Ocean Data,10.1111/cgf.15279,https://doi.org/10.1111/cgf.15279
+2026,TVCG,A Multidimensional Assessment Method for Visualization Understanding (MdamV),10.1109/TVCG.2026.3653265,https://doi.org/10.1109/TVCG.2026.3653265
+2026,CGF,Interactive Groupwise Comparison for Reinforcement Learning from Human Feedback,10.1111/cgf.70290,https://doi.org/10.1111/cgf.70290
+2026,TVCG,DaV3is: Data Flow-Based Vulnerability Verification Through Visualization,10.1109/TVCG.2026.3675682,https://doi.org/10.1109/TVCG.2026.3675682
+2026,TVCG,Minding the Gap: A Quantitative Comparison of Distance Perception on Open vs. Closed Circles,10.1109/TVCG.2026.3669367,https://doi.org/10.1109/TVCG.2026.3669367
+2026,TVCG,Experimental Design in Age-related Perception of Spatial Frequency: Evidence from Vision Science,10.1109/TVCG.2026.3685397,https://doi.org/10.1109/TVCG.2026.3685397
+2026,TVCG,Illuminating the Landscape of Differential Privacy: An Interview Study on the Use of Visualization in Real-World Deployments,10.1109/TVCG.2024.3427733,https://doi.org/10.1109/TVCG.2024.3427733
+2026,CGF,FluidMap: Proportional and Spatially Consistent Layout Enrichments in Multidimensional Projections,10.1111/cgf.70293,https://doi.org/10.1111/cgf.70293
+2026,TVCG,OM4AnI: A Novel Overlap Measure for Anomaly Identification in Multi-Class Scatterplots,10.1109/TVCG.2025.3642219,https://doi.org/10.1109/TVCG.2025.3642219
+2026,CGF,Gaze-Aware Visualization: Design Considerations and Research Agenda,10.1111/cgf.70097,https://doi.org/10.1111/cgf.70097
+2026,CGF,Democratizing Multi-Projector Displays,10.1111/cgf.70288,https://doi.org/10.1111/cgf.70288
+2026,CG&A,The Origins of the ParaView and VisIt Scientific Visualization Tools,10.1109/MCG.2025.3595349,https://doi.org/10.1109/MCG.2025.3595349
+2026,CGF,Design Considerations for Visualization Transitions of 3D Spatial Data in Hybrid AR-Desktop Environments,10.1111/cgf.70305,https://doi.org/10.1111/cgf.70305
+2026,CG&A,Topology-Based Visualization Techniques for Scientific Data Exploration,10.1109/MCG.2025.3541464,https://doi.org/10.1109/MCG.2025.3541464
+2026,CG&A,Circuit Mining in Transcriptomics Data,10.1109/MCG.2025.3594562,https://doi.org/10.1109/MCG.2025.3594562
+2026,CG&A,Challenges and Opportunities for the Visualization of Protein Energy Landscapes,10.1109/MCG.2025.3592983,https://doi.org/10.1109/MCG.2025.3592983
+2026,CG&A,ProHap Explorer: Visualizing Haplotypes in Proteogenomic Datasets,10.1109/MCG.2025.3581736,https://doi.org/10.1109/MCG.2025.3581736
+2026,CG&A,Designing for Collaboration: Visualization to Enable Human–LLM Analytical Partnership,10.1109/MCG.2025.3583451,https://doi.org/10.1109/MCG.2025.3583451
+2026,CG&A,Agentic Visualization: Extracting Agent-Based Design Patterns From Visualization Systems,10.1109/MCG.2025.3607741,https://doi.org/10.1109/MCG.2025.3607741
+2026,CG&A,Visualizing the Chain of Thought in Large Language Models,10.1109/MCG.2025.3624666,https://doi.org/10.1109/MCG.2025.3624666
+2026,CG&A,Animating Shakespeare: A Case Study in Human–AI Collaboration for Animating Classical Illustration,10.1109/MCG.2025.3608802,https://doi.org/10.1109/MCG.2025.3608802
+2026,CG&A,Preparedness for Visualization in the Next Pandemic,10.1109/MCG.2025.3561619,https://doi.org/10.1109/MCG.2025.3561619
+2026,CG&A,Navigating Uncertainty: Ensemble Data and Surrogate Models for Decision Systems,10.1109/MCG.2025.3549665,https://doi.org/10.1109/MCG.2025.3549665
+2026,CG&A,Embarrassingly Agile — Data Visualization Methodology in Emergency Responses,10.1109/MCG.2025.3595342,https://doi.org/10.1109/MCG.2025.3595342
+2026,CG&A,Visual Data Analysis of Time-Based Transport Optimizations,10.1109/MCG.2025.3575543,https://doi.org/10.1109/MCG.2025.3575543
+2026,CG&A,The UDV Card Deck: A Collaborative Design Framework for Urban Visualization,10.1109/MCG.2025.3556573,https://doi.org/10.1109/MCG.2025.3556573
+2026,CG&A,Design Exploration of AI-Assisted Personal Affective Physicalization,10.1109/MCG.2025.3614686,https://doi.org/10.1109/MCG.2025.3614686
+2026,CG&A,Critical Interactivity: Exploration and Narration in Data Visualization,10.1109/MCG.2025.3544684,https://doi.org/10.1109/MCG.2025.3544684

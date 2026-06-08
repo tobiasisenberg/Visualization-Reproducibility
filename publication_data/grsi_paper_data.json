@@ -1,5 +1,84 @@
 [
     {
+        "is_vis": false,
+        "title": "Hybrid User Interfaces: Past, Present, and Future of Complementary Cross-Device Interaction in Mixed Reality",
+        "doi": "10.1109/tvcg.2026.3683941",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-imldresden-huis",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/imldresden/huis",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:ab826f681ead7dd506b38980e0840983bab8564a;origin=https://github.com/imldresden/huis",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-imldresden-huis/representative.png",
+        "authors": "Sebastian Hubenschmid, Marc Satkowski, Johannes Zagermann, Juli\u00e1n M\u00e9ndez, Niklas Elmqvist, Steven Feiner, Tiare Feuchtner, Jens Emil Gr\u00f8nb\u00e6k, Benjamin Lee, Dieter Schmalstieg, Raimund Dachselt, Harald Reiterer"
+    },
+    {
+        "is_vis": false,
+        "title": "GSDeformer: Direct, Real-time and Extensible Cage-based Deformation for 3D Gaussian Splatting",
+        "doi": "10.1109/tvcg.2026.3687062",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-jhuangbu-gsdeformer-code",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/jhuangBU/gsdeformer-code",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:fd22f80b54ad40aa01ea8be83f3828c1228d614f;origin=https://github.com/jhuangBU/gsdeformer-code",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-jhuangbu-gsdeformer-code/representative.png",
+        "authors": "Jiajun Huang, Shuolin Xu, Hongchuan Yu, Tong-Yee Lee"
+    },
+    {
+        "is_vis": true,
+        "title": "GD4LLM: How Layout Quality and Prompting Influence LLM Understanding of Graph Drawings",
+        "doi": "10.1109/tvcg.2026.3677884",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-tommaso-piselli-gd4llm",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/tommaso-piselli/gd4llm",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:f6854382d542e78b1f0cf66e318b0df0745c4d5a;origin=https://github.com/tommaso-piselli/gd4llm",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-tommaso-piselli-gd4llm/representative.png",
+        "authors": "Walter Didimo, Fabrizio Montecchiani, Tommaso Piselli",
+        "type": "keyword"
+    },
+    {
+        "is_vis": false,
+        "title": "Field-Aligned Surface-Filling Curve via Implicit Stitching",
+        "doi": "10.1111/cgf.70361",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-iota97-surface-filling-curve",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/iota97/Surface-Filling-Curve",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:2188a73437bcf7116373090296b7c69357eb98d0;origin=https://github.com/iota97/Surface-Filling-Curve",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-iota97-surface-filling-curve/representative.png",
+        "authors": "Giovanni Cocco, Xavier Chermain"
+    },
+    {
+        "is_vis": true,
+        "title": "ChannelExplorer: Exploring Class Separability Through Activation Channel Visualization",
+        "doi": "10.1109/tvcg.2026.3669148",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-rahatzamancse-channelexplorer",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/rahatzamancse/ChannelExplorer",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a0e5ae52718b32c643a2685ff71cbab7ffb819f9;origin=https://github.com/rahatzamancse/ChannelExplorer",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-rahatzamancse-channelexplorer/representative.png",
+        "authors": "Md Rahat-uz- Zaman, Bei Wang, Paul Rosen",
+        "type": "keyword"
+    },
+    {
+        "is_vis": false,
+        "title": "HYVE: Hybrid Vertex Encoder for Neural Distance Fields",
+        "doi": "10.1109/tvcg.2026.3658870",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-interactivecomputergraphics-hyve",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/InteractiveComputerGraphics/hyve",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:6d0809df3a8fde3f7e8a3fbc04d08008182e81f9;origin=https://github.com/InteractiveComputerGraphics/hyve",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-interactivecomputergraphics-hyve/representative.png",
+        "authors": "Stefan R. Jeske, Jonathan Klein, Dominik Michels, Jan Bender"
+    },
+    {
+        "is_vis": false,
+        "title": "Hyper-Dimensional Deformation Simulation",
+        "doi": "10.1145/3721238.3730730",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-alvf-ndim",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/Alvf/NDIM",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:f081b1a83fa40ab3916c70970c3fe24a06fea53e;origin=https://github.com/Alvf/NDIM",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-alvf-ndim/representative.png",
+        "authors": "Alvin Shi, Haomiao Wu, Theodore Kim"
+    },
+    {
         "is_vis": true,
         "title": "Robust Barycenters of Persistence Diagrams",
         "doi": "10.1109/tvcg.2026.3657210",
@@ -43,7 +122,7 @@
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:51bb767ac9a6a5c10ca4add455811a29890c49c5;origin=https://github.com/llqsee/O4AnI",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-llqsee-o4ani-2026-01-05t10-26-36-169z/representative.png",
         "authors": "Liqun Liu, Leonid Bogachev, Mahdi Rezaei, Nishant Ravikumar, Arjun Khara, Mohsen Azarmi, Roy A. Ruddle",
-        "type": "keyword"
+        "type": "journal pres. @ EuroVis"
     },
     {
         "is_vis": true,
@@ -148,17 +227,6 @@
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:dd8bd739e177916f168ae1b5cf5f15209bb1aafb;origin=https://github.com/juhyeonkim95/MitsubaOHD",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-juhyeonkim95-mitsubaohd/representative.png",
         "authors": "Juhyeon Kim, Craig Benko, Magnus Wrenninge, Ryusuke Villemin, Zeb Barber, Wojciech Jarosz, Adithya Pediredla"
-    },
-    {
-        "is_vis": false,
-        "title": "Clusters in Focus: A Simple and Robust Detail-On-Demand Dashboard for Patient Data",
-        "doi": "not_assigned_yet",
-        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-mrp01-clustersinfocus",
-        "journal": "Elsevier Computers & Graphics (C&G)",
-        "repo_url": "https://github.com/MrP01/ClustersInFocus",
-        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:b136808245f6705778e53de2c9d68a35002ca0c7;origin=https://github.com/MrP01/ClustersInFocus",
-        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-mrp01-clustersinfocus/representative.png",
-        "authors": "Lukas Schilcher, Peter Waldert, Benedikt Kantz, Tobias Schreck"
     },
     {
         "is_vis": false,

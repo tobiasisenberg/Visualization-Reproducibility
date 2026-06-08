@@ -24167,13 +24167,13 @@
         ],
         "title": "Robust Barycenters of Persistence Diagrams",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "4",
+        "pages": "3016\u20133023",
         "article_number": "",
         "number_of_pages": 8,
-        "abstract": "This short paper presents a general approach for computing robust Wasserstein barycenters\u00a0[2], [80], [81] of persistence diagrams. The classical method consists in computing assignment arithmetic means after finding the optimal transport plans between the barycenter and the persistence diagrams. However, this procedure only works for the transportation cost related to the $q$-Wasserstein distance $W_{q}$ when $q=2$. We adapt an alternative fixed-point method\u00a0[76] to compute a barycenter diagram for generic transportation costs ($q \\gt 1$), in particular those robust to outliers , $q \\in (1,2)$. We show the utility of our work in two applications : (i) the clustering of persistence diagrams on their metric space and (ii) the dictionary encoding of persistence diagrams [73]. In both scenarios, we demonstrate the added robustness to outliers provided by our generalized framework. Our Python implementation is available at this address: https://github.com/Keanu-Sisouk/RobustBarycenter.",
+        "abstract": "This short paper presents a general approach for computing robust Wasserstein barycenters (Agueh et al. 2011), (Turner et al. 2014),(Vidal et al. 2020) of persistence diagrams. The classical method consists in computing assignment arithmetic means after finding the optimal transport plans between the barycenter and the persistence diagrams. However, this procedure only works for the transportation cost related to the $q$q-Wasserstein distance $W_{q}$Wq when $q=2$q=2. We adapt an alternative fixed-point method (Tanguy et al. 2025) to compute a barycenter diagram for generic transportation costs ($q > 1$q>1), in particular those robust to outliers, $q \\in (1,2)$q\u2208(1,2). We show the utility of our work in two applications: (i) the clustering of persistence diagrams on their metric space and (ii) the dictionary encoding of persistence diagrams (Sisouk et al. 2024). In both scenarios, we demonstrate the added robustness to outliers provided by our generalized framework.",
         "countries": [
             "FR"
         ]
@@ -24222,10 +24222,355 @@
         "pages": "82:1\u201382:10",
         "article_number": "82",
         "number_of_pages": 10,
-        "abstract": "We introduce a divergence-free nD vector noise defined as the n-dimensional cross product of the gradients of n − 1 noise functions. We show that this vector noise function is divergence-free and hence volume preserving for any dimension n. Our method enables precise integration and extends to new settings by substituting noise functions with implicit surfaces, (hyper)surfaces, or custom functions. We demonstrate applications including image warping, surface texturing, noise bounded by implicit surfaces, anisotropic curl-noise, and high-dimensional point jittering up to 7D.",
+        "abstract": "We introduce a divergence-free nD vector noise defined as the n-dimensional cross product of the gradients of n \u2212 1 noise functions. We show that this vector noise function is divergence-free and hence volume preserving for any dimension n. Our method enables precise integration and extends to new settings by substituting noise functions with implicit surfaces, (hyper)surfaces, or custom functions. We demonstrate applications including image warping, surface texturing, noise bounded by implicit surfaces, anisotropic curl-noise, and high-dimensional point jittering up to 7D.",
         "countries": [
             "DK",
             "FR"
+        ]
+    },
+    "10.1109/tvcg.2026.3683941": {
+        "doi": "10.1109/tvcg.2026.3683941",
+        "authors": [
+            {
+                "family": "Hubenschmid",
+                "given": "Sebastian",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Satkowski",
+                "given": "Marc",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Zagermann",
+                "given": "Johannes",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "M\u00e9ndez",
+                "given": "Juli\u00e1n",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Elmqvist",
+                "given": "Niklas",
+                "countries": [
+                    "DK"
+                ]
+            },
+            {
+                "family": "Feiner",
+                "given": "Steven",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Feuchtner",
+                "given": "Tiare",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Gr\u00f8nb\u00e6k",
+                "given": "Jens Emil",
+                "countries": [
+                    "DK"
+                ]
+            },
+            {
+                "family": "Lee",
+                "given": "Benjamin",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Schmalstieg",
+                "given": "Dieter",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Dachselt",
+                "given": "Raimund",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Reiterer",
+                "given": "Harald",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "Hybrid User Interfaces: Past, Present, and Future of Complementary Cross-Device Interaction in Mixed Reality",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 20,
+        "abstract": "We investigate hybrid user interfaces (HUIs), aiming to establish a cohesive understanding and to adopt consistent terminology for this nascent research area. HUIs combine heterogeneous devices in complementary roles, leveraging the distinct benefits of each. Our work focuses on cross-device interaction between 2D devices and mixed reality environments, which are particularly compelling, leveraging the familiarity of traditional 2D platforms while providing spatial awareness and immersion. Although prior work has prominently explored such HUIs in the context of mixed reality, we still lack a cohesive understanding of the unique design possibilities and challenges of such combinations, resulting in a fragmented research landscape. We conducted a systematic survey and present a taxonomy of HUIs that combine conventional display technology and mixed reality environments. Based on this, we discuss past and current challenges, the evolution of definitions, and prospective opportunities to tie together the past 30 years of research with our vision of future HUIs.",
+        "countries": [
+            "DE",
+            "DK",
+            "US"
+        ]
+    },
+    "10.1109/tvcg.2026.3687062": {
+        "doi": "10.1109/tvcg.2026.3687062",
+        "authors": [
+            {
+                "family": "Huang",
+                "given": "Jiajun",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Xu",
+                "given": "Shuolin",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Yu",
+                "given": "Hongchuan",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Lee",
+                "given": "Tong-Yee",
+                "countries": [
+                    "TW"
+                ]
+            }
+        ],
+        "title": "GSDeformer: Direct, Real-time and Extensible Cage-based Deformation for 3D Gaussian Splatting",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 16,
+        "abstract": "We present GSDeformer, a method that enables cage-based deformation on 3D Gaussian Splatting (3DGS). Our approach bridges cage-based deformation and 3DGS by using a proxy point-cloud representation. This point cloud is generated from 3D Gaussians, and deformations applied to the point cloud are translated into transformations on the 3D Gaussians. To handle potential bending caused by deformation, we incorporate a splitting process to approximate it. Our method does not modify or extend the core architecture of 3D Gaussian Splatting, making it compatible with any trained vanilla 3DGS or its variants. Additionally, we automate cage construction for 3DGS and its variants using a render-and-reconstruct approach. Experiments demonstrate that GSDeformer delivers superior deformation results compared to existing methods, is robust under extreme deformations, requires no retraining for editing, runs in real-time, and can be extended to other 3DGS variants. Project Page: https://jhuangbu.github.io/gsdeformer/",
+        "countries": [
+            "GB",
+            "TW"
+        ]
+    },
+    "10.1109/tvcg.2026.3677884": {
+        "doi": "10.1109/tvcg.2026.3677884",
+        "authors": [
+            {
+                "family": "Didimo",
+                "given": "Walter",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Montecchiani",
+                "given": "Fabrizio",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Piselli",
+                "given": "Tommaso",
+                "countries": [
+                    "IT"
+                ]
+            }
+        ],
+        "title": "GD4LLM: How Layout Quality and Prompting Influence LLM Understanding of Graph Drawings",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 12,
+        "abstract": "Our work contributes to the fast-growing literature on the use of Large Language Models (LLMs) to perform graph-related tasks. In particular, we focus on usage scenarios that rely on the visual modality, feeding the model with a drawing of the graph under analysis. We investigate how the model's performance is affected by the chosen layout paradigm, the aesthetics of the drawing, and the prompting technique used for the queries. We formulate three corresponding research questions and present the results of a thorough experimental analysis. Our findings reveal that choosing the right layout paradigm and optimizing the readability of the input drawing from a human perspective can significantly improve the performance of the model on the given task. Moreover, selecting the most effective prompting technique is a challenging yet crucial task for achieving optimal performance.",
+        "countries": [
+            "IT"
+        ]
+    },
+    "10.1111/cgf.70361": {
+        "doi": "10.1111/cgf.70361",
+        "authors": [
+            {
+                "family": "Cocco",
+                "given": "Giovanni",
+                "orcid": "0009-0000-2681-2443",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Chermain",
+                "given": "Xavier",
+                "orcid": "0000-0003-1910-5956",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Field\u2010Aligned Surface\u2010Filling Curve via Implicit Stitching",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": -1,
+        "abstract": "<jats:title>Abstract</jats:title> We present a robust and scalable method for generating field-aligned surface-filling curves on general manifolds. Building upon prior work on stripe pattern generation and field-aligned surface-filling curves, our approach introduces a novel stitching strategy that operates directly in the implicit domain. Unlike previous methods that extract and stitch isolines post hoc, we perform stitching by manipulating the scalar field itself, enabling an efficient and robust solution that generalizes beyond planar surfaces. We demonstrate more than an order of magnitude speed-up and improved alignment with input direction fields when compared to state-of-the-art geometric flow methods. Robustness is validated on the Thingi10K dataset. Moreover, the method integrates with Blender 4.5 for interactive curve generation on small models, and scales to massive meshes \u2013 producing surface-filling curves with over ten million vertices in under twenty-five minutes.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1109/tvcg.2026.3658870": {
+        "doi": "10.1109/tvcg.2026.3658870",
+        "authors": [
+            {
+                "family": "Jeske",
+                "given": "Stefan R.",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Klein",
+                "given": "Jonathan",
+                "countries": [
+                    "SA"
+                ]
+            },
+            {
+                "family": "Michels",
+                "given": "Dominik",
+                "countries": [
+                    "SA"
+                ]
+            },
+            {
+                "family": "Bender",
+                "given": "Jan",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "HYVE: Hybrid Vertex Encoder for Neural Distance Fields",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "4",
+        "pages": "2962\u20132973",
+        "article_number": "",
+        "number_of_pages": 12,
+        "abstract": "Neural shape representation generally refers to representing 3D geometry using neural networks, e.g., computing a signed distance or occupancy value at a specific spatial position. In this paper we present a neural-network architecture suitable for accurate encoding of 3D shapes in a single forward pass. Our architecture is based on a multi-scale hybrid system incorporating graph-based and voxel-based components, as well as a continuously differentiable decoder. The hybrid system includes a novel way of voxelizing point-based features in neural networks by projecting the point \u201cfeature-field\u201d onto a grid. This projection is insensitive to local point density, and we show that it can be used to obtain smoother and more detailed reconstructions, in particular when combined with oriented point clouds as input. Our architecture also requires only a single forward pass, instead of the latent-code optimization used in auto-decoder methods. Furthermore, our network is trained to solve the well-established eikonal equation and only requires knowledge of the zero-level set for training and inference. We additionally propose a modification to the aforementioned loss function for the case that surface normals are not well defined, e.g., in the context of non-watertight surfaces and non-manifold geometry. Overall, our method consistently outperforms other baselines on the surface reconstruction task across a wide variety of datasets, while being more computationally efficient and requiring fewer parameters.",
+        "countries": [
+            "DE",
+            "SA"
+        ]
+    },
+    "10.1145/3721238.3730730": {
+        "doi": "10.1145/3721238.3730730",
+        "authors": [
+            {
+                "family": "Shi",
+                "given": "Alvin",
+                "orcid": "0009-0008-0006-6479",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Wu",
+                "given": "Haomiao",
+                "orcid": "0009-0002-5060-2213",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Kim",
+                "given": "Theodore",
+                "orcid": "0000-0002-1131-8685",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Hyper-Dimensional Deformation Simulation",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "14:1\u201314:11",
+        "article_number": "14",
+        "number_of_pages": 11,
+        "abstract": "We present a method for simulating deformable bodies in four spatial dimensions. To accomplish this, we generalize several pieces of the traditional simulation pipeline. Starting from the meshing stage, we propose a simple method for generating a pentachoral mesh, the 4D analog of a tetrahedral mesh. Next, we show how to generalize the deformation invariants, allowing us to construct 4D hyperelastic energies that lead directly to hyper-dimensional deformation forces. Finally, we formulate collision detection and response in 4D. Our eigenanalyses of the resulting deformation and collision energies generalize to arbitrarily higher dimensions. The resulting simulations display a variety of previously unseen visual phenomena.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.1109/tvcg.2026.3669148": {
+        "doi": "10.1109/tvcg.2026.3669148",
+        "authors": [
+            {
+                "family": "Zaman",
+                "given": "Md Rahat-uz-",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Bei",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Rosen",
+                "given": "Paul",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "ChannelExplorer: Exploring Class Separability Through Activation Channel Visualization",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 14,
+        "abstract": "Deep neural networks (DNNs) achieve state-of-the-art performance in many vision tasks, yet understanding their internal behavior remains challenging, particularly how different layers and activation channels contribute to class separability. We introduce ChannelExplorer, an interactive visual analytics tool for analyzing image-based outputs across model layers, emphasizing data-driven insights over architecture analysis for exploring class separability. ChannelExplorer begins with a dataset-level overview and progressively drills down to individual examples, summarizing activations across layers along the way. It presents these results primarily through three coordinated views: a Scatterplot View to reveal inter and intra-class confusion, a Jaccard Similarity View to quantify activation overlap, and a Heatmap View to inspect activation channel patterns. Our technique supports diverse model architectures, including CNNs, GANs, ResNet, and Stable Diffusion models. We demonstrate the capabilities of ChannelExplorer through four use-case scenarios: (1)\u00a0generating class hierarchy in ImageNet, (2)\u00a0finding mislabeled images, (3)\u00a0identifying activation channel contributions, and (4)\u00a0locating latent states' position in the Stable Diffusion model. Finally, we evaluate the tool with expert users.",
+        "countries": [
+            "US"
         ]
     }
 }
