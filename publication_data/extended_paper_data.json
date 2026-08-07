@@ -24075,8 +24075,8 @@
         "publication_year": 2025,
         "volume": "133",
         "number": "",
-        "pages": "104458",
-        "number_of_pages": -1,
+        "pages": "104458:1\u2013104458:14",
+        "number_of_pages": 14,
         "article_number": "104458",
         "abstract": "Vision Transformers (ViTs) have emerged as a powerful alternative to convolutional neural networks (CNNs) in a variety of image-based tasks. While CNNs have previously been evaluated for their ability to perform graphical perception tasks, which are essential for interpreting visualizations, the perceptual capabilities of ViTs remain largely unexplored. In this work, we investigate the performance of ViTs in elementary visual judgment tasks inspired by Cleveland and McGill\u2019s foundational studies, which quantified the accuracy of human perception across different visual encodings. Inspired by their study, we benchmark ViTs against CNNs and human participants in a series of controlled graphical perception tasks. Our results reveal that, although ViTs demonstrate strong performance in general vision tasks, their alignment with human-like graphical perception in the visualization domain is limited. This study highlights key perceptual gaps and points to important considerations for the application of ViTs in visualization systems and graphical perceptual modeling.",
         "countries": [
@@ -24318,10 +24318,10 @@
         ],
         "title": "Hybrid User Interfaces: Past, Present, and Future of Complementary Cross-Device Interaction in Mixed Reality",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "7",
+        "pages": "7380\u20137399",
         "article_number": "",
         "number_of_pages": 20,
         "abstract": "We investigate hybrid user interfaces (HUIs), aiming to establish a cohesive understanding and to adopt consistent terminology for this nascent research area. HUIs combine heterogeneous devices in complementary roles, leveraging the distinct benefits of each. Our work focuses on cross-device interaction between 2D devices and mixed reality environments, which are particularly compelling, leveraging the familiarity of traditional 2D platforms while providing spatial awareness and immersion. Although prior work has prominently explored such HUIs in the context of mixed reality, we still lack a cohesive understanding of the unique design possibilities and challenges of such combinations, resulting in a fragmented research landscape. We conducted a systematic survey and present a taxonomy of HUIs that combine conventional display technology and mixed reality environments. Based on this, we discuss past and current challenges, the evolution of definitions, and prospective opportunities to tie together the past 30 years of research with our vision of future HUIs.",
@@ -24363,15 +24363,15 @@
                 ]
             }
         ],
-        "title": "GSDeformer: Direct, Real-time and Extensible Cage-based Deformation for 3D Gaussian Splatting",
+        "title": "GSDeformer: Direct, Real-Time and Extensible Cage-Based Deformation for 3D Gaussian Splatting",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "7",
+        "pages": "6766\u20136780",
         "article_number": "",
-        "number_of_pages": 16,
-        "abstract": "We present GSDeformer, a method that enables cage-based deformation on 3D Gaussian Splatting (3DGS). Our approach bridges cage-based deformation and 3DGS by using a proxy point-cloud representation. This point cloud is generated from 3D Gaussians, and deformations applied to the point cloud are translated into transformations on the 3D Gaussians. To handle potential bending caused by deformation, we incorporate a splitting process to approximate it. Our method does not modify or extend the core architecture of 3D Gaussian Splatting, making it compatible with any trained vanilla 3DGS or its variants. Additionally, we automate cage construction for 3DGS and its variants using a render-and-reconstruct approach. Experiments demonstrate that GSDeformer delivers superior deformation results compared to existing methods, is robust under extreme deformations, requires no retraining for editing, runs in real-time, and can be extended to other 3DGS variants. Project Page: https://jhuangbu.github.io/gsdeformer/",
+        "number_of_pages": 15,
+        "abstract": "We present GSDeformer, a method that enables cage-based deformation on 3D Gaussian Splatting (3DGS). Our approach bridges cage-based deformation and 3DGS by using a proxy point-cloud representation. This point cloud is generated from 3D Gaussians, and deformations applied to the point cloud are translated into transformations on the 3D Gaussians. To handle potential bending caused by deformation, we incorporate a splitting process to approximate it. Our method does not modify or extend the core architecture of 3D Gaussian Splatting, making it compatible with any trained vanilla 3DGS or its variants. Additionally, we automate cage construction for 3DGS and its variants using a render-and-reconstruct approach. Experiments demonstrate that GSDeformer delivers superior deformation results compared to existing methods, is robust under extreme deformations, requires no retraining for editing, runs in real-time, and can be extended to other 3DGS variants.",
         "countries": [
             "GB",
             "TW"
@@ -24404,10 +24404,10 @@
         ],
         "title": "GD4LLM: How Layout Quality and Prompting Influence LLM Understanding of Graph Drawings",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "7",
+        "pages": "6171\u20136182",
         "article_number": "",
         "number_of_pages": 12,
         "abstract": "Our work contributes to the fast-growing literature on the use of Large Language Models (LLMs) to perform graph-related tasks. In particular, we focus on usage scenarios that rely on the visual modality, feeding the model with a drawing of the graph under analysis. We investigate how the model's performance is affected by the chosen layout paradigm, the aesthetics of the drawing, and the prompting technique used for the queries. We formulate three corresponding research questions and present the results of a thorough experimental analysis. Our findings reveal that choosing the right layout paradigm and optimizing the readability of the input drawing from a human perspective can significantly improve the performance of the model on the given task. Moreover, selecting the most effective prompting technique is a challenging yet crucial task for achieving optimal performance.",
@@ -24443,7 +24443,7 @@
         "pages": "",
         "article_number": "",
         "number_of_pages": -1,
-        "abstract": "<jats:title>Abstract</jats:title> We present a robust and scalable method for generating field-aligned surface-filling curves on general manifolds. Building upon prior work on stripe pattern generation and field-aligned surface-filling curves, our approach introduces a novel stitching strategy that operates directly in the implicit domain. Unlike previous methods that extract and stitch isolines post hoc, we perform stitching by manipulating the scalar field itself, enabling an efficient and robust solution that generalizes beyond planar surfaces. We demonstrate more than an order of magnitude speed-up and improved alignment with input direction fields when compared to state-of-the-art geometric flow methods. Robustness is validated on the Thingi10K dataset. Moreover, the method integrates with Blender 4.5 for interactive curve generation on small models, and scales to massive meshes \u2013 producing surface-filling curves with over ten million vertices in under twenty-five minutes.",
+        "abstract": "We present a robust and scalable method for generating field-aligned surface-filling curves on general manifolds. Building upon prior work on stripe pattern generation and field-aligned surface-filling curves, our approach introduces a novel stitching strategy that operates directly in the implicit domain. Unlike previous methods that extract and stitch isolines post hoc, we perform stitching by manipulating the scalar field itself, enabling an efficient and robust solution that generalizes beyond planar surfaces. We demonstrate more than an order of magnitude speed-up and improved alignment with input direction fields when compared to state-of-the-art geometric flow methods. Robustness is validated on the Thingi10K dataset. Moreover, the method integrates with Blender 4.5 for interactive curve generation on small models, and scales to massive meshes \u2013 producing surface-filling curves with over ten million vertices in under twenty-five minutes.",
         "countries": [
             "FR"
         ]
@@ -24562,15 +24562,825 @@
         ],
         "title": "ChannelExplorer: Exploring Class Separability Through Activation Channel Visualization",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "7",
+        "pages": "5442\u20135456",
+        "article_number": "",
+        "number_of_pages": 15,
+        "abstract": "Deep neural networks (DNNs) achieve state-of-the-art performance in many vision tasks, yet understanding their internal behavior remains challenging, particularly how different layers and activation channels contribute to class separability. We introduce ChannelExplorer, an interactive visual analytics tool for analyzing image-based outputs across model layers, emphasizing data-driven insights over architecture analysis for exploring class separability. ChannelExplorer begins with a dataset-level overview and progressively drills down to individual examples, summarizing activations across layers along the way. It presents these results primarily through three coordinated views: a Scatterplot View to reveal inter and intra-class confusion, a Jaccard Similarity View to quantify activation overlap, and a Heatmap View to inspect activation channel patterns. Our technique supports diverse model architectures, including CNNs, GANs, ResNet, and Stable Diffusion models. We demonstrate the capabilities of ChannelExplorer through four use-case scenarios: (1) generating class hierarchy in ImageNet, (2) finding mislabeled images, (3) identifying activation channel contributions, and (4) locating latent states\u2019 position in the Stable Diffusion model. Finally, we evaluate the tool with expert users.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.1016/j.cag.2026.104707": {
+        "doi": "10.1016/j.cag.2026.104707",
+        "authors": [
+            {
+                "family": "Sombra",
+                "given": "Tiago Guimar\u00e3es",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Cavalcante-Neto",
+                "given": "Joaquim Bento",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Vidal",
+                "given": "Creto Augusto",
+                "countries": [
+                    "BR"
+                ]
+            }
+        ],
+        "title": "Adaptive meshing of non-manifold parametric patch complexes with shared-curve compatibility Image 999",
+        "journal": "Computers & Graphics",
+        "publication_year": 2026,
+        "volume": "139",
+        "number": "",
+        "pages": "104707:1\u2013104707:17",
+        "number_of_pages": 17,
+        "article_number": "104707",
+        "abstract": "We present an adaptive meshing technique for non-manifold parametric patch complexes with explicit shared curves. The method assumes that these shared curves are explicit entities of the input topology and preserves their discretization during refinement. Starting from a coarse patch-consistent mesh, each iteration evaluates curvature mismatch, updates patch- and curve-level refinement factors, rediscretizes shared curves, and rebuilds triangular patch interiors in the parametric domain using a hybrid quadtree-guided and advancing-front strategy. Shared-curve samples are stored once and reused by all incident patches, including curves incident to three or more patches, which preserves boundary compatibility by construction. Beyond this invariant, the technique integrates factor-driven curvature adaptation, conservative curve-level refinement, quadtree-supported interior sizing, and feature-aware advancing-front reconstruction to obtain compatible triangular patch meshes. The method is evaluated using normalized global error, triangle-shape quality, and a compatibility metric used to verify the shared-curve invariant and to compare against unsynchronized baselines. Across three evaluation cases, the approach reduces normalized global error by 74% to 96% while maintaining zero mean compatibility error. Controlled internal comparisons indicate that shared-curve synchronization is the mechanism responsible for boundary coherence, whereas hybrid reconstruction provides the strongest geometric improvement. The results support compatibility-preserving adaptive rebuilding as a practical strategy for controlled planar, curved, and mixed non-manifold patch configurations that satisfy explicit patch\u2013curve assumptions.",
+        "countries": [
+            "BR"
+        ]
+    },
+    "10.1016/j.cag.2026.104638": {
+        "doi": "10.1016/j.cag.2026.104638",
+        "authors": [
+            {
+                "family": "\u00dcnalan",
+                "given": "Musa Ege",
+                "countries": [
+                    "TR"
+                ]
+            },
+            {
+                "family": "Demirci",
+                "given": "Serkan",
+                "countries": [
+                    "TR"
+                ]
+            },
+            {
+                "family": "Zellmann",
+                "given": "Stefan",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "G\u00fcd\u00fckbay",
+                "given": "U\u011fur",
+                "countries": [
+                    "TR"
+                ]
+            }
+        ],
+        "title": "Direct volume rendering of tree-based tetrahedral adaptive mesh refinement data\n                  \n                  Image 999",
+        "journal": "Computers & Graphics",
+        "publication_year": 2026,
+        "volume": "138",
+        "number": "",
+        "pages": "104638:1\u2013104638:14",
+        "number_of_pages": 14,
+        "article_number": "104638",
+        "abstract": "Tree-based tetrahedral AMR data (Tet-AMR) combines the benefits of unstructured meshes and AMR by maintaining both a coarse unstructured tetrahedral mesh and a forest of refinement trees, each rooted at a coarse mesh element. Tet-AMR data can be visualized by combining all leaf tetrahedra in the refinement trees into a single unstructured mesh; however, this approach significantly increases the memory usage. We propose a volume rendering method that leverages the regular subdivision of refinement trees by storing only the coarse elements. We construct a bounding volume hierarchy over the coarse mesh elements to efficiently locate the refinement tree to sample. We then generate the geometry of the finer-level elements on the fly as we traverse the refinement tree to find the leaf element. We further demonstrate that the tree structure can be used to implement a dynamic, view-dependent level-of-detail effect, thereby improving performance by reducing fidelity in less impactful regions. Additionally, we enhance rendering performance by utilizing the coarse mesh as both a space-skipping structure for ray marching and a macrocell structure for Woodcock renderers.",
+        "countries": [
+            "TR",
+            "DE"
+        ]
+    },
+    "10.1109/tvcg.2026.3713630": {
+        "doi": "10.1109/tvcg.2026.3713630",
+        "authors": [
+            {
+                "family": "Rave",
+                "given": "Hennes",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Molchanov",
+                "given": "Vladimir",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Tatsukawa",
+                "given": "Yuki",
+                "countries": [
+                    "JP"
+                ]
+            },
+            {
+                "family": "Ngo",
+                "given": "Quynh Quang",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Frey",
+                "given": "Steffen",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Igarashi",
+                "given": "Takeo",
+                "countries": [
+                    "JP"
+                ]
+            },
+            {
+                "family": "Linsen",
+                "given": "Lars",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "Multiresolution Density-Equalizing Transformation for Scatterplots",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
         "publication_year": 3026,
         "volume": "",
         "number": "",
         "pages": "",
         "article_number": "",
+        "number_of_pages": 15,
+        "abstract": "Scatterplots are a fundamental method for visual data analysis, but they often suffer from severe overplotting. Density-equalizing transformations can mitigate this by redistributing points to a uniform density. While Optimal Transport (OT) provides a robust mathematical framework for density equalization, existing numerical solvers are often computationally expensive, complex to implement, and difficult to adapt for specific application constraints. We present a scalable, multiresolution algorithm for scatterplot regularization that approaches the high-quality structural preservation of exact OT solvers. Our method constructs a displacement field by merging local, analytically solved $2 \\times 2$ patch optimizations into a globally consistent mesh, repeating this process across multiple resolutions. We systematically evaluate local solvers, interpolation schemes, and scheduling strategies to balance transport cost, distortion errors, and runtime efficiency. The approach is straightforward to implement, supports local constraints, and generalizes mathematically to higher dimensions. Our efficient GPU implementation processes millions of points at interactive frame rates, significantly outperforming existing OT solvers. Quantitative and qualitative comparisons demonstrate that our method enhances uniformity while minimizing distortion, even under extreme density variations. We further demonstrate the method's versatility through applications in constrained regularization, scatterplot gridification, and image contrast enhancement.",
+        "countries": [
+            "DE",
+            "JP",
+            "NL"
+        ]
+    },
+    "10.1109/tvcg.2026.3704459": {
+        "doi": "10.1109/tvcg.2026.3704459",
+        "authors": [
+            {
+                "family": "Petek",
+                "given": "Bernarda",
+                "countries": [
+                    "SI"
+                ]
+            },
+            {
+                "family": "Nabergoj",
+                "given": "David",
+                "countries": [
+                    "SI"
+                ]
+            },
+            {
+                "family": "\u0160trumbelj",
+                "given": "Erik",
+                "countries": [
+                    "SI"
+                ]
+            }
+        ],
+        "title": "A General Approach to Visualizing Uncertainty in Statistical Graphics",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "9",
+        "pages": "7819\u20137833",
+        "article_number": "",
+        "number_of_pages": 15,
+        "abstract": "We present a general approach to visualizing uncertainty in static 2-D statistical graphics. If we treat a visualization as a function of its underlying quantities, uncertainty in those quantities induces a distribution over images. We show how to aggregate these images into a single visualization that represents the uncertainty. The approach can be viewed as a generalization of sample-based approaches that use overlay. Notably, standard representations, such as confidence intervals and bands, emerge with their usual coverage guarantees without being explicitly quantified or visualized. As a proof of concept, we implement our approach in the IID setting using resampling, provided as an open-source Python library. Because the approach operates directly on images, the user needs only to supply the data and the code for visualizing the quantities of interest without uncertainty. Through several examples, we show how both familiar and novel forms of uncertainty visualization can be created. The implementation is not only a practical validation of the underlying theory but also an immediately usable tool that can complement existing uncertainty-visualization libraries.",
+        "countries": [
+            "SI"
+        ]
+    },
+    "10.1016/j.cag.2026.104648": {
+        "doi": "10.1016/j.cag.2026.104648",
+        "authors": [
+            {
+                "family": "Huang",
+                "given": "Yuhang",
+                "countries": [
+                    "JP"
+                ]
+            },
+            {
+                "family": "Kanai",
+                "given": "Takashi",
+                "countries": [
+                    "JP"
+                ]
+            }
+        ],
+        "title": "Far-From-Boundary Fields for learning segmented implicit solids Image 999",
+        "journal": "Computers & Graphics",
+        "publication_year": 2026,
+        "volume": "138",
+        "number": "",
+        "pages": "104648:1\u2013104648:11",
+        "number_of_pages": 11,
+        "article_number": "104648",
+        "abstract": "Implicit distance-field representations, such as signed and unsigned distance fields (SDFs and UDFs), have become fundamental tools for learning and modeling 3D geometry. However, when applied to segmented closed surfaces \u2014 closed solids decomposed into many labeled regions with complex internal interfaces, as in brittle fracture fragments or multi-material parts \u2014 standard UDF-based formulations become increasingly difficult to optimize when many small fragments are present, often requiring substantially longer training and making numerical convergence a poor indicator of whether small-fragment geometry has truly converged. We introduce Far-From-Boundary Fields (FFBFs), a task-specific boundary-aware scalar field representation for segmented solids. FFBF is obtained by per-fragment reparameterization of a segmented UDF formulation, while preserving the zero level sets and fragment labeling of the underlying solid. This yields a more balanced and stable implicit field in which fragment-wise boundaries are easier to capture, and treats segmentation as a generative distance-field-based representation rather than a separate label prediction problem. Across brittle fracture benchmarks, we show that FFBF consistently improves geometric accuracy, small-fragment recovery, and internal-boundary consistency compared to direct UDF baselines and common variants. These results indicate that FFBF provides a useful reparameterization for learning-based modeling of segmented volumetric structures, including applications to data-driven brittle fracture prediction.",
+        "countries": [
+            "JP"
+        ]
+    },
+    "10.1145/3811339": {
+        "doi": "10.1145/3811339",
+        "authors": [
+            {
+                "family": "Xie",
+                "given": "Peiyuan",
+                "orcid": "0009-0008-0340-746X",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Hafner",
+                "given": "Christian",
+                "orcid": "0000-0001-9475-197X",
+                "countries": [
+                    "AT"
+                ]
+            },
+            {
+                "family": "Wojtan",
+                "given": "Chris",
+                "orcid": "0000-0001-6646-5546",
+                "countries": [
+                    "AT"
+                ]
+            }
+        ],
+        "title": "Fast and Exact Winding Numbers for Triangle Meshes",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2026,
+        "volume": "45",
+        "number": "4",
+        "pages": "41:1\u201341:8",
+        "article_number": "41",
+        "number_of_pages": 8,
+        "abstract": "We revisit the computation of 3D generalized winding numbers, a useful measure for inside-outside classification on triangle meshes with gaps, self-intersections, and open boundaries. At the core of our new method is an analytical reduction of the surface integral that defines the winding number, resulting in a single ray-mesh intersection test and an elementary sum over boundary edges per evaluation. This construction is orders of magnitude more efficient than the state of the art in practice, which we show in an extensive performance benchmark. Conveniently, the method also reduces to the best-available asymptotic complexity in the worst case, and it introduces no approximations apart from floating-point errors. Our algorithm is conceptually simple to understand, straightforward to implement and debug, and it works reliably even on extremely noisy and corrupt input geometry.",
+        "countries": [
+            "AT"
+        ]
+    },
+    "10.1016/j.cag.2026.104643": {
+        "doi": "10.1016/j.cag.2026.104643",
+        "authors": [
+            {
+                "family": "\u015eahin",
+                "given": "Mehmet Akif",
+                "countries": [
+                    "TR"
+                ]
+            },
+            {
+                "family": "Sonlu",
+                "given": "Sinan",
+                "countries": [
+                    "TR"
+                ]
+            },
+            {
+                "family": "G\u00fcd\u00fckbay",
+                "given": "U\u011fur",
+                "countries": [
+                    "TR"
+                ]
+            }
+        ],
+        "title": "Data-driven Inverse Kinematics using Laban Movement Analysis\n                  \n                  Image 999",
+        "journal": "Computers & Graphics",
+        "publication_year": 2026,
+        "volume": "138",
+        "number": "",
+        "pages": "104643:1\u2013104643:12",
+        "number_of_pages": 12,
+        "article_number": "104643",
+        "abstract": "Inverse Kinematics (IK) provides control over animation, facilitating the creation of full-body poses by utilizing target end-effector locations. Many approaches address the physical aspects of arranging limb configurations; however, systems that consider the psychological aspects of human motion are lacking. To this end, we introduce a quantitative translation of the qualitative concepts of Laban Movement Analysis (LMA) into computable, continuous style descriptors. Building upon this formulation, we also propose a data-driven Inverse Kinematics (IK) method that directly utilizes these LMA parameters to refine generated animations. Specifically, we refer to LMA Shape Qualities and the attitude towards the Kinesphere to control the orientation of the generated pose along the vertical and horizontal axes. Our Interpolator upsamples sparse end-effector keyframes into dense paths and modulates Time Effort at the trajectory level. Flow Effort is controlled by a pose-similarity objective that deliberately reduces pose similarity to the dataset examples. Through a perception user study, we show that the system can successfully apply LMA-based changes to the motion to express different personality traits. This data-driven system can ease the process of controlling the psychological aspect of generative animation.",
+        "countries": [
+            "TR"
+        ]
+    },
+    "10.1016/j.cag.2026.104652": {
+        "doi": "10.1016/j.cag.2026.104652",
+        "authors": [
+            {
+                "family": "Tolis",
+                "given": "Dimitrios",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Marsala",
+                "given": "Michelangelo",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Mantzaflaris",
+                "given": "Angelos",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Mourrain",
+                "given": "Bernard",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Approximating Doo\u2013Sabin limit surfaces using geometrically continuous B\u00e9zier patches Image 999",
+        "journal": "Computers & Graphics",
+        "publication_year": 2026,
+        "volume": "138",
+        "number": "",
+        "pages": "104652:1\u2013104652:11",
+        "number_of_pages": 11,
+        "article_number": "104652",
+        "abstract": "We present an efficient, globally G 1 \u2013continuous scheme for extracting B\u00e9zier patches from any mesh with valence-four vertices and polygonal faces, that is, the mesh topology that arises in Doo\u2013Sabin subdivision. The B\u00e9zier points are given explicitly as local, weighted averages in the vicinity of each vertex of the mesh, yielding bi-quadratic patches in regular regions and bi-quartic or bi-quintic patches in the vicinity of irregular regions. In particular, we first derive simple bi-quadratic averaging masks that produce quadratic patches that join with C 1 continuity in regular regions. In the vicinity of irregular faces, we elevate the degree, then impose certain symmetric gluing data of degree two on the patch interfaces, and compute explicitly masks as solution of the G 1 constraints. The resulting scheme, named G1ADS, ensures machine precision adherence to the G 1 conditions, reproduces quadratic C 1 B-splines at the regular regions, and enjoys a minimal number of degree elevated patches in the vicinity of irregular regions. We evaluate the performance of G1ADS quantitatively and qualitatively on several challenging benchmarks, in terms of accuracy, curvature and reflection lines, and we compare with the state-of-the-art method. Our results demonstrate that G1ADS is efficient, robust and more accurate, producing high quality surfaces that converge to the respective Doo\u2013Sabin limit surface.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1145/3757377.3763824": {
+        "doi": "10.1145/3757377.3763824",
+        "authors": [
+            {
+                "family": "Kim",
+                "given": "Dongyeon",
+                "orcid": "0000-0003-4141-304X",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Ashraf",
+                "given": "Maliha",
+                "orcid": "0000-0002-8142-5611",
+                "countries": [
+                    "GB"
+                ]
+            },
+            {
+                "family": "Chapiro",
+                "given": "Alexandre",
+                "orcid": "0000-0002-7367-0131",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Mantiuk",
+                "given": "Rafa\u0142 K.",
+                "orcid": "0000-0003-2353-0349",
+                "countries": [
+                    "GB"
+                ]
+            }
+        ],
+        "title": "Supra-threshold Contrast Perception in Augmented Reality",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "68:1\u201368:11",
+        "article_number": "68",
+        "number_of_pages": 11,
+        "abstract": "When an image is seen on an optical see-through augmented reality (AR) display, the light from the display is mixed with the background light from the environment. This can severely limit the available contrast in AR, which is often orders of magnitude below that of traditional displays. Yet, the presented images appear sharper and show more details than the reduction in physical contrast would indicate. In this work, we hypothesize two effects that are likely responsible for the enhanced perceived contrast in AR: background discounting, which allows observers focused on the display plane to partially discount the light from the environment; and supra-threshold contrast perception, which explains the differences in contrast perception across luminance levels. In a series of controlled experiments on an AR high-dynamic-range multi-focal haploscope testbed, we found no statistical evidence supporting the effect of background discounting on contrast perception. Instead, the increase of visibility in AR is better explained with models of supra-threshold contrast perception. Our findings can be generalized to incorporate an image input, and this model serves to design better algorithms and hardware for display systems affected by additive light, such as AR.",
+        "countries": [
+            "GB",
+            "US"
+        ]
+    },
+    "10.1145/3757377.3763899": {
+        "doi": "10.1145/3757377.3763899",
+        "authors": [
+            {
+                "family": "Li",
+                "given": "Yi-Hsin",
+                "orcid": "0009-0003-0878-0179",
+                "countries": [
+                    "SE",
+                    "DE"
+                ]
+            },
+            {
+                "family": "Sikora",
+                "given": "Thomas",
+                "orcid": "0000-0001-5695-9614",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Knorr",
+                "given": "Sebastian",
+                "orcid": "0000-0001-9745-8605",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Sj\u00f6str\u00f6m",
+                "given": "M\u00e5rten",
+                "orcid": "0000-0003-3751-6089",
+                "countries": [
+                    "SE"
+                ]
+            }
+        ],
+        "title": "3D SMoE Splatting for Edge-aware Realtime Radiance Field Rendering",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "137:1\u2013137:11",
+        "article_number": "137",
+        "number_of_pages": 11,
+        "abstract": "Steered Mixtures-of-Experts (SMoE) is an existing regression framework that has previously been applied for modeling and compression of 2D images and higher-dimensional imagery, including compression of light fields and light-field video. SMoE models are sparse, edge-aware representations that allow rendering of imagery with few Gaussians with excellent quality. In this paper a novel, edge-aware \"3D SMoE Splatting\" (3DSMoES) framework for 3D rendering is introduced, adopted to fit into the existing \"3D Gaussian Splatting\" (3DGS) CUDA optimization pipeline. Here, SMoE regression serves as a \"plug-and-play\" solution that replaces the established 3DGS regression as a novel workhorse. 3DSMoES achieves significant visual quality gains with drastically fewer Gaussian kernels compared to 3DGS. We observe up to approximately 4dB improvement in PSNR on individual scenes with kernel reductions between 20 to 50 percent. The sparse models are significantly faster to train and allow up to 30-50 percent improved rendering speeds.",
+        "countries": [
+            "SE",
+            "DE"
+        ]
+    },
+    "10.1111/cgf.70372": {
+        "doi": "10.1111/cgf.70372",
+        "authors": [
+            {
+                "family": "Kraaijeveld",
+                "given": "Bram",
+                "orcid": "0009-0005-5638-4984",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Jalba",
+                "given": "Andrei C.",
+                "orcid": "0000-0001-9821-0767",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Vilanova",
+                "given": "A.",
+                "orcid": "0000-0002-1034-737X",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Chamberland",
+                "given": "Maxime",
+                "orcid": "0000-0001-7064-0984",
+                "countries": [
+                    "NL"
+                ]
+            }
+        ],
+        "title": "Real\u2010Time Rendering of Dynamic Line Sets using Voxel Ray Tracing",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "e70372:1\u2013e70372:12",
+        "article_number": "e70372",
+        "number_of_pages": 12,
+        "abstract": "Real-time rendering of dynamic line sets is relevant in many visualization tasks, including unsteady flow visualization and interactive white matter reconstruction from Magnetic Resonance Imaging. High-quality global illumination and transparency are important for conveying the spatial structure of dense line sets, yet remain difficult to achieve at interactive rates. We propose an efficient voxel-based ray-tracing framework for rendering large dynamic line sets with ambient occlusion and ground-truth transparency. We introduce a voxelization algorithm that supports efficient on-the-fly construction of acceleration structures for both voxel cone tracing and ray tracing. To further reduce per-frame preprocessing cost, we propose a voxel-based culling method that restricts acceleration structure construction to camera-visible voxels. Together, these contributions enable real-time rendering of large-scale dynamic line sets with high quality and physically accurate transparency. We demonstrate that our method outperforms the state of the art in quality and performance when rendering (semi-)opaque dynamic line sets.",
+        "countries": [
+            "NL"
+        ]
+    },
+    "10.1016/j.cag.2026.104724": {
+        "doi": "10.1016/j.cag.2026.104724",
+        "authors": [
+            {
+                "family": "Hassan",
+                "given": "Waqar",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Schlieder",
+                "given": "Antonia",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Sadlo",
+                "given": "Filip",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Nonato",
+                "given": "Luis Gustavo",
+                "countries": [
+                    "BR"
+                ]
+            }
+        ],
+        "title": "Enriching dimensionality reduction with distortion cues",
+        "journal": "Computers & Graphics",
+        "publication_year": 2026,
+        "volume": "139",
+        "number": "",
+        "pages": "104724:1\u2013104724:12",
+        "number_of_pages": 12,
+        "article_number": "104724",
+        "abstract": "Dimensionality Reduction (DR) techniques like t-SNE and UMAP, while powerful visualization tools, inherently introduce distortion during the high-to-low-dimensional mapping process. This distortion means the resulting layout often fails to represent the original high-dimensional distances and relationships faithfully. For instance, visually proximal clusters may be distant in the original space (a global distortion artifact), or densely grouped high-dimensional points may appear scattered (a local density artifact). Prior research consistently shows that practitioners working with DR layouts, especially those less experienced, are frequently unaware of these inherent visual pitfalls, leading them to perform faulty analyses and draw incorrect conclusions based on misleading layouts. To directly address this analytical misuse, this work shows that simple geometry-based layout enrichment mechanisms can substantially prevent misinterpretations. By enriching the structures that surface in the 2D projection with information about their true high-dimensional distances, our approach avoids the approximation errors and smoothness assumptions introduced by typical distortion metrics. We present a Delaunay-based layout enrichment visualization, demonstrating the corrective power of simple distance-based approaches to assist users in their analysis. Furthermore, a comprehensive user evaluation confirms our hypothesis that participants equipped with our enriched layouts exhibit a lower incidence of analytical errors compared to those using established baselines, validating the practical utility of our approach.",
+        "countries": [
+            "BR",
+            "DE"
+        ]
+    },
+    "10.1016/j.cag.2026.104688": {
+        "doi": "10.1016/j.cag.2026.104688",
+        "authors": [
+            {
+                "family": "Guerra",
+                "given": "Marco",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Fugacci",
+                "given": "Ulderico",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Biasotti",
+                "given": "Silvia",
+                "countries": [
+                    "IT"
+                ]
+            }
+        ],
+        "title": "Topological descriptors for learning-based, rotation-invariant protein surface classification",
+        "journal": "Computers & Graphics",
+        "publication_year": 2026,
+        "volume": "139",
+        "number": "",
+        "pages": "104688:1\u2013104688:11",
+        "number_of_pages": 11,
+        "article_number": "104688",
+        "abstract": "Protein surface classification is a challenging task, with significant scientific consequences. We present a compact, interpretable pipeline combining topological, geometric and electrostatic descriptors, obtained via Alpha persistent homology and local sublevelset features, computed on a decomposition of the surface which naturally supports enforcing approximate rotational invariance. We evaluate our methods by a set of small learning models on the SHREC 2025 benchmark, and provide a cross-dataset validation on SHREC 2021. We establish that geometry and electrostatics dominate classification, and topology provides a significant gain for the simpler models. A small rotation-invariant model tops performance regardless of topology, raising the question of whether architecture can surrogate for explicit topological data. The cross-dataset comparison reveals an orientation bias in SHREC 2025, for which we find direct evidence. Overall, we demonstrate that interpretable descriptors paired with small learning models, as opposed to black-box deep learning approaches, can achieve competitive performance with a fraction of the parameter count.",
+        "countries": [
+            "IT"
+        ]
+    },
+    "10.1016/j.cag.2026.104662": {
+        "doi": "10.1016/j.cag.2026.104662",
+        "authors": [
+            {
+                "family": "Padilla",
+                "given": "Marcel",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Wiersma",
+                "given": "Ruben",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Huisman",
+                "given": "Tim",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Campolattaro",
+                "given": "Jackson",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Sorkine-Hornung",
+                "given": "Olga",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Hildebrandt",
+                "given": "Klaus",
+                "countries": [
+                    "NL"
+                ]
+            }
+        ],
+        "title": "GravoTet: A fast multigrid hierarchy construction for tetrahedral meshes Image 999",
+        "journal": "Computers & Graphics",
+        "publication_year": 2026,
+        "volume": "138",
+        "number": "",
+        "pages": "104662:1\u2013104662:9",
+        "number_of_pages": 9,
+        "article_number": "104662",
+        "abstract": "Geometric multigrid (GMG) methods are a fundamental tool for efficiently solving large sparse linear systems. A requirement for GMG is a hierarchy of grids; however, many practical volumetric domains are available only as single, irregular tetrahedral meshes, making the construction of a multigrid hierarchy necessary. Existing approaches often trade off speed against hierarchy quality: remeshing- or coarsening-based methods can be expensive to construct, whereas graph-based techniques are fast but often yield weaker multigrid performance. We introduce GravoTet, which bridges this gap by combining geometric structure with graph-based efficiency to construct fast and effective multigrid hierarchies. GravoTet builds a vertex hierarchy and then generates graph-Voronoi diagrams whose dual cells define coarse tetrahedra, enabling rapid construction of multigrid levels. Boundary elements are explicitly prioritized during both sampling and tet generation to preserve boundary. In our evaluation, we solve Poisson and biharmonic problems on irregular tetrahedral meshes and compare GravoTet against state-of-the-art geometric multigrid, algebraic multigrid and direct solvers, demonstrating superior performance, particularly on large meshes.",
+        "countries": [
+            "CH",
+            "NL"
+        ]
+    },
+    "10.1145/3811394": {
+        "doi": "10.1145/3811394",
+        "authors": [
+            {
+                "family": "Mart\u00ednez",
+                "given": "Jon\u00e0s",
+                "orcid": "0000-0001-8443-9624",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "S\u00e9bastien",
+                "given": "Brisard",
+                "orcid": "0000-0002-1976-6263",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Danas",
+                "given": "Kostas",
+                "orcid": "0000-0002-1177-5149",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Garner",
+                "given": "Eric",
+                "orcid": "0009-0002-2323-5833",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Kumar",
+                "given": "Siddhant",
+                "orcid": "0000-0003-1602-8641",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Lefebvre",
+                "given": "Sylvain",
+                "orcid": "0000-0002-9182-3146",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Mechanical Cloaking of Halftoned Imagery",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2026,
+        "volume": "45",
+        "number": "4",
+        "pages": "59:1\u201359:14",
+        "article_number": "59",
         "number_of_pages": 14,
-        "abstract": "Deep neural networks (DNNs) achieve state-of-the-art performance in many vision tasks, yet understanding their internal behavior remains challenging, particularly how different layers and activation channels contribute to class separability. We introduce ChannelExplorer, an interactive visual analytics tool for analyzing image-based outputs across model layers, emphasizing data-driven insights over architecture analysis for exploring class separability. ChannelExplorer begins with a dataset-level overview and progressively drills down to individual examples, summarizing activations across layers along the way. It presents these results primarily through three coordinated views: a Scatterplot View to reveal inter and intra-class confusion, a Jaccard Similarity View to quantify activation overlap, and a Heatmap View to inspect activation channel patterns. Our technique supports diverse model architectures, including CNNs, GANs, ResNet, and Stable Diffusion models. We demonstrate the capabilities of ChannelExplorer through four use-case scenarios: (1)\u00a0generating class hierarchy in ImageNet, (2)\u00a0finding mislabeled images, (3)\u00a0identifying activation channel contributions, and (4)\u00a0locating latent states' position in the Stable Diffusion model. Finally, we evaluate the tool with expert users.",
+        "abstract": "Cloaking objects with metamaterials has been extensively studied to hide internal objects across various physical properties, including optical, acoustic, and thermal. We explore a new direction in mechanical cloaking: halftoning an image using a porous structure that behaves like a uniform, linear, isotropic material and visually matches a target image. For an external observer, this creates the surprising effect where the object appears mechanically isotropic and homogeneous while its porous structure resembles a target image. We introduce a parametric class of porous structures suitable for this problem, as demonstrated by numerical experiments. The structures we define offer a wide range of visual contrasts, enabling effective halftoning while maintaining near isotropic effective mechanical properties.",
+        "countries": [
+            "FR",
+            "NL"
+        ]
+    },
+    "10.1145/3757377.3763875": {
+        "doi": "10.1145/3757377.3763875",
+        "authors": [
+            {
+                "family": "Cha",
+                "given": "David",
+                "orcid": "0009-0003-1758-4946",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Stein",
+                "given": "Oded",
+                "orcid": "0000-0001-9741-3175",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Computational Design of Shape-Aware Sieves",
+        "journal": "ACM SIGGRAPH Asia Conference Papers",
+        "publication_year": 2025,
+        "volume": "0",
+        "number": "0",
+        "pages": "41:1\u201341:11",
+        "article_number": "41",
+        "number_of_pages": 11,
+        "abstract": "We introduce mathematical tools to describe the geometric problem of sieves, two-dimensional holes that admit certain three-dimensional objects to pass through them, but block others. This is achieved by formulating the sieve design problem as a two-player game where both players (the one that wants to pass, and the one that wants to block) try to find a set of rigid transformations to achieve their objective. We also introduce an algorithm for solving this game by solving a global optimization problem employing both differentiable rendering with gradient-based optimization as well as particle swarm optimization. Our procedure accounts for real-world manufacturing concerns, and we fabricate a variety of examples demonstrating the practical viability of our sieves. Our implementation takes advantage of GPUs and does not rely on any clean or manifold input geometry as long as it is a triangle mesh. We can produce intricate sieves that block an arbitrary set of shapes but admit another arbitrary set of shapes (if finding a solution is possible for our method).",
         "countries": [
             "US"
+        ]
+    },
+    "10.1111/cgf.70454": {
+        "doi": "10.1111/cgf.70454",
+        "authors": [
+            {
+                "family": "Sterzik",
+                "given": "Anna",
+                "orcid": "0000-0002-0544-5397",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Merk",
+                "given": "Niklas",
+                "orcid": "0009-0005-2036-3030",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Lawonn",
+                "given": "Kai",
+                "orcid": "0000-0002-1511-4022",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "Evaluating the Perceptual Space of Surface Noise for Visualization",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "e70454:1\u2013e70454:11",
+        "article_number": "e70454",
+        "number_of_pages": 11,
+        "abstract": "Surface noise provides a geometric alternative to color for encoding scalar information on surfaces, yet its perceptual characteristics remain insufficiently understood. We present a systematic investigation of how variations in noise amplitude and frequency are perceived when applied to 3D surfaces. Across three online perceptual studies with 142 participants, we gathered similarity judgments for surface noise stimuli and modeled the resulting perceptual space using multi-dimensional scaling (MDS). Our analysis shows that the amplitude\u2013frequency perceptual space requires at least three dimensions for accurate reconstruction; however, the stimuli lie near a 2D manifold. Building on these findings, we derive locally perceptually uniform reparameterizations for both amplitude and frequency, improving the suitability of surface noise as a mapping for scalar data. These results provide perceptual guidance for the design of geometric encodings based on surface perturbation.",
+        "countries": [
+            "DE"
+        ]
+    },
+    "10.1016/j.cag.2026.104687": {
+        "doi": "10.1016/j.cag.2026.104687",
+        "authors": [
+            {
+                "family": "Caytuiro",
+                "given": "Nicolas",
+                "countries": [
+                    "CL"
+                ]
+            },
+            {
+                "family": "Sipiran",
+                "given": "Ivan",
+                "countries": [
+                    "CL"
+                ]
+            }
+        ],
+        "title": "Symmetry matters: Auditing and symmetrizing 3D generative models",
+        "journal": "Computers & Graphics",
+        "publication_year": 2026,
+        "volume": "139",
+        "number": "",
+        "pages": "104687:1\u2013104687:12",
+        "number_of_pages": 12,
+        "article_number": "104687",
+        "abstract": "Symmetry is a strong prior present in many object categories, yet standard benchmarks for 3D generative models rarely report whether this prior is preserved. We study symmetry preservation in unconditional point cloud generation. We first audit the symmetry of generated shapes by several 3D generative models and compute a normalized symmetry score based on the Chamfer Distance (CD). We show that although current 3D generative models achieve competitive results under standard evaluation, they reveal a persistent symmetry gap when a symmetry-aware evaluation protocol is applied. To test whether this gap is merely inherited from the training data, we evaluate these models over a mirrored-objects dataset derived from ShapeNet and analyze symmetry dynamics during training. Mechanism-inspired diagnostic tests were conducted at the sampling and latent-representation levels to further show that reflection symmetry is not reliably encoded in the learned generative process. Finally, to address this gap, we propose a data-centric symmetry-based intervention: training generative models on a half-objects dataset and reconstructing full objects by reflection during sampling. Across multiple backbones, this intervention substantially improves geometric consistency and visual plausibility while remaining competitive under standard metrics. These findings suggest that symmetry-aware evaluation is needed alongside standard benchmarks, and future 3D generative models should incorporate this prior explicitly, either during training or sampling. Project page and code: https://shapevision.dcc.uchile.cl/symmetry-matters/.",
+        "countries": [
+            "CL"
         ]
     }
 }

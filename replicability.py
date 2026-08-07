@@ -17,7 +17,7 @@ import glob
 import shutil
 
 # settings of how to do things and what extra stuff to do
-useLocalDataOnly = False # FIXME: should be True for submission; if True, only local data is used and no online update is done
+useLocalDataOnly = True # FIXME: should be True for submission; if True, only local data is used and no online update is done
 exportVisualizations = True # ehether to create visualizations based on the data or not
 doNameChecking = False # run some heuristics to check if the names make sense
 doAbstractCheckingForKeywords = False # check for keywords in the abstract as well (otherwise only in title)
@@ -242,9 +242,10 @@ def markVisPapersByKeywords(paperList):
             ("10.1145/3687996" in paper["doi"]) or           # talks about the simulation of 3D flows and their visual representation
             ("10.1109/tvcg.2025.3589748" in paper["doi"]) or # visualization in abstract and author keyword
             ("10.1016/j.cag.2025.104458" in paper["doi"]) or # visualization in abstract
-            ("10.1109/tvcg.2025.3644671" in paper["doi"]) or # visualization in abstract
-            ("10.1109/tvcg.2026.3657210" in paper["doi"]) or # visualization as application context (likely will be presebted at VIS 2026)
-            ("10.1016/j.cag.2025.104354" in paper["doi"])    # talks about vector field analysis
+            ("10.1016/j.cag.2025.104354" in paper["doi"]) or # talks about vector field analysis
+            ("10.1111/cgf.70372" in paper["doi"]) or         # visualization in abstract and author keyword
+            ("10.1016/j.cag.2026.104724" in paper["doi"]) or # visualization in abstract
+            ("10.1016/j.cag.2026.104688" in paper["doi"])    # is about protein surface classification
             ):
             paper["is_vis"] = True
             paper["type"] = "manual"
@@ -2242,42 +2243,19 @@ if exportVisualizations:
     if doPrintConferenceTotals:
         # since we have this data handy here, we can print it out if required
         print("")
-        print("VIS presented paper totals")
-        for year in range(startYear, endYear + 1):
-            totalVISCount = 0
-            print(str(year) + ": ", end='')
-            for venue in venues[0:2]: # count total major presentations
-                count1 = visVenuesAndReplicability[venue][year]["is_replicable"]
-                count2 = visVenuesAndReplicability[venue][year]["not_replicable"]
-                localTotal = count1 + count2
-                print("(" + venue + ": " + str(localTotal) + ") ", end='')
-                totalVISCount += localTotal
-            print(" -- Total: " + str(totalVISCount))
-        print("")
-        print("EuroVis presented paper totals")
-        for year in range(startYear, endYear + 1):
-            totalVISCount = 0
-            print(str(year) + ": ", end='')
-            for venue in venues[2:4]: # count total major presentations
-                count1 = visVenuesAndReplicability[venue][year]["is_replicable"]
-                count2 = visVenuesAndReplicability[venue][year]["not_replicable"]
-                localTotal = count1 + count2
-                print("(" + venue + ": " + str(localTotal) + ") ", end='')
-                totalVISCount += localTotal
-            print(" -- Total: " + str(totalVISCount))
-        print("")
-        print("PacificVis presented paper totals")
-        for year in range(startYear, endYear + 1):
-            totalVISCount = 0
-            print(str(year) + ": ", end='')
-            for venue in venues[4:6]: # count total major presentations
-                count1 = visVenuesAndReplicability[venue][year]["is_replicable"]
-                count2 = visVenuesAndReplicability[venue][year]["not_replicable"]
-                localTotal = count1 + count2
-                print("(" + venue + ": " + str(localTotal) + ") ", end='')
-                totalVISCount += localTotal
-            print(" -- Total: " + str(totalVISCount))
-        print("")
+        for venueLabel, num1, num2 in zip(['VIS', 'EuroVis', 'PacificVis'], [0, 2, 4], [2, 4, 6]):
+            print(venueLabel + " presented journal-level paper totals")
+            for year in range(startYear, endYear + 1):
+                totalVISCount = 0
+                print(str(year) + ": ", end='')
+                for venue in venues[num1:num2]: # count total major presentations
+                    count1 = visVenuesAndReplicability[venue][year]["is_replicable"]
+                    count2 = visVenuesAndReplicability[venue][year]["not_replicable"]
+                    localTotal = count1 + count2
+                    print("(" + venue + ": " + str(localTotal) + ") ", end='')
+                    totalVISCount += localTotal
+                print(" -- Total: " + str(totalVISCount))
+            print("")
 
     chart = alt.Chart(altairData).mark_bar().encode(
         x = alt.X('year:N', title=None).axis(tickWidth=0, labelAngle=0),#domain=False, 

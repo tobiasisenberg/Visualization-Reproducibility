@@ -1,5 +1,220 @@
 [
     {
+        "is_vis": true,
+        "title": "Real-Time Rendering of Dynamic Line Sets using Voxel Ray Tracing",
+        "doi": "10.1111/cgf.70372",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-as-the-crow-flies-vibrant-tractography",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/as-the-crow-flies/vibrant-tractography",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:df4a55c8564c9d89a86746b0d49cb03400e2e6fe;origin=https://github.com/as-the-crow-flies/vibrant-tractography",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-as-the-crow-flies-vibrant-tractography/representative.png",
+        "authors": "B. Kraaijeveld, A.C. Jalba, A. Vilanova, M. Chamberland",
+        "type": "manual"
+    },
+    {
+        "is_vis": true,
+        "title": "Enriching Dimensionality Reduction with Distortion Cues",
+        "doi": "10.1016/j.cag.2026.104724",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-giva-lab-dr-layout-enrichment-cues",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/giva-lab/dr_layout_enrichment_cues",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:389a5367abcc7666e65595061d85e7a4c1b8ac1d;origin=https://github.com/giva-lab/dr_layout_enrichment_cues",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-giva-lab-dr-layout-enrichment-cues/representative.png",
+        "authors": "Waqar Hassan, Antonia Schlieder, Filip Sadlo, Luis Gustavo Nonato",
+        "type": "manual"
+    },
+    {
+        "is_vis": true,
+        "title": "Topological descriptors for learning-based, rotation-invariant protein surface classification",
+        "doi": "10.1016/j.cag.2026.104688",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-marcoguerra192-proteinclassifiercg26",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/marcoguerra192/ProteinClassifierCG26",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:44eb96f4ac72c0c14b52ac6c602e4fc79994955f;origin=https://github.com/marcoguerra192/ProteinClassifierCG26",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-marcoguerra192-proteinclassifiercg26/representative.png",
+        "authors": "Marco Guerra, Ulderico Fugacci, Silvia Biasotti",
+        "type": "manual"
+    },
+    {
+        "is_vis": false,
+        "title": "GravoTet: A Fast Multigrid Hierarchy Construction for Tetrahedral Meshes",
+        "doi": "10.1016/j.cag.2026.104662",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-marcelpadilla-gravotet",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/marcelpadilla/GravoTet",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:791f9254590b2305681a2d3066b88397548aadfa;origin=https://github.com/marcelpadilla/GravoTet",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-marcelpadilla-gravotet/representative.png",
+        "authors": "Marcel Padilla, Ruben Wiersma, Tim Huisman, Jackson Campolattaro, Olga Sorkine-Hornung, Klaus Hildebrandt"
+    },
+    {
+        "is_vis": false,
+        "title": "Mechanical Cloaking of Halftoned Imagery",
+        "doi": "10.1145/3811394",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-jonasmb-halftone-mech-cloak",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/jonasmb/halftone-mech-cloak",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:3f63e6db11971aa3550dba4fcc3dcdab632ab370;origin=https://github.com/jonasmb/halftone-mech-cloak",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-jonasmb-halftone-mech-cloak/representative.png",
+        "authors": "Jon\u00e0s Mart\u00ednez, S\u00e9bastien Brisard, Kostas Danas, Eric Garner, Siddhant Kumar, Sylvain Lefebvre"
+    },
+    {
+        "is_vis": false,
+        "title": "DebrisTracer: Reliable Tracking in Hypervelocity Impact Fast Imaging",
+        "doi": "not_assigned_yet",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-tloloum-debristracer",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/tloloum/DebrisTracer",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:c236c95bbacb53cf1b82929ba52ee585e164ca2b;origin=https://github.com/tloloum/DebrisTracer",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-tloloum-debristracer/representative.png",
+        "authors": "Th\u00e9ophane Loloum, Fabien Vivodtzev, David H\u00e9bert, Baptiste Reynier, Michel Arrigoni, Julien Tierny"
+    },
+    {
+        "is_vis": false,
+        "title": "Computational Design of Shape-Aware Sieves",
+        "doi": "10.1145/3757377.3763875",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-david-cha-shape-aware-sieves",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/David-Cha/shape-aware-sieves",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:737b2190707f387134d3bc8c9f1cab6453c52311;origin=https://github.com/David-Cha/shape-aware-sieves",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-david-cha-shape-aware-sieves/representative.png",
+        "authors": "David Cha, Oded Stein"
+    },
+    {
+        "is_vis": true,
+        "title": "Evaluating the Perceptual Space of Surface Noise for Visualization",
+        "doi": "10.1111/cgf.70454",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-asterzik-surface-noise-example-stimuli-webpage",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/asterzik/surface_noise_example_stimuli_webpage",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:358f1456be5e51651a268fc934e621f71baf6c65;origin=https://github.com/asterzik/surface_noise_example_stimuli_webpage",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-asterzik-surface-noise-example-stimuli-webpage/representative.png",
+        "authors": "Anna Sterzik, Niklas Merk, Kai Lawonn",
+        "type": "journal pres. @ EuroVis"
+    },
+    {
+        "is_vis": false,
+        "title": "Symmetry Matters: Auditing and Symmetrizing 3D Generative Models",
+        "doi": "10.1016/j.cag.2026.104687",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-nicolaspcs-symmetry-matters",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/NicolasPCS/Symmetry-Matters",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:151d5a8870573f9752c182e17c0ddb4aaa21f36d;origin=https://github.com/NicolasPCS/Symmetry-Matters",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-nicolaspcs-symmetry-matters/representative.png",
+        "authors": "Nicol\u00e1s Esleyder Caytuiro Silva, Iv\u00e1n Anselmo Sipiran Mendoza"
+    },
+    {
+        "is_vis": false,
+        "title": "Adaptive Meshing of Non-Manifold Parametric Patch Complexes with Shared-Curve Compatibility",
+        "doi": "10.1016/j.cag.2026.104707",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-tiagosombrra-adaptive-nonmanifold-meshing-grsi",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/tiagosombrra/adaptive-nonmanifold-meshing-grsi",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a1d05927a8b1c6b83200e19ec153691db8ddf985;origin=https://github.com/tiagosombrra/adaptive-nonmanifold-meshing-grsi",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-tiagosombrra-adaptive-nonmanifold-meshing-grsi/representative.png",
+        "authors": "Tiago Guimar\u00e3es Sombra, Joaquim Bento Cavalcante-Neto, Creto Augusto Vidal"
+    },
+    {
+        "is_vis": false,
+        "title": "Direct volume rendering of tree-based tetrahedral adaptive mesh refinement data",
+        "doi": "10.1016/j.cag.2026.104638",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-bilkent-modvis-tet-amr-rendering",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/Bilkent-ModVis/tet-amr-rendering",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:4fc56a25e89b97ce2ba34d122237c5f29a798a57;origin=https://github.com/Bilkent-ModVis/tet-amr-rendering",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-bilkent-modvis-tet-amr-rendering/representative.png",
+        "authors": "Musa Ege \u00dcnalan, Serkan Demirci, Stefan Zellmann, U\u011fur G\u00fcd\u00fckbay"
+    },
+    {
+        "is_vis": true,
+        "title": "Multiresolution Density-Equalizing Transformation for Scatterplots",
+        "doi": "10.1109/tvcg.2026.3713630",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-hennesrave-rave2026-multiresolution-replicability",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/hennesrave/rave2026-multiresolution-replicability",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:fe245bd2ad4b184eff2efbc7df480420b4106e63;origin=https://github.com/hennesrave/rave2026-multiresolution-replicability",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-hennesrave-rave2026-multiresolution-replicability/representative.png",
+        "authors": "Hennes Rave, Vladimir Molchanov, Yuki Tatsukawa, Quynh Quang Ngo, Steffen Frey, Takeo Igarashi, Lars Linsen",
+        "type": "journal pres. @ IEEE VIS"
+    },
+    {
+        "is_vis": true,
+        "title": "A General Approach to Visualizing Uncertainty in Statistical Graphics",
+        "doi": "10.1109/tvcg.2026.3704459",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-davidnabergoj-bootplot",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/davidnabergoj/bootplot",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:28e6e8a9bbc57e6bd3ecf28c11b0c75cc2ba0ce6;origin=https://github.com/davidnabergoj/bootplot",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-davidnabergoj-bootplot/representative.png",
+        "authors": "Bernarda Petek, David Nabergoj, Erik \u0160trumbelj",
+        "type": "journal pres. @ IEEE VIS"
+    },
+    {
+        "is_vis": false,
+        "title": "Far-From-Boundary Fields for Learning Segmented Implicit Solids",
+        "doi": "10.1016/j.cag.2026.104648",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-nikoloside-far-from-boundary-fields",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/nikoloside/far-from-boundary-fields",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:55a2125c892d5e5c0823c1e570d6407afbe8eefe;origin=https://github.com/nikoloside/far-from-boundary-fields",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-nikoloside-far-from-boundary-fields/representative.png",
+        "authors": "Yuhang Huang, Takashi Kanai"
+    },
+    {
+        "is_vis": false,
+        "title": "Fast and Exact Winding Numbers for Triangle Meshes",
+        "doi": "10.1145/3811339",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-git-ista-ac-at-wojtan-group-peiyuan-xie-boundaryblaze",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://git.ista.ac.at/wojtan-group/peiyuan-xie/boundaryblaze",
+        "repo_archive_url": "",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-git-ista-ac-at-wojtan-group-peiyuan-xie-boundaryblaze/representative.png",
+        "authors": "Peiyuan Xie, Christian Hafner, Chris Wojtan"
+    },
+    {
+        "is_vis": false,
+        "title": "Data-driven Inverse Kinematics using Laban Movement Analysis",
+        "doi": "10.1016/j.cag.2026.104643",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-bilkent-modvis-lma-ik",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/Bilkent-ModVis/LMA-IK",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:13347a2300b9fcbadaf8b5df00e1dde130561fe4;origin=https://github.com/Bilkent-ModVis/LMA-IK",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-bilkent-modvis-lma-ik/representative.png",
+        "authors": "Mehmet Akif \u015eahin, Sinan Sonlu, U\u011fur G\u00fcd\u00fckbay"
+    },
+    {
+        "is_vis": false,
+        "title": "Approximating Doo\u2013Sabin limit surfaces using geometrically continuous B\u00e9zier patches",
+        "doi": "10.1016/j.cag.2026.104652",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-gitlab-inria-fr-gismo-ads",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://gitlab.inria.fr/gismo/ads",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:31e3c5771cf313bb82c374d0a12c5c90d2238cc3;origin=https://gitlab.inria.fr/gismo/ads",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-gitlab-inria-fr-gismo-ads/representative.png",
+        "authors": "Dimitrios Tolis, Michelangelo Marsala, Angelos Mantzaflaris, Bernard Mourrain"
+    },
+    {
+        "is_vis": false,
+        "title": "Supra-threshold Contrast Perception in Augmented Reality",
+        "doi": "10.1145/3757377.3763824",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-gfxdisp-ar-contrast-perception",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/gfxdisp/ar_contrast_perception",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:03db6c969b2fa394f9bd0ef2f5bf66018392dbdd;origin=https://github.com/gfxdisp/ar_contrast_perception",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-gfxdisp-ar-contrast-perception/representative.png",
+        "authors": "Dongyeon Kim, Maliha Ashraf, Alexandre Chapiro, Rafa\u0142 K. Mantiuk"
+    },
+    {
+        "is_vis": false,
+        "title": "3D SMoE Splatting for Edge-aware Realtime Radiance Field Rendering",
+        "doi": "10.1145/3757377.3763899",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-yihsinli-3d-smoe-splatting",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/yihsinli/3D-SMoE-Splatting",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:ba2aa39ffb5f8a390311fab16ec25caeeae0dcff;origin=https://github.com/yihsinli/3D-SMoE-Splatting",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-yihsinli-3d-smoe-splatting/representative.png",
+        "authors": "YI-HSIN LI, THOMAS SIKORA, SEBASTIAN KNORR, M\u00c5RTEN SJ\u00d6STR\u00d6M"
+    },
+    {
         "is_vis": false,
         "title": "Hybrid User Interfaces: Past, Present, and Future of Complementary Cross-Device Interaction in Mixed Reality",
         "doi": "10.1109/tvcg.2026.3683941",
@@ -54,7 +269,7 @@
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a0e5ae52718b32c643a2685ff71cbab7ffb819f9;origin=https://github.com/rahatzamancse/ChannelExplorer",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-rahatzamancse-channelexplorer/representative.png",
         "authors": "Md Rahat-uz- Zaman, Bei Wang, Paul Rosen",
-        "type": "keyword"
+        "type": "journal pres. @ IEEE VIS"
     },
     {
         "is_vis": false,
@@ -88,7 +303,7 @@
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:d6f567947bba6056f3c9edb9d4f48b49546e8cbe;origin=https://github.com/Keanu-Sisouk/RobustBarycenter",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-keanu-sisouk-robustbarycenter/representative.png",
         "authors": "Keanu Sisouk, Eloi Tanguy, Julie Delon, Julien Tierny",
-        "type": "manual"
+        "type": "journal pres. @ IEEE VIS"
     },
     {
         "is_vis": false,
@@ -146,7 +361,7 @@
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:2b2f328d273bdd7734e7ff95559a11cf901a5b3e;origin=https://github.com/MClemot/TopologicalAutoencodersPlusPlus",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-mclemot-topologicalautoencodersplusplus/representative.png",
         "authors": "Matt\u00e9o Cl\u00e9mot, Julie Digne, Julien Tierny",
-        "type": "manual"
+        "type": "journal pres. @ IEEE VIS"
     },
     {
         "is_vis": false,
@@ -192,7 +407,7 @@
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:fa0079bb051697883339116ec0d5a63d526922d8;origin=https://github.com/Prapti-044/dis-viz",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-prapti-044-dis-viz/representative.png",
         "authors": "Shadmaan Hye, Matthew P. LeGendre, Katherine E. Isaacs",
-        "type": "keyword"
+        "type": "journal pres. @ IEEE VIS"
     },
     {
         "is_vis": false,
@@ -5266,113 +5481,14 @@
     },
     {
         "is_vis": false,
-        "title": "Extrinsically Smooth Direction Fields",
-        "doi": "10.1016/j.cag.2016.05.015",
-        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-smi2016-extrinsic",
-        "journal": "Elsevier Computers & Graphics (SMI 2016)",
-        "repo_url": "https://github.com/reproducibilitystamp/SMI2016_Extrinsic",
-        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/SMI2016_Extrinsic",
-        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-smi2016-extrinsic/representative.png",
-        "authors": "Zhiyang Huang, Tao Ju"
-    },
-    {
-        "is_vis": false,
-        "title": "PinMesh -- Fast and Exact 3D Point Location Queries using a Uniform Grid",
-        "doi": "10.1016/j.cag.2016.05.017",
-        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-pinmesh",
-        "journal": "Elsevier Computers & Graphics (SMI 2016)",
-        "repo_url": "https://github.com/reproducibilitystamp/PinMesh",
-        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/PinMesh",
-        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-pinmesh/representative.png",
-        "authors": "Salles V. G. Magalh\u00e3es, Marcus V. A. Andrade, W. Randolph Franklin, Wenli Li"
-    },
-    {
-        "is_vis": false,
-        "title": "The 2D Shape Structure Dataset: A user annotated open Access Database",
-        "doi": "10.1016/j.cag.2016.05.009",
-        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-dataset-processing",
-        "journal": "Elsevier Computers & Graphics (SMI 2016)",
-        "repo_url": "https://github.com/reproducibilitystamp/dataset-processing",
-        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/dataset-processing",
-        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-dataset-processing/representative.png",
-        "authors": "Axel Carlier, Kathryn Leonard, Stefanie Hahmann, Geraldine Morin, Misha Collins"
-    },
-    {
-        "is_vis": false,
-        "title": "Computing a Discrete Morse Gradient From a Watershed Decomposition",
-        "doi": "10.1016/j.cag.2016.05.020",
-        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-smi2016reprstamp",
-        "journal": "Elsevier Computers & Graphics (SMI 2016)",
-        "repo_url": "https://github.com/reproducibilitystamp/SMI2016ReprStamp",
-        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/SMI2016ReprStamp",
-        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-smi2016reprstamp/representative.png",
-        "authors": "Lidija \u010comi\u0107, Leila De Floriani, Federico Iuricich, Paola Magillo"
-    },
-    {
-        "is_vis": false,
-        "title": "A Closed-Form Formulation of HRBF-Based Surface Reconstruction by Approximate Solution",
-        "doi": "10.1016/j.cad.2016.05.001",
-        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-hrbfqi",
-        "journal": "Elsevier Computer-Aided Design (SPM 2016)",
-        "repo_url": "https://github.com/reproducibilitystamp/HRBFQI",
-        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/HRBFQI",
-        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-hrbfqi/representative.png",
-        "authors": "Shengjun Liu, Charlie C. L. Wang, Guido Brunnett, Jun Wang"
-    },
-    {
-        "is_vis": false,
-        "title": "Modeling and Analysis of Origami Structures with Smooth Folds",
-        "doi": "10.1016/j.cad.2016.05.010",
-        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-spm2016-origami",
-        "journal": "Elsevier Computer-Aided Design (SPM 2016)",
-        "repo_url": "https://github.com/reproducibilitystamp/SPM2016_Origami",
-        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/SPM2016_Origami",
-        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-spm2016-origami/representative.png",
-        "authors": "Edwin A. Peraza Hernandez, Darren J. Hartl, Ergun Akleman, Dimitris C. Lagoudas"
-    },
-    {
-        "is_vis": false,
-        "title": "Planar Minimization Diagrams via Subdivision with Applications to Anisotropic Voronoi Diagrams",
-        "doi": "10.1111/cgf.12979",
-        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-subvor",
+        "title": "Complex Transfinite Barycentric Mappings with Similarity Kernels",
+        "doi": "10.1111/cgf.12962",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-simkernel",
         "journal": "Wiley Computer Graphics Forum (SGP 2016)",
-        "repo_url": "https://github.com/reproducibilitystamp/SubVor",
-        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/SubVor",
-        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-subvor/representative.png",
-        "authors": "Huck Bennett, Evanthia Papadopoulou, Chee Yap"
-    },
-    {
-        "is_vis": false,
-        "title": "Crawl through Neighbors: A Simple Curve Reconstruction Algorithm",
-        "doi": "10.1111/cgf.12974",
-        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-crawl-through-neighbors",
-        "journal": "Wiley Computer Graphics Forum (SGP 2016)",
-        "repo_url": "https://github.com/reproducibilitystamp/Crawl_through_Neighbors",
-        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/Crawl_through_Neighbors",
-        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-crawl-through-neighbors/representative.png",
-        "authors": "Amal Dev Parakkat, Ramanathan Muthuganapathy"
-    },
-    {
-        "is_vis": false,
-        "title": "Non-Rigid Puzzles",
-        "doi": "10.1111/cgf.12970",
-        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-nonrigidpuzzles",
-        "journal": "Wiley Computer Graphics Forum (SGP 2016)",
-        "repo_url": "https://github.com/reproducibilitystamp/NonRigidPuzzles",
-        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/NonRigidPuzzles",
-        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-nonrigidpuzzles/representative.png",
-        "authors": "Or Litany, Emanuele Rodol\u00e0, Alex M. Bronstein, Michael M. Bronstein, Daniel Cremers"
-    },
-    {
-        "is_vis": false,
-        "title": "Construction of Topologically Correct and Manifold Isosurfaces",
-        "doi": "10.1111/cgf.12975",
-        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-tmc",
-        "journal": "Wiley Computer Graphics Forum (SGP 2016)",
-        "repo_url": "https://github.com/reproducibilitystamp/tmc",
-        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/tmc",
-        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-tmc/representative.png",
-        "authors": "Roberto Grosso"
+        "repo_url": "https://github.com/reproducibilitystamp/simkernel",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/simkernel",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-simkernel/representative.png",
+        "authors": "Renjie Chen, Craig Gotsman"
     },
     {
         "is_vis": false,
@@ -5387,13 +5503,112 @@
     },
     {
         "is_vis": false,
-        "title": "Complex Transfinite Barycentric Mappings with Similarity Kernels",
-        "doi": "10.1111/cgf.12962",
-        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-simkernel",
+        "title": "Construction of Topologically Correct and Manifold Isosurfaces",
+        "doi": "10.1111/cgf.12975",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-tmc",
         "journal": "Wiley Computer Graphics Forum (SGP 2016)",
-        "repo_url": "https://github.com/reproducibilitystamp/simkernel",
-        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/simkernel",
-        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-simkernel/representative.png",
-        "authors": "Renjie Chen, Craig Gotsman"
+        "repo_url": "https://github.com/reproducibilitystamp/tmc",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/tmc",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-tmc/representative.png",
+        "authors": "Roberto Grosso"
+    },
+    {
+        "is_vis": false,
+        "title": "Non-Rigid Puzzles",
+        "doi": "10.1111/cgf.12970",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-nonrigidpuzzles",
+        "journal": "Wiley Computer Graphics Forum (SGP 2016)",
+        "repo_url": "https://github.com/reproducibilitystamp/NonRigidPuzzles",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/NonRigidPuzzles",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-nonrigidpuzzles/representative.png",
+        "authors": "Or Litany, Emanuele Rodol\u00e0, Alex M. Bronstein, Michael M. Bronstein, Daniel Cremers"
+    },
+    {
+        "is_vis": false,
+        "title": "Crawl through Neighbors: A Simple Curve Reconstruction Algorithm",
+        "doi": "10.1111/cgf.12974",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-crawl-through-neighbors",
+        "journal": "Wiley Computer Graphics Forum (SGP 2016)",
+        "repo_url": "https://github.com/reproducibilitystamp/Crawl_through_Neighbors",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/Crawl_through_Neighbors",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-crawl-through-neighbors/representative.png",
+        "authors": "Amal Dev Parakkat, Ramanathan Muthuganapathy"
+    },
+    {
+        "is_vis": false,
+        "title": "Planar Minimization Diagrams via Subdivision with Applications to Anisotropic Voronoi Diagrams",
+        "doi": "10.1111/cgf.12979",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-subvor",
+        "journal": "Wiley Computer Graphics Forum (SGP 2016)",
+        "repo_url": "https://github.com/reproducibilitystamp/SubVor",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/SubVor",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-subvor/representative.png",
+        "authors": "Huck Bennett, Evanthia Papadopoulou, Chee Yap"
+    },
+    {
+        "is_vis": false,
+        "title": "Modeling and Analysis of Origami Structures with Smooth Folds",
+        "doi": "10.1016/j.cad.2016.05.010",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-spm2016-origami",
+        "journal": "Elsevier Computer-Aided Design (SPM 2016)",
+        "repo_url": "https://github.com/reproducibilitystamp/SPM2016_Origami",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/SPM2016_Origami",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-spm2016-origami/representative.png",
+        "authors": "Edwin A. Peraza Hernandez, Darren J. Hartl, Ergun Akleman, Dimitris C. Lagoudas"
+    },
+    {
+        "is_vis": false,
+        "title": "A Closed-Form Formulation of HRBF-Based Surface Reconstruction by Approximate Solution",
+        "doi": "10.1016/j.cad.2016.05.001",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-hrbfqi",
+        "journal": "Elsevier Computer-Aided Design (SPM 2016)",
+        "repo_url": "https://github.com/reproducibilitystamp/HRBFQI",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/HRBFQI",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-hrbfqi/representative.png",
+        "authors": "Shengjun Liu, Charlie C. L. Wang, Guido Brunnett, Jun Wang"
+    },
+    {
+        "is_vis": false,
+        "title": "Computing a Discrete Morse Gradient From a Watershed Decomposition",
+        "doi": "10.1016/j.cag.2016.05.020",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-smi2016reprstamp",
+        "journal": "Elsevier Computers & Graphics (SMI 2016)",
+        "repo_url": "https://github.com/reproducibilitystamp/SMI2016ReprStamp",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/SMI2016ReprStamp",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-smi2016reprstamp/representative.png",
+        "authors": "Lidija \u010comi\u0107, Leila De Floriani, Federico Iuricich, Paola Magillo"
+    },
+    {
+        "is_vis": false,
+        "title": "The 2D Shape Structure Dataset: A user annotated open Access Database",
+        "doi": "10.1016/j.cag.2016.05.009",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-dataset-processing",
+        "journal": "Elsevier Computers & Graphics (SMI 2016)",
+        "repo_url": "https://github.com/reproducibilitystamp/dataset-processing",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/dataset-processing",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-dataset-processing/representative.png",
+        "authors": "Axel Carlier, Kathryn Leonard, Stefanie Hahmann, Geraldine Morin, Misha Collins"
+    },
+    {
+        "is_vis": false,
+        "title": "PinMesh -- Fast and Exact 3D Point Location Queries using a Uniform Grid",
+        "doi": "10.1016/j.cag.2016.05.017",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-pinmesh",
+        "journal": "Elsevier Computers & Graphics (SMI 2016)",
+        "repo_url": "https://github.com/reproducibilitystamp/PinMesh",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/PinMesh",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-pinmesh/representative.png",
+        "authors": "Salles V. G. Magalh\u00e3es, Marcus V. A. Andrade, W. Randolph Franklin, Wenli Li"
+    },
+    {
+        "is_vis": false,
+        "title": "Extrinsically Smooth Direction Fields",
+        "doi": "10.1016/j.cag.2016.05.015",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-reproducibilitystamp-smi2016-extrinsic",
+        "journal": "Elsevier Computers & Graphics (SMI 2016)",
+        "repo_url": "https://github.com/reproducibilitystamp/SMI2016_Extrinsic",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/reproducibilitystamp/SMI2016_Extrinsic",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-reproducibilitystamp-smi2016-extrinsic/representative.png",
+        "authors": "Zhiyang Huang, Tao Ju"
     }
 ]

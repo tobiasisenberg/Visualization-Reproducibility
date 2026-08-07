@@ -95,3 +95,22 @@ year,journal,title,doi,doi link
 2025,TVCG,PrettiSmart: Visual Interpretation of Smart Contracts via Simulation,10.1109/TVCG.2025.3567130,https://doi.org/10.1109/TVCG.2025.3567130
 2025,TVCG,InclusiViz: Visual Analytics of Human Mobility Data for Understanding and Mitigating Urban Segregation,10.1109/TVCG.2025.3567117,https://doi.org/10.1109/TVCG.2025.3567117
 2025,TVCG,VisTaxa: Developing a Taxonomy of Historical Visualizations,10.1109/TVCG.2025.3567132,https://doi.org/10.1109/TVCG.2025.3567132
+2026,TVCG,Graph Drawing Stress Model with Resistance Distances,10.1109/TVCG.2026.3694437,
+2026,TVCG,VizDefender: Unmasking Visualization Tampering through Proactive Localization and Intent Inference,10.1109/TVCG.2026.3694448,
+2026,TVCG,FLUID: A Neural Operator-based Framework for Learning Multi-Fidelity of Unstructured Data,10.1109/TVCG.2026.3694450,
+2026,TVCG,Spatiotemporal Detection and Uncertainty Visualization of Atmospheric Blocking Events,10.1109/TVCG.2026.3694459,
+2026,TVCG,Locatability and Locatability Robustness of Visual Variables in Single Target Localization,10.1109/TVCG.2026.3694442,
+2026,TVCG,Analyzing Notebook Histories to Understand Data Visualization Workflows,10.1109/TVCG.2026.3694431,
+2026,TVCG,ISilDR: Isometric-Seriation-Based Dimensionality Reduction for Visual Cluster Analysis,10.1109/TVCG.2026.3694456,
+2026,TVCG,Enhancing Line Density Plots with Outlier Control and Bin-based Illumination,10.1109/TVCG.2026.3694447,
+2026,TVCG,Illuminating LLM Coding Agents: Visual Analytics for Deeper Understanding and Enhancement,10.1109/TVCG.2026.3694444,
+2026,TVCG,RAGExplorer: A Visual Analytics System for the Comparative Diagnosis of RAG Systems,10.1109/TVCG.2026.3694443,
+2026,TVCG,KEditVis: A Visual Analytics System for Knowledge Editing of Large Language Models,10.1109/TVCG.2026.3694436,
+2026,TVCG,BiasField: Interactive Bias Probing of Machine Learning Datasets,10.1109/TVCG.2026.3694439,
+2026,TVCG,Towards Explainable Quantum AI: Informing the Encoder Selection of Quantum Neural Networks via Visualization,10.1109/TVCG.2026.3694424,
+2026,TVCG,Probabilistic Inclusion Depth for Fuzzy Contour Ensemble Visualization,10.1109/TVCG.2026.3694451,
+2026,TVCG,Memory-Aware External Facelist Calculation: A Data-Parallel Atomic Hash Counting Approach,10.1109/TVCG.2026.3694435,
+2026,TVCG,A Topology-Preserving Coreset for Kernel Regression in Scientific Visualization,10.1109/TVCG.2026.3694452,
+2026,TVCG,Volume Encoding Gaussians: Transfer Function-Agnostic 3D Gaussians for Volume Rendering,10.1109/TVCG.2026.3694460,
+2026,TVCG,RCInvestigator: Towards Better Investigation of Anomaly Root Causes in Cloud Computing Systems,10.1109/TVCG.2026.3694461,
+2026,TVCG,TimeScape: Multi-Resolution Visual Exploration for Wandering through Historical Figures,10.1109/TVCG.2026.3694429,

@@ -87,3 +87,57 @@ year,journal,title,doi
 2025,CGF,Fluidly Revealing Information: A Survey of Un/foldable Data Visualizations,10.1111/cgf.70152
 2025,CGF,"Nodes, Edges, and Artistic Wedges: A Survey on Network Visualization in Art History",10.1111/cgf.70154
 2025,CGF,Uncertainty-Aware Visualization of Biomolecular Structures,10.1111/cgf.70155
+2026,CGF,Engagement vs. Understanding: Comparing Immersive Virtual Reality and Desktop Displays for Climate Data Visualization,10.1111/cgf.70432
+2026,CGF,Designing Annotations in Visualization: Considerations from Visualization Practitioners and Educators,10.1111/cgf.70435
+2026,CGF,A Scoping Review of Mixed Initiative Visual Analytics in the Automation Renaissance,10.1111/cgf.70434
+2026,CGF,Noisy Graph Patterns via Ordered Matrices,10.1111/cgf.70433
+2026,CGF,URBANCLIPATLAS: A Visual Analytics Framework for Event and Scene Retrieval in Urban Videos,10.1111/cgf.70431
+2026,CGF,Do Graph Drawing Aesthetics Matter for AI? A Replication of Foundational Studies in Graph Readability,10.1111/cgf.70436
+2026,CGF,ARCOL: Aspect Ratio Constrained Orthogonal Layout,10.1111/cgf.70437
+2026,CGF,Uncertainty-Aware Visual Analysis of Force Networks in 2D Granular Materials,10.1111/cgf.70438
+2026,CGF,When the Chain Breaks: Interactive Diagnosis of LLM Chain-of-Thought Reasoning Errors,10.1111/cgf.70439
+2026,CGF,HamCat: Ego-Centric Relationship Exploration for Multidimensional Categorical Data,10.1111/cgf.70440
+2026,CGF,Tubes or Ribbons? Comparing Texture-space Visualization for Multivariate Line Data,10.1111/cgf.70441
+2026,CGF,Topology-based Visual Analysis of Hydrothermal Plumes,10.1111/cgf.70442
+2026,CGF,Quantitative Metrics for Edge Bundling of Network Visualizations,10.1111/cgf.70443
+2026,CGF,AI4VIS EthiCards: A Card-Based Approach to Exploring Ethics in AI for Data Visualization Applications,10.1111/cgf.70444
+2026,CGF,Reflections on Traceability for Visualization Research,10.1111/cgf.70445
+2026,CGF,Can LLMs Simulate Target Users in Visualization Case Studies?,10.1111/cgf.70446
+2026,CGF,"The Truth, the Whole Truth, and Nothing but the Truth: Automatic Visualization Evaluation from Reconstruction Quality",10.1111/cgf.70447
+2026,CGF,Serendipitous Explanations: Interaction-Triggered Comprehension Aids in Visualization,10.1111/cgf.70448
+2026,CGF,Geometry-Aware Alignment and Comparison of Hierarchical Morse Complexes with Applications,10.1111/cgf.70449
+2026,CGF,How Do LLMs See Charts? A Comparative Study on High-Level Visualization Comprehension in Humans and LLMs,10.1111/cgf.70450
+2026,CGF,Does Visual Working Memory Decline Explain Age Differences in Visualization Performance?,10.1111/cgf.70451
+2026,CGF,RETRACE: Interactive Visualizations for Reasoning Traces of Large Reasoning Models,10.1111/cgf.70452
+2026,CGF,Thinking Inside the Box: Considerations for Putting Data Physicalization Workshops in a Box,10.1111/cgf.70453
+2026,CGF,Evaluating the Perceptual Space of Surface Noise for Visualization,10.1111/cgf.70454
+2026,CGF,SemiConLens: Visual Analytics for 2D Semiconductor Discovery,10.1111/cgf.70455
+2026,CGF,Beauty in the Eye of AI: Aligning LLMs and Vision Models with Human Aesthetics in Network Visualization,10.1111/cgf.70456
+2026,CGF,GEVIS: A Workflow-Driven Visual Analytics Approach to Differential Gene Expression Analysis,10.1111/cgf.70457
+2026,CGF,Visualization Guidelines for the Control Room: An Evaluation of Visual Alert Encoding with Domain Experts,10.1111/cgf.70458
+2026,CGF,SlideSAVR: Enabling Live Analysis during Data Presentations via Multimodal Sketching and Voice Input,10.1111/cgf.70459
+2026,CGF,Guardrail Selection in Line Charts to Contextualize Persuasive Visualizations,10.1111/cgf.70460
+2026,CGF,Symetra: Visual Analytics for the Parameter Tuning Process of Symbolic Execution Engines,10.1111/cgf.70461
+2026,CGF,Croissant Charts: Modulating the Performance of Normal Distribution Visualizations with Affordances,10.1111/cgf.70463
+2026,CGF,Multi2-Vis: Guiding Interactive Exploration Across Temporal Scales in Dynamic Graphs,10.1111/cgf.70464
+2026,CGF,Class Angular Distortion Index for Dimensionality Reduction,10.1111/cgf.70465
+2026,CGF,TerraTinker: Crafting Playful Geospatial Visualizations,10.1111/cgf.70466
+2026,CGF,"A Simple Grid-Maps Pipeline: Restructured, Accelerated and Upgraded",10.1111/cgf.70467
+2026,CGF,How Historians Use Visualization: A Corpus-Driven Mixed-Methods Study,10.1111/cgf.70468
+2026,CGF,CLUSTERIX: A Hybrid Visualization Model for Hierarchically Clustered Networks,10.1111/cgf.70469
+2026,CGF,Visualizing Image Segmentation Network Behavior Through the Lens of Scale Space Analysis,10.1111/cgf.70470
+2026,CGF,TT4D: Tensor-Train-based 4D Time-Dependent Volume Rendering,10.1111/cgf.70471
+2026,CGF,INFICOND: Investigating Interactive No-code Fine-tuning with Concept-based Knowledge Distillation,10.1111/cgf.70472
+2026,CGF,Volume Data Reconstruction and Uncertainty Quantification in an Implicit Neural Representation via Multi-Task Learning,10.1111/cgf.70473
+2026,CGF,Anchor Flow Maps: Efficient Sampling and Approximation of the Entire Flow Map,10.1111/cgf.70474
+2026,CGF,Evaluating Encodings for Bivariate Edges in Adjacency Matrices,10.1111/cgf.70475
+2026,CGF,Visual Cues for Logical Reasoning about Text Enhance Metacognitive Sensitivity,10.1111/cgf.70476
+2026,CGF,Parallel Vectors Extraction using Bézier Clipping,10.1111/cgf.70478
+2026,CGF,Input Visualizations to Track Health Data by Older Adults with Multiple Chronic Conditions,10.1111/cgf.70479
+2026,CGF,GraphHeatY: Graph-Centered Visual Analysis for Building Design,10.1111/cgf.70480
+2026,CGF,SPINE: VAE-driven Counterfactuals for Decision Boundary Maps,10.1111/cgf.70481
+2026,CGF,Investigating Performance and Practices with Univariate Distribution Charts,10.1111/cgf.70482
+2026,CGF,Visual Identification and Comparison of Higher Order Properties in State Transition Sequences,10.1111/cgf.70483
+2026,CGF,Survey on Visualization of Information Diffusion over Networks,10.1111/cgf.70498
+2026,CGF,Scalable Computation of Topological Abstractions for Scalar Data,10.1111/cgf.70497
+2026,CGF,The Story(line) So Far: A Survey on Storyline Visualization,10.1111/cgf.70499
