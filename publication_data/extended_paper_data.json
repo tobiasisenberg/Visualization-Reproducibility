@@ -25382,5 +25382,64 @@
         "countries": [
             "CL"
         ]
+    },
+    "10.vis2026/1130": {
+        "doi": "10.vis2026/1130",
+        "authors": [
+            {
+                "family": "Loloum",
+                "given": "Th\u00e9ophane",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Vivodtzev",
+                "given": "Fabien",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "H\u00e9bert",
+                "given": "David",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Reynier",
+                "given": "Baptiste",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Arrigoni",
+                "given": "Michel",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Tierny",
+                "given": "Julien",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "DebrisTracer: Reliable Tracking in Hypervelocity Impact Fast Imaging",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2036,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "",
+        "countries": [
+            "FR"
+        ]
     }
 }

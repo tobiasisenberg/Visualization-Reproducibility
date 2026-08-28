@@ -58,15 +58,16 @@
         "authors": "Jon\u00e0s Mart\u00ednez, S\u00e9bastien Brisard, Kostas Danas, Eric Garner, Siddhant Kumar, Sylvain Lefebvre"
     },
     {
-        "is_vis": false,
+        "is_vis": true,
         "title": "DebrisTracer: Reliable Tracking in Hypervelocity Impact Fast Imaging",
-        "doi": "not_assigned_yet",
+        "doi": "10.vis2026/1130",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-tloloum-debristracer",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/tloloum/DebrisTracer",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:c236c95bbacb53cf1b82929ba52ee585e164ca2b;origin=https://github.com/tloloum/DebrisTracer",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-tloloum-debristracer/representative.png",
-        "authors": "Th\u00e9ophane Loloum, Fabien Vivodtzev, David H\u00e9bert, Baptiste Reynier, Michel Arrigoni, Julien Tierny"
+        "authors": "Th\u00e9ophane Loloum, Fabien Vivodtzev, David H\u00e9bert, Baptiste Reynier, Michel Arrigoni, Julien Tierny",
+        "type": "IEEE VIS"
     },
     {
         "is_vis": false,

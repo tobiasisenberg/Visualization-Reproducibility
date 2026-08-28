@@ -839,7 +839,7 @@ else:
             doi = doi.replace("http://www.google.com/search?q=Reimagining%20Disassembly%20Interfaces%20with%20Visualization:%20Combining%20Instruction%20Tracing%20and%20Control%20Flow%20with%20DisViz".replace("%20", " "), "10.1109/TVCG.2025.3627171")
             doi = doi.replace("http://www.google.com/search?q=ChannelExplorer:%20Exploring%20Class%20Separability%20Through%20Activation%20Channel%20Visualization".replace("%20", " "), "10.1109/tvcg.2026.3669148")
             # accepted real VIS papers below, need to fix later in both vis-2025.csv and via vispubdata, and remove here
-            # doi = doi.replace("http://www.google.com/search?q=SynAnno:%20Interactive%20Guided%20Proofreading%20of%20Synaptic%20Annotations".replace("%20", " "), "10.vis2025/1718")
+            doi = doi.replace("http://www.google.com/search?q=DebrisTracer:%20Reliable%20Tracking%20in%20Hypervelocity%20Impact%20Fast%20Imaging".replace("%20", " "), "10.vis2026/1130")
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()
