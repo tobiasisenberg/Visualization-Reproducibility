@@ -1,5 +1,83 @@
 [
     {
+        "is_vis": false,
+        "title": "AtomSlicer: Constant-Thickness Field-Aligned Non-Planar Slicing and Continuous Toolpaths for FFF",
+        "doi": "10.1145/3811363",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-iota97-atomslicer",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/iota97/AtomSlicer",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:5fc67a39070be421226912972ec7d241a91ab02d;origin=https://github.com/iota97/AtomSlicer",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-iota97-atomslicer/representative.png",
+        "authors": "Giovanni Cocco, Vincent Belle, Eric Garner, Sylvain Lefebvre, Xavier Chermain"
+    },
+    {
+        "is_vis": true,
+        "title": "Noisy Graph Patterns via Ordered Matrices",
+        "doi": "10.1111/cgf.70433",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-tue-alga-noisygraphpatterns",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/tue-alga/NoisyGraphPatterns",
+        "repo_archive_url": "",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-tue-alga-noisygraphpatterns/representative.png",
+        "authors": "Jules Wulms, Wouter Meulemans, Bettina Speckmann",
+        "type": "journal pres. @ EuroVis"
+    },
+    {
+        "is_vis": false,
+        "title": "A finite element method based discretisation of the Hamiltonian operator on triangular meshes",
+        "doi": "10.1016/j.cag.2026.104656",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-subhendumohanty97-ctrl-hamiltonian-matlab",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/subhendumohanty97-ctrl/Hamiltonian-MATLAB",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:fa0f907744d2e2f2f406ef1f66c6d053f587c31a;origin=https://github.com/subhendumohanty97-ctrl/Hamiltonian-MATLAB",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-subhendumohanty97-ctrl-hamiltonian-matlab/representative.png",
+        "authors": "Subhendu Mohanty, Aditya Tatu, Nabin Kumar Sahu"
+    },
+    {
+        "is_vis": false,
+        "title": "Explicit flows for implicit surfaces",
+        "doi": "10.1145/3811331",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-camillebnm-explicit-flows-for-implicit-surfaces",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/camillebnm/explicit_flows_for_implicit_surfaces",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:b7ac2fe0ca2ddae00f2adcc9342f09918ff75a09;origin=https://github.com/camillebnm/explicit_flows_for_implicit_surfaces",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-camillebnm-explicit-flows-for-implicit-surfaces/representative.png",
+        "authors": "Camille BUONOMO, Julie Digne, Rapha\u00eblle Chaine"
+    },
+    {
+        "is_vis": false,
+        "title": "GPU-accelerated Certified Hausdorff Distance Between Triangle Meshes",
+        "doi": "10.1145/3811287",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-fhp-transient-gpu-hausdorff",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/fhp-transient/gpu-hausdorff",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:c42a53d2658c0b9b100a799f8db821f5da14568f;origin=https://github.com/fhp-transient/gpu-hausdorff",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-fhp-transient-gpu-hausdorff/representative.png",
+        "authors": "Haopeng Fan, Min Tang, Leonardo Sacht, Qiang Zou, Ruofeng Tong, Peng Du"
+    },
+    {
+        "is_vis": false,
+        "title": "Mixwell: Sharp 2D Fluid Brushes for Progressive Physics-Based Mixing",
+        "doi": "10.1145/3811312",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-dougjam-mixwell-2026",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/dougjam/mixwell-2026",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:5e39866e213e05ca401a3c50d3b2a7ce87084703;origin=https://github.com/dougjam/mixwell-2026",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-dougjam-mixwell-2026/representative.png",
+        "authors": "Doug James, Ethan James"
+    },
+    {
+        "is_vis": false,
+        "title": "Compactly supported detail field for high quality neural implicit surfaces",
+        "doi": "10.1111/cgf.70526",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-gcoiffier-neural-sdf-detail-field",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/GCoiffier/neural-sdf-detail-field",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:b59563cea2acd98e0132b1eb0fe97010df1bc88d;origin=https://github.com/GCoiffier/neural-sdf-detail-field",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-gcoiffier-neural-sdf-detail-field/representative.png",
+        "authors": "Guillaume Coiffier, Justine Basselin"
+    },
+    {
         "is_vis": true,
         "title": "Real-Time Rendering of Dynamic Line Sets using Voxel Ray Tracing",
         "doi": "10.1111/cgf.70372",

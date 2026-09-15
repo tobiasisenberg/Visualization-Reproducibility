@@ -24712,13 +24712,13 @@
         ],
         "title": "Multiresolution Density-Equalizing Transformation for Scatterplots",
         "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "10",
+        "pages": "8258\u20138272",
         "article_number": "",
         "number_of_pages": 15,
-        "abstract": "Scatterplots are a fundamental method for visual data analysis, but they often suffer from severe overplotting. Density-equalizing transformations can mitigate this by redistributing points to a uniform density. While Optimal Transport (OT) provides a robust mathematical framework for density equalization, existing numerical solvers are often computationally expensive, complex to implement, and difficult to adapt for specific application constraints. We present a scalable, multiresolution algorithm for scatterplot regularization that approaches the high-quality structural preservation of exact OT solvers. Our method constructs a displacement field by merging local, analytically solved $2 \\times 2$ patch optimizations into a globally consistent mesh, repeating this process across multiple resolutions. We systematically evaluate local solvers, interpolation schemes, and scheduling strategies to balance transport cost, distortion errors, and runtime efficiency. The approach is straightforward to implement, supports local constraints, and generalizes mathematically to higher dimensions. Our efficient GPU implementation processes millions of points at interactive frame rates, significantly outperforming existing OT solvers. Quantitative and qualitative comparisons demonstrate that our method enhances uniformity while minimizing distortion, even under extreme density variations. We further demonstrate the method's versatility through applications in constrained regularization, scatterplot gridification, and image contrast enhancement.",
+        "abstract": "Scatterplots are a fundamental method for visual data analysis, but they often suffer from severe overplotting. Density-equalizing transformations can mitigate this by redistributing points to a uniform density. While Optimal Transport (OT) provides a robust mathematical framework for density equalization, existing numerical solvers are often computationally expensive, complex to implement, and difficult to adapt for specific application constraints. We present a scalable, multiresolution algorithm for scatterplot regularization that approaches the high-quality structural preservation of exact OT solvers. Our method constructs a displacement field by merging local, analytically solved $2 \\times 2$2\u00d72 patch optimizations into a globally consistent mesh, repeating this process across multiple resolutions. We systematically evaluate local solvers, interpolation schemes, and scheduling strategies to balance transport cost, distortion errors, and runtime efficiency. The approach is straightforward to implement, supports local constraints, and generalizes mathematically to higher dimensions. Our efficient GPU implementation processes millions of points at interactive frame rates, significantly outperforming existing OT solvers. Quantitative and qualitative comparisons demonstrate that our method enhances uniformity while minimizing distortion, even under extreme density variations. We further demonstrate the method\u2019s versatility through applications in constrained regularization, scatterplot gridification, and image contrast enhancement.",
         "countries": [
             "DE",
             "JP",
@@ -25440,6 +25440,315 @@
         "abstract": "",
         "countries": [
             "FR"
+        ]
+    },
+    "10.1145/3811363": {
+        "doi": "10.1145/3811363",
+        "authors": [
+            {
+                "family": "Cocco",
+                "given": "Giovanni",
+                "orcid": "0009-0000-2681-2443",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Belle",
+                "given": "Vincent",
+                "orcid": "0009-0009-8420-875X",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Garner",
+                "given": "Eric",
+                "orcid": "0009-0002-2323-5833",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Lefebvre",
+                "given": "Sylvain",
+                "orcid": "0000-0002-9182-3146",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Chermain",
+                "given": "Xavier",
+                "orcid": "0000-0003-1910-5956",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "AtomSlicer: Constant-Thickness Field-Aligned Non-Planar Slicing and Continuous Toolpaths for FFF",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2026,
+        "volume": "45",
+        "number": "4",
+        "pages": "58:1\u201358:16",
+        "article_number": "58",
+        "number_of_pages": 16,
+        "abstract": "Multi-axis fused filament fabrication (FFF) reduces staircase artifacts and support material by adapting nozzle orientation. However, reliable and highly customizable printing requires layers and toolpaths combining a number of challenging properties: following prescribed fields, preserving constant bead geometry, avoiding stops, retractions, and collisions.\n                   We present AtomSlicer, which takes a 3D tool-orientation field and perlayer 2-RoSy tangent direction fields, to generate field-aligned non-planar layers of near-constant thickness. It then computes collision-free deposition toolpaths that are continuous within each layer, and as continuous as possible across layers.\n                   AtomSlicer encodes geometry with three orthogonal phase fields sampled into oriented atoms, partitions them into fabricable layers, reconstructs layer meshes, and synthesizes 2-RoSy-aligned toolpaths. Unlike prior methods it treats user- or optimizer-defined fields as constraints, producing a feasible toolpath or reporting non-fabricability rather than modifying the specification. We validate on varied shapes, including a large Thingi10k study, and 13 printed models using constant extrusion per unit path length under a fixed bead profile. AtomSlicer reduces non-extruding travel to a few percent, cuts travel moves by one to two orders of magnitude versus planar and Atomizer baselines, and is 9\u00d7-60\u00d7 faster than Atomizer.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1016/j.cag.2026.104656": {
+        "doi": "10.1016/j.cag.2026.104656",
+        "authors": [
+            {
+                "family": "Mohanty",
+                "given": "Subhendu",
+                "countries": [
+                    "IN"
+                ]
+            },
+            {
+                "family": "Tatu",
+                "given": "Aditya",
+                "countries": [
+                    "IN"
+                ]
+            },
+            {
+                "family": "Sahu",
+                "given": "Nabin Kumar",
+                "countries": [
+                    "IN"
+                ]
+            }
+        ],
+        "title": "A finite element method based discretisation of the Hamiltonian operator on triangular meshes",
+        "journal": "Computers & Graphics",
+        "publication_year": 2026,
+        "volume": "138",
+        "number": "",
+        "pages": "104656:1\u2013104656:11",
+        "number_of_pages": 11,
+        "article_number": "104656",
+        "abstract": "Differential operators and their spectra have many interesting properties and have found applications in areas like Computer Graphics and Geometry processing. In this paper, we study the discretisation of the Hamiltonian operator, a combination of the Laplace\u2013Beltrami operator (LBO) and a potential function-based diagonal operator. We propose an FEM based discretisation of the Hamiltonian operator, and prove that it satisfies properties like symmetricity, and positive semi-definiteness.\n We also compare our discretisation with two prevalent discretisations wherein the diagonal potential operator is approximated as a diagonal matrix. While one does not yield a symmetric matrix, and thus may yield non-orthogonal eigenvectors, the other is not as accurate as ours. We analyse the three methods in terms of orthogonality of eigenvectors, errors in eigenfunctions, and solution of the Hamiltonian version of the Poisson equation, and show experiments to demonstrate higher accuracy of the proposed method.",
+        "countries": [
+            "IN"
+        ]
+    },
+    "10.1145/3811331": {
+        "doi": "10.1145/3811331",
+        "authors": [
+            {
+                "family": "Buonomo",
+                "given": "Camille",
+                "orcid": "0009-0000-0391-3858",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Digne",
+                "given": "Julie",
+                "orcid": "0000-0003-0905-0840",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Chaine",
+                "given": "Rapha\u00eblle",
+                "orcid": "0000-0002-1411-1356",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Explicit flows for implicit surfaces",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2026,
+        "volume": "45",
+        "number": "4",
+        "pages": "115:1\u2013115:17",
+        "article_number": "115",
+        "number_of_pages": 17,
+        "abstract": "Shape deformation for morphing or editing purposes is a central challenge in Computer Graphics. While numerous methods exist, few allow for the explicit evaluation of the deformation at arbitrary times and locations directly, without resorting to intricate advection or interpolation schemes. In this paper, we propose a method that provides an explicit expression of the deformation parameterized as a flow, for continuously deforming shapes defined implicitly. Implicit surfaces are indeed particularly well suited for deformation tasks, since they inherently account for both the surface and the enclosed volume. Our approach leverages invertible neural networks to ensure theoretically that the deformation is a valid flow, while also providing differential quantities useful for geometric regularization. We demonstrate applications of this flow to shape morphing with and without landmarks, shape editing, and pairwise-to-any morphing where we compute pairwise morphings to a canonical shape allowing to deduce transformations between any pair through flow composition. The code for our method is available at https://github.com/camillebnm/explicit_flows_for_implicit_surfaces.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1145/3811287": {
+        "doi": "10.1145/3811287",
+        "authors": [
+            {
+                "family": "Fan",
+                "given": "Haopeng",
+                "orcid": "0009-0006-2701-1123",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Tang",
+                "given": "Min",
+                "orcid": "0009-0006-0493-3459",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Sacht",
+                "given": "Leonardo",
+                "orcid": "0000-0002-5071-1455",
+                "countries": [
+                    "BR"
+                ]
+            },
+            {
+                "family": "Zou",
+                "given": "Qiang",
+                "orcid": "0000-0001-8892-1063",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Tong",
+                "given": "Ruofeng",
+                "orcid": "0000-0002-8167-5354",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Du",
+                "given": "Peng",
+                "orcid": "0000-0003-3396-9283",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "GPU-accelerated Certified Hausdorff Distance Between Triangle Meshes",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2026,
+        "volume": "45",
+        "number": "4",
+        "pages": "47:1\u201347:12",
+        "article_number": "47",
+        "number_of_pages": 12,
+        "abstract": "Computing the directed Hausdorff distance between two triangle meshes is a fundamental operation in geometry processing and simulation. While existing certified branch-and-bound (B&amp;B) methods are efficient for well-separated geometry, they can become prohibitively expensive on large models under tight tolerances and near-zero distance configurations where pruning is limited. We present a GPU-accelerated certified B&amp;B algorithm that explicitly maintains enclosing lower and upper bounds on the directed Hausdorff distance and terminates once their normalized gap, measured with respect to the bounding-box diagonal of the source mesh, meets a user-prescribed tolerance. To map the inherently prioritized search to SIMT (single-instruction, multiple-thread) hardware, we replace priority queues and recursion with a sorted, double-buffered wavefront pipeline built from bulk-parallel worklists for bound evaluation, culling, subdivision, and compaction. To mitigate loose bounds on thin primitives while preserving predictable stream behavior, we introduce a fixed-cardinality adaptive subdivision scheme that selectively applies double longest-edge bisection. To remain robust in deep-refinement regimes, we add a resource-aware deferral mechanism that enforces a device-capacity invariant by prioritizing candidates likely to be culled while postponing expensive ones. Finally, we improve numerical robustness under FP32 (single precision) via triangle-local coordinate transforms and other conservative numerical safeguards, and enhance coherence by spatially ordering the active set and traversing the BVH (bounding volume hierarchy) in triangle packets. Under the same stopping tolerance, experiments on an NVIDIA RTX 5090 show that our GPU solver remains numerically consistent with the FP64 CPU baseline, with normalized cross-platform deviation below 0.01% in over 99.9% of cases. Our method achieves millisecond-scale runtimes capable of supporting interactive frame rates, even on models with millions of triangles. Across the comparison set, it delivers throughput speedups of 836\u00d7 on the Thingi10K/TetWild benchmark (\n                    <jats:italic toggle=\"yes\">A\n                    \u2192\n                    <jats:italic toggle=\"yes\">B\n                    ) and 709\u00d7 on the Thingi10K/Decimation benchmark. Code and data for this paper are available at https://github.com/fhp-transient/gpu-hausdorff.",
+        "countries": [
+            "CN",
+            "BR"
+        ]
+    },
+    "10.1145/3811312": {
+        "doi": "10.1145/3811312",
+        "authors": [
+            {
+                "family": "James",
+                "given": "Doug",
+                "orcid": "0000-0003-3532-8383",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "James",
+                "given": "Ethan",
+                "orcid": "0009-0000-2135-6581",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Mixwell: Sharp 2D Fluid Brushes for Progressive Physics-Based Mixing",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2026,
+        "volume": "45",
+        "number": "4",
+        "pages": "79:1\u201379:18",
+        "article_number": "79",
+        "number_of_pages": 18,
+        "abstract": "We present Mixwell, a family of sharp 2D fluid brushes and GPU-accelerated analytical methods for progressive, resolution-independent physics-based mixing. Derived from idealized potential flow around a cylindrical tine, Mixwell includes a cusped, Kelvinlet-style regularized velocity brush that parsimoniously captures cylinder-fluid interactions. Building on Maxwell's 1869 drift formulation, we develop GPU-friendly evaluation strategies for particle drift in both infinite and finite strokes. For image-based workflows, we introduce cylindrical Reverse-Drift Functions (RDFs), displacement fields that encode tine insertion, motion, and removal. Like signed distance fields in geometric modeling, RDFs compose naturally and can be chained in shaders to model complex operations while avoiding intermediate texture blur. We also propose a periodicity-exploiting composition scheme for complex RDF patterns. All Mixwell operations are evaluated independently per sample, enabling truly progressive mixing and rendering without global solves, grids, or intermediate texture resampling. We demonstrate real-time GLSL and HLSL implementations and production integrations in Houdini (OpenCL, OSL), enabling progressive, arbitrary-resolution mixing and rendering with negligible numerical dissipation.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.1111/cgf.70526": {
+        "doi": "10.1111/cgf.70526",
+        "authors": [
+            {
+                "family": "Coiffier",
+                "given": "Guillaume",
+                "orcid": "0000-0001-5324-5122",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Basselin",
+                "given": "Justine",
+                "orcid": "0000-0002-8868-9644",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Compactly supported detail field for high quality neural implicit surfaces",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": -1,
+        "abstract": "Neural implicit surfaces are a powerful tool for encoding a surface as the zero level set of a neural function. Trained using gradient-descent based optimizers, these methods however suffer from a low-frequency bias that prevents them to fit fine details of the surface. Solutions to break this bias exist but often damage the regularity of the long range implicit function, making geometrical queries more difficult. In this work, we combine a 1-Lipschitz neural function with a detail field made of compactly supported radial basis functions. While the neural function handles long-range queries with low surface accuracy, the detail field is fitted to perturb the neural function so that its zero level set precisely goes through sampled points of the surface and locally accounts for small-scale details. As it is compactly supported, regions where the 1-Lipschitz property breaks are finely controlled. We therefore achieve the best of both worlds by greatly increasing the representation power of the implicit function near the zero level set while maintaining robustness far from the zero level set.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1111/cgf.70433": {
+        "doi": "10.1111/cgf.70433",
+        "authors": [
+            {
+                "family": "Wulms",
+                "given": "Jules",
+                "orcid": "0000-0002-9314-8260",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Meulemans",
+                "given": "Wouter",
+                "orcid": "0000-0002-4978-3400",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Speckmann",
+                "given": "Bettina",
+                "orcid": "0000-0002-8514-7858",
+                "countries": [
+                    "NL"
+                ]
+            }
+        ],
+        "title": "Noisy Graph Patterns via Ordered Matrices",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "e70433:1\u2013e70433:11",
+        "article_number": "e70433",
+        "number_of_pages": 11,
+        "abstract": "The high-level structure of a graph is a crucial ingredient for the analysis and visualization of relational data. However, discovering the salient\n                    graph patterns\n                    that form this structure is notoriously difficult for two reasons. (1) Finding important patterns, such as cliques and bicliques, is computationally hard. (2) Real-world graphs contain noise, and therefore do not always exhibit patterns in their pure form. Defining meaningful\n                    noisy patterns\n                    and detecting them efficiently is a currently unsolved challenge. In this paper, we propose to use well-ordered matrices as a tool to both define and effectively detect noisy patterns. Specifically, we represent a graph as its adjacency matrix and optimally order it using Moran's I. Standard graph patterns (cliques, bicliques, and stars) now translate to rectangular submatrices. Using Moran's I, we define a permitted level of noise for such patterns. A combination of exact algorithms and heuristics allows us to efficiently decompose the matrix into noisy patterns. We also introduce a novel motif simplification that visualizes noisy patterns while explicitly encoding the level of noise. We showcase our techniques on several real-world data sets.",
+        "countries": [
+            "NL"
         ]
     }
 }
