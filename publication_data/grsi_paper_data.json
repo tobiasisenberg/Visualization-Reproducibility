@@ -1,6 +1,107 @@
 [
     {
         "is_vis": false,
+        "title": "SAD: Soft Anisotropic Diagrams for Differentiable Image Representation",
+        "doi": "10.1145/3811372",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-luckyiyi-sad",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/LuckyIYI/SAD",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:b1868bd7cd2fbbb5ac85a160f0344189defa5fb2;origin=https://github.com/LuckyIYI/SAD",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-luckyiyi-sad/representative.png",
+        "authors": "Laki Iinbor, Zhiyang Dou, Wojciech Matusik"
+    },
+    {
+        "is_vis": false,
+        "title": "Taking a Moment to Characterize the Bending Response of Thin Sheet Materials",
+        "doi": "10.1111/cgf.70513",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-xpy1009-shellhomogenization-git",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/xpy1009/ShellHomogenization.git",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:25dd117e1f424a8fbcf02073973b38b51dd8ae5f;origin=https://github.com/xpy1009/ShellHomogenization.git",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-xpy1009-shellhomogenization-git/representative.png",
+        "authors": "Peiyuan Xie, Juan Sebastian Montes Maestre, Stelian Coros, Bernhard Thomaszewski"
+    },
+    {
+        "is_vis": false,
+        "title": "Uncertainty-aware geometry processing on Gaussian Process Implicit Surfaces",
+        "doi": "10.1145/3811280",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-baptiste-genest-gpgp",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/baptiste-genest/GPGP",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a6b0c339d0fbb2bbe4a08589c2f5afd97648f811;origin=https://github.com/baptiste-genest/GPGP",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-baptiste-genest-gpgp/representative.png",
+        "authors": "Baptiste Genest, David Coeurjolly"
+    },
+    {
+        "is_vis": false,
+        "title": "MeshFlow: Mesh Generation with Equivariant Flow Matching",
+        "doi": "10.1145/3799902.3811195",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-qiisun-meshflow",
+        "journal": "ACM SIGGRAPH Conference Proceedings (conference papers track)",
+        "repo_url": "https://github.com/qiisun/MeshFlow",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:dc40699451871f85307511a1fd026dddb2250014;origin=https://github.com/qiisun/MeshFlow",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-qiisun-meshflow/representative.png",
+        "authors": "Qi Sun, Kiyohiro Nakayama, Jing Nathan Yan, Qixing Huang, Alexander Rush, Leonidas Guibas, Gordon Wetzstein, Jing Liao, Guandao Yang"
+    },
+    {
+        "is_vis": false,
+        "title": "Coverage Axis: Inner Point Selection for 3D Shape Skeletonization",
+        "doi": "10.1111/cgf.14484",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-frank-zy-dou-coverage-axis-2026-09-27t17-28-58-715z",
+        "journal": "Wiley Computer Graphics Forum (CGF)",
+        "repo_url": "https://github.com/Frank-ZY-Dou/Coverage_Axis",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:cb9c0de6d909e937448b8b5381a5c08907f50cd3;origin=https://github.com/Frank-ZY-Dou/Coverage_Axis",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-frank-zy-dou-coverage-axis-2026-09-27t17-28-58-715z/representative.png",
+        "authors": "Zhiyang Dou, Cheng Lin, Rui Xu, Lei Yang, Shiqing Xin, Taku Komura, Wenping Wang"
+    },
+    {
+        "is_vis": false,
+        "title": "Diskify: a combinatorial approach to the computation of cut networks on surfaces",
+        "doi": "10.1016/j.cag.2026.104720",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-filthynobleman-comb-uv",
+        "journal": "Elsevier Computers & Graphics (C&G)",
+        "repo_url": "https://github.com/filthynobleman/comb-uv",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:a79b3ed334211c54a3ece77e21bc7cebb0e32643;origin=https://github.com/filthynobleman/comb-uv",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-filthynobleman-comb-uv/representative.png",
+        "authors": "Filippo Maggioli, Simone Melzi"
+    },
+    {
+        "is_vis": false,
+        "title": "Surface chamfering for robust tetrahedral meshing",
+        "doi": "10.1145/3811395",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-marcoattene-deloptim",
+        "journal": "ACM Transactions on Graphics (TOG)",
+        "repo_url": "https://github.com/MarcoAttene/DelOptim",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:e20ebe30655b4a530371089b90db017971277810;origin=https://github.com/MarcoAttene/DelOptim",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-marcoattene-deloptim/representative.png",
+        "authors": "Lorenzo Diazzi, Jiacheng Dai, Daniele Panozzo, Marco Attene"
+    },
+    {
+        "is_vis": true,
+        "title": "Why Can\u2019t I See My Clusters? A Precision-Recall Approach to Dimensionality Reduction Validation",
+        "doi": "10.1109/tvcg.2026.3726607",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-diedevanderhoorn-relationshipmetrics",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/DiedevanderHoorn/RelationshipMetrics",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:8c2fd914f7c360611f2d0faa7eb2ad3a6d7a56de;origin=https://github.com/DiedevanderHoorn/RelationshipMetrics",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-diedevanderhoorn-relationshipmetrics/representative.png",
+        "authors": "Diede van der Hoorn, Alessio Arleo, Fernando Paulovich",
+        "type": "keyword"
+    },
+    {
+        "is_vis": true,
+        "title": "Evaluating Visual Decision Support: How Does Preference Elicitation Shape Metric Sensitivity?",
+        "doi": "10.1109/tvcg.2026.3705568",
+        "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-lcibulski-decision-study-supplementals",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
+        "repo_url": "https://github.com/lcibulski/decision-study-supplementals",
+        "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:65b314d5db8aaaeb1132f14dae78dfd5caf82b65;origin=https://github.com/lcibulski/decision-study-supplementals",
+        "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-lcibulski-decision-study-supplementals/representative.png",
+        "authors": "Lena Cibulski, Tobias Mertz, Evanthia Dimara, Stefan Bruckner",
+        "type": "manual"
+    },
+    {
+        "is_vis": false,
         "title": "AtomSlicer: Constant-Thickness Field-Aligned Non-Planar Slicing and Continuous Toolpaths for FFF",
         "doi": "10.1145/3811363",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-iota97-atomslicer",
@@ -17,7 +118,7 @@
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-tue-alga-noisygraphpatterns",
         "journal": "Wiley Computer Graphics Forum (CGF)",
         "repo_url": "https://github.com/tue-alga/NoisyGraphPatterns",
-        "repo_archive_url": "",
+        "repo_archive_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/tue-alga/NoisyGraphPatterns",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-tue-alga-noisygraphpatterns/representative.png",
         "authors": "Jules Wulms, Wouter Meulemans, Bettina Speckmann",
         "type": "journal pres. @ EuroVis"

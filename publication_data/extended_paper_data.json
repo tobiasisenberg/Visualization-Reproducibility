@@ -25750,5 +25750,458 @@
         "countries": [
             "NL"
         ]
+    },
+    "10.1145/3811372": {
+        "doi": "10.1145/3811372",
+        "authors": [
+            {
+                "family": "Iinbor",
+                "given": "Laki",
+                "orcid": "0009-0001-7499-6416",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Dou",
+                "given": "Zhiyang",
+                "orcid": "0000-0003-0186-8269",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Matusik",
+                "given": "Wojciech",
+                "orcid": "0000-0003-0212-5643",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Soft Anisotropic Diagrams for Differentiable Image Representation",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2026,
+        "volume": "45",
+        "number": "4",
+        "pages": "158:1\u2013158:19",
+        "article_number": "158",
+        "number_of_pages": 19,
+        "abstract": "We introduce Soft Anisotropic Diagrams (SAD), an explicit and differentiable image representation parameterized by a set of adaptive sites in the image plane. In SAD, each site specifies an anisotropic metric and an additively weighted distance score, and we compute pixel colors as a softmax blend over a small per-pixel top-\n                    <jats:italic toggle=\"yes\">K\n                    subset of sites. We induce a soft anisotropic additively weighted Voronoi partition (i.e., an Apollonius diagram) with learnable persite temperatures, preserving informative gradients while allowing clear, content-aligned boundaries and explicit ownership. Such a formulation enables efficient rendering by maintaining a per-query top-\n                    <jats:italic toggle=\"yes\">K\n                    map that approximates nearest neighbors under the same shading score, allowing GPU-friendly, fixed-size local computation. We update this list using our top-\n                    <jats:italic toggle=\"yes\">K\n                    propagation scheme inspired by jump flooding, augmented with stochastic injection to provide probabilistic global coverage. Training follows a GPU-first pipeline with gradient-weighted initialization, Adam optimization, and adaptive budget control through densification and pruning. Across standard benchmarks, SAD consistently outperforms Image-GS and Instant-NGP at matched bitrate. On Kodak, SAD reaches 46.0 dB PSNR with 2.2 s encoding time (vs. 28s for Image-GS), and delivers 4\u201319\u00d7 end-to-end training speedups over state-of-the-art baselines. We demonstrate the effectiveness of SAD by showcasing the seamless integration with differentiable pipelines for forward and inverse problems, efficiency of fast random access, and compact storage. You can find the code here: https://luckyiyi.github.io/SAD.",
+        "countries": [
+            "US"
+        ]
+    },
+    "10.1111/cgf.70513": {
+        "doi": "10.1111/cgf.70513",
+        "authors": [
+            {
+                "family": "Xie",
+                "given": "Peiyuan",
+                "orcid": "0009-0008-0340-746X",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Maestre",
+                "given": "Juan S. Montes",
+                "orcid": "0009-0001-9758-8861",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Coros",
+                "given": "Stelian",
+                "orcid": "0000-0001-6604-4784",
+                "countries": [
+                    "CH"
+                ]
+            },
+            {
+                "family": "Thomaszewski",
+                "given": "Bernhard",
+                "orcid": "0000-0001-8086-7664",
+                "countries": [
+                    "CH"
+                ]
+            }
+        ],
+        "title": "Taking a Moment to Characterize the Bending Response of Thin Sheet Materials",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "e70513",
+        "number_of_pages": -1,
+        "abstract": "Structured sheet materials such as 3D-printed rod networks, multi-material thin shells, and multi-layer laminates exhibit diverse mechanical behaviors. To avoid the computational burden of native-scale simulations, data-driven homogenization offers a promising alternative. This process involves probing a representative patch of material\u2014a unit cell\u2014with a set of stretching and bending tests subject to periodic boundary conditions. Because macro-scale bending moments are not directly available from native-scale simulations, existing methods exclusively rely on elastic energy data. Unfortunately, using only elastic energy from uniaxial tests is not sufficient for capturing the full moment-curvature relationship, and imposing biaxial curvature states would necessarily break periodicity. We present a moment-based homogenization method that infers curvature coupling using only uniaxial bending tests. Our method computes macro-scale bending moments from native-scale simulations for a wide range of mechanical models. To this end, we translate internal deformations into elastic stresses and then integrate these stresses through the thickness and across the unit-cell patch. We use the resulting homogenized bending moments along with energy data to fit neural bending energy density functions. We demonstrate our method on a diverse set of materials, including multi-material shells, rod networks, and multi-layer sheets. Our results show improved accuracy compared to existing approaches and realistic double-curvature behavior when applied to larger samples.",
+        "countries": [
+            "CH"
+        ]
+    },
+    "10.1145/3811280": {
+        "doi": "10.1145/3811280",
+        "authors": [
+            {
+                "family": "Genest",
+                "given": "Baptiste",
+                "orcid": "0009-0009-7718-5553",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Coeurjolly",
+                "given": "David",
+                "orcid": "0000-0003-3164-8697",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Uncertainty-aware geometry processing on Gaussian Process Implicit Surfaces",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2026,
+        "volume": "45",
+        "number": "4",
+        "pages": "44:1\u201344:14",
+        "article_number": "44",
+        "number_of_pages": 14,
+        "abstract": "We present a framework for uncertainty-aware geometry processing on Gaussian Process Implicit Surfaces (GPIS), enabling computations directly on such probabilistic representations of shapes. In contrast to classical geometry processing pipelines that assume deterministic surface meshes or point clouds, our approach considers uncertainty in the input data and defines analogs of fundamental differential operators-gradient, divergence, and Laplacian- that account for the distribution of plausible geometries encoded by the GPIS. Leveraging the Kac-Rice formula, we embed computations from random surfaces into a volumetric Cartesian domain, enabling efficient evaluation of expected integrals and differential operators. The proposed approach bridges classical surface PDE-based geometry processing and volumetric representations, enabling a principled handling of noise and ambiguity for various downstream geometry processing tasks.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.1145/3799902.3811195": {
+        "doi": "10.1145/3799902.3811195",
+        "authors": [
+            {
+                "family": "Sun",
+                "given": "Qi",
+                "orcid": "0009-0004-5204-765X",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Nakayama",
+                "given": "Kiyohiro",
+                "orcid": "0000-0001-9375-9822",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Yan",
+                "given": "Jing Nathan",
+                "orcid": "0000-0002-3886-8687",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Huang",
+                "given": "Qixing",
+                "orcid": "0009-0001-7908-7174",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Rush",
+                "given": "Alexander",
+                "orcid": "0000-0002-9900-1606",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Guibas",
+                "given": "Leonidas",
+                "orcid": "0000-0002-8315-4886",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Wetzstein",
+                "given": "Gordon",
+                "orcid": "0000-0002-9243-6885",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Liao",
+                "given": "Jing",
+                "orcid": "0000-0001-7014-5377",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Yang",
+                "given": "Guandao",
+                "orcid": "0000-0002-2992-5803",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "MeshFlow: Mesh Generation with Equivariant Flow Matching",
+        "journal": "ACM SIGGRAPH Conference Papers",
+        "publication_year": 2026,
+        "volume": "0",
+        "number": "0",
+        "pages": "69:1\u201369:12",
+        "article_number": "69",
+        "number_of_pages": 12,
+        "abstract": "Meshes are among the most common 3D scene representations, but directly generating meshes is challenging largely because the mesh representation contains many structures, such as permutation invariance of vertices or faces. To address this challenge, we present a novel approach that learns to generate triangle meshes represented as triangle soups. We adopt equivariant optimal-transport flow matching models that respect key symmetries within the triangle soup representation, including permutation invariance among faces and among vertices within each of the faces. Toward this goal, we propose a simple yet effective modification to the state-of-the-art Diffusion Transformer architecture, resulting in a scalable network capable of modeling a flow field while maintaining the desirable symmetries (equivariance). Moreover, we introduce a loss function grounded in optimal transport principles that improves model convergence by eliminating training signals that violate these symmetries. Our model can achieve performance comparable to state-of-the-art auto-regressive mesh generators while providing about an 18\u00d7 speedup during inference.",
+        "countries": [
+            "HK",
+            "US"
+        ]
+    },
+    "10.1111/cgf.14484": {
+        "doi": "10.1111/cgf.14484",
+        "authors": [
+            {
+                "family": "Dou",
+                "given": "Zhiyang",
+                "orcid": "0000-0003-0186-8269",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Lin",
+                "given": "Cheng",
+                "orcid": "0000-0002-3335-6623",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Xu",
+                "given": "Rui",
+                "orcid": "0000-0001-8273-1808",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Yang",
+                "given": "Lei",
+                "orcid": "0000-0002-3284-4019",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Xin",
+                "given": "Shiqing",
+                "orcid": "0000-0001-8452-8723",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Komura",
+                "given": "Taku",
+                "orcid": "0000-0002-2729-5860",
+                "countries": [
+                    "HK"
+                ]
+            },
+            {
+                "family": "Wang",
+                "given": "Wenping",
+                "orcid": "0000-0002-2284-3952",
+                "countries": [
+                    "US"
+                ]
+            }
+        ],
+        "title": "Coverage Axis: Inner Point Selection for 3D Shape Skeletonization",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 2022,
+        "volume": "41",
+        "number": "2",
+        "pages": "419\u2013432",
+        "article_number": "",
+        "number_of_pages": 14,
+        "abstract": "In this paper, we present a simple yet effective formulation called Coverage Axis for 3D shape skeletonization. Inspired by the set cover problem, our key idea is to cover all the surface points using as few inside medial balls as possible. This formulation inherently induces a compact and expressive approximation of the Medial Axis Transform (MAT) of a given shape. Different from previous methods that rely on local approximation error, our method allows a global consideration of the overall shape structure, leading to an efficient high-level abstraction and superior robustness to noise. Another appealing aspect of our method is its capability to handle more generalized input such as point clouds and poor-quality meshes. Extensive comparisons and evaluations demonstrate the remarkable effectiveness of our method for generating compact and expressive skeletal representation to approximate the MAT.",
+        "countries": [
+            "HK",
+            "CN",
+            "US"
+        ]
+    },
+    "10.1016/j.cag.2026.104720": {
+        "doi": "10.1016/j.cag.2026.104720",
+        "authors": [
+            {
+                "family": "Maggioli",
+                "given": "Filippo",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Melzi",
+                "given": "Simone",
+                "countries": [
+                    "IT"
+                ]
+            }
+        ],
+        "title": "Diskify: A combinatorial approach to the computation of cut networks on surfaces",
+        "journal": "Computers & Graphics",
+        "publication_year": 2026,
+        "volume": "139",
+        "number": "",
+        "pages": "104720:1\u2013104720:15",
+        "number_of_pages": 15,
+        "article_number": "104720",
+        "abstract": "We present a reliable, fully combinatorial method for UV mapping that leverages a Voronoi-based decomposition of a triangulated surface mesh. Given a sparse set of sample points on the input shape, we construct the corresponding Voronoi partition and iteratively refine it to ensure that all regions are topologically equivalent to disks. From the disk decomposition, we propose two directions. On one side, adjacent regions are merged following a greedy approach that minimizes some objective function, all while preserving disk equivalence. Alternatively, the regions can be used to guide a cut that makes the whole surface topologically equivalent to a disk. In both cases, this topological guarantee enables straightforward and reliable UV parametrization. Our method exhibits an extremely low failure rate, making it suitable for practical use. In quantitative experiments on standard UV mapping benchmarks, we achieve performance comparable to state-of-the-art techniques. Furthermore, we analyze robustness and efficiency across different sampling densities, providing insights into the computational cost of each step of the pipeline.",
+        "countries": [
+            "IT"
+        ]
+    },
+    "10.1145/3811395": {
+        "doi": "10.1145/3811395",
+        "authors": [
+            {
+                "family": "Diazzi",
+                "given": "Lorenzo",
+                "orcid": "0000-0001-5390-5055",
+                "countries": [
+                    "IT"
+                ]
+            },
+            {
+                "family": "Panozzo",
+                "given": "Daniele",
+                "orcid": "0000-0003-1183-2454",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Dai",
+                "given": "Jiacheng",
+                "orcid": "0009-0002-2965-3753",
+                "countries": [
+                    "US"
+                ]
+            },
+            {
+                "family": "Attene",
+                "given": "Marco",
+                "orcid": "0000-0002-9012-7245",
+                "countries": [
+                    "IT"
+                ]
+            }
+        ],
+        "title": "Surface chamfering for robust tetrahedral meshing",
+        "journal": "ACM Transactions on Graphics",
+        "publication_year": 2026,
+        "volume": "45",
+        "number": "4",
+        "pages": "148:1\u2013148:15",
+        "article_number": "148",
+        "number_of_pages": 15,
+        "abstract": "We present an algorithm that produces high quality tetrahedral meshes conforming with input polyhedra. Our meshing algorithm is based on Ruppert's Delaunay refinement where convergence is guaranteed thanks to a novel\n                    <jats:italic toggle=\"yes\">chamfering\n                    approach that removes all acute angles from the input. On such a modified input Delaunay refinement produces a Delaunay tetrahedrization where all the faces have bounded angles. The input portions that were removed by the chamfering are re-inserted in this tetrahedrization to achieve exact conformance at the cost of a small number of bad-shaped tetrahedra near the formerly acute input angles. Numerical robustness is guaranteed along all the phases thanks to a clever use of modern indirect geometric predicates and the definition of a new type of implicit point to represent Steiner vertices on the input faces. In practice, our prototype implementation produces meshes having a quality comparable to the state-of-the-art tetgen software: while tetgen fails on 37% of the 3942 valid models in the Thingi10k dataset, our method succeeds on all of them.",
+        "countries": [
+            "IT",
+            "US"
+        ]
+    },
+    "10.1109/tvcg.2026.3726607": {
+        "doi": "10.1109/tvcg.2026.3726607",
+        "authors": [
+            {
+                "family": "Hoorn",
+                "given": "Diede P.M. van der",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Arleo",
+                "given": "Alessio",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Paulovich",
+                "given": "Fernando V.",
+                "countries": [
+                    "NL"
+                ]
+            }
+        ],
+        "title": "Why Can't I See My Clusters? A Precision-Recall Approach to Dimensionality Reduction Validation",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 13,
+        "abstract": "Dimensionality Reduction (DR) is widely used for visualizing high-dimensional data, often with the goal of revealing expected cluster structure. However, such a structure may not always appear in the projections. Existing DR quality metrics assess projection reliability (to some extent) or cluster structure quality, but do not explain why expected structures are missing. Visual Analytics solutions can help, but are often time-consuming due to the large hyperparameter space. This paper addresses this problem by leveraging a recent framework that divides the DR process into two phases: a relationship phase, where similarity relationships are modeled, and a mapping phase, where the data is projected accordingly. We introduce two supervised metrics, precision and recall, to evaluate the relationship phase. These metrics quantify how well the modeled relationships align with an expected cluster structure based on some set of labels representing this structure. We illustrate their application using t-SNE and UMAP, and validate the approach through various usage scenarios. Our approach can guide hyperparameter tuning, uncover projection artifacts, and determine if the expected structure is captured in the relationships, making the DR process faster and more reliable.",
+        "countries": [
+            "NL"
+        ]
+    },
+    "10.1109/tvcg.2026.3705568": {
+        "doi": "10.1109/tvcg.2026.3705568",
+        "authors": [
+            {
+                "family": "Cibulski",
+                "given": "Lena",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Mertz",
+                "given": "Tobias",
+                "countries": [
+                    "DE"
+                ]
+            },
+            {
+                "family": "Dimara",
+                "given": "Evanthia",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Bruckner",
+                "given": "Stefan",
+                "countries": [
+                    "DE"
+                ]
+            }
+        ],
+        "title": "Evaluating Visual Decision Support: How Does Preference Elicitation Shape Metric Sensitivity?",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 2026,
+        "volume": "32",
+        "number": "10",
+        "pages": "8111\u20138125",
+        "article_number": "",
+        "number_of_pages": 15,
+        "abstract": "Supporting decision-making is a central goal in visualization research, yet evaluating how effectively visualizations aid decision tasks remains difficult. Objective metrics for decision quality as a baseline for comparative evaluations are rare, with previous work proposing the consistency between a decision made and self-reported subjective preferences. However, the impact of preference elicitation design on such metrics is not well understood. Our focus is therefore on understanding how elicitation methods shape the sensitivity of decision quality metrics, not on comparing visualization techniques themselves. We report a preregistered study with 548 participants examining how varying the expressiveness of preference elicitation affects the sensitivity of choice consistency metrics when comparing parallel coordinates and tabular visualizations. Our baseline condition replicates a previous study using simple preference elicitation with significantly more participants and confirms its inconclusive findings that suggest a comparable performance of parallel coordinates and tabular visualization for the tested decision task. We further test two additional conditions to investigate if more expressive preference elicitation increases the metric\u2019s sensitivity. Our results suggest that more expressive elicitation may improve sensitivity in detecting performance differences, but further increases offer no clear additional benefit in our study. We observed these sensitivity differences even though the experimental setup, with its comparable baseline performances, was not optimized for detecting visualization performance differences. Our results provide initial evidence that elicitation design can affect the informational value of decision-centric visualization studies, informing both the development of metrics and the interpretation of comparative studies.",
+        "countries": [
+            "DE",
+            "NL"
+        ]
     }
 }

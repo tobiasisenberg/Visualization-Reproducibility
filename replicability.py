@@ -245,7 +245,8 @@ def markVisPapersByKeywords(paperList):
             ("10.1016/j.cag.2025.104354" in paper["doi"]) or # talks about vector field analysis
             ("10.1111/cgf.70372" in paper["doi"]) or         # visualization in abstract and author keyword
             ("10.1016/j.cag.2026.104724" in paper["doi"]) or # visualization in abstract
-            ("10.1016/j.cag.2026.104688" in paper["doi"])    # is about protein surface classification
+            ("10.1016/j.cag.2026.104688" in paper["doi"]) or # is about protein surface classification
+            ("10.1109/tvcg.2026.3705568" in paper["doi"])    # visualization in abstract
             ):
             paper["is_vis"] = True
             paper["type"] = "manual"
@@ -277,7 +278,8 @@ def markVisPapersByKeywords(paperList):
             # ("topology" in paper["title"].lower()) or # not good: some graphics papers also captured
             ("t-sne" in paper["title"].lower()) or
             ("high-dimensional data" in paper["title"].lower()) or
-            ("visual abstraction" in paper["title"].lower())
+            ("visual abstraction" in paper["title"].lower()) or
+            ( ("dimensionality" in paper["title"].lower()) and ("reduction" in paper["title"].lower()) )
             ):
             paper["is_vis"] = True
             paper["type"] = "keyword"
@@ -981,6 +983,10 @@ else:
             authors = authors.replace('FRANCISCO VICENTE CARRASCO', 'Markus Steinberger')
             authors = authors.replace('MARKUS STEINBERGER', 'Francisco Vicente Carrasco')
             authors = authors.replace('FERNANDO DE LA TORRE', 'Fernando De La Torre')
+            authors = authors.replace('MARCO ATTENE', 'Marco Attene')
+            authors = authors.replace('LORENZO DIAZZI', 'Lorenzo Diazzi')
+            authors = authors.replace('JIACHENG DAI', 'Jiacheng Dai')
+            authors = authors.replace('DANIELE PANOZZO', 'Daniele Panozzo')
 
             # make the author list reporting consistent
             authors = authors.replace(' ; ', ', ')
