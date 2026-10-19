@@ -2,26 +2,26 @@
     {
         "is_vis": true,
         "title": "Measuring Distortion in the Empty Regions of Dimensionality Reduction Scatterplots with the Gap Index",
-        "doi": "not_assigned_yet",
+        "doi": "10.vis2026/1746",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-codeberg-org-jros-gap-index",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://codeberg.org/jros/gap-index",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:dff9bca18c375f69d1cfd2cbea8c51c5e3b1b0f5;origin=https://codeberg.org/jros/gap-index",
         "image_url": "https://www.replicabilitystamp.org/archive/https-codeberg-org-jros-gap-index/representative.png",
         "authors": "Jaume Ros, Alessio Arleo, Fernando Paulovich",
-        "type": "keyword"
+        "type": "IEEE VIS"
     },
     {
         "is_vis": true,
         "title": "Authoring Narrative Visualization in Motion: Visual Storytelling in Swimming Videos",
-        "doi": "not_assigned_yet",
+        "doi": "10.vis2026/2214",
         "grsi_url": "https://www.replicabilitystamp.org/index.html#https-github-com-nemozjh-swimcomposer",
         "journal": "IEEE Transactions on Visualization and Computer Graphics (TVCG)",
         "repo_url": "https://github.com/nemozjh/SwimComposer",
         "repo_archive_url": "https://archive.softwareheritage.org/swh:1:snp:8525ea469758b064ba5637970b07146cad31ecbd;origin=https://github.com/nemozjh/SwimComposer",
         "image_url": "https://www.replicabilitystamp.org/archive/https-github-com-nemozjh-swimcomposer/representative.png",
         "authors": "Junhao Zhao, Romain Vuillemot, Petra Isenberg, Lijie Yao",
-        "type": "keyword"
+        "type": "IEEE VIS"
     },
     {
         "is_vis": false,

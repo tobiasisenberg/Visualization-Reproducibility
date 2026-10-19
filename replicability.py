@@ -17,7 +17,7 @@ import glob
 import shutil
 
 # settings of how to do things and what extra stuff to do
-useLocalDataOnly = False # FIXME: should be True for submission; if True, only local data is used and no online update is done
+useLocalDataOnly = True # FIXME: should be True for submission; if True, only local data is used and no online update is done
 exportVisualizations = True # ehether to create visualizations based on the data or not
 doNameChecking = False # run some heuristics to check if the names make sense
 doAbstractCheckingForKeywords = False # check for keywords in the abstract as well (otherwise only in title)
