@@ -17,7 +17,7 @@ import glob
 import shutil
 
 # settings of how to do things and what extra stuff to do
-useLocalDataOnly = True # FIXME: should be True for submission; if True, only local data is used and no online update is done
+useLocalDataOnly = False # FIXME: should be True for submission; if True, only local data is used and no online update is done
 exportVisualizations = True # ehether to create visualizations based on the data or not
 doNameChecking = False # run some heuristics to check if the names make sense
 doAbstractCheckingForKeywords = False # check for keywords in the abstract as well (otherwise only in title)
@@ -835,14 +835,11 @@ else:
             doi = doi.replace("https://dl.acm.org/doi/", "")
             # some manual doi assignments because the GRSI page occasionally only provided Google searches instead of a real DOI at the beginning
             # please note to replace the '%20' in the Google search links with a ' ' (manually or via a .replace("%20", " ") call as in the examples); otherwise the replacement does not work
-            doi = doi.replace("http://www.google.com/search?q=BondMatcher:%20H-Bond%20Stability%20Analysis%20in%20Molecular%20Systems".replace("%20", " "), "10.1109/TVCG.2025.3634636")
-            doi = doi.replace("http://www.google.com/search?q=Topological%20Autoencoders++:%20Fast%20and%20Accurate%20Cycle-Aware%20Dimensionality%20Reduction".replace("%20", " "), "10.1109/TVCG.2025.3644671")
-            doi = doi.replace("http://www.google.com/search?q=F2Stories:%20A%20Modular%20Framework%20for%20Multi-Objective%20Optimization%20of%20Storylines%20with%20a%20Focus%20on%20Fairness".replace("%20", " "), "10.1109/TVCG.2025.3634228")
-            doi = doi.replace("http://www.google.com/search?q=Reimagining%20Disassembly%20Interfaces%20with%20Visualization:%20Combining%20Instruction%20Tracing%20and%20Control%20Flow%20with%20DisViz".replace("%20", " "), "10.1109/TVCG.2025.3627171")
-            doi = doi.replace("http://www.google.com/search?q=ChannelExplorer:%20Exploring%20Class%20Separability%20Through%20Activation%20Channel%20Visualization".replace("%20", " "), "10.1109/tvcg.2026.3669148")
             doi = doi.replace("http://www.google.com/search?q=Noisy%20Graph%20Patterns%20via%20Ordered%20Matrices".replace("%20", " "), "10.1111/cgf.70433")
             # accepted real VIS papers below, need to fix later in both vis-2025.csv and via vispubdata, and remove here
             doi = doi.replace("http://www.google.com/search?q=DebrisTracer:%20Reliable%20Tracking%20in%20Hypervelocity%20Impact%20Fast%20Imaging".replace("%20", " "), "10.vis2026/1130")
+            doi = doi.replace("http://www.google.com/search?q=Authoring%20Narrative%20Visualization%20in%20Motion:%20Visual%20Storytelling%20in%20Swimming%20Videos".replace("%20", " "), "10.vis2026/2214")
+            doi = doi.replace("http://www.google.com/search?q=Measuring%20Distortion%20in%20the%20Empty%20Regions%20of%20Dimensionality%20Reduction%20Scatterplots%20with%20the%20Gap%20Index".replace("%20", " "), "10.vis2026/1746")
             doi = doi.replace("%20", " ") # in case we copy-pasted the link from the website
             doi = re.sub(pattern=r"http(?:s)?://www\.google\.com/search.*", repl=r"NOT_ASSIGNED_YET", string=doi) # automatically assign the NOT_ASSIGNED_YET tag for remaining Google searches (once assigned but not yet on GRSI page add a manual override as above)
             paperItem['doi'] = doi.lower()

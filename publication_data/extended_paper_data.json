@@ -25383,65 +25383,6 @@
             "CL"
         ]
     },
-    "10.vis2026/1130": {
-        "doi": "10.vis2026/1130",
-        "authors": [
-            {
-                "family": "Loloum",
-                "given": "Th\u00e9ophane",
-                "countries": [
-                    "FR"
-                ]
-            },
-            {
-                "family": "Vivodtzev",
-                "given": "Fabien",
-                "countries": [
-                    "FR"
-                ]
-            },
-            {
-                "family": "H\u00e9bert",
-                "given": "David",
-                "countries": [
-                    "FR"
-                ]
-            },
-            {
-                "family": "Reynier",
-                "given": "Baptiste",
-                "countries": [
-                    "FR"
-                ]
-            },
-            {
-                "family": "Arrigoni",
-                "given": "Michel",
-                "countries": [
-                    "FR"
-                ]
-            },
-            {
-                "family": "Tierny",
-                "given": "Julien",
-                "countries": [
-                    "FR"
-                ]
-            }
-        ],
-        "title": "DebrisTracer: Reliable Tracking in Hypervelocity Impact Fast Imaging",
-        "journal": "IEEE Transactions on Visualization and Computer Graphics",
-        "publication_year": 3026,
-        "volume": "",
-        "number": "",
-        "pages": "",
-        "number_of_pages": -1,
-        "article_number": "",
-        "abstract": "",
-        "countries": [
-            "FR"
-        ]
-    },
     "10.1145/3811363": {
         "doi": "10.1145/3811363",
         "authors": [
@@ -25705,7 +25646,7 @@
         "pages": "",
         "article_number": "",
         "number_of_pages": -1,
-        "abstract": "Neural implicit surfaces are a powerful tool for encoding a surface as the zero level set of a neural function. Trained using gradient-descent based optimizers, these methods however suffer from a low-frequency bias that prevents them to fit fine details of the surface. Solutions to break this bias exist but often damage the regularity of the long range implicit function, making geometrical queries more difficult. In this work, we combine a 1-Lipschitz neural function with a detail field made of compactly supported radial basis functions. While the neural function handles long-range queries with low surface accuracy, the detail field is fitted to perturb the neural function so that its zero level set precisely goes through sampled points of the surface and locally accounts for small-scale details. As it is compactly supported, regions where the 1-Lipschitz property breaks are finely controlled. We therefore achieve the best of both worlds by greatly increasing the representation power of the implicit function near the zero level set while maintaining robustness far from the zero level set.",
+        "abstract": "<jats:title>Abstract</jats:title>\n                   Neural implicit surfaces are a powerful tool for encoding a surface as the zero level set of a neural function. Trained using gradient-descent based optimizers, these methods however suffer from a low-frequency bias that prevents them to fit fine details of the surface. Solutions to break this bias exist but often damage the regularity of the long range implicit function, making geometrical queries more difficult. In this work, we combine a 1-Lipschitz neural function with a detail field made of compactly supported radial basis functions. While the neural function handles long-range queries with low surface accuracy, the detail field is fitted to perturb the neural function so that its zero level set precisely goes through sampled points of the surface and locally accounts for small-scale details. As it is compactly supported, regions where the 1-Lipschitz property breaks are finely controlled. We therefore achieve the best of both worlds by greatly increasing the representation power of the implicit function near the zero level set while maintaining robustness far from the zero level set.",
         "countries": [
             "FR"
         ]
@@ -26201,6 +26142,220 @@
         "abstract": "Supporting decision-making is a central goal in visualization research, yet evaluating how effectively visualizations aid decision tasks remains difficult. Objective metrics for decision quality as a baseline for comparative evaluations are rare, with previous work proposing the consistency between a decision made and self-reported subjective preferences. However, the impact of preference elicitation design on such metrics is not well understood. Our focus is therefore on understanding how elicitation methods shape the sensitivity of decision quality metrics, not on comparing visualization techniques themselves. We report a preregistered study with 548 participants examining how varying the expressiveness of preference elicitation affects the sensitivity of choice consistency metrics when comparing parallel coordinates and tabular visualizations. Our baseline condition replicates a previous study using simple preference elicitation with significantly more participants and confirms its inconclusive findings that suggest a comparable performance of parallel coordinates and tabular visualization for the tested decision task. We further test two additional conditions to investigate if more expressive preference elicitation increases the metric\u2019s sensitivity. Our results suggest that more expressive elicitation may improve sensitivity in detecting performance differences, but further increases offer no clear additional benefit in our study. We observed these sensitivity differences even though the experimental setup, with its comparable baseline performances, was not optimized for detecting visualization performance differences. Our results provide initial evidence that elicitation design can affect the informational value of decision-centric visualization studies, informing both the development of metrics and the interpretation of comparative studies.",
         "countries": [
             "DE",
+            "NL"
+        ]
+    },
+    "10.1109/tvcg.2026.3738401": {
+        "doi": "10.1109/tvcg.2026.3738401",
+        "authors": [
+            {
+                "family": "Madono",
+                "given": "Koki",
+                "countries": [
+                    "JP"
+                ]
+            },
+            {
+                "family": "Mingcheng",
+                "given": "Yuan",
+                "countries": [
+                    "JP"
+                ]
+            },
+            {
+                "family": "Simo-Serra",
+                "given": "Edgar",
+                "countries": [
+                    "JP"
+                ]
+            }
+        ],
+        "title": "Hint-AUC: Deterministic Region-based Hint Generation for Line Art Colorization Evaluation",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "",
+        "number_of_pages": 12,
+        "abstract": "Line art colorization is an important design application that has been extensively studied in recent years. Focusing on usability, most approaches have been developed for interactive use where colors are specified using user hints. However, collecting a large dataset of user hints for training is challenging. As a result, a variety of approaches have emerged for generating hints for both training and evaluation, such as color dots and scribbles. Furthermore, the lack of a common evaluation framework, differences in hint generation implementations, and limited code availability reduce reproducibility. For these reasons, highly stochastic neural network-based algorithms have made it challenging to fairly evaluate and compare different approaches. In this paper, we introduce a novel evaluation framework for line art colorization algorithms that leverages deterministic regionbased hints inspired by human drawing behavior. Our framework enables in-depth, fair comparisons with existing colorization models. Moreover, the same generated hints can be incorporated into training a colorization model to significantly improve the quality of the colorization results, as shown in evaluations using both deterministically and randomly sampled hints. Our evaluation is consistent with the overall human-preference results, and training with the generated hints improves colorization quality.",
+        "countries": [
+            "JP"
+        ]
+    },
+    "10.1111/cgf.70512": {
+        "doi": "10.1111/cgf.70512",
+        "authors": [
+            {
+                "family": "Cocco",
+                "given": "Giovanni",
+                "orcid": "0009-0000-2681-2443",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Chermain",
+                "given": "Xavier",
+                "orcid": "0000-0003-1910-5956",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "Wave\u2010Guided Field\u2010Aligned Volume\u2010Filling Curves",
+        "journal": "Computer Graphics Forum",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "article_number": "e70512",
+        "number_of_pages": -1,
+        "abstract": "We present a constructive method for generating field-aligned, volume-filling curves in watertight 3D volumes. Existing approaches rely on slow gradient-based optimization and often struggle to simultaneously achieve good field alignment, regular spacing, and scalability. To overcome this limitation, we adopt a constructive strategy: a set of well-spaced, aligned curves is constructed and then stitched together to form a single closed curve. Our core idea is to represent the intermediate curves as the intersection of two 3D wavefronts orthogonal to the tangent field. The wavefronts are the isosurfaces of two wave fields that can be optimized efficiently. This formulation enables the generation of high-quality volume-filling curves with improved alignment and spacing compared to prior work, while scaling to outputs with more than 10 million vertices. We further demonstrate robustness on 4398 solids from the Thingi10K dataset. Our current method assumes watertight inputs whose smallest geometric feature exceeds twice the target curve spacing.",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.vis2026/1130": {
+        "doi": "10.vis2026/1130",
+        "authors": [
+            {
+                "family": "Loloum",
+                "given": "Th\u00e9ophane",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Vivodtzev",
+                "given": "Fabien",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "H\u00e9bert",
+                "given": "David",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Reynier",
+                "given": "Baptiste",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Arrigoni",
+                "given": "Michel",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Tierny",
+                "given": "Julien",
+                "countries": [
+                    "FR"
+                ]
+            }
+        ],
+        "title": "DebrisTracer: Reliable Tracking in Hypervelocity Impact Fast Imaging",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "",
+        "countries": [
+            "FR"
+        ]
+    },
+    "10.vis2026/2214": {
+        "doi": "10.vis2026/2214",
+        "authors": [
+            {
+                "family": "Zhao",
+                "given": "Junhao",
+                "countries": [
+                    "CN"
+                ]
+            },
+            {
+                "family": "Vuillemot",
+                "given": "Romain",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Isenberg",
+                "given": "Petra",
+                "countries": [
+                    "FR"
+                ]
+            },
+            {
+                "family": "Yao",
+                "given": "Lijie",
+                "countries": [
+                    "CN"
+                ]
+            }
+        ],
+        "title": "Authoring Narrative Visualization in Motion:Visual Storytelling in Swimming Videos",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "We investigate how to support authoring narrative visualizations in motion in sports videos, drawing on automated data preparation, systematic analysis, technology probe design, and evaluation, using swimming races as a case study. Sports videos are widely broadcast and shared across social media, where content creators increasingly seek to present and explain complex events to general audiences. Visualization in motion has been explored as an efficient way to embed data into videos and to move with the data referents, providing additional information and helping audiences understand races. However, existing approaches primarily focus on embedding visualizations in videos, lacking exploration of how to support authoring narratives that coordinate views, data, and temporal progression to explain the unfolding races. To address this gap, we use swimming videos as an ideal case for exploration, as swimming is a sport with rich, dynamic data and visualizations in practice. We develop an automated pipeline that extracts structured data from videos, derive narrative constructs through observational analysis of sports broadcasts, and design a technology probe that supports authoring using data prepared by our pipeline and narrative constructs derived from our observations. We evaluate our approach with experienced content creators and/or graphic designers to examine the benefits and challenges of authoring narrative visualizations in motion. All supplemental materials are described in the Supplemental Material Pointers section and are on OSF: osf.io/bq47n/.",
+        "countries": [
+            "CN",
+            "FR"
+        ]
+    },
+    "10.vis2026/1746": {
+        "doi": "10.vis2026/1746",
+        "authors": [
+            {
+                "family": "Ros",
+                "given": "Jaume",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Arleo",
+                "given": "Alessio",
+                "countries": [
+                    "NL"
+                ]
+            },
+            {
+                "family": "Paulovich",
+                "given": "Fernando",
+                "countries": [
+                    "NL"
+                ]
+            }
+        ],
+        "title": "Measuring Distortion in the Empty Regions of Dimensionality Reduction Scatterplots with the Gap Index",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "publication_year": 3026,
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "number_of_pages": -1,
+        "article_number": "",
+        "abstract": "Quality metrics play a crucial role in the proper use of dimensionality reduction projections for visual analysis of highdimensional data. They quantify the degree of distortion of a projection compared to the high-dimensional data and provide a reliable indication of how confident users can be in the structures they see in the resulting layouts. However, most popular metrics focus on capturing direct relationships between points (e.g., distances or neighborhoods) while neglecting distortions in empty areas of the layout, even though these often compose visually relevant features of a 2D layout. In this paper, we introduce the Gap Index (GI), a quality metric for 2D projections that captures visual distortion by measuring spatial distortion in empty areas of a projection. It does so by decomposing the space into empty triangles, which are then compared to their high-dimensional counterparts to compute the deformation. This per-triangle deformation can be aggregated into a single scalar value or overlaid on a projection to visualize regional distortion patterns. Results show that, contrary to popular quality metrics, the GI is sensitive to small structural deformations that have high visual impact. It is also fast to compute and interpretable.",
+        "countries": [
             "NL"
         ]
     }

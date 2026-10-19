@@ -87,11 +87,11 @@ year,journal,title,doi
 2025,CGF,Fluidly Revealing Information: A Survey of Un/foldable Data Visualizations,10.1111/cgf.70152
 2025,CGF,"Nodes, Edges, and Artistic Wedges: A Survey on Network Visualization in Art History",10.1111/cgf.70154
 2025,CGF,Uncertainty-Aware Visualization of Biomolecular Structures,10.1111/cgf.70155
-2026,CGF,Engagement vs. Understanding: Comparing Immersive Virtual Reality and Desktop Displays for Climate Data Visualization,10.1111/cgf.70432
-2026,CGF,Designing Annotations in Visualization: Considerations from Visualization Practitioners and Educators,10.1111/cgf.70435
-2026,CGF,A Scoping Review of Mixed Initiative Visual Analytics in the Automation Renaissance,10.1111/cgf.70434
-2026,CGF,Noisy Graph Patterns via Ordered Matrices,10.1111/cgf.70433
 2026,CGF,URBANCLIPATLAS: A Visual Analytics Framework for Event and Scene Retrieval in Urban Videos,10.1111/cgf.70431
+2026,CGF,Engagement vs. Understanding: Comparing Immersive Virtual Reality and Desktop Displays for Climate Data Visualization,10.1111/cgf.70432
+2026,CGF,Noisy Graph Patterns via Ordered Matrices,10.1111/cgf.70433
+2026,CGF,A Scoping Review of Mixed Initiative Visual Analytics in the Automation Renaissance,10.1111/cgf.70434
+2026,CGF,Designing Annotations in Visualization: Considerations from Visualization Practitioners and Educators,10.1111/cgf.70435
 2026,CGF,Do Graph Drawing Aesthetics Matter for AI? A Replication of Foundational Studies in Graph Readability,10.1111/cgf.70436
 2026,CGF,ARCOL: Aspect Ratio Constrained Orthogonal Layout,10.1111/cgf.70437
 2026,CGF,Uncertainty-Aware Visual Analysis of Force Networks in 2D Granular Materials,10.1111/cgf.70438
@@ -118,6 +118,7 @@ year,journal,title,doi
 2026,CGF,SlideSAVR: Enabling Live Analysis during Data Presentations via Multimodal Sketching and Voice Input,10.1111/cgf.70459
 2026,CGF,Guardrail Selection in Line Charts to Contextualize Persuasive Visualizations,10.1111/cgf.70460
 2026,CGF,Symetra: Visual Analytics for the Parameter Tuning Process of Symbolic Execution Engines,10.1111/cgf.70461
+2026,CGF,BloomTree: Dynamic Coloring Techniques for Exploring Deep and Wide Tree Structures,10.1111/cgf.70462
 2026,CGF,Croissant Charts: Modulating the Performance of Normal Distribution Visualizations with Affordances,10.1111/cgf.70463
 2026,CGF,Multi2-Vis: Guiding Interactive Exploration Across Temporal Scales in Dynamic Graphs,10.1111/cgf.70464
 2026,CGF,Class Angular Distortion Index for Dimensionality Reduction,10.1111/cgf.70465
